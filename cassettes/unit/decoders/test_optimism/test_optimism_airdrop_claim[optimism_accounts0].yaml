@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.26.4.dev518+g7f1323246.d20230115
+      - rotki/1.27.2.dev11+ge6773788b.d20230228
     method: GET
     uri: https://api-optimistic.etherscan.io/api?module=proxy&action=eth_getTransactionByHash&txhash=0xda810d7e1757c6ce7387b437c26472f802eec47404e60d4f1eaa9f23bf8d8b73&apikey=IK3GCCMPQXTRIEGBAXQ9DUFWIUR524K3MW
   response:
@@ -27,7 +27,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 78e2db258e4a1a7c-MAD
+      - 7a134788b8baca2f-HAM
       Cache-Control:
       - private
       Connection:
@@ -35,7 +35,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 23 Jan 2023 19:15:05 GMT
+      - Wed, 01 Mar 2023 17:56:55 GMT
       Server:
       - cloudflare
       Vary:
@@ -59,7 +59,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.26.4.dev518+g7f1323246.d20230115
+      - rotki/1.27.2.dev11+ge6773788b.d20230228
     method: GET
     uri: https://api-optimistic.etherscan.io/api?module=proxy&action=eth_getBlockByNumber&tag=0x3ca0a6a&boolean=true&apikey=IK3GCCMPQXTRIEGBAXQ9DUFWIUR524K3MW
   response:
@@ -77,7 +77,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 78e2db2729a61a7c-MAD
+      - 7a13478999a3ca2f-HAM
       Cache-Control:
       - private
       Connection:
@@ -85,7 +85,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 23 Jan 2023 19:15:05 GMT
+      - Wed, 01 Mar 2023 17:56:56 GMT
       Server:
       - cloudflare
       Vary:
@@ -109,7 +109,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.26.4.dev518+g7f1323246.d20230115
+      - rotki/1.27.2.dev11+ge6773788b.d20230228
     method: GET
     uri: https://api-optimistic.etherscan.io/api?module=proxy&action=eth_getTransactionReceipt&txhash=0xda810d7e1757c6ce7387b437c26472f802eec47404e60d4f1eaa9f23bf8d8b73&apikey=IK3GCCMPQXTRIEGBAXQ9DUFWIUR524K3MW
   response:
@@ -127,7 +127,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 78e2db280b991a7c-MAD
+      - 7a13478a8a5aca2f-HAM
       Cache-Control:
       - private
       Connection:
@@ -135,7 +135,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 23 Jan 2023 19:15:05 GMT
+      - Wed, 01 Mar 2023 17:56:56 GMT
       Server:
       - cloudflare
       Vary:
@@ -159,12 +159,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.26.4.dev518+g7f1323246.d20230115
+      - rotki/1.27.2.dev11+ge6773788b.d20230228
     method: GET
-    uri: https://api-optimistic.etherscan.io/api?module=account&action=txlistinternal&sort=asc&startBlock=63572586&endBlock=63572586&apikey=IK3GCCMPQXTRIEGBAXQ9DUFWIUR524K3MW
+    uri: https://api-optimistic.etherscan.io/api?module=account&action=txlistinternal&sort=asc&txHash=0xda810d7e1757c6ce7387b437c26472f802eec47404e60d4f1eaa9f23bf8d8b73&apikey=IK3GCCMPQXTRIEGBAXQ9DUFWIUR524K3MW
   response:
     body:
-      string: '{"status":"1","message":"OK","result":[{"blockNumber":"63572586","timeStamp":"1673337921","hash":"0xda810d7e1757c6ce7387b437c26472f802eec47404e60d4f1eaa9f23bf8d8b73","from":"0xfedfaf1a10335448b7fa0268f56d2b44dbd357de","to":"0x4200000000000000000000000000000000000042","value":"0","contractAddress":"","input":"","type":"call","gas":"70347","gasUsed":"69042","traceId":"0_1","isError":"0","errCode":""}]}'
+      string: '{"status":"0","message":"No transactions found","result":[]}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
@@ -175,7 +175,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 78e2db290db91a7c-MAD
+      - 7a13478bab2bca2f-HAM
       Cache-Control:
       - private
       Connection:
@@ -183,7 +183,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 23 Jan 2023 19:15:05 GMT
+      - Wed, 01 Mar 2023 17:56:56 GMT
       Server:
       - cloudflare
       Vary:
@@ -193,57 +193,7 @@ interactions:
       alt-svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       content-length:
-      - '403'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.26.4.dev518+g7f1323246.d20230115
-    method: GET
-    uri: https://api-optimistic.etherscan.io/api?module=proxy&action=eth_getTransactionReceipt&txhash=0xda810d7e1757c6ce7387b437c26472f802eec47404e60d4f1eaa9f23bf8d8b73&apikey=IK3GCCMPQXTRIEGBAXQ9DUFWIUR524K3MW
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0x84b286a21097cdb7bdf1c3b56ed7a649e504dcf32ad150ea4bae9d958914bea2","blockNumber":"0x3ca0a6a","contractAddress":null,"cumulativeGasUsed":"0x1deb4","from":"0x2b888954421b424c5d3d9ce9bb67c9bd47537d12","gasUsed":"0x1deb4","l1Fee":"0xb952494ca518","l1FeeScalar":"1","l1GasPrice":"0x35fd06472","l1GasUsed":"0x36ec","logs":[{"address":"0x4200000000000000000000000000000000000042","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000fedfaf1a10335448b7fa0268f56d2b44dbd357de","0x0000000000000000000000002b888954421b424c5d3d9ce9bb67c9bd47537d12"],"data":"0x00000000000000000000000000000000000000000000002cdf7994c054240000","blockNumber":"0x3ca0a6a","transactionHash":"0xda810d7e1757c6ce7387b437c26472f802eec47404e60d4f1eaa9f23bf8d8b73","transactionIndex":"0x0","blockHash":"0x84b286a21097cdb7bdf1c3b56ed7a649e504dcf32ad150ea4bae9d958914bea2","logIndex":"0x0","removed":false},{"address":"0x4200000000000000000000000000000000000042","topics":["0xdec2bacdd2f05b59de34da9b523dff8be42e5e38e818c82fdb0bae774387a724","0x0000000000000000000000002b888954421b424c5d3d9ce9bb67c9bd47537d12"],"data":"0x00000000000000000000000000000000000000000000bee2784937ab1fbaa42500000000000000000000000000000000000000000000bf0f57c2cc6b73dea425","blockNumber":"0x3ca0a6a","transactionHash":"0xda810d7e1757c6ce7387b437c26472f802eec47404e60d4f1eaa9f23bf8d8b73","transactionIndex":"0x0","blockHash":"0x84b286a21097cdb7bdf1c3b56ed7a649e504dcf32ad150ea4bae9d958914bea2","logIndex":"0x1","removed":false},{"address":"0xfedfaf1a10335448b7fa0268f56d2b44dbd357de","topics":["0x4ec90e965519d92681267467f775ada5bd214aa92c0dc93d90a5e880ce9ed026"],"data":"0x000000000000000000000000000000000000000000000000000000000000a3450000000000000000000000002b888954421b424c5d3d9ce9bb67c9bd47537d1200000000000000000000000000000000000000000000002cdf7994c054240000","blockNumber":"0x3ca0a6a","transactionHash":"0xda810d7e1757c6ce7387b437c26472f802eec47404e60d4f1eaa9f23bf8d8b73","transactionIndex":"0x0","blockHash":"0x84b286a21097cdb7bdf1c3b56ed7a649e504dcf32ad150ea4bae9d958914bea2","logIndex":"0x2","removed":false}],"logsBloom":"0x00000000000000000000008000000000000000000000000000000000000000000000000000000200000000000002000000000000000000000000000200000040020000000000000020000008000000000000000000000000000000000400000000000000000000800040000000000040000000000000000000000010000000000000100000000000000000000000000000000000000000000000000000000000040000000000000000040000000000000000000000000000000001000000000000000002000000000000000000000000008000000000000000000000000000800000000000000000000000000000000000000000000020000000000000000000","status":"0x1","to":"0xfedfaf1a10335448b7fa0268f56d2b44dbd357de","transactionHash":"0xda810d7e1757c6ce7387b437c26472f802eec47404e60d4f1eaa9f23bf8d8b73","transactionIndex":"0x0"}}
-
-        '
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 78e2db29ef8e1a7c-MAD
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Mon, 23 Jan 2023 19:15:06 GMT
-      Server:
-      - cloudflare
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
-      content-length:
-      - '2868'
+      - '60'
     status:
       code: 200
       message: OK
