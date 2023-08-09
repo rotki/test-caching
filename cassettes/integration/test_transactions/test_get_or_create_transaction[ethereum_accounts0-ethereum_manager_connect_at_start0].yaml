@@ -1,0 +1,453 @@
+interactions:
+- request:
+    body: '{"jsonrpc": "2.0", "method": "web3_clientVersion", "params": [], "id":
+      0}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '73'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Web3.py/5.31.3/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":0,"result":"Geth/v1.11.6-omnibus-f83e1598/linux-amd64/go1.20.3"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '86'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 20:18:09 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "net_version", "params": [], "id": 1}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '66'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Web3.py/5.31.3/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"1"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '37'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 20:18:09 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 2}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '70'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Web3.py/5.31.3/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":2,"result":"0x110ee62"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '45'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 20:18:09 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.blockcypher.com/v1/eth/main
+  response:
+    body:
+      string: "{\n  \"name\": \"ETH.main\",\n  \"height\": 17886818,\n  \"hash\":
+        \"c70a54e5640f02b2791b74d98b665b6b3c904f8eb1ecc775adebbf0348e382db\",\n  \"time\":
+        \"2023-08-10T20:18:02.088906716Z\",\n  \"latest_url\": \"https://api.blockcypher.com/v1/eth/main/blocks/c70a54e5640f02b2791b74d98b665b6b3c904f8eb1ecc775adebbf0348e382db\",\n
+        \ \"previous_hash\": \"000aadb06b49b74b19357d78b7c4f2ed5fb34c9caa2ee2b4741644006601b468\",\n
+        \ \"previous_url\": \"https://api.blockcypher.com/v1/eth/main/blocks/000aadb06b49b74b19357d78b7c4f2ed5fb34c9caa2ee2b4741644006601b468\",\n
+        \ \"peer_count\": 80,\n  \"unconfirmed_count\": 57921,\n  \"high_gas_price\":
+        30990886355,\n  \"medium_gas_price\": 26552863026,\n  \"low_gas_price\": 23530339318,\n
+        \ \"high_priority_fee\": 2862052280,\n  \"medium_priority_fee\": 2199249266,\n
+        \ \"low_priority_fee\": 1223234843,\n  \"base_fee\": 27172254663,\n  \"last_fork_height\":
+        17886277,\n  \"last_fork_hash\": \"b7670ac8ed4c361d33d3084d798d73d56bd4ffeb2cd530baf8d4e8b41ffd9a2a\"\n}"
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7f4aed2a39b17272-HAM
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 20:18:10 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      access-control-allow-methods:
+      - GET, POST, PUT, DELETE
+      access-control-allow-origin:
+      - '*'
+      content-length:
+      - '922'
+      x-ratelimit-remaining:
+      - '99'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x50532e4Be195D1dE0c2E6DfA46D9ec0a4Fee6861",
+      "0x15402"], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '124'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Web3.py/5.31.3/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":3,"result":"0x46dd54b7972bf800"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '54'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 20:18:10 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfed1be16dfba1b22060"],
+      "id": 4}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Web3.py/5.31.3/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":4,"result":{"blockHash":"0x4e3a3754410177e6937ef1f84bba68ea139e8d1a2258c5f85db9f1cd715a1bdd","blockNumber":"0xb443","from":"0xa1e4380a3b1f749673e270229993ee55f35663b4","gas":"0x5208","gasPrice":"0x2d79883d2000","hash":"0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfed1be16dfba1b22060","input":"0x","nonce":"0x0","r":"0x88ff6cf0fefd94db46111149ae4bfc179e9b94721fffd821d38d16464b3f71d0","s":"0x45e0aff800961cfce805daef7016b9b675c137a6a41a548f7b60a3484c06a33a","to":"0x5df9b87991262f6ba471f09758cde1c0fc1de734","transactionIndex":"0x0","type":"0x0","v":"0x1c","value":"0x7a69"}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '599'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 20:18:10 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0x2e68dd828594ea71fe0afccfad7748c90ffcd0f1add44d0d249bf79887da9318"],
+      "id": 5}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Web3.py/5.31.3/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":5,"result":{"accessList":[],"blockHash":"0x483e25d229fa8e644f32e509dbf32ed9e970858b8bd6c007ba18a41c2c8f412b","blockNumber":"0xc87e08","chainId":"0x1","from":"0x2388d79792c59fc66f993c3c6482ebd689cf9cd4","gas":"0x5208","gasPrice":"0x111573477d","hash":"0x2e68dd828594ea71fe0afccfad7748c90ffcd0f1add44d0d249bf79887da9318","input":"0x","maxFeePerGas":"0x136419c136","maxPriorityFeePerGas":"0x3b9aca00","nonce":"0xf","r":"0xe7bf49b7af8c7ec0fcfdb32cb2cce0766acb3c00c47c7850577f688a4167c5c3","s":"0x68d468e7eb7fdf8512a64b51d2232a890ee4068109398a066fa286d6ee88fd87","to":"0x2819c144d5946404c0516b6f817a960db37d4929","transactionIndex":"0x3e","type":"0x2","v":"0x0","value":"0x488edebcc400f9"}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '707'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 20:18:10 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBlockByNumber", "params": ["0xc87e08",
+      false], "id": 6}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Web3.py/5.31.3/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":6,"result":{"baseFeePerGas":"0x10d9d87d7d","difficulty":"0x1dccd49503e39c","extraData":"0x657a696c2e6d65","gasLimit":"0x1c9c380","gasUsed":"0x63d585","hash":"0x483e25d229fa8e644f32e509dbf32ed9e970858b8bd6c007ba18a41c2c8f412b","logsBloom":"0xa42160024d02044180a60e508510f20054643350c1518802401120684d52810220480a00029590000442cc1b2300554082a5a8218b452139c924088a022409d8009800b240c0010858900b3ab09002b08022073084e4020d124696b2a01802e1949c808022be080411201080021119102203c431111ab42540035211000b34c2712803209684000a90c0046090c10400242121310140d4ca030a23422c1038d14368532802092108b0ac709281601f20401e002061092020053102001fa9006008118232e0908181232004a0c44a0104250320201600061844028202219660a42135e0120014ca011011922002c800832225c0333201a16229838080d42a1480","miner":"0x8595dd9e0438640b5e1254f9df579ac12a86865f","mixHash":"0xc9f0a8cb831c1dff83e821e2bf1b36725c948e1fc12d63ef08ba142dcbb6e3f8","nonce":"0xaa5875eb5d3784b6","number":"0xc87e08","parentHash":"0x9e2382b29d797ce67615214f106c98d0a892050e718d065267baa90ed74e11dc","receiptsRoot":"0x7a33d3b93caadd1141a673c7a81cc2f087b4a860f468fb618894b2d553a4f30e","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0x68f2","stateRoot":"0xf4dea8c1fc1ee9d129e26a5e1b00880c82ed0b4e32f010ca157328debceec321","timestamp":"0x612f60e4","totalDifficulty":"0x653b7bb5970fb2818c1","transactions":["0xeef635733be38af5eca92e2dcc0dc7a124dfaf97bafe054fe904025233cea22c","0xa3b26f310636027ed64952498ede2b4e23716963cf5a1bba0e492b87f0d7576d","0x0725767b3bdfeb230350b30dc9fc430304293abad76ae2d1d6e7a7d6db4eb047","0xdecd659a2d1e6a3262e460c186696c8a4121ae8ff9cd5d597b3175e6740f27dc","0xb581b699d597dbd27920b0e140bf0a2d458102444c733522217d41750cfb37b1","0x4d625e1cdabf540fcca20731a8d1a555e90d016004f8d69893b8c6cd485c9165","0x6467064541ea7f5b74ef4e3f732a374085382598cb46fa3bbc8ef4b2adc32c02","0x865a2887ee071bf8e111f8283b612f1b0f58bccd6cc059cb37e93171dc82fdd6","0xe0a978709a4b3e7709c8010981d8dbb28bd86470bba99ebeee9e0b963a051106","0x40234461b8dc2bbcb780f9e08723684e45d2769da6b3edb57c63847e49052d0a","0x61c2e546364cb27af994af4795fafd9d5ae7324f1a571389202207de4de599a0","0xe4c6493aa57a0ac4fc8cc1fd24f90575814982c7d27af774c8c3781e28169ba1","0xdf141da34923e37cb59848a738d940076da84607e48b3989c5f8e5f9c182fdee","0x09db03b3d5a8e880bd591c63b982adf06ecb8b7f8e48c291fe5d70fe0a9ae626","0x82aa866f03b551cc42083a4afb4aa81ce9fc1127aac4a52986131824ca9ed804","0x571c1236682a5d08d641598d11e6923d1387695b9b42533fbd875278f0412f23","0x9630cab0abe0922bcf2d47f6c024920b705e8b83db89511ef7f765df57d2fb9f","0x255d35849c3a0772440a362310240b10ff5ce92c8b9c66c2e18861cee845cbbb","0x3635dbeff521158275fc5b9e987333387220853e1859ffa283b3c1e171ea9942","0x0656feebd0bb3c03f3618292ba1869f183c8f53f92ca83db309b74119308ebf2","0x218500ec5f9f715ceebfa2a7ad9225d0ded7f83cc23531fc9081f27f2277438e","0x7a3c734feefd225350008aaa1309a2abcb2de4fc5aedd8d3014f3936d39f001b","0xcaae43f44c30ec86e35ff82e04fba2bf010b628b4e7368758b37ae332f8087f7","0xafc49ad2a0a1532b8907c3db1d091b66a1a5d86e3c020aa32c7a1a956b69352b","0xe82fd223abdb67653214ac280ef372ed67c3870c64f22dbeca2b4870d2d68d3b","0xb5306c45773cab3983997504a11815a086936d53b5216853019e9bfa2c4c2efd","0x291890dacecdc70881b5cbbc2d285c0bd58b282916c58ff93fde5436f8e57a74","0x248856ae113c8f83c16e660775e5abd6a2d95591c9aa73b146a25a7f54d4406d","0x13740f5d861d5d7659a6f6e40b9283ac37a6976cbf734049a545fe1b8ccd7630","0x4e9b7079c220e77a823b6264b02b11ac602e12e6874f3d6846e5339cabdab0f5","0xf214ac3f8324dbdbdebf65ed3fb0460a655caa138bf315b0ddb75fc2d91fa40d","0x70c67b73e5a663cc840f72f0914ab9893634e0f77ee96aa2a7e732822870e2b4","0x4528f9f5b7e9b1ce12306c521ea514d8c8de4fd903387b0fc65ed854e1a08610","0xb061b700eaa91fe7c1bb4c27b1c0344c820a33d2e6820cd8e922829df7e687f1","0x2bcfbd3cd5d750139bca7ef2434f672746bfbe706bbd89970734fea221213639","0xfceeb6ab66a7be47dc45d3b9bfe39d744d5ef74cf38e133b26632e9f87248eba","0xee7ecfc3f5ec1f8cbb83efb3f0d76e733c12a2081c8057d025c1a3cd0ad00e40","0x28e574629f07a5611db7f96fc41a46faa66ca459fa39597eb49942d0c037cb35","0x96e4d5051ae1cbd2161e87d410f1a697853f7faf65874d66d539f16683c21d92","0xe854dcaa19d290c11f921ebdeeb5cd3472e3a5ff74960d68cf94636f77882614","0x8d2ebd64c309b0a34a64e28a34bbe6e14cbadbc6d014b8c2ad584a4fc3ff0209","0xa332e168a8333e31d4778b10e6ffc5bfa581514da641db716c6387e8ddfb2034","0xc0c6d9081f1f2d9c213572136ab49a8a2bc2d64bdaeda5ef5a5b0e7fa22cf763","0x529ad9dbfa772b3e6f53dc1ac758dbb9faed843c008336da25f2f0d81764aca7","0x856b98e6854f2b48ad319dd5d26369ec73f11da8d6b7b33a07bb7c5d1fc3604e","0xa6e49b2da99cb73eec018e75cbfb551d991d4f706d6d7cec3989dd7f595b1978","0x12503cec6e85b88730fede1aadeb5e5f0718fc04f916a41acb3215deb5119867","0x4ed0f8172719a114e4d05c0fff12d9bf3042fe97538172c6fec0ece57642d8f0","0x5e176c558b3b7f1160ccdfd5d76e720ca6789e686053998cb2ea3513f145e00c","0x772ef23edc47a9a687712d098dd6fe80b9277c7654c54b7c84d14a08fa557a02","0x17978e9be62d3f269d3078b0cffd809f43855c85328a564487eaaf31505f374b","0xff5e54d0548eb012eb35f0369532a815b43a1e9d287d1ee97025afab00980391","0xefdde89e8a7b2e41252d821e2bcee9aa6fff7375b09d64de416e06c3835c6a64","0x5217be203f8db8219ec7b4c3bbfdb5074ac1dadc6deb076fd91f7a5df1392c38","0x7e43ea7ee8c1679c456caab88fd05998565be67ae9d9cc394d6e4316661b03dd","0x4e5cb7d2eed6caa2013d0e1cdc44e74e575f8166c6e1aae4a982c8d96a39d522","0xfec4a52c175ee479b5f7852052670e33f9d2a9afe6524938f660ab1a9aeede45","0x9111861c597ec45f22ac4cc63a64c40c972782b3306fd626c41b39d139347fc7","0xf723ba222241e9286c2e21f1ec41ff53f6f9b15dbd55cc27ab9270f2c7f76f15","0x820d68ccf27d7f38544ffdacc2fbb985332ee52efccd09fbded708a9f27d7b2e","0x642857353d0c992363c548f1644df26ad3906465f502bedd01a9bf6f6c65b370","0xf1b6600eac6f29bb8b4732785aeac7c8fbea395808ffe95c20ceefda3d58549d","0x2e68dd828594ea71fe0afccfad7748c90ffcd0f1add44d0d249bf79887da9318"],"transactionsRoot":"0xd50d53e434367b6382dbf833a520bb66b0bd7e58c51f45a573dad35520c2e4f2","uncles":[]}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 20:18:10 GMT
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - Accept-Encoding
+      content-length:
+      - '5835'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionReceipt", "params": ["0x2e68dd828594ea71fe0afccfad7748c90ffcd0f1add44d0d249bf79887da9318"],
+      "id": 7}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '148'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Web3.py/5.31.3/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":7,"result":{"blockHash":"0x483e25d229fa8e644f32e509dbf32ed9e970858b8bd6c007ba18a41c2c8f412b","blockNumber":"0xc87e08","contractAddress":null,"cumulativeGasUsed":"0x63d585","effectiveGasPrice":"0x111573477d","from":"0x2388d79792c59fc66f993c3c6482ebd689cf9cd4","gasUsed":"0x5208","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":"0x2819c144d5946404c0516b6f817a960db37d4929","transactionHash":"0x2e68dd828594ea71fe0afccfad7748c90ffcd0f1add44d0d249bf79887da9318","transactionIndex":"0x3e","type":"0x2"}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1031'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 20:18:11 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0x2e68dd828594ea71fe0afccfad7748c90ffcd0f1add44d0d249bf79887da9318"],
+      "id": 8}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Web3.py/5.31.3/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":8,"result":{"accessList":[],"blockHash":"0x483e25d229fa8e644f32e509dbf32ed9e970858b8bd6c007ba18a41c2c8f412b","blockNumber":"0xc87e08","chainId":"0x1","from":"0x2388d79792c59fc66f993c3c6482ebd689cf9cd4","gas":"0x5208","gasPrice":"0x111573477d","hash":"0x2e68dd828594ea71fe0afccfad7748c90ffcd0f1add44d0d249bf79887da9318","input":"0x","maxFeePerGas":"0x136419c136","maxPriorityFeePerGas":"0x3b9aca00","nonce":"0xf","r":"0xe7bf49b7af8c7ec0fcfdb32cb2cce0766acb3c00c47c7850577f688a4167c5c3","s":"0x68d468e7eb7fdf8512a64b51d2232a890ee4068109398a066fa286d6ee88fd87","to":"0x2819c144d5946404c0516b6f817a960db37d4929","transactionIndex":"0x3e","type":"0x2","v":"0x0","value":"0x488edebcc400f9"}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '707'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 20:18:11 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBlockByNumber", "params": ["0xc87e08",
+      false], "id": 9}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Web3.py/5.31.3/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":9,"result":{"baseFeePerGas":"0x10d9d87d7d","difficulty":"0x1dccd49503e39c","extraData":"0x657a696c2e6d65","gasLimit":"0x1c9c380","gasUsed":"0x63d585","hash":"0x483e25d229fa8e644f32e509dbf32ed9e970858b8bd6c007ba18a41c2c8f412b","logsBloom":"0xa42160024d02044180a60e508510f20054643350c1518802401120684d52810220480a00029590000442cc1b2300554082a5a8218b452139c924088a022409d8009800b240c0010858900b3ab09002b08022073084e4020d124696b2a01802e1949c808022be080411201080021119102203c431111ab42540035211000b34c2712803209684000a90c0046090c10400242121310140d4ca030a23422c1038d14368532802092108b0ac709281601f20401e002061092020053102001fa9006008118232e0908181232004a0c44a0104250320201600061844028202219660a42135e0120014ca011011922002c800832225c0333201a16229838080d42a1480","miner":"0x8595dd9e0438640b5e1254f9df579ac12a86865f","mixHash":"0xc9f0a8cb831c1dff83e821e2bf1b36725c948e1fc12d63ef08ba142dcbb6e3f8","nonce":"0xaa5875eb5d3784b6","number":"0xc87e08","parentHash":"0x9e2382b29d797ce67615214f106c98d0a892050e718d065267baa90ed74e11dc","receiptsRoot":"0x7a33d3b93caadd1141a673c7a81cc2f087b4a860f468fb618894b2d553a4f30e","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0x68f2","stateRoot":"0xf4dea8c1fc1ee9d129e26a5e1b00880c82ed0b4e32f010ca157328debceec321","timestamp":"0x612f60e4","totalDifficulty":"0x653b7bb5970fb2818c1","transactions":["0xeef635733be38af5eca92e2dcc0dc7a124dfaf97bafe054fe904025233cea22c","0xa3b26f310636027ed64952498ede2b4e23716963cf5a1bba0e492b87f0d7576d","0x0725767b3bdfeb230350b30dc9fc430304293abad76ae2d1d6e7a7d6db4eb047","0xdecd659a2d1e6a3262e460c186696c8a4121ae8ff9cd5d597b3175e6740f27dc","0xb581b699d597dbd27920b0e140bf0a2d458102444c733522217d41750cfb37b1","0x4d625e1cdabf540fcca20731a8d1a555e90d016004f8d69893b8c6cd485c9165","0x6467064541ea7f5b74ef4e3f732a374085382598cb46fa3bbc8ef4b2adc32c02","0x865a2887ee071bf8e111f8283b612f1b0f58bccd6cc059cb37e93171dc82fdd6","0xe0a978709a4b3e7709c8010981d8dbb28bd86470bba99ebeee9e0b963a051106","0x40234461b8dc2bbcb780f9e08723684e45d2769da6b3edb57c63847e49052d0a","0x61c2e546364cb27af994af4795fafd9d5ae7324f1a571389202207de4de599a0","0xe4c6493aa57a0ac4fc8cc1fd24f90575814982c7d27af774c8c3781e28169ba1","0xdf141da34923e37cb59848a738d940076da84607e48b3989c5f8e5f9c182fdee","0x09db03b3d5a8e880bd591c63b982adf06ecb8b7f8e48c291fe5d70fe0a9ae626","0x82aa866f03b551cc42083a4afb4aa81ce9fc1127aac4a52986131824ca9ed804","0x571c1236682a5d08d641598d11e6923d1387695b9b42533fbd875278f0412f23","0x9630cab0abe0922bcf2d47f6c024920b705e8b83db89511ef7f765df57d2fb9f","0x255d35849c3a0772440a362310240b10ff5ce92c8b9c66c2e18861cee845cbbb","0x3635dbeff521158275fc5b9e987333387220853e1859ffa283b3c1e171ea9942","0x0656feebd0bb3c03f3618292ba1869f183c8f53f92ca83db309b74119308ebf2","0x218500ec5f9f715ceebfa2a7ad9225d0ded7f83cc23531fc9081f27f2277438e","0x7a3c734feefd225350008aaa1309a2abcb2de4fc5aedd8d3014f3936d39f001b","0xcaae43f44c30ec86e35ff82e04fba2bf010b628b4e7368758b37ae332f8087f7","0xafc49ad2a0a1532b8907c3db1d091b66a1a5d86e3c020aa32c7a1a956b69352b","0xe82fd223abdb67653214ac280ef372ed67c3870c64f22dbeca2b4870d2d68d3b","0xb5306c45773cab3983997504a11815a086936d53b5216853019e9bfa2c4c2efd","0x291890dacecdc70881b5cbbc2d285c0bd58b282916c58ff93fde5436f8e57a74","0x248856ae113c8f83c16e660775e5abd6a2d95591c9aa73b146a25a7f54d4406d","0x13740f5d861d5d7659a6f6e40b9283ac37a6976cbf734049a545fe1b8ccd7630","0x4e9b7079c220e77a823b6264b02b11ac602e12e6874f3d6846e5339cabdab0f5","0xf214ac3f8324dbdbdebf65ed3fb0460a655caa138bf315b0ddb75fc2d91fa40d","0x70c67b73e5a663cc840f72f0914ab9893634e0f77ee96aa2a7e732822870e2b4","0x4528f9f5b7e9b1ce12306c521ea514d8c8de4fd903387b0fc65ed854e1a08610","0xb061b700eaa91fe7c1bb4c27b1c0344c820a33d2e6820cd8e922829df7e687f1","0x2bcfbd3cd5d750139bca7ef2434f672746bfbe706bbd89970734fea221213639","0xfceeb6ab66a7be47dc45d3b9bfe39d744d5ef74cf38e133b26632e9f87248eba","0xee7ecfc3f5ec1f8cbb83efb3f0d76e733c12a2081c8057d025c1a3cd0ad00e40","0x28e574629f07a5611db7f96fc41a46faa66ca459fa39597eb49942d0c037cb35","0x96e4d5051ae1cbd2161e87d410f1a697853f7faf65874d66d539f16683c21d92","0xe854dcaa19d290c11f921ebdeeb5cd3472e3a5ff74960d68cf94636f77882614","0x8d2ebd64c309b0a34a64e28a34bbe6e14cbadbc6d014b8c2ad584a4fc3ff0209","0xa332e168a8333e31d4778b10e6ffc5bfa581514da641db716c6387e8ddfb2034","0xc0c6d9081f1f2d9c213572136ab49a8a2bc2d64bdaeda5ef5a5b0e7fa22cf763","0x529ad9dbfa772b3e6f53dc1ac758dbb9faed843c008336da25f2f0d81764aca7","0x856b98e6854f2b48ad319dd5d26369ec73f11da8d6b7b33a07bb7c5d1fc3604e","0xa6e49b2da99cb73eec018e75cbfb551d991d4f706d6d7cec3989dd7f595b1978","0x12503cec6e85b88730fede1aadeb5e5f0718fc04f916a41acb3215deb5119867","0x4ed0f8172719a114e4d05c0fff12d9bf3042fe97538172c6fec0ece57642d8f0","0x5e176c558b3b7f1160ccdfd5d76e720ca6789e686053998cb2ea3513f145e00c","0x772ef23edc47a9a687712d098dd6fe80b9277c7654c54b7c84d14a08fa557a02","0x17978e9be62d3f269d3078b0cffd809f43855c85328a564487eaaf31505f374b","0xff5e54d0548eb012eb35f0369532a815b43a1e9d287d1ee97025afab00980391","0xefdde89e8a7b2e41252d821e2bcee9aa6fff7375b09d64de416e06c3835c6a64","0x5217be203f8db8219ec7b4c3bbfdb5074ac1dadc6deb076fd91f7a5df1392c38","0x7e43ea7ee8c1679c456caab88fd05998565be67ae9d9cc394d6e4316661b03dd","0x4e5cb7d2eed6caa2013d0e1cdc44e74e575f8166c6e1aae4a982c8d96a39d522","0xfec4a52c175ee479b5f7852052670e33f9d2a9afe6524938f660ab1a9aeede45","0x9111861c597ec45f22ac4cc63a64c40c972782b3306fd626c41b39d139347fc7","0xf723ba222241e9286c2e21f1ec41ff53f6f9b15dbd55cc27ab9270f2c7f76f15","0x820d68ccf27d7f38544ffdacc2fbb985332ee52efccd09fbded708a9f27d7b2e","0x642857353d0c992363c548f1644df26ad3906465f502bedd01a9bf6f6c65b370","0xf1b6600eac6f29bb8b4732785aeac7c8fbea395808ffe95c20ceefda3d58549d","0x2e68dd828594ea71fe0afccfad7748c90ffcd0f1add44d0d249bf79887da9318"],"transactionsRoot":"0xd50d53e434367b6382dbf833a520bb66b0bd7e58c51f45a573dad35520c2e4f2","uncles":[]}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 20:18:11 GMT
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - Accept-Encoding
+      content-length:
+      - '5835'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionReceipt", "params": ["0x2e68dd828594ea71fe0afccfad7748c90ffcd0f1add44d0d249bf79887da9318"],
+      "id": 10}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '149'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Web3.py/5.31.3/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":10,"result":{"blockHash":"0x483e25d229fa8e644f32e509dbf32ed9e970858b8bd6c007ba18a41c2c8f412b","blockNumber":"0xc87e08","contractAddress":null,"cumulativeGasUsed":"0x63d585","effectiveGasPrice":"0x111573477d","from":"0x2388d79792c59fc66f993c3c6482ebd689cf9cd4","gasUsed":"0x5208","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":"0x2819c144d5946404c0516b6f817a960db37d4929","transactionHash":"0x2e68dd828594ea71fe0afccfad7748c90ffcd0f1add44d0d249bf79887da9318","transactionIndex":"0x3e","type":"0x2"}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1032'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 20:18:11 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+version: 1

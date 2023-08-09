@@ -1,0 +1,359 @@
+interactions:
+- request:
+    body: '{"jsonrpc": "2.0", "method": "web3_clientVersion", "params": [], "id":
+      0}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '73'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Web3.py/5.31.3/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":0,"result":"Geth/v1.11.6-omnibus-f83e1598/linux-amd64/go1.20.3"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '86'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 21:07:11 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "net_version", "params": [], "id": 1}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '66'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Web3.py/5.31.3/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"1"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '37'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 21:07:11 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 2}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '70'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Web3.py/5.31.3/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":2,"result":"0x110ef57"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '45'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 21:07:11 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.blockcypher.com/v1/eth/main
+  response:
+    body:
+      string: "{\n  \"name\": \"ETH.main\",\n  \"height\": 17887063,\n  \"hash\":
+        \"4bc6f1597f15d6f6f33f58a6fca00eaccb813dd108176c221b0818c3ac4fe8b1\",\n  \"time\":
+        \"2023-08-10T21:07:02.455757258Z\",\n  \"latest_url\": \"https://api.blockcypher.com/v1/eth/main/blocks/4bc6f1597f15d6f6f33f58a6fca00eaccb813dd108176c221b0818c3ac4fe8b1\",\n
+        \ \"previous_hash\": \"0040ec393855ac648297dee6822ef22702140105d9644048d53df79e715075f1\",\n
+        \ \"previous_url\": \"https://api.blockcypher.com/v1/eth/main/blocks/0040ec393855ac648297dee6822ef22702140105d9644048d53df79e715075f1\",\n
+        \ \"peer_count\": 80,\n  \"unconfirmed_count\": 57246,\n  \"high_gas_price\":
+        29184901640,\n  \"medium_gas_price\": 25902773027,\n  \"low_gas_price\": 23723322480,\n
+        \ \"high_priority_fee\": 2846758169,\n  \"medium_priority_fee\": 2311074173,\n
+        \ \"low_priority_fee\": 1233882238,\n  \"base_fee\": 21170347801,\n  \"last_fork_height\":
+        17886277,\n  \"last_fork_hash\": \"b7670ac8ed4c361d33d3084d798d73d56bd4ffeb2cd530baf8d4e8b41ffd9a2a\"\n}"
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7f4b34fdecd6414b-HAM
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 21:07:12 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      access-control-allow-methods:
+      - GET, POST, PUT, DELETE
+      access-control-allow-origin:
+      - '*'
+      content-length:
+      - '922'
+      x-ratelimit-remaining:
+      - '99'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x50532e4Be195D1dE0c2E6DfA46D9ec0a4Fee6861",
+      "0x15402"], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '124'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Web3.py/5.31.3/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":3,"result":"0x46dd54b7972bf800"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '54'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 21:07:12 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfed1be16dfba1b22060"],
+      "id": 4}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Web3.py/5.31.3/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":4,"result":{"blockHash":"0x4e3a3754410177e6937ef1f84bba68ea139e8d1a2258c5f85db9f1cd715a1bdd","blockNumber":"0xb443","from":"0xa1e4380a3b1f749673e270229993ee55f35663b4","gas":"0x5208","gasPrice":"0x2d79883d2000","hash":"0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfed1be16dfba1b22060","input":"0x","nonce":"0x0","r":"0x88ff6cf0fefd94db46111149ae4bfc179e9b94721fffd821d38d16464b3f71d0","s":"0x45e0aff800961cfce805daef7016b9b675c137a6a41a548f7b60a3484c06a33a","to":"0x5df9b87991262f6ba471f09758cde1c0fc1de734","transactionIndex":"0x0","type":"0x0","v":"0x1c","value":"0x7a69"}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '599'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 10 Aug 2023 21:07:12 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.29.2.dev101+gd51b56bef
+    method: GET
+    uri: https://api.etherscan.io/api?module=account&action=txlist&sort=asc&address=0x4bba290826c253bd854121346c370a9886d1bc26&startBlock=0&endBlock=0&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
+  response:
+    body:
+      string: '{"status":"0","message":"No transactions found","result":[]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 10 Aug 2023 21:07:13 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      content-length:
+      - '60'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.29.2.dev101+gd51b56bef
+    method: GET
+    uri: https://api.etherscan.io/api?module=account&action=txlist&sort=asc&address=0x756F45E3FA69347A9A973A725E3C98bC4db0b5a0&startBlock=0&endBlock=0&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
+  response:
+    body:
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"0","timeStamp":"1438269973","hash":"GENESIS_756f45e3fa69347a9a973a725e3c98bc4db0b5a0","nonce":"","blockHash":"","transactionIndex":"0","from":"GENESIS","to":"0x756f45e3fa69347a9a973a725e3c98bc4db0b5a0","value":"200000000000000000000","gas":"0","gasPrice":"0","isError":"0","txreceipt_status":"","input":"","contractAddress":"","cumulativeGasUsed":"0","gasUsed":"0","confirmations":"17887064","methodId":"","functionName":""}]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 10 Aug 2023 21:07:13 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      content-length:
+      - '481'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.29.2.dev101+gd51b56bef
+    method: GET
+    uri: https://api.etherscan.io/api?module=account&action=txlist&sort=asc&address=0x9328D55ccb3FCe531f199382339f0E576ee840A3&startBlock=0&endBlock=0&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
+  response:
+    body:
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"0","timeStamp":"1438269973","hash":"GENESIS_9328d55ccb3fce531f199382339f0e576ee840a3","nonce":"","blockHash":"","transactionIndex":"0","from":"GENESIS","to":"0x9328d55ccb3fce531f199382339f0e576ee840a3","value":"4000000000000000000000","gas":"0","gasPrice":"0","isError":"0","txreceipt_status":"","input":"","contractAddress":"","cumulativeGasUsed":"0","gasUsed":"0","confirmations":"17887064","methodId":"","functionName":""}]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 10 Aug 2023 21:07:13 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      content-length:
+      - '482'
+    status:
+      code: 200
+      message: OK
+version: 1
