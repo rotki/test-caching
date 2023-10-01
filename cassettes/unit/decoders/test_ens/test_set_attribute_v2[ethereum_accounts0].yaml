@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.27.2.dev345+gc45aac5f6
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getTransactionByHash&txhash=0x6b354e4da21cfb06a8eb4cb5b7efd20558ae3be6a7a7c563f318e041fb3bfdd9&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 12 Apr 2023 12:28:04 GMT
+      - Sun, 01 Oct 2023 17:14:37 GMT
       Server:
       - nginx
       Vary:
@@ -53,7 +53,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.27.2.dev345+gc45aac5f6
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getBlockByNumber&tag=0x103e10e&boolean=true&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -75,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 12 Apr 2023 12:28:05 GMT
+      - Sun, 01 Oct 2023 17:14:37 GMT
       Server:
       - nginx
       Vary:
@@ -97,7 +97,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.27.2.dev345+gc45aac5f6
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getTransactionReceipt&txhash=0x6b354e4da21cfb06a8eb4cb5b7efd20558ae3be6a7a7c563f318e041fb3bfdd9&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -119,7 +119,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 12 Apr 2023 12:28:05 GMT
+      - Sun, 01 Oct 2023 17:14:37 GMT
       Server:
       - nginx
       Vary:
@@ -141,7 +141,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.27.2.dev345+gc45aac5f6
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=account&action=txlistinternal&sort=asc&txHash=0x6b354e4da21cfb06a8eb4cb5b7efd20558ae3be6a7a7c563f318e041fb3bfdd9&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -161,7 +161,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 12 Apr 2023 12:28:06 GMT
+      - Sun, 01 Oct 2023 17:14:38 GMT
       Server:
       - nginx
       Vary:
@@ -174,7 +174,8 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: null
+    body: '{"query": "{\n  domains(first: 1, where: {id: \"0xace3b79df94781a20336184d5feb0f97bf7018b546a81bc624f792b287cfe917\"})
+      {\n    name\n  }\n}\n"}'
     headers:
       Accept:
       - '*/*'
@@ -182,82 +183,50 @@ interactions:
       - gzip, deflate
       Connection:
       - keep-alive
+      Content-Length:
+      - '142'
+      Content-Type:
+      - application/json
       User-Agent:
-      - rotki/1.27.2.dev345+gc45aac5f6
-    method: GET
-    uri: https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x231b0Ee14048e9dCcD1d247744d114a4EB5E8E63&data=0x3b3b57deace3b79df94781a20336184d5feb0f97bf7018b546a81bc624f792b287cfe917&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
+      - python-requests/2.31.0
+    method: POST
+    uri: https://api.thegraph.com/subgraphs/name/ensdomains/ens
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000bc2e9df6281a8e853121dc52dbc8bcc8bbe3ed0e"}
-
-        '
+      string: '{"data":{"domains":[{"name":"alextatarsky.eth"}]}}'
     headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      Cache-Control:
-      - private
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-Ray:
+      - 80f657d4ed1344fe-TXL
       Connection:
       - keep-alive
       Content-Type:
-      - application/json; charset=utf-8
+      - application/json
       Date:
-      - Wed, 12 Apr 2023 12:28:06 GMT
+      - Sun, 01 Oct 2023 17:14:38 GMT
       Server:
-      - nginx
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=vOPgpxmWXMzzAGOcCT_edKuw_Hj4_GoWSqc8nN9XMzg-1696180478-0-ASFP3pULqzNMFmKxfu3vjeGc6hblegRm5I5C1om0ZWNpegkd6gtxyDlUPZ+sErkK1IUyPNxsm/4fREGA/tBd8qE=;
+        path=/; expires=Sun, 01-Oct-23 17:44:38 GMT; domain=.thegraph.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Vary:
       - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
+      access-control-allow-headers:
+      - Content-Type, User-Agent
+      access-control-allow-methods:
+      - GET, OPTIONS, POST
       content-length:
-      - '103'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.27.2.dev345+gc45aac5f6
-    method: GET
-    uri: https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x3671aE578E63FdF66ad4F3E12CC0c0d71Ac7510C&data=0xcbf8b66c00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000001000000000000000000000000bc2e9df6281a8e853121dc52dbc8bcc8bbe3ed0e&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010616c65787461746172736b792e65746800000000000000000000000000000000"}
-
-        '
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 12 Apr 2023 12:28:06 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '359'
+      - '50'
+      graph-attestable:
+      - 'true'
     status:
       code: 200
       message: OK
