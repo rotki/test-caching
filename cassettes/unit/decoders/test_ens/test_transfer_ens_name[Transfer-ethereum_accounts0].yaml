@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev270+g732cb1b71.d20230625
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getTransactionByHash&txhash=0x03f148c39b347c2d9ab87d31d61a7115156220f8641b7bed838ff62542f3eebe&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 26 Jun 2023 14:22:52 GMT
+      - Sun, 01 Oct 2023 17:19:29 GMT
       Server:
       - nginx
       Vary:
@@ -53,7 +53,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev270+g732cb1b71.d20230625
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getBlockByNumber&tag=0x10bfc60&boolean=true&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -75,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 26 Jun 2023 14:22:52 GMT
+      - Sun, 01 Oct 2023 17:19:30 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -99,7 +99,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev270+g732cb1b71.d20230625
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getTransactionReceipt&txhash=0x03f148c39b347c2d9ab87d31d61a7115156220f8641b7bed838ff62542f3eebe&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -121,7 +121,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 26 Jun 2023 14:22:53 GMT
+      - Sun, 01 Oct 2023 17:19:30 GMT
       Server:
       - nginx
       Vary:
@@ -143,7 +143,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev270+g732cb1b71.d20230625
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=account&action=txlistinternal&sort=asc&txHash=0x03f148c39b347c2d9ab87d31d61a7115156220f8641b7bed838ff62542f3eebe&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -163,7 +163,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 26 Jun 2023 14:22:53 GMT
+      - Sun, 01 Oct 2023 17:19:31 GMT
       Server:
       - nginx
       Vary:
@@ -185,7 +185,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev270+g732cb1b71.d20230625
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696&data=0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000c000000000000000000000000057f1887a8bf19b14fc0df6fd9b2acc9af147ea850000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000495d89b410000000000000000000000000000000000000000000000000000000000000000000000000000000057f1887a8bf19b14fc0df6fd9b2acc9af147ea850000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000406fdde0300000000000000000000000000000000000000000000000000000000&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -207,7 +207,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 26 Jun 2023 14:22:53 GMT
+      - Sun, 01 Oct 2023 17:19:31 GMT
       Server:
       - nginx
       Vary:
@@ -221,7 +221,7 @@ interactions:
       message: OK
 - request:
     body: '{"query": "{\n  domains(first: 1, where: {labelhash: \"0xa29d5de93d5a55a2cab07f0c361cf4df9b2f9ff0e91cd13906476a08545aea85\"})
-      {\n    labelName\n  }\n}\n"}'
+      {\n    name\n  }\n}\n"}'
     headers:
       Accept:
       - '*/*'
@@ -230,7 +230,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '154'
+      - '149'
       Content-Type:
       - application/json
       User-Agent:
@@ -239,24 +239,28 @@ interactions:
     uri: https://api.thegraph.com/subgraphs/name/ensdomains/ens
   response:
     body:
-      string: '{"data":{"domains":[{"labelName":"nebolax"}]}}'
+      string: '{"data":{"domains":[{"name":"nebolax.eth"}]}}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
       CF-Cache-Status:
       - DYNAMIC
       CF-Ray:
-      - 7dd61ae35df6451c-TXL
+      - 80f65efd194fac9e-TXL
       Connection:
       - keep-alive
       Content-Length:
-      - '46'
+      - '45'
       Content-Type:
       - application/json
       Date:
-      - Mon, 26 Jun 2023 14:22:54 GMT
+      - Sun, 01 Oct 2023 17:19:31 GMT
       Server:
       - cloudflare
+      Set-Cookie:
+      - __cf_bm=kF.8jUuERkfYlTSsITzwuv8F8GWNzXxvOAnwmg3ACLA-1696180771-0-AfyC/24cx+5w7pTcOSlu/7rvo09De01Ymo0glHan/fp0+ujjyYklWaCrzM4o1Wt6fuNCKZv2gzsiOsdVghpcaTs=;
+        path=/; expires=Sun, 01-Oct-23 17:49:31 GMT; domain=.thegraph.com; HttpOnly;
+        Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       Vary:

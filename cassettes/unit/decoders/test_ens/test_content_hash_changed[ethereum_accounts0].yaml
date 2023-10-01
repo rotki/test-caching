@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev173+g5c04d2ca5.d20230615
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getTransactionByHash&txhash=0x21fa4ef7a4c20f2548cc010ba00974632cca9e55edea4d50b3fb2c00c7f2080b&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jun 2023 11:35:40 GMT
+      - Sun, 01 Oct 2023 17:18:11 GMT
       Server:
       - nginx
       Vary:
@@ -53,7 +53,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev173+g5c04d2ca5.d20230615
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getBlockByNumber&tag=0x10a2481&boolean=true&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -75,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jun 2023 11:35:40 GMT
+      - Sun, 01 Oct 2023 17:18:12 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -99,7 +99,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev173+g5c04d2ca5.d20230615
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getTransactionReceipt&txhash=0x21fa4ef7a4c20f2548cc010ba00974632cca9e55edea4d50b3fb2c00c7f2080b&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -121,7 +121,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jun 2023 11:35:41 GMT
+      - Sun, 01 Oct 2023 17:18:12 GMT
       Server:
       - nginx
       Vary:
@@ -143,7 +143,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev173+g5c04d2ca5.d20230615
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=account&action=txlistinternal&sort=asc&txHash=0x21fa4ef7a4c20f2548cc010ba00974632cca9e55edea4d50b3fb2c00c7f2080b&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -163,7 +163,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jun 2023 11:35:41 GMT
+      - Sun, 01 Oct 2023 17:18:13 GMT
       Server:
       - nginx
       Vary:
@@ -176,7 +176,8 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: null
+    body: '{"query": "{\n  domains(first: 1, where: {id: \"0x9a47723462f4ab038e1d96f8df73a8dc984e7bd764863ea3c81feb057dd7849f\"})
+      {\n    name\n  }\n}\n"}'
     headers:
       Accept:
       - '*/*'
@@ -184,82 +185,48 @@ interactions:
       - gzip, deflate
       Connection:
       - keep-alive
+      Content-Length:
+      - '142'
+      Content-Type:
+      - application/json
       User-Agent:
-      - rotki/1.28.1.dev173+g5c04d2ca5.d20230615
-    method: GET
-    uri: https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41&data=0x3b3b57de9a47723462f4ab038e1d96f8df73a8dc984e7bd764863ea3c81feb057dd7849f&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
+      - python-requests/2.31.0
+    method: POST
+    uri: https://api.thegraph.com/subgraphs/name/ensdomains/ens
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000007277f7849966426d345d8f6b9afd1d3d89183083"}
-
-        '
+      string: '{"data":{"domains":[{"name":"kelsos.eth"}]}}'
     headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      Cache-Control:
-      - private
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-Ray:
+      - 80f65d14ebc9aca4-TXL
       Connection:
       - keep-alive
+      Content-Length:
+      - '44'
       Content-Type:
-      - application/json; charset=utf-8
+      - application/json
       Date:
-      - Thu, 15 Jun 2023 11:35:41 GMT
+      - Sun, 01 Oct 2023 17:18:13 GMT
       Server:
-      - nginx
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=2yBHTHy6dlZMYaZXFCNviJOFhck1kaWSJNuQUt2ZvLs-1696180693-0-ATLrZn7oRk1vM6VZrzLhfxDh+cdCOlMREq9P1qgPeYc0RWDjcrtUPHNJLPeauoo7oPULM2VrJFha7oM1mhNuuJU=;
+        path=/; expires=Sun, 01-Oct-23 17:48:13 GMT; domain=.thegraph.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
       Vary:
       - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '103'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev173+g5c04d2ca5.d20230615
-    method: GET
-    uri: https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x3671aE578E63FdF66ad4F3E12CC0c0d71Ac7510C&data=0xcbf8b66c000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000010000000000000000000000007277f7849966426d345d8f6b9afd1d3d89183083&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a6b656c736f732e65746800000000000000000000000000000000000000000000"}
-
-        '
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Thu, 15 Jun 2023 11:35:41 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '359'
+      access-control-allow-headers:
+      - Content-Type, User-Agent
+      access-control-allow-methods:
+      - GET, OPTIONS, POST
+      graph-attestable:
+      - 'true'
     status:
       code: 200
       message: OK

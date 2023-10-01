@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.27.2.dev345+gc45aac5f6
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getTransactionByHash&txhash=0x5150f6e1c76b74fa914e06df9e56577cdeec0faea11f9949ff529daeb16b1c76&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 12 Apr 2023 12:28:09 GMT
+      - Sun, 01 Oct 2023 17:16:00 GMT
       Server:
       - nginx
       Vary:
@@ -53,7 +53,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.27.2.dev345+gc45aac5f6
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getBlockByNumber&tag=0x103c8b9&boolean=true&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -75,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 12 Apr 2023 12:28:10 GMT
+      - Sun, 01 Oct 2023 17:16:00 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -99,7 +99,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.27.2.dev345+gc45aac5f6
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getTransactionReceipt&txhash=0x5150f6e1c76b74fa914e06df9e56577cdeec0faea11f9949ff529daeb16b1c76&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -121,7 +121,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 12 Apr 2023 12:28:10 GMT
+      - Sun, 01 Oct 2023 17:16:00 GMT
       Server:
       - nginx
       Vary:
@@ -143,7 +143,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.27.2.dev345+gc45aac5f6
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=account&action=txlistinternal&sort=asc&txHash=0x5150f6e1c76b74fa914e06df9e56577cdeec0faea11f9949ff529daeb16b1c76&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -163,7 +163,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 12 Apr 2023 12:28:11 GMT
+      - Sun, 01 Oct 2023 17:16:00 GMT
       Server:
       - nginx
       Vary:
@@ -185,7 +185,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.27.2.dev345+gc45aac5f6
+      - rotki/1.30.3.dev100+gf59390915.d20230928
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696&data=0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000c000000000000000000000000057f1887a8bf19b14fc0df6fd9b2acc9af147ea850000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000495d89b410000000000000000000000000000000000000000000000000000000000000000000000000000000057f1887a8bf19b14fc0df6fd9b2acc9af147ea850000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000406fdde0300000000000000000000000000000000000000000000000000000000&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -207,7 +207,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 12 Apr 2023 12:28:11 GMT
+      - Sun, 01 Oct 2023 17:16:01 GMT
       Server:
       - nginx
       Vary:
@@ -220,7 +220,8 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: null
+    body: '{"query": "{\n  domains(first: 1, where: {id: \"0x90c415bc9855c09ff21fab6f42d3d2d67a45f5dc8dfd1d6c7e991ee9243db6e3\"})
+      {\n    name\n  }\n}\n"}'
     headers:
       Accept:
       - '*/*'
@@ -228,38 +229,48 @@ interactions:
       - gzip, deflate
       Connection:
       - keep-alive
+      Content-Length:
+      - '142'
+      Content-Type:
+      - application/json
       User-Agent:
-      - rotki/1.27.2.dev345+gc45aac5f6
-    method: GET
-    uri: https://api.etherscan.io/api?module=proxy&action=eth_call&to=0xA2C122BE93b0074270ebeE7f6b7292C7deB45047&data=0x691f343190c415bc9855c09ff21fab6f42d3d2d67a45f5dc8dfd1d6c7e991ee9243db6e3&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
+      - python-requests/2.31.0
+    method: POST
+    uri: https://api.thegraph.com/subgraphs/name/ensdomains/ens
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000"}
-
-        '
+      string: '{"data":{"domains":[{"name":"ens2qr.eth"}]}}'
     headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      Cache-Control:
-      - private
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-Ray:
+      - 80f659db8c4044f8-TXL
       Connection:
       - keep-alive
+      Content-Length:
+      - '44'
       Content-Type:
-      - application/json; charset=utf-8
+      - application/json
       Date:
-      - Wed, 12 Apr 2023 12:28:11 GMT
+      - Sun, 01 Oct 2023 17:16:01 GMT
       Server:
-      - nginx
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=xhhVL4UH07c4QeTCMJsqPyQuJRNNve0GX7WbAsul9z0-1696180561-0-Af7LELRW2k7TjMGntQzM+FpwgKAFeb9aY1EgIiVOHVWcWM5bAXmPOeWGa41P8l8kSJGriKkFTO9mrqere5pbEW0=;
+        path=/; expires=Sun, 01-Oct-23 17:46:01 GMT; domain=.thegraph.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
       Vary:
       - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '167'
+      access-control-allow-headers:
+      - Content-Type, User-Agent
+      access-control-allow-methods:
+      - GET, OPTIONS, POST
+      graph-attestable:
+      - 'true'
     status:
       code: 200
       message: OK
