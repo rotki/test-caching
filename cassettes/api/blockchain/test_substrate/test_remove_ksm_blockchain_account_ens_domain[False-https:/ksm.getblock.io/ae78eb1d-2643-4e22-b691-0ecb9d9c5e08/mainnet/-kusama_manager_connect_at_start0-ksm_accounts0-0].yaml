@@ -1,0 +1,592 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://raw.githubusercontent.com/polkascan/py-scale-codec/v1.0/scalecodec/type_registry/kusama.json
+  response:
+    body:
+      string: "{\n  \"runtime_id\": 9122,\n  \"types\": {\n    \"Address\": \"MultiAddress\",\n
+        \   \"LookupSource\": \"MultiAddress\",\n    \"AccountInfo\": \"AccountInfoWithTripleRefCount\",\n
+        \   \"BlockNumber\": \"U32\",\n    \"LeasePeriod\": \"BlockNumber\",\n    \"Weight\":
+        \"WeightV1\",\n    \"Keys\": {\n      \"type\": \"struct\",\n      \"type_mapping\":
+        [\n         [\"grandpa\", \"AccountId\"],\n         [\"babe\", \"AccountId\"],\n
+        \        [\"im_online\", \"AccountId\"],\n         [\"para_validator\", \"AccountId\"],\n
+        \        [\"para_assignment\", \"AccountId\"],\n         [\"authority_discovery\",
+        \"AccountId\"]\n      ]\n    },\n    \"DispatchInfo\": {\n      \"type\":
+        \"struct\",\n      \"type_mapping\": [\n         [\"weight\", \"Weight\"],\n
+        \        [\"class\", \"DispatchClass\"],\n         [\"paysFee\", \"Pays\"]\n
+        \     ]\n    },\n    \"ProxyType\": {\n      \"type\": \"enum\",\n      \"value_list\":
+        [\n        \"Any\",\n        \"NonTransfer\",\n        \"Governance\",\n        \"Staking\",\n
+        \       \"IdentityJudgement\",\n        \"CancelProxy\"\n      ]\n    },\n
+        \   \"RefCount\": \"u32\",\n    \"ValidatorPrefs\": \"ValidatorPrefsWithBlocked\",\n
+        \   \"CompactAssignments\":  \"CompactAssignmentsWith24\",\n    \"RawSolution\":
+        \"RawSolutionWith24\",\n    \"AssetInstance\": \"AssetInstanceV0\",\n    \"MultiAsset\":
+        \"MultiAssetV0\",\n    \"MultiLocation\": \"MultiLocationV0\",\n    \"Response\":
+        \"ResponseV0\",\n    \"Xcm\": \"XcmV0\",\n    \"XcmOrder\": \"XcmOrderV0\"\n
+        \ },\n  \"versioning\": [\n    {\n      \"runtime_range\": [1019, 1031],\n
+        \     \"types\": {\n        \"DispatchError\": {\n          \"type\": \"struct\",\n
+        \         \"type_mapping\": [\n            [\"module\", \"Option<u8>\"],\n
+        \           [\"error\", \"u8\"]\n          ]\n        }\n      }\n    },\n
+        \   {\n      \"runtime_range\": [1032, null],\n      \"types\": {\n        \"DispatchError\":
+        {\n          \"type\": \"enum\",\n          \"type_mapping\": [\n            [\"Other\",
+        \"Null\"],\n            [\"CannotLookup\", \"Null\"],\n            [\"BadOrigin\",
+        \"Null\"],\n            [\"Module\", \"DispatchErrorModule\"]\n          ]\n
+        \       }\n      }\n    },\n    {\n      \"runtime_range\": [1019, 1037],\n
+        \     \"types\": {\n        \"IdentityInfo\": {\n          \"type\": \"struct\",\n
+        \         \"type_mapping\": [\n             [\"additional\", \"Vec<IdentityInfoAdditional>\"],\n
+        \            [\"display\", \"Data\"],\n             [\"legal\", \"Data\"],\n
+        \            [\"web\", \"Data\"],\n             [\"riot\", \"Data\"],\n             [\"email\",
+        \"Data\"],\n             [\"pgp_fingerprint\", \"Option<H160>\"],\n             [\"image\",
+        \"Data\"]\n          ]\n        }\n      }\n    },\n    {\n      \"runtime_range\":
+        [1038, null],\n      \"types\": {\n        \"IdentityInfo\": {\n          \"type\":
+        \"struct\",\n          \"type_mapping\": [\n             [\"additional\",
+        \"Vec<IdentityInfoAdditional>\"],\n             [\"display\", \"Data\"],\n
+        \            [\"legal\", \"Data\"],\n             [\"web\", \"Data\"],\n             [\"riot\",
+        \"Data\"],\n             [\"email\", \"Data\"],\n             [\"pgp_fingerprint\",
+        \"Option<H160>\"],\n             [\"image\", \"Data\"],\n             [\"twitter\",
+        \"Data\"]\n          ]\n        }\n      }\n    },\n    {\n      \"runtime_range\":
+        [1019, 1042],\n      \"types\": {\n        \"SlashingSpans\": {\n          \"type\":
+        \"struct\",\n          \"type_mapping\": [\n             [\"span_index\",
+        \"SpanIndex\"],\n             [\"last_start\", \"EraIndex\"],\n             [\"prior\",
+        \"Vec<EraIndex>\"]\n          ]\n        }\n      }\n    },\n    {\n      \"runtime_range\":
+        [1043, null],\n      \"types\": {\n        \"SlashingSpans\": {\n          \"type\":
+        \"struct\",\n          \"type_mapping\": [\n             [\"span_index\",
+        \"SpanIndex\"],\n             [\"last_start\", \"EraIndex\"],\n             [\"last_nonzero_slash\",
+        \"EraIndex\"],\n             [\"prior\", \"Vec<EraIndex>\"]\n          ]\n
+        \       }\n      }\n    },\n    {\n      \"runtime_range\": [1019, 1045],\n
+        \     \"types\": {\n        \"StakingLedger\": \"StakingLedgerTo223\",\n        \"BalanceLock\":
+        {\n          \"type\": \"struct\",\n          \"type_mapping\": [\n             [\"id\",
+        \"LockIdentifier\"],\n             [\"amount\", \"Balance\"],\n             [\"until\",
+        \"BlockNumber\"],\n             [\"reasons\", \"WithdrawReasons\"]\n          ]\n
+        \       }\n      }\n    },\n    {\n      \"runtime_range\": [1050, 1056],\n
+        \     \"types\": {\n        \"StakingLedger\": \"StakingLedgerTo240\",\n        \"BalanceLock\":
+        {\n          \"type\": \"struct\",\n          \"type_mapping\": [\n             [\"id\",
+        \"LockIdentifier\"],\n             [\"amount\", \"Balance\"],\n             [\"reasons\",
+        \"Reasons\"]\n          ]\n        }\n      }\n    },\n    {\n      \"runtime_range\":
+        [1057, null],\n      \"types\": {\n        \"StakingLedger\": {\n          \"type\":
+        \"struct\",\n          \"type_mapping\": [\n            [\n              \"stash\",\n
+        \             \"AccountId\"\n            ],\n            [\n              \"total\",\n
+        \             \"Compact<Balance>\"\n            ],\n            [\n              \"active\",\n
+        \             \"Compact<Balance>\"\n            ],\n            [\n              \"unlocking\",\n
+        \             \"Vec<UnlockChunk>\"\n            ],\n            [\n              \"claimed_rewards\",\n
+        \             \"Vec<EraIndex>\"\n            ]\n          ]\n        },\n
+        \       \"BalanceLock\": {\n          \"type\": \"struct\",\n          \"type_mapping\":
+        [\n             [\"id\", \"LockIdentifier\"],\n             [\"amount\", \"Balance\"],\n
+        \            [\"reasons\", \"Reasons\"]\n          ]\n        }\n      }\n
+        \   },\n    {\n      \"runtime_range\": [1019, 1054],\n      \"types\": {\n
+        \       \"ReferendumInfo\": {\n          \"type\": \"struct\",\n          \"type_mapping\":
+        [\n             [\"end\", \"BlockNumber\"],\n             [\"proposal\", \"Proposal\"],\n
+        \            [\"threshold\", \"VoteThreshold\"],\n             [\"delay\",
+        \"BlockNumber\"]\n          ]\n        }\n      }\n    },\n    {\n      \"runtime_range\":
+        [1054, null],\n      \"types\": {\n        \"ReferendumInfo\": {\n          \"type\":
+        \"enum\",\n          \"type_mapping\": [\n            [\"Ongoing\", \"ReferendumStatus\"],\n
+        \           [\"Finished\", \"ReferendumInfoFinished\"]\n          ]\n        }\n
+        \     }\n    },\n    {\n      \"runtime_range\": [1019, 1056],\n      \"types\":
+        {\n        \"WeightV1\": \"u32\",\n        \"Weight\": \"WeightV1\"\n      }\n
+        \   },\n    {\n      \"runtime_range\": [1057, null],\n      \"types\": {\n
+        \       \"WeightV1\": \"u64\",\n        \"Weight\": \"WeightV1\"\n      }\n
+        \   },\n    {\n      \"runtime_range\": [1019, 1061],\n      \"types\": {\n
+        \       \"Heartbeat\": {\n          \"type\": \"struct\",\n          \"type_mapping\":
+        [\n             [\"block_number\", \"BlockNumber\"],\n             [\"network_state\",
+        \"OpaqueNetworkState\"],\n             [\"session_index\", \"SessionIndex\"],\n
+        \            [\"authority_index\", \"AuthIndex\"]\n          ]\n        },\n
+        \       \"DispatchInfo\": {\n          \"type\": \"struct\",\n          \"type_mapping\":
+        [\n             [\"weight\", \"Weight\"],\n             [\"class\", \"DispatchClass\"],\n
+        \            [\"pays_fee\", \"bool\"]\n          ]\n        }\n      }\n    },\n
+        \   {\n      \"runtime_range\": [1062, null],\n      \"types\": {\n        \"Heartbeat\":
+        {\n          \"type\": \"struct\",\n          \"type_mapping\": [\n             [\"block_number\",
+        \"BlockNumber\"],\n             [\"network_state\", \"OpaqueNetworkState\"],\n
+        \            [\"session_index\", \"SessionIndex\"],\n             [\"authority_index\",
+        \"AuthIndex\"],\n             [\"validators_len\", \"u32\"]\n          ]\n
+        \       },\n        \"DispatchInfo\": {\n          \"type\": \"struct\",\n
+        \         \"type_mapping\": [\n             [\"weight\", \"Weight\"],\n             [\"class\",
+        \"DispatchClass\"],\n             [\"pays_fee\", \"Pays\"]\n          ]\n
+        \       }\n      }\n    },\n    {\n      \"runtime_range\": [1019, 2012],\n
+        \     \"types\": {\n        \"OpenTip\": {\n          \"type\": \"struct\",\n
+        \         \"type_mapping\": [\n             [\"reason\", \"Hash\"],\n             [\"who\",
+        \"AccountId\"],\n             [\"finder\", \"Option<OpenTipFinder>\"],\n             [\"closes\",
+        \"Option<BlockNumber>\"],\n             [\"tips\", \"Vec<OpenTipTip>\"]\n
+        \         ]\n        }\n      }\n    },\n    {\n      \"runtime_range\": [2013,
+        null],\n      \"types\": {\n        \"OpenTip\": {\n          \"type\": \"struct\",\n
+        \         \"type_mapping\": [\n             [\"reason\", \"Hash\"],\n             [\"who\",
+        \"AccountId\"],\n             [\"finder\", \"AccountId\"],\n             [\"deposit\",
+        \"Balance\"],\n             [\"closes\", \"Option<BlockNumber>\"],\n             [\"tips\",
+        \"Vec<OpenTipTip>\"],\n             [\"finders_fee\", \"bool\"]\n          ]\n
+        \       }\n      }\n    },\n    {\n      \"runtime_range\": [1019, 2022],\n
+        \     \"types\": {\n        \"CompactAssignments\": \"CompactAssignmentsTo257\"\n
+        \     }\n    },\n    {\n      \"runtime_range\": [2023, 9009],\n      \"types\":
+        {\n        \"CompactAssignments\": \"CompactAssignmentsWith16\",\n        \"RawSolution\":
+        \"RawSolutionWith16\"\n      }\n    },\n    {\n      \"runtime_range\": [9010,
+        null],\n      \"types\": {\n        \"CompactAssignments\": \"CompactAssignmentsWith24\",\n
+        \       \"RawSolution\": \"RawSolutionWith24\"\n      }\n    },\n    {\n      \"runtime_range\":
+        [1019, 2024],\n      \"types\": {\n        \"RefCount\": \"u8\"\n      }\n
+        \   },\n    {\n      \"runtime_range\": [2025, null],\n      \"types\": {\n
+        \       \"RefCount\": \"u32\"\n      }\n    },\n    {\n      \"runtime_range\":
+        [1019, 1045],\n      \"types\": {\n        \"Address\": \"RawAddress\",\n
+        \       \"LookupSource\": \"RawAddress\",\n        \"AccountInfo\": \"AccountInfoWithRefCount\",\n
+        \       \"Keys\": {\n          \"type\": \"struct\",\n          \"type_mapping\":
+        [\n             [\"grandpa\", \"AccountId\"],\n             [\"babe\", \"AccountId\"],\n
+        \            [\"im_online\", \"AccountId\"],\n             [\"authority_discovery\",
+        \"AccountId\"],\n             [\"parachains\", \"AccountId\"]\n          ]\n
+        \       },\n        \"ValidatorPrefs\": \"ValidatorPrefsWithCommission\"\n
+        \     }\n    },\n    {\n      \"runtime_range\": [1050, 2027],\n      \"types\":
+        {\n        \"Address\": \"AccountIdAddress\",\n        \"LookupSource\": \"AccountIdAddress\",\n
+        \       \"AccountInfo\": \"AccountInfoWithRefCount\",\n        \"Keys\": {\n
+        \         \"type\": \"struct\",\n          \"type_mapping\": [\n             [\"grandpa\",
+        \"AccountId\"],\n             [\"babe\", \"AccountId\"],\n             [\"im_online\",
+        \"AccountId\"],\n             [\"authority_discovery\", \"AccountId\"],\n
+        \            [\"parachains\", \"AccountId\"]\n          ]\n        },\n        \"ValidatorPrefs\":
+        \"ValidatorPrefsWithCommission\"\n      }\n    },\n    {\n      \"runtime_range\":
+        [2028, null],\n      \"types\": {\n        \"Address\": \"MultiAddress\",\n
+        \       \"LookupSource\": \"MultiAddress\",\n        \"Keys\": {\n          \"type\":
+        \"struct\",\n          \"type_mapping\": [\n             [\"grandpa\", \"AccountId\"],\n
+        \            [\"babe\", \"AccountId\"],\n             [\"im_online\", \"AccountId\"],\n
+        \            [\"para_validator\", \"AccountId\"],\n             [\"para_assignment\",
+        \"AccountId\"],\n             [\"authority_discovery\", \"AccountId\"]\n          ]\n
+        \       },\n        \"ValidatorPrefs\": \"ValidatorPrefsWithBlocked\"\n      }\n
+        \   },\n    {\n      \"runtime_range\": [2028, 2029],\n      \"types\": {\n
+        \       \"AccountInfo\": \"AccountInfoWithDualRefCount\"\n      }\n    },\n
+        \   {\n      \"runtime_range\": [2030, null],\n      \"types\": {\n        \"AccountInfo\":
+        \"AccountInfoWithTripleRefCount\"\n      }\n    },\n    {\n      \"runtime_range\":
+        [9010, null],\n      \"types\": {\n        \"AssetInstance\": \"AssetInstanceV0\",\n
+        \       \"MultiAsset\": \"MultiAssetV0\",\n        \"MultiLocation\": \"MultiLocationV0\",\n
+        \       \"Response\": \"ResponseV0\",\n        \"Xcm\": \"XcmV0\",\n        \"XcmOrder\":
+        \"XcmOrderV0\"\n      }\n    }\n  ],\n  \"runtime_upgrades\": [\n    [0, 1020],
+        [26669, 1021], [38245, 1022], [54248, 1023], [59659, 1024],\n    [67651, 1025],
+        [82191, 1027], [83238, 1028], [101503, 1029], [203466, 1030],\n    [295787,
+        1031], [461692, 1032], [504329, 1033], [569327, 1038], [587687, 1039],\n    [653183,
+        1040], [693488, 1042], [901442, 1045], [1375086, 1050], [1445458, 1051],\n
+        \   [1472960, 1052], [1475648, 1053], [1491596, 1054], [1574408, 1055], [2064961,
+        1058],\n    [2201991, 1062], [2671528, 2005], [2704202, 2007], [2728002, 2008],
+        [2832534, 2011],\n    [2962294, 2012], [3240000, 2013], [3274408, 2015], [3323565,
+        2019], [3534175, 2022],\n    [3860281, 2023], [4143129, 2024], [4401242, 2025],
+        [4841367, 2026], [5961600, 2027],\n    [6137912, 2028], [6561855, 2029], [7100891,
+        2030], [7468792, 9010], [7668600, 9030],\n    [7812476, 9040], [8010981, 9050],
+        [8073833, 9070], [8555825, 9080], [8945245, 9090]\n  ]\n}\n"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=300
+      Connection:
+      - keep-alive
+      Content-Security-Policy:
+      - default-src 'none'; style-src 'unsafe-inline'; sandbox
+      Content-Type:
+      - text/plain; charset=utf-8
+      Cross-Origin-Resource-Policy:
+      - cross-origin
+      Date:
+      - Thu, 12 Oct 2023 13:49:52 GMT
+      ETag:
+      - W/"2a58ec0f68582044933263f07a8553dfa19fd5d67b24127ada6c6caed804b3ae"
+      Expires:
+      - Thu, 12 Oct 2023 13:54:52 GMT
+      Source-Age:
+      - '113'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Authorization,Accept-Encoding,Origin
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '1'
+      X-Content-Type-Options:
+      - nosniff
+      X-Fastly-Request-ID:
+      - c651d016089b2d332e2d4d2f56eb41dff812731f
+      X-Frame-Options:
+      - deny
+      X-GitHub-Request-Id:
+      - C264:D351:BF35D:C930D:65279977
+      X-Served-By:
+      - cache-fra-eddf8230044-FRA
+      X-Timer:
+      - S1697118593.556974,VS0,VE2
+      X-XSS-Protection:
+      - 1; mode=block
+      content-length:
+      - '11820'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "system_chain", "params": [], "id": 1}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '67'
+      User-Agent:
+      - python-requests/2.31.0
+      cache-control:
+      - no-cache
+      content-type:
+      - application/json
+    method: POST
+    uri: https://ksm.getblock.io/ae78eb1d-2643-4e22-b691-0ecb9d9c5e08/mainnet/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"Kusama","id":1}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      content-length:
+      - '42'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 12 Oct 2023 13:49:52 GMT
+      server:
+      - envoy
+      vary:
+      - origin,access-control-request-method,access-control-request-headers
+      x-cluster:
+      - Shared nodes
+      x-envoy-upstream-service-time:
+      - '165'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "rpc_methods", "params": [], "id": 2}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '66'
+      User-Agent:
+      - python-requests/2.31.0
+      cache-control:
+      - no-cache
+      content-type:
+      - application/json
+    method: POST
+    uri: https://ksm.getblock.io/ae78eb1d-2643-4e22-b691-0ecb9d9c5e08/mainnet/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"methods":["account_nextIndex","author_hasKey","author_hasSessionKeys","author_insertKey","author_pendingExtrinsics","author_removeExtrinsic","author_rotateKeys","author_submitAndWatchExtrinsic","author_submitExtrinsic","author_unwatchExtrinsic","babe_epochAuthorship","beefy_getFinalizedHead","beefy_subscribeJustifications","beefy_unsubscribeJustifications","chainHead_unstable_body","chainHead_unstable_call","chainHead_unstable_follow","chainHead_unstable_genesisHash","chainHead_unstable_header","chainHead_unstable_stopBody","chainHead_unstable_stopCall","chainHead_unstable_stopStorage","chainHead_unstable_storage","chainHead_unstable_unfollow","chainHead_unstable_unpin","chain_getBlock","chain_getBlockHash","chain_getFinalisedHead","chain_getFinalizedHead","chain_getHead","chain_getHeader","chain_getRuntimeVersion","chain_subscribeAllHeads","chain_subscribeFinalisedHeads","chain_subscribeFinalizedHeads","chain_subscribeNewHead","chain_subscribeNewHeads","chain_subscribeRuntimeVersion","chain_unsubscribeAllHeads","chain_unsubscribeFinalisedHeads","chain_unsubscribeFinalizedHeads","chain_unsubscribeNewHead","chain_unsubscribeNewHeads","chain_unsubscribeRuntimeVersion","childstate_getKeys","childstate_getKeysPaged","childstate_getKeysPagedAt","childstate_getStorage","childstate_getStorageEntries","childstate_getStorageHash","childstate_getStorageSize","grandpa_proveFinality","grandpa_roundState","grandpa_subscribeJustifications","grandpa_unsubscribeJustifications","mmr_generateProof","mmr_root","mmr_verifyProof","mmr_verifyProofStateless","offchain_localStorageGet","offchain_localStorageSet","payment_queryFeeDetails","payment_queryInfo","state_call","state_callAt","state_getChildReadProof","state_getKeys","state_getKeysPaged","state_getKeysPagedAt","state_getMetadata","state_getPairs","state_getReadProof","state_getRuntimeVersion","state_getStorage","state_getStorageAt","state_getStorageHash","state_getStorageHashAt","state_getStorageSize","state_getStorageSizeAt","state_queryStorage","state_queryStorageAt","state_subscribeRuntimeVersion","state_subscribeStorage","state_traceBlock","state_trieMigrationStatus","state_unsubscribeRuntimeVersion","state_unsubscribeStorage","subscribe_newHead","sync_state_genSyncSpec","system_accountNextIndex","system_addLogFilter","system_addReservedPeer","system_chain","system_chainType","system_dryRun","system_dryRunAt","system_health","system_localListenAddresses","system_localPeerId","system_name","system_nodeRoles","system_peers","system_properties","system_removeReservedPeer","system_reservedPeers","system_resetLogFilter","system_syncState","system_unstable_networkState","system_version","transaction_unstable_submitAndWatch","transaction_unstable_unwatch","unsubscribe_newHead"]},"id":2}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      content-length:
+      - '2796'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 12 Oct 2023 13:49:52 GMT
+      server:
+      - envoy
+      vary:
+      - origin,access-control-request-method,access-control-request-headers
+      x-cluster:
+      - Shared nodes
+      x-envoy-upstream-service-time:
+      - '327'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "chain_getHead", "params": [], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '68'
+      User-Agent:
+      - python-requests/2.31.0
+      cache-control:
+      - no-cache
+      content-type:
+      - application/json
+    method: POST
+    uri: https://ksm.getblock.io/ae78eb1d-2643-4e22-b691-0ecb9d9c5e08/mainnet/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"0x8830768bd20a746c10c4cf2c6f1f54a1d95c0108b9fe0fbb8d173554366da3bb","id":3}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      content-length:
+      - '102'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 12 Oct 2023 13:49:53 GMT
+      server:
+      - envoy
+      vary:
+      - origin,access-control-request-method,access-control-request-headers
+      x-cluster:
+      - Shared nodes
+      x-envoy-upstream-service-time:
+      - '204'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "chain_getHeader", "params": ["0x8830768bd20a746c10c4cf2c6f1f54a1d95c0108b9fe0fbb8d173554366da3bb"],
+      "id": 4}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '138'
+      User-Agent:
+      - python-requests/2.31.0
+      cache-control:
+      - no-cache
+      content-type:
+      - application/json
+    method: POST
+    uri: https://ksm.getblock.io/ae78eb1d-2643-4e22-b691-0ecb9d9c5e08/mainnet/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"parentHash":"0x34b49ba92a38d3835c22ace7cb96cf6ee1823e13131f119414154c5c101b7a98","number":"0x1326283","stateRoot":"0x1ec75f271520c780a66d4a9141bf0a25e2b21edc5758f2c3df477d70674c27c1","extrinsicsRoot":"0x8d54ab17cacfecc257d1e4b38b549427184b405efa28decc2b82cb1b166b7d4f","digest":{"logs":["0x0642414245b50103a3000000eafedb1000000000ae0e3d2b81b5e9c11f53faf4164ed09069829f9b6ff19e6de19e3a91c05c1508267741f3ecb4b137b0fb3faeed7378f571a6520b5b7e80fb6e6985857fb826081ed37985b245a03d56a296afd250a007b9b5185c7fd2fe6c34c5f11fd5aba90e","0x05424142450101e8f31b74c7bfd7ed2090ea97afb37849d77de507d97b2f6e3573ca760fc1c420d9691ae71b25fd1cf65631e498bf7820d7d4cb6486d240f037b90d2c20d5b885"]}},"id":4}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      content-length:
+      - '709'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 12 Oct 2023 13:49:53 GMT
+      server:
+      - envoy
+      vary:
+      - origin,access-control-request-method,access-control-request-headers
+      x-cluster:
+      - Shared nodes
+      x-envoy-upstream-service-time:
+      - '161'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.31.0
+    method: POST
+    uri: https://kusama.api.subscan.io/api/scan/metadata
+  response:
+    body:
+      string: '{"code":0,"message":"Success","generated_at":1697118593,"data":{"addressType":"2","avgBlockTime":"6","blockNum":"20079235","blockTime":"6","bootTime":"1574962074","commissionAccuracy":"9","count_account":"293985","count_event":"502933141","count_signed_extrinsic":"10874716","count_transfer":"7156927","currentPools":"155","current_era":"5758","current_validator_count":"1000","epochLength":"600","epochProcess":"218","eraLength":"3600","eraProcess":"818","exist_roles":"proxies,onChainIdentity,democracyDelegate,module,democracyDelegated,nominator,registrar,fellowship,multisig,multisigMember,convictionDelegate,convictionDelegated,validator,proxy","finalized_blockNum":"20079233","history_depth":"0","implName":"parity-kusama","maxNominatorRewardedPerValidator":"512","maxPools":"256","networkNode":"kusama","specVersion":"9430","unbondDuration":"100800","validator_count":"1000","waiting_validator":"1146"}}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - ''
+      Access-Control-Expose-Headers:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 814fcf0a6a33352a-WAW
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 12 Oct 2023 13:49:54 GMT
+      Ratelimit-Limit:
+      - '2'
+      Ratelimit-Remaining:
+      - '1'
+      Ratelimit-Reset:
+      - '1'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      alt-svc:
+      - h3=":443"; ma=86400
+      content-length:
+      - '910'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "system_properties", "params": [], "id": 5}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '72'
+      User-Agent:
+      - python-requests/2.31.0
+      cache-control:
+      - no-cache
+      content-type:
+      - application/json
+    method: POST
+    uri: https://ksm.getblock.io/ae78eb1d-2643-4e22-b691-0ecb9d9c5e08/mainnet/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"ss58Format":2,"tokenDecimals":12,"tokenSymbol":"KSM"},"id":5}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      content-length:
+      - '89'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 12 Oct 2023 13:49:54 GMT
+      server:
+      - envoy
+      vary:
+      - origin,access-control-request-method,access-control-request-headers
+      x-cluster:
+      - Shared nodes
+      x-envoy-upstream-service-time:
+      - '242'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.30.3.dev181+g87f243eac
+    method: GET
+    uri: https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e&data=0x0178b8bf9de0b76f3b87380f0bcb9e41b403c69b88b01fbeaf785e83f38a6879902af71b&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000231b0ee14048e9dccd1d247744d114a4eb5e8e63"}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 12 Oct 2023 13:49:54 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      content-length:
+      - '103'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.30.3.dev181+g87f243eac
+    method: GET
+    uri: https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x231b0Ee14048e9dCcD1d247744d114a4EB5E8E63&data=0xf1cb7e069de0b76f3b87380f0bcb9e41b403c69b88b01fbeaf785e83f38a6879902af71b00000000000000000000000000000000000000000000000000000000000001b2&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000200aff6865635ae11013a83835c019d44ec3f865145943f487ae82a8e7bed3a66b"}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 12 Oct 2023 13:49:55 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      content-length:
+      - '231'
+    status:
+      code: 200
+      message: OK
+version: 1
