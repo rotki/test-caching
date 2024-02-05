@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev230+g7280d6cf5
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getTransactionByHash&txhash=0x2ea92952050e9f5cbf9b46619355a3b34822286443e10a6f5405573330def118&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 18 Jan 2024 14:02:03 GMT
+      - Tue, 06 Feb 2024 11:48:42 GMT
       Server:
       - nginx
       Vary:
@@ -53,7 +53,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev230+g7280d6cf5
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getBlockByNumber&tag=0x122552e&boolean=true&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -75,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 18 Jan 2024 14:02:04 GMT
+      - Tue, 06 Feb 2024 11:48:43 GMT
       Server:
       - nginx
       Vary:
@@ -97,7 +97,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev230+g7280d6cf5
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getTransactionReceipt&txhash=0x2ea92952050e9f5cbf9b46619355a3b34822286443e10a6f5405573330def118&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -119,7 +119,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 18 Jan 2024 14:02:06 GMT
+      - Tue, 06 Feb 2024 11:48:45 GMT
       Server:
       - nginx
       Vary:
@@ -141,7 +141,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev230+g7280d6cf5
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
     method: GET
     uri: https://api.etherscan.io/api?module=account&action=txlistinternal&sort=asc&txHash=0x2ea92952050e9f5cbf9b46619355a3b34822286443e10a6f5405573330def118&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -161,7 +161,49 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 18 Jan 2024 14:02:07 GMT
+      - Tue, 06 Feb 2024 11:48:48 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      content-length:
+      - '616'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
+    method: GET
+    uri: https://api.etherscan.io/api?module=account&action=txlistinternal&sort=asc&txHash=0x2ea92952050e9f5cbf9b46619355a3b34822286443e10a6f5405573330def118&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
+  response:
+    body:
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"19027246","timeStamp":"1705502243","from":"0xdef171fe48cf0115b1d80b88dc8eab59176fee57","to":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2","value":"5481890000000000000","contractAddress":"","input":"","type":"call","gas":"551177","gasUsed":"23974","isError":"0","errCode":""},{"blockNumber":"19027246","timeStamp":"1705502243","from":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2","to":"0x21410232b484136404911780bc32756d5d1a9fa9","value":"5481890000000000000","contractAddress":"","input":"","type":"call","gas":"2300","gasUsed":"193","isError":"0","errCode":""}]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 06 Feb 2024 11:48:49 GMT
       Server:
       - nginx
       Vary:

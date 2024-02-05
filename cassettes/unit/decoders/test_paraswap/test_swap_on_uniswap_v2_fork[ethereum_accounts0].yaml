@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev175+g21a72d56f.d20240108
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getTransactionByHash&txhash=0x6fa4a6a9c0d9c5aad831cc1ff149fb7683c0573db93571bc43acb5b4848314ae&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 10 Jan 2024 16:37:06 GMT
+      - Tue, 06 Feb 2024 11:47:42 GMT
       Server:
       - nginx
       Vary:
@@ -53,7 +53,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev175+g21a72d56f.d20240108
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getBlockByNumber&tag=0x1218f29&boolean=true&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -75,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 10 Jan 2024 16:37:08 GMT
+      - Tue, 06 Feb 2024 11:47:44 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -99,7 +99,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev175+g21a72d56f.d20240108
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getTransactionReceipt&txhash=0x6fa4a6a9c0d9c5aad831cc1ff149fb7683c0573db93571bc43acb5b4848314ae&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -121,7 +121,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 10 Jan 2024 16:37:12 GMT
+      - Tue, 06 Feb 2024 11:47:47 GMT
       Server:
       - nginx
       Vary:
@@ -143,7 +143,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev175+g21a72d56f.d20240108
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
     method: GET
     uri: https://api.etherscan.io/api?module=account&action=txlistinternal&sort=asc&txHash=0x6fa4a6a9c0d9c5aad831cc1ff149fb7683c0573db93571bc43acb5b4848314ae&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -163,7 +163,49 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 10 Jan 2024 16:37:13 GMT
+      - Tue, 06 Feb 2024 11:47:48 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      content-length:
+      - '329'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
+    method: GET
+    uri: https://api.etherscan.io/api?module=account&action=txlistinternal&sort=asc&txHash=0x6fa4a6a9c0d9c5aad831cc1ff149fb7683c0573db93571bc43acb5b4848314ae&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
+  response:
+    body:
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"18976553","timeStamp":"1704889739","from":"0xdef171fe48cf0115b1d80b88dc8eab59176fee57","to":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2","value":"350000000000000000","contractAddress":"","input":"","type":"call","gas":"169754","gasUsed":"23974","isError":"0","errCode":""}]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 06 Feb 2024 11:47:49 GMT
       Server:
       - nginx
       Vary:
