@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev230+g7280d6cf5
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getTransactionByHash&txhash=0x606413e4074e79e68ee0f79eee96c94cf091e7c061a551d2dd2a27044fb007e7&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 18 Jan 2024 14:02:10 GMT
+      - Tue, 06 Feb 2024 11:48:54 GMT
       Server:
       - nginx
       Vary:
@@ -53,7 +53,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev230+g7280d6cf5
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getBlockByNumber&tag=0x1226cea&boolean=true&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -75,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 18 Jan 2024 14:02:11 GMT
+      - Tue, 06 Feb 2024 11:48:55 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -99,7 +99,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev230+g7280d6cf5
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getTransactionReceipt&txhash=0x606413e4074e79e68ee0f79eee96c94cf091e7c061a551d2dd2a27044fb007e7&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -121,7 +121,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 18 Jan 2024 14:02:14 GMT
+      - Tue, 06 Feb 2024 11:48:58 GMT
       Server:
       - nginx
       Vary:
@@ -143,7 +143,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev230+g7280d6cf5
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
     method: GET
     uri: https://api.etherscan.io/api?module=account&action=txlistinternal&sort=asc&txHash=0x606413e4074e79e68ee0f79eee96c94cf091e7c061a551d2dd2a27044fb007e7&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -163,7 +163,49 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 18 Jan 2024 14:02:15 GMT
+      - Tue, 06 Feb 2024 11:49:00 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      content-length:
+      - '894'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
+    method: GET
+    uri: https://api.etherscan.io/api?module=account&action=txlistinternal&sort=asc&txHash=0x606413e4074e79e68ee0f79eee96c94cf091e7c061a551d2dd2a27044fb007e7&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
+  response:
+    body:
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"19033322","timeStamp":"1705575743","from":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2","to":"0xba12222222228d8ba445958a75a0704d566bf2c8","value":"253269184972671572","contractAddress":"","input":"","type":"call","gas":"2300","gasUsed":"175","isError":"0","errCode":""},{"blockNumber":"19033322","timeStamp":"1705575743","from":"0xba12222222228d8ba445958a75a0704d566bf2c8","to":"0xdef171fe48cf0115b1d80b88dc8eab59176fee57","value":"253269184972671572","contractAddress":"","input":"","type":"call","gas":"66756","gasUsed":"55","isError":"0","errCode":""},{"blockNumber":"19033322","timeStamp":"1705575743","from":"0xdef171fe48cf0115b1d80b88dc8eab59176fee57","to":"0x23a49a9930f5b562c6b1096c3e6b5bec133e8b2e","value":"253269184972671572","contractAddress":"","input":"","type":"call","gas":"12300","gasUsed":"0","isError":"0","errCode":""}]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 06 Feb 2024 11:49:02 GMT
       Server:
       - nginx
       Vary:

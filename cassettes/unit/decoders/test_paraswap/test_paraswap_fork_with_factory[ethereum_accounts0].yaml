@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev271+ge2ebffb26.d20240123
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getTransactionByHash&txhash=0x90d9e615e808d5d9b62f6f072c783e9a9f8417c46fcc6665a4aadd927dc74fce&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 25 Jan 2024 13:12:38 GMT
+      - Tue, 06 Feb 2024 11:49:28 GMT
       Server:
       - nginx
       Vary:
@@ -53,7 +53,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev271+ge2ebffb26.d20240123
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getBlockByNumber&tag=0xda28e8&boolean=true&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -75,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 25 Jan 2024 13:12:39 GMT
+      - Tue, 06 Feb 2024 11:49:29 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -99,7 +99,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev271+ge2ebffb26.d20240123
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
     method: GET
     uri: https://api.etherscan.io/api?module=proxy&action=eth_getTransactionReceipt&txhash=0x90d9e615e808d5d9b62f6f072c783e9a9f8417c46fcc6665a4aadd927dc74fce&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -121,7 +121,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 25 Jan 2024 13:12:40 GMT
+      - Tue, 06 Feb 2024 11:49:32 GMT
       Server:
       - nginx
       Vary:
@@ -143,7 +143,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev271+ge2ebffb26.d20240123
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
     method: GET
     uri: https://api.etherscan.io/api?module=account&action=txlistinternal&sort=asc&txHash=0x90d9e615e808d5d9b62f6f072c783e9a9f8417c46fcc6665a4aadd927dc74fce&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
   response:
@@ -163,7 +163,49 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 25 Jan 2024 13:12:41 GMT
+      - Tue, 06 Feb 2024 11:49:33 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      content-length:
+      - '608'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.31.4.dev294+gb2970ef7d.d20240206
+    method: GET
+    uri: https://api.etherscan.io/api?module=account&action=txlistinternal&sort=asc&txHash=0x90d9e615e808d5d9b62f6f072c783e9a9f8417c46fcc6665a4aadd927dc74fce&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4
+  response:
+    body:
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"14297320","timeStamp":"1646086826","from":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2","to":"0xdef171fe48cf0115b1d80b88dc8eab59176fee57","value":"338822187329295101","contractAddress":"","input":"","type":"call","gas":"2300","gasUsed":"55","isError":"0","errCode":""},{"blockNumber":"14297320","timeStamp":"1646086826","from":"0xdef171fe48cf0115b1d80b88dc8eab59176fee57","to":"0x60a543647a1ecaccaadfc2df27a2d1d74e60a39f","value":"338822187329295101","contractAddress":"","input":"","type":"call","gas":"18029","gasUsed":"0","isError":"0","errCode":""}]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 06 Feb 2024 11:49:35 GMT
       Server:
       - nginx
       Vary:
