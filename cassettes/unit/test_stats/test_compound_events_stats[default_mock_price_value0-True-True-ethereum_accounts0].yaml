@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0xacc2e21f911a4e438966694e9ad16747878a15dae52de62a09f1ebabc8b26c8d
   response:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:01 GMT
+      - Wed, 24 Jan 2024 08:46:08 GMT
       Server:
       - nginx
       Vary:
@@ -53,7 +53,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x9018f5
   response:
@@ -75,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:01 GMT
+      - Wed, 24 Jan 2024 08:46:09 GMT
       Server:
       - nginx
       Vary:
@@ -97,7 +97,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xacc2e21f911a4e438966694e9ad16747878a15dae52de62a09f1ebabc8b26c8d
   response:
@@ -119,7 +119,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:02 GMT
+      - Wed, 24 Jan 2024 08:46:11 GMT
       Server:
       - nginx
       Vary:
@@ -141,54 +141,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0xacc2e21f911a4e438966694e9ad16747878a15dae52de62a09f1ebabc8b26c8d
+    uri: https://api.etherscan.io/api?action=eth_call&data=0x252dba42000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000012000000000000000000000000000000000000000000000000000000000000001c000000000000000000000000000000000000000000000000000000000000002600000000000000000000000004678f0a6958e4d2bc4f1baf7bc52e8f3564f3fe400000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000024c45527910000000000000000000000002b888954421b424c5d3d9ce9bb67c9bd47537d12000000000000000000000000000000000000000000000000000000000000000000000000000000004678f0a6958e4d2bc4f1baf7bc52e8f3564f3fe400000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000024c4552791000000000000000000000000c440f3c87dc4b6843cabc413916220d4f4fed117000000000000000000000000000000000000000000000000000000000000000000000000000000004678f0a6958e4d2bc4f1baf7bc52e8f3564f3fe400000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000024c4552791000000000000000000000000f59d4937bf1305856c3a267bb07791507a3377ee000000000000000000000000000000000000000000000000000000000000000000000000000000004678f0a6958e4d2bc4f1baf7bc52e8f3564f3fe400000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000024c455279100000000000000000000000065304d6aff5096472519ca86a6a1fea31cb47ced00000000000000000000000000000000000000000000000000000000&module=proxy&to=0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696
   response:
     body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 13 Jun 2023 19:09:02 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
-    method: GET
-    uri: https://api.etherscan.io/api?action=eth_call&data=0x252dba42000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000012000000000000000000000000000000000000000000000000000000000000001c000000000000000000000000000000000000000000000000000000000000002600000000000000000000000004678f0a6958e4d2bc4f1baf7bc52e8f3564f3fe400000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000024c45527910000000000000000000000002b888954421b424c5d3d9ce9bb67c9bd47537d12000000000000000000000000000000000000000000000000000000000000000000000000000000004678f0a6958e4d2bc4f1baf7bc52e8f3564f3fe400000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000024c455279100000000000000000000000065304d6aff5096472519ca86a6a1fea31cb47ced000000000000000000000000000000000000000000000000000000000000000000000000000000004678f0a6958e4d2bc4f1baf7bc52e8f3564f3fe400000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000024c4552791000000000000000000000000c440f3c87dc4b6843cabc413916220d4f4fed117000000000000000000000000000000000000000000000000000000000000000000000000000000004678f0a6958e4d2bc4f1baf7bc52e8f3564f3fe400000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000024c4552791000000000000000000000000f59d4937bf1305856c3a267bb07791507a3377ee00000000000000000000000000000000000000000000000000000000&module=proxy&to=0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000010a9e1c00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000014000000000000000000000000000000000000000000000000000000000000000200000000000000000000000006bc7f4a59bdcb4c8343bcc80b3906765134dab5200000000000000000000000000000000000000000000000000000000000000200000000000000000000000007c788ed2feb17a88c56ba09f336e54966e4f7fee0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000"}
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000123114000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000014000000000000000000000000000000000000000000000000000000000000000200000000000000000000000006bc7f4a59bdcb4c8343bcc80b3906765134dab52000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000007c788ed2feb17a88c56ba09f336e54966e4f7fee"}
 
         '
     headers:
@@ -205,7 +163,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:02 GMT
+      - Wed, 24 Jan 2024 08:46:13 GMT
       Server:
       - nginx
       Vary:
@@ -227,7 +185,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0xd88138b22ef340f9ce572408b8cef10ea8df91768aee5205d5edbdb6fca76665
   response:
@@ -249,7 +207,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:02 GMT
+      - Wed, 24 Jan 2024 08:46:14 GMT
       Server:
       - nginx
       Vary:
@@ -271,7 +229,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x9177d5
   response:
@@ -293,7 +251,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:03 GMT
+      - Wed, 24 Jan 2024 08:46:15 GMT
       Server:
       - nginx
       Vary:
@@ -315,7 +273,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xd88138b22ef340f9ce572408b8cef10ea8df91768aee5205d5edbdb6fca76665
   response:
@@ -337,7 +295,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:03 GMT
+      - Wed, 24 Jan 2024 08:46:17 GMT
       Server:
       - nginx
       Vary:
@@ -359,49 +317,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
-    method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0xd88138b22ef340f9ce572408b8cef10ea8df91768aee5205d5edbdb6fca76665
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 13 Jun 2023 19:09:03 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0x0e1b732cd29d65be155dba7675379ce5e63e1902773609b3b15b2d685ff6bc3d
   response:
@@ -423,7 +339,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:03 GMT
+      - Wed, 24 Jan 2024 08:46:18 GMT
       Server:
       - nginx
       Vary:
@@ -445,7 +361,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x951bfa
   response:
@@ -467,7 +383,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:03 GMT
+      - Wed, 24 Jan 2024 08:46:20 GMT
       Server:
       - nginx
       Vary:
@@ -489,7 +405,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x0e1b732cd29d65be155dba7675379ce5e63e1902773609b3b15b2d685ff6bc3d
   response:
@@ -511,7 +427,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:04 GMT
+      - Wed, 24 Jan 2024 08:46:22 GMT
       Server:
       - nginx
       Vary:
@@ -533,49 +449,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
-    method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0x0e1b732cd29d65be155dba7675379ce5e63e1902773609b3b15b2d685ff6bc3d
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 13 Jun 2023 19:09:04 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0x3ddf908ddeba7d95bc4903f5dff9c47a2c79ac517ad3aa4ebf6330ce949e7297
   response:
@@ -597,7 +471,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:04 GMT
+      - Wed, 24 Jan 2024 08:46:24 GMT
       Server:
       - nginx
       Vary:
@@ -619,7 +493,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x951c0b
   response:
@@ -641,7 +515,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:05 GMT
+      - Wed, 24 Jan 2024 08:46:25 GMT
       Server:
       - nginx
       Vary:
@@ -663,7 +537,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x3ddf908ddeba7d95bc4903f5dff9c47a2c79ac517ad3aa4ebf6330ce949e7297
   response:
@@ -685,7 +559,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:06 GMT
+      - Wed, 24 Jan 2024 08:46:27 GMT
       Server:
       - nginx
       Vary:
@@ -707,49 +581,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
-    method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0x3ddf908ddeba7d95bc4903f5dff9c47a2c79ac517ad3aa4ebf6330ce949e7297
-  response:
-    body:
-      string: '{"status":"1","message":"OK","result":[{"blockNumber":"9772043","timeStamp":"1585558230","from":"0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5","to":"0xc440f3c87dc4b6843cabc413916220d4f4fed117","value":"10800000000000000","contractAddress":"","input":"","type":"call","gas":"2300","gasUsed":"0","isError":"0","errCode":""}]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 13 Jun 2023 19:09:06 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '321'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0x301527f6f3c728a298f971d68a5bc917c31ad0ce477d91c0daf653b248e9b072
   response:
@@ -771,7 +603,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:07 GMT
+      - Wed, 24 Jan 2024 08:46:29 GMT
       Server:
       - nginx
       Vary:
@@ -793,7 +625,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x954ff9
   response:
@@ -815,7 +647,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:07 GMT
+      - Wed, 24 Jan 2024 08:46:30 GMT
       Server:
       - nginx
       Vary:
@@ -837,7 +669,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x301527f6f3c728a298f971d68a5bc917c31ad0ce477d91c0daf653b248e9b072
   response:
@@ -859,7 +691,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:07 GMT
+      - Wed, 24 Jan 2024 08:46:34 GMT
       Server:
       - nginx
       Vary:
@@ -881,49 +713,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
-    method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0x301527f6f3c728a298f971d68a5bc917c31ad0ce477d91c0daf653b248e9b072
-  response:
-    body:
-      string: '{"status":"1","message":"OK","result":[{"blockNumber":"9785337","timeStamp":"1585735112","from":"0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5","to":"0xc440f3c87dc4b6843cabc413916220d4f4fed117","value":"100000000000000","contractAddress":"","input":"","type":"call","gas":"2300","gasUsed":"0","isError":"0","errCode":""}]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 13 Jun 2023 19:09:07 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '319'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0x1b4827a2fd4d6fcbf10bdd1a6c845c1a5f294ca39c60c90610b2a4d9fa5f6a33
   response:
@@ -945,7 +735,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:07 GMT
+      - Wed, 24 Jan 2024 08:46:36 GMT
       Server:
       - nginx
       Vary:
@@ -967,7 +757,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x956045
   response:
@@ -989,7 +779,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:08 GMT
+      - Wed, 24 Jan 2024 08:46:37 GMT
       Server:
       - nginx
       Vary:
@@ -1011,7 +801,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x1b4827a2fd4d6fcbf10bdd1a6c845c1a5f294ca39c60c90610b2a4d9fa5f6a33
   response:
@@ -1033,7 +823,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:08 GMT
+      - Wed, 24 Jan 2024 08:46:38 GMT
       Server:
       - nginx
       Vary:
@@ -1055,49 +845,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
-    method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0x1b4827a2fd4d6fcbf10bdd1a6c845c1a5f294ca39c60c90610b2a4d9fa5f6a33
-  response:
-    body:
-      string: '{"status":"1","message":"OK","result":[{"blockNumber":"9789509","timeStamp":"1585790265","from":"0x49e325b1d06b6df1eb3a4fefd772f9ea58a3dda1","to":"0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5","value":"5450929782112544","contractAddress":"","input":"","type":"call","gas":"878025","gasUsed":"330354","isError":"0","errCode":""}]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 13 Jun 2023 19:09:08 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '327'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0xdc01f2eb8833ac877051900f14b0c5fc99b8b948cb00cfacede84ee8b670a272
   response:
@@ -1119,7 +867,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:08 GMT
+      - Wed, 24 Jan 2024 08:46:40 GMT
       Server:
       - nginx
       Vary:
@@ -1141,7 +889,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x956958
   response:
@@ -1163,7 +911,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:08 GMT
+      - Wed, 24 Jan 2024 08:46:41 GMT
       Server:
       - nginx
       Vary:
@@ -1185,7 +933,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xdc01f2eb8833ac877051900f14b0c5fc99b8b948cb00cfacede84ee8b670a272
   response:
@@ -1207,7 +955,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:09 GMT
+      - Wed, 24 Jan 2024 08:46:43 GMT
       Server:
       - nginx
       Vary:
@@ -1229,49 +977,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
-    method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0xdc01f2eb8833ac877051900f14b0c5fc99b8b948cb00cfacede84ee8b670a272
-  response:
-    body:
-      string: '{"status":"1","message":"OK","result":[{"blockNumber":"9791832","timeStamp":"1585820470","from":"0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5","to":"0xc440f3c87dc4b6843cabc413916220d4f4fed117","value":"650000000000000","contractAddress":"","input":"","type":"call","gas":"2300","gasUsed":"0","isError":"0","errCode":""}]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 13 Jun 2023 19:09:09 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '319'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0x82806e5f41c31a85c89b0ce096d784002d867df9d7f2d67bf07d47407e1a1225
   response:
@@ -1293,7 +999,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:09 GMT
+      - Wed, 24 Jan 2024 08:46:44 GMT
       Server:
       - nginx
       Vary:
@@ -1315,7 +1021,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x957030
   response:
@@ -1337,7 +1043,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:09 GMT
+      - Wed, 24 Jan 2024 08:46:45 GMT
       Server:
       - nginx
       Vary:
@@ -1359,7 +1065,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x82806e5f41c31a85c89b0ce096d784002d867df9d7f2d67bf07d47407e1a1225
   response:
@@ -1381,7 +1087,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:11 GMT
+      - Wed, 24 Jan 2024 08:46:47 GMT
       Server:
       - nginx
       Vary:
@@ -1403,49 +1109,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
-    method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0x82806e5f41c31a85c89b0ce096d784002d867df9d7f2d67bf07d47407e1a1225
-  response:
-    body:
-      string: '{"status":"1","message":"OK","result":[{"blockNumber":"9793584","timeStamp":"1585844643","from":"0x49e325b1d06b6df1eb3a4fefd772f9ea58a3dda1","to":"0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5","value":"3050579405059551","contractAddress":"","input":"","type":"call","gas":"878025","gasUsed":"315354","isError":"0","errCode":""}]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 13 Jun 2023 19:09:11 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '327'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0xf051267460d677f794f0d4a9a39e74b1e76733f0956809d7acee2f339a48e6d9
   response:
@@ -1467,7 +1131,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:11 GMT
+      - Wed, 24 Jan 2024 08:46:49 GMT
       Server:
       - nginx
       Vary:
@@ -1489,7 +1153,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x958171
   response:
@@ -1511,7 +1175,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:12 GMT
+      - Wed, 24 Jan 2024 08:46:50 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -1535,7 +1199,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xf051267460d677f794f0d4a9a39e74b1e76733f0956809d7acee2f339a48e6d9
   response:
@@ -1557,7 +1221,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:12 GMT
+      - Wed, 24 Jan 2024 08:46:52 GMT
       Server:
       - nginx
       Vary:
@@ -1579,49 +1243,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
-    method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0xf051267460d677f794f0d4a9a39e74b1e76733f0956809d7acee2f339a48e6d9
-  response:
-    body:
-      string: '{"status":"1","message":"OK","result":[{"blockNumber":"9798001","timeStamp":"1585903297","from":"0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5","to":"0xc440f3c87dc4b6843cabc413916220d4f4fed117","value":"326000000000000","contractAddress":"","input":"","type":"call","gas":"2300","gasUsed":"0","isError":"0","errCode":""}]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 13 Jun 2023 19:09:13 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '319'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0x160c0e6db0df5ea0c1cc9b1b31bd90c842ef793c9b2ab496efdc62bdd80eeb52
   response:
@@ -1643,7 +1265,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:13 GMT
+      - Wed, 24 Jan 2024 08:46:53 GMT
       Server:
       - nginx
       Vary:
@@ -1665,7 +1287,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x95cca9
   response:
@@ -1687,7 +1309,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:13 GMT
+      - Wed, 24 Jan 2024 08:46:54 GMT
       Server:
       - nginx
       Vary:
@@ -1709,7 +1331,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x160c0e6db0df5ea0c1cc9b1b31bd90c842ef793c9b2ab496efdc62bdd80eeb52
   response:
@@ -1731,7 +1353,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:13 GMT
+      - Wed, 24 Jan 2024 08:46:57 GMT
       Server:
       - nginx
       Vary:
@@ -1753,49 +1375,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
-    method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0x160c0e6db0df5ea0c1cc9b1b31bd90c842ef793c9b2ab496efdc62bdd80eeb52
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 13 Jun 2023 19:09:13 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0xe5f31776ada64cb566c5d8601791aa75a18c72963af29d6646bd6557a4e6a4ae
   response:
@@ -1817,7 +1397,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:14 GMT
+      - Wed, 24 Jan 2024 08:46:58 GMT
       Server:
       - nginx
       Vary:
@@ -1839,7 +1419,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x977353
   response:
@@ -1861,7 +1441,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:14 GMT
+      - Wed, 24 Jan 2024 08:46:59 GMT
       Server:
       - nginx
       Vary:
@@ -1883,7 +1463,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xe5f31776ada64cb566c5d8601791aa75a18c72963af29d6646bd6557a4e6a4ae
   response:
@@ -1905,7 +1485,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:14 GMT
+      - Wed, 24 Jan 2024 08:47:01 GMT
       Server:
       - nginx
       Vary:
@@ -1927,49 +1507,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
-    method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0xe5f31776ada64cb566c5d8601791aa75a18c72963af29d6646bd6557a4e6a4ae
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 13 Jun 2023 19:09:14 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0x63ec8370b29e3ddad6d59f09a161023b5bc0524eb5ca6c4473a5242f40e2129f
   response:
@@ -1991,7 +1529,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:14 GMT
+      - Wed, 24 Jan 2024 08:47:02 GMT
       Server:
       - nginx
       Vary:
@@ -2013,7 +1551,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x97a3bf
   response:
@@ -2035,7 +1573,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:15 GMT
+      - Wed, 24 Jan 2024 08:47:04 GMT
       Server:
       - nginx
       Vary:
@@ -2057,7 +1595,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x63ec8370b29e3ddad6d59f09a161023b5bc0524eb5ca6c4473a5242f40e2129f
   response:
@@ -2079,7 +1617,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:15 GMT
+      - Wed, 24 Jan 2024 08:47:06 GMT
       Server:
       - nginx
       Vary:
@@ -2101,49 +1639,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
-    method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0x63ec8370b29e3ddad6d59f09a161023b5bc0524eb5ca6c4473a5242f40e2129f
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 13 Jun 2023 19:09:15 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0x02356347600dc86ba35effba30207277b022b05f5573f4dd66ba667c6656b3f3
   response:
@@ -2165,7 +1661,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:15 GMT
+      - Wed, 24 Jan 2024 08:47:07 GMT
       Server:
       - nginx
       Vary:
@@ -2187,7 +1683,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x986df7
   response:
@@ -2209,7 +1705,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:17 GMT
+      - Wed, 24 Jan 2024 08:47:08 GMT
       Server:
       - nginx
       Vary:
@@ -2231,7 +1727,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x02356347600dc86ba35effba30207277b022b05f5573f4dd66ba667c6656b3f3
   response:
@@ -2253,7 +1749,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:17 GMT
+      - Wed, 24 Jan 2024 08:47:10 GMT
       Server:
       - nginx
       Vary:
@@ -2275,49 +1771,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
-    method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0x02356347600dc86ba35effba30207277b022b05f5573f4dd66ba667c6656b3f3
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 13 Jun 2023 19:09:17 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0xaa15bf91ae1db6f981cf72372cbb497bc51cfb750a7e61fdb18719756741c734
   response:
@@ -2339,7 +1793,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:17 GMT
+      - Wed, 24 Jan 2024 08:47:11 GMT
       Server:
       - nginx
       Vary:
@@ -2361,7 +1815,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x986f22
   response:
@@ -2383,7 +1837,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:18 GMT
+      - Wed, 24 Jan 2024 08:47:12 GMT
       Server:
       - nginx
       Vary:
@@ -2405,7 +1859,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xaa15bf91ae1db6f981cf72372cbb497bc51cfb750a7e61fdb18719756741c734
   response:
@@ -2427,7 +1881,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:18 GMT
+      - Wed, 24 Jan 2024 08:47:14 GMT
       Server:
       - nginx
       Vary:
@@ -2449,49 +1903,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
-    method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0xaa15bf91ae1db6f981cf72372cbb497bc51cfb750a7e61fdb18719756741c734
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 13 Jun 2023 19:09:18 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0x2bbb296ebf1d94ad28d54c446cb23709b3463c4a43d8b5b8438ff39b2b985e1c
   response:
@@ -2513,7 +1925,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:18 GMT
+      - Wed, 24 Jan 2024 08:47:16 GMT
       Server:
       - nginx
       Vary:
@@ -2535,7 +1947,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0xa2ae6d
   response:
@@ -2557,7 +1969,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:19 GMT
+      - Wed, 24 Jan 2024 08:47:17 GMT
       Server:
       - nginx
       Vary:
@@ -2579,7 +1991,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x2bbb296ebf1d94ad28d54c446cb23709b3463c4a43d8b5b8438ff39b2b985e1c
   response:
@@ -2601,7 +2013,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:20 GMT
+      - Wed, 24 Jan 2024 08:47:19 GMT
       Server:
       - nginx
       Vary:
@@ -2623,49 +2035,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
-    method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0x2bbb296ebf1d94ad28d54c446cb23709b3463c4a43d8b5b8438ff39b2b985e1c
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 13 Jun 2023 19:09:20 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0x48a3e2ef8a746383deac34d74f2f0ea0451b2047701fbed4b9d769a782888eea
   response:
@@ -2687,7 +2057,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:20 GMT
+      - Wed, 24 Jan 2024 08:47:20 GMT
       Server:
       - nginx
       Vary:
@@ -2709,7 +2079,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0xa48e81
   response:
@@ -2731,7 +2101,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:20 GMT
+      - Wed, 24 Jan 2024 08:47:22 GMT
       Server:
       - nginx
       Vary:
@@ -2753,7 +2123,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
+      - rotki/1.31.3.dev267+gb6c78e9ea.d20240122
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x48a3e2ef8a746383deac34d74f2f0ea0451b2047701fbed4b9d769a782888eea
   response:
@@ -2775,7 +2145,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 13 Jun 2023 19:09:21 GMT
+      - Wed, 24 Jan 2024 08:47:24 GMT
       Server:
       - nginx
       Vary:
@@ -2784,48 +2154,6 @@ interactions:
       - SAMEORIGIN
       content-length:
       - '4229'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.28.1.dev157+g17baabc8e.d20230609
-    method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0x48a3e2ef8a746383deac34d74f2f0ea0451b2047701fbed4b9d769a782888eea
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 13 Jun 2023 19:09:21 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
     status:
       code: 200
       message: OK
