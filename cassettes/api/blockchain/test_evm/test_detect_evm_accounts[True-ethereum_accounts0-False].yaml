@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.2.dev59+g20bc4ef65.d20240301
+      - rotki/1.32.3.dev151+gd3fad84f0
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getCode&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&module=proxy
   response:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 03 Mar 2024 16:04:08 GMT
+      - Sun, 31 Mar 2024 23:07:49 GMT
       Server:
       - nginx
       Vary:
@@ -53,12 +53,61 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.2.dev59+g20bc4ef65.d20240301
+      - rotki/1.32.3.dev151+gd3fad84f0
+    method: GET
+    uri: https://api-optimistic.etherscan.io/api?action=txlist&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&module=account&offset=1&page=1
+  response:
+    body:
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"6793523","timeStamp":"1651314465","hash":"0x92ae5e1c4b4a2d5e2af9c4abc415a9dc0b826ba1fa158c57219fc1b6e852a061","nonce":"0","blockHash":"0x5e6f2a7cfd7f57bf7b8f8a9059ee6f2ae0617e24cfe9d919fa59c587d7a2122e","transactionIndex":"0","from":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","to":"0x7f5c764cbc14f9669b88837ca1490cca17c31607","value":"0","gas":"53403","gasPrice":"1000000","isError":"0","txreceipt_status":"1","input":"0x095ea7b30000000000000000000000001111111254760f7ab3f16433eea9304126dcd199ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff","contractAddress":"","cumulativeGasUsed":"53403","gasUsed":"53403","confirmations":"111370322","methodId":"0x095ea7b3","functionName":"approve(address
+        _spender, uint256 _value)"}]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 86d3ff73ac147276-HAM
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 31 Mar 2024 23:07:49 GMT
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      alt-svc:
+      - h3=":443"; ma=86400
+      content-length:
+      - '796'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.32.3.dev151+gd3fad84f0
     method: GET
     uri: https://api.gnosisscan.io/api?action=txlist&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&module=account&offset=1&page=1
   response:
     body:
-      string: '{"status":"1","message":"OK","result":[{"blockNumber":"19832255","timeStamp":"1640786895","hash":"0x1e00e376153a1b3bfd918431bb86334a7d63d36a7eab900d1891d54700b94b1b","nonce":"0","blockHash":"0x3956e549f2bbbaa7301c3a0bc59cb46120c0e78e7f7e47aa19370d47c4eb247d","transactionIndex":"7","from":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","to":"0x1c232f01118cb8b424793ae03f870aa7d0ac7f77","value":"458940112065741953823","gas":"192349","gasPrice":"5120000000","isError":"0","txreceipt_status":"1","input":"0xfb3bdb410000000000000000000000000000000000000000000000000f43fc2c04ee00000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000c37b40abdb939635068d3c5f13e7faf686f03b6500000000000000000000000000000000000000000000000000000000c398dc140000000000000000000000000000000000000000000000000000000000000002000000000000000000000000e91d153e0b41518a2ce8dd3d7944fa863463a97d0000000000000000000000009c58bacc331c9aa871afd802db6379a98e80cedb","contractAddress":"","cumulativeGasUsed":"1922935","gasUsed":"136157","confirmations":"12913709","methodId":"0xfb3bdb41","functionName":"swapETHForExactTokens(uint256
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"19832255","timeStamp":"1640786895","hash":"0x1e00e376153a1b3bfd918431bb86334a7d63d36a7eab900d1891d54700b94b1b","nonce":"0","blockHash":"0x3956e549f2bbbaa7301c3a0bc59cb46120c0e78e7f7e47aa19370d47c4eb247d","transactionIndex":"7","from":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","to":"0x1c232f01118cb8b424793ae03f870aa7d0ac7f77","value":"458940112065741953823","gas":"192349","gasPrice":"5120000000","isError":"0","txreceipt_status":"1","input":"0xfb3bdb410000000000000000000000000000000000000000000000000f43fc2c04ee00000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000c37b40abdb939635068d3c5f13e7faf686f03b6500000000000000000000000000000000000000000000000000000000c398dc140000000000000000000000000000000000000000000000000000000000000002000000000000000000000000e91d153e0b41518a2ce8dd3d7944fa863463a97d0000000000000000000000009c58bacc331c9aa871afd802db6379a98e80cedb","contractAddress":"","cumulativeGasUsed":"1922935","gasUsed":"136157","confirmations":"13381905","methodId":"0xfb3bdb41","functionName":"swapETHForExactTokens(uint256
         amountOut, address[] path, address to, uint256 deadline)"}]}'
     headers:
       Access-Control-Allow-Headers:
@@ -70,7 +119,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 85eadc519d1f62b6-HAM
+      - 86d3ff74e83e62d9-HAM
       Cache-Control:
       - private
       Connection:
@@ -78,11 +127,11 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 03 Mar 2024 16:04:08 GMT
+      - Sun, 31 Mar 2024 23:07:50 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=YQiQ%2BhD%2BL%2FM%2FM5Bu%2BA37suwXhAINPYwzyZGqgt1a%2BtftxQlb7KpFyYlJ0MesiAESfK0v%2FiQGaTly9gCy7Na4Z6C%2BgCwSaLmuBcTzIBR8DEbKegAjbL%2Bc3ZazdtOoTKpquvG4"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=yd%2FYMx3ac3WSMSJkZxYymY%2B%2B1mmn0bYHEGIB%2B9PMZhPuTa52m2fV8EkjVWlQBTmhQHcqDKocglWvZbnV8k4Av1LLae0uWrMGOpIWN92AxlWz5IbVmrvgu1OX4%2FKI4ezClSA8ezd6L5wtF6qC89Ww"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Vary:
@@ -106,12 +155,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.2.dev59+g20bc4ef65.d20240301
+      - rotki/1.32.3.dev151+gd3fad84f0
     method: GET
     uri: https://api.polygonscan.com/api?action=txlist&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&module=account&offset=1&page=1
   response:
     body:
-      string: '{"status":"1","message":"OK","result":[{"blockNumber":"22909344","timeStamp":"1640356430","hash":"0x9b1b5d8344898ef189549e48981f020fe6c71b3addd424facd10acd84e59fa47","nonce":"170516","blockHash":"0xdefd95d57bf5691f5677f735645dd64bf49e0c6b3aa7d9a1912df834783e139a","transactionIndex":"71","from":"0x8c5a6c767ee7084a8c656acd457da9561163ae7e","to":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","value":"500000000000000","gas":"314150","gasPrice":"30000000000","isError":"0","txreceipt_status":"1","input":"0x","contractAddress":"","cumulativeGasUsed":"18297110","gasUsed":"21000","confirmations":"31313371","methodId":"0x","functionName":""}]}'
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"22909344","timeStamp":"1640356430","hash":"0x9b1b5d8344898ef189549e48981f020fe6c71b3addd424facd10acd84e59fa47","nonce":"170516","blockHash":"0xdefd95d57bf5691f5677f735645dd64bf49e0c6b3aa7d9a1912df834783e139a","transactionIndex":"71","from":"0x8c5a6c767ee7084a8c656acd457da9561163ae7e","to":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","value":"500000000000000","gas":"314150","gasPrice":"30000000000","isError":"0","txreceipt_status":"1","input":"0x","contractAddress":"","cumulativeGasUsed":"18297110","gasUsed":"21000","confirmations":"32393725","methodId":"0x","functionName":""}]}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
@@ -126,7 +175,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 03 Mar 2024 16:04:09 GMT
+      - Sun, 31 Mar 2024 23:07:50 GMT
       Server:
       - nginx
       Vary:
@@ -135,6 +184,260 @@ interactions:
       - SAMEORIGIN
       content-length:
       - '639'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.32.3.dev151+gd3fad84f0
+    method: GET
+    uri: https://api.basescan.org/api?action=txlist&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&module=account&offset=1&page=1
+  response:
+    body:
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"4769927","timeStamp":"1696329201","hash":"0xdf47a5c9a1a1ea5c922ddf0a906bf1348ed0f3eb22db392165a58c7b7251ae3f","nonce":"0","blockHash":"0x15f74d323460b4c60cfdf369ae63e7caad2a872c08894e6681f31d3fa5dbf609","transactionIndex":"4","from":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","to":"","value":"0","gas":"986217","gasPrice":"11000000","isError":"0","txreceipt_status":"1","input":"0x608060405234801561001057600080fd5b50610af1806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806306187b4f14610051578063aad3309114610081578063dbdbb51b146100b1578063e5da1b68146100e1575b600080fd5b61006b600480360381019061006691906106c5565b610111565b6040516100789190610941565b60405180910390f35b61009b6004803603810190610096919061066d565b6101ca565b6040516100a89190610963565b60405180910390f35b6100cb60048036038101906100c69190610628565b61027d565b6040516100d89190610963565b60405180910390f35b6100fb60048036038101906100f691906105d0565b61033d565b6040516101089190610963565b60405180910390f35b60608484905067ffffffffffffffff8111801561012d57600080fd5b5060405190808252806020026020018201604052801561016157816020015b606081526020019060019003908161014c5790505b50905060005b858590508110156101c15761019d86868381811061018157fe5b905060200201602081019061019691906105a7565b858561033d565b8282815181106101a957fe5b60200260200101819052508080600101915050610167565b50949350505050565b60608383905067ffffffffffffffff811180156101e657600080fd5b506040519080825280602002602001820160405280156102155781602001602082028036833780820191505090505b50905060005b848490508110156102755761025085858381811061023557fe5b905060200201602081019061024a91906105a7565b846103f0565b82828151811061025c57fe5b602002602001018181525050808060010191505061021b565b509392505050565b60608282905067ffffffffffffffff8111801561029957600080fd5b506040519080825280602002602001820160405280156102c85781602001602082028036833780820191505090505b50905060005b83839050811015610336578383828181106102e557fe5b90506020020160208101906102fa91906105a7565b73ffffffffffffffffffffffffffffffffffffffff163182828151811061031d57fe5b60200260200101818152505080806001019150506102ce565b5092915050565b60608282905067ffffffffffffffff8111801561035957600080fd5b506040519080825280602002602001820160405280156103885781602001602082028036833780820191505090505b50905060005b838390508110156103e8576103c3858585848181106103a957fe5b90506020020160208101906103be91906105a7565b6103f0565b8282815181106103cf57fe5b602002602001018181525050808060010191505061038e565b509392505050565b6000806103fc83610528565b90506000811115610521576000808473ffffffffffffffffffffffffffffffffffffffff16866040516024016104329190610926565b6040516020818303038152906040527f70a08231000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19166020820180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff83818316178352505050506040516104bc919061090f565b600060405180830381855afa9150503d80600081146104f7576040519150601f19603f3d011682016040523d82523d6000602084013e6104fc565b606091505b5091509150811561051e578080602001905181019061051b919061073a565b93505b50505b5092915050565b6000813b9050919050565b60008135905061054281610a8d565b92915050565b60008083601f84011261055a57600080fd5b8235905067ffffffffffffffff81111561057357600080fd5b60208301915083602082028301111561058b57600080fd5b9250929050565b6000815190506105a181610aa4565b92915050565b6000602082840312156105b957600080fd5b60006105c784828501610533565b91505092915050565b6000806000604084860312156105e557600080fd5b60006105f386828701610533565b935050602084013567ffffffffffffffff81111561061057600080fd5b61061c86828701610548565b92509250509250925092565b6000806020838503121561063b57600080fd5b600083013567ffffffffffffffff81111561065557600080fd5b61066185828601610548565b92509250509250929050565b60008060006040848603121561068257600080fd5b600084013567ffffffffffffffff81111561069c57600080fd5b6106a886828701610548565b935093505060206106bb86828701610533565b9150509250925092565b600080600080604085870312156106db57600080fd5b600085013567ffffffffffffffff8111156106f557600080fd5b61070187828801610548565b9450945050602085013567ffffffffffffffff81111561072057600080fd5b61072c87828801610548565b925092505092959194509250565b60006020828403121561074c57600080fd5b600061075a84828501610592565b91505092915050565b600061076f8383610813565b905092915050565b60006107838383610900565b60208301905092915050565b61079881610a1e565b82525050565b60006107a9826109a5565b6107b381856109e0565b9350836020820285016107c585610985565b8060005b8581101561080157848403895281516107e28582610763565b94506107ed836109c6565b925060208a019950506001810190506107c9565b50829750879550505050505092915050565b600061081e826109b0565b61082881856109f1565b935061083383610995565b8060005b8381101561086457815161084b8882610777565b9750610856836109d3565b925050600181019050610837565b5085935050505092915050565b600061087c826109b0565b6108868185610a02565b935061089183610995565b8060005b838110156108c25781516108a98882610777565b97506108b4836109d3565b925050600181019050610895565b5085935050505092915050565b60006108da826109bb565b6108e48185610a13565b93506108f4818560208601610a5a565b80840191505092915050565b61090981610a50565b82525050565b600061091b82846108cf565b915081905092915050565b600060208201905061093b600083018461078f565b92915050565b6000602082019050818103600083015261095b818461079e565b905092915050565b6000602082019050818103600083015261097d8184610871565b905092915050565b6000819050602082019050919050565b6000819050602082019050919050565b600081519050919050565b600081519050919050565b600081519050919050565b6000602082019050919050565b6000602082019050919050565b600082825260208201905092915050565b600082825260208201905092915050565b600082825260208201905092915050565b600081905092915050565b6000610a2982610a30565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b60005b83811015610a78578082015181840152602081019050610a5d565b83811115610a87576000848401525b50505050565b610a9681610a1e565b8114610aa157600080fd5b50565b610aad81610a50565b8114610ab857600080fd5b5056fea2646970667358221220731d2a65fe01f77616b3ccad057c18d4bb2d6c09a423559554d3fd18165788e064736f6c63430007060033","contractAddress":"0x2d26d6b698f6494efdb908a2a4f11ae5fee86099","cumulativeGasUsed":"922773","gasUsed":"657478","confirmations":"7798634","methodId":"0x60806040","functionName":""}]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 86d3ff7ae8d262b8-HAM
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 31 Mar 2024 23:07:50 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=BVKpf40mpGTrqvebpCv%2FbcEZj3d0wr52nwEbaKmIC74gRlntWU4dNuXqiLYW5t%2FAbfD8BwtJvbBGn7WiOP6%2FcZOOgThqIbToy0icGAeCOcAPLDNTVKfxPw%2B0hOYoXFlbW%2FpH2gn53E83Ig3YmJ8%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      alt-svc:
+      - h3=":443"; ma=86400
+      content-length:
+      - '6287'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.32.3.dev151+gd3fad84f0
+    method: GET
+    uri: https://api.scrollscan.com/api?action=txlist&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&module=account&offset=1&page=1
+  response:
+    body:
+      string: '{"status":"0","message":"No transactions found","result":[]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 86d3ff7c2c5c62fb-HAM
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 31 Mar 2024 23:07:51 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=GqmBYXVf2qKoIHoAq5JbRg1MbsEQ%2F7DdPhhEqw2O%2F68KAi3vyCtG0iKwyc136%2FvEDAtYEWIe17W0XzGYC0Q6S5rhfeQnAxq%2BopEg0YNp%2BByeOKC49cgL9%2FKW8LyJ7QUdpwtdiE1rAjqpZqZ3NQrG1Q%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      content-length:
+      - '60'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.32.3.dev151+gd3fad84f0
+    method: GET
+    uri: https://api.scrollscan.com/api?action=txlistinternal&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&module=account&offset=1&page=1
+  response:
+    body:
+      string: '{"status":"0","message":"No transactions found","result":[]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 86d3ff7e08ca62bc-HAM
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 31 Mar 2024 23:07:51 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=ri1qrpQWKhf0AI91qn7ffT3UXvddxH31n2w%2FmL9hOAqY8HzNRjf5ogVlrv7P2A7Ua1tyaE9OPIEd1QxnYfGrmld%2BCq1iGQgkeX6OTT2eay87Yc%2B4XhBVWHr2v5gRQ%2B1K185HrSMRPJBI3Y%2FOe450bQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      content-length:
+      - '60'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.32.3.dev151+gd3fad84f0
+    method: GET
+    uri: https://api.scrollscan.com/api?action=tokentx&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&module=account&offset=1&page=1
+  response:
+    body:
+      string: '{"status":"0","message":"No transactions found","result":[]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 86d3ff7f38bccaa9-HAM
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 31 Mar 2024 23:07:51 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=AjkHPvo6kPmoXmSoWbbTFnXApVVa0gf84%2BSGNeYdZPwOvRpDo9ZcHnGH%2BU%2Bk3zFBrX8XGuMLbHBS7ekxrHbaHA162ns5XZsy%2Fv8%2B%2FuHm0Z2Z7Z1bBoKLMAqrur4NM%2FJJ6lBhJmtsXF8gnZ8TKzJ%2BqA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      content-length:
+      - '60'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.32.3.dev151+gd3fad84f0
+    method: GET
+    uri: https://api.zksync.io/api/v0.2/accounts/0xc37b40ABdB939635068d3c5f13E7faF686F03B65/transactions?direction=older&from=latest&limit=1
+  response:
+    body:
+      string: '{"request":{"network":"mainnet","apiVersion":"v02","resource":"/api/v0.2/accounts/0xc37b40ABdB939635068d3c5f13E7faF686F03B65/transactions","args":{"limit":"1","from":"latest","direction":"older","account_id_or_address":"0xc37b40ABdB939635068d3c5f13E7faF686F03B65"},"timestamp":"2024-03-31T23:07:51.934006576Z"},"status":"success","error":null,"result":{"list":[{"txHash":"0x9cba9d448d598184e4d13ec880e77b5ba14cec73b3b45ca543ed29a34695d91d","blockIndex":50,"blockNumber":54557,"op":{"type":"Transfer","accountId":798924,"from":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","to":"0x80c67432656d59144ceff962e8faf8926599bcf8","token":0,"amount":"21751009002000000","fee":"65500000000000","nonce":1,"validFrom":0,"validUntil":4294967295,"signature":{"pubKey":"cf4d6daf9194b84c3d809b8063aeba720bf8aa4363db116477d8461b140c011a","signature":"e8e71c406e3ab797fa44acfe66673c42cb61f3669aba10ee958f92a050e587ab9106877c8d3e461e46bb64494495b3a7e170a573e85fafd3242559c1afa33103"}},"status":"finalized","failReason":null,"createdAt":"2022-02-12T14:53:07.642030Z","batchId":984007}],"pagination":{"from":"0x9cba9d448d598184e4d13ec880e77b5ba14cec73b3b45ca543ed29a34695d91d","limit":1,"direction":"older","count":3}}}'
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 86d3ff811950452e-TXL
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 31 Mar 2024 23:07:52 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      access-control-allow-origin:
+      - '*'
+      access-control-max-age:
+      - '1728000'
+      content-length:
+      - '1197'
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      vary:
+      - Accept-Encoding
     status:
       code: 200
       message: OK
@@ -165,7 +468,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-Ray:
-      - 85eadc578e7010c1-CPH
+      - 86d3ff826ae55902-TXL
       Cache-Control:
       - private, no-cache
       Connection:
@@ -175,16 +478,16 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 03 Mar 2024 16:04:09 GMT
+      - Sun, 31 Mar 2024 23:07:52 GMT
       Server:
       - cloudflare
       Set-Cookie:
-      - api-session=1709481850.679.26.350728|ea6fe5debfaeb9a420bd8a2d86ef8cc1; Max-Age=172800;
+      - api-session=1711926473.127.26.85224|ea6fe5debfaeb9a420bd8a2d86ef8cc1; Max-Age=172800;
         Path=/; Secure; HttpOnly; SameSite=None
-      - __cflb=02DiuGkhLNKExmHfnCWvsWTNjzm8aijt6g4HsTSK7qXo2; SameSite=Lax; path=/;
-        expires=Mon, 04-Mar-24 16:04:09 GMT; HttpOnly
-      - __cf_bm=q2cpmdIWqL_eygqyYzyN0K5zJ6A5KUFO.qmTP6lz3RY-1709481849-1.0.1.1-54Bog1xwhk_zreDRBvZbufOUe73XQGYuCkMbRRyvGwv9A07B9Gq_VfTksF5ww23o23gX6IYrJvspgvis2nhMuA;
-        path=/; expires=Sun, 03-Mar-24 16:34:09 GMT; domain=.avax.network; HttpOnly;
+      - __cflb=02DiuGkhLNKExmHfnCWvsWTNjzm8aijt63xg61pUqMAmA; SameSite=Lax; path=/;
+        expires=Mon, 01-Apr-24 23:07:52 GMT; HttpOnly
+      - __cf_bm=75S7vIlTGr1cdzJeemkroRmPVI2rZ2vGZ5xEPEkL7NY-1711926472-1.0.1.1-Gv6B0_8C.LD2GdAovObjErJ2CBOLdl.02A9QMz0FDyXXTULgTBSap3qnTp9Fek6ed3SyCKg.8avbw9dzFxRSgg;
+        path=/; expires=Sun, 31-Mar-24 23:37:52 GMT; domain=.avax.network; HttpOnly;
         Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=0
@@ -214,8 +517,8 @@ interactions:
       Content-Type:
       - application/json
       Cookie:
-      - api-session=1709481850.679.26.350728|ea6fe5debfaeb9a420bd8a2d86ef8cc1; __cflb=02DiuGkhLNKExmHfnCWvsWTNjzm8aijt6g4HsTSK7qXo2;
-        __cf_bm=q2cpmdIWqL_eygqyYzyN0K5zJ6A5KUFO.qmTP6lz3RY-1709481849-1.0.1.1-54Bog1xwhk_zreDRBvZbufOUe73XQGYuCkMbRRyvGwv9A07B9Gq_VfTksF5ww23o23gX6IYrJvspgvis2nhMuA
+      - api-session=1711926473.127.26.85224|ea6fe5debfaeb9a420bd8a2d86ef8cc1; __cflb=02DiuGkhLNKExmHfnCWvsWTNjzm8aijt63xg61pUqMAmA;
+        __cf_bm=75S7vIlTGr1cdzJeemkroRmPVI2rZ2vGZ5xEPEkL7NY-1711926472-1.0.1.1-Gv6B0_8C.LD2GdAovObjErJ2CBOLdl.02A9QMz0FDyXXTULgTBSap3qnTp9Fek6ed3SyCKg.8avbw9dzFxRSgg
       User-Agent:
       - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
     method: POST
@@ -229,7 +532,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-Ray:
-      - 85eadc590a628f5f-CPH
+      - 86d3ff833ce64510-TXL
       Cache-Control:
       - private, no-cache
       Connection:
@@ -239,7 +542,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Sun, 03 Mar 2024 16:04:09 GMT
+      - Sun, 31 Mar 2024 23:07:52 GMT
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -265,263 +568,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.2.dev59+g20bc4ef65.d20240301
-    method: GET
-    uri: https://api.basescan.org/api?action=txlist&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&module=account&offset=1&page=1
-  response:
-    body:
-      string: '{"status":"1","message":"OK","result":[{"blockNumber":"4769927","timeStamp":"1696329201","hash":"0xdf47a5c9a1a1ea5c922ddf0a906bf1348ed0f3eb22db392165a58c7b7251ae3f","nonce":"0","blockHash":"0x15f74d323460b4c60cfdf369ae63e7caad2a872c08894e6681f31d3fa5dbf609","transactionIndex":"4","from":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","to":"","value":"0","gas":"986217","gasPrice":"11000000","isError":"0","txreceipt_status":"1","input":"0x608060405234801561001057600080fd5b50610af1806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806306187b4f14610051578063aad3309114610081578063dbdbb51b146100b1578063e5da1b68146100e1575b600080fd5b61006b600480360381019061006691906106c5565b610111565b6040516100789190610941565b60405180910390f35b61009b6004803603810190610096919061066d565b6101ca565b6040516100a89190610963565b60405180910390f35b6100cb60048036038101906100c69190610628565b61027d565b6040516100d89190610963565b60405180910390f35b6100fb60048036038101906100f691906105d0565b61033d565b6040516101089190610963565b60405180910390f35b60608484905067ffffffffffffffff8111801561012d57600080fd5b5060405190808252806020026020018201604052801561016157816020015b606081526020019060019003908161014c5790505b50905060005b858590508110156101c15761019d86868381811061018157fe5b905060200201602081019061019691906105a7565b858561033d565b8282815181106101a957fe5b60200260200101819052508080600101915050610167565b50949350505050565b60608383905067ffffffffffffffff811180156101e657600080fd5b506040519080825280602002602001820160405280156102155781602001602082028036833780820191505090505b50905060005b848490508110156102755761025085858381811061023557fe5b905060200201602081019061024a91906105a7565b846103f0565b82828151811061025c57fe5b602002602001018181525050808060010191505061021b565b509392505050565b60608282905067ffffffffffffffff8111801561029957600080fd5b506040519080825280602002602001820160405280156102c85781602001602082028036833780820191505090505b50905060005b83839050811015610336578383828181106102e557fe5b90506020020160208101906102fa91906105a7565b73ffffffffffffffffffffffffffffffffffffffff163182828151811061031d57fe5b60200260200101818152505080806001019150506102ce565b5092915050565b60608282905067ffffffffffffffff8111801561035957600080fd5b506040519080825280602002602001820160405280156103885781602001602082028036833780820191505090505b50905060005b838390508110156103e8576103c3858585848181106103a957fe5b90506020020160208101906103be91906105a7565b6103f0565b8282815181106103cf57fe5b602002602001018181525050808060010191505061038e565b509392505050565b6000806103fc83610528565b90506000811115610521576000808473ffffffffffffffffffffffffffffffffffffffff16866040516024016104329190610926565b6040516020818303038152906040527f70a08231000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19166020820180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff83818316178352505050506040516104bc919061090f565b600060405180830381855afa9150503d80600081146104f7576040519150601f19603f3d011682016040523d82523d6000602084013e6104fc565b606091505b5091509150811561051e578080602001905181019061051b919061073a565b93505b50505b5092915050565b6000813b9050919050565b60008135905061054281610a8d565b92915050565b60008083601f84011261055a57600080fd5b8235905067ffffffffffffffff81111561057357600080fd5b60208301915083602082028301111561058b57600080fd5b9250929050565b6000815190506105a181610aa4565b92915050565b6000602082840312156105b957600080fd5b60006105c784828501610533565b91505092915050565b6000806000604084860312156105e557600080fd5b60006105f386828701610533565b935050602084013567ffffffffffffffff81111561061057600080fd5b61061c86828701610548565b92509250509250925092565b6000806020838503121561063b57600080fd5b600083013567ffffffffffffffff81111561065557600080fd5b61066185828601610548565b92509250509250929050565b60008060006040848603121561068257600080fd5b600084013567ffffffffffffffff81111561069c57600080fd5b6106a886828701610548565b935093505060206106bb86828701610533565b9150509250925092565b600080600080604085870312156106db57600080fd5b600085013567ffffffffffffffff8111156106f557600080fd5b61070187828801610548565b9450945050602085013567ffffffffffffffff81111561072057600080fd5b61072c87828801610548565b925092505092959194509250565b60006020828403121561074c57600080fd5b600061075a84828501610592565b91505092915050565b600061076f8383610813565b905092915050565b60006107838383610900565b60208301905092915050565b61079881610a1e565b82525050565b60006107a9826109a5565b6107b381856109e0565b9350836020820285016107c585610985565b8060005b8581101561080157848403895281516107e28582610763565b94506107ed836109c6565b925060208a019950506001810190506107c9565b50829750879550505050505092915050565b600061081e826109b0565b61082881856109f1565b935061083383610995565b8060005b8381101561086457815161084b8882610777565b9750610856836109d3565b925050600181019050610837565b5085935050505092915050565b600061087c826109b0565b6108868185610a02565b935061089183610995565b8060005b838110156108c25781516108a98882610777565b97506108b4836109d3565b925050600181019050610895565b5085935050505092915050565b60006108da826109bb565b6108e48185610a13565b93506108f4818560208601610a5a565b80840191505092915050565b61090981610a50565b82525050565b600061091b82846108cf565b915081905092915050565b600060208201905061093b600083018461078f565b92915050565b6000602082019050818103600083015261095b818461079e565b905092915050565b6000602082019050818103600083015261097d8184610871565b905092915050565b6000819050602082019050919050565b6000819050602082019050919050565b600081519050919050565b600081519050919050565b600081519050919050565b6000602082019050919050565b6000602082019050919050565b600082825260208201905092915050565b600082825260208201905092915050565b600082825260208201905092915050565b600081905092915050565b6000610a2982610a30565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b60005b83811015610a78578082015181840152602081019050610a5d565b83811115610a87576000848401525b50505050565b610a9681610a1e565b8114610aa157600080fd5b50565b610aad81610a50565b8114610ab857600080fd5b5056fea2646970667358221220731d2a65fe01f77616b3ccad057c18d4bb2d6c09a423559554d3fd18165788e064736f6c63430007060033","contractAddress":"0x2d26d6b698f6494efdb908a2a4f11ae5fee86099","cumulativeGasUsed":"922773","gasUsed":"657478","confirmations":"6576325","methodId":"0x60806040","functionName":""}]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc5a0eb862ef-HAM
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sun, 03 Mar 2024 16:04:10 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=jdG4STWm6DYNVOBSmGeq0WSbJbHAUoTcYLjaA0U71l6gInQqbTsnOm%2FV1UqfHN8DSj9AU8xeqnUdtKubGW14qSkrJOYJT%2BLF8q1P4LR6pUNGf0XzSz9Erdr0VklZ7DMBYEk%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400
-      content-length:
-      - '6287'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.32.2.dev59+g20bc4ef65.d20240301
-    method: GET
-    uri: https://api.scrollscan.com/api?action=txlist&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&module=account&offset=1&page=1
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc5b882e62ce-HAM
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sun, 03 Mar 2024 16:04:10 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ffplvvgXv%2FcFZhEVovKtz8JEklWJi0ZFNgNcghF7diEAMU2%2FiVL4lg1pu4mgmMueqqEi0Bl7DXIHLuODhidUPBbpvGoisq%2BqwgT1zny%2Bqrkv3kdZmLsACycr%2FLrPpudL80YpOw%3D%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.32.2.dev59+g20bc4ef65.d20240301
-    method: GET
-    uri: https://api.scrollscan.com/api?action=txlistinternal&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&module=account&offset=1&page=1
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc5cbca762ec-HAM
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sun, 03 Mar 2024 16:04:10 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bb1qwnQq1mmn7yRItnp7EgtfD1DVIDuiRXAcaORPmvtl4KOtx2in9UFcdYtRoRPaZC7hhZB6hvWxMX%2FY9Ud78420bVAF8BGhRSyTM9c9xtNZoem0uq5ypsLjWuxf08sUosdhJQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.32.2.dev59+g20bc4ef65.d20240301
-    method: GET
-    uri: https://api.scrollscan.com/api?action=tokentx&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&module=account&offset=1&page=1
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc5de8fdca7d-HAM
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sun, 03 Mar 2024 16:04:10 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gP3%2Bu4zZZwdGt8dFe%2FHDCYWNewtpiCQWYLDPFjfTDO20fwZBicB%2F4583YwbjAOXt5THkNKIjXWXjF%2B8%2BL2jIW2HB7YYyoYf4pC7%2Bo%2FsK%2FcREX6qv4vOaCJ9rujQ%2Fqv10evDD9w%3D%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.32.2.dev59+g20bc4ef65.d20240301
-    method: GET
-    uri: https://api-optimistic.etherscan.io/api?action=txlist&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&module=account&offset=1&page=1
-  response:
-    body:
-      string: '{"status":"1","message":"OK","result":[{"blockNumber":"6793523","timeStamp":"1651314465","hash":"0x92ae5e1c4b4a2d5e2af9c4abc415a9dc0b826ba1fa158c57219fc1b6e852a061","nonce":"0","blockHash":"0x5e6f2a7cfd7f57bf7b8f8a9059ee6f2ae0617e24cfe9d919fa59c587d7a2122e","transactionIndex":"0","from":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","to":"0x7f5c764cbc14f9669b88837ca1490cca17c31607","value":"0","gas":"53403","gasPrice":"1000000","isError":"0","txreceipt_status":"1","input":"0x095ea7b30000000000000000000000001111111254760f7ab3f16433eea9304126dcd199ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff","contractAddress":"","cumulativeGasUsed":"53403","gasUsed":"53403","confirmations":"110148013","methodId":"0x095ea7b3","functionName":"approve(address
-        _spender, uint256 _value)"}]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc5feac81d02-CPH
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sun, 03 Mar 2024 16:04:11 GMT
-      Server:
-      - cloudflare
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400
-      content-length:
-      - '796'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.32.2.dev59+g20bc4ef65.d20240301
+      - rotki/1.32.3.dev151+gd3fad84f0
     method: GET
     uri: https://api.arbiscan.io/api?action=txlist&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&module=account&offset=1&page=1
   response:
     body:
-      string: '{"status":"1","message":"OK","result":[{"blockNumber":"5925327","timeStamp":"1644677548","hash":"0x4adb04f1c1e8cd935782a8eccca8fb5eed4dad7f8d7b8029f4ff0edfbc81e5d8","nonce":"1047","blockHash":"0x1969345e33bc9f2eb66ffbb26ea957579d808d1286bc88dc85e459bf91300983","transactionIndex":"0","from":"0x80c67432656d59144ceff962e8faf8926599bcf8","to":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","value":"20331000000000001","gas":"1000000","gasPrice":"698094460","gasPriceBid":"872618075","isError":"0","txreceipt_status":"1","input":"0x","contractAddress":"","cumulativeGasUsed":"0","gasUsed":"429180","confirmations":"180805264","methodId":"0x","functionName":""}]}'
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"5925327","timeStamp":"1644677548","hash":"0x4adb04f1c1e8cd935782a8eccca8fb5eed4dad7f8d7b8029f4ff0edfbc81e5d8","nonce":"1047","blockHash":"0x1969345e33bc9f2eb66ffbb26ea957579d808d1286bc88dc85e459bf91300983","transactionIndex":"0","from":"0x80c67432656d59144ceff962e8faf8926599bcf8","to":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","value":"20331000000000001","gas":"1000000","gasPrice":"698094460","gasPriceBid":"872618075","isError":"0","txreceipt_status":"1","input":"0x","contractAddress":"","cumulativeGasUsed":"0","gasUsed":"429180","confirmations":"190350653","methodId":"0x","functionName":""}]}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
@@ -532,7 +584,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 85eadc61ee45ca2f-HAM
+      - 86d3ff846eaecaa1-HAM
       Cache-Control:
       - private
       Connection:
@@ -540,11 +592,11 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 03 Mar 2024 16:04:11 GMT
+      - Sun, 31 Mar 2024 23:07:52 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=opTq7AYWPNCdvQVZojm59N0PXibYq7xpPdNsNetkIlEs0eMqrAIHMSWd5f1PJ4DmJRo7GtYEn9rwIqr5hMMRWaZOIoKq5i2HeL74T60EkkuQrKuvPRnx8C5PfPWaUxObig%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=YSLCFpsrI0XA5nmKWorDwxsqTQ6Va%2FqgplKrPjGu7fRx1wy6k6zNUstnp93cLcHgT2d4Xoq9aLGqh2E%2BezjiGlOhrhj4%2Bxa92zszrGU0dw6u%2F6%2BB0txwS4TUSMMaeA70kgmUqCKfjPlv6S5FQQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Vary:
@@ -555,1113 +607,6 @@ interactions:
       - h3=":443"; ma=86400
       content-length:
       - '657'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "net_version", "params": [], "id": 1}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '66'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://gnosis.publicnode.com/
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"100","id":1}'
-    headers:
-      Access-Control-Max-Age:
-      - '1728000'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc642a138f5d-CPH
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 03 Mar 2024 16:04:11 GMT
-      Server:
-      - cloudflare
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
-      Vary:
-      - Origin, accept-encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Envoy-Upstream-Service-Time:
-      - '8'
-      alt-svc:
-      - h3=":443"; ma=86400
-      content-length:
-      - '39'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "net_version", "params": [], "id": 1}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '66'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://gnosis.blockpi.network/v1/rpc/public
-  response:
-    body:
-      string: '{"id":1,"jsonrpc":"2.0","result":"100"}'
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - authorization, content-type, server
-      Access-Control-Allow-Methods:
-      - GET,POST,OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Access-Control-Max-Age:
-      - '172800'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc6479438f5f-CPH
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '39'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 03 Mar 2024 16:04:11 GMT
-      Server:
-      - cloudflare
-      X-Gateway-Id:
-      - '0x59f8f09331aabbd00f7bf8807e265aa14ef42627'
-      X-Node-Id:
-      - '0x497908405b21865b93c3597fc501160b26ef7df8'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 2}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '70'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://base.blockpi.network/v1/rpc/public
-  response:
-    body:
-      string: '{"id":2,"jsonrpc":"2.0","result":"0xad214c"}'
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - authorization, content-type, server
-      Access-Control-Allow-Methods:
-      - GET,POST,OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Access-Control-Max-Age:
-      - '172800'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc64a95010bd-CPH
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '44'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 03 Mar 2024 16:04:11 GMT
-      Server:
-      - cloudflare
-      X-Gateway-Id:
-      - '0xaea71ae675db93c92b450460dafcb4f9887f85ac'
-      X-Node-Id:
-      - '0x75261befec3c0e45a66ea8a14dc7ca9f5a545e82'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 2}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '70'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://gnosis.publicnode.com/
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"0x1f3a9ec","id":2}
-
-        '
-    headers:
-      Access-Control-Max-Age:
-      - '1728000'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc650aaebe42-CPH
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 03 Mar 2024 16:04:11 GMT
-      Server:
-      - cloudflare
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
-      Vary:
-      - Origin, accept-encoding
-      X-Content-Type-Options:
-      - nosniff
-      X-Envoy-Upstream-Service-Time:
-      - '1'
-      alt-svc:
-      - h3=":443"; ma=86400
-      content-length:
-      - '46'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "web3_clientVersion", "params": [], "id":
-      0}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '73'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://rpc.ankr.com/gnosis
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":0,"result":"erigon/2.58.1/linux-amd64/go1.21.6"}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type,Authorization
-      Access-Control-Allow-Methods:
-      - GET,POST,DELETE,OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Access-Control-Max-Age:
-      - '86400'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc6359d5abcf-CPH
-      Cache-Control:
-      - public, max-age=2
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 03 Mar 2024 16:04:11 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Accept-Encoding
-      X-Robots-Tag:
-      - noindex, nofollow
-      content-length:
-      - '70'
-      x-multirpc-response-type:
-      - '1'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.32.2.dev59+g20bc4ef65.d20240301
-    method: GET
-    uri: https://api.gnosisscan.io/api?action=eth_blockNumber&module=proxy
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"0x1f3a9ea","id":83}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc660e9a4150-HAM
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sun, 03 Mar 2024 16:04:11 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=weh9kjcUyo0RV1k0VMLXmGfYLagFQiWrVwkUxIcvsgSKrxuIWR%2BkiO6sNScU6k14yM4m5kjG5A7bgBXsUnitAk6Sm6biOs%2BkFgD0FQzFZk%2FgwkHciOWb4u9vY74cHS0Df9Sf"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400
-      content-length:
-      - '46'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.32.2.dev59+g20bc4ef65.d20240301
-    method: GET
-    uri: https://api.basescan.org/api?action=eth_blockNumber&module=proxy
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":83,"result":"0xad214c"}
-
-        '
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc6558adca81-HAM
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sun, 03 Mar 2024 16:04:11 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=v63%2BRrQLcmnmpq3SxHPNE6oJk6ph0mAL67i8kxwuBKYXvic8%2BjDbivbP5piKjMfjCL9tdDvZfyy%2FUWRfPsm%2FN%2BdkGllYFCc7SpBu5w4tjHoBKRWlHra896CQczxoCbdE7Vc%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400
-      content-length:
-      - '46'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.32.2.dev59+g20bc4ef65.d20240301
-    method: GET
-    uri: https://api.basescan.org/api?action=eth_blockNumber&module=proxy
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":83,"result":"0xad214c"}
-
-        '
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc65b8326a6b-HAM
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sun, 03 Mar 2024 16:04:12 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hN6c5o2ychgnINl%2FLrpQWCvKeKmEPZzlpWixxwO9sseAVDn8kNeMIQkx4o8v6qxqOKyUxikkpux67BWHYCJvkVaWPy5TijG3%2FqIBO5dyVuKNBLTvxnKgy1MchCGOPEulEdY%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400
-      content-length:
-      - '46'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0xCace5b3c29211740E595850E80478416eE77cA21",
-      "0x8ef8"], "id": 3}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '123'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://gnosis.blockpi.network/v1/rpc/public
-  response:
-    body:
-      string: '{"id":3,"jsonrpc":"2.0","result":"0x385280d64600"}'
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - authorization, content-type, server
-      Access-Control-Allow-Methods:
-      - GET,POST,OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Access-Control-Max-Age:
-      - '172800'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc672c83abe7-CPH
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 03 Mar 2024 16:04:12 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Gateway-Id:
-      - '0x59f8f09331aabbd00f7bf8807e265aa14ef42627'
-      X-Node-Id:
-      - '0xdbf85f7ff053c2e473d139c1aeee10bd3b073a80'
-      content-length:
-      - '50'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "net_version", "params": [], "id": 1}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '66'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://rpc.ankr.com/gnosis
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"100"}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type,Authorization
-      Access-Control-Allow-Methods:
-      - GET,POST,DELETE,OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Access-Control-Max-Age:
-      - '86400'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc666f04be35-CPH
-      Cache-Control:
-      - public, max-age=2
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '39'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 03 Mar 2024 16:04:12 GMT
-      Server:
-      - cloudflare
-      Vary:
-      - Accept-Encoding
-      X-Robots-Tag:
-      - noindex, nofollow
-      x-multirpc-response-type:
-      - '1'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "net_version", "params": [], "id": 1}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '66'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://rpc.ankr.com/base
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"8453"}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type,Authorization
-      Access-Control-Allow-Methods:
-      - GET,POST,DELETE,OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Access-Control-Max-Age:
-      - '86400'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc66dcf97383-CPH
-      Cache-Control:
-      - public, max-age=2
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '40'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 03 Mar 2024 16:04:12 GMT
-      Server:
-      - cloudflare
-      Vary:
-      - Accept-Encoding
-      X-Robots-Tag:
-      - noindex, nofollow
-      x-multirpc-response-type:
-      - '1'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0xf4658cd1e7e891119a678266fba1d7341fafe52554ed11bdb346162d518d3f31"],
-      "id": 4}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '147'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://gnosis.blockpi.network/v1/rpc/public
-  response:
-    body:
-      string: '{"id":4,"jsonrpc":"2.0","result":{"blockHash":"0x20238273d2cc78c49db988b8a0bd7c21a1b556e0bef9cb4c81efc82b982d703f","blockNumber":"0x2f4d4d","chainId":"0x64","from":"0x3919ff56fadc4b2d53b63c0f459b9b9669e96132","gas":"0xfe88a","gasPrice":"0x3b9aca00","hash":"0xf4658cd1e7e891119a678266fba1d7341fafe52554ed11bdb346162d518d3f31","input":"0xf6d956df00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000190ca08663632ced02000000000000000000000000000000000000000000000015af1d78b58c400000","nonce":"0x48","r":"0x3d422a37b2cd6a689b38f816a2f5af0166a94794c299dbc1e174db4537ee601f","s":"0x40cc188f8122ae9c56a777b7ce20c93075a06610444fda4bec9b6b1705be77b6","to":"0x858c01c4db1b9f4baa7ebc8e14b84138a3f7d207","transactionIndex":"0x0","type":"0x0","v":"0xec","value":"0x0"}}'
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - authorization, content-type, server
-      Access-Control-Allow-Methods:
-      - GET,POST,OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Access-Control-Max-Age:
-      - '172800'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc6809a39980-CPH
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 03 Mar 2024 16:04:12 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Gateway-Id:
-      - '0x59f8f09331aabbd00f7bf8807e265aa14ef42627'
-      X-Node-Id:
-      - '0x497908405b21865b93c3597fc501160b26ef7df8'
-      content-length:
-      - '813'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x3a9e669d9e2d0171c8a057031a9e9C048b7FEE60",
-      "0x3e541a"], "id": 3}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '125'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://base.blockpi.network/v1/rpc/public
-  response:
-    body:
-      string: '{"id":3,"jsonrpc":"2.0","result":"0x2386f26fc10000"}'
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - authorization, content-type, server
-      Access-Control-Allow-Methods:
-      - GET,POST,OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Access-Control-Max-Age:
-      - '172800'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc67b8578f59-CPH
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 03 Mar 2024 16:04:12 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Gateway-Id:
-      - '0xaea71ae675db93c92b450460dafcb4f9887f85ac'
-      X-Node-Id:
-      - '0x4a9f77257985021889ac8d50fdf350aa7495bb87'
-      content-length:
-      - '52'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0xc7e021f71a972940c2728717f058f49833e3aa4d074c3599054530f108c281b2"],
-      "id": 4}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '147'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://base.blockpi.network/v1/rpc/public
-  response:
-    body:
-      string: '{"id":4,"jsonrpc":"2.0","result":{"accessList":[],"blockHash":"0x493369ae3bb8df04408d15ed1d9971c0ae93a2a7fdc832a583240a723be3bbc4","blockNumber":"0x3e541a","chainId":"0x2105","from":"0x15718b9b0dade1c17d8329a13bb9553f3b38e172","gas":"0x5208","gasPrice":"0xdaf45a","hash":"0xc7e021f71a972940c2728717f058f49833e3aa4d074c3599054530f108c281b2","input":"0x","maxFeePerGas":"0x104a18f","maxPriorityFeePerGas":"0x5aeeeb","nonce":"0x1","r":"0x23df55c709dccbe0ddbca9867f1658f8a7b97ccc06bd0c2c74ad66ef05308b43","s":"0x6e72646fcd901f4d9ebf8e29f1b447bcc7c1fab524a3534bac2b85872940da67","to":"0x3a9e669d9e2d0171c8a057031a9e9c048b7fee60","transactionIndex":"0xf","type":"0x2","v":"0x0","value":"0x2386f26fc10000","yParity":"0x0"}}'
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - authorization, content-type, server
-      Access-Control-Allow-Methods:
-      - GET,POST,OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Access-Control-Max-Age:
-      - '172800'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc68e8e8be58-CPH
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 03 Mar 2024 16:04:12 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Gateway-Id:
-      - '0xaea71ae675db93c92b450460dafcb4f9887f85ac'
-      X-Node-Id:
-      - '0x12f57136356f3bf5b1c19ce90c10743ab492317a'
-      content-length:
-      - '716'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 2}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '70'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://rpc.ankr.com/base
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":2,"result":"0xad214c"}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type,Authorization
-      Access-Control-Allow-Methods:
-      - GET,POST,DELETE,OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Access-Control-Max-Age:
-      - '86400'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc6858f49981-CPH
-      Cache-Control:
-      - public, max-age=2
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '44'
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 03 Mar 2024 16:04:12 GMT
-      Server:
-      - cloudflare
-      Vary:
-      - Accept-Encoding
-      X-Robots-Tag:
-      - noindex, nofollow
-      x-multirpc-response-type:
-      - '1'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "net_version", "params": [], "id": 1}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '66'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://1rpc.io/base
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"8453","id":1}'
-    headers:
-      Access-Control-Allow-Origin:
-      - '*'
-      Content-Length:
-      - '40'
-      Content-Type:
-      - application/json
-      Date:
-      - Sunday, 03 Mar 2024 16:04:12 GMT
-      Keep-Alive:
-      - timeout=30
-      Req-Id:
-      - 58debc67407399d5
-      Server:
-      - AutomataGeode/0.1.0
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0xc7e021f71a972940c2728717f058f49833e3aa4d074c3599054530f108c281b2"],
-      "id": 4}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '147'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://rpc.ankr.com/base
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":4,"result":{"blockHash":"0x493369ae3bb8df04408d15ed1d9971c0ae93a2a7fdc832a583240a723be3bbc4","blockNumber":"0x3e541a","from":"0x15718b9b0dade1c17d8329a13bb9553f3b38e172","gas":"0x5208","gasPrice":"0xdaf45a","maxFeePerGas":"0x104a18f","maxPriorityFeePerGas":"0x5aeeeb","hash":"0xc7e021f71a972940c2728717f058f49833e3aa4d074c3599054530f108c281b2","input":"0x","nonce":"0x1","to":"0x3a9e669d9e2d0171c8a057031a9e9c048b7fee60","transactionIndex":"0xf","value":"0x2386f26fc10000","type":"0x2","accessList":[],"chainId":"0x2105","v":"0x0","r":"0x23df55c709dccbe0ddbca9867f1658f8a7b97ccc06bd0c2c74ad66ef05308b43","s":"0x6e72646fcd901f4d9ebf8e29f1b447bcc7c1fab524a3534bac2b85872940da67","yParity":"0x0"}}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type,Authorization
-      Access-Control-Allow-Methods:
-      - GET,POST,DELETE,OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Access-Control-Max-Age:
-      - '86400'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc6c8dea1d02-CPH
-      Cache-Control:
-      - public, max-age=2
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 03 Mar 2024 16:04:13 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Accept-Encoding
-      X-Robots-Tag:
-      - noindex, nofollow
-      content-length:
-      - '716'
-      x-multirpc-response-type:
-      - '1'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.32.2.dev59+g20bc4ef65.d20240301
-    method: GET
-    uri: https://api.gnosisscan.io/api?action=eth_blockNumber&module=proxy
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"0x1f3a9ec","id":83}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 85eadc6d6eae414b-HAM
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sun, 03 Mar 2024 16:04:13 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=i6rVdhA2QliG7guXORh3QeTuun6G4uUhQ2nxF9yDsM01s23Xs2Kf8oynnks1%2F8%2B2nJfm4yALAyCJ4YNFU2vDFwOimilhuWqFE4iB%2ByL2KR9vk%2Bo5B7Wf6UeSHPnC90ae05HD"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400
-      content-length:
-      - '46'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 2}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '70'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://1rpc.io/base
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"0xad214c","id":2}'
-    headers:
-      Access-Control-Allow-Origin:
-      - '*'
-      Content-Length:
-      - '44'
-      Content-Type:
-      - application/json
-      Date:
-      - Sunday, 03 Mar 2024 16:04:13 GMT
-      Keep-Alive:
-      - timeout=30
-      Req-Id:
-      - 3e8f41f4371babec
-      Server:
-      - AutomataGeode/0.1.0
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0xf4658cd1e7e891119a678266fba1d7341fafe52554ed11bdb346162d518d3f31"],
-      "id": 4}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '147'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://1rpc.io/gnosis
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":null,"id":4}'
-    headers:
-      Access-Control-Allow-Origin:
-      - '*'
-      Content-Length:
-      - '38'
-      Content-Type:
-      - application/json
-      Date:
-      - Sunday, 03 Mar 2024 16:04:14 GMT
-      Keep-Alive:
-      - timeout=30
-      Req-Id:
-      - 8d59b2e20f9cf0ed
-      Server:
-      - AutomataGeode/0.1.0
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x3a9e669d9e2d0171c8a057031a9e9C048b7FEE60",
-      "0x3e541a"], "id": 3}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '125'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://1rpc.io/base
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"0x2386f26fc10000","id":3}'
-    headers:
-      Access-Control-Allow-Origin:
-      - '*'
-      Content-Length:
-      - '52'
-      Content-Type:
-      - application/json
-      Date:
-      - Sunday, 03 Mar 2024 16:04:14 GMT
-      Keep-Alive:
-      - timeout=30
-      Req-Id:
-      - 1cd381590318bef6
-      Server:
-      - AutomataGeode/0.1.0
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0xc7e021f71a972940c2728717f058f49833e3aa4d074c3599054530f108c281b2"],
-      "id": 4}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '147'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
-    method: POST
-    uri: https://1rpc.io/base
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":{"accessList":[],"blockHash":"0x493369ae3bb8df04408d15ed1d9971c0ae93a2a7fdc832a583240a723be3bbc4","blockNumber":"0x3e541a","chainId":"0x2105","from":"0x15718b9b0dade1c17d8329a13bb9553f3b38e172","gas":"0x5208","gasPrice":"0xdaf45a","hash":"0xc7e021f71a972940c2728717f058f49833e3aa4d074c3599054530f108c281b2","input":"0x","maxFeePerGas":"0x104a18f","maxPriorityFeePerGas":"0x5aeeeb","nonce":"0x1","r":"0x23df55c709dccbe0ddbca9867f1658f8a7b97ccc06bd0c2c74ad66ef05308b43","s":"0x6e72646fcd901f4d9ebf8e29f1b447bcc7c1fab524a3534bac2b85872940da67","to":"0x3a9e669d9e2d0171c8a057031a9e9c048b7fee60","transactionIndex":"0xf","type":"0x2","v":"0x0","value":"0x2386f26fc10000","yParity":"0x0"},"id":4}'
-    headers:
-      Access-Control-Allow-Origin:
-      - '*'
-      Content-Length:
-      - '716'
-      Content-Type:
-      - application/json
-      Date:
-      - Sunday, 03 Mar 2024 16:04:15 GMT
-      Keep-Alive:
-      - timeout=30
-      Req-Id:
-      - 5fbb6d7eab8b0b4f
-      Server:
-      - AutomataGeode/0.1.0
     status:
       code: 200
       message: OK
