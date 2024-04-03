@@ -1,0 +1,269 @@
+interactions:
+- request:
+    body: '{"jsonrpc": "2.0", "method": "web3_clientVersion", "params": [], "id":
+      0}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '73'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":0,"result":"Geth/v1.13.14-omnibus-9653f48e/linux-amd64/go1.21.6"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '87'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 03 Apr 2024 10:38:52 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "net_version", "params": [], "id": 1}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '66'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"1"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '37'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 03 Apr 2024 10:38:53 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 2}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '70'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":2,"result":"0x12aafaf"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '45'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 03 Apr 2024 10:38:53 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.blockcypher.com/v1/eth/main
+  response:
+    body:
+      string: "{\n  \"name\": \"ETH.main\",\n  \"height\": 19574703,\n  \"hash\":
+        \"5be847d97548362dfe1faec9edcf899f678bc04154f8ff15aef722f4ae30fec5\",\n  \"time\":
+        \"2024-04-03T10:38:50.115251852Z\",\n  \"latest_url\": \"https://api.blockcypher.com/v1/eth/main/blocks/5be847d97548362dfe1faec9edcf899f678bc04154f8ff15aef722f4ae30fec5\",\n
+        \ \"previous_hash\": \"007455ead512e3103d93a87145e7d6259812d0b90e4a029199f32e1b567f2e3a\",\n
+        \ \"previous_url\": \"https://api.blockcypher.com/v1/eth/main/blocks/007455ead512e3103d93a87145e7d6259812d0b90e4a029199f32e1b567f2e3a\",\n
+        \ \"peer_count\": 26,\n  \"unconfirmed_count\": 39692,\n  \"high_gas_price\":
+        34631791752,\n  \"medium_gas_price\": 28028482244,\n  \"low_gas_price\": 23583334928,\n
+        \ \"high_priority_fee\": 882808918,\n  \"medium_priority_fee\": 707856528,\n
+        \ \"low_priority_fee\": 457049288,\n  \"base_fee\": 20585590956,\n  \"last_fork_height\":
+        19574191,\n  \"last_fork_hash\": \"0a45d5f88bbd78bbe67be7a08543ae49dd7ff4dcd46fd72d5bec14a9f70a57a7\"\n}"
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 86e86e831ede62ef-HAM
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 03 Apr 2024 10:38:54 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      access-control-allow-methods:
+      - GET, POST, PUT, DELETE
+      access-control-allow-origin:
+      - '*'
+      content-length:
+      - '919'
+      x-ratelimit-remaining:
+      - '1'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x50532e4Be195D1dE0c2E6DfA46D9ec0a4Fee6861",
+      "0x15402"], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '124'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":3,"result":"0x46dd54b7972bf800"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '54'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 03 Apr 2024 10:38:54 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfed1be16dfba1b22060"],
+      "id": 4}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":4,"result":{"blockHash":"0x4e3a3754410177e6937ef1f84bba68ea139e8d1a2258c5f85db9f1cd715a1bdd","blockNumber":"0xb443","from":"0xa1e4380a3b1f749673e270229993ee55f35663b4","gas":"0x5208","gasPrice":"0x2d79883d2000","hash":"0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfed1be16dfba1b22060","input":"0x","nonce":"0x0","r":"0x88ff6cf0fefd94db46111149ae4bfc179e9b94721fffd821d38d16464b3f71d0","s":"0x45e0aff800961cfce805daef7016b9b675c137a6a41a548f7b60a3484c06a33a","to":"0x5df9b87991262f6ba471f09758cde1c0fc1de734","transactionIndex":"0x0","type":"0x0","v":"0x1c","value":"0x7a69"}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '599'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 03 Apr 2024 10:38:55 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionReceipt", "params": ["0x12d474b6cbba04fd1a14e55ef45b1eb175985612244631b4b70450c888962a89"],
+      "id": 5}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '148'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":5,"result":{"blockHash":"0x6f3a7838a8788c3371b88df170c3643d19bad896c915a7368681292882b6ad61","blockNumber":"0xa56a8a","contractAddress":null,"cumulativeGasUsed":"0xb828f3","effectiveGasPrice":"0x126c37af40","from":"0xb620f1934d4584dda6999edcadd3298129646aa5","gasUsed":"0x232ae","logs":[{"address":"0x5beabaebb3146685dd74176f68a0721f91297d37","blockHash":"0x6f3a7838a8788c3371b88df170c3643d19bad896c915a7368681292882b6ad61","blockNumber":"0xa56a8a","data":"0x00000000000000000000000000000000000000000000000000000002540be400","logIndex":"0xeb","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x00000000000000000000000073282a63f0e3d7e9604575420f777361eca3c86a","0x000000000000000000000000b620f1934d4584dda6999edcadd3298129646aa5"],"transactionHash":"0x12d474b6cbba04fd1a14e55ef45b1eb175985612244631b4b70450c888962a89","transactionIndex":"0x6e"},{"address":"0x73282a63f0e3d7e9604575420f777361eca3c86a","blockHash":"0x6f3a7838a8788c3371b88df170c3643d19bad896c915a7368681292882b6ad61","blockNumber":"0xa56a8a","data":"0x000000000000000000000000b620f1934d4584dda6999edcadd3298129646aa5000000000000000000000000b620f1934d4584dda6999edcadd3298129646aa50000000000000000000000005beabaebb3146685dd74176f68a0721f91297d37000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002540be4000000000000000000000000000000000000000000000000000de0b6b3a7640000","logIndex":"0xec","removed":false,"topics":["0xd6d4f5681c246c9f42c203e287975af1601f8df8035a9251f79aab5c8f09e2f8"],"transactionHash":"0x12d474b6cbba04fd1a14e55ef45b1eb175985612244631b4b70450c888962a89","transactionIndex":"0x6e"}],"logsBloom":"0x00000080000000000000000000000000000000000000000000000000200000000000000200400000000000000000000000800000000000000000000000000000000000000000000000000008000000000000000000000000000000000004000000000000000040000000000000000000000040000000000000000010000000000010000000000000000000000000000000000000000040000000000000000000000000000000000000040000000000000000000000000000000000000000000000000002000000000000000000001000000000000000000000000000000004000000000000000020000000000000000000000000010000000000000000000000","status":"0x1","to":"0x73282a63f0e3d7e9604575420f777361eca3c86a","transactionHash":"0x12d474b6cbba04fd1a14e55ef45b1eb175985612244631b4b70450c888962a89","transactionIndex":"0x6e","type":"0x0"}}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 03 Apr 2024 10:38:56 GMT
+      Vary:
+      - Origin
+      - Accept-Encoding
+      content-length:
+      - '2421'
+    status:
+      code: 200
+      message: OK
+version: 1
