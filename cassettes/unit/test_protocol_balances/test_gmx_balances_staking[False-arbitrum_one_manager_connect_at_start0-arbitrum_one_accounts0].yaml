@@ -1,0 +1,733 @@
+interactions:
+- request:
+    body: '{"jsonrpc": "2.0", "method": "web3_clientVersion", "params": [], "id":
+      0}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '73'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://arbitrum-one-archive.allthatnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":0,"result":"nitro/v2.3.3-6a1c1a7/linux-amd64/go1.20.14"}
+
+        '
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - content-encoding, content-length, date, access-control-allow-origin, vary,
+        content-type
+      content-length:
+      - '79'
+      content-type:
+      - application/json
+      date:
+      - Tue, 09 Apr 2024 18:34:17 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Origin, Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "net_version", "params": [], "id": 1}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '66'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://arbitrum-one-archive.allthatnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"42161"}
+
+        '
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - access-control-allow-origin, content-type, vary, content-encoding, content-length,
+        date
+      content-length:
+      - '42'
+      content-type:
+      - application/json
+      date:
+      - Tue, 09 Apr 2024 18:34:17 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Origin, Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 2}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '70'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://arbitrum-one-archive.allthatnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":2,"result":"0xbe12649"}
+
+        '
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - content-length, access-control-allow-origin, vary, content-encoding, date,
+        content-type
+      content-length:
+      - '46'
+      content-type:
+      - application/json
+      date:
+      - Tue, 09 Apr 2024 18:34:17 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Origin, Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+    method: GET
+    uri: https://api.arbiscan.io/api?action=eth_blockNumber&module=proxy
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":83,"result":"0xbe12645"}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 871c9726fa3c2fc3-MAD
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Apr 2024 18:34:18 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=vK360rLTM1D77EjzMu5z6UQ6SIJpcwlJCJx6qjj9UBqFAW3hWuuhKwqucLayyFaGzCxENL3KM7LcCGzt0rabUm869uMkroyKPMUq7kFL6mfGQqC4IJ2q%2BQiemtFt61alyA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      alt-svc:
+      - h3=":443"; ma=86400
+      content-length:
+      - '47'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x2EE4bD21803cdb62B1457949450d0753ca84fada",
+      "0x2a"], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '121'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://arbitrum-one-archive.allthatnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":3,"result":"0x6f05b59d3b20000"}
+
+        '
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - access-control-allow-origin, vary, content-type, date, content-encoding, content-length
+      content-length:
+      - '54'
+      content-type:
+      - application/json
+      date:
+      - Tue, 09 Apr 2024 18:34:18 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Origin, Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0x7eef161b36d4f4708fd82d6c050c0b970a1d321f6dcf2c4591dc039f74cc1ab5"],
+      "id": 4}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://arbitrum-one-archive.allthatnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":4,"result":{"blockHash":"0x7de21e11f4d1521b8190ff013f530291df23dbdb4ab600df4ffc9035fee87ee9","blockNumber":"0x2a","from":"0x1c7d91ccbdbf378bac0f074678b09cb589184e4e","gas":"0xb01a1","gasPrice":"0x32116200","hash":"0x7eef161b36d4f4708fd82d6c050c0b970a1d321f6dcf2c4591dc039f74cc1ab5","input":"0xc746c8f4000000000000000000000000f87bc5535602077d340806d71f805ea9907a843d","nonce":"0x23","to":"0x000000000000000000000000000000000000006b","transactionIndex":"0x0","value":"0x0","type":"0x78","v":"0x14985","r":"0xfd9850d29e0e7a869913663a9088c8e39f1e0e184aac7aef9ce4241d28cf1f8f","s":"0x4272ecf73d9766c04b5e1274a8502178980666119a2624d8eb958396bcdb0892"}}
+
+        '
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - content-length, vary, content-encoding, access-control-allow-origin, content-type,
+        date
+      content-length:
+      - '669'
+      content-type:
+      - application/json
+      date:
+      - Tue, 09 Apr 2024 18:34:18 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Origin, Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f"],
+      "id": 5}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://arbitrum-one-archive.allthatnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":5,"result":{"blockHash":"0xb46444bd95bc91c40442315bc71f3fe4e3f6041f2bebfaea54b14a8c499db849","blockNumber":"0xbdfc844","from":"0x3d3db31adbccb6a4e5ae94ec0701d361e147fa6a","gas":"0x8965f","gasPrice":"0x989680","maxFeePerGas":"0x989680","maxPriorityFeePerGas":"0x989680","hash":"0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f","input":"0xf3daeacc00000000000000000000000000000000000000000000000001f3dc018342bfc2","nonce":"0xf1","to":"0x159854e14a862df9e39e1d128b8e5f70b4a3ce9b","transactionIndex":"0x1","value":"0x0","type":"0x2","accessList":[],"chainId":"0xa4b1","v":"0x0","r":"0x6eb819932ef4e7108b2d0d72681e36b0d601d7e466857862411cac80d97efb68","s":"0x209b8aa4e89f85e275b998e2b1504c75deac31d1c0c53568de5ef7226261de82","yParity":"0x0"}}
+
+        '
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - date, content-length, content-encoding, vary, access-control-allow-origin,
+        content-type
+      content-length:
+      - '778'
+      content-type:
+      - application/json
+      date:
+      - Tue, 09 Apr 2024 18:34:19 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Origin, Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBlockByNumber", "params": ["0xbdfc844",
+      false], "id": 6}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '93'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://arbitrum-one-archive.allthatnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":6,"result":{"baseFeePerGas":"0x989680","difficulty":"0x1","extraData":"0xb2dd306ab2a975936332700ba87d684f30c001ee6b767271bab520a14e91275c","gasLimit":"0x4000000000000","gasUsed":"0x2229b7","hash":"0xb46444bd95bc91c40442315bc71f3fe4e3f6041f2bebfaea54b14a8c499db849","l1BlockNumber":"0x12b58ef","logsBloom":"0x04220140030080800000000080820000000240860040000028080000220c0000000000200120002800040002001c00280408400200100010024800202024040000401001000000800000008800002420008102008000400000000000802020400004000002000001100000040c2088188100820000004024001040900002400010000021000004004000000000060000000010012810000a100000e00400000012040000800002800000000410000084002040010000000900420000000000888080d80200000800850000c20025104000c001400610201801000004100130101011808800010000000000008004000010008011010200442040000008a40000","miner":"0xa4b000000000000000000073657175656e636572","mixHash":"0x000000000001c13c00000000012b58ef00000000000000140000000000000000","nonce":"0x0000000000168778","number":"0xbdfc844","parentHash":"0x20a3dffb7316cdb235e02b5dd4a859e537e359d38d7f032c987d84d666799b95","receiptsRoot":"0x47492d31d2411670dc0e5b24bfa641efc42c5858372d6c2dc9277f38b327b525","sendCount":"0x1c13c","sendRoot":"0xb2dd306ab2a975936332700ba87d684f30c001ee6b767271bab520a14e91275c","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0x1034","stateRoot":"0xfa171fb453a6b72e4867c4fc073ed312b5d660c161548d43870b53c2225d6874","timestamp":"0x661531dc","totalDifficulty":"0xa8ceafc","transactions":["0x1a7970da0a81cec9919760fa0e71f5e748384ff5eee74458b51e5f8418a5f416","0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f","0x35f2956c854b6344a6f77d11f0dbbcd01ff1f47953fc243d55a064503adf47b7","0xceef1c02fb0322697772798d830f2540f071ed6d896dda186f4e7e392668d14a","0x327f2586395d62a056db6e96437078f323800638ff2dfe44e065660f02c756e7","0x5d6e0246cf4071c38a7960fc4c01642149021c39767ecbdfa87ed410db68e363","0x19a0c2af81382cd3af4aa524f9cc2352a5cf315ebfaab8bc5ee2c096091ba335","0x75dc07867387eed103906e6ea932e96dce5d7ad5a237c2a5af2fee2e58f441e0"],"transactionsRoot":"0x0ac393ceff5818ba976a146f0106c16190abee285d48eda2594fd7e517f6bbb5","uncles":[]}}
+
+        '
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - vary, content-type, access-control-allow-origin, content-length, date, content-encoding
+      content-length:
+      - '2199'
+      content-type:
+      - application/json
+      date:
+      - Tue, 09 Apr 2024 18:34:19 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Origin, Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionReceipt", "params": ["0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f"],
+      "id": 7}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '148'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://arbitrum-one-archive.allthatnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":7,"result":{"blockHash":"0xb46444bd95bc91c40442315bc71f3fe4e3f6041f2bebfaea54b14a8c499db849","blockNumber":"0xbdfc844","contractAddress":null,"cumulativeGasUsed":"0x6ab71","effectiveGasPrice":"0x989680","from":"0x3d3db31adbccb6a4e5ae94ec0701d361e147fa6a","gasUsed":"0x6ab71","gasUsedForL1":"0x10d2e","l1BlockNumber":"0x12b58ef","logs":[{"address":"0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a","topics":["0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925","0x0000000000000000000000003d3db31adbccb6a4e5ae94ec0701d361e147fa6a","0x000000000000000000000000908c4d94d34924765f1edc22a1dd098397c59dd4"],"data":"0xffffffffffffffffffffffffffffffffffffffffffffffffc5af8ff5b23619a7","blockNumber":"0xbdfc844","transactionHash":"0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f","transactionIndex":"0x1","blockHash":"0xb46444bd95bc91c40442315bc71f3fe4e3f6041f2bebfaea54b14a8c499db849","logIndex":"0x0","removed":false},{"address":"0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x0000000000000000000000003d3db31adbccb6a4e5ae94ec0701d361e147fa6a","0x000000000000000000000000908c4d94d34924765f1edc22a1dd098397c59dd4"],"data":"0x00000000000000000000000000000000000000000000000001f3dc018342bfc2","blockNumber":"0xbdfc844","transactionHash":"0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f","transactionIndex":"0x1","blockHash":"0xb46444bd95bc91c40442315bc71f3fe4e3f6041f2bebfaea54b14a8c499db849","logIndex":"0x1","removed":false},{"address":"0x908c4d94d34924765f1edc22a1dd098397c59dd4","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x0000000000000000000000000000000000000000000000000000000000000000","0x0000000000000000000000003d3db31adbccb6a4e5ae94ec0701d361e147fa6a"],"data":"0x00000000000000000000000000000000000000000000000001f3dc018342bfc2","blockNumber":"0xbdfc844","transactionHash":"0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f","transactionIndex":"0x1","blockHash":"0xb46444bd95bc91c40442315bc71f3fe4e3f6041f2bebfaea54b14a8c499db849","logIndex":"0x2","removed":false},{"address":"0x908c4d94d34924765f1edc22a1dd098397c59dd4","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x0000000000000000000000003d3db31adbccb6a4e5ae94ec0701d361e147fa6a","0x0000000000000000000000004d268a7d4c16ceb5a606c173bd974984343fea13"],"data":"0x00000000000000000000000000000000000000000000000001f3dc018342bfc2","blockNumber":"0xbdfc844","transactionHash":"0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f","transactionIndex":"0x1","blockHash":"0xb46444bd95bc91c40442315bc71f3fe4e3f6041f2bebfaea54b14a8c499db849","logIndex":"0x3","removed":false},{"address":"0x35247165119b69a40edd5304969560d0ef486921","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x00000000000000000000000003f349b3cc4f200d7fae4d8ddaf1507f5a40d356","0x0000000000000000000000004d268a7d4c16ceb5a606c173bd974984343fea13"],"data":"0x0000000000000000000000000000000000000000000000003a9cf999cc9bd7c9","blockNumber":"0xbdfc844","transactionHash":"0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f","transactionIndex":"0x1","blockHash":"0xb46444bd95bc91c40442315bc71f3fe4e3f6041f2bebfaea54b14a8c499db849","logIndex":"0x4","removed":false},{"address":"0x03f349b3cc4f200d7fae4d8ddaf1507f5a40d356","topics":["0x4def474aca53bf221d07d9ab0f675b3f6d8d2494b8427271bcf43c018ef1eead"],"data":"0x0000000000000000000000000000000000000000000000003a9cf999cc9bd7c9","blockNumber":"0xbdfc844","transactionHash":"0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f","transactionIndex":"0x1","blockHash":"0xb46444bd95bc91c40442315bc71f3fe4e3f6041f2bebfaea54b14a8c499db849","logIndex":"0x5","removed":false},{"address":"0x4d268a7d4c16ceb5a606c173bd974984343fea13","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x0000000000000000000000000000000000000000000000000000000000000000","0x0000000000000000000000003d3db31adbccb6a4e5ae94ec0701d361e147fa6a"],"data":"0x00000000000000000000000000000000000000000000000001f3dc018342bfc2","blockNumber":"0xbdfc844","transactionHash":"0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f","transactionIndex":"0x1","blockHash":"0xb46444bd95bc91c40442315bc71f3fe4e3f6041f2bebfaea54b14a8c499db849","logIndex":"0x6","removed":false},{"address":"0x4d268a7d4c16ceb5a606c173bd974984343fea13","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x0000000000000000000000003d3db31adbccb6a4e5ae94ec0701d361e147fa6a","0x000000000000000000000000d2d1162512f927a7e282ef43a362659e4f2a728f"],"data":"0x00000000000000000000000000000000000000000000000001f3dc018342bfc2","blockNumber":"0xbdfc844","transactionHash":"0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f","transactionIndex":"0x1","blockHash":"0xb46444bd95bc91c40442315bc71f3fe4e3f6041f2bebfaea54b14a8c499db849","logIndex":"0x7","removed":false},{"address":"0x82af49447d8a07e3bd95bd0d56f35241523fbab1","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x0000000000000000000000001de098faf30bd74f22753c28db17a2560d4f5554","0x000000000000000000000000d2d1162512f927a7e282ef43a362659e4f2a728f"],"data":"0x000000000000000000000000000000000000000000000000001685a95ba8607a","blockNumber":"0xbdfc844","transactionHash":"0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f","transactionIndex":"0x1","blockHash":"0xb46444bd95bc91c40442315bc71f3fe4e3f6041f2bebfaea54b14a8c499db849","logIndex":"0x8","removed":false},{"address":"0x1de098faf30bd74f22753c28db17a2560d4f5554","topics":["0x4def474aca53bf221d07d9ab0f675b3f6d8d2494b8427271bcf43c018ef1eead"],"data":"0x000000000000000000000000000000000000000000000000001685a95ba8607a","blockNumber":"0xbdfc844","transactionHash":"0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f","transactionIndex":"0x1","blockHash":"0xb46444bd95bc91c40442315bc71f3fe4e3f6041f2bebfaea54b14a8c499db849","logIndex":"0x9","removed":false},{"address":"0xd2d1162512f927a7e282ef43a362659e4f2a728f","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x0000000000000000000000000000000000000000000000000000000000000000","0x0000000000000000000000003d3db31adbccb6a4e5ae94ec0701d361e147fa6a"],"data":"0x00000000000000000000000000000000000000000000000001f3dc018342bfc2","blockNumber":"0xbdfc844","transactionHash":"0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f","transactionIndex":"0x1","blockHash":"0xb46444bd95bc91c40442315bc71f3fe4e3f6041f2bebfaea54b14a8c499db849","logIndex":"0xa","removed":false},{"address":"0x159854e14a862df9e39e1d128b8e5f70b4a3ce9b","topics":["0xad0723806aa1e5a8fb826fc9f0c5b589e585a6b60dc768a1b20691c95062d2d6"],"data":"0x0000000000000000000000003d3db31adbccb6a4e5ae94ec0701d361e147fa6a000000000000000000000000fc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a00000000000000000000000000000000000000000000000001f3dc018342bfc2","blockNumber":"0xbdfc844","transactionHash":"0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f","transactionIndex":"0x1","blockHash":"0xb46444bd95bc91c40442315bc71f3fe4e3f6041f2bebfaea54b14a8c499db849","logIndex":"0xb","removed":false}],"logsBloom":"0x04020100000000800000000000020000000000860000000000000000000000000000000000200000000000000000002804084002000000000200000000200400000000010000008000000008000004000001020000004000000000000000204000000000020000000000000408200818000080000000002400104010000000000000002100000000400000000000000000000000000000001000000000000000020000000000000000000000100000040000000000000000000000000000000800800002000000008100000000040000000000000000000000000000000020000010000000000000000000000000000000000001000200040040000000040000","status":"0x1","to":"0x159854e14a862df9e39e1d128b8e5f70b4a3ce9b","transactionHash":"0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f","transactionIndex":"0x1","type":"0x2"}}
+
+        '
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - date, content-type, content-length, content-encoding, access-control-allow-origin,
+        vary
+      content-length:
+      - '8030'
+      content-type:
+      - application/json
+      date:
+      - Tue, 09 Apr 2024 18:34:20 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Origin, Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+    method: GET
+    uri: https://api.arbiscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0x25160bf17e5a77935c7661933c045739dba44606859a20f00f187ef291e56a8f
+  response:
+    body:
+      string: '{"status":"0","message":"No transactions found","result":[]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 871c97369b172fa6-MAD
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Apr 2024 18:34:20 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=bmx5UHl45kq9CfS%2Bt7FsmS0R259uWHmqJdXquSEYTHkl2BIUEgUo32jchkb4fhpjolDjUm9aJtdurrf3KkpsHbtb%2BTtbIL%2F4eNmXg6irTBCwvZKkYO82YJSp7vzpn9f3DQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      alt-svc:
+      - h3=":443"; ma=86400
+      content-length:
+      - '60'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0xcA11bde05977b3631167028862bE2a173976CA11",
+      "data": "0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000160000000000000000000000000908c4d94d34924765f1edc22a1dd098397c59dd400000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004313ce56700000000000000000000000000000000000000000000000000000000000000000000000000000000908c4d94d34924765f1edc22a1dd098397c59dd40000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000495d89b4100000000000000000000000000000000000000000000000000000000000000000000000000000000908c4d94d34924765f1edc22a1dd098397c59dd40000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000406fdde0300000000000000000000000000000000000000000000000000000000"},
+      "latest"], "id": 8}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1299'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://arbitrum-one-archive.allthatnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":8,"result":"0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001a000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000473474d58000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a5374616b656420474d5800000000000000000000000000000000000000000000"}
+
+        '
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - content-type, access-control-allow-origin, date, content-encoding, content-length,
+        vary
+      content-length:
+      - '1383'
+      content-type:
+      - application/json
+      date:
+      - Tue, 09 Apr 2024 18:34:21 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Origin, Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0xcA11bde05977b3631167028862bE2a173976CA11",
+      "data": "0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e0000000000000000000000000000000000000000000000000000000000000016000000000000000000000000035247165119b69a40edd5304969560d0ef48692100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004313ce5670000000000000000000000000000000000000000000000000000000000000000000000000000000035247165119b69a40edd5304969560d0ef4869210000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000495d89b410000000000000000000000000000000000000000000000000000000000000000000000000000000035247165119b69a40edd5304969560d0ef4869210000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000406fdde0300000000000000000000000000000000000000000000000000000000"},
+      "latest"], "id": 9}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1299'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://arbitrum-one-archive.allthatnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":9,"result":"0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001a0000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001200000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000005626e474d5800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000009426f6e757320474d580000000000000000000000000000000000000000000000"}
+
+        '
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - content-length, access-control-allow-origin, content-encoding, content-type,
+        date, vary
+      content-length:
+      - '1383'
+      content-type:
+      - application/json
+      date:
+      - Tue, 09 Apr 2024 18:34:21 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Origin, Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0xcA11bde05977b3631167028862bE2a173976CA11",
+      "data": "0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001600000000000000000000000004d268a7d4c16ceb5a606c173bd974984343fea1300000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004313ce567000000000000000000000000000000000000000000000000000000000000000000000000000000004d268a7d4c16ceb5a606c173bd974984343fea130000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000495d89b41000000000000000000000000000000000000000000000000000000000000000000000000000000004d268a7d4c16ceb5a606c173bd974984343fea130000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000406fdde0300000000000000000000000000000000000000000000000000000000"},
+      "latest"], "id": 10}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1300'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://arbitrum-one-archive.allthatnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":10,"result":"0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001a00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000012000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000057362474d58000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000125374616b6564202b20426f6e757320474d580000000000000000000000000000"}
+
+        '
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - content-encoding, date, content-length, content-type, vary, access-control-allow-origin
+      content-length:
+      - '1384'
+      content-type:
+      - application/json
+      date:
+      - Tue, 09 Apr 2024 18:34:21 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Origin, Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0xcA11bde05977b3631167028862bE2a173976CA11",
+      "data": "0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000160000000000000000000000000d2d1162512f927a7e282ef43a362659e4f2a728f00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004313ce56700000000000000000000000000000000000000000000000000000000000000000000000000000000d2d1162512f927a7e282ef43a362659e4f2a728f0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000495d89b4100000000000000000000000000000000000000000000000000000000000000000000000000000000d2d1162512f927a7e282ef43a362659e4f2a728f0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000406fdde0300000000000000000000000000000000000000000000000000000000"},
+      "latest"], "id": 11}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1300'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://arbitrum-one-archive.allthatnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":11,"result":"0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001a0000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001200000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000006736266474d580000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000185374616b6564202b20426f6e7573202b2046656520474d580000000000000000"}
+
+        '
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - content-type, vary, date, content-encoding, content-length, access-control-allow-origin
+      content-length:
+      - '1384'
+      content-type:
+      - application/json
+      date:
+      - Tue, 09 Apr 2024 18:34:22 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Origin, Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+    method: GET
+    uri: https://api.coingecko.com/api/v3/simple/price/?ids=gmx&vs_currencies=usd
+  response:
+    body:
+      string: '{"gmx":{"usd":39.14}}'
+    headers:
+      Age:
+      - '196'
+      CF-Cache-Status:
+      - HIT
+      CF-RAY:
+      - 871c97454b9e8678-MAD
+      Cache-Control:
+      - max-age=30, public, must-revalidate, s-maxage=60
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Apr 2024 18:34:22 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=fTMxQ4N6or4clwLtiyHmeHbR7f74znj0C1zUEkzP628-1712687662-1.0.1.1-CBPFbhFtfjscyNqeiiT7RB0yXeNsi_UltMsHHOecC5aq_c8buc17Oe0De2QxPs01TRVYbrBNBCpzUn7WyTAb7A;
+        path=/; expires=Tue, 09-Apr-24 19:04:22 GMT; domain=.api.coingecko.com; HttpOnly;
+        Secure; SameSite=None
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      access-control-allow-methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - link, per-page, total
+      access-control-request-method:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      alternate-protocol:
+      - 443:npn-spdy/2
+      content-length:
+      - '21'
+      etag:
+      - W/"91be14af269c0a02efcac2a2b59d9e44"
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      strict-transport-security:
+      - max-age=15724800; includeSubdomains
+      vary:
+      - Accept-Encoding, Origin
+      x-content-type-options:
+      - nosniff
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-request-id:
+      - 4f9a0ea7-5c54-4132-a0c9-d32bdc8520d7
+      x-runtime:
+      - '0.014297'
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0x908C4D94D34924765f1eDc22A1DD098397c59dD4",
+      "data": "0x10c1c1030000000000000000000000003d3db31adbccb6a4e5ae94ec0701d361e147fa6a"},
+      "latest"], "id": 12}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '212'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/6.15.1/<class 'web3.providers.rpc.HTTPProvider'>
+    method: POST
+    uri: https://arbitrum-one-archive.allthatnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":12,"result":"0x0000000000000000000000000000000000000000000000003a50700a4dc9e658"}
+
+        '
+    headers:
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - date, access-control-allow-origin, content-encoding, content-type, content-length,
+        vary
+      content-length:
+      - '104'
+      content-type:
+      - application/json
+      date:
+      - Tue, 09 Apr 2024 18:34:23 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Origin, Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    status:
+      code: 200
+      message: OK
+version: 1
