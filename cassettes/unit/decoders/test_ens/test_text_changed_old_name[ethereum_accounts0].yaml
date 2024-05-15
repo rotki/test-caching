@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.4.dev276+g394cf66c8.d20240201
+      - rotki/1.33.1.dev9+g35a9dd481.d20240509
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0xaa59cb2029651d2ed2c0d1ee34b9b88f0b90278fc6da5b51446d4abf24d7f598
   response:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 01 Feb 2024 12:08:41 GMT
+      - Wed, 15 May 2024 07:55:49 GMT
       Server:
       - nginx
       Vary:
@@ -53,7 +53,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.4.dev276+g394cf66c8.d20240201
+      - rotki/1.33.1.dev9+g35a9dd481.d20240509
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0xeec05d
   response:
@@ -75,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 01 Feb 2024 12:08:41 GMT
+      - Wed, 15 May 2024 07:55:49 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -99,7 +99,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.4.dev276+g394cf66c8.d20240201
+      - rotki/1.33.1.dev9+g35a9dd481.d20240509
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xaa59cb2029651d2ed2c0d1ee34b9b88f0b90278fc6da5b51446d4abf24d7f598
   response:
@@ -121,7 +121,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 01 Feb 2024 12:08:42 GMT
+      - Wed, 15 May 2024 07:55:50 GMT
       Server:
       - nginx
       Vary:
@@ -143,7 +143,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.4.dev276+g394cf66c8.d20240201
+      - rotki/1.33.1.dev9+g35a9dd481.d20240509
     method: GET
     uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0xaa59cb2029651d2ed2c0d1ee34b9b88f0b90278fc6da5b51446d4abf24d7f598
   response:
@@ -163,7 +163,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 01 Feb 2024 12:08:43 GMT
+      - Wed, 15 May 2024 07:55:51 GMT
       Server:
       - nginx
       Vary:
@@ -192,7 +192,7 @@ interactions:
       User-Agent:
       - python-requests/2.31.0
     method: POST
-    uri: https://api.thegraph.com/subgraphs/name/ensdomains/ens
+    uri: https://gateway-arbitrum.network.thegraph.com/api/d943ea1af415001154223fdf46b6f193/subgraphs/id/5XqPmWe6gjyrJtFn9cLy237i4cWw2j9HcUJEXsP5qGtH
   response:
     body:
       string: '{"data":{"domains":[{"name":"nebolax.eth"}]}}'
@@ -202,7 +202,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-Ray:
-      - 84ea14d8881f44f8-TXL
+      - 8841916e1f8f71f9-MAD
       Connection:
       - keep-alive
       Content-Length:
@@ -210,23 +210,27 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 01 Feb 2024 12:08:43 GMT
+      - Wed, 15 May 2024 07:55:51 GMT
       Server:
       - cloudflare
       Set-Cookie:
-      - __cf_bm=w3gVeO4YRIlHBZbK0QleoLS8eNPl.269roJOZI2qrhk-1706789323-1-AXn7PP5luo/jUjRQ+SNJCL1b1lTN2GhtLj/2iFexBtQ8ll4XbZv7fML+GosAR+MEf0Rc/9PO4BoCPZR6KpQNlU0=;
-        path=/; expires=Thu, 01-Feb-24 12:38:43 GMT; domain=.thegraph.com; HttpOnly;
+      - __cf_bm=yWMVPJmU9YJIUe6AUpqICiF9fVqYKyWUS7HoZiLQYDE-1715759751-1.0.1.1-WU8g_VtmnJ3.qoK.tCYdcCiXzKfnaNn6U_mHiHewBr0ev7be8i.2DCVBAH0qPfb2MtBkrQESumB3kxf9o8X6lg;
+        path=/; expires=Wed, 15-May-24 08:25:51 GMT; domain=.thegraph.com; HttpOnly;
         Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       Vary:
-      - Accept-Encoding
-      access-control-allow-headers:
-      - Content-Type, User-Agent
-      access-control-allow-methods:
-      - GET, OPTIONS, POST
-      graph-attestable:
+      - origin, access-control-request-method, access-control-request-headers, Accept-Encoding
+      access-control-allow-credentials:
       - 'true'
+      access-control-allow-headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+      access-control-allow-methods:
+      - PUT, GET, POST, OPTIONS
+      access-control-max-age:
+      - '3600'
+      graph-attestation:
+      - '{"requestCID":"0x21c0b59360e57fa16007584c2cf9ef21e5e08992ac1ef93c71e77c66a346ac54","responseCID":"0x4440e3718cf00cc10a00c6fd85dafc1b7da2a1c15b8ebaade70d8fd85147dbda","subgraphDeploymentID":"0x9c28b15f0b4d67b9763e705634572c58715375df29ac94a12330f4e14611c836","r":"0x48ef5447c705e6b83c62c0e2cc66743aaaef0a45c029ed157c4b0432955e51de","s":"0x7b04c721534d25b624363d76957db8cd2f6e394156623054110ec4fcc9def040","v":27}'
     status:
       code: 200
       message: OK
@@ -247,7 +251,7 @@ interactions:
       User-Agent:
       - python-requests/2.31.0
     method: POST
-    uri: https://api.thegraph.com/subgraphs/name/ensdomains/ens
+    uri: https://gateway-arbitrum.network.thegraph.com/api/d943ea1af415001154223fdf46b6f193/subgraphs/id/5XqPmWe6gjyrJtFn9cLy237i4cWw2j9HcUJEXsP5qGtH
   response:
     body:
       string: '{"data":{"domains":[{"name":"nebolax.eth"}]}}'
@@ -257,7 +261,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-Ray:
-      - 84ea14dabdfe450a-TXL
+      - 884191705c162fb3-MAD
       Connection:
       - keep-alive
       Content-Length:
@@ -265,23 +269,27 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 01 Feb 2024 12:08:44 GMT
+      - Wed, 15 May 2024 07:55:51 GMT
       Server:
       - cloudflare
       Set-Cookie:
-      - __cf_bm=DFOuGKbRPCxNHIlKTpFhRZJtv5IAFv3So7BSEvemSvk-1706789324-1-AZ9fn0AXzUScrqyJOZHupaAPZ4SskpS4zrYnjA5DMPGZXOSGnod7C44K4NZUjBUxZSsawWBdm5KvdELcPECRH0U=;
-        path=/; expires=Thu, 01-Feb-24 12:38:44 GMT; domain=.thegraph.com; HttpOnly;
+      - __cf_bm=BNKHCbrLnlqByqo88Z85kfHqOqvMTUIj.CtNhnMEsu8-1715759751-1.0.1.1-XG9tLbcGjbCdts4_7OlM85_X8qXWjdjYf1TYvUL0cF7luES8O7bR1o2nzJ2yE4UVe3JKAcfe6Ld_UQXo8E0IIQ;
+        path=/; expires=Wed, 15-May-24 08:25:51 GMT; domain=.thegraph.com; HttpOnly;
         Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       Vary:
-      - Accept-Encoding
-      access-control-allow-headers:
-      - Content-Type, User-Agent
-      access-control-allow-methods:
-      - GET, OPTIONS, POST
-      graph-attestable:
+      - origin, access-control-request-method, access-control-request-headers, Accept-Encoding
+      access-control-allow-credentials:
       - 'true'
+      access-control-allow-headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+      access-control-allow-methods:
+      - PUT, GET, POST, OPTIONS
+      access-control-max-age:
+      - '3600'
+      graph-attestation:
+      - '{"requestCID":"0xbe9296f5722542a08abe3698799d436a57c83f821584da78c0d2b77c2a8500c1","responseCID":"0x4440e3718cf00cc10a00c6fd85dafc1b7da2a1c15b8ebaade70d8fd85147dbda","subgraphDeploymentID":"0x9c28b15f0b4d67b9763e705634572c58715375df29ac94a12330f4e14611c836","r":"0xe19b6f814e85bc84913edb16647091c4fd4105a187fa2c59210a381fea401df3","s":"0x315f40dd3f539fc5be61e170745445e86641ff1bc470f5a1e930049774bedbb3","v":27}'
     status:
       code: 200
       message: OK
@@ -302,7 +310,7 @@ interactions:
       User-Agent:
       - python-requests/2.31.0
     method: POST
-    uri: https://api.thegraph.com/subgraphs/name/ensdomains/ens
+    uri: https://gateway-arbitrum.network.thegraph.com/api/d943ea1af415001154223fdf46b6f193/subgraphs/id/5XqPmWe6gjyrJtFn9cLy237i4cWw2j9HcUJEXsP5qGtH
   response:
     body:
       string: '{"data":{"domains":[{"name":"nebolax.eth"}]}}'
@@ -312,7 +320,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-Ray:
-      - 84ea14dcdc3c5902-TXL
+      - 88419173083f866f-MAD
       Connection:
       - keep-alive
       Content-Length:
@@ -320,23 +328,27 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 01 Feb 2024 12:08:44 GMT
+      - Wed, 15 May 2024 07:55:52 GMT
       Server:
       - cloudflare
       Set-Cookie:
-      - __cf_bm=qnc4Pre2I_4iuFwCTuwNFH8JiESgTxGyHFs_4u1Lf_g-1706789324-1-AbrL48HvoUxhq32CcCqej01wUzhKMESeBvYCogysKkXkv9cp1xZzD7ub22lR3747ZX/Pq72ImX50V/AtxZZEu28=;
-        path=/; expires=Thu, 01-Feb-24 12:38:44 GMT; domain=.thegraph.com; HttpOnly;
+      - __cf_bm=2N3yld0ibL2dXkCCK4iO5V2YNzGQnP4W7_Srt88ek0E-1715759752-1.0.1.1-xoe.foC9fRKT4OPksa_E6j348PBN4UvvfJiIdG6hIz2YdWnuTDdsRz0lMFo82VX3c8M5Apg_VqSQR.EfzvvZ.w;
+        path=/; expires=Wed, 15-May-24 08:25:52 GMT; domain=.thegraph.com; HttpOnly;
         Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       Vary:
-      - Accept-Encoding
-      access-control-allow-headers:
-      - Content-Type, User-Agent
-      access-control-allow-methods:
-      - GET, OPTIONS, POST
-      graph-attestable:
+      - origin, access-control-request-method, access-control-request-headers, Accept-Encoding
+      access-control-allow-credentials:
       - 'true'
+      access-control-allow-headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+      access-control-allow-methods:
+      - PUT, GET, POST, OPTIONS
+      access-control-max-age:
+      - '3600'
+      graph-attestation:
+      - '{"requestCID":"0xbe9296f5722542a08abe3698799d436a57c83f821584da78c0d2b77c2a8500c1","responseCID":"0x4440e3718cf00cc10a00c6fd85dafc1b7da2a1c15b8ebaade70d8fd85147dbda","subgraphDeploymentID":"0x9c28b15f0b4d67b9763e705634572c58715375df29ac94a12330f4e14611c836","r":"0xe19b6f814e85bc84913edb16647091c4fd4105a187fa2c59210a381fea401df3","s":"0x315f40dd3f539fc5be61e170745445e86641ff1bc470f5a1e930049774bedbb3","v":27}'
     status:
       code: 200
       message: OK
@@ -357,7 +369,7 @@ interactions:
       User-Agent:
       - python-requests/2.31.0
     method: POST
-    uri: https://api.thegraph.com/subgraphs/name/ensdomains/ens
+    uri: https://gateway-arbitrum.network.thegraph.com/api/d943ea1af415001154223fdf46b6f193/subgraphs/id/5XqPmWe6gjyrJtFn9cLy237i4cWw2j9HcUJEXsP5qGtH
   response:
     body:
       string: '{"data":{"domains":[{"name":"nebolax.eth"}]}}'
@@ -367,7 +379,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-Ray:
-      - 84ea14de6e3a450a-TXL
+      - 88419174e9b9384c-MAD
       Connection:
       - keep-alive
       Content-Length:
@@ -375,23 +387,27 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 01 Feb 2024 12:08:44 GMT
+      - Wed, 15 May 2024 07:55:52 GMT
       Server:
       - cloudflare
       Set-Cookie:
-      - __cf_bm=L4GxBkRpU1SeAH0x8pmlpB0KZVtDUvRSOWHOlR244DA-1706789324-1-AQ5VQM1j5+DvuR285zzKGo1nxWPJo5DPt0+HvefZyPuewnaV+xC8wPX8OTBYNkKOhVz+D5DvtHPTlWORIEq9p5o=;
-        path=/; expires=Thu, 01-Feb-24 12:38:44 GMT; domain=.thegraph.com; HttpOnly;
+      - __cf_bm=dahAfqmo.0w_PdkUzP85nzL4PXVFWwmhUM77kJiS9TE-1715759752-1.0.1.1-5ZNAhuAK66r1tFiG68VtWYq5b0x3KN5Rm4G_6QFKm6L.OolSim4JgTUV7RTdwaUCeohvsKLpeoP5WPJ25vUMAg;
+        path=/; expires=Wed, 15-May-24 08:25:52 GMT; domain=.thegraph.com; HttpOnly;
         Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       Vary:
-      - Accept-Encoding
-      access-control-allow-headers:
-      - Content-Type, User-Agent
-      access-control-allow-methods:
-      - GET, OPTIONS, POST
-      graph-attestable:
+      - origin, access-control-request-method, access-control-request-headers, Accept-Encoding
+      access-control-allow-credentials:
       - 'true'
+      access-control-allow-headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+      access-control-allow-methods:
+      - PUT, GET, POST, OPTIONS
+      access-control-max-age:
+      - '3600'
+      graph-attestation:
+      - '{"requestCID":"0xbe9296f5722542a08abe3698799d436a57c83f821584da78c0d2b77c2a8500c1","responseCID":"0x4440e3718cf00cc10a00c6fd85dafc1b7da2a1c15b8ebaade70d8fd85147dbda","subgraphDeploymentID":"0x9c28b15f0b4d67b9763e705634572c58715375df29ac94a12330f4e14611c836","r":"0xe19b6f814e85bc84913edb16647091c4fd4105a187fa2c59210a381fea401df3","s":"0x315f40dd3f539fc5be61e170745445e86641ff1bc470f5a1e930049774bedbb3","v":27}'
     status:
       code: 200
       message: OK
@@ -412,7 +428,7 @@ interactions:
       User-Agent:
       - python-requests/2.31.0
     method: POST
-    uri: https://api.thegraph.com/subgraphs/name/ensdomains/ens
+    uri: https://gateway-arbitrum.network.thegraph.com/api/d943ea1af415001154223fdf46b6f193/subgraphs/id/5XqPmWe6gjyrJtFn9cLy237i4cWw2j9HcUJEXsP5qGtH
   response:
     body:
       string: '{"data":{"domains":[{"name":"nebolax.eth"}]}}'
@@ -422,7 +438,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-Ray:
-      - 84ea14dffcb26a77-TXL
+      - 88419177595b37d9-MAD
       Connection:
       - keep-alive
       Content-Length:
@@ -430,23 +446,27 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 01 Feb 2024 12:08:45 GMT
+      - Wed, 15 May 2024 07:55:53 GMT
       Server:
       - cloudflare
       Set-Cookie:
-      - __cf_bm=5uont8qce9xreH4mE4eO1KUibu3.UFLuRkc64NAM8R0-1706789325-1-AeDkDvoZhHFdZRQ0a95nCx5VNZrwp28RKINv6FkTzqnbFqvv83k3ypxL/HPJpG+Ai/N8gEVcmmuNN6BPzDPcx08=;
-        path=/; expires=Thu, 01-Feb-24 12:38:45 GMT; domain=.thegraph.com; HttpOnly;
+      - __cf_bm=KREe5dVcirkicPjq9NC0r.Q6Jr0ogeWOcJH5uVESCH4-1715759753-1.0.1.1-on.8GsRaNXmJ.oHOEWRvUQQmqT9Oi62na0gxCD.oe_2jFQErIkLIteDIA_3O56aLWA1vyG7Bp7R1u90GlhFYvQ;
+        path=/; expires=Wed, 15-May-24 08:25:53 GMT; domain=.thegraph.com; HttpOnly;
         Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       Vary:
-      - Accept-Encoding
-      access-control-allow-headers:
-      - Content-Type, User-Agent
-      access-control-allow-methods:
-      - GET, OPTIONS, POST
-      graph-attestable:
+      - origin, access-control-request-method, access-control-request-headers, Accept-Encoding
+      access-control-allow-credentials:
       - 'true'
+      access-control-allow-headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+      access-control-allow-methods:
+      - PUT, GET, POST, OPTIONS
+      access-control-max-age:
+      - '3600'
+      graph-attestation:
+      - '{"requestCID":"0x21c0b59360e57fa16007584c2cf9ef21e5e08992ac1ef93c71e77c66a346ac54","responseCID":"0x4440e3718cf00cc10a00c6fd85dafc1b7da2a1c15b8ebaade70d8fd85147dbda","subgraphDeploymentID":"0x9c28b15f0b4d67b9763e705634572c58715375df29ac94a12330f4e14611c836","r":"0x48ef5447c705e6b83c62c0e2cc66743aaaef0a45c029ed157c4b0432955e51de","s":"0x7b04c721534d25b624363d76957db8cd2f6e394156623054110ec4fcc9def040","v":27}'
     status:
       code: 200
       message: OK
@@ -467,7 +487,7 @@ interactions:
       User-Agent:
       - python-requests/2.31.0
     method: POST
-    uri: https://api.thegraph.com/subgraphs/name/ensdomains/ens
+    uri: https://gateway-arbitrum.network.thegraph.com/api/d943ea1af415001154223fdf46b6f193/subgraphs/id/5XqPmWe6gjyrJtFn9cLy237i4cWw2j9HcUJEXsP5qGtH
   response:
     body:
       string: '{"data":{"domains":[{"name":"nebolax.eth"}]}}'
@@ -477,7 +497,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-Ray:
-      - 84ea14e18d182685-TXL
+      - 8841917979572160-MAD
       Connection:
       - keep-alive
       Content-Length:
@@ -485,23 +505,27 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 01 Feb 2024 12:08:45 GMT
+      - Wed, 15 May 2024 07:55:53 GMT
       Server:
       - cloudflare
       Set-Cookie:
-      - __cf_bm=__2Zeo1KAMdd8gRKAvC1_01HRAjtlufV_ivSL4hTXgA-1706789325-1-Af4FAlafjXfJcgLchU8h8spmQpUajljR80kpEpXPWgKV/n2fJWgN+J5PJI9wTZaMZhcbSduzvIpN+rP5tc1gZwQ=;
-        path=/; expires=Thu, 01-Feb-24 12:38:45 GMT; domain=.thegraph.com; HttpOnly;
+      - __cf_bm=hbTJjLKbcqkhX0Gph8MdyszyNKY4ps4jiJBJPdQFMGc-1715759753-1.0.1.1-KgD3hBM45Xg82NCECJvdCgUIJeStezi8NQ63ZQO9L.J50tLCQNDxWwbbQuBWdmgv8jTHT_JoNgseAR97R69G5w;
+        path=/; expires=Wed, 15-May-24 08:25:53 GMT; domain=.thegraph.com; HttpOnly;
         Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       Vary:
-      - Accept-Encoding
-      access-control-allow-headers:
-      - Content-Type, User-Agent
-      access-control-allow-methods:
-      - GET, OPTIONS, POST
-      graph-attestable:
+      - origin, access-control-request-method, access-control-request-headers, Accept-Encoding
+      access-control-allow-credentials:
       - 'true'
+      access-control-allow-headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+      access-control-allow-methods:
+      - PUT, GET, POST, OPTIONS
+      access-control-max-age:
+      - '3600'
+      graph-attestation:
+      - '{"requestCID":"0xbe9296f5722542a08abe3698799d436a57c83f821584da78c0d2b77c2a8500c1","responseCID":"0x4440e3718cf00cc10a00c6fd85dafc1b7da2a1c15b8ebaade70d8fd85147dbda","subgraphDeploymentID":"0x9c28b15f0b4d67b9763e705634572c58715375df29ac94a12330f4e14611c836","r":"0xe19b6f814e85bc84913edb16647091c4fd4105a187fa2c59210a381fea401df3","s":"0x315f40dd3f539fc5be61e170745445e86641ff1bc470f5a1e930049774bedbb3","v":27}'
     status:
       code: 200
       message: OK
@@ -522,7 +546,7 @@ interactions:
       User-Agent:
       - python-requests/2.31.0
     method: POST
-    uri: https://api.thegraph.com/subgraphs/name/ensdomains/ens
+    uri: https://gateway-arbitrum.network.thegraph.com/api/d943ea1af415001154223fdf46b6f193/subgraphs/id/5XqPmWe6gjyrJtFn9cLy237i4cWw2j9HcUJEXsP5qGtH
   response:
     body:
       string: '{"data":{"domains":[{"name":"nebolax.eth"}]}}'
@@ -532,7 +556,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-Ray:
-      - 84ea14e34e1b4534-TXL
+      - 8841917b8a222fbf-MAD
       Connection:
       - keep-alive
       Content-Length:
@@ -540,23 +564,27 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 01 Feb 2024 12:08:45 GMT
+      - Wed, 15 May 2024 07:55:53 GMT
       Server:
       - cloudflare
       Set-Cookie:
-      - __cf_bm=oJKCjgOGBs3D3EjFXnyt7XNLMVFolqBF7p_CSmp7.yk-1706789325-1-AeDSLBcuO1B2eo1LIRWifNWPlsY4EI3yymP22iOXGFNiCsdcMfuujAXDrBzPbA79hIZ0KwNWL8HcFsJfY40sjQg=;
-        path=/; expires=Thu, 01-Feb-24 12:38:45 GMT; domain=.thegraph.com; HttpOnly;
+      - __cf_bm=X6iBBxS6hYhBHLCmVNxN.OZgje7cBeflXzLZfSutAD8-1715759753-1.0.1.1-VgphhkM2h8DNyBpAc2Dtta9PcyyvkQp_4v9C2H7PJn2jsbOrpIE6OrE8IdNlj4cTU0.s5t1oq7TpBiuxrZ5k8A;
+        path=/; expires=Wed, 15-May-24 08:25:53 GMT; domain=.thegraph.com; HttpOnly;
         Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       Vary:
-      - Accept-Encoding
-      access-control-allow-headers:
-      - Content-Type, User-Agent
-      access-control-allow-methods:
-      - GET, OPTIONS, POST
-      graph-attestable:
+      - origin, access-control-request-method, access-control-request-headers, Accept-Encoding
+      access-control-allow-credentials:
       - 'true'
+      access-control-allow-headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+      access-control-allow-methods:
+      - PUT, GET, POST, OPTIONS
+      access-control-max-age:
+      - '3600'
+      graph-attestation:
+      - '{"requestCID":"0xbe9296f5722542a08abe3698799d436a57c83f821584da78c0d2b77c2a8500c1","responseCID":"0x4440e3718cf00cc10a00c6fd85dafc1b7da2a1c15b8ebaade70d8fd85147dbda","subgraphDeploymentID":"0x9c28b15f0b4d67b9763e705634572c58715375df29ac94a12330f4e14611c836","r":"0xe19b6f814e85bc84913edb16647091c4fd4105a187fa2c59210a381fea401df3","s":"0x315f40dd3f539fc5be61e170745445e86641ff1bc470f5a1e930049774bedbb3","v":27}'
     status:
       code: 200
       message: OK
@@ -577,7 +605,7 @@ interactions:
       User-Agent:
       - python-requests/2.31.0
     method: POST
-    uri: https://api.thegraph.com/subgraphs/name/ensdomains/ens
+    uri: https://gateway-arbitrum.network.thegraph.com/api/d943ea1af415001154223fdf46b6f193/subgraphs/id/5XqPmWe6gjyrJtFn9cLy237i4cWw2j9HcUJEXsP5qGtH
   response:
     body:
       string: '{"data":{"domains":[{"name":"nebolax.eth"}]}}'
@@ -587,7 +615,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-Ray:
-      - 84ea14e4cabb44f2-TXL
+      - 8841917dad3f2fc3-MAD
       Connection:
       - keep-alive
       Content-Length:
@@ -595,23 +623,27 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 01 Feb 2024 12:08:45 GMT
+      - Wed, 15 May 2024 07:55:54 GMT
       Server:
       - cloudflare
       Set-Cookie:
-      - __cf_bm=KzY2hH0LGAnFpd8_gjOfuQgkZsB87kfzRSn5XvcY97s-1706789325-1-AZQV1QnOKfpgNPm4CGOWQK92GQl1HpkBaNf2KzRzhN197NTe9GTn/RdM5fWnMlYXH9OdtcYWPjlyUISG00fThGQ=;
-        path=/; expires=Thu, 01-Feb-24 12:38:45 GMT; domain=.thegraph.com; HttpOnly;
+      - __cf_bm=SOvVId0FqQbSMqz76oSi3ZBCDrNV26OSdUO7UCiky.M-1715759754-1.0.1.1-BZZRWK.L8lniaVltwqiVj24TZMCxHsjS9CGql3FF0aNHbMZJmHcnZgdGKDjBestnue5XlaM5NHiRahqx4bCU4Q;
+        path=/; expires=Wed, 15-May-24 08:25:54 GMT; domain=.thegraph.com; HttpOnly;
         Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
       Vary:
-      - Accept-Encoding
-      access-control-allow-headers:
-      - Content-Type, User-Agent
-      access-control-allow-methods:
-      - GET, OPTIONS, POST
-      graph-attestable:
+      - origin, access-control-request-method, access-control-request-headers, Accept-Encoding
+      access-control-allow-credentials:
       - 'true'
+      access-control-allow-headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+      access-control-allow-methods:
+      - PUT, GET, POST, OPTIONS
+      access-control-max-age:
+      - '3600'
+      graph-attestation:
+      - '{"requestCID":"0xbe9296f5722542a08abe3698799d436a57c83f821584da78c0d2b77c2a8500c1","responseCID":"0x4440e3718cf00cc10a00c6fd85dafc1b7da2a1c15b8ebaade70d8fd85147dbda","subgraphDeploymentID":"0x9c28b15f0b4d67b9763e705634572c58715375df29ac94a12330f4e14611c836","r":"0x1ec74a83b380fc7c298d6e4fb173d63743f54c3998839af443e2f77800640683","s":"0x3a151aa37268cb96f7402a6e82c82a35c7cb34069eb6fc2beefe48fab7edebe9","v":28}'
     status:
       code: 200
       message: OK
