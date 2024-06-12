@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.33.1.dev74+gdc7e164c6
+      - rotki/1.32.3.dev302+gf0e9c2d28.d20240424
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0x4fdcd2632c6aa5549f884c9322943690e4f3c08e20a4dffe59e198ee737b54e8
   response:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 24 May 2024 11:35:02 GMT
+      - Thu, 13 Jun 2024 11:15:25 GMT
       Server:
       - nginx
       Vary:
@@ -53,7 +53,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.33.1.dev74+gdc7e164c6
+      - rotki/1.32.3.dev302+gf0e9c2d28.d20240424
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0xb865ad
   response:
@@ -75,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 24 May 2024 11:35:02 GMT
+      - Thu, 13 Jun 2024 11:15:25 GMT
       Server:
       - nginx
       Vary:
@@ -97,7 +97,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.33.1.dev74+gdc7e164c6
+      - rotki/1.32.3.dev302+gf0e9c2d28.d20240424
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x4fdcd2632c6aa5549f884c9322943690e4f3c08e20a4dffe59e198ee737b54e8
   response:
@@ -119,7 +119,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 24 May 2024 11:35:03 GMT
+      - Thu, 13 Jun 2024 11:15:27 GMT
       Server:
       - nginx
       Vary:
@@ -141,7 +141,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.33.1.dev74+gdc7e164c6
+      - rotki/1.32.3.dev302+gf0e9c2d28.d20240424
     method: GET
     uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0x4fdcd2632c6aa5549f884c9322943690e4f3c08e20a4dffe59e198ee737b54e8
   response:
@@ -161,7 +161,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 24 May 2024 11:35:04 GMT
+      - Thu, 13 Jun 2024 11:15:31 GMT
       Server:
       - nginx
       Vary:
@@ -183,7 +183,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.33.1.dev74+gdc7e164c6
+      - rotki/1.32.3.dev302+gf0e9c2d28.d20240424
     method: GET
     uri: https://api.etherscan.io/api?action=eth_call&data=0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000c000000000000000000000000057f1887a8bf19b14fc0df6fd9b2acc9af147ea850000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000495d89b410000000000000000000000000000000000000000000000000000000000000000000000000000000057f1887a8bf19b14fc0df6fd9b2acc9af147ea850000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000406fdde0300000000000000000000000000000000000000000000000000000000&module=proxy&to=0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696
   response:
@@ -205,7 +205,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 24 May 2024 11:35:04 GMT
+      - Thu, 13 Jun 2024 11:15:31 GMT
       Server:
       - nginx
       Vary:
@@ -218,7 +218,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"query": "{\n  domains(\n    first: 1\n    where: {id: \"0x915cb92d2e9e87afd600c7bba7f36e3e9317b76d0da66f8f1acb1d540f39687b\"}\n  )
+    body: '{"query": "{\n  domains(\n    first: 1\n    where: {id: \"0x93cdeb708b7545dc668eb9280176169d1c33cfd8ed6f04690a0bcc88a93fc4ae\"}\n  )
       {\n    name\n  }\n}"}'
     headers:
       Accept:
@@ -234,34 +234,33 @@ interactions:
       User-Agent:
       - python-requests/2.31.0
     method: POST
-    uri: https://gateway-arbitrum.network.thegraph.com/api/None/subgraphs/id/5XqPmWe6gjyrJtFn9cLy237i4cWw2j9HcUJEXsP5qGtH
+    uri: https://gateway-arbitrum.network.thegraph.com/api/d943ea1af415001154223fdf46b6f193/subgraphs/id/5XqPmWe6gjyrJtFn9cLy237i4cWw2j9HcUJEXsP5qGtH
   response:
     body:
-      string: '{"errors":[{"message":"auth error: invalid bearer token: invalid auth
-        token"}]}'
+      string: '{"data":{"domains":[{"name":"eth"}]}}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
       CF-Cache-Status:
       - DYNAMIC
       CF-Ray:
-      - 888cfaefcf7e2fa5-MAD
+      - 8931a9cca8262675-TXL
       Connection:
       - keep-alive
+      Content-Length:
+      - '37'
       Content-Type:
       - application/json
       Date:
-      - Fri, 24 May 2024 11:35:05 GMT
+      - Thu, 13 Jun 2024 11:15:32 GMT
       Server:
       - cloudflare
       Set-Cookie:
-      - __cf_bm=tRA4GWp_OWzS9gVjgEy53b4PEyEYAzPZxm7ilw7wMrw-1716550505-1.0.1.1-71DrK0.z8GdKe3CztkQ19V9BhL3voTWdpu7Jik7RLmW31gqur2EYLQEH2ADHFghKSxhk3491E2RIdmvJi9ZkPw;
-        path=/; expires=Fri, 24-May-24 12:05:05 GMT; domain=.thegraph.com; HttpOnly;
+      - __cf_bm=YkV26Lu4_THQuGtiUgDExu3iPQB_idDu.8bXoil9ZLs-1718277332-1.0.1.1-ilFl.o3TPf81tnuR1T8uW_xZELpEump6bBqe79w7c41zmHhiLtPq7ouIAHk8n2GsnmbK4GtZOalmHtBTcdF9vw;
+        path=/; expires=Thu, 13-Jun-24 11:45:32 GMT; domain=.thegraph.com; HttpOnly;
         Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
-      Transfer-Encoding:
-      - chunked
       Vary:
       - origin, access-control-request-method, access-control-request-headers, Accept-Encoding
       access-control-allow-credentials:
@@ -272,8 +271,8 @@ interactions:
       - PUT, GET, POST, OPTIONS
       access-control-max-age:
       - '3600'
-      content-length:
-      - '79'
+      graph-attestation:
+      - '{"requestCID":"0x182d58b8403453744203d9e23bf1d4c5f8835c9c9ec8ff6eb4a9b00c26017c8e","responseCID":"0xf545af1fe10786813c142a801d82678ae696c3d1740953c72f85c0ae0a4e1191","subgraphDeploymentID":"0x9c28b15f0b4d67b9763e705634572c58715375df29ac94a12330f4e14611c836","r":"0xec527b5b86dc0b4929e981f7f40a7f47d409e86310d0101dd96dd57b0deffe13","s":"0x36c5a8b5c88f0c4fa56148105f872dcdcdc26384828f8524f6ebdf7588c669f8","v":28}'
     status:
       code: 200
       message: OK
@@ -294,34 +293,33 @@ interactions:
       User-Agent:
       - python-requests/2.31.0
     method: POST
-    uri: https://gateway-arbitrum.network.thegraph.com/api/None/subgraphs/id/5XqPmWe6gjyrJtFn9cLy237i4cWw2j9HcUJEXsP5qGtH
+    uri: https://gateway-arbitrum.network.thegraph.com/api/d943ea1af415001154223fdf46b6f193/subgraphs/id/5XqPmWe6gjyrJtFn9cLy237i4cWw2j9HcUJEXsP5qGtH
   response:
     body:
-      string: '{"errors":[{"message":"auth error: invalid bearer token: invalid auth
-        token"}]}'
+      string: '{"data":{"domains":[{"name":"dfern.eth"}]}}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
       CF-Cache-Status:
       - DYNAMIC
       CF-Ray:
-      - 888cfaf18a533839-MAD
+      - 8931a9ce7c4f58ea-TXL
       Connection:
       - keep-alive
+      Content-Length:
+      - '43'
       Content-Type:
       - application/json
       Date:
-      - Fri, 24 May 2024 11:35:05 GMT
+      - Thu, 13 Jun 2024 11:15:32 GMT
       Server:
       - cloudflare
       Set-Cookie:
-      - __cf_bm=QQRWzkbekGdiBN00k.0vpB.BFW.uJFdujIBGe4PmGSI-1716550505-1.0.1.1-jxbQ6iRUQRAx6ZM0Rmu3BuI1_l2rHAQ1XewXDds8Ub8hfcFGSsfv.hpcMy4ZlCaxMiXLqU2eG8K2pEQnmArqIw;
-        path=/; expires=Fri, 24-May-24 12:05:05 GMT; domain=.thegraph.com; HttpOnly;
+      - __cf_bm=giUNJwToBpLi0g.yUHyELMdDezMOck9wOWF0xZ7WkJw-1718277332-1.0.1.1-qTtNUivbPSujHP.EP0SFZWuRN2wsBYDBwBsvd8dpwK9JsKd1VQcS_4DRbm9m6gdKWTXnxih495Nwdm2FAJCd_g;
+        path=/; expires=Thu, 13-Jun-24 11:45:32 GMT; domain=.thegraph.com; HttpOnly;
         Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
-      Transfer-Encoding:
-      - chunked
       Vary:
       - origin, access-control-request-method, access-control-request-headers, Accept-Encoding
       access-control-allow-credentials:
@@ -332,8 +330,185 @@ interactions:
       - PUT, GET, POST, OPTIONS
       access-control-max-age:
       - '3600'
-      content-length:
-      - '79'
+      graph-attestation:
+      - '{"requestCID":"0x2f86369f9efa0212aab452a6df15a64a038b02de45cf5520913529d2491d8960","responseCID":"0x115c039e5a9640b2b8dbc7f6da8d34011f28f26c74d3c739ded86efc31a1f177","subgraphDeploymentID":"0x9c28b15f0b4d67b9763e705634572c58715375df29ac94a12330f4e14611c836","r":"0xaa15d8b2e7f7e870227c07d86ea0c8821c84e3dd704405da7d09a3b8ca7b39dc","s":"0x213c2abc031cc0417f6d6a2abef109cba62b2ce91f70967bba00eb71e6a24e64","v":28}'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query": "{\n  domains(\n    first: 1\n    where: {id: \"0x915cb92d2e9e87afd600c7bba7f36e3e9317b76d0da66f8f1acb1d540f39687b\"}\n  )
+      {\n    name\n  }\n}"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '154'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: POST
+    uri: https://gateway-arbitrum.network.thegraph.com/api/d943ea1af415001154223fdf46b6f193/subgraphs/id/5XqPmWe6gjyrJtFn9cLy237i4cWw2j9HcUJEXsP5qGtH
+  response:
+    body:
+      string: '{"data":{"domains":[{"name":"dfern.eth"}]}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-Ray:
+      - 8931a9cf6f4444f2-TXL
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '43'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 13 Jun 2024 11:15:32 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=Sa5u3Zq8gh83kTQ2uiuc3yOBC4F3Dr.C0uHFqLlBfks-1718277332-1.0.1.1-YP6Y4VYhHOLPu59yETonhcii6QxP5.DH7XImSgGsTxT7zBbXWxqMo64cRmdcZAm28WDF56z9qZbd.JovfCUQUA;
+        path=/; expires=Thu, 13-Jun-24 11:45:32 GMT; domain=.thegraph.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Vary:
+      - origin, access-control-request-method, access-control-request-headers, Accept-Encoding
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+      access-control-allow-methods:
+      - PUT, GET, POST, OPTIONS
+      access-control-max-age:
+      - '3600'
+      graph-attestation:
+      - '{"requestCID":"0x2dfe49e1abb640f4e26e60eb7430c7c3ee50a53b306c5643345aa97448a6afe1","responseCID":"0x115c039e5a9640b2b8dbc7f6da8d34011f28f26c74d3c739ded86efc31a1f177","subgraphDeploymentID":"0x9c28b15f0b4d67b9763e705634572c58715375df29ac94a12330f4e14611c836","r":"0xb64179b5fc51b955b2d35cb84a02d43fd252d33934c1515c13522642adbb44b5","s":"0x70cd8741c3c4416717c342b8c531ae749888a0295fe6ee1483bbf8eb38468984","v":27}'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query": "{\n  domains(\n    first: 1\n    where: {id: \"0x915cb92d2e9e87afd600c7bba7f36e3e9317b76d0da66f8f1acb1d540f39687b\"}\n  )
+      {\n    name\n  }\n}"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '154'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: POST
+    uri: https://gateway-arbitrum.network.thegraph.com/api/d943ea1af415001154223fdf46b6f193/subgraphs/id/5XqPmWe6gjyrJtFn9cLy237i4cWw2j9HcUJEXsP5qGtH
+  response:
+    body:
+      string: '{"data":{"domains":[{"name":"dfern.eth"}]}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-Ray:
+      - 8931a9d07bcb453a-TXL
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '43'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 13 Jun 2024 11:15:32 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=9izZT1hvaDqP.QsMNDJA0t2IPX7dDu27tDeAMt7SK9Q-1718277332-1.0.1.1-ijDNZH29HoftL.8jGV6Ozm7y4u0_OIPvpBJ7.fdodndyxBqNgTyC93B_pm8WFZSW0Y4kUOCKkhZkpqz1iTE0sg;
+        path=/; expires=Thu, 13-Jun-24 11:45:32 GMT; domain=.thegraph.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Vary:
+      - origin, access-control-request-method, access-control-request-headers, Accept-Encoding
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+      access-control-allow-methods:
+      - PUT, GET, POST, OPTIONS
+      access-control-max-age:
+      - '3600'
+      graph-attestation:
+      - '{"requestCID":"0x2dfe49e1abb640f4e26e60eb7430c7c3ee50a53b306c5643345aa97448a6afe1","responseCID":"0x115c039e5a9640b2b8dbc7f6da8d34011f28f26c74d3c739ded86efc31a1f177","subgraphDeploymentID":"0x9c28b15f0b4d67b9763e705634572c58715375df29ac94a12330f4e14611c836","r":"0xb64179b5fc51b955b2d35cb84a02d43fd252d33934c1515c13522642adbb44b5","s":"0x70cd8741c3c4416717c342b8c531ae749888a0295fe6ee1483bbf8eb38468984","v":27}'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query": "{\n  domains(\n    first: 1\n    where: {id: \"0x93cdeb708b7545dc668eb9280176169d1c33cfd8ed6f04690a0bcc88a93fc4ae\"}\n  )
+      {\n    name\n  }\n}"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '154'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: POST
+    uri: https://gateway-arbitrum.network.thegraph.com/api/d943ea1af415001154223fdf46b6f193/subgraphs/id/5XqPmWe6gjyrJtFn9cLy237i4cWw2j9HcUJEXsP5qGtH
+  response:
+    body:
+      string: '{"data":{"domains":[{"name":"eth"}]}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-Ray:
+      - 8931a9d1cb8358ea-TXL
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '37'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 13 Jun 2024 11:15:33 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=sG3VoNfXPX59FSIRH7Zgr86.mAyI9uvC42qGGdDdN68-1718277333-1.0.1.1-5W7At3KON3b5EBmGSHq3KGVqDmG2aivS4hz3rSBrCM9kJwRr6Zc8wVzLM3sZLDkHs3CuS9IhXelEtYdsjj3wYQ;
+        path=/; expires=Thu, 13-Jun-24 11:45:33 GMT; domain=.thegraph.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Vary:
+      - origin, access-control-request-method, access-control-request-headers, Accept-Encoding
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+      access-control-allow-methods:
+      - PUT, GET, POST, OPTIONS
+      access-control-max-age:
+      - '3600'
+      graph-attestation:
+      - '{"requestCID":"0x182d58b8403453744203d9e23bf1d4c5f8835c9c9ec8ff6eb4a9b00c26017c8e","responseCID":"0xf545af1fe10786813c142a801d82678ae696c3d1740953c72f85c0ae0a4e1191","subgraphDeploymentID":"0x9c28b15f0b4d67b9763e705634572c58715375df29ac94a12330f4e14611c836","r":"0xec527b5b86dc0b4929e981f7f40a7f47d409e86310d0101dd96dd57b0deffe13","s":"0x36c5a8b5c88f0c4fa56148105f872dcdcdc26384828f8524f6ebdf7588c669f8","v":28}'
     status:
       code: 200
       message: OK
@@ -347,7 +522,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.33.1.dev74+gdc7e164c6
+      - rotki/1.32.3.dev302+gf0e9c2d28.d20240424
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0xd4fd01f50c3c86e7e119311d6830d975cf7d78d6906004d30370ffcbaabdff95
   response:
@@ -369,7 +544,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 24 May 2024 11:35:06 GMT
+      - Thu, 13 Jun 2024 11:15:34 GMT
       Server:
       - nginx
       Vary:
@@ -391,7 +566,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.33.1.dev74+gdc7e164c6
+      - rotki/1.32.3.dev302+gf0e9c2d28.d20240424
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0xed970d
   response:
@@ -413,7 +588,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 24 May 2024 11:35:07 GMT
+      - Thu, 13 Jun 2024 11:15:34 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -437,7 +612,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.33.1.dev74+gdc7e164c6
+      - rotki/1.32.3.dev302+gf0e9c2d28.d20240424
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xd4fd01f50c3c86e7e119311d6830d975cf7d78d6906004d30370ffcbaabdff95
   response:
@@ -459,7 +634,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 24 May 2024 11:35:08 GMT
+      - Thu, 13 Jun 2024 11:15:36 GMT
       Server:
       - nginx
       Vary:
@@ -481,7 +656,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.33.1.dev74+gdc7e164c6
+      - rotki/1.32.3.dev302+gf0e9c2d28.d20240424
     method: GET
     uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0xd4fd01f50c3c86e7e119311d6830d975cf7d78d6906004d30370ffcbaabdff95
   response:
@@ -501,7 +676,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 24 May 2024 11:35:08 GMT
+      - Thu, 13 Jun 2024 11:15:38 GMT
       Server:
       - nginx
       Vary:
