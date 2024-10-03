@@ -1,0 +1,126 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.34.4.dev282+g536a3891a
+    method: GET
+    uri: https://api.coingecko.com/api/v3/simple/price/?ids=crvusd&vs_currencies=usd
+  response:
+    body:
+      string: '{"crvusd":{"usd":0.998503}}'
+    headers:
+      CF-Cache-Status:
+      - EXPIRED
+      CF-RAY:
+      - 8d069fd88cdb4532-ATL
+      Cache-Control:
+      - max-age=30, public, must-revalidate, s-maxage=60
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 10 Oct 2024 12:30:54 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=Mhzer0SWQ1NZgMoSQsWoKe_YBN1nMDf0_ctz35OjhdU-1728563454-1.0.1.1-tcwW2L8K5DXfUxUExImqbtptvx9Sf2s3N5dZxcQWmin39W..AamYrMiJmrHrOvFiVMq.HryKzRSCc_5MK717pg;
+        path=/; expires=Thu, 10-Oct-24 13:00:54 GMT; domain=.api.coingecko.com; HttpOnly;
+        Secure; SameSite=None
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      access-control-allow-methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - link, per-page, total
+      access-control-request-method:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      alternate-protocol:
+      - 443:npn-spdy/2
+      content-length:
+      - '27'
+      etag:
+      - W/"29dbfee6e41ce8b75137443a22e015c5"
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      strict-transport-security:
+      - max-age=15724800; includeSubdomains
+      vary:
+      - Accept-Encoding, Origin
+      x-content-type-options:
+      - nosniff
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-request-id:
+      - 2d99bdb8-1c44-4f5d-a1eb-e1079c382c6c
+      x-runtime:
+      - '0.012301'
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.34.4.dev282+g536a3891a
+    method: GET
+    uri: https://api.etherscan.io/api?action=eth_call&data=0x99530b06&module=proxy&to=0xBF319dDC2Edc1Eb6FDf9910E39b37Be221C8805F
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000e3b9766c9d4f6c4"}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 10 Oct 2024 12:30:55 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      content-length:
+      - '103'
+      svid:
+      - '6'
+    status:
+      code: 200
+      message: OK
+version: 1
