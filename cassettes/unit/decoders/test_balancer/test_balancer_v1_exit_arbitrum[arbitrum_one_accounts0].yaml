@@ -1,0 +1,454 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.35.1.dev267+gf21d38f85
+    method: GET
+    uri: https://api.arbiscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0xf674623c5877257dbb9e8d328ff56e5dfda4f5a650ea51be3100261a1f8aae65
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0x9e5ff228a784d1952e667b0db205201636382b82e1b4aaee053d21284daff075","blockNumber":"0xfa87567","from":"0xe3b73f6f37f782128ebe11e058b23ba0ba6c03c3","gas":"0x90663","gasPrice":"0xb71b00","hash":"0xf674623c5877257dbb9e8d328ff56e5dfda4f5a650ea51be3100261a1f8aae65","input":"0xb02f0b73000000000000000000000000000000000000000000000000194b72fb8ad884f7000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000b118d2000000000000000000000000000000000000000000000000000ef84b4806df5d","nonce":"0x14","to":"0xfea755d5523f3a78c0945141ad396d4e970d2fab","transactionIndex":"0x2","value":"0x0","type":"0x0","chainId":"0xa4b1","v":"0x14986","r":"0x3c873d4e693f05d97c8d9b1b766cfe3f9e325203e0d607f1f15660d459dd969e","s":"0xfed140062414a48e6365b63f2bfa0f8cbdb571bbaed93ca9b9798926564608f"}}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-RAY:
+      - 8e2040849caa7415-JNB
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 13 Nov 2024 16:48:55 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=I%2F%2FHPdlzmxi8vpMkzHXR86ukuYhbokYgmfVpuKrJk3qqx8bnlRNKQmdyP3PlmvYdsbLGGJu34RCVgLTFglNiK5zY%2Fyl7bcU%2Bp6H%2B%2FymZZl81LW3sUDTZ9JRwd43r6QsLrhuf8QpRxTHv%2F8eEsA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '945'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=107130&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2839&recv_bytes=937&delivery_rate=40386&cwnd=252&unsent_bytes=0&cid=bcb7d2bfdc67ed02&ts=651&x=0"
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.35.1.dev267+gf21d38f85
+    method: GET
+    uri: https://api.arbiscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0xfa87567
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":{"baseFeePerGas":"0x989680","difficulty":"0x1","extraData":"0x9a377e24f1e247a3cccb2873c4a653e673c7ef70a48c2cbbf4ef92e11c2baea3","gasLimit":"0x4000000000000","gasUsed":"0x82cae","hash":"0x9e5ff228a784d1952e667b0db205201636382b82e1b4aaee053d21284daff075","l1BlockNumber":"0x13f8ea4","logsBloom":"0x0000000000000100000000000000000000000000000000002000000000000040000000000040000010000000000000000000000100008000000000000001000000001000000000080000000800000000000000000000040000000000000000001000000002010010000000000000080000000000000000000000011000000000000010000008010000000000000000000000000000040000000000000000000000000000000000000000000000010000004080400000000000000000040080000000a002000000000000000000000000000000100000000020000000000020002000000000004000000000000200200010000000002000500400004000000000","miner":"0xa4b000000000000000000073657175656e636572","mixHash":"0x000000000001fe6d00000000013f8ea400000000000000200000000000000000","nonce":"0x00000000001a2df2","number":"0xfa87567","parentHash":"0x87eeb418514b41169509b626a66280bef2783f316db242bdd28a6d3146cfee9e","receiptsRoot":"0x213212ace014c7542089307be222dcbfd74935631353dbdec6baca1731097d55","sendCount":"0x1fe6d","sendRoot":"0x9a377e24f1e247a3cccb2873c4a653e673c7ef70a48c2cbbf4ef92e11c2baea3","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0x483","stateRoot":"0x9346d42dfc53bd2dc739b7176f6f8ad027dd92b7934d5039856e68881f436195","timestamp":"0x67091fb8","totalDifficulty":"0xe55981f","transactions":[{"blockHash":"0x9e5ff228a784d1952e667b0db205201636382b82e1b4aaee053d21284daff075","blockNumber":"0xfa87567","from":"0x00000000000000000000000000000000000a4b05","gas":"0x0","gasPrice":"0x0","hash":"0x8e792da36e27a3356cf13e37b29edd9d1caac944e6760189b7f723122db9e5f7","input":"0x6bf6a42d000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013f8ea4000000000000000000000000000000000000000000000000000000000fa875670000000000000000000000000000000000000000000000000000000000000001","nonce":"0x0","to":"0x00000000000000000000000000000000000a4b05","transactionIndex":"0x0","value":"0x0","type":"0x6a","chainId":"0xa4b1","v":"0x0","r":"0x0","s":"0x0"},{"blockHash":"0x9e5ff228a784d1952e667b0db205201636382b82e1b4aaee053d21284daff075","blockNumber":"0xfa87567","from":"0xb38e8c17e38363af6ebdcb3dae12e0243582891d","gas":"0x7f080","gasPrice":"0x47868c00","maxFeePerGas":"0x47868c00","maxPriorityFeePerGas":"0x77359400","hash":"0xa6b68b63e45fb66702e3cbb2d4a9ff7965e9493eb96552d8a207468602eed0d3","input":"0xa9059cbb0000000000000000000000004c4f196359043b495ae8a80a377b4e18718b1f840000000000000000000000000000000000000000000000000000000001312d00","nonce":"0x475669","to":"0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9","transactionIndex":"0x1","value":"0x0","type":"0x2","accessList":[],"chainId":"0xa4b1","v":"0x0","r":"0xd066316c33711a521f5e3828894245c8ff389ae8d41e75e78d9d14c0954c40aa","s":"0x31e02cf72507b696ccc4b384bca37c975a2a15c814da552fad3e3754b3c5c864","yParity":"0x0"},{"blockHash":"0x9e5ff228a784d1952e667b0db205201636382b82e1b4aaee053d21284daff075","blockNumber":"0xfa87567","from":"0xe3b73f6f37f782128ebe11e058b23ba0ba6c03c3","gas":"0x90663","gasPrice":"0xb71b00","hash":"0xf674623c5877257dbb9e8d328ff56e5dfda4f5a650ea51be3100261a1f8aae65","input":"0xb02f0b73000000000000000000000000000000000000000000000000194b72fb8ad884f7000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000b118d2000000000000000000000000000000000000000000000000000ef84b4806df5d","nonce":"0x14","to":"0xfea755d5523f3a78c0945141ad396d4e970d2fab","transactionIndex":"0x2","value":"0x0","type":"0x0","chainId":"0xa4b1","v":"0x14986","r":"0x3c873d4e693f05d97c8d9b1b766cfe3f9e325203e0d607f1f15660d459dd969e","s":"0xfed140062414a48e6365b63f2bfa0f8cbdb571bbaed93ca9b9798926564608f"}],"transactionsRoot":"0x192bafd8536e95196f82c102908e13193e80fa92acc366c877282f22bc3b56e9","uncles":[]}}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-RAY:
+      - 8e20408abe374f7b-JNB
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 13 Nov 2024 16:48:55 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=J5U0gSr97y%2BeMFfXLbCPrUVBkR6xuqdONc%2FXvKi7qBTbZzYqOXXfRE3XZ0SFrJEGR278Y%2BKzKzi1hq%2BveZDNuo%2BP6U97OQkDWxNfGSl6vr49HmB7meYvwbNeLAVASaoLVGUNTzZSpAa%2F8vc3UA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '4083'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=99992&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2840&recv_bytes=886&delivery_rate=39922&cwnd=252&unsent_bytes=0&cid=a2be85a7e18e7a84&ts=628&x=0"
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.35.1.dev267+gf21d38f85
+    method: GET
+    uri: https://api.arbiscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xf674623c5877257dbb9e8d328ff56e5dfda4f5a650ea51be3100261a1f8aae65
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0x9e5ff228a784d1952e667b0db205201636382b82e1b4aaee053d21284daff075","blockNumber":"0xfa87567","contractAddress":null,"cumulativeGasUsed":"0x82cae","effectiveGasPrice":"0x989680","from":"0xe3b73f6f37f782128ebe11e058b23ba0ba6c03c3","gasUsed":"0x4d85f","gasUsedForL1":"0x32d1a","l1BlockNumber":"0x13f8ea4","logs":[{"address":"0xfea755d5523f3a78c0945141ad396d4e970d2fab","topics":["0xb02f0b7300000000000000000000000000000000000000000000000000000000","0x000000000000000000000000e3b73f6f37f782128ebe11e058b23ba0ba6c03c3"],"data":"0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000a4b02f0b73000000000000000000000000000000000000000000000000194b72fb8ad884f7000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000b118d2000000000000000000000000000000000000000000000000000ef84b4806df5d00000000000000000000000000000000000000000000000000000000","blockNumber":"0xfa87567","transactionHash":"0xf674623c5877257dbb9e8d328ff56e5dfda4f5a650ea51be3100261a1f8aae65","transactionIndex":"0x2","blockHash":"0x9e5ff228a784d1952e667b0db205201636382b82e1b4aaee053d21284daff075","logIndex":"0x1","removed":false},{"address":"0xfea755d5523f3a78c0945141ad396d4e970d2fab","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000e3b73f6f37f782128ebe11e058b23ba0ba6c03c3","0x000000000000000000000000fea755d5523f3a78c0945141ad396d4e970d2fab"],"data":"0x000000000000000000000000000000000000000000000000194b72fb8ad884f7","blockNumber":"0xfa87567","transactionHash":"0xf674623c5877257dbb9e8d328ff56e5dfda4f5a650ea51be3100261a1f8aae65","transactionIndex":"0x2","blockHash":"0x9e5ff228a784d1952e667b0db205201636382b82e1b4aaee053d21284daff075","logIndex":"0x2","removed":false},{"address":"0xfea755d5523f3a78c0945141ad396d4e970d2fab","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000fea755d5523f3a78c0945141ad396d4e970d2fab","0x000000000000000000000000e0e2ba143ee5268da87d529949a2521115987302"],"data":"0x0000000000000000000000000000000000000000000000000000000000000000","blockNumber":"0xfa87567","transactionHash":"0xf674623c5877257dbb9e8d328ff56e5dfda4f5a650ea51be3100261a1f8aae65","transactionIndex":"0x2","blockHash":"0x9e5ff228a784d1952e667b0db205201636382b82e1b4aaee053d21284daff075","logIndex":"0x3","removed":false},{"address":"0xfea755d5523f3a78c0945141ad396d4e970d2fab","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000fea755d5523f3a78c0945141ad396d4e970d2fab","0x0000000000000000000000000000000000000000000000000000000000000000"],"data":"0x000000000000000000000000000000000000000000000000194b72fb8ad884f7","blockNumber":"0xfa87567","transactionHash":"0xf674623c5877257dbb9e8d328ff56e5dfda4f5a650ea51be3100261a1f8aae65","transactionIndex":"0x2","blockHash":"0x9e5ff228a784d1952e667b0db205201636382b82e1b4aaee053d21284daff075","logIndex":"0x4","removed":false},{"address":"0xfea755d5523f3a78c0945141ad396d4e970d2fab","topics":["0xe74c91552b64c2e2e7bd255639e004e693bd3e1d01cc33e65610b86afcc1ffed","0x000000000000000000000000e3b73f6f37f782128ebe11e058b23ba0ba6c03c3","0x000000000000000000000000af88d065e77c8cc2239327c5edb3a432268e5831"],"data":"0x0000000000000000000000000000000000000000000000000000000000b1fca5","blockNumber":"0xfa87567","transactionHash":"0xf674623c5877257dbb9e8d328ff56e5dfda4f5a650ea51be3100261a1f8aae65","transactionIndex":"0x2","blockHash":"0x9e5ff228a784d1952e667b0db205201636382b82e1b4aaee053d21284daff075","logIndex":"0x5","removed":false},{"address":"0xaf88d065e77c8cc2239327c5edb3a432268e5831","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000fea755d5523f3a78c0945141ad396d4e970d2fab","0x000000000000000000000000e3b73f6f37f782128ebe11e058b23ba0ba6c03c3"],"data":"0x0000000000000000000000000000000000000000000000000000000000b1fca5","blockNumber":"0xfa87567","transactionHash":"0xf674623c5877257dbb9e8d328ff56e5dfda4f5a650ea51be3100261a1f8aae65","transactionIndex":"0x2","blockHash":"0x9e5ff228a784d1952e667b0db205201636382b82e1b4aaee053d21284daff075","logIndex":"0x6","removed":false},{"address":"0xfea755d5523f3a78c0945141ad396d4e970d2fab","topics":["0xe74c91552b64c2e2e7bd255639e004e693bd3e1d01cc33e65610b86afcc1ffed","0x000000000000000000000000e3b73f6f37f782128ebe11e058b23ba0ba6c03c3","0x0000000000000000000000005979d7b546e38e414f7e9822514be443a4800529"],"data":"0x000000000000000000000000000000000000000000000000000f0b8d44878cdf","blockNumber":"0xfa87567","transactionHash":"0xf674623c5877257dbb9e8d328ff56e5dfda4f5a650ea51be3100261a1f8aae65","transactionIndex":"0x2","blockHash":"0x9e5ff228a784d1952e667b0db205201636382b82e1b4aaee053d21284daff075","logIndex":"0x7","removed":false},{"address":"0x5979d7b546e38e414f7e9822514be443a4800529","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000fea755d5523f3a78c0945141ad396d4e970d2fab","0x000000000000000000000000e3b73f6f37f782128ebe11e058b23ba0ba6c03c3"],"data":"0x000000000000000000000000000000000000000000000000000f0b8d44878cdf","blockNumber":"0xfa87567","transactionHash":"0xf674623c5877257dbb9e8d328ff56e5dfda4f5a650ea51be3100261a1f8aae65","transactionIndex":"0x2","blockHash":"0x9e5ff228a784d1952e667b0db205201636382b82e1b4aaee053d21284daff075","logIndex":"0x8","removed":false}],"logsBloom":"0x00000000000001000000000000000000000000000000000020000000000000400000000000400000100000000000000000000001000080000000000000010000000000000000000000000008000000000000000000000400000000000000000000000000020100100000000000000800000000000000000000000010000000000000100000080100000000000000000000000000000400000000000000000000000000000000000000000000000100000040804000000000000000000400800000002002000000000000000000000000000000100000000020000000000020002000000000000000000000000000200000000000002000100400004000000000","status":"0x1","to":"0xfea755d5523f3a78c0945141ad396d4e970d2fab","transactionHash":"0xf674623c5877257dbb9e8d328ff56e5dfda4f5a650ea51be3100261a1f8aae65","transactionIndex":"0x2","type":"0x0"}}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-RAY:
+      - 8e2040908f6773c2-JNB
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 13 Nov 2024 16:48:56 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=s%2Bx%2FbbGbbff1ux3C3u9zjA6i04iVJXx%2BtkKogpOSjuQ2dYBqsZK5AV26kas4PsSqptvUYS5kj5XJHlDeNuTJoPVp9qZc%2FArGtrAQv0hQ9%2FhY5fz8Of9wXSvEftqwUrgx2GiVD0O2OVHVpx2pXQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '6283'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=103105&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2840&recv_bytes=938&delivery_rate=40112&cwnd=252&unsent_bytes=0&cid=68665036eaf3b8cf&ts=648&x=0"
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.35.1.dev267+gf21d38f85
+    method: GET
+    uri: https://api.arbiscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0xf674623c5877257dbb9e8d328ff56e5dfda4f5a650ea51be3100261a1f8aae65
+  response:
+    body:
+      string: '{"status":"0","message":"No transactions found","result":[]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-RAY:
+      - 8e2040966cae4f99-JNB
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 13 Nov 2024 16:48:57 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Q%2BPXm4eVnGWUiMlYYzjcews8tuaRgiMS%2Bvbj2TFoAprAYT1RgcNDoBg1DyCjZxyigTu6kG6JtcDLDecJAaEbXk%2BFzOfp%2FssT%2F1BZGoieroHj7R8a1Fd88hTY5lIpgUPm0HUv3JKfgl%2Fgli8SZw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '60'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=116845&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2840&recv_bytes=938&delivery_rate=35288&cwnd=252&unsent_bytes=0&cid=8bf0fee272a5c016&ts=659&x=0"
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"variables": {"chain": "ARBITRUM", "version": 1}, "query": "\nquery GetPoolsCount($chain:
+      GqlChain!, $version: Int!) {\n    poolGetPoolsCount(where: { chainIn: [$chain],
+      protocolVersionIn: [$version] })\n}\n"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '210'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.3
+    method: POST
+    uri: https://api-v3.balancer.fi/
+  response:
+    body:
+      string: '{"data":{"poolGetPoolsCount":17}}'
+    headers:
+      Age:
+      - '46'
+      CF-RAY:
+      - 8e20409d7f550b85-AMS
+      Cache-Control:
+      - public, s-maxage=90, stale-while-revalidate=150
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 13 Nov 2024 16:48:58 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-headers:
+      - '*'
+      access-control-allow-methods:
+      - POST, GET, HEAD, OPTIONS
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      access-control-max-age:
+      - '600'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '33'
+      etag:
+      - W/"22-t+nYAVckpjTgtUBL1f2/4d2SKsY"
+      gcdn-cache:
+      - HIT
+      origin-agent-cluster:
+      - ?1
+      referrer-policy:
+      - no-referrer
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - chainid
+      - accept-encoding
+      x-cache:
+      - HIT
+      x-cache-hits:
+      - '1'
+      x-content-type-options:
+      - nosniff
+      x-dns-prefetch-control:
+      - 'off'
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-powered-by:
+      - Stellate
+      x-served-by:
+      - cache-ams21069-AMS
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"variables": {"skip": 0, "version": 1, "first": 100, "chain": "ARBITRUM"},
+      "query": "\nquery GetPools($skip: Int, $first: Int, $chain: GqlChain!, $version:
+      Int!) {\n    poolGetPools(skip: $skip, first: $first, where: {chainIn: [$chain],
+      protocolVersionIn: [$version]}) {\n        id\n        address\n        name\n        type\n        symbol\n        decimals\n        displayTokens
+      {\n            id\n            address\n            symbol\n            name\n            weight\n        }\n    }\n}\n"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '507'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.3
+    method: POST
+    uri: https://api-v3.balancer.fi/
+  response:
+    body:
+      string: '{"data":{"poolGetPools":[{"id":"0x00f2fa5c5ba97cfcb1926de5233e1427b0c19488","address":"0x00f2fa5c5ba97cfcb1926de5233e1427b0c19488","name":"Balancer
+        CoW AMM 50 MONEY 50 WETH","type":"COW_AMM","symbol":"BCoW-50MONEY-50WETH","decimals":18,"displayTokens":[{"id":"0x00f2fa5c5ba97cfcb1926de5233e1427b0c19488-0x69420f9e38a4e60a62224c489be4bf7a94402496","address":"0x69420f9e38a4e60a62224c489be4bf7a94402496","symbol":"MONEY","name":"Defi.Money
+        Stablecoin","weight":"0.5"},{"id":"0x00f2fa5c5ba97cfcb1926de5233e1427b0c19488-0x82af49447d8a07e3bd95bd0d56f35241523fbab1","address":"0x82af49447d8a07e3bd95bd0d56f35241523fbab1","symbol":"WETH","name":"Wrapped
+        Ether","weight":"0.5"}]},{"id":"0x074ce0f7ec7cdeadaba1007f6a067d9a4f28da2e","address":"0x074ce0f7ec7cdeadaba1007f6a067d9a4f28da2e","name":"Balancer
+        CoW AMM 80 wstETH 20 waGHO","type":"COW_AMM","symbol":"BCoW-80wstETH-20waGHO","decimals":18,"displayTokens":[{"id":"0x074ce0f7ec7cdeadaba1007f6a067d9a4f28da2e-0x5979d7b546e38e414f7e9822514be443a4800529","address":"0x5979d7b546e38e414f7e9822514be443a4800529","symbol":"wstETH","name":"Wrapped
+        liquid staked Ether 2.0","weight":"0.8"},{"id":"0x074ce0f7ec7cdeadaba1007f6a067d9a4f28da2e-0xd9fba68d89178e3538e708939332c79efc540179","address":"0xd9fba68d89178e3538e708939332c79efc540179","symbol":"waGHO","name":"Static
+        Aave Arbitrum GHO","weight":"0.2"}]},{"id":"0x167266f419f414b565baa734ee3ada81d7953805","address":"0x167266f419f414b565baa734ee3ada81d7953805","name":"Balancer
+        CoW AMM 50 WETH 50 tBTC","type":"COW_AMM","symbol":"BCoW-50WETH-50tBTC","decimals":18,"displayTokens":[{"id":"0x167266f419f414b565baa734ee3ada81d7953805-0x82af49447d8a07e3bd95bd0d56f35241523fbab1","address":"0x82af49447d8a07e3bd95bd0d56f35241523fbab1","symbol":"WETH","name":"Wrapped
+        Ether","weight":"0.5"},{"id":"0x167266f419f414b565baa734ee3ada81d7953805-0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40","address":"0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40","symbol":"tBTC","name":"Arbitrum
+        tBTC v2","weight":"0.5"}]},{"id":"0x1fdd1523ca1c114ebdd5d124059fd68131f1eef1","address":"0x1fdd1523ca1c114ebdd5d124059fd68131f1eef1","name":"Balancer
+        CoW AMM 50 wstETH 50 SOL","type":"COW_AMM","symbol":"BCoW-50wstETH-50SOL","decimals":18,"displayTokens":[{"id":"0x1fdd1523ca1c114ebdd5d124059fd68131f1eef1-0x5979d7b546e38e414f7e9822514be443a4800529","address":"0x5979d7b546e38e414f7e9822514be443a4800529","symbol":"wstETH","name":"Wrapped
+        liquid staked Ether 2.0","weight":"0.5"},{"id":"0x1fdd1523ca1c114ebdd5d124059fd68131f1eef1-0x2bcc6d6cdbbdc0a4071e48bb3b969b06b3330c07","address":"0x2bcc6d6cdbbdc0a4071e48bb3b969b06b3330c07","symbol":"SOL","name":"Wrapped
+        SOL","weight":"0.5"}]},{"id":"0x3dec20eaccc6e52065e500b228b10c07dad9b9d2","address":"0x3dec20eaccc6e52065e500b228b10c07dad9b9d2","name":"Balancer
+        CoW AMM 50 ARB 50 USDC","type":"COW_AMM","symbol":"BCoW-50ARB-50USDC","decimals":18,"displayTokens":[{"id":"0x3dec20eaccc6e52065e500b228b10c07dad9b9d2-0x912ce59144191c1204e64559fe8253a0e49e6548","address":"0x912ce59144191c1204e64559fe8253a0e49e6548","symbol":"ARB","name":"Arbitrum","weight":"0.5"},{"id":"0x3dec20eaccc6e52065e500b228b10c07dad9b9d2-0xaf88d065e77c8cc2239327c5edb3a432268e5831","address":"0xaf88d065e77c8cc2239327c5edb3a432268e5831","symbol":"USDC","name":"USDC
+        Coin","weight":"0.5"}]},{"id":"0x41f4dcc8c4f6a2a43eb69a4d9f6c1385446cb64d","address":"0x41f4dcc8c4f6a2a43eb69a4d9f6c1385446cb64d","name":"Balancer
+        CoW AMM 50 WBTC 50 wstETH","type":"COW_AMM","symbol":"BCoW-50WBTC-50wstETH","decimals":18,"displayTokens":[{"id":"0x41f4dcc8c4f6a2a43eb69a4d9f6c1385446cb64d-0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f","address":"0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f","symbol":"WBTC","name":"Wrapped
+        BTC","weight":"0.5"},{"id":"0x41f4dcc8c4f6a2a43eb69a4d9f6c1385446cb64d-0x5979d7b546e38e414f7e9822514be443a4800529","address":"0x5979d7b546e38e414f7e9822514be443a4800529","symbol":"wstETH","name":"Wrapped
+        liquid staked Ether 2.0","weight":"0.5"}]},{"id":"0x558cd0af8e8486c238e8133401b5ea3a2cda868f","address":"0x558cd0af8e8486c238e8133401b5ea3a2cda868f","name":"Balancer
+        CoW AMM 50 BCoW-50WBTC-50wstETH 50 BCoW-50wstETH-50SOL","type":"COW_AMM","symbol":"BCoW-50BCoW-50WBTC-50wstETH-50BCoW-50wstETH-50SOL","decimals":18,"displayTokens":[{"id":"0x558cd0af8e8486c238e8133401b5ea3a2cda868f-0x41f4dcc8c4f6a2a43eb69a4d9f6c1385446cb64d","address":"0x41f4dcc8c4f6a2a43eb69a4d9f6c1385446cb64d","symbol":"BCoW-50WBTC-50wstETH","name":"Balancer
+        CoW AMM 50 WBTC 50 wstETH","weight":"0.5"},{"id":"0x558cd0af8e8486c238e8133401b5ea3a2cda868f-0x1fdd1523ca1c114ebdd5d124059fd68131f1eef1","address":"0x1fdd1523ca1c114ebdd5d124059fd68131f1eef1","symbol":"BCoW-50wstETH-50SOL","name":"Balancer
+        CoW AMM 50 wstETH 50 SOL","weight":"0.5"}]},{"id":"0x67a78f23f3ef0ea2b63d6fb9d75b493930e5a5fb","address":"0x67a78f23f3ef0ea2b63d6fb9d75b493930e5a5fb","name":"Balancer
+        CoW AMM 50 WBTC 50 sUSDe","type":"COW_AMM","symbol":"BCoW-50WBTC-50sUSDe","decimals":18,"displayTokens":[{"id":"0x67a78f23f3ef0ea2b63d6fb9d75b493930e5a5fb-0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f","address":"0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f","symbol":"WBTC","name":"Wrapped
+        BTC","weight":"0.5"},{"id":"0x67a78f23f3ef0ea2b63d6fb9d75b493930e5a5fb-0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2","address":"0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2","symbol":"sUSDe","name":"Staked
+        USDe","weight":"0.5"}]},{"id":"0x6a5d47ff7a9a9642616fc84bc5732bb2c6fd229a","address":"0x6a5d47ff7a9a9642616fc84bc5732bb2c6fd229a","name":"Balancer
+        CoW AMM 50 ZRO 50 wstETH","type":"COW_AMM","symbol":"BCoW-50ZRO-50wstETH","decimals":18,"displayTokens":[{"id":"0x6a5d47ff7a9a9642616fc84bc5732bb2c6fd229a-0x6985884c4392d348587b19cb9eaaf157f13271cd","address":"0x6985884c4392d348587b19cb9eaaf157f13271cd","symbol":"ZRO","name":"LayerZero","weight":"0.5"},{"id":"0x6a5d47ff7a9a9642616fc84bc5732bb2c6fd229a-0x5979d7b546e38e414f7e9822514be443a4800529","address":"0x5979d7b546e38e414f7e9822514be443a4800529","symbol":"wstETH","name":"Wrapped
+        liquid staked Ether 2.0","weight":"0.5"}]},{"id":"0x8c6617bc24e2eea6b5707254977e97fc251f3da9","address":"0x8c6617bc24e2eea6b5707254977e97fc251f3da9","name":"Balancer
+        CoW AMM 50 tBTC 50 GHO","type":"COW_AMM","symbol":"BCoW-50tBTC-50GHO","decimals":18,"displayTokens":[{"id":"0x8c6617bc24e2eea6b5707254977e97fc251f3da9-0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40","address":"0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40","symbol":"tBTC","name":"Arbitrum
+        tBTC v2","weight":"0.5"},{"id":"0x8c6617bc24e2eea6b5707254977e97fc251f3da9-0x7dff72693f6a4149b17e7c6314655f6a9f7c8b33","address":"0x7dff72693f6a4149b17e7c6314655f6a9f7c8b33","symbol":"GHO","name":"Gho
+        Token","weight":"0.5"}]},{"id":"0x8d15c4d1cbb3ac2ec18878df3368e208e91fbd8f","address":"0x8d15c4d1cbb3ac2ec18878df3368e208e91fbd8f","name":"Balancer
+        CoW AMM 50 wstETH 50 sUSDe","type":"COW_AMM","symbol":"BCoW-50wstETH-50sUSDe","decimals":18,"displayTokens":[{"id":"0x8d15c4d1cbb3ac2ec18878df3368e208e91fbd8f-0x5979d7b546e38e414f7e9822514be443a4800529","address":"0x5979d7b546e38e414f7e9822514be443a4800529","symbol":"wstETH","name":"Wrapped
+        liquid staked Ether 2.0","weight":"0.5"},{"id":"0x8d15c4d1cbb3ac2ec18878df3368e208e91fbd8f-0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2","address":"0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2","symbol":"sUSDe","name":"Staked
+        USDe","weight":"0.5"}]},{"id":"0x94a5afbf8f987d6eadb1c0fe73366321c5fe950b","address":"0x94a5afbf8f987d6eadb1c0fe73366321c5fe950b","name":"Balancer
+        CoW AMM 50 ARB 50 WETH","type":"COW_AMM","symbol":"BCoW-50ARB-50WETH","decimals":18,"displayTokens":[{"id":"0x94a5afbf8f987d6eadb1c0fe73366321c5fe950b-0x912ce59144191c1204e64559fe8253a0e49e6548","address":"0x912ce59144191c1204e64559fe8253a0e49e6548","symbol":"ARB","name":"Arbitrum","weight":"0.5"},{"id":"0x94a5afbf8f987d6eadb1c0fe73366321c5fe950b-0x82af49447d8a07e3bd95bd0d56f35241523fbab1","address":"0x82af49447d8a07e3bd95bd0d56f35241523fbab1","symbol":"WETH","name":"Wrapped
+        Ether","weight":"0.5"}]},{"id":"0xaef24dd15ad265319a5f0bfa53bf3cd328375b7b","address":"0xaef24dd15ad265319a5f0bfa53bf3cd328375b7b","name":"Balancer
+        CoW AMM 50 RING 50 wstETH","type":"COW_AMM","symbol":"BCoW-50RING-50wstETH","decimals":18,"displayTokens":[{"id":"0xaef24dd15ad265319a5f0bfa53bf3cd328375b7b-0x9e523234d36973f9e38642886197d023c88e307e","address":"0x9e523234d36973f9e38642886197d023c88e307e","symbol":"RING","name":"Darwinia
+        Network Native Token","weight":"0.5"},{"id":"0xaef24dd15ad265319a5f0bfa53bf3cd328375b7b-0x5979d7b546e38e414f7e9822514be443a4800529","address":"0x5979d7b546e38e414f7e9822514be443a4800529","symbol":"wstETH","name":"Wrapped
+        liquid staked Ether 2.0","weight":"0.5"}]},{"id":"0xbdd8b503a005c0fe6c8753ffa097f654e42e81f5","address":"0xbdd8b503a005c0fe6c8753ffa097f654e42e81f5","name":"Balancer
+        CoW AMM 80 WCBAL 20 bHERMES-V","type":"COW_AMM","symbol":"BCoW-80WCBAL-20bHERMES-V","decimals":18,"displayTokens":[{"id":"0xbdd8b503a005c0fe6c8753ffa097f654e42e81f5-0x6c71a9ffb10ea9a01fb5dd445ae894f784c9db72","address":"0x6c71a9ffb10ea9a01fb5dd445ae894f784c9db72","symbol":"WCBAL","name":"Wrapped
+        Cerberus Balancer","weight":"0.8"},{"id":"0xbdd8b503a005c0fe6c8753ffa097f654e42e81f5-0x5b99acf131463bfc62fe000b8bb962097b6734d9","address":"0x5b99acf131463bfc62fe000b8bb962097b6734d9","symbol":"bHERMES-V","name":"BurntHermes
+        Votes","weight":"0.2"}]},{"id":"0xe3ab320195e5eaf3671dc43a1026200ddcab5b68","address":"0xe3ab320195e5eaf3671dc43a1026200ddcab5b68","name":"Balancer
+        CoW AMM 50 MAGIC 50 USDC","type":"COW_AMM","symbol":"BCoW-50MAGIC-50USDC","decimals":18,"displayTokens":[{"id":"0xe3ab320195e5eaf3671dc43a1026200ddcab5b68-0x539bde0d7dbd336b79148aa742883198bbf60342","address":"0x539bde0d7dbd336b79148aa742883198bbf60342","symbol":"MAGIC","name":"MAGIC","weight":"0.5"},{"id":"0xe3ab320195e5eaf3671dc43a1026200ddcab5b68-0xaf88d065e77c8cc2239327c5edb3a432268e5831","address":"0xaf88d065e77c8cc2239327c5edb3a432268e5831","symbol":"USDC","name":"USDC
+        Coin","weight":"0.5"}]},{"id":"0xf061ac79ca5e21d094a0e02ef3df1ee9ab6f0e0e","address":"0xf061ac79ca5e21d094a0e02ef3df1ee9ab6f0e0e","name":"Balancer
+        CoW AMM 50 PENDLE 50 wstETH","type":"COW_AMM","symbol":"BCoW-50PENDLE-50wstETH","decimals":18,"displayTokens":[{"id":"0xf061ac79ca5e21d094a0e02ef3df1ee9ab6f0e0e-0x0c880f6761f1af8d9aa9c466984b80dab9a8c9e8","address":"0x0c880f6761f1af8d9aa9c466984b80dab9a8c9e8","symbol":"PENDLE","name":"Pendle","weight":"0.5"},{"id":"0xf061ac79ca5e21d094a0e02ef3df1ee9ab6f0e0e-0x5979d7b546e38e414f7e9822514be443a4800529","address":"0x5979d7b546e38e414f7e9822514be443a4800529","symbol":"wstETH","name":"Wrapped
+        liquid staked Ether 2.0","weight":"0.5"}]},{"id":"0xfea755d5523f3a78c0945141ad396d4e970d2fab","address":"0xfea755d5523f3a78c0945141ad396d4e970d2fab","name":"Balancer
+        CoW AMM 50 USDC 50 wstETH","type":"COW_AMM","symbol":"BCoW-50USDC-50wstETH","decimals":18,"displayTokens":[{"id":"0xfea755d5523f3a78c0945141ad396d4e970d2fab-0xaf88d065e77c8cc2239327c5edb3a432268e5831","address":"0xaf88d065e77c8cc2239327c5edb3a432268e5831","symbol":"USDC","name":"USDC
+        Coin","weight":"0.5"},{"id":"0xfea755d5523f3a78c0945141ad396d4e970d2fab-0x5979d7b546e38e414f7e9822514be443a4800529","address":"0x5979d7b546e38e414f7e9822514be443a4800529","symbol":"wstETH","name":"Wrapped
+        liquid staked Ether 2.0","weight":"0.5"}]}]}}'
+    headers:
+      Age:
+      - '204'
+      CF-RAY:
+      - 8e20409ffe4906db-CPT
+      Cache-Control:
+      - public, s-maxage=90, stale-while-revalidate=150
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 13 Nov 2024 16:48:58 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-headers:
+      - '*'
+      access-control-allow-methods:
+      - POST, GET, HEAD, OPTIONS
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      access-control-max-age:
+      - '600'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '11191'
+      etag:
+      - W/"3658-a1GPr9+ph4PHBNZpTBE5jyHHoh8"
+      gcdn-cache:
+      - HIT
+      origin-agent-cluster:
+      - ?1
+      referrer-policy:
+      - no-referrer
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      vary:
+      - chainid
+      - accept-encoding
+      x-cache:
+      - HIT
+      x-cache-hits:
+      - '3'
+      x-content-type-options:
+      - nosniff
+      x-dns-prefetch-control:
+      - 'off'
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-powered-by:
+      - Stellate
+      x-served-by:
+      - cache-cpt13824-CPT
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1
