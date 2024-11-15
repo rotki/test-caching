@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 13 Nov 2024 11:26:08 GMT
+      - Fri, 15 Nov 2024 05:30:11 GMT
       Server:
       - nginx
       Vary:
@@ -41,7 +41,7 @@ interactions:
       content-length:
       - '1041'
       svid:
-      - '13'
+      - '55'
     status:
       code: 200
       message: OK
@@ -77,7 +77,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 13 Nov 2024 11:26:10 GMT
+      - Fri, 15 Nov 2024 05:30:12 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -89,7 +89,7 @@ interactions:
       content-length:
       - '195133'
       svid:
-      - '4'
+      - '55'
     status:
       code: 200
       message: OK
@@ -125,7 +125,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 13 Nov 2024 11:26:14 GMT
+      - Fri, 15 Nov 2024 05:30:14 GMT
       Server:
       - nginx
       Vary:
@@ -135,7 +135,7 @@ interactions:
       content-length:
       - '6251'
       svid:
-      - '14'
+      - '6'
     status:
       code: 200
       message: OK
@@ -169,7 +169,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 13 Nov 2024 11:26:16 GMT
+      - Fri, 15 Nov 2024 05:30:15 GMT
       Server:
       - nginx
       Vary:
@@ -179,14 +179,12 @@ interactions:
       content-length:
       - '60'
       svid:
-      - '4'
+      - '55'
     status:
       code: 200
       message: OK
 - request:
-    body: '{"variables": {"chain": "MAINNET", "version": 1}, "query": "\nquery GetPoolsCount($chain:
-      GqlChain!, $version: Int!) {\n    poolGetPoolsCount(where: { chainIn: [$chain],
-      protocolVersionIn: [$version] })\n}\n"}'
+    body: null
     headers:
       Accept:
       - '*/*'
@@ -194,275 +192,40 @@ interactions:
       - gzip, deflate
       Connection:
       - keep-alive
-      Content-Length:
-      - '209'
-      Content-Type:
-      - application/json
       User-Agent:
-      - python-requests/2.32.3
-    method: POST
-    uri: https://api-v3.balancer.fi/
+      - rotki/1.35.1.dev267+gf21d38f85
+    method: GET
+    uri: https://api.etherscan.io/api?action=eth_call&data=0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000160000000000000000000000000690031313d70c2545357f4487c6a3f134c43450700000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004313ce56700000000000000000000000000000000000000000000000000000000000000000000000000000000690031313d70c2545357f4487c6a3f134c4345070000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000495d89b4100000000000000000000000000000000000000000000000000000000000000000000000000000000690031313d70c2545357f4487c6a3f134c4345070000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000406fdde0300000000000000000000000000000000000000000000000000000000&module=proxy&to=0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696
   response:
     body:
-      string: '{"data":{"poolGetPoolsCount":37}}'
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001a00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000009000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000035151510000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000075151513639303000000000000000000000000000000000000000000000000000"}
+
+        '
     headers:
-      Age:
-      - '164'
-      CF-RAY:
-      - 8e1e67f3fb6096eb-AMS
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
       Cache-Control:
-      - public, s-maxage=90, stale-while-revalidate=150
+      - private
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 13 Nov 2024 11:26:18 GMT
+      - Fri, 15 Nov 2024 05:30:16 GMT
       Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      access-control-allow-credentials:
-      - 'true'
-      access-control-allow-headers:
-      - '*'
-      access-control-allow-methods:
-      - POST, GET, HEAD, OPTIONS
-      access-control-allow-origin:
-      - '*'
-      access-control-expose-headers:
-      - '*'
-      access-control-max-age:
-      - '600'
-      cf-cache-status:
-      - DYNAMIC
-      content-length:
-      - '33'
-      etag:
-      - W/"22-Vog5LEs68VKgAOmRywvsG/lHA8I"
-      gcdn-cache:
-      - HIT
-      origin-agent-cluster:
-      - ?1
-      referrer-policy:
-      - no-referrer
-      strict-transport-security:
-      - max-age=15552000; includeSubDomains
-      vary:
-      - chainid
-      - accept-encoding
-      x-cache:
-      - HIT
-      x-cache-hits:
-      - '2'
-      x-content-type-options:
-      - nosniff
-      x-dns-prefetch-control:
-      - 'off'
-      x-download-options:
-      - noopen
-      x-frame-options:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
       - SAMEORIGIN
-      x-permitted-cross-domain-policies:
-      - none
-      x-powered-by:
-      - Stellate
-      x-served-by:
-      - cache-ams2100135-AMS
-      x-xss-protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"variables": {"skip": 0, "chain": "MAINNET", "version": 1, "first": 100},
-      "query": "\nquery GetPools($skip: Int, $first: Int, $chain: GqlChain!, $version:
-      Int!) {\n    poolGetPools(skip: $skip, first: $first, where: {chainIn: [$chain],
-      protocolVersionIn: [$version]}) {\n        id\n        address\n        name\n        type\n        symbol\n        decimals\n        displayTokens
-      {\n            id\n            address\n            symbol\n            name\n            weight\n        }\n    }\n}\n"}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '506'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - python-requests/2.32.3
-    method: POST
-    uri: https://api-v3.balancer.fi/
-  response:
-    body:
-      string: "{\"data\":{\"poolGetPools\":[{\"id\":\"0x06966b4ae338ce20f283086914388133f27d1d3e\",\"address\":\"0x06966b4ae338ce20f283086914388133f27d1d3e\",\"name\":\"Balancer
-        CoW AMM 50wstETH-25WBTC-25SOL\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50wstETH-25WBT-25SOL\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x06966b4ae338ce20f283086914388133f27d1d3e-0xf25a3b5a965c59f88873da93fc2a244b00616be4\",\"address\":\"0xf25a3b5a965c59f88873da93fc2a244b00616be4\",\"symbol\":\"BCoW-50WBTC-50wstETH\",\"name\":\"Balancer
-        CoW AMM 50 WBTC 50 wstETH\",\"weight\":\"0.5\"},{\"id\":\"0x06966b4ae338ce20f283086914388133f27d1d3e-0x75eb3d7976f0bf848f4bc22a7563fa50bd73c504\",\"address\":\"0x75eb3d7976f0bf848f4bc22a7563fa50bd73c504\",\"symbol\":\"BCoW-50wstETH-50SOL\",\"name\":\"Balancer
-        CoW AMM 50 wstETH 50 SOL\",\"weight\":\"0.5\"}]},{\"id\":\"0x06eda3e560f8589d388785d92dd1c56831d01546\",\"address\":\"0x06eda3e560f8589d388785d92dd1c56831d01546\",\"name\":\"Balancer
-        CoW AMM 50 Kekec 50 GNO\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50Kekec-50GNO\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x06eda3e560f8589d388785d92dd1c56831d01546-0x8c7ac134ed985367eadc6f727d79e8295e11435c\",\"address\":\"0x8c7ac134ed985367eadc6f727d79e8295e11435c\",\"symbol\":\"Kekec\",\"name\":\"The
-        Balkan Dwarf\",\"weight\":\"0.5\"},{\"id\":\"0x06eda3e560f8589d388785d92dd1c56831d01546-0x6810e776880c02933d47db1b9fc05908e5386b96\",\"address\":\"0x6810e776880c02933d47db1b9fc05908e5386b96\",\"symbol\":\"GNO\",\"name\":\"Gnosis
-        Token\",\"weight\":\"0.5\"}]},{\"id\":\"0x0c8ee93df5a4bad1c6f05e2676f87e6440b0b956\",\"address\":\"0x0c8ee93df5a4bad1c6f05e2676f87e6440b0b956\",\"name\":\"Balancer
-        CoW AMM 50 GNO 50 COW\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50GNO-50COW\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x0c8ee93df5a4bad1c6f05e2676f87e6440b0b956-0x6810e776880c02933d47db1b9fc05908e5386b96\",\"address\":\"0x6810e776880c02933d47db1b9fc05908e5386b96\",\"symbol\":\"GNO\",\"name\":\"Gnosis
-        Token\",\"weight\":\"0.5\"},{\"id\":\"0x0c8ee93df5a4bad1c6f05e2676f87e6440b0b956-0xdef1ca1fb7fbcdc777520aa7f396b4e015f497ab\",\"address\":\"0xdef1ca1fb7fbcdc777520aa7f396b4e015f497ab\",\"symbol\":\"COW\",\"name\":\"CoW
-        Protocol Token\",\"weight\":\"0.5\"}]},{\"id\":\"0x0ce69a796abe0c0451585aa88f6f45ebac9e12dc\",\"address\":\"0x0ce69a796abe0c0451585aa88f6f45ebac9e12dc\",\"name\":\"Balancer
-        CoW AMM 80 QQQ 20 WETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-80QQQ-20WETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x0ce69a796abe0c0451585aa88f6f45ebac9e12dc-0x690031313d70c2545357f4487c6a3f134c434507\",\"address\":\"0x690031313d70c2545357f4487c6a3f134c434507\",\"symbol\":\"QQQ\",\"name\":\"QQQ6900\",\"weight\":\"0.8\"},{\"id\":\"0x0ce69a796abe0c0451585aa88f6f45ebac9e12dc-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.2\"}]},{\"id\":\"0x11f2a400de0a2fc93a32f88d8779d8199152c6a4\",\"address\":\"0x11f2a400de0a2fc93a32f88d8779d8199152c6a4\",\"name\":\"Balancer
-        CoW AMM 50 sfrxETH 50 FXS\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50sfrxETH-50FXS\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x11f2a400de0a2fc93a32f88d8779d8199152c6a4-0xac3e018457b222d93114458476f3e3416abbe38f\",\"address\":\"0xac3e018457b222d93114458476f3e3416abbe38f\",\"symbol\":\"sfrxETH\",\"name\":\"Staked
-        Frax Ether\",\"weight\":\"0.5\"},{\"id\":\"0x11f2a400de0a2fc93a32f88d8779d8199152c6a4-0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0\",\"address\":\"0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0\",\"symbol\":\"FXS\",\"name\":\"Frax
-        Share\",\"weight\":\"0.5\"}]},{\"id\":\"0x3b124c8b4846836ba52df6cb6576ef66ca167dc1\",\"address\":\"0x3b124c8b4846836ba52df6cb6576ef66ca167dc1\",\"name\":\"Balancer
-        CoW AMM 50 FOX 50 WETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50FOX-50WETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x3b124c8b4846836ba52df6cb6576ef66ca167dc1-0xc770eefad204b5180df6a14ee197d99d808ee52d\",\"address\":\"0xc770eefad204b5180df6a14ee197d99d808ee52d\",\"symbol\":\"FOX\",\"name\":\"FOX\",\"weight\":\"0.5\"},{\"id\":\"0x3b124c8b4846836ba52df6cb6576ef66ca167dc1-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.5\"}]},{\"id\":\"0x41ff63c864097a7fbdf206fe676223e29f729fcb\",\"address\":\"0x41ff63c864097a7fbdf206fe676223e29f729fcb\",\"name\":\"Balancer
-        CoW AMM 50 GHO 50 WETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50GHO-50WETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x41ff63c864097a7fbdf206fe676223e29f729fcb-0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f\",\"address\":\"0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f\",\"symbol\":\"GHO\",\"name\":\"Gho
-        Token\",\"weight\":\"0.5\"},{\"id\":\"0x41ff63c864097a7fbdf206fe676223e29f729fcb-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.5\"}]},{\"id\":\"0x42d9e44eed903a0ee477c9c04d1d1730c5e87272\",\"address\":\"0x42d9e44eed903a0ee477c9c04d1d1730c5e87272\",\"name\":\"Balancer
-        CoW AMM 50 OSAK 50 weETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50OSAK-50weETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x42d9e44eed903a0ee477c9c04d1d1730c5e87272-0xa21af1050f7b26e0cff45ee51548254c41ed6b5c\",\"address\":\"0xa21af1050f7b26e0cff45ee51548254c41ed6b5c\",\"symbol\":\"OSAK\",\"name\":\"Osaka
-        Protocol\",\"weight\":\"0.5\"},{\"id\":\"0x42d9e44eed903a0ee477c9c04d1d1730c5e87272-0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee\",\"address\":\"0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee\",\"symbol\":\"weETH\",\"name\":\"Wrapped
-        eETH\",\"weight\":\"0.5\"}]},{\"id\":\"0x4359a8ea4c353d93245c0b6b8608a28bb48a05e2\",\"address\":\"0x4359a8ea4c353d93245c0b6b8608a28bb48a05e2\",\"name\":\"BCoW
-        AMM 50ARB-50ETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50ARB-50ETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x4359a8ea4c353d93245c0b6b8608a28bb48a05e2-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.5\"},{\"id\":\"0x4359a8ea4c353d93245c0b6b8608a28bb48a05e2-0xb50721bcf8d664c30412cfbc6cf7a15145234ad1\",\"address\":\"0xb50721bcf8d664c30412cfbc6cf7a15145234ad1\",\"symbol\":\"ARB\",\"name\":\"Arbitrum\",\"weight\":\"0.5\"}]},{\"id\":\"0x477a8982515e3a3d3aa6447b019b7c647e4162f8\",\"address\":\"0x477a8982515e3a3d3aa6447b019b7c647e4162f8\",\"name\":\"Balancer
-        CoW AMM 80 OSAK 20 WETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-80OSAK-20WETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x477a8982515e3a3d3aa6447b019b7c647e4162f8-0xa21af1050f7b26e0cff45ee51548254c41ed6b5c\",\"address\":\"0xa21af1050f7b26e0cff45ee51548254c41ed6b5c\",\"symbol\":\"OSAK\",\"name\":\"Osaka
-        Protocol\",\"weight\":\"0.8\"},{\"id\":\"0x477a8982515e3a3d3aa6447b019b7c647e4162f8-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.2\"}]},{\"id\":\"0x503cf7250888f4422d0bfbe5c30e7a6b4716fecf\",\"address\":\"0x503cf7250888f4422d0bfbe5c30e7a6b4716fecf\",\"name\":\"Balancer
-        CoW AMM 50 JOE 50 Kekec\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50JOE-50Kekec\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x503cf7250888f4422d0bfbe5c30e7a6b4716fecf-0x76e222b07c53d28b89b0bac18602810fc22b49a8\",\"address\":\"0x76e222b07c53d28b89b0bac18602810fc22b49a8\",\"symbol\":\"JOE\",\"name\":\"Joe
-        Coin\",\"weight\":\"0.5\"},{\"id\":\"0x503cf7250888f4422d0bfbe5c30e7a6b4716fecf-0x8c7ac134ed985367eadc6f727d79e8295e11435c\",\"address\":\"0x8c7ac134ed985367eadc6f727d79e8295e11435c\",\"symbol\":\"Kekec\",\"name\":\"The
-        Balkan Dwarf\",\"weight\":\"0.5\"}]},{\"id\":\"0x6ff0531ee19272675b3c7d30401a5b2b2c7b0c67\",\"address\":\"0x6ff0531ee19272675b3c7d30401a5b2b2c7b0c67\",\"name\":\"BCoW
-        AMM 50WETH-50COW\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50WETH-50COW\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x6ff0531ee19272675b3c7d30401a5b2b2c7b0c67-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.5\"},{\"id\":\"0x6ff0531ee19272675b3c7d30401a5b2b2c7b0c67-0xdef1ca1fb7fbcdc777520aa7f396b4e015f497ab\",\"address\":\"0xdef1ca1fb7fbcdc777520aa7f396b4e015f497ab\",\"symbol\":\"COW\",\"name\":\"CoW
-        Protocol Token\",\"weight\":\"0.5\"}]},{\"id\":\"0x75eb3d7976f0bf848f4bc22a7563fa50bd73c504\",\"address\":\"0x75eb3d7976f0bf848f4bc22a7563fa50bd73c504\",\"name\":\"Balancer
-        CoW AMM 50 wstETH 50 SOL\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50wstETH-50SOL\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x75eb3d7976f0bf848f4bc22a7563fa50bd73c504-0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0\",\"address\":\"0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0\",\"symbol\":\"wstETH\",\"name\":\"Wrapped
-        liquid staked Ether 2.0\",\"weight\":\"0.5\"},{\"id\":\"0x75eb3d7976f0bf848f4bc22a7563fa50bd73c504-0xd31a59c85ae9d8edefec411d448f90841571b89c\",\"address\":\"0xd31a59c85ae9d8edefec411d448f90841571b89c\",\"symbol\":\"SOL\",\"name\":\"Wrapped
-        SOL\",\"weight\":\"0.5\"}]},{\"id\":\"0x7c838b3ed3c15a5d5032e809b8714f0ae5e9a821\",\"address\":\"0x7c838b3ed3c15a5d5032e809b8714f0ae5e9a821\",\"name\":\"Balancer
-        CoW AMM 50 wNXM 50 WETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50wNXM-50WETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x7c838b3ed3c15a5d5032e809b8714f0ae5e9a821-0x0d438f3b5175bebc262bf23753c1e53d03432bde\",\"address\":\"0x0d438f3b5175bebc262bf23753c1e53d03432bde\",\"symbol\":\"wNXM\",\"name\":\"Wrapped
-        NXM\",\"weight\":\"0.5\"},{\"id\":\"0x7c838b3ed3c15a5d5032e809b8714f0ae5e9a821-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.5\"}]},{\"id\":\"0x891a539d008f69e62f22902877cce54a58644cae\",\"address\":\"0x891a539d008f69e62f22902877cce54a58644cae\",\"name\":\"Balancer
-        CoW AMM 80 VITA 20 WETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-80VITA-20WETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x891a539d008f69e62f22902877cce54a58644cae-0x81f8f0bb1cb2a06649e51913a151f0e7ef6fa321\",\"address\":\"0x81f8f0bb1cb2a06649e51913a151f0e7ef6fa321\",\"symbol\":\"VITA\",\"name\":\"VitaDAO
-        Token\",\"weight\":\"0.8\"},{\"id\":\"0x891a539d008f69e62f22902877cce54a58644cae-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.2\"}]},{\"id\":\"0x96f8dfa1e922f88c313052d5357cc6a910e19c1e\",\"address\":\"0x96f8dfa1e922f88c313052d5357cc6a910e19c1e\",\"name\":\"Balancer
-        CoW AMM 50 HANA 50 OSAK\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50HANA-50OSAK\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x96f8dfa1e922f88c313052d5357cc6a910e19c1e-0xb3912b20b3abc78c15e85e13ec0bf334fbb924f7\",\"address\":\"0xb3912b20b3abc78c15e85e13ec0bf334fbb924f7\",\"symbol\":\"HANA\",\"name\":\"Hana\",\"weight\":\"0.5\"},{\"id\":\"0x96f8dfa1e922f88c313052d5357cc6a910e19c1e-0xa21af1050f7b26e0cff45ee51548254c41ed6b5c\",\"address\":\"0xa21af1050f7b26e0cff45ee51548254c41ed6b5c\",\"symbol\":\"OSAK\",\"name\":\"Osaka
-        Protocol\",\"weight\":\"0.5\"}]},{\"id\":\"0x9a2a304a036d9da289656e95b58c72692b515e95\",\"address\":\"0x9a2a304a036d9da289656e95b58c72692b515e95\",\"name\":\"Balancer
-        CoW AMM 80 EUL 20 WETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-80EUL-20WETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x9a2a304a036d9da289656e95b58c72692b515e95-0xd9fcd98c322942075a5c3860693e9f4f03aae07b\",\"address\":\"0xd9fcd98c322942075a5c3860693e9f4f03aae07b\",\"symbol\":\"EUL\",\"name\":\"Euler\",\"weight\":\"0.8\"},{\"id\":\"0x9a2a304a036d9da289656e95b58c72692b515e95-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.2\"}]},{\"id\":\"0x9bd702e05b9c97e4a4a3e47df1e0fe7a0c26d2f1\",\"address\":\"0x9bd702e05b9c97e4a4a3e47df1e0fe7a0c26d2f1\",\"name\":\"BCoW
-        AMM 50COW-50wstETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50COW-50wstETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x9bd702e05b9c97e4a4a3e47df1e0fe7a0c26d2f1-0xdef1ca1fb7fbcdc777520aa7f396b4e015f497ab\",\"address\":\"0xdef1ca1fb7fbcdc777520aa7f396b4e015f497ab\",\"symbol\":\"COW\",\"name\":\"CoW
-        Protocol Token\",\"weight\":\"0.5\"},{\"id\":\"0x9bd702e05b9c97e4a4a3e47df1e0fe7a0c26d2f1-0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0\",\"address\":\"0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0\",\"symbol\":\"wstETH\",\"name\":\"Wrapped
-        liquid staked Ether 2.0\",\"weight\":\"0.5\"}]},{\"id\":\"0x9d0e8cdf137976e03ef92ede4c30648d05e25285\",\"address\":\"0x9d0e8cdf137976e03ef92ede4c30648d05e25285\",\"name\":\"Own
-        The Doge\",\"type\":\"COW_AMM\",\"symbol\":\"DOG\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x9d0e8cdf137976e03ef92ede4c30648d05e25285-0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0\",\"address\":\"0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0\",\"symbol\":\"wstETH\",\"name\":\"Wrapped
-        liquid staked Ether 2.0\",\"weight\":\"0.5\"},{\"id\":\"0x9d0e8cdf137976e03ef92ede4c30648d05e25285-0xbaac2b4491727d78d2b78815144570b9f2fe8899\",\"address\":\"0xbaac2b4491727d78d2b78815144570b9f2fe8899\",\"symbol\":\"DOG\",\"name\":\"The
-        Doge NFT\",\"weight\":\"0.5\"}]},{\"id\":\"0x9dff17c7b47c4cea638e37fd94ee85798ccbc6c2\",\"address\":\"0x9dff17c7b47c4cea638e37fd94ee85798ccbc6c2\",\"name\":\"Balancer
-        CoW AMM 80 Kekec 20 JOE\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-80Kekec-20JOE\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x9dff17c7b47c4cea638e37fd94ee85798ccbc6c2-0x8c7ac134ed985367eadc6f727d79e8295e11435c\",\"address\":\"0x8c7ac134ed985367eadc6f727d79e8295e11435c\",\"symbol\":\"Kekec\",\"name\":\"The
-        Balkan Dwarf\",\"weight\":\"0.8\"},{\"id\":\"0x9dff17c7b47c4cea638e37fd94ee85798ccbc6c2-0x76e222b07c53d28b89b0bac18602810fc22b49a8\",\"address\":\"0x76e222b07c53d28b89b0bac18602810fc22b49a8\",\"symbol\":\"JOE\",\"name\":\"Joe
-        Coin\",\"weight\":\"0.2\"}]},{\"id\":\"0x9fb7106c879fa48347796171982125a268ff0630\",\"address\":\"0x9fb7106c879fa48347796171982125a268ff0630\",\"name\":\"BCoW
-        AMM 50MKR-50ETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50MKR-50ETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0x9fb7106c879fa48347796171982125a268ff0630-0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2\",\"address\":\"0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2\",\"symbol\":\"MKR\",\"name\":\"Maker\",\"weight\":\"0.5\"},{\"id\":\"0x9fb7106c879fa48347796171982125a268ff0630-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.5\"}]},{\"id\":\"0xa62e2c047b65aee3c3ba7fc7c2bd95c82a514de2\",\"address\":\"0xa62e2c047b65aee3c3ba7fc7c2bd95c82a514de2\",\"name\":\"Balancer
-        CoW AMM 50 WETH 50 EIGEN\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50WETH-50EIGEN\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0xa62e2c047b65aee3c3ba7fc7c2bd95c82a514de2-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.5\"},{\"id\":\"0xa62e2c047b65aee3c3ba7fc7c2bd95c82a514de2-0xec53bf9167f50cdeb3ae105f56099aaab9061f83\",\"address\":\"0xec53bf9167f50cdeb3ae105f56099aaab9061f83\",\"symbol\":\"EIGEN\",\"name\":\"Eigen\",\"weight\":\"0.5\"}]},{\"id\":\"0xa7401066570960894a12b403f461cb61e8804b7b\",\"address\":\"0xa7401066570960894a12b403f461cb61e8804b7b\",\"name\":\"Kleros
-        Balancer CoW AMM\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50PNK-50wstETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0xa7401066570960894a12b403f461cb61e8804b7b-0x93ed3fbe21207ec2e8f2d3c3de6e058cb73bc04d\",\"address\":\"0x93ed3fbe21207ec2e8f2d3c3de6e058cb73bc04d\",\"symbol\":\"PNK\",\"name\":\"Pinakion\",\"weight\":\"0.5\"},{\"id\":\"0xa7401066570960894a12b403f461cb61e8804b7b-0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0\",\"address\":\"0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0\",\"symbol\":\"wstETH\",\"name\":\"Wrapped
-        liquid staked Ether 2.0\",\"weight\":\"0.5\"}]},{\"id\":\"0xa81b22966f1841e383e69393175e2cc65f0a8854\",\"address\":\"0xa81b22966f1841e383e69393175e2cc65f0a8854\",\"name\":\"Balancer
-        CoW AMM 50 WETH 50 UNI\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50WETH-50UNI\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0xa81b22966f1841e383e69393175e2cc65f0a8854-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.5\"},{\"id\":\"0xa81b22966f1841e383e69393175e2cc65f0a8854-0x1f9840a85d5af5bf1d1762f925bdaddc4201f984\",\"address\":\"0x1f9840a85d5af5bf1d1762f925bdaddc4201f984\",\"symbol\":\"UNI\",\"name\":\"Uniswap\",\"weight\":\"0.5\"}]},{\"id\":\"0xb3d37552eebbbdbea36258ba0948f4bbcaa3584e\",\"address\":\"0xb3d37552eebbbdbea36258ba0948f4bbcaa3584e\",\"name\":\"Balancer
-        CoW AMM 50 OSAK 50 Neiro\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50OSAK-50Neiro\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0xb3d37552eebbbdbea36258ba0948f4bbcaa3584e-0xa21af1050f7b26e0cff45ee51548254c41ed6b5c\",\"address\":\"0xa21af1050f7b26e0cff45ee51548254c41ed6b5c\",\"symbol\":\"OSAK\",\"name\":\"Osaka
-        Protocol\",\"weight\":\"0.5\"},{\"id\":\"0xb3d37552eebbbdbea36258ba0948f4bbcaa3584e-0x812ba41e071c7b7fa4ebcfb62df5f45f6fa853ee\",\"address\":\"0x812ba41e071c7b7fa4ebcfb62df5f45f6fa853ee\",\"symbol\":\"Neiro\",\"name\":\"Neiro\",\"weight\":\"0.5\"}]},{\"id\":\"0xbf8868b754a77e90ea68ffc0b5b10a7c729457e1\",\"address\":\"0xbf8868b754a77e90ea68ffc0b5b10a7c729457e1\",\"name\":\"Balancer
-        CoW AMM 50 SAFE 50 WETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50SAFE-50WETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0xbf8868b754a77e90ea68ffc0b5b10a7c729457e1-0x5afe3855358e112b5647b952709e6165e1c1eeee\",\"address\":\"0x5afe3855358e112b5647b952709e6165e1c1eeee\",\"symbol\":\"SAFE\",\"name\":\"Safe
-        Token\",\"weight\":\"0.5\"},{\"id\":\"0xbf8868b754a77e90ea68ffc0b5b10a7c729457e1-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.5\"}]},{\"id\":\"0xc9d5204e7c04a1be300b33e3979479be75132ac5\",\"address\":\"0xc9d5204e7c04a1be300b33e3979479be75132ac5\",\"name\":\"Balancer
-        Pool Token\",\"type\":\"COW_AMM\",\"symbol\":\"BPT\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0xc9d5204e7c04a1be300b33e3979479be75132ac5-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\",\"address\":\"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\",\"symbol\":\"USDC\",\"name\":\"USD
-        Coin\",\"weight\":\"0.5\"},{\"id\":\"0xc9d5204e7c04a1be300b33e3979479be75132ac5-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.5\"}]},{\"id\":\"0xd6a8afa7d5b4d558afa1fbbb823b6c9fc095026c\",\"address\":\"0xd6a8afa7d5b4d558afa1fbbb823b6c9fc095026c\",\"name\":\"Balancer
-        CoW AMM 80 XAUt 20 USDT\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-80XAUt-20USDT\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0xd6a8afa7d5b4d558afa1fbbb823b6c9fc095026c-0x68749665ff8d2d112fa859aa293f07a622782f38\",\"address\":\"0x68749665ff8d2d112fa859aa293f07a622782f38\",\"symbol\":\"XAUt\",\"name\":\"Tether
-        Gold\",\"weight\":\"0.8\"},{\"id\":\"0xd6a8afa7d5b4d558afa1fbbb823b6c9fc095026c-0xdac17f958d2ee523a2206206994597c13d831ec7\",\"address\":\"0xdac17f958d2ee523a2206206994597c13d831ec7\",\"symbol\":\"USDT\",\"name\":\"Tether
-        USD\",\"weight\":\"0.2\"}]},{\"id\":\"0xd7855be714943928236bda82d9cd7caf189f2806\",\"address\":\"0xd7855be714943928236bda82d9cd7caf189f2806\",\"name\":\"\U0001F42E\U0001F48E
-        Stablecoin Pool 50USDT-50-USDC\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50USDT-50USDC\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0xd7855be714943928236bda82d9cd7caf189f2806-0xdac17f958d2ee523a2206206994597c13d831ec7\",\"address\":\"0xdac17f958d2ee523a2206206994597c13d831ec7\",\"symbol\":\"USDT\",\"name\":\"Tether
-        USD\",\"weight\":\"0.5\"},{\"id\":\"0xd7855be714943928236bda82d9cd7caf189f2806-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\",\"address\":\"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\",\"symbol\":\"USDC\",\"name\":\"USD
-        Coin\",\"weight\":\"0.5\"}]},{\"id\":\"0xdfee48c9df6d26c734296c0e6bd02401100a7217\",\"address\":\"0xdfee48c9df6d26c734296c0e6bd02401100a7217\",\"name\":\"The
-        Doge NFT\",\"type\":\"COW_AMM\",\"symbol\":\"DOG\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0xdfee48c9df6d26c734296c0e6bd02401100a7217-0xbaac2b4491727d78d2b78815144570b9f2fe8899\",\"address\":\"0xbaac2b4491727d78d2b78815144570b9f2fe8899\",\"symbol\":\"DOG\",\"name\":\"The
-        Doge NFT\",\"weight\":\"0.5\"},{\"id\":\"0xdfee48c9df6d26c734296c0e6bd02401100a7217-0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0\",\"address\":\"0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0\",\"symbol\":\"wstETH\",\"name\":\"Wrapped
-        liquid staked Ether 2.0\",\"weight\":\"0.5\"}]},{\"id\":\"0xeda4581b03442ea84307844c2337e008cb057454\",\"address\":\"0xeda4581b03442ea84307844c2337e008cb057454\",\"name\":\"Balancer
-        CoW AMM 50 APETH 50 WETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50APETH-50WETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0xeda4581b03442ea84307844c2337e008cb057454-0xaaaaaaabc6cbc3a1fd3a0fe0fdec43251c6562f5\",\"address\":\"0xaaaaaaabc6cbc3a1fd3a0fe0fdec43251c6562f5\",\"symbol\":\"APETH\",\"name\":\"AP-Restaked-Eth\",\"weight\":\"0.5\"},{\"id\":\"0xeda4581b03442ea84307844c2337e008cb057454-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.5\"}]},{\"id\":\"0xf08d4dea369c456d26a3168ff0024b904f2d8b91\",\"address\":\"0xf08d4dea369c456d26a3168ff0024b904f2d8b91\",\"name\":\"BCoW
-        AMM 50WETH-50USDC\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50WETH-50USDC\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0xf08d4dea369c456d26a3168ff0024b904f2d8b91-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\",\"address\":\"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\",\"symbol\":\"USDC\",\"name\":\"USD
-        Coin\",\"weight\":\"0.5\"},{\"id\":\"0xf08d4dea369c456d26a3168ff0024b904f2d8b91-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.5\"}]},{\"id\":\"0xf25a3b5a965c59f88873da93fc2a244b00616be4\",\"address\":\"0xf25a3b5a965c59f88873da93fc2a244b00616be4\",\"name\":\"Balancer
-        CoW AMM 50 WBTC 50 wstETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50WBTC-50wstETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0xf25a3b5a965c59f88873da93fc2a244b00616be4-0x2260fac5e5542a773aa44fbcfedf7c193bc2c599\",\"address\":\"0x2260fac5e5542a773aa44fbcfedf7c193bc2c599\",\"symbol\":\"WBTC\",\"name\":\"Wrapped
-        BTC\",\"weight\":\"0.5\"},{\"id\":\"0xf25a3b5a965c59f88873da93fc2a244b00616be4-0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0\",\"address\":\"0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0\",\"symbol\":\"wstETH\",\"name\":\"Wrapped
-        liquid staked Ether 2.0\",\"weight\":\"0.5\"}]},{\"id\":\"0xf544694542ca8ffcd1120ff11ffa33bca475bce6\",\"address\":\"0xf544694542ca8ffcd1120ff11ffa33bca475bce6\",\"name\":\"Balancer
-        CoW AMM 80 USDL 20 USDC\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-80USDL-20USDC\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0xf544694542ca8ffcd1120ff11ffa33bca475bce6-0xbdc7c08592ee4aa51d06c27ee23d5087d65adbcd\",\"address\":\"0xbdc7c08592ee4aa51d06c27ee23d5087d65adbcd\",\"symbol\":\"USDL\",\"name\":\"Lift
-        Dollar\",\"weight\":\"0.8\"},{\"id\":\"0xf544694542ca8ffcd1120ff11ffa33bca475bce6-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\",\"address\":\"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\",\"symbol\":\"USDC\",\"name\":\"USD
-        Coin\",\"weight\":\"0.2\"}]},{\"id\":\"0xf706c50513446d709f08d3e5126cd74fb6bfda19\",\"address\":\"0xf706c50513446d709f08d3e5126cd74fb6bfda19\",\"name\":\"BCoW
-        AMM 50AAVE-50ETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50AAVE-50ETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0xf706c50513446d709f08d3e5126cd74fb6bfda19-0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9\",\"address\":\"0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9\",\"symbol\":\"AAVE\",\"name\":\"Aave
-        Token\",\"weight\":\"0.5\"},{\"id\":\"0xf706c50513446d709f08d3e5126cd74fb6bfda19-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.5\"}]},{\"id\":\"0xf8f5b88328dff3d19e5f4f11a9700293ac8f638f\",\"address\":\"0xf8f5b88328dff3d19e5f4f11a9700293ac8f638f\",\"name\":\"BCoW
-        AMM 50BAL-50ETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50BAL-50ETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0xf8f5b88328dff3d19e5f4f11a9700293ac8f638f-0xba100000625a3754423978a60c9317c58a424e3d\",\"address\":\"0xba100000625a3754423978a60c9317c58a424e3d\",\"symbol\":\"BAL\",\"name\":\"Balancer\",\"weight\":\"0.5\"},{\"id\":\"0xf8f5b88328dff3d19e5f4f11a9700293ac8f638f-0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"address\":\"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\",\"symbol\":\"WETH\",\"name\":\"Wrapped
-        Ether\",\"weight\":\"0.5\"}]},{\"id\":\"0xfec04c31b6099ce76c4c5d6d754a34141884fd91\",\"address\":\"0xfec04c31b6099ce76c4c5d6d754a34141884fd91\",\"name\":\"BCoW
-        AMM 50GNO-50wstETH\",\"type\":\"COW_AMM\",\"symbol\":\"BCoW-50GNO-50wstETH\",\"decimals\":18,\"displayTokens\":[{\"id\":\"0xfec04c31b6099ce76c4c5d6d754a34141884fd91-0x6810e776880c02933d47db1b9fc05908e5386b96\",\"address\":\"0x6810e776880c02933d47db1b9fc05908e5386b96\",\"symbol\":\"GNO\",\"name\":\"Gnosis
-        Token\",\"weight\":\"0.5\"},{\"id\":\"0xfec04c31b6099ce76c4c5d6d754a34141884fd91-0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0\",\"address\":\"0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0\",\"symbol\":\"wstETH\",\"name\":\"Wrapped
-        liquid staked Ether 2.0\",\"weight\":\"0.5\"}]}]}}"
-    headers:
-      Age:
-      - '163'
-      CF-RAY:
-      - 8e1e67f7d8a45c47-AMS
-      Cache-Control:
-      - public, s-maxage=90, stale-while-revalidate=150
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Wed, 13 Nov 2024 11:26:18 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      access-control-allow-credentials:
-      - 'true'
-      access-control-allow-headers:
-      - '*'
-      access-control-allow-methods:
-      - POST, GET, HEAD, OPTIONS
-      access-control-allow-origin:
-      - '*'
-      access-control-expose-headers:
-      - '*'
-      access-control-max-age:
-      - '600'
-      cf-cache-status:
-      - DYNAMIC
       content-length:
-      - '23477'
-      etag:
-      - W/"72d6-hJ9aHHnKWVUPabYPWiKphA1Rjsc"
-      gcdn-cache:
-      - HIT
-      origin-agent-cluster:
-      - ?1
-      referrer-policy:
-      - no-referrer
-      strict-transport-security:
-      - max-age=15552000; includeSubDomains
-      vary:
-      - chainid
-      - accept-encoding
-      x-cache:
-      - HIT
-      x-cache-hits:
-      - '2'
-      x-content-type-options:
-      - nosniff
-      x-dns-prefetch-control:
-      - 'off'
-      x-download-options:
-      - noopen
-      x-frame-options:
-      - SAMEORIGIN
-      x-permitted-cross-domain-policies:
-      - none
-      x-powered-by:
-      - Stellate
-      x-served-by:
-      - cache-ams2100092-AMS
-      x-xss-protection:
-      - '0'
+      - '1383'
+      svid:
+      - '55'
     status:
       code: 200
       message: OK
