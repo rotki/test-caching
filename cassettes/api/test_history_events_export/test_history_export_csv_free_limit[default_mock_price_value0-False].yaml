@@ -9,23 +9,25 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.34.4.dev282+g536a3891a
+      - rotki/1.35.1.dev267+gf21d38f85
     method: GET
-    uri: https://min-api.cryptocompare.com/data/pricehistorical?fsym=ETH&tsyms=EUR&ts=1720000000
+    uri: https://data-api.cryptocompare.com/index/cc/v1/historical/days?instrument=ETH-EUR&limit=1&market=cadli&to_ts=1720000000
   response:
     body:
-      string: '{"ETH":{"EUR":3051.87}}'
+      string: '{"Data":[{"UNIT":"DAY","TIMESTAMP":1719964800,"TYPE":"986","MARKET":"cadli","INSTRUMENT":"ETH-EUR","OPEN":3179.02780591038,"HIGH":3188.56009272159,"LOW":3015.53001878635,"CLOSE":3052.36696174091,"FIRST_MESSAGE_TIMESTAMP":1719964800,"LAST_MESSAGE_TIMESTAMP":1720051199,"FIRST_MESSAGE_VALUE":3166.93075344031,"HIGH_MESSAGE_VALUE":3176.42688086017,"HIGH_MESSAGE_TIMESTAMP":1719967563,"LOW_MESSAGE_VALUE":3015.53001878635,"LOW_MESSAGE_TIMESTAMP":1720040504,"LAST_MESSAGE_VALUE":3052.36696174091,"TOTAL_INDEX_UPDATES":0,"VOLUME":3069283.203361,"QUOTE_VOLUME":9458245091.75122,"VOLUME_TOP_TIER":1888805.33414117,"QUOTE_VOLUME_TOP_TIER":5818943353.28651,"VOLUME_DIRECT":0,"QUOTE_VOLUME_DIRECT":0,"VOLUME_TOP_TIER_DIRECT":0,"QUOTE_VOLUME_TOP_TIER_DIRECT":0}],"Err":{}}'
     headers:
       Access-Control-Allow-Credentials:
       - 'true'
       Access-Control-Allow-Headers:
-      - Content-Type, Cookie, Set-Cookie, Authorization
+      - Content-Type, Authorization
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
-      - '*'
+      - 'null'
+      Access-Control-Expose-Headers:
+      - Content-Disposition, AMP-Access-Control-Allow-Source-Origin
       Cache-Control:
-      - public, max-age=600
+      - public, max-age=300
       Connection:
       - keep-alive
       Content-Security-Policy:
@@ -33,19 +35,32 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Wed, 25 Sep 2024 14:34:22 GMT
+      - Thu, 14 Nov 2024 16:42:32 GMT
       Server:
       - nginx
       Transfer-Encoding:
       - chunked
       Vary:
       - Accept-Encoding
-      X-CryptoCompare-Cache-HIT:
+      X-CryptoCompare-Cache-Hit:
       - 'false'
       X-CryptoCompare-Server-Id:
-      - cc-api-min-v2-02
+      - cc-api-data-06
+      X-RateLimit-Limit:
+      - 100000, 1;window=1;burst=50;policy="fixed window", 3;window=60;burst=2500;policy="fixed
+        window", 139;window=3600;burst=25000;policy="fixed window", 3334;window=86400;burst=50000;policy="fixed
+        window", 100000;window=2592000;policy="fixed window"
+      X-RateLimit-Remaining:
+      - '99956'
+      X-RateLimit-Remaining-All:
+      - 99956, 49;window=1, 2499;window=60, 24992;window=3600, 49958;window=86400,
+        99956;window=2592000
+      X-RateLimit-Reset:
+      - '1408648'
+      X-RateLimit-Reset-All:
+      - 1408648, 1;window=1, 28;window=60, 1048;window=3600, 26248;window=86400, 1408648;window=2592000
       content-length:
-      - '23'
+      - '760'
     status:
       code: 200
       message: OK
