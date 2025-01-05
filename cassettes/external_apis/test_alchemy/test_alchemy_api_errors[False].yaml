@@ -1,0 +1,92 @@
+interactions:
+- request:
+    body: '{"addresses": [{"address": "0x3dBb91BDd5fc74c49146819ed58d7D204cf5a016",
+      "network": "eth-mainnet"}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '100'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - rotki/1.37.1.dev14+g67d483f67.d20250102
+    method: POST
+    uri: https://api.g.alchemy.com/prices/v1/Y_nFGh5UCi30NzRWOAam0gsVpQrjDXZX/tokens/by-address
+  response:
+    body:
+      string: '{"data":[{"network":"eth-mainnet","address":"0x3dBb91BDd5fc74c49146819ed58d7D204cf5a016","prices":[],"error":{"message":"Token
+        not found"}}]}'
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8fd40689bf7e5350-LOS
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 05 Jan 2025 14:05:51 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - _cfuvid=BHq48efV0asVW0TDfN217O2YLdVAYYIfVPgDiOypLcQ-1736085951703-0.0.1.1-604800000;
+        path=/; domain=.g.alchemy.com; HttpOnly; Secure; SameSite=None
+      Transfer-Encoding:
+      - chunked
+      content-length:
+      - '141'
+      x-alchemy-trace-id:
+      - 88e80cf54dbea7fa7a77fc0933313401
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"interval": "1h", "endTime": 1697028400, "startTime": 1697021200, "network":
+      "eth-mainnet", "address": "0x3dBb91BDd5fc74c49146819ed58d7D204cf5a016"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '149'
+      Content-Type:
+      - application/json
+      Cookie:
+      - _cfuvid=BHq48efV0asVW0TDfN217O2YLdVAYYIfVPgDiOypLcQ-1736085951703-0.0.1.1-604800000
+      User-Agent:
+      - rotki/1.37.1.dev14+g67d483f67.d20250102
+    method: POST
+    uri: https://api.g.alchemy.com/prices/v1/Y_nFGh5UCi30NzRWOAam0gsVpQrjDXZX/tokens/historical
+  response:
+    body:
+      string: '{"error":{"message":"Token address not found: 0x3dBb91BDd5fc74c49146819ed58d7D204cf5a016"}}'
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8fd406917f1de3b8-LIS
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '91'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 05 Jan 2025 14:05:52 GMT
+      Server:
+      - cloudflare
+      x-alchemy-trace-id:
+      - 3cdba826d4e006eb18e00d7bd11977bd
+    status:
+      code: 400
+      message: Bad Request
+version: 1
