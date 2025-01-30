@@ -5,16 +5,18 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, br
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.32.3
     method: GET
     uri: https://raw.githubusercontent.com/rotki/data/develop/updates/info.json
   response:
     body:
-      string: '{"spam_assets":{"latest":4},"rpc_nodes":{"latest":5},"contracts":{"latest":0},"global_addressbook":{"latest":0},"accounting_rules":{"latest":1},"location_asset_mappings":{"latest":0},"location_unsupported_assets":{"latest":0}}'
+      string: '{"spam_assets":{"latest":4},"rpc_nodes":{"latest":7},"contracts":{"latest":0},"global_addressbook":{"latest":0},"accounting_rules":{"latest":4,"limits":{"4":{"min_version":"1.35.0"}}},"location_asset_mappings":{"latest":8},"location_unsupported_assets":{"latest":1}}
+
+        '
     headers:
       Accept-Ranges:
       - bytes
@@ -31,11 +33,11 @@ interactions:
       Cross-Origin-Resource-Policy:
       - cross-origin
       Date:
-      - Thu, 18 Apr 2024 09:58:17 GMT
+      - Fri, 24 Jan 2025 12:37:32 GMT
       ETag:
-      - W/"a3ceb7d10e9d81211ff47d7680a4bce0f63704548291800fc686ca8d1b4276bd"
+      - W/"ba4c25c42773afa13ba683e05ff338b1ed8ac1510cfd25e2b2e48332afd6de65"
       Expires:
-      - Thu, 18 Apr 2024 10:03:17 GMT
+      - Fri, 24 Jan 2025 12:42:32 GMT
       Source-Age:
       - '0'
       Strict-Transport-Security:
@@ -51,19 +53,19 @@ interactions:
       X-Content-Type-Options:
       - nosniff
       X-Fastly-Request-ID:
-      - a58252da7e5cf3cdcefdfd49156fc61c22d17d9d
+      - e63c082309fbc03fee971050440188f9985f473f
       X-Frame-Options:
       - deny
       X-GitHub-Request-Id:
-      - 403A:19F23A:19B053E:1B15E6E:6620DBFC
+      - E297:1D822B:8473E4:8AD933:67938594
       X-Served-By:
-      - cache-fra-etou8220108-FRA
+      - cache-mad22064-MAD
       X-Timer:
-      - S1713434297.429035,VS0,VE127
+      - S1737722252.955708,VS0,VE153
       X-XSS-Protection:
       - 1; mode=block
       content-length:
-      - '226'
+      - '267'
     status:
       code: 200
       message: OK
@@ -73,16 +75,16 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, br
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev230+gdece1541b.d20240415
+      - rotki/1.37.2.dev16+gfc8e72100.d20250124
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getCode&address=0x2B888954421b424C5D3D9Ce9bB67c9bD47537d12&module=proxy
+    uri: https://api.scrollscan.com/api?action=eth_call&data=0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001600000000000000000000000002b888954421b424c5d3d9ce9bb67c9bd47537d1200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004e75235b8000000000000000000000000000000000000000000000000000000000000000000000000000000002b888954421b424c5d3d9ce9bb67c9bd47537d1200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004ffa1ad74000000000000000000000000000000000000000000000000000000000000000000000000000000002b888954421b424c5d3d9ce9bb67c9bd47537d12000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000043408e47000000000000000000000000000000000000000000000000000000000&module=proxy&to=0xcA11bde05977b3631167028862bE2a173976CA11
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x"}
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000"}
 
         '
     headers:
@@ -92,52 +94,8 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Thu, 18 Apr 2024 09:58:18 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '39'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.32.3.dev230+gdece1541b.d20240415
-    method: GET
-    uri: https://api.scrollscan.com/api?action=txlist&address=0x2B888954421b424C5D3D9Ce9bB67c9bD47537d12&module=account&offset=1&page=1
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 8763cbac4d40ca70-HAM
+      - 9070134c8f101a7c-MAD
       Cache-Control:
       - private
       Connection:
@@ -145,119 +103,25 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 18 Apr 2024 09:58:19 GMT
+      - Fri, 24 Jan 2025 12:37:32 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=yNLVxN8I%2FoPoAWAKgW7BTFAgIvyDne2I2KATt0clBz%2Fad4KacyTYp1U9q4PsaiBsMnizniQ1GXEnrWXTEgT9MJnXKulT7fPms7sCvqkJ5jZjuuikMMHBn2t6%2BzrfpUvrk3npShDXv2%2Fo0ZlOWHjjbw%3D%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.32.3.dev230+gdece1541b.d20240415
-    method: GET
-    uri: https://api.scrollscan.com/api?action=txlistinternal&address=0x2B888954421b424C5D3D9Ce9bB67c9bD47537d12&module=account&offset=1&page=1
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 8763cbb21a8e62bf-HAM
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Thu, 18 Apr 2024 09:58:21 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Hlp%2Bhpp4NiBKviXD6KX2uFpdC0IUgXM26hez22d%2BuduiEacj5pblNvoFOAUO67tR4vIxuG%2BLxp%2FUSEZAIHL3qMkPFyjMAqJY3BcMyXBUQf549WT%2FnfwxtFkL8jE0LeGzXX3vz97Q8jtiVo92sqbcYg%3D%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.32.3.dev230+gdece1541b.d20240415
-    method: GET
-    uri: https://api.scrollscan.com/api?action=tokentx&address=0x2B888954421b424C5D3D9Ce9bB67c9bD47537d12&module=account&offset=1&page=1
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 8763cbc30ae4caa9-HAM
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Thu, 18 Apr 2024 09:58:22 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=AISjKcMCPXrtuFyIIuQuG4JCqaOu8J4OAfBPgsfOY8zo1WaRrjFtkywexz2Oli6l1EGWzVY5L6dZbwavSDGJ7uuaHxvgl6iVs%2BSv%2FmbKTlsZPYSdqsTEs%2FRrrZ65NkyPEOts%2BbUVRDFghDEsXHW3LA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Ph3QJyg38E8A2GMHhcD8woiW9WOmhbP825TiTZc9ON1VTF%2Fx5JBeiZW0SH05Lg31sBy9iWxUST2BaCunAaD1HUa9SiyzgQCLGWlYOe2y0lcQKsIdhJ2VXJi4O98SebhezAwQuTUW1UT2sByH%2FXmaSQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      cf-cache-status:
+      - DYNAMIC
       content-length:
-      - '60'
+      - '935'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=20114&min_rtt=19981&rtt_var=7759&sent=6&recv=8&lost=0&retrans=0&sent_bytes=2850&recv_bytes=2077&delivery_rate=192132&cwnd=252&unsent_bytes=0&cid=aec5d63adb48a5fa&ts=275&x=0"
+      svid:
+      - scrollela1
     status:
       code: 200
       message: OK
@@ -267,27 +131,25 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, br
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev230+gdece1541b.d20240415
+      - rotki/1.37.2.dev16+gfc8e72100.d20250124
     method: GET
     uri: https://api.zksync.io/api/v0.2/accounts/0x2B888954421b424C5D3D9Ce9bB67c9bD47537d12/transactions?direction=older&from=latest&limit=1
   response:
     body:
-      string: '{"request":{"network":"mainnet","apiVersion":"v02","resource":"/api/v0.2/accounts/0x2B888954421b424C5D3D9Ce9bB67c9bD47537d12/transactions","args":{"direction":"older","from":"latest","account_id_or_address":"0x2B888954421b424C5D3D9Ce9bB67c9bD47537d12","limit":"1"},"timestamp":"2024-04-18T09:58:22.254651342Z"},"status":"success","error":null,"result":{"list":[{"txHash":"0xbd723b5a5f87e485a478bc7d1f365db79440b6e9305bff3b16a0e0ab83e51970","blockIndex":59,"blockNumber":425869,"op":{"type":"Withdraw","accountId":785516,"from":"0x2b888954421b424c5d3d9ce9bb67c9bd47537d12","to":"0x2b888954421b424c5d3d9ce9bb67c9bd47537d12","token":0,"amount":"6626770825000000000","fee":"3670000000000000","nonce":5,"signature":{"pubKey":"f141401f0bcb52b599abb0393dd8dff99adbe4cccd7fecd679c020d3b829cb0d","signature":"274496b49a9b629b056a93688fa9a141774328a0e2ce94571cdc86e3a273ee2d14ff5354811b6471e5dfc6c954fa51804f89da7041152a9d9da746fffc25fb02"},"fast":false,"validFrom":0,"validUntil":4294967295,"ethTxHash":null},"status":"finalized","failReason":null,"createdAt":"2024-02-20T12:10:30.410625Z","batchId":7907119}],"pagination":{"from":"0xbd723b5a5f87e485a478bc7d1f365db79440b6e9305bff3b16a0e0ab83e51970","limit":1,"direction":"older","count":16}}}'
+      string: '{"request":{"network":"mainnet","apiVersion":"v02","resource":"/api/v0.2/accounts/0x2B888954421b424C5D3D9Ce9bB67c9bD47537d12/transactions","args":{"account_id_or_address":"0x2B888954421b424C5D3D9Ce9bB67c9bD47537d12","limit":"1","from":"latest","direction":"older"},"timestamp":"2025-01-24T12:37:32.966572844Z"},"status":"success","error":null,"result":{"list":[{"txHash":"0xbd723b5a5f87e485a478bc7d1f365db79440b6e9305bff3b16a0e0ab83e51970","blockIndex":59,"blockNumber":425869,"op":{"type":"Withdraw","accountId":785516,"from":"0x2b888954421b424c5d3d9ce9bb67c9bd47537d12","to":"0x2b888954421b424c5d3d9ce9bb67c9bd47537d12","token":0,"amount":"6626770825000000000","fee":"3670000000000000","nonce":5,"signature":{"pubKey":"f141401f0bcb52b599abb0393dd8dff99adbe4cccd7fecd679c020d3b829cb0d","signature":"274496b49a9b629b056a93688fa9a141774328a0e2ce94571cdc86e3a273ee2d14ff5354811b6471e5dfc6c954fa51804f89da7041152a9d9da746fffc25fb02"},"fast":false,"validFrom":0,"validUntil":4294967295,"ethTxHash":null},"status":"finalized","failReason":null,"createdAt":"2024-02-20T12:10:30.410625Z","batchId":7907119}],"pagination":{"from":"0xbd723b5a5f87e485a478bc7d1f365db79440b6e9305bff3b16a0e0ab83e51970","limit":1,"direction":"older","count":16}}}'
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 8763cbc49e724516-TXL
+      - 9070134f1f00e163-MRS
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Thu, 18 Apr 2024 09:58:22 GMT
+      - Fri, 24 Jan 2025 12:37:33 GMT
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -304,6 +166,8 @@ interactions:
       - '*'
       access-control-max-age:
       - '1728000'
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '1234'
       strict-transport-security:
@@ -319,18 +183,16 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, br
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev230+gdece1541b.d20240415
+      - rotki/1.37.2.dev16+gfc8e72100.d20250124
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getCode&address=0xfa8666aE51F5b136596248d9411b03AC9040fff0&module=proxy
+    uri: https://api.scrollscan.com/api?action=txlist&address=0x2B888954421b424C5D3D9Ce9bB67c9bD47537d12&module=account&offset=1&page=1
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x"}
-
-        '
+      string: '{"status":"0","message":"No transactions found","result":[]}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
@@ -338,6 +200,8 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
+      CF-RAY:
+      - 90701351f81d2186-MAD
       Cache-Control:
       - private
       Connection:
@@ -345,15 +209,25 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 18 Apr 2024 09:58:22 GMT
+      - Fri, 24 Jan 2025 12:37:33 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=n2p4B%2FTPs6SGePEt0nE%2FcTq01zG%2BYXaO%2BHiTN9eTg8BaxVvOpLxn9B3TTvjN7ZRyMHVany7FWoEKtPWwrd95ghmRTQZ7Lh289bIPze2JGSECZ47Xnm9UCK0LhoXp70aW8yOdvkjhXeM%2FoIpqOOIjsQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
-      - nginx
+      - cloudflare
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      cf-cache-status:
+      - DYNAMIC
       content-length:
-      - '39'
+      - '60'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=21795&min_rtt=20369&rtt_var=8657&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2850&recv_bytes=930&delivery_rate=198536&cwnd=252&unsent_bytes=0&cid=f233535f54ec0437&ts=274&x=0"
+      svid:
+      - scrollela1
     status:
       code: 200
       message: OK
@@ -363,17 +237,233 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, br
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev230+gdece1541b.d20240415
+      - rotki/1.37.2.dev16+gfc8e72100.d20250124
+    method: GET
+    uri: https://api.scrollscan.com/api?action=txlistinternal&address=0x2B888954421b424C5D3D9Ce9bB67c9bD47537d12&module=account&offset=1&page=1
+  response:
+    body:
+      string: '{"status":"0","message":"No transactions found","result":[]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-RAY:
+      - 907013540e58b11b-MAD
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 24 Jan 2025 12:37:33 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=RYLf5gRFiHxdpYPIxcukcE%2FDg1M0S5DQPZ1%2BtfTK0xZPAaPzZkjXUX9bUROmTv9%2FDWHsLX7F%2FjC0gf8htb%2FvFF%2FKTqMcjjrV03BZZ7jme%2F3uhXwkuxK52FTGxAxAJOZR%2BjQJpv3RvFkl1%2FqetIjhZA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '60'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=24934&min_rtt=21551&rtt_var=10498&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2849&recv_bytes=938&delivery_rate=187647&cwnd=252&unsent_bytes=0&cid=19789720f9ec89a4&ts=271&x=0"
+      svid:
+      - scrollela1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.37.2.dev16+gfc8e72100.d20250124
+    method: GET
+    uri: https://api.scrollscan.com/api?action=tokentx&address=0x2B888954421b424C5D3D9Ce9bB67c9bD47537d12&module=account&offset=1&page=1
+  response:
+    body:
+      string: '{"status":"0","message":"No transactions found","result":[]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-RAY:
+      - 907013566dafaf27-MAD
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 24 Jan 2025 12:37:34 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=RnR%2FZrH6h5nI0ipbm4S7PYXkDcJ8%2FUXc4Xbeth2%2Bjm7D5jHNeMZMpnNwq0mQstmTbEOKf%2FPQ%2Fpi7dmPAljvlzrY%2F93Q4ZD4Blv6IFKQ120w9Y8fk55m2kyU53za2CMFpjsaho0Y%2BbxoqOZ%2Fsr4nVMQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '60'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=20510&min_rtt=20456&rtt_var=7779&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2849&recv_bytes=931&delivery_rate=193594&cwnd=252&unsent_bytes=0&cid=fb543f4ba5189619&ts=278&x=0"
+      svid:
+      - scrollela1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.37.2.dev16+gfc8e72100.d20250124
+    method: GET
+    uri: https://api.scrollscan.com/api?action=eth_call&data=0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000160000000000000000000000000fa8666ae51f5b136596248d9411b03ac9040fff000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004e75235b800000000000000000000000000000000000000000000000000000000000000000000000000000000fa8666ae51f5b136596248d9411b03ac9040fff000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004ffa1ad7400000000000000000000000000000000000000000000000000000000000000000000000000000000fa8666ae51f5b136596248d9411b03ac9040fff0000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000043408e47000000000000000000000000000000000000000000000000000000000&module=proxy&to=0xcA11bde05977b3631167028862bE2a173976CA11
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000"}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-RAY:
+      - 907013589c712f83-MAD
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 24 Jan 2025 12:37:34 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=GJpSJEUvYGzsrHDhgztEY9%2B%2BmUt%2BKxBcnznWUseOQa7fvUgqZ8C7hXvhDLIrj2a4eo0qeLwn7dZqFKIh2kCIToVFjl%2Be0tcAn11Zv72pBCTd0OdzeGAs613UGtMrZ9whbPuaPDH7nifmXigCHI4NTw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '935'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=21927&min_rtt=21479&rtt_var=8375&sent=5&recv=7&lost=0&retrans=0&sent_bytes=2850&recv_bytes=2077&delivery_rate=188276&cwnd=252&unsent_bytes=0&cid=f6a5bd9debdf58ab&ts=277&x=0"
+      svid:
+      - scrollela1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.37.2.dev16+gfc8e72100.d20250124
+    method: GET
+    uri: https://api.zksync.io/api/v0.2/accounts/0xfa8666aE51F5b136596248d9411b03AC9040fff0/transactions?direction=older&from=latest&limit=1
+  response:
+    body:
+      string: '{"request":{"network":"mainnet","apiVersion":"v02","resource":"/api/v0.2/accounts/0xfa8666aE51F5b136596248d9411b03AC9040fff0/transactions","args":{"from":"latest","limit":"1","account_id_or_address":"0xfa8666aE51F5b136596248d9411b03AC9040fff0","direction":"older"},"timestamp":"2025-01-24T12:37:34.807022399Z"},"status":"success","error":null,"result":{"list":[],"pagination":{"from":"0x0000000000000000000000000000000000000000000000000000000000000000","limit":1,"direction":"older","count":0}}}'
+    headers:
+      CF-RAY:
+      - 9070135a9eb8e17f-MRS
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 Jan 2025 12:37:34 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+      access-control-allow-methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      access-control-allow-origin:
+      - '*'
+      access-control-max-age:
+      - '1728000'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '495'
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.37.2.dev16+gfc8e72100.d20250124
     method: GET
     uri: https://api.scrollscan.com/api?action=txlist&address=0xfa8666aE51F5b136596248d9411b03AC9040fff0&module=account&offset=1&page=1
   response:
     body:
       string: '{"status":"1","message":"OK","result":[{"blockNumber":"4490681","blockHash":"0x6d5b63f90326a1c54ab14da3c8b6adede6ec6ce9a9a5197fa94284e8b9564e19","timeStamp":"1711691225","hash":"0xe3e6d2876ac5404f514fee444fdef8c05d1206f6966560b5c4cb51286c21692f","nonce":"0","transactionIndex":"18","from":"0xfa8666ae51f5b136596248d9411b03ac9040fff0","to":"0x6131b5fae19ea4f9d964eac0408e4408b66337b5","value":"80172000000000000","gas":"347976","gasPrice":"565950000","input":"0xe21fd0e90000000000000000000000000000000000000000000000000000000000000020000000000000000000000000f40442e1cb0bdfb496e8b7405d0c1c48a81bc897000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000380000000000000000000000000000000000000000000000000000000000000058000000000000000000000000000000000000000000000000000000000000002c0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee000000000000000000000000f55bec9cafdbe8730f096aa55dad6d22d44099df000000000000000000000000fa8666ae51f5b136596248d9411b03ac9040fff00000000000000000000000000000000000000000000000000000000066065a850000000000000000000000000000000000000000000000000000000000000260000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000401b96cfd40000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000c000000000000000000000000083ffefbca071347df469c4e64820c95b01b957be0000000000000000000000005300000000000000000000000000000000000004000000000000000000000000f55bec9cafdbe8730f096aa55dad6d22d44099df000000000000000000000000f40442e1cb0bdfb496e8b7405d0c1c48a81bc897000000000000000000000000000000000000000000000000011cd4025ceec000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd003100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000011d0000000000000000000000001106efa9000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee000000000000000000000000f55bec9cafdbe8730f096aa55dad6d22d44099df0000000000000000000000000000000000000000000000000000000000000160000000000000000000000000000000000000000000000000000000000000018000000000000000000000000000000000000000000000000000000000000001a000000000000000000000000000000000000000000000000000000000000001c0000000000000000000000000fa8666ae51f5b136596248d9411b03ac9040fff0000000000000000000000000000000000000000000000000011cd4025ceec000000000000000000000000000000000000000000000000000000000001099f677000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e67b22536f75726365223a22222c22416d6f756e74496e555344223a223238352e3730353137363033303136222c22416d6f756e744f7574555344223a223238352e363637323431222c22526566657272616c223a22222c22466c616773223a322c22496e74656772697479496e666f223a7b224b65794944223a2231222c225369676e6174757265223a22536e6c5777393153745470376262336c456b7637574671786b474e7a55476867587752377043547476314456706b35482b566554437141524f7642414f5867594c6c3979756570544568586b626f743148716f6f36484b746652475446794b44637158646a67496a3975587671425056354f653449384e6b2f685346386f47583635526573595031373235626a4a2b4c4c384d64626e71493339696a303864596f4f4c772f582b33736a493079377536774d464f624f757053497639525a4e694e366b3551625a4166544e6251366e396c7374484c32574c65564b6859325a6e52344e563256517432436d714472443343353952357235544b4766357948657530654b6e6a75436e2b506c7a33645461483579364968564b34343867734664703439393367757350774743676a584c6f512f6468426f4b375a3850774c796e4f4d49684b706475714232386c4634686563554f614d673d3d227d7d0000000000000000000000000000000000000000000000000000","methodId":"0xe21fd0e9","functionName":"swap(tuple
-        execution)","contractAddress":"","cumulativeGasUsed":"2547549","txreceipt_status":"1","gasUsed":"298262","confirmations":"422665","isError":"0"}]}'
+        execution)","contractAddress":"","cumulativeGasUsed":"2547549","txreceipt_status":"1","gasUsed":"298262","confirmations":"8442676","isError":"0"}]}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
@@ -381,10 +471,8 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 8763cbc9bd966313-HAM
+      - 9070135d8943aee5-MAD
       Cache-Control:
       - private
       Connection:
@@ -392,71 +480,25 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 18 Apr 2024 09:58:24 GMT
+      - Fri, 24 Jan 2025 12:37:35 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=mhT1wurNch4Oa8Oxo3hkLF41qW7P3uCiGPNgElrTmtbMevQTRuEmZuuXd%2B%2BO7BpI3YlPNx7zDGB%2FyleXxSYvsc51QMJvmF2fccS%2BFh02PqGmCKrszOS5mmneOBGBQBRS8YW0je44DUupUQd4%2BI%2BY7w%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=BhdUsW0INF5DZlwulCHlH8AJ1frkI3TszvYdIhkc%2FX5jGGkuf6%2Fm4%2FbVSN4vDyCGroMsDvtSyAF%2FHgB759ODSIum3dRVGa7vKgl1l%2FJHgM1%2Bp9bCbMqDsAO3Rre6lWXgerNZ2Kevr3WiZE9FO%2FoD7g%3D%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
-      content-length:
-      - '4636'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.32.3.dev230+gdece1541b.d20240415
-    method: GET
-    uri: https://api.zksync.io/api/v0.2/accounts/0xfa8666aE51F5b136596248d9411b03AC9040fff0/transactions?direction=older&from=latest&limit=1
-  response:
-    body:
-      string: '{"request":{"network":"mainnet","apiVersion":"v02","resource":"/api/v0.2/accounts/0xfa8666aE51F5b136596248d9411b03AC9040fff0/transactions","args":{"direction":"older","from":"latest","account_id_or_address":"0xfa8666aE51F5b136596248d9411b03AC9040fff0","limit":"1"},"timestamp":"2024-04-18T09:58:24.768683845Z"},"status":"success","error":null,"result":{"list":[],"pagination":{"from":"0x0000000000000000000000000000000000000000000000000000000000000000","limit":1,"direction":"older","count":0}}}'
-    headers:
-      CF-Cache-Status:
+      cf-cache-status:
       - DYNAMIC
-      CF-RAY:
-      - 8763cbd43e8a4480-TXL
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 18 Apr 2024 09:58:24 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Content-Type-Options:
-      - nosniff
-      access-control-allow-credentials:
-      - 'true'
-      access-control-allow-headers:
-      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
-      access-control-allow-methods:
-      - GET, PUT, POST, DELETE, PATCH, OPTIONS
-      access-control-allow-origin:
-      - '*'
-      access-control-max-age:
-      - '1728000'
       content-length:
-      - '495'
-      strict-transport-security:
-      - max-age=15552000; includeSubDomains; preload
-      vary:
-      - Accept-Encoding
+      - '4637'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=21911&min_rtt=21594&rtt_var=8324&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2851&recv_bytes=930&delivery_rate=187274&cwnd=253&unsent_bytes=0&cid=7dc938cf0d9c3e97&ts=274&x=0"
+      svid:
+      - scrollela1
     status:
       code: 200
       message: OK
@@ -466,16 +508,16 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, br
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev230+gdece1541b.d20240415
+      - rotki/1.37.2.dev16+gfc8e72100.d20250124
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getCode&address=0x2F4c0f60f2116899FA6D4b9d8B979167CE963d25&module=proxy
+    uri: https://api.scrollscan.com/api?action=eth_call&data=0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000160000000000000000000000000deef02ada5b089f851f2a1c0301d46631514d31200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004e75235b800000000000000000000000000000000000000000000000000000000000000000000000000000000deef02ada5b089f851f2a1c0301d46631514d31200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004ffa1ad7400000000000000000000000000000000000000000000000000000000000000000000000000000000deef02ada5b089f851f2a1c0301d46631514d312000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000043408e47000000000000000000000000000000000000000000000000000000000&module=proxy&to=0xcA11bde05977b3631167028862bE2a173976CA11
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x"}
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000"}
 
         '
     headers:
@@ -485,52 +527,8 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Thu, 18 Apr 2024 09:58:25 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '39'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.32.3.dev230+gdece1541b.d20240415
-    method: GET
-    uri: https://api.scrollscan.com/api?action=txlist&address=0x2F4c0f60f2116899FA6D4b9d8B979167CE963d25&module=account&offset=1&page=1
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 8763cbd98caa62bc-HAM
+      - 9070135fbbafb026-MAD
       Cache-Control:
       - private
       Connection:
@@ -538,19 +536,25 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 18 Apr 2024 09:58:26 GMT
+      - Fri, 24 Jan 2025 12:37:35 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=dUWDQWVO5hYKLP3xde0AGo1qXaQWYsmGCDNTnbb%2FueLVpI%2BCcBfny0Nse4MpUC5Z5ZpwWheDtePQtYhsgmniqYTXZvFvvoa4zkPOQ%2BjroRDtnX41KvTsEp8LK18npHZpP2Y97AW0Gc%2FEL3SV8Wi3Zw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Cc6o9g4gnqCjMb2kpW7zWLjVLSkCyfekca2qInCwe6P9LZu2onSxMPhllfPUPPOD4iejzoSxJlzCJ4W0toiDDlqewe1eKXYqWk%2FutwSQG%2FaEHWGce3LXLakzY0I4ysphlmIM3IUrXtmm1WUYxEBq4Q%3D%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      cf-cache-status:
+      - DYNAMIC
       content-length:
-      - '60'
+      - '935'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=20450&min_rtt=20238&rtt_var=7741&sent=5&recv=7&lost=0&retrans=0&sent_bytes=2850&recv_bytes=2077&delivery_rate=199822&cwnd=252&unsent_bytes=0&cid=02756a9cfcee239b&ts=161&x=0"
+      svid:
+      - scrollela1
     status:
       code: 200
       message: OK
@@ -560,127 +564,25 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, br
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev230+gdece1541b.d20240415
+      - rotki/1.37.2.dev16+gfc8e72100.d20250124
     method: GET
-    uri: https://api.scrollscan.com/api?action=txlistinternal&address=0x2F4c0f60f2116899FA6D4b9d8B979167CE963d25&module=account&offset=1&page=1
+    uri: https://api.zksync.io/api/v0.2/accounts/0xDeeF02aDA5b089f851F2a1C0301D46631514D312/transactions?direction=older&from=latest&limit=1
   response:
     body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
+      string: '{"request":{"network":"mainnet","apiVersion":"v02","resource":"/api/v0.2/accounts/0xDeeF02aDA5b089f851F2a1C0301D46631514D312/transactions","args":{"from":"latest","limit":"1","direction":"older","account_id_or_address":"0xDeeF02aDA5b089f851F2a1C0301D46631514D312"},"timestamp":"2025-01-24T12:37:35.827224989Z"},"status":"success","error":null,"result":{"list":[],"pagination":{"from":"0x0000000000000000000000000000000000000000000000000000000000000000","limit":1,"direction":"older","count":0}}}'
     headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 8763cbde8b636a67-HAM
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Thu, 18 Apr 2024 09:58:26 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=JykvEPvJ2KUJjaKFHipOTRa6%2FIu13MAVSWaH12YORN543igKga0Yl%2FtCsykXxjlPj6OIMhzlY3PURZQ8Pl3VDxzsRIpbWmqE%2BZXMDnthJ3waqeKaEgVZDQSVhv%2B1xQuDNQuY7gCy%2Fcznewi7d2n7zA%3D%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.32.3.dev230+gdece1541b.d20240415
-    method: GET
-    uri: https://api.scrollscan.com/api?action=tokentx&address=0x2F4c0f60f2116899FA6D4b9d8B979167CE963d25&module=account&offset=1&page=1
-  response:
-    body:
-      string: '{"status":"0","message":"No transactions found","result":[]}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 8763cbe32ec5ca85-HAM
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Thu, 18 Apr 2024 09:58:27 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=yg8xrEaq0MrQQ9Ruj4YtC0jKK37ikY2Jhwutw%2B98yKrngKbdpJCv3M5bNag%2FU2nbhImoUGAzmAWsxQxiro%2B1fd0FsIACpQCaC87p7ovFN97luVGJjqnuRQtSgPw3JiwKcrA%2FT6yWkYbEj3QBPE98FQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.32.3.dev230+gdece1541b.d20240415
-    method: GET
-    uri: https://api.zksync.io/api/v0.2/accounts/0x2F4c0f60f2116899FA6D4b9d8B979167CE963d25/transactions?direction=older&from=latest&limit=1
-  response:
-    body:
-      string: '{"request":{"network":"mainnet","apiVersion":"v02","resource":"/api/v0.2/accounts/0x2F4c0f60f2116899FA6D4b9d8B979167CE963d25/transactions","args":{"from":"latest","limit":"1","account_id_or_address":"0x2F4c0f60f2116899FA6D4b9d8B979167CE963d25","direction":"older"},"timestamp":"2024-04-18T09:58:27.615559710Z"},"status":"success","error":null,"result":{"list":[],"pagination":{"from":"0x0000000000000000000000000000000000000000000000000000000000000000","limit":1,"direction":"older","count":0}}}'
-    headers:
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 8763cbe6186e44f2-TXL
+      - 907013610deae1ba-MRS
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Thu, 18 Apr 2024 09:58:27 GMT
+      - Fri, 24 Jan 2025 12:37:35 GMT
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -697,12 +599,176 @@ interactions:
       - '*'
       access-control-max-age:
       - '1728000'
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '495'
       strict-transport-security:
       - max-age=15552000; includeSubDomains; preload
       vary:
       - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.37.2.dev16+gfc8e72100.d20250124
+    method: GET
+    uri: https://api.scrollscan.com/api?action=txlist&address=0xDeeF02aDA5b089f851F2a1C0301D46631514D312&module=account&offset=1&page=1
+  response:
+    body:
+      string: '{"status":"0","message":"No transactions found","result":[]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-RAY:
+      - 90701363ece4afb0-MAD
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 24 Jan 2025 12:37:36 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Z7MxX%2FTsDjq%2BJBkv5ZHk14wzzSvTje6UfGwBrTYlur96Qp%2BliMrBqApTFpMRjnQsTNsBnLu0Xw8RiC1hBTtLCQBpPIKp69Qm7aA65T2Aeu0FTXVMSJCdD%2BKT7zTUNFkGllmzFqGMMDPjP%2FJfSGnYjw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '60'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=22300&min_rtt=21213&rtt_var=8731&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2850&recv_bytes=930&delivery_rate=190637&cwnd=252&unsent_bytes=0&cid=f78010e57c0047ec&ts=160&x=0"
+      svid:
+      - scrollela1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.37.2.dev16+gfc8e72100.d20250124
+    method: GET
+    uri: https://api.scrollscan.com/api?action=txlistinternal&address=0xDeeF02aDA5b089f851F2a1C0301D46631514D312&module=account&offset=1&page=1
+  response:
+    body:
+      string: '{"status":"0","message":"No transactions found","result":[]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-RAY:
+      - 907013653aa5b100-MAD
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 24 Jan 2025 12:37:36 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=I9MIezL%2FM2rSs8uDyYX6SMiOu02FoeZUM%2FpyUtQksCyDDJYTAOb4y%2B3afR0JGzAiMM3ZB5Nm7tQrL2ZeWOe3VfE%2BL9N5jGsC3FFGdvvZV4pfukqX0G9j%2FMhGJt6jlG7fVKMvEO2yA0vDBeBvdt%2BBlg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '60'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=20076&min_rtt=20049&rtt_var=7537&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2849&recv_bytes=938&delivery_rate=201705&cwnd=252&unsent_bytes=0&cid=d0c60840e30fb434&ts=273&x=0"
+      svid:
+      - scrollela1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.37.2.dev16+gfc8e72100.d20250124
+    method: GET
+    uri: https://api.scrollscan.com/api?action=tokentx&address=0xDeeF02aDA5b089f851F2a1C0301D46631514D312&module=account&offset=1&page=1
+  response:
+    body:
+      string: '{"status":"0","message":"No transactions found","result":[]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-RAY:
+      - 907013673dcb1bb8-MAD
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 24 Jan 2025 12:37:36 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=N34r0%2FWzyF8MH9bkmKAqxYgiYxruPlor%2BysieR4IqhjpMypjHm5D2CXBTZmK9ZTxN%2BydObgTFNTApRD2k%2FJkgizQLV6TAIf02Jjnt%2BpnQtGpSgP0NHDiZ%2F3IiS%2FLxN246QsubIphshrxpPk%2FhjJ%2FVw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '60'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=21014&min_rtt=21004&rtt_var=7884&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2851&recv_bytes=931&delivery_rate=192534&cwnd=252&unsent_bytes=0&cid=b39a28ab3f896bae&ts=271&x=0"
+      svid:
+      - scrollela1
     status:
       code: 200
       message: OK
