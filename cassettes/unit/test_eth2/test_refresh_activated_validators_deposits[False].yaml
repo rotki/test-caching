@@ -1,6 +1,6 @@
 interactions:
 - request:
-    body: null
+    body: '{"indicesOrPubkey": "0x989620ffd512c08907841e28a2c472bbfad2e57c73f474814bf64bab3ae3b44436b1db7b05e4ccc1eb2c3f949a546278,0x967c17368bcb6a90164d1af369115b3bf265b82c350fc78d9b1fa9389f2a216867ca02121f21c4be121f334ce2ac7f4f"}'
     headers:
       Accept:
       - '*/*'
@@ -10,8 +10,8 @@ interactions:
       - keep-alive
       User-Agent:
       - rotki/1.27.2.dev426+g3c07e7e7e.d20230422
-    method: GET
-    uri: https://beaconcha.in/api/v1/validator/0x989620ffd512c08907841e28a2c472bbfad2e57c73f474814bf64bab3ae3b44436b1db7b05e4ccc1eb2c3f949a546278,0x967c17368bcb6a90164d1af369115b3bf265b82c350fc78d9b1fa9389f2a216867ca02121f21c4be121f334ce2ac7f4f
+    method: POST
+    uri: https://beaconcha.in/api/v1/validator
   response:
     body:
       string: '{"status":"OK","data":[{"activationeligibilityepoch":0,"activationepoch":0,"balance":36612752870,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":6338732,"name":"","pubkey":"0x967c17368bcb6a90164d1af369115b3bf265b82c350fc78d9b1fa9389f2a216867ca02121f21c4be121f334ce2ac7f4f","slashed":false,"status":"active_online","validatorindex":4523,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0097f5a53dcb21e6c4a57f20ad0522a4ac52fe081e5447a6ecdae684e293008e","total_withdrawals":0},{"activationeligibilityepoch":56930,"activationepoch":57023,"balance":32002876176,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":6338741,"name":"","pubkey":"0x989620ffd512c08907841e28a2c472bbfad2e57c73f474814bf64bab3ae3b44436b1db7b05e4ccc1eb2c3f949a546278","slashed":false,"status":"active_online","validatorindex":207003,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x010000000000000000000000bc87c1c4eb04a09eb26632a2cca5fdcf2cdfb083","total_withdrawals":2426162895}]}

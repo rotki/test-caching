@@ -54,7 +54,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: null
+    body: '{"indicesOrPubkey": "583243"}'
     headers:
       Accept:
       - '*/*'
@@ -64,8 +64,8 @@ interactions:
       - keep-alive
       User-Agent:
       - rotki/1.31.4.dev276+g394cf66c8.d20240201
-    method: GET
-    uri: https://beaconcha.in/api/v1/validator/583243
+    method: POST
+    uri: https://beaconcha.in/api/v1/validator
   response:
     body:
       string: '{"status":"OK","data":{"activationeligibilityepoch":195555,"activationepoch":196429,"balance":32001889455,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8355556,"name":"","pubkey":"0x823837958bd2abd92f03232d6d1266bcd9ce6c6d03e2c71a84dd67bad487fa67f46e11c961608e2560ae340cb604cb9b","slashed":false,"status":"active_online","validatorindex":583243,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x01000000000000000000000023f02e9272eac1f12f5be76d48b4a15323778f08","total_withdrawals":803900401}}
@@ -204,7 +204,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: null
+    body: '{"indicesOrPubkey": "582738"}'
     headers:
       Accept:
       - '*/*'
@@ -214,8 +214,8 @@ interactions:
       - keep-alive
       User-Agent:
       - rotki/1.31.4.dev276+g394cf66c8.d20240201
-    method: GET
-    uri: https://beaconcha.in/api/v1/validator/582738
+    method: POST
+    uri: https://beaconcha.in/api/v1/validator
   response:
     body:
       string: '{"status":"OK","data":{"activationeligibilityepoch":195556,"activationepoch":196480,"balance":32044407259,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8355552,"name":"","pubkey":"0xb339277725bde688ae048331d5d33a07d6fef1d25bcd9a85d39261829e24b1f3bd4939bf45d2d14761601e326d104752","slashed":false,"status":"active_online","validatorindex":582738,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x010000000000000000000000cb2a5c130709a4c6c4ba39368879a523c0060c71","total_withdrawals":807218767}}
@@ -300,7 +300,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: null
+    body: '{"indicesOrPubkey": "582738,583243"}'
     headers:
       Accept:
       - '*/*'
@@ -310,8 +310,8 @@ interactions:
       - keep-alive
       User-Agent:
       - rotki/1.31.4.dev276+g394cf66c8.d20240201
-    method: GET
-    uri: https://beaconcha.in/api/v1/validator/582738,583243
+    method: POST
+    uri: https://beaconcha.in/api/v1/validator
   response:
     body:
       string: '{"status":"OK","data":[{"activationeligibilityepoch":195556,"activationepoch":196480,"balance":32044407259,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8355552,"name":"","pubkey":"0xb339277725bde688ae048331d5d33a07d6fef1d25bcd9a85d39261829e24b1f3bd4939bf45d2d14761601e326d104752","slashed":false,"status":"active_online","validatorindex":582738,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x010000000000000000000000cb2a5c130709a4c6c4ba39368879a523c0060c71","total_withdrawals":807218767},{"activationeligibilityepoch":195555,"activationepoch":196429,"balance":32001889455,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8355556,"name":"","pubkey":"0x823837958bd2abd92f03232d6d1266bcd9ce6c6d03e2c71a84dd67bad487fa67f46e11c961608e2560ae340cb604cb9b","slashed":false,"status":"active_online","validatorindex":583243,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x01000000000000000000000023f02e9272eac1f12f5be76d48b4a15323778f08","total_withdrawals":803900401}]}
