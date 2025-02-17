@@ -1,6 +1,6 @@
 interactions:
 - request:
-    body: null
+    body: '{"indicesOrPubkey": "5234"}'
     headers:
       Accept:
       - '*/*'
@@ -8,93 +8,102 @@ interactions:
       - gzip, deflate
       Connection:
       - keep-alive
+      Content-Length:
+      - '27'
+      Content-Type:
+      - application/json
       User-Agent:
-      - rotki/1.31.4.dev276+g394cf66c8.d20240201
-    method: GET
-    uri: https://beaconcha.in/api/v1/validator/5234
+      - rotki/1.37.2.dev189+g30143f50e
+    method: POST
+    uri: https://beaconcha.in/api/v1/validator
   response:
     body:
-      string: '{"status":"OK","data":{"activationeligibilityepoch":0,"activationepoch":0,"balance":32007180035,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8348396,"name":"","pubkey":"0xb0456681ca4dc1a1276a9cab5915af9f9210f0eb104b4bd60164f59243b6159c3f3dab0d712cbae1360c7eb07af6a276","slashed":false,"status":"active_online","validatorindex":5234,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000005675801e9346ea8165e7eb80dccd01dca65c0f3a","total_withdrawals":5326103946}}
+      string: '{"status":"OK","data":{"activationeligibilityepoch":0,"activationepoch":0,"balance":32015131392,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11046535,"name":"","pubkey":"0xb0456681ca4dc1a1276a9cab5915af9f9210f0eb104b4bd60164f59243b6159c3f3dab0d712cbae1360c7eb07af6a276","slashed":false,"status":"active_online","validatorindex":5234,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000005675801e9346ea8165e7eb80dccd01dca65c0f3a","total_withdrawals":6263285795}}
 
         '
     headers:
-      Accept-Ranges:
-      - bytes
-      CF-Cache-Status:
-      - EXPIRED
+      Access-Control-Allow-Headers:
+      - '*, Authorization'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
       CF-RAY:
-      - 84fea855b955caa9-HAM
-      Cache-Control:
-      - max-age=12
+      - 910e6ef19f9548c8-LHR
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Sun, 04 Feb 2024 00:04:41 GMT
-      Last-Modified:
-      - Sun, 04 Feb 2024 00:03:04 GMT
+      - Wed, 12 Feb 2025 17:52:36 GMT
       Permissions-Policy:
       - interest-cohort=()
-      RateLimit-Limit:
+      Ratelimit-Bucket:
+      - default
+      Ratelimit-Limit:
       - '5'
-      RateLimit-Remaining:
+      Ratelimit-Remaining:
       - '4'
-      RateLimit-Reset:
+      Ratelimit-Reset:
       - '1'
+      Ratelimit-Validapikey:
+      - 'false'
+      Ratelimit-Window:
+      - second
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Server:
       - cloudflare
+      Set-Cookie:
+      - __cf_bm=tNJjfTOcnZUzOKyAf7e7onOo_ec1jkUOzy_LabRQg1g-1739382756-1.0.1.1-yG2kesME0AodR5JR_NsCghxo1fGnySBc_nweTbP.FHDYdOMYKfFt.0mGtPHJRJwoVTQlnX5Qfud.lb8S8kto8Q;
+        path=/; expires=Wed, 12-Feb-25 18:22:36 GMT; domain=.beaconcha.in; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=3VjautjcRcahYEpTqPR0P2daPWFS2VUmVziMAYcEFsQ-1739382756232-0.0.1.1-604800000;
+        path=/; domain=.beaconcha.in; HttpOnly; Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=7257600
+      Vary:
+      - Cookie
+      - Accept-Encoding
       Via:
-      - 1.1 google, 1.1 google
-      WWW-Authenticate:
-      - Key realm="kong"
+      - 1.1 google
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - DENY
-      X-RateLimit-Limit-Day:
+      X-Ratelimit-Limit-Day:
       - '30000'
-      X-RateLimit-Limit-Hour:
-      - '10000'
-      X-RateLimit-Limit-Minute:
-      - '20'
-      X-RateLimit-Limit-Month:
-      - '120000'
-      X-RateLimit-Limit-Second:
+      X-Ratelimit-Limit-Hour:
+      - '30000'
+      X-Ratelimit-Limit-Minute:
+      - '30000'
+      X-Ratelimit-Limit-Month:
+      - '30000'
+      X-Ratelimit-Limit-Second:
       - '5'
-      X-RateLimit-Remaining-Day:
-      - '29994'
-      X-RateLimit-Remaining-Hour:
-      - '9994'
-      X-RateLimit-Remaining-Minute:
-      - '19'
-      X-RateLimit-Remaining-Month:
-      - '119911'
-      X-RateLimit-Remaining-Second:
+      X-Ratelimit-Remaining-Day:
+      - '29888'
+      X-Ratelimit-Remaining-Hour:
+      - '29888'
+      X-Ratelimit-Remaining-Minute:
+      - '29888'
+      X-Ratelimit-Remaining-Month:
+      - '29888'
+      X-Ratelimit-Remaining-Second:
       - '4'
       X-XSS-Protection:
       - 1; mode=block
-      access-control-allow-headers:
-      - '*, Authorization'
-      access-control-allow-methods:
-      - '*'
-      access-control-allow-origin:
-      - '*'
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       content-length:
-      - '538'
-      vary:
-      - Cookie,Accept-Encoding
+      - '539'
     status:
       code: 200
       message: OK
 - request:
-    body: null
+    body: '{"indicesOrPubkey": "0x827e0f30c3d34e3ee58957dd7956b0f194d64cc404fca4a7313dc1b25ac1f28dcaddf59d05fbda798fa5b894c91b84fb"}'
     headers:
       Accept:
       - '*/*'
@@ -102,93 +111,99 @@ interactions:
       - gzip, deflate
       Connection:
       - keep-alive
+      Content-Length:
+      - '121'
+      Content-Type:
+      - application/json
+      Cookie:
+      - __cf_bm=tNJjfTOcnZUzOKyAf7e7onOo_ec1jkUOzy_LabRQg1g-1739382756-1.0.1.1-yG2kesME0AodR5JR_NsCghxo1fGnySBc_nweTbP.FHDYdOMYKfFt.0mGtPHJRJwoVTQlnX5Qfud.lb8S8kto8Q;
+        _cfuvid=3VjautjcRcahYEpTqPR0P2daPWFS2VUmVziMAYcEFsQ-1739382756232-0.0.1.1-604800000
       User-Agent:
-      - rotki/1.31.4.dev276+g394cf66c8.d20240201
-    method: GET
-    uri: https://beaconcha.in/api/v1/validator/0x827e0f30c3d34e3ee58957dd7956b0f194d64cc404fca4a7313dc1b25ac1f28dcaddf59d05fbda798fa5b894c91b84fb
+      - rotki/1.37.2.dev189+g30143f50e
+    method: POST
+    uri: https://beaconcha.in/api/v1/validator
   response:
     body:
-      string: '{"status":"OK","data":{"activationeligibilityepoch":0,"activationepoch":0,"balance":32007161871,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8348406,"name":"","pubkey":"0x827e0f30c3d34e3ee58957dd7956b0f194d64cc404fca4a7313dc1b25ac1f28dcaddf59d05fbda798fa5b894c91b84fb","slashed":false,"status":"active_online","validatorindex":5235,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x010000000000000000000000347a70cb4ff0297102dc549b044c41bd61e22718","total_withdrawals":5406353973}}
+      string: '{"status":"OK","data":{"activationeligibilityepoch":0,"activationepoch":0,"balance":32060782583,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11046552,"name":"","pubkey":"0x827e0f30c3d34e3ee58957dd7956b0f194d64cc404fca4a7313dc1b25ac1f28dcaddf59d05fbda798fa5b894c91b84fb","slashed":false,"status":"active_online","validatorindex":5235,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x010000000000000000000000347a70cb4ff0297102dc549b044c41bd61e22718","total_withdrawals":6269530895}}
 
         '
     headers:
-      Accept-Ranges:
-      - bytes
-      CF-Cache-Status:
-      - EXPIRED
+      Access-Control-Allow-Headers:
+      - '*, Authorization'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
       CF-RAY:
-      - 84fea85e1a86ca7d-HAM
-      Cache-Control:
-      - max-age=12
+      - 910e6f0a3c1a4195-LHR
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Sun, 04 Feb 2024 00:04:41 GMT
-      Last-Modified:
-      - Sun, 04 Feb 2024 00:03:04 GMT
+      - Wed, 12 Feb 2025 17:52:40 GMT
       Permissions-Policy:
       - interest-cohort=()
-      RateLimit-Limit:
+      Ratelimit-Bucket:
+      - default
+      Ratelimit-Limit:
       - '5'
-      RateLimit-Remaining:
-      - '3'
-      RateLimit-Reset:
+      Ratelimit-Remaining:
+      - '4'
+      Ratelimit-Reset:
       - '1'
+      Ratelimit-Validapikey:
+      - 'false'
+      Ratelimit-Window:
+      - second
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=7257600
+      Vary:
+      - Cookie
+      - Accept-Encoding
       Via:
-      - 1.1 google, 1.1 google
-      WWW-Authenticate:
-      - Key realm="kong"
+      - 1.1 google
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - DENY
-      X-RateLimit-Limit-Day:
+      X-Ratelimit-Limit-Day:
       - '30000'
-      X-RateLimit-Limit-Hour:
-      - '10000'
-      X-RateLimit-Limit-Minute:
-      - '20'
-      X-RateLimit-Limit-Month:
-      - '120000'
-      X-RateLimit-Limit-Second:
+      X-Ratelimit-Limit-Hour:
+      - '30000'
+      X-Ratelimit-Limit-Minute:
+      - '30000'
+      X-Ratelimit-Limit-Month:
+      - '30000'
+      X-Ratelimit-Limit-Second:
       - '5'
-      X-RateLimit-Remaining-Day:
-      - '29993'
-      X-RateLimit-Remaining-Hour:
-      - '9993'
-      X-RateLimit-Remaining-Minute:
-      - '18'
-      X-RateLimit-Remaining-Month:
-      - '119910'
-      X-RateLimit-Remaining-Second:
-      - '3'
+      X-Ratelimit-Remaining-Day:
+      - '29887'
+      X-Ratelimit-Remaining-Hour:
+      - '29887'
+      X-Ratelimit-Remaining-Minute:
+      - '29887'
+      X-Ratelimit-Remaining-Month:
+      - '29887'
+      X-Ratelimit-Remaining-Second:
+      - '4'
       X-XSS-Protection:
       - 1; mode=block
-      access-control-allow-headers:
-      - '*, Authorization'
-      access-control-allow-methods:
-      - '*'
-      access-control-allow-origin:
-      - '*'
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       content-length:
-      - '538'
-      vary:
-      - Cookie,Accept-Encoding
+      - '539'
     status:
       code: 200
       message: OK
 - request:
-    body: null
+    body: '{"indicesOrPubkey": "0xb0456681ca4dc1a1276a9cab5915af9f9210f0eb104b4bd60164f59243b6159c3f3dab0d712cbae1360c7eb07af6a276,0x827e0f30c3d34e3ee58957dd7956b0f194d64cc404fca4a7313dc1b25ac1f28dcaddf59d05fbda798fa5b894c91b84fb"}'
     headers:
       Accept:
       - '*/*'
@@ -196,93 +211,99 @@ interactions:
       - gzip, deflate
       Connection:
       - keep-alive
+      Content-Length:
+      - '220'
+      Content-Type:
+      - application/json
+      Cookie:
+      - __cf_bm=tNJjfTOcnZUzOKyAf7e7onOo_ec1jkUOzy_LabRQg1g-1739382756-1.0.1.1-yG2kesME0AodR5JR_NsCghxo1fGnySBc_nweTbP.FHDYdOMYKfFt.0mGtPHJRJwoVTQlnX5Qfud.lb8S8kto8Q;
+        _cfuvid=3VjautjcRcahYEpTqPR0P2daPWFS2VUmVziMAYcEFsQ-1739382756232-0.0.1.1-604800000
       User-Agent:
-      - rotki/1.31.4.dev276+g394cf66c8.d20240201
-    method: GET
-    uri: https://beaconcha.in/api/v1/validator/0xb0456681ca4dc1a1276a9cab5915af9f9210f0eb104b4bd60164f59243b6159c3f3dab0d712cbae1360c7eb07af6a276,0x827e0f30c3d34e3ee58957dd7956b0f194d64cc404fca4a7313dc1b25ac1f28dcaddf59d05fbda798fa5b894c91b84fb
+      - rotki/1.37.2.dev189+g30143f50e
+    method: POST
+    uri: https://beaconcha.in/api/v1/validator
   response:
     body:
-      string: '{"status":"OK","data":[{"activationeligibilityepoch":0,"activationepoch":0,"balance":32007180035,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8348396,"name":"","pubkey":"0xb0456681ca4dc1a1276a9cab5915af9f9210f0eb104b4bd60164f59243b6159c3f3dab0d712cbae1360c7eb07af6a276","slashed":false,"status":"active_online","validatorindex":5234,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000005675801e9346ea8165e7eb80dccd01dca65c0f3a","total_withdrawals":5326103946},{"activationeligibilityepoch":0,"activationepoch":0,"balance":32007161871,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8348406,"name":"","pubkey":"0x827e0f30c3d34e3ee58957dd7956b0f194d64cc404fca4a7313dc1b25ac1f28dcaddf59d05fbda798fa5b894c91b84fb","slashed":false,"status":"active_online","validatorindex":5235,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x010000000000000000000000347a70cb4ff0297102dc549b044c41bd61e22718","total_withdrawals":5406353973}]}
+      string: '{"status":"OK","data":[{"activationeligibilityepoch":0,"activationepoch":0,"balance":32015131392,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11046535,"name":"","pubkey":"0xb0456681ca4dc1a1276a9cab5915af9f9210f0eb104b4bd60164f59243b6159c3f3dab0d712cbae1360c7eb07af6a276","slashed":false,"status":"active_online","validatorindex":5234,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000005675801e9346ea8165e7eb80dccd01dca65c0f3a","total_withdrawals":6263285795},{"activationeligibilityepoch":0,"activationepoch":0,"balance":32060782583,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11046552,"name":"","pubkey":"0x827e0f30c3d34e3ee58957dd7956b0f194d64cc404fca4a7313dc1b25ac1f28dcaddf59d05fbda798fa5b894c91b84fb","slashed":false,"status":"active_online","validatorindex":5235,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x010000000000000000000000347a70cb4ff0297102dc549b044c41bd61e22718","total_withdrawals":6269530895}]}
 
         '
     headers:
-      Accept-Ranges:
-      - bytes
-      CF-Cache-Status:
-      - EXPIRED
+      Access-Control-Allow-Headers:
+      - '*, Authorization'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
       CF-RAY:
-      - 84fea8600dce62d3-HAM
-      Cache-Control:
-      - max-age=12
+      - 910e6f242b48f011-LHR
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Sun, 04 Feb 2024 00:04:41 GMT
-      Last-Modified:
-      - Sun, 04 Feb 2024 00:03:04 GMT
+      - Wed, 12 Feb 2025 17:52:44 GMT
       Permissions-Policy:
       - interest-cohort=()
-      RateLimit-Limit:
+      Ratelimit-Bucket:
+      - default
+      Ratelimit-Limit:
       - '5'
-      RateLimit-Remaining:
-      - '2'
-      RateLimit-Reset:
+      Ratelimit-Remaining:
+      - '4'
+      Ratelimit-Reset:
       - '1'
+      Ratelimit-Validapikey:
+      - 'false'
+      Ratelimit-Window:
+      - second
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=7257600
+      Vary:
+      - Cookie
+      - Accept-Encoding
       Via:
-      - 1.1 google, 1.1 google
-      WWW-Authenticate:
-      - Key realm="kong"
+      - 1.1 google
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - DENY
-      X-RateLimit-Limit-Day:
+      X-Ratelimit-Limit-Day:
       - '30000'
-      X-RateLimit-Limit-Hour:
-      - '10000'
-      X-RateLimit-Limit-Minute:
-      - '20'
-      X-RateLimit-Limit-Month:
-      - '120000'
-      X-RateLimit-Limit-Second:
+      X-Ratelimit-Limit-Hour:
+      - '30000'
+      X-Ratelimit-Limit-Minute:
+      - '30000'
+      X-Ratelimit-Limit-Month:
+      - '30000'
+      X-Ratelimit-Limit-Second:
       - '5'
-      X-RateLimit-Remaining-Day:
-      - '29992'
-      X-RateLimit-Remaining-Hour:
-      - '9992'
-      X-RateLimit-Remaining-Minute:
-      - '17'
-      X-RateLimit-Remaining-Month:
-      - '119909'
-      X-RateLimit-Remaining-Second:
-      - '2'
+      X-Ratelimit-Remaining-Day:
+      - '29886'
+      X-Ratelimit-Remaining-Hour:
+      - '29886'
+      X-Ratelimit-Remaining-Minute:
+      - '29886'
+      X-Ratelimit-Remaining-Month:
+      - '29886'
+      X-Ratelimit-Remaining-Second:
+      - '4'
       X-XSS-Protection:
       - 1; mode=block
-      access-control-allow-headers:
-      - '*, Authorization'
-      access-control-allow-methods:
-      - '*'
-      access-control-allow-origin:
-      - '*'
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       content-length:
-      - '1055'
-      vary:
-      - Cookie,Accept-Encoding
+      - '1057'
     status:
       code: 200
       message: OK
 - request:
-    body: null
+    body: '{"indicesOrPubkey": "0"}'
     headers:
       Accept:
       - '*/*'
@@ -290,93 +311,99 @@ interactions:
       - gzip, deflate
       Connection:
       - keep-alive
+      Content-Length:
+      - '24'
+      Content-Type:
+      - application/json
+      Cookie:
+      - __cf_bm=tNJjfTOcnZUzOKyAf7e7onOo_ec1jkUOzy_LabRQg1g-1739382756-1.0.1.1-yG2kesME0AodR5JR_NsCghxo1fGnySBc_nweTbP.FHDYdOMYKfFt.0mGtPHJRJwoVTQlnX5Qfud.lb8S8kto8Q;
+        _cfuvid=3VjautjcRcahYEpTqPR0P2daPWFS2VUmVziMAYcEFsQ-1739382756232-0.0.1.1-604800000
       User-Agent:
-      - rotki/1.31.4.dev276+g394cf66c8.d20240201
-    method: GET
-    uri: https://beaconcha.in/api/v1/validator/0
+      - rotki/1.37.2.dev189+g30143f50e
+    method: POST
+    uri: https://beaconcha.in/api/v1/validator
   response:
     body:
-      string: '{"status":"OK","data":{"activationeligibilityepoch":0,"activationepoch":0,"balance":32007114857,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8348385,"name":"","pubkey":"0x933ad9491b62059dd065b560d256d8957a8c402cc6e8d8ee7290ae11e8f7329267a8811c397529dac52ae1342ba58c95","slashed":false,"status":"active_online","validatorindex":0,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000000d369bb49efa5100fd3b86a9f828c55da04d2d50","total_withdrawals":5505460359}}
+      string: '{"status":"OK","data":{"activationeligibilityepoch":0,"activationepoch":0,"balance":32015018013,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11046537,"name":"","pubkey":"0x933ad9491b62059dd065b560d256d8957a8c402cc6e8d8ee7290ae11e8f7329267a8811c397529dac52ae1342ba58c95","slashed":false,"status":"active_online","validatorindex":0,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000000d369bb49efa5100fd3b86a9f828c55da04d2d50","total_withdrawals":6407169059}}
 
         '
     headers:
-      Accept-Ranges:
-      - bytes
+      Access-Control-Allow-Headers:
+      - '*, Authorization'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
       CF-Cache-Status:
-      - EXPIRED
+      - DYNAMIC
       CF-RAY:
-      - 84fea86668d0ca9d-HAM
-      Cache-Control:
-      - max-age=12
+      - 910e6f2e4ea6ed03-LHR
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Sun, 04 Feb 2024 00:04:42 GMT
-      Last-Modified:
-      - Sun, 04 Feb 2024 00:03:04 GMT
+      - Wed, 12 Feb 2025 17:52:45 GMT
       Permissions-Policy:
       - interest-cohort=()
-      RateLimit-Limit:
+      Ratelimit-Bucket:
+      - default
+      Ratelimit-Limit:
       - '5'
-      RateLimit-Remaining:
+      Ratelimit-Remaining:
       - '4'
-      RateLimit-Reset:
+      Ratelimit-Reset:
       - '1'
+      Ratelimit-Validapikey:
+      - 'false'
+      Ratelimit-Window:
+      - second
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=7257600
+      Vary:
+      - Cookie
+      - Accept-Encoding
       Via:
-      - 1.1 google, 1.1 google
-      WWW-Authenticate:
-      - Key realm="kong"
+      - 1.1 google
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - DENY
-      X-RateLimit-Limit-Day:
+      X-Ratelimit-Limit-Day:
       - '30000'
-      X-RateLimit-Limit-Hour:
-      - '10000'
-      X-RateLimit-Limit-Minute:
-      - '20'
-      X-RateLimit-Limit-Month:
-      - '120000'
-      X-RateLimit-Limit-Second:
+      X-Ratelimit-Limit-Hour:
+      - '30000'
+      X-Ratelimit-Limit-Minute:
+      - '30000'
+      X-Ratelimit-Limit-Month:
+      - '30000'
+      X-Ratelimit-Limit-Second:
       - '5'
-      X-RateLimit-Remaining-Day:
-      - '29998'
-      X-RateLimit-Remaining-Hour:
-      - '9998'
-      X-RateLimit-Remaining-Minute:
-      - '19'
-      X-RateLimit-Remaining-Month:
-      - '119971'
-      X-RateLimit-Remaining-Second:
+      X-Ratelimit-Remaining-Day:
+      - '29885'
+      X-Ratelimit-Remaining-Hour:
+      - '29885'
+      X-Ratelimit-Remaining-Minute:
+      - '29885'
+      X-Ratelimit-Remaining-Month:
+      - '29885'
+      X-Ratelimit-Remaining-Second:
       - '4'
       X-XSS-Protection:
       - 1; mode=block
-      access-control-allow-headers:
-      - '*, Authorization'
-      access-control-allow-methods:
-      - '*'
-      access-control-allow-origin:
-      - '*'
       alt-svc:
       - h3=":443"; ma=86400
       content-length:
-      - '535'
-      vary:
-      - Cookie,Accept-Encoding
+      - '536'
     status:
       code: 200
       message: OK
 - request:
-    body: null
+    body: '{"indicesOrPubkey": "5235,0,5234"}'
     headers:
       Accept:
       - '*/*'
@@ -384,93 +411,99 @@ interactions:
       - gzip, deflate
       Connection:
       - keep-alive
+      Content-Length:
+      - '34'
+      Content-Type:
+      - application/json
+      Cookie:
+      - __cf_bm=tNJjfTOcnZUzOKyAf7e7onOo_ec1jkUOzy_LabRQg1g-1739382756-1.0.1.1-yG2kesME0AodR5JR_NsCghxo1fGnySBc_nweTbP.FHDYdOMYKfFt.0mGtPHJRJwoVTQlnX5Qfud.lb8S8kto8Q;
+        _cfuvid=3VjautjcRcahYEpTqPR0P2daPWFS2VUmVziMAYcEFsQ-1739382756232-0.0.1.1-604800000
       User-Agent:
-      - rotki/1.31.4.dev276+g394cf66c8.d20240201
-    method: GET
-    uri: https://beaconcha.in/api/v1/validator/5235,0,5234
+      - rotki/1.37.2.dev189+g30143f50e
+    method: POST
+    uri: https://beaconcha.in/api/v1/validator
   response:
     body:
-      string: '{"status":"OK","data":[{"activationeligibilityepoch":0,"activationepoch":0,"balance":32007114857,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8348385,"name":"","pubkey":"0x933ad9491b62059dd065b560d256d8957a8c402cc6e8d8ee7290ae11e8f7329267a8811c397529dac52ae1342ba58c95","slashed":false,"status":"active_online","validatorindex":0,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000000d369bb49efa5100fd3b86a9f828c55da04d2d50","total_withdrawals":5505460359},{"activationeligibilityepoch":0,"activationepoch":0,"balance":32007180035,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8348396,"name":"","pubkey":"0xb0456681ca4dc1a1276a9cab5915af9f9210f0eb104b4bd60164f59243b6159c3f3dab0d712cbae1360c7eb07af6a276","slashed":false,"status":"active_online","validatorindex":5234,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000005675801e9346ea8165e7eb80dccd01dca65c0f3a","total_withdrawals":5326103946},{"activationeligibilityepoch":0,"activationepoch":0,"balance":32007161871,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8348406,"name":"","pubkey":"0x827e0f30c3d34e3ee58957dd7956b0f194d64cc404fca4a7313dc1b25ac1f28dcaddf59d05fbda798fa5b894c91b84fb","slashed":false,"status":"active_online","validatorindex":5235,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x010000000000000000000000347a70cb4ff0297102dc549b044c41bd61e22718","total_withdrawals":5406353973}]}
+      string: '{"status":"OK","data":[{"activationeligibilityepoch":0,"activationepoch":0,"balance":32015018013,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11046537,"name":"","pubkey":"0x933ad9491b62059dd065b560d256d8957a8c402cc6e8d8ee7290ae11e8f7329267a8811c397529dac52ae1342ba58c95","slashed":false,"status":"active_online","validatorindex":0,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000000d369bb49efa5100fd3b86a9f828c55da04d2d50","total_withdrawals":6407169059},{"activationeligibilityepoch":0,"activationepoch":0,"balance":32015131392,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11046535,"name":"","pubkey":"0xb0456681ca4dc1a1276a9cab5915af9f9210f0eb104b4bd60164f59243b6159c3f3dab0d712cbae1360c7eb07af6a276","slashed":false,"status":"active_online","validatorindex":5234,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000005675801e9346ea8165e7eb80dccd01dca65c0f3a","total_withdrawals":6263285795},{"activationeligibilityepoch":0,"activationepoch":0,"balance":32060782583,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11046552,"name":"","pubkey":"0x827e0f30c3d34e3ee58957dd7956b0f194d64cc404fca4a7313dc1b25ac1f28dcaddf59d05fbda798fa5b894c91b84fb","slashed":false,"status":"active_online","validatorindex":5235,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x010000000000000000000000347a70cb4ff0297102dc549b044c41bd61e22718","total_withdrawals":6269530895}]}
 
         '
     headers:
-      Accept-Ranges:
-      - bytes
+      Access-Control-Allow-Headers:
+      - '*, Authorization'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
       CF-Cache-Status:
-      - EXPIRED
+      - DYNAMIC
       CF-RAY:
-      - 84fea868caf96310-HAM
-      Cache-Control:
-      - max-age=12
+      - 910e6f467f86954a-LHR
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Sun, 04 Feb 2024 00:04:43 GMT
-      Last-Modified:
-      - Sun, 04 Feb 2024 00:03:04 GMT
+      - Wed, 12 Feb 2025 17:52:49 GMT
       Permissions-Policy:
       - interest-cohort=()
-      RateLimit-Limit:
+      Ratelimit-Bucket:
+      - default
+      Ratelimit-Limit:
       - '5'
-      RateLimit-Remaining:
+      Ratelimit-Remaining:
       - '4'
-      RateLimit-Reset:
+      Ratelimit-Reset:
       - '1'
+      Ratelimit-Validapikey:
+      - 'false'
+      Ratelimit-Window:
+      - second
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=7257600
+      Vary:
+      - Cookie
+      - Accept-Encoding
       Via:
-      - 1.1 google, 1.1 google
-      WWW-Authenticate:
-      - Key realm="kong"
+      - 1.1 google
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - DENY
-      X-RateLimit-Limit-Day:
+      X-Ratelimit-Limit-Day:
       - '30000'
-      X-RateLimit-Limit-Hour:
-      - '10000'
-      X-RateLimit-Limit-Minute:
-      - '20'
-      X-RateLimit-Limit-Month:
-      - '120000'
-      X-RateLimit-Limit-Second:
+      X-Ratelimit-Limit-Hour:
+      - '30000'
+      X-Ratelimit-Limit-Minute:
+      - '30000'
+      X-Ratelimit-Limit-Month:
+      - '30000'
+      X-Ratelimit-Limit-Second:
       - '5'
-      X-RateLimit-Remaining-Day:
-      - '29991'
-      X-RateLimit-Remaining-Hour:
-      - '9991'
-      X-RateLimit-Remaining-Minute:
-      - '16'
-      X-RateLimit-Remaining-Month:
-      - '119908'
-      X-RateLimit-Remaining-Second:
+      X-Ratelimit-Remaining-Day:
+      - '29884'
+      X-Ratelimit-Remaining-Hour:
+      - '29884'
+      X-Ratelimit-Remaining-Minute:
+      - '29884'
+      X-Ratelimit-Remaining-Month:
+      - '29884'
+      X-Ratelimit-Remaining-Second:
       - '4'
       X-XSS-Protection:
       - 1; mode=block
-      access-control-allow-headers:
-      - '*, Authorization'
-      access-control-allow-methods:
-      - '*'
-      access-control-allow-origin:
-      - '*'
       alt-svc:
       - h3=":443"; ma=86400
       content-length:
-      - '1567'
-      vary:
-      - Cookie,Accept-Encoding
+      - '1570'
     status:
       code: 200
       message: OK
 - request:
-    body: null
+    body: '{"indicesOrPubkey": "0xb0456681ca4dc1a1276a9cab5915af9f9210f0eb104b4bd60164f59243b6159c3f3dab0d712cbae1360c7eb07af6a276,0x827e0f30c3d34e3ee58957dd7956b0f194d64cc404fca4a7313dc1b25ac1f28dcaddf59d05fbda798fa5b894c91b84fb,0x933ad9491b62059dd065b560d256d8957a8c402cc6e8d8ee7290ae11e8f7329267a8811c397529dac52ae1342ba58c95"}'
     headers:
       Accept:
       - '*/*'
@@ -478,88 +511,94 @@ interactions:
       - gzip, deflate
       Connection:
       - keep-alive
+      Content-Length:
+      - '319'
+      Content-Type:
+      - application/json
+      Cookie:
+      - __cf_bm=tNJjfTOcnZUzOKyAf7e7onOo_ec1jkUOzy_LabRQg1g-1739382756-1.0.1.1-yG2kesME0AodR5JR_NsCghxo1fGnySBc_nweTbP.FHDYdOMYKfFt.0mGtPHJRJwoVTQlnX5Qfud.lb8S8kto8Q;
+        _cfuvid=3VjautjcRcahYEpTqPR0P2daPWFS2VUmVziMAYcEFsQ-1739382756232-0.0.1.1-604800000
       User-Agent:
-      - rotki/1.31.4.dev276+g394cf66c8.d20240201
-    method: GET
-    uri: https://beaconcha.in/api/v1/validator/0x933ad9491b62059dd065b560d256d8957a8c402cc6e8d8ee7290ae11e8f7329267a8811c397529dac52ae1342ba58c95,0xb0456681ca4dc1a1276a9cab5915af9f9210f0eb104b4bd60164f59243b6159c3f3dab0d712cbae1360c7eb07af6a276,0x827e0f30c3d34e3ee58957dd7956b0f194d64cc404fca4a7313dc1b25ac1f28dcaddf59d05fbda798fa5b894c91b84fb
+      - rotki/1.37.2.dev189+g30143f50e
+    method: POST
+    uri: https://beaconcha.in/api/v1/validator
   response:
     body:
-      string: '{"status":"OK","data":[{"activationeligibilityepoch":0,"activationepoch":0,"balance":32007114857,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8348385,"name":"","pubkey":"0x933ad9491b62059dd065b560d256d8957a8c402cc6e8d8ee7290ae11e8f7329267a8811c397529dac52ae1342ba58c95","slashed":false,"status":"active_online","validatorindex":0,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000000d369bb49efa5100fd3b86a9f828c55da04d2d50","total_withdrawals":5505460359},{"activationeligibilityepoch":0,"activationepoch":0,"balance":32007180035,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8348396,"name":"","pubkey":"0xb0456681ca4dc1a1276a9cab5915af9f9210f0eb104b4bd60164f59243b6159c3f3dab0d712cbae1360c7eb07af6a276","slashed":false,"status":"active_online","validatorindex":5234,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000005675801e9346ea8165e7eb80dccd01dca65c0f3a","total_withdrawals":5326103946},{"activationeligibilityepoch":0,"activationepoch":0,"balance":32007161871,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8348406,"name":"","pubkey":"0x827e0f30c3d34e3ee58957dd7956b0f194d64cc404fca4a7313dc1b25ac1f28dcaddf59d05fbda798fa5b894c91b84fb","slashed":false,"status":"active_online","validatorindex":5235,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x010000000000000000000000347a70cb4ff0297102dc549b044c41bd61e22718","total_withdrawals":5406353973}]}
+      string: '{"status":"OK","data":[{"activationeligibilityepoch":0,"activationepoch":0,"balance":32015018013,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11046537,"name":"","pubkey":"0x933ad9491b62059dd065b560d256d8957a8c402cc6e8d8ee7290ae11e8f7329267a8811c397529dac52ae1342ba58c95","slashed":false,"status":"active_online","validatorindex":0,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000000d369bb49efa5100fd3b86a9f828c55da04d2d50","total_withdrawals":6407169059},{"activationeligibilityepoch":0,"activationepoch":0,"balance":32015131392,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11046535,"name":"","pubkey":"0xb0456681ca4dc1a1276a9cab5915af9f9210f0eb104b4bd60164f59243b6159c3f3dab0d712cbae1360c7eb07af6a276","slashed":false,"status":"active_online","validatorindex":5234,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000005675801e9346ea8165e7eb80dccd01dca65c0f3a","total_withdrawals":6263285795},{"activationeligibilityepoch":0,"activationepoch":0,"balance":32060782583,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11046552,"name":"","pubkey":"0x827e0f30c3d34e3ee58957dd7956b0f194d64cc404fca4a7313dc1b25ac1f28dcaddf59d05fbda798fa5b894c91b84fb","slashed":false,"status":"active_online","validatorindex":5235,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x010000000000000000000000347a70cb4ff0297102dc549b044c41bd61e22718","total_withdrawals":6269530895}]}
 
         '
     headers:
-      Accept-Ranges:
-      - bytes
-      CF-Cache-Status:
-      - EXPIRED
+      Access-Control-Allow-Headers:
+      - '*, Authorization'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
       CF-RAY:
-      - 84fea86a897d7260-HAM
-      Cache-Control:
-      - max-age=12
+      - 910e6f4f5f9ded07-LHR
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Sun, 04 Feb 2024 00:04:43 GMT
-      Last-Modified:
-      - Sun, 04 Feb 2024 00:03:05 GMT
+      - Wed, 12 Feb 2025 17:52:51 GMT
       Permissions-Policy:
       - interest-cohort=()
-      RateLimit-Limit:
+      Ratelimit-Bucket:
+      - default
+      Ratelimit-Limit:
       - '5'
-      RateLimit-Remaining:
-      - '3'
-      RateLimit-Reset:
+      Ratelimit-Remaining:
+      - '4'
+      Ratelimit-Reset:
       - '1'
+      Ratelimit-Validapikey:
+      - 'false'
+      Ratelimit-Window:
+      - second
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=7257600
+      Vary:
+      - Cookie
+      - Accept-Encoding
       Via:
-      - 1.1 google, 1.1 google
-      WWW-Authenticate:
-      - Key realm="kong"
+      - 1.1 google
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - DENY
-      X-RateLimit-Limit-Day:
+      X-Ratelimit-Limit-Day:
       - '30000'
-      X-RateLimit-Limit-Hour:
-      - '10000'
-      X-RateLimit-Limit-Minute:
-      - '20'
-      X-RateLimit-Limit-Month:
-      - '120000'
-      X-RateLimit-Limit-Second:
+      X-Ratelimit-Limit-Hour:
+      - '30000'
+      X-Ratelimit-Limit-Minute:
+      - '30000'
+      X-Ratelimit-Limit-Month:
+      - '30000'
+      X-Ratelimit-Limit-Second:
       - '5'
-      X-RateLimit-Remaining-Day:
-      - '29990'
-      X-RateLimit-Remaining-Hour:
-      - '9990'
-      X-RateLimit-Remaining-Minute:
-      - '15'
-      X-RateLimit-Remaining-Month:
-      - '119907'
-      X-RateLimit-Remaining-Second:
-      - '3'
+      X-Ratelimit-Remaining-Day:
+      - '29883'
+      X-Ratelimit-Remaining-Hour:
+      - '29883'
+      X-Ratelimit-Remaining-Minute:
+      - '29883'
+      X-Ratelimit-Remaining-Month:
+      - '29883'
+      X-Ratelimit-Remaining-Second:
+      - '4'
       X-XSS-Protection:
       - 1; mode=block
-      access-control-allow-headers:
-      - '*, Authorization'
-      access-control-allow-methods:
-      - '*'
-      access-control-allow-origin:
-      - '*'
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       content-length:
-      - '1567'
-      vary:
-      - Cookie,Accept-Encoding
+      - '1570'
     status:
       code: 200
       message: OK

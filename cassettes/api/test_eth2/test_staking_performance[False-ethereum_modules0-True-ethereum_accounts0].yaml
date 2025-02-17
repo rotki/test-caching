@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://beaconcha.in/api/v1/validator/eth1/0xf93eba7D7a8C5c5c663d776e8890CB37fF5525ef
   response:
@@ -27,9 +27,9 @@ interactions:
       Access-Control-Allow-Origin:
       - '*'
       CF-Cache-Status:
-      - EXPIRED
+      - MISS
       CF-RAY:
-      - 90e396876fffe51b-TXL
+      - 910dcb7fefc2cd12-LHR
       Cache-Control:
       - public, max-age=12
       Connection:
@@ -37,11 +37,11 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 07 Feb 2025 13:04:50 GMT
+      - Wed, 12 Feb 2025 16:01:01 GMT
       Expires:
-      - Fri, 07 Feb 2025 13:05:01 GMT
+      - Wed, 12 Feb 2025 16:01:13 GMT
       Last-Modified:
-      - Fri, 07 Feb 2025 13:04:49 GMT
+      - Wed, 12 Feb 2025 16:01:01 GMT
       Permissions-Policy:
       - interest-cohort=()
       Ratelimit-Bucket:
@@ -61,10 +61,10 @@ interactions:
       Server:
       - cloudflare
       Set-Cookie:
-      - __cf_bm=_qKHmd4S2hG92U2.lHB8bFva_0QqzZ8J0sLUq_vXctE-1738933490-1.0.1.1-FmAhuBQcuIXjXpyTtZQFZ_5.XGt8EihFdVZJelxgPRYFeMb5gCiRMfgBxOj0yICG5KY07rNgC5qYYHMp4eiMXQ;
-        path=/; expires=Fri, 07-Feb-25 13:34:50 GMT; domain=.beaconcha.in; HttpOnly;
+      - __cf_bm=sULo7b9RctsebCnOmhbjo6GEjllPAkotR.CDafvc8jA-1739376061-1.0.1.1-TVXrQJLR9KU0wdiAc5oViTgsuZblb9KNxkCpuh.D3wKy6KzWGpBqKvieZq_ZJYxMVn7z0kJq3uTq4ZqxQd1.OA;
+        path=/; expires=Wed, 12-Feb-25 16:31:01 GMT; domain=.beaconcha.in; HttpOnly;
         Secure; SameSite=None
-      - _cfuvid=jSuL.ajGM_Hg_obOps2EQ4x1glZOj_YHW_E_2FEy56M-1738933490001-0.0.1.1-604800000;
+      - _cfuvid=_hApvelizReNKIJ0SAdtc11riGtG9JAwKQivtMXc0KA-1739376061570-0.0.1.1-604800000;
         path=/; domain=.beaconcha.in; HttpOnly; Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=7257600
@@ -88,13 +88,13 @@ interactions:
       X-Ratelimit-Limit-Second:
       - '5'
       X-Ratelimit-Remaining-Day:
-      - '29969'
+      - '29988'
       X-Ratelimit-Remaining-Hour:
-      - '29969'
+      - '29988'
       X-Ratelimit-Remaining-Minute:
-      - '29969'
+      - '29988'
       X-Ratelimit-Remaining-Month:
-      - '29969'
+      - '29988'
       X-Ratelimit-Remaining-Second:
       - '4'
       X-XSS-Protection:
@@ -107,7 +107,7 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: null
+    body: '{"indicesOrPubkey": "1187604"}'
     headers:
       Accept:
       - '*/*'
@@ -115,43 +115,37 @@ interactions:
       - gzip, deflate
       Connection:
       - keep-alive
+      Content-Length:
+      - '30'
+      Content-Type:
+      - application/json
       Cookie:
-      - __cf_bm=_qKHmd4S2hG92U2.lHB8bFva_0QqzZ8J0sLUq_vXctE-1738933490-1.0.1.1-FmAhuBQcuIXjXpyTtZQFZ_5.XGt8EihFdVZJelxgPRYFeMb5gCiRMfgBxOj0yICG5KY07rNgC5qYYHMp4eiMXQ;
-        _cfuvid=jSuL.ajGM_Hg_obOps2EQ4x1glZOj_YHW_E_2FEy56M-1738933490001-0.0.1.1-604800000
+      - __cf_bm=sULo7b9RctsebCnOmhbjo6GEjllPAkotR.CDafvc8jA-1739376061-1.0.1.1-TVXrQJLR9KU0wdiAc5oViTgsuZblb9KNxkCpuh.D3wKy6KzWGpBqKvieZq_ZJYxMVn7z0kJq3uTq4ZqxQd1.OA;
+        _cfuvid=_hApvelizReNKIJ0SAdtc11riGtG9JAwKQivtMXc0KA-1739376061570-0.0.1.1-604800000
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
-    method: GET
-    uri: https://beaconcha.in/api/v1/validator/1187604
+      - rotki/1.37.2.dev189+g30143f50e
+    method: POST
+    uri: https://beaconcha.in/api/v1/validator
   response:
     body:
-      string: '{"status":"OK","data":{"activationeligibilityepoch":261539,"activationepoch":261708,"balance":32012038559,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11009104,"name":"","pubkey":"0xa2de832511231af4bf98083e68c67aa6429c8c2b08920302d1d6953298f3720c8d5ca22c08a54fffa2efab782e25dba8","slashed":false,"status":"active_online","validatorindex":1187604,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000002cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","total_withdrawals":931083313}}
+      string: '{"status":"OK","data":{"activationeligibilityepoch":261539,"activationepoch":261708,"balance":32004313006,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11046001,"name":"","pubkey":"0xa2de832511231af4bf98083e68c67aa6429c8c2b08920302d1d6953298f3720c8d5ca22c08a54fffa2efab782e25dba8","slashed":false,"status":"active_online","validatorindex":1187604,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000002cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","total_withdrawals":949467166}}
 
         '
     headers:
-      Accept-Ranges:
-      - bytes
       Access-Control-Allow-Headers:
       - '*, Authorization'
       Access-Control-Allow-Methods:
       - '*'
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - EXPIRED
       CF-RAY:
-      - 90e39688aee7e507-TXL
-      Cache-Control:
-      - public, max-age=12
+      - 910dcb838ab9eefa-LHR
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Fri, 07 Feb 2025 13:04:50 GMT
-      Expires:
-      - Fri, 07 Feb 2025 13:05:02 GMT
-      Last-Modified:
-      - Fri, 07 Feb 2025 13:04:50 GMT
+      - Wed, 12 Feb 2025 16:01:02 GMT
       Permissions-Policy:
       - interest-cohort=()
       Ratelimit-Bucket:
@@ -192,19 +186,21 @@ interactions:
       X-Ratelimit-Limit-Second:
       - '5'
       X-Ratelimit-Remaining-Day:
-      - '29968'
+      - '29987'
       X-Ratelimit-Remaining-Hour:
-      - '29968'
+      - '29987'
       X-Ratelimit-Remaining-Minute:
-      - '29968'
+      - '29987'
       X-Ratelimit-Remaining-Month:
-      - '29968'
+      - '29987'
       X-Ratelimit-Remaining-Second:
       - '3'
       X-XSS-Protection:
       - 1; mode=block
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '551'
     status:
@@ -220,7 +216,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0xb7c9fd48c675ece788cc992c0896d6a2928df45ac4e79842a15e9838702c22a6
   response:
@@ -242,7 +238,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:04:51 GMT
+      - Wed, 12 Feb 2025 16:01:04 GMT
       Server:
       - nginx
       Vary:
@@ -252,7 +248,7 @@ interactions:
       content-length:
       - '720'
       svid:
-      - '55'
+      - '5'
     status:
       code: 200
       message: OK
@@ -266,7 +262,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x1252a81
   response:
@@ -288,7 +284,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:04:51 GMT
+      - Wed, 12 Feb 2025 16:01:05 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -300,7 +296,7 @@ interactions:
       content-length:
       - '266319'
       svid:
-      - '12'
+      - '11'
     status:
       code: 200
       message: OK
@@ -314,7 +310,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xb7c9fd48c675ece788cc992c0896d6a2928df45ac4e79842a15e9838702c22a6
   response:
@@ -336,7 +332,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:04:52 GMT
+      - Wed, 12 Feb 2025 16:01:07 GMT
       Server:
       - nginx
       Vary:
@@ -346,7 +342,7 @@ interactions:
       content-length:
       - '1563'
       svid:
-      - '12'
+      - '2'
     status:
       code: 200
       message: OK
@@ -360,7 +356,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0xb7c9fd48c675ece788cc992c0896d6a2928df45ac4e79842a15e9838702c22a6
   response:
@@ -380,7 +376,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:04:53 GMT
+      - Wed, 12 Feb 2025 16:01:08 GMT
       Server:
       - nginx
       Vary:
@@ -390,7 +386,7 @@ interactions:
       content-length:
       - '60'
       svid:
-      - '6'
+      - '16'
     status:
       code: 200
       message: OK
@@ -404,7 +400,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0xc6d9078959e1657767abf81c489b3315e69bee57faa4b0e3d8703e4ea4a22bde
   response:
@@ -426,7 +422,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:04:53 GMT
+      - Wed, 12 Feb 2025 16:01:10 GMT
       Server:
       - nginx
       Vary:
@@ -436,7 +432,7 @@ interactions:
       content-length:
       - '720'
       svid:
-      - '12'
+      - '11'
     status:
       code: 200
       message: OK
@@ -450,7 +446,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x130279b
   response:
@@ -472,7 +468,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:04:54 GMT
+      - Wed, 12 Feb 2025 16:01:11 GMT
       Server:
       - nginx
       Vary:
@@ -482,7 +478,7 @@ interactions:
       content-length:
       - '147524'
       svid:
-      - '55'
+      - '11'
     status:
       code: 200
       message: OK
@@ -496,7 +492,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xc6d9078959e1657767abf81c489b3315e69bee57faa4b0e3d8703e4ea4a22bde
   response:
@@ -518,7 +514,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:04:55 GMT
+      - Wed, 12 Feb 2025 16:01:13 GMT
       Server:
       - nginx
       Vary:
@@ -528,7 +524,7 @@ interactions:
       content-length:
       - '1032'
       svid:
-      - d1
+      - '11'
     status:
       code: 200
       message: OK
@@ -542,7 +538,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0xc6d9078959e1657767abf81c489b3315e69bee57faa4b0e3d8703e4ea4a22bde
   response:
@@ -562,7 +558,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:04:55 GMT
+      - Wed, 12 Feb 2025 16:01:15 GMT
       Server:
       - nginx
       Vary:
@@ -572,7 +568,7 @@ interactions:
       content-length:
       - '60'
       svid:
-      - '55'
+      - '11'
     status:
       code: 200
       message: OK
@@ -586,7 +582,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0xae6276e768300db5576c1bd5cfbe6eee33c23c449d625982bc419f44621c78d1
   response:
@@ -608,7 +604,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:04:56 GMT
+      - Wed, 12 Feb 2025 16:01:16 GMT
       Server:
       - nginx
       Vary:
@@ -618,7 +614,7 @@ interactions:
       content-length:
       - '721'
       svid:
-      - '57'
+      - '11'
     status:
       code: 200
       message: OK
@@ -632,7 +628,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x1395c34
   response:
@@ -654,7 +650,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:04:57 GMT
+      - Wed, 12 Feb 2025 16:01:17 GMT
       Server:
       - nginx
       Vary:
@@ -664,7 +660,7 @@ interactions:
       content-length:
       - '135646'
       svid:
-      - '55'
+      - '11'
     status:
       code: 200
       message: OK
@@ -678,7 +674,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xae6276e768300db5576c1bd5cfbe6eee33c23c449d625982bc419f44621c78d1
   response:
@@ -700,7 +696,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:04:58 GMT
+      - Wed, 12 Feb 2025 16:01:19 GMT
       Server:
       - nginx
       Vary:
@@ -710,7 +706,7 @@ interactions:
       content-length:
       - '1032'
       svid:
-      - '12'
+      - '11'
     status:
       code: 200
       message: OK
@@ -724,7 +720,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0xae6276e768300db5576c1bd5cfbe6eee33c23c449d625982bc419f44621c78d1
   response:
@@ -744,7 +740,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:04:58 GMT
+      - Wed, 12 Feb 2025 16:01:20 GMT
       Server:
       - nginx
       Vary:
@@ -754,7 +750,7 @@ interactions:
       content-length:
       - '60'
       svid:
-      - '55'
+      - '11'
     status:
       code: 200
       message: OK
@@ -768,7 +764,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0x6e917c0d8ad974fd6d68789ec192ec0b5831a27c784331886f17e151c34b428c
   response:
@@ -790,7 +786,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:04:59 GMT
+      - Wed, 12 Feb 2025 16:01:22 GMT
       Server:
       - nginx
       Vary:
@@ -800,7 +796,7 @@ interactions:
       content-length:
       - '721'
       svid:
-      - '12'
+      - '11'
     status:
       code: 200
       message: OK
@@ -814,7 +810,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x13e6c88
   response:
@@ -836,7 +832,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:04:59 GMT
+      - Wed, 12 Feb 2025 16:01:23 GMT
       Server:
       - nginx
       Vary:
@@ -846,7 +842,7 @@ interactions:
       content-length:
       - '181766'
       svid:
-      - '55'
+      - '11'
     status:
       code: 200
       message: OK
@@ -860,7 +856,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x6e917c0d8ad974fd6d68789ec192ec0b5831a27c784331886f17e151c34b428c
   response:
@@ -882,7 +878,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:05:00 GMT
+      - Wed, 12 Feb 2025 16:01:24 GMT
       Server:
       - nginx
       Vary:
@@ -892,7 +888,7 @@ interactions:
       content-length:
       - '1032'
       svid:
-      - '15'
+      - '11'
     status:
       code: 200
       message: OK
@@ -906,7 +902,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0x6e917c0d8ad974fd6d68789ec192ec0b5831a27c784331886f17e151c34b428c
   response:
@@ -926,7 +922,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:05:01 GMT
+      - Wed, 12 Feb 2025 16:01:26 GMT
       Server:
       - nginx
       Vary:
@@ -936,7 +932,7 @@ interactions:
       content-length:
       - '60'
       svid:
-      - '12'
+      - '11'
     status:
       code: 200
       message: OK
@@ -950,7 +946,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0xf30f5bdb725f8cd7bdcc42a13b8124ab24292fada066957689e443320a9f6b90
   response:
@@ -972,7 +968,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:05:02 GMT
+      - Wed, 12 Feb 2025 16:01:30 GMT
       Server:
       - nginx
       Vary:
@@ -982,7 +978,7 @@ interactions:
       content-length:
       - '722'
       svid:
-      - '12'
+      - '11'
     status:
       code: 200
       message: OK
@@ -996,7 +992,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x146cc93
   response:
@@ -1018,7 +1014,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:05:02 GMT
+      - Wed, 12 Feb 2025 16:01:31 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -1030,7 +1026,7 @@ interactions:
       content-length:
       - '219706'
       svid:
-      - '12'
+      - '11'
     status:
       code: 200
       message: OK
@@ -1044,7 +1040,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xf30f5bdb725f8cd7bdcc42a13b8124ab24292fada066957689e443320a9f6b90
   response:
@@ -1066,7 +1062,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:05:03 GMT
+      - Wed, 12 Feb 2025 16:01:33 GMT
       Server:
       - nginx
       Vary:
@@ -1076,7 +1072,7 @@ interactions:
       content-length:
       - '1032'
       svid:
-      - '9'
+      - '11'
     status:
       code: 200
       message: OK
@@ -1090,7 +1086,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0xf30f5bdb725f8cd7bdcc42a13b8124ab24292fada066957689e443320a9f6b90
   response:
@@ -1110,7 +1106,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:05:04 GMT
+      - Wed, 12 Feb 2025 16:01:34 GMT
       Server:
       - nginx
       Vary:
@@ -1120,7 +1116,7 @@ interactions:
       content-length:
       - '60'
       svid:
-      - '53'
+      - '11'
     status:
       code: 200
       message: OK
@@ -1134,10 +1130,10 @@ interactions:
       Connection:
       - keep-alive
       Cookie:
-      - __cf_bm=_qKHmd4S2hG92U2.lHB8bFva_0QqzZ8J0sLUq_vXctE-1738933490-1.0.1.1-FmAhuBQcuIXjXpyTtZQFZ_5.XGt8EihFdVZJelxgPRYFeMb5gCiRMfgBxOj0yICG5KY07rNgC5qYYHMp4eiMXQ;
-        _cfuvid=jSuL.ajGM_Hg_obOps2EQ4x1glZOj_YHW_E_2FEy56M-1738933490001-0.0.1.1-604800000
+      - __cf_bm=sULo7b9RctsebCnOmhbjo6GEjllPAkotR.CDafvc8jA-1739376061-1.0.1.1-TVXrQJLR9KU0wdiAc5oViTgsuZblb9KNxkCpuh.D3wKy6KzWGpBqKvieZq_ZJYxMVn7z0kJq3uTq4ZqxQd1.OA;
+        _cfuvid=_hApvelizReNKIJ0SAdtc11riGtG9JAwKQivtMXc0KA-1739376061570-0.0.1.1-604800000
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://beaconcha.in/api/v1/execution/1187604/produced?limit=50&offset=0
   response:
@@ -1155,9 +1151,9 @@ interactions:
       Access-Control-Allow-Origin:
       - '*'
       CF-Cache-Status:
-      - EXPIRED
+      - MISS
       CF-RAY:
-      - 90e396e2c9c9e50f-TXL
+      - 910dcc5c8c44f663-LHR
       Cache-Control:
       - public, max-age=12
       Connection:
@@ -1165,11 +1161,11 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 07 Feb 2025 13:05:04 GMT
+      - Wed, 12 Feb 2025 16:01:36 GMT
       Expires:
-      - Fri, 07 Feb 2025 13:05:16 GMT
+      - Wed, 12 Feb 2025 16:01:48 GMT
       Last-Modified:
-      - Fri, 07 Feb 2025 13:05:04 GMT
+      - Wed, 12 Feb 2025 16:01:36 GMT
       Permissions-Policy:
       - interest-cohort=()
       Ratelimit-Bucket:
@@ -1210,13 +1206,13 @@ interactions:
       X-Ratelimit-Limit-Second:
       - '5'
       X-Ratelimit-Remaining-Day:
-      - '29967'
+      - '29986'
       X-Ratelimit-Remaining-Hour:
-      - '29967'
+      - '29986'
       X-Ratelimit-Remaining-Minute:
-      - '29967'
+      - '29986'
       X-Ratelimit-Remaining-Month:
-      - '29967'
+      - '29986'
       X-Ratelimit-Remaining-Second:
       - '4'
       X-XSS-Protection:
@@ -1238,7 +1234,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=getblocknobytime&closest=before&module=block&timestamp=1738933200
   response:
@@ -1258,7 +1254,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:05:05 GMT
+      - Wed, 12 Feb 2025 16:01:38 GMT
       Server:
       - nginx
       Vary:
@@ -1268,7 +1264,7 @@ interactions:
       content-length:
       - '49'
       svid:
-      - '8'
+      - '11'
     status:
       code: 200
       message: OK
@@ -1282,7 +1278,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=txsBeaconWithdrawal&address=0x2cFc3fE6C747BFd91FF3F840C3a34F44339a0Dff&endBlock=21794788&module=account&sort=asc&startBlock=0
   response:
@@ -1302,7 +1298,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:05:05 GMT
+      - Wed, 12 Feb 2025 16:01:40 GMT
       Server:
       - nginx
       Vary:
@@ -1312,7 +1308,7 @@ interactions:
       content-length:
       - '7356'
       svid:
-      - '6'
+      - '11'
     status:
       code: 200
       message: OK
@@ -1326,7 +1322,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
+      - rotki/1.37.2.dev189+g30143f50e
     method: GET
     uri: https://api.etherscan.io/api?action=txsBeaconWithdrawal&address=0xf93eba7D7a8C5c5c663d776e8890CB37fF5525ef&endBlock=21794788&module=account&sort=asc&startBlock=0
   response:
@@ -1346,7 +1342,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 07 Feb 2025 13:05:06 GMT
+      - Wed, 12 Feb 2025 16:01:42 GMT
       Server:
       - nginx
       Vary:
@@ -1356,12 +1352,12 @@ interactions:
       content-length:
       - '60'
       svid:
-      - '5'
+      - '11'
     status:
       code: 200
       message: OK
 - request:
-    body: null
+    body: '{"indicesOrPubkey": "1187604"}'
     headers:
       Accept:
       - '*/*'
@@ -1369,43 +1365,37 @@ interactions:
       - gzip, deflate
       Connection:
       - keep-alive
+      Content-Length:
+      - '30'
+      Content-Type:
+      - application/json
       Cookie:
-      - __cf_bm=_qKHmd4S2hG92U2.lHB8bFva_0QqzZ8J0sLUq_vXctE-1738933490-1.0.1.1-FmAhuBQcuIXjXpyTtZQFZ_5.XGt8EihFdVZJelxgPRYFeMb5gCiRMfgBxOj0yICG5KY07rNgC5qYYHMp4eiMXQ;
-        _cfuvid=jSuL.ajGM_Hg_obOps2EQ4x1glZOj_YHW_E_2FEy56M-1738933490001-0.0.1.1-604800000
+      - __cf_bm=sULo7b9RctsebCnOmhbjo6GEjllPAkotR.CDafvc8jA-1739376061-1.0.1.1-TVXrQJLR9KU0wdiAc5oViTgsuZblb9KNxkCpuh.D3wKy6KzWGpBqKvieZq_ZJYxMVn7z0kJq3uTq4ZqxQd1.OA;
+        _cfuvid=_hApvelizReNKIJ0SAdtc11riGtG9JAwKQivtMXc0KA-1739376061570-0.0.1.1-604800000
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
-    method: GET
-    uri: https://beaconcha.in/api/v1/validator/1187604
+      - rotki/1.37.2.dev189+g30143f50e
+    method: POST
+    uri: https://beaconcha.in/api/v1/validator
   response:
     body:
-      string: '{"status":"OK","data":{"activationeligibilityepoch":261539,"activationepoch":261708,"balance":32012038559,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11009104,"name":"","pubkey":"0xa2de832511231af4bf98083e68c67aa6429c8c2b08920302d1d6953298f3720c8d5ca22c08a54fffa2efab782e25dba8","slashed":false,"status":"active_online","validatorindex":1187604,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000002cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","total_withdrawals":931083313}}
+      string: '{"status":"OK","data":{"activationeligibilityepoch":261539,"activationepoch":261708,"balance":32004313006,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11046001,"name":"","pubkey":"0xa2de832511231af4bf98083e68c67aa6429c8c2b08920302d1d6953298f3720c8d5ca22c08a54fffa2efab782e25dba8","slashed":false,"status":"active_online","validatorindex":1187604,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000002cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","total_withdrawals":949467166}}
 
         '
     headers:
-      Accept-Ranges:
-      - bytes
       Access-Control-Allow-Headers:
       - '*, Authorization'
       Access-Control-Allow-Methods:
       - '*'
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - EXPIRED
       CF-RAY:
-      - 90e396f02888e509-TXL
-      Cache-Control:
-      - public, max-age=12
+      - 910dcc84de5acd18-LHR
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Fri, 07 Feb 2025 13:05:06 GMT
-      Expires:
-      - Fri, 07 Feb 2025 13:05:18 GMT
-      Last-Modified:
-      - Fri, 07 Feb 2025 13:05:06 GMT
+      - Wed, 12 Feb 2025 16:01:43 GMT
       Permissions-Policy:
       - interest-cohort=()
       Ratelimit-Bucket:
@@ -1446,26 +1436,28 @@ interactions:
       X-Ratelimit-Limit-Second:
       - '5'
       X-Ratelimit-Remaining-Day:
-      - '29966'
+      - '29985'
       X-Ratelimit-Remaining-Hour:
-      - '29966'
+      - '29985'
       X-Ratelimit-Remaining-Minute:
-      - '29966'
+      - '29985'
       X-Ratelimit-Remaining-Month:
-      - '29966'
+      - '29985'
       X-Ratelimit-Remaining-Second:
       - '4'
       X-XSS-Protection:
       - 1; mode=block
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '551'
     status:
       code: 200
       message: OK
 - request:
-    body: null
+    body: '{"indicesOrPubkey": "1187604"}'
     headers:
       Accept:
       - '*/*'
@@ -1473,45 +1465,37 @@ interactions:
       - gzip, deflate
       Connection:
       - keep-alive
+      Content-Length:
+      - '30'
+      Content-Type:
+      - application/json
       Cookie:
-      - __cf_bm=_qKHmd4S2hG92U2.lHB8bFva_0QqzZ8J0sLUq_vXctE-1738933490-1.0.1.1-FmAhuBQcuIXjXpyTtZQFZ_5.XGt8EihFdVZJelxgPRYFeMb5gCiRMfgBxOj0yICG5KY07rNgC5qYYHMp4eiMXQ;
-        _cfuvid=jSuL.ajGM_Hg_obOps2EQ4x1glZOj_YHW_E_2FEy56M-1738933490001-0.0.1.1-604800000
+      - __cf_bm=sULo7b9RctsebCnOmhbjo6GEjllPAkotR.CDafvc8jA-1739376061-1.0.1.1-TVXrQJLR9KU0wdiAc5oViTgsuZblb9KNxkCpuh.D3wKy6KzWGpBqKvieZq_ZJYxMVn7z0kJq3uTq4ZqxQd1.OA;
+        _cfuvid=_hApvelizReNKIJ0SAdtc11riGtG9JAwKQivtMXc0KA-1739376061570-0.0.1.1-604800000
       User-Agent:
-      - rotki/1.37.2.dev162+g26b43b16b.d20250202
-    method: GET
-    uri: https://beaconcha.in/api/v1/validator/1187604
+      - rotki/1.37.2.dev189+g30143f50e
+    method: POST
+    uri: https://beaconcha.in/api/v1/validator
   response:
     body:
-      string: '{"status":"OK","data":{"activationeligibilityepoch":261539,"activationepoch":261708,"balance":32012038559,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11009104,"name":"","pubkey":"0xa2de832511231af4bf98083e68c67aa6429c8c2b08920302d1d6953298f3720c8d5ca22c08a54fffa2efab782e25dba8","slashed":false,"status":"active_online","validatorindex":1187604,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000002cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","total_withdrawals":931083313}}
+      string: '{"status":"OK","data":{"activationeligibilityepoch":261539,"activationepoch":261708,"balance":32004313006,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":11046001,"name":"","pubkey":"0xa2de832511231af4bf98083e68c67aa6429c8c2b08920302d1d6953298f3720c8d5ca22c08a54fffa2efab782e25dba8","slashed":false,"status":"active_online","validatorindex":1187604,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x0100000000000000000000002cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","total_withdrawals":949467166}}
 
         '
     headers:
-      Accept-Ranges:
-      - bytes
       Access-Control-Allow-Headers:
       - '*, Authorization'
       Access-Control-Allow-Methods:
       - '*'
       Access-Control-Allow-Origin:
       - '*'
-      Age:
-      - '0'
-      CF-Cache-Status:
-      - HIT
       CF-RAY:
-      - 90e396f178f16a74-TXL
-      Cache-Control:
-      - public, max-age=12
+      - 910dcc8abc7093dd-LHR
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Fri, 07 Feb 2025 13:05:06 GMT
-      Expires:
-      - Fri, 07 Feb 2025 13:05:18 GMT
-      Last-Modified:
-      - Fri, 07 Feb 2025 13:05:06 GMT
+      - Wed, 12 Feb 2025 16:01:44 GMT
       Permissions-Policy:
       - interest-cohort=()
       Ratelimit-Bucket:
@@ -1519,7 +1503,7 @@ interactions:
       Ratelimit-Limit:
       - '5'
       Ratelimit-Remaining:
-      - '4'
+      - '3'
       Ratelimit-Reset:
       - '1'
       Ratelimit-Validapikey:
@@ -1552,19 +1536,21 @@ interactions:
       X-Ratelimit-Limit-Second:
       - '5'
       X-Ratelimit-Remaining-Day:
-      - '29966'
+      - '29984'
       X-Ratelimit-Remaining-Hour:
-      - '29966'
+      - '29984'
       X-Ratelimit-Remaining-Minute:
-      - '29966'
+      - '29984'
       X-Ratelimit-Remaining-Month:
-      - '29966'
+      - '29984'
       X-Ratelimit-Remaining-Second:
-      - '4'
+      - '3'
       X-XSS-Protection:
       - 1; mode=block
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '551'
     status:
