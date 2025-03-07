@@ -9,19 +9,17 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.37.2.dev336+gd25294eaf
     method: GET
     uri: https://api.coingecko.com/api/v3/simple/price/?ids=bitcoin%2Cbinancecoin%2Cavalanche-2&vs_currencies=eth
   response:
     body:
-      string: '{"avalanche-2":{"eth":0.01060398},"binancecoin":{"eth":0.20951247},"bitcoin":{"eth":32.429599}}'
+      string: '{"avalanche-2":{"eth":0.00958953},"binancecoin":{"eth":0.2697573},"bitcoin":{"eth":40.344918}}'
     headers:
-      Age:
-      - '104'
       CF-Cache-Status:
-      - HIT
+      - MISS
       CF-RAY:
-      - 90a488133e4453b6-ATL
+      - 91c47fecccb0b087-ATL
       Cache-Control:
       - max-age=30, public, must-revalidate, s-maxage=60
       Connection:
@@ -29,7 +27,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 30 Jan 2025 21:24:54 GMT
+      - Thu, 06 Mar 2025 20:11:00 GMT
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -49,9 +47,9 @@ interactions:
       alternate-protocol:
       - 443:npn-spdy/2
       content-length:
-      - '95'
+      - '94'
       etag:
-      - W/"1a2a38256886dc6846db7bc8c462e112"
+      - W/"594f52e062d5827ba00cdbb1a6c86b75"
       referrer-policy:
       - strict-origin-when-cross-origin
       strict-transport-security:
@@ -67,9 +65,9 @@ interactions:
       x-permitted-cross-domain-policies:
       - none
       x-request-id:
-      - 3da24f6e-b27f-41ac-bbe3-3c79d987af8c
+      - da54cb8e-d242-43dc-a717-e3d9ed18c77a
       x-runtime:
-      - '0.019795'
+      - '0.010724'
       x-xss-protection:
       - '0'
     status:
@@ -87,25 +85,23 @@ interactions:
       User-Agent:
       - rotkehlchen
     method: GET
-    uri: https://coins.llama.fi/prices/current/coingecko:ethereum-classic
+    uri: https://coins.llama.fi/prices/current/coingecko:ethereum-classic,ethereum:0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9
   response:
     body:
-      string: '{"coins":{"coingecko:ethereum-classic":{"price":26.34,"symbol":"ETC","timestamp":1738271701,"confidence":0.99}}}'
+      string: '{"coins":{"coingecko:ethereum-classic":{"price":20,"symbol":"ETC","timestamp":1741291795,"confidence":0.99},"ethereum:0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9":{"decimals":18,"symbol":"AAVE","price":212.4,"timestamp":1741291804,"confidence":0.99}}}'
     headers:
-      Age:
-      - '104'
       CF-Cache-Status:
-      - HIT
+      - MISS
       CF-RAY:
-      - 90a488146899bae9-ATL
+      - 91c47fee68fb4520-ATL
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Thu, 30 Jan 2025 21:24:55 GMT
+      - Thu, 06 Mar 2025 20:11:00 GMT
       Last-Modified:
-      - Thu, 30 Jan 2025 21:23:11 GMT
+      - Thu, 06 Mar 2025 20:11:00 GMT
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -117,15 +113,15 @@ interactions:
       access-control-allow-origin:
       - '*'
       apigw-requestid:
-      - FOIV6h1sliAEMkA=
+      - HBUlPjm0FiAEJyA=
       content-length:
-      - '112'
+      - '250'
       expires:
-      - Thu, 30 Jan 2025 21:25:20 GMT
+      - Thu, 06 Mar 2025 20:15:20 GMT
       via:
-      - 1.1 99e5c3e6e00efba0ee3f05ebc51528f4.cloudfront.net (CloudFront)
+      - 1.1 3cc2312493286e5b10b7c4a70088e10a.cloudfront.net (CloudFront)
       x-amz-cf-id:
-      - xUujjJUB_hw7OuY7IDvh36oPKY1-uGHkB4dTsa7k8b5mPMEEAuKF7w==
+      - tcSXYBd9hDrSqInA_0bPHxweAS0ZwQfEzovFwfasx4tJ3BLDYxe1fQ==
       x-amz-cf-pop:
       - ATL58-P6
       x-cache:
@@ -143,12 +139,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.37.2.dev336+gd25294eaf
     method: GET
     uri: https://min-api.cryptocompare.com/data/price?fsym=USD&tsyms=USDT
   response:
     body:
-      string: '{"USDT":0.9999}'
+      string: '{"USDT":0.9998}'
     headers:
       Access-Control-Allow-Credentials:
       - 'true'
@@ -167,7 +163,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 30 Jan 2025 21:24:57 GMT
+      - Thu, 06 Mar 2025 20:11:01 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -177,7 +173,7 @@ interactions:
       X-CryptoCompare-Cache-HIT:
       - 'false'
       X-CryptoCompare-Server-Id:
-      - cc-api-min-v2-34
+      - cc-api-min-v2-40
       content-length:
       - '15'
     status:
@@ -193,77 +189,17 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotkehlchen
-    method: GET
-    uri: https://coins.llama.fi/prices/current/ethereum:0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9
-  response:
-    body:
-      string: '{"coins":{"ethereum:0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9":{"decimals":18,"symbol":"AAVE","price":315.57,"timestamp":1738272119,"confidence":0.99}}}'
-    headers:
-      Age:
-      - '106'
-      CF-Cache-Status:
-      - HIT
-      CF-RAY:
-      - 90a48823898853b7-ATL
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 30 Jan 2025 21:24:57 GMT
-      Last-Modified:
-      - Thu, 30 Jan 2025 21:23:11 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Accept-Encoding
-      access-control-allow-credentials:
-      - 'true'
-      access-control-allow-origin:
-      - '*'
-      apigw-requestid:
-      - FOIUogPlFiAEPwg=
-      content-length:
-      - '153'
-      expires:
-      - Thu, 30 Jan 2025 21:25:20 GMT
-      via:
-      - 1.1 a692b28e995e2a8288fe7156f8144a44.cloudfront.net (CloudFront)
-      x-amz-cf-id:
-      - xKHrQ40QnUB_2MGXsP5Y5PyC_fcG9s8N-jotSJaAb4nk5vnaYnkagA==
-      x-amz-cf-pop:
-      - ATL58-P6
-      x-cache:
-      - Hit from cloudfront
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.37.2.dev336+gd25294eaf
     method: GET
     uri: https://api.coingecko.com/api/v3/simple/price/?ids=bitcoin%2Cbinancecoin%2Cavalanche-2&vs_currencies=usd
   response:
     body:
-      string: '{"avalanche-2":{"usd":34.4},"binancecoin":{"usd":679.6},"bitcoin":{"usd":105193}}'
+      string: '{"avalanche-2":{"usd":21.14},"binancecoin":{"usd":594.59},"bitcoin":{"usd":88927}}'
     headers:
-      Age:
-      - '106'
       CF-Cache-Status:
-      - HIT
+      - MISS
       CF-RAY:
-      - 90a48824ac80bcd1-ATL
+      - 91c47ff4ecefbf70-ATL
       Cache-Control:
       - max-age=30, public, must-revalidate, s-maxage=60
       Connection:
@@ -271,7 +207,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 30 Jan 2025 21:24:57 GMT
+      - Thu, 06 Mar 2025 20:11:01 GMT
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -291,9 +227,9 @@ interactions:
       alternate-protocol:
       - 443:npn-spdy/2
       content-length:
-      - '81'
+      - '82'
       etag:
-      - W/"564aee78b34090f8b659301dd0c65007"
+      - W/"b573c5b518d6cdc40c3a214ddbaf731f"
       referrer-policy:
       - strict-origin-when-cross-origin
       strict-transport-security:
@@ -309,9 +245,9 @@ interactions:
       x-permitted-cross-domain-policies:
       - none
       x-request-id:
-      - 081ff3d6-cb06-4949-8317-a1e2678df5bd
+      - d9336714-0e6f-44bf-b54c-c33f877f820b
       x-runtime:
-      - '0.010909'
+      - '0.008134'
       x-xss-protection:
       - '0'
     status:
@@ -327,19 +263,17 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.37.2.dev336+gd25294eaf
     method: GET
     uri: https://api.coingecko.com/api/v3/simple/price/?ids=ethereum-classic%2Caave&vs_currencies=usd
   response:
     body:
-      string: '{"aave":{"usd":315.63},"ethereum-classic":{"usd":26.38}}'
+      string: '{"aave":{"usd":212.45},"ethereum-classic":{"usd":20.0}}'
     headers:
-      Age:
-      - '65'
       CF-Cache-Status:
-      - HIT
+      - MISS
       CF-RAY:
-      - 90a488257fe7bfd1-ATL
+      - 91c47ff68f32bf8e-ATL
       Cache-Control:
       - max-age=30, public, must-revalidate, s-maxage=60
       Connection:
@@ -347,7 +281,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 30 Jan 2025 21:24:57 GMT
+      - Thu, 06 Mar 2025 20:11:01 GMT
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -367,9 +301,9 @@ interactions:
       alternate-protocol:
       - 443:npn-spdy/2
       content-length:
-      - '56'
+      - '55'
       etag:
-      - W/"f2e990ce8b94a40dafd3350f3dc39fd9"
+      - W/"3afd6c46fe536b9e689300c79efc2ad8"
       referrer-policy:
       - strict-origin-when-cross-origin
       strict-transport-security:
@@ -385,9 +319,9 @@ interactions:
       x-permitted-cross-domain-policies:
       - none
       x-request-id:
-      - c52262a4-bc67-4aed-9bb3-03e17b87fb7b
+      - 5df859dc-ce0b-46eb-82c1-38b87295f7ef
       x-runtime:
-      - '0.009733'
+      - '0.021458'
       x-xss-protection:
       - '0'
     status:
@@ -412,12 +346,10 @@ interactions:
     headers:
       Accept-Ranges:
       - bytes
-      Age:
-      - '66'
       CF-Cache-Status:
-      - HIT
+      - MISS
       CF-RAY:
-      - 90a488268a5ebf91-ATL
+      - 91c47ff80efcbd34-ATL
       Connection:
       - keep-alive
       Content-Length:
@@ -425,9 +357,9 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 30 Jan 2025 21:24:58 GMT
+      - Thu, 06 Mar 2025 20:11:01 GMT
       Last-Modified:
-      - Thu, 30 Jan 2025 21:23:52 GMT
+      - Thu, 06 Mar 2025 20:11:01 GMT
       Server:
       - cloudflare
       Vary:
@@ -437,13 +369,13 @@ interactions:
       access-control-allow-origin:
       - '*'
       apigw-requestid:
-      - FOIcWiyVFiAEJQA=
+      - HBUleju-liAEPew=
       expires:
-      - Thu, 30 Jan 2025 21:25:20 GMT
+      - Thu, 06 Mar 2025 20:15:20 GMT
       via:
-      - 1.1 ca6739f1854f58fae3e834b22f03b4e6.cloudfront.net (CloudFront)
+      - 1.1 35e30b9ba9344a28607f9c965ce2ec96.cloudfront.net (CloudFront)
       x-amz-cf-id:
-      - LxDCKhKe2sKJZRzikm8DtHzr37la46ElN6T2prM4vZNtrQDaAB5Szw==
+      - tdK6Q8MG-5ql0thC4kEZQRl0xsXnHnYqkmlH1gAWjqG2qX-H6ecL1A==
       x-amz-cf-pop:
       - ATL58-P6
       x-cache:
@@ -461,12 +393,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.37.2.dev336+gd25294eaf
     method: GET
     uri: https://min-api.cryptocompare.com/data/price?fsym=AIR&tsyms=USD
   response:
     body:
-      string: '{"USD":0.01301}'
+      string: '{"USD":0.01054}'
     headers:
       Access-Control-Allow-Credentials:
       - 'true'
@@ -485,7 +417,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 30 Jan 2025 21:24:58 GMT
+      - Thu, 06 Mar 2025 20:11:02 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -495,7 +427,7 @@ interactions:
       X-CryptoCompare-Cache-HIT:
       - 'false'
       X-CryptoCompare-Server-Id:
-      - cc-api-min-v2-35
+      - cc-api-min-v2-28
       content-length:
       - '15'
     status:
