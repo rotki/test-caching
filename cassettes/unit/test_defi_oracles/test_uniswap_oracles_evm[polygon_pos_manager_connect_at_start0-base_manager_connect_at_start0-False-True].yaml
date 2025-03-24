@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
     method: GET
     uri: https://api.basescan.org/api?action=getblocknobytime&closest=before&module=block&timestamp=1725944400
   response:
@@ -22,10 +22,8 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f5eeb6ef074-DFW
+      - 925e1db82ca3ae66-GRU
       Cache-Control:
       - private
       Connection:
@@ -33,25 +31,27 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 14 Jan 2025 20:39:22 GMT
+      - Tue, 25 Mar 2025 11:37:24 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=gHiSBv2wGY3NaUW%2FXY7dQ82aMKyDdw7Diti46pdXHXp2K2tmTMvzfCL8cViUq7rKJsA9l7k%2BTLhUiDFDP5WDYgepb4Hi1gGvASLXILAqns2cud79TisSZTPdo05djQ95wzc%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=bIQTV4Gewg5Sw07IjNCIVYSE%2Fi29av%2FHZVF0lZgrDruMONUQCbhimEZ3O0ksXIynHs%2BHI%2BqQKhTQm8UoM3wmiC3wYn58qt2vYx7Y8%2BrdCwRyCRvGnmpvmFs9brEmRK4Hdp73R8aZmwcwOo329U8%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
-      Vary:
-      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
       X-Frame-Options:
       - SAMEORIGIN
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '49'
       server-timing:
-      - cfL4;desc="?proto=TCP&rtt=23461&min_rtt=23375&rtt_var=6677&sent=4&recv=7&lost=0&retrans=0&sent_bytes=2842&recv_bytes=892&delivery_rate=121350&cwnd=243&unsent_bytes=0&cid=4e2732546632a924&ts=124&x=0"
+      - cfL4;desc="?proto=TCP&rtt=24571&min_rtt=24146&rtt_var=5432&sent=5&recv=8&lost=0&retrans=0&sent_bytes=2842&recv_bytes=901&delivery_rate=166009&cwnd=253&unsent_bytes=0&cid=298f3ce95a20b030&ts=278&x=0"
       svid:
-      - baseelastic2
+      - base2new
     status:
       code: 200
       message: OK
@@ -70,37 +70,47 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.6.1/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
-    uri: https://base.llamarpc.com/
+    uri: https://mainnet.base.org/
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":0,"result":"rpc-proxy"}'
+      string: '{"jsonrpc":"2.0","result":"Geth/v1.101503.1-dev.1-7ec33828-20250313/linux-amd64/go1.24.1","id":0}
+
+        '
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f602f82f81b-DFW
+      - 925e1dba3cb3aee7-GRU
       Connection:
       - keep-alive
-      Content-Length:
-      - '45'
       Content-Type:
       - application/json
       Date:
-      - Tue, 14 Jan 2025 20:39:22 GMT
+      - Tue, 25 Mar 2025 11:37:24 GMT
       NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=9YsvT8Cj3xONqDqqbqVbiWxEPwPORJRcMTqBMRcsCi39A6TA4bYdZC%2F25iOq5%2FnsY%2F9%2B336TJX8HmJbBQO5L0Kkd731HaNNogyf3ofdBiqLiyJ0Aq4zwr0QZAK3Vy3Rj3JvD"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=xya8FH5G8PcDnS52FzhS%2FmAyVW9XLbmDTr6obmrGO7ySTrBb2Uf8c9kywBJfk7aBaJLvrqHNmMT56257yPuAAsxoMRGoQihUo5fj3Z%2BShPAscki5qMe4N2Qg9SoJkl%2FJB7Dvh%2F4fViH57uKK1UE%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
-      alt-svc:
-      - h3=":443"; ma=86400
-      server-timing:
-      - cfL4;desc="?proto=TCP&rtt=24797&min_rtt=23390&rtt_var=9776&sent=4&recv=7&lost=0&retrans=0&sent_bytes=2841&recv_bytes=942&delivery_rate=123129&cwnd=90&unsent_bytes=0&cid=ba09ecc71af4a983&ts=95&x=0"
-      x-cache:
-      - 'false'
+      Set-Cookie:
+      - __cf_bm=P4Aq9z_v_76R1ml.0ha_HVZi_zbUKuMMD2OqIxHqiSQ-1742902644-1.0.1.1-0ftlocAve64E.wSNvNiE722GF5q080BFKGu_kZEZItJGUVoaMYpE16lJdwk1eDqZVdgpKVCqFxHD1dcYVu1hVPQgK5OeWdDr.mmm67_01bg;
+        path=/; expires=Tue, 25-Mar-25 12:07:24 GMT; domain=.base.org; HttpOnly; Secure;
+        SameSite=None
+      Strict-Transport-Security:
+      - max-age=2592000
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '98'
+      vary:
+      - Origin
+      x-proxyd-cache-status:
+      - MISS
     status:
       code: 200
       message: OK
@@ -117,38 +127,44 @@ interactions:
       - '66'
       Content-Type:
       - application/json
+      Cookie:
+      - __cf_bm=P4Aq9z_v_76R1ml.0ha_HVZi_zbUKuMMD2OqIxHqiSQ-1742902644-1.0.1.1-0ftlocAve64E.wSNvNiE722GF5q080BFKGu_kZEZItJGUVoaMYpE16lJdwk1eDqZVdgpKVCqFxHD1dcYVu1hVPQgK5OeWdDr.mmm67_01bg
       User-Agent:
-      - web3.py/7.6.1/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
-    uri: https://base.llamarpc.com/
+    uri: https://mainnet.base.org/
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x2105"}'
+      string: '{"jsonrpc":"2.0","result":"8453","id":1}
+
+        '
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f611c552cce-DFW
+      - 925e1dbbadbe4b4d-GRU
       Connection:
       - keep-alive
       Content-Length:
-      - '42'
+      - '41'
       Content-Type:
       - application/json
       Date:
-      - Tue, 14 Jan 2025 20:39:23 GMT
+      - Tue, 25 Mar 2025 11:37:25 GMT
       NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=1NjvWO4Wl0Jy5SBrklvS1%2FT%2BZX9BA62i7DtUZgp4TUqHyuMMtc96sv8Y%2BzzikwZP1A%2B1uHHQlY4BRieuySUTUkp8niVckU%2FKj7YAK4%2FNsuAIygNiOcRGT01np%2B6qCWyITsbd"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=cXRwK0pWu%2FksltSlnVF%2F6gM%2FaXVTmb6nRyHkEzTjwSu%2B49ZqJL2jL%2BW02dlZ6Gujcnlgq2omgOqeI1dnrJn3UbBWfQN6W%2F%2FMpz4a9aBTisM4MbjP93sYVMv3wqCdb4M2Bl69Z0s6O4J5DXdGeCc%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
-      alt-svc:
-      - h3=":443"; ma=86400
-      server-timing:
-      - cfL4;desc="?proto=TCP&rtt=23788&min_rtt=23788&rtt_var=8921&sent=4&recv=7&lost=0&retrans=0&sent_bytes=2841&recv_bytes=935&delivery_rate=121054&cwnd=214&unsent_bytes=0&cid=c650bc1e04e39ba4&ts=155&x=0"
-      x-cache:
-      - 'false'
+      Strict-Transport-Security:
+      - max-age=2592000
+      X-Content-Type-Options:
+      - nosniff
+      cf-cache-status:
+      - DYNAMIC
+      vary:
+      - Origin
+      x-proxyd-cache-status:
+      - HIT
     status:
       code: 200
       message: OK
@@ -165,45 +181,165 @@ interactions:
       - '70'
       Content-Type:
       - application/json
+      Cookie:
+      - __cf_bm=P4Aq9z_v_76R1ml.0ha_HVZi_zbUKuMMD2OqIxHqiSQ-1742902644-1.0.1.1-0ftlocAve64E.wSNvNiE722GF5q080BFKGu_kZEZItJGUVoaMYpE16lJdwk1eDqZVdgpKVCqFxHD1dcYVu1hVPQgK5OeWdDr.mmm67_01bg
       User-Agent:
-      - web3.py/7.6.1/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
-    uri: https://base.llamarpc.com/
+    uri: https://mainnet.base.org/
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":2,"result":"0x17e374b"}'
+      string: '{"jsonrpc":"2.0","result":"0x1ac1c48","id":2}
+
+        '
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f627a14e9bd-DFW
+      - 925e1dbd0bf902e5-GRU
       Connection:
       - keep-alive
       Content-Length:
-      - '45'
+      - '46'
       Content-Type:
       - application/json
       Date:
-      - Tue, 14 Jan 2025 20:39:23 GMT
+      - Tue, 25 Mar 2025 11:37:25 GMT
       NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=x5%2BjCVl5hJPRtxXOXxeV8zVguKGdWmuNJ9yVqs8zG0r5kIaEh2%2BTRmr1i7uBros0UZg1ofInGQ6uJx9xutT8nwWn0%2Fp%2Bk5VDsNQURf3Yi8cWR1vx7BCqkg3zt%2BeWww%2BDUH9V"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=VCtGd98UzEOxC%2BmuWLakUMCB2CAkEcTRkmOA7yoB50qyItO%2FsPsj%2BVrvm0nTWQTYeviwRc%2BghjO5TCLn0w5bFsMcuM6ry7xcXuIR9BekHC64FxL9MQuYJBNgR%2FzMKeFyjJIaB4iEGpY8WVx2qU0%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
-      alt-svc:
-      - h3=":443"; ma=86400
-      server-timing:
-      - cfL4;desc="?proto=TCP&rtt=23972&min_rtt=23817&rtt_var=9042&sent=5&recv=7&lost=0&retrans=0&sent_bytes=2842&recv_bytes=939&delivery_rate=120922&cwnd=239&unsent_bytes=0&cid=599e83f2924a9573&ts=177&x=0"
-      x-cache:
-      - 'false'
+      Strict-Transport-Security:
+      - max-age=2592000
+      X-Content-Type-Options:
+      - nosniff
+      cf-cache-status:
+      - DYNAMIC
+      vary:
+      - Origin
+      x-proxyd-cache-status:
+      - MISS
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x3a9e669d9e2d0171c8a057031a9e9C048b7FEE60",
+      "0x3e541a"], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '125'
+      Content-Type:
+      - application/json
+      Cookie:
+      - __cf_bm=P4Aq9z_v_76R1ml.0ha_HVZi_zbUKuMMD2OqIxHqiSQ-1742902644-1.0.1.1-0ftlocAve64E.wSNvNiE722GF5q080BFKGu_kZEZItJGUVoaMYpE16lJdwk1eDqZVdgpKVCqFxHD1dcYVu1hVPQgK5OeWdDr.mmm67_01bg
+      User-Agent:
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://mainnet.base.org/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"0x2386f26fc10000","id":3}
+
+        '
+    headers:
+      CF-RAY:
+      - 925e1dbe89f0e1ab-GRU
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 25 Mar 2025 11:37:25 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Tml6O2zhXadfKnYW8t05hFafbZRdG6ZyvRuw9hR%2BmpXhpC%2FPlslcJ7qsUA2E17HlTep0STMvVySMPpjC3XgHkkE3WdvMTUOUeSySNQpWJus3UsANB5M3mW6iYrN5jtlN51XbYWM7f1e2jisjQOs%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=2592000
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '53'
+      vary:
+      - Origin
+      x-proxyd-cache-status:
+      - MISS
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0xc7e021f71a972940c2728717f058f49833e3aa4d074c3599054530f108c281b2"],
+      "id": 4}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      Cookie:
+      - __cf_bm=P4Aq9z_v_76R1ml.0ha_HVZi_zbUKuMMD2OqIxHqiSQ-1742902644-1.0.1.1-0ftlocAve64E.wSNvNiE722GF5q080BFKGu_kZEZItJGUVoaMYpE16lJdwk1eDqZVdgpKVCqFxHD1dcYVu1hVPQgK5OeWdDr.mmm67_01bg
+      User-Agent:
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://mainnet.base.org/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"accessList":[],"blockHash":"0x493369ae3bb8df04408d15ed1d9971c0ae93a2a7fdc832a583240a723be3bbc4","blockNumber":"0x3e541a","chainId":"0x2105","from":"0x15718b9b0dade1c17d8329a13bb9553f3b38e172","gas":"0x5208","gasPrice":"0xdaf45a","hash":"0xc7e021f71a972940c2728717f058f49833e3aa4d074c3599054530f108c281b2","input":"0x","maxFeePerGas":"0x104a18f","maxPriorityFeePerGas":"0x5aeeeb","nonce":"0x1","r":"0x23df55c709dccbe0ddbca9867f1658f8a7b97ccc06bd0c2c74ad66ef05308b43","s":"0x6e72646fcd901f4d9ebf8e29f1b447bcc7c1fab524a3534bac2b85872940da67","to":"0x3a9e669d9e2d0171c8a057031a9e9c048b7fee60","transactionIndex":"0xf","type":"0x2","v":"0x0","value":"0x2386f26fc10000","yParity":"0x0"},"id":4}
+
+        '
+    headers:
+      CF-RAY:
+      - 925e1dc02bd0068d-GRU
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 25 Mar 2025 11:37:25 GMT
+      NEL:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=q3J7WJPxAkPYNXtdQ%2F%2Fp43dDgHTq64QiWf9E0DV3SZLqQPzpdCMiLwcj5gTDnu3iXyAhe9MUjmU9XKzvABK%2BZzWRIoca48bTUcpP7f2%2BY853%2Bxdp3k4YMGucC3gUJgeV6%2FKIK9mRTeRgTUzAquI%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=2592000
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '717'
+      vary:
+      - Origin
+      x-proxyd-cache-status:
+      - MISS
     status:
       code: 200
       message: OK
 - request:
     body: '{"jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0x8909Dc15e40173Ff4699343b6eB8132c65e18eC6",
       "data": "0xe6a439050000000000000000000000004200000000000000000000000000000000000006000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda02913"},
-      "latest"], "id": 3}'
+      "latest"], "id": 5}'
     headers:
       Accept:
       - '*/*'
@@ -215,47 +351,53 @@ interactions:
       - '275'
       Content-Type:
       - application/json
+      Cookie:
+      - __cf_bm=P4Aq9z_v_76R1ml.0ha_HVZi_zbUKuMMD2OqIxHqiSQ-1742902644-1.0.1.1-0ftlocAve64E.wSNvNiE722GF5q080BFKGu_kZEZItJGUVoaMYpE16lJdwk1eDqZVdgpKVCqFxHD1dcYVu1hVPQgK5OeWdDr.mmm67_01bg
       User-Agent:
-      - web3.py/7.6.1/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
-    uri: https://base.llamarpc.com/
+    uri: https://mainnet.base.org/
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":3,"result":"0x00000000000000000000000088a43bbdf9d098eec7bceda4e2494615dfd9bb9c"}'
+      string: '{"jsonrpc":"2.0","result":"0x00000000000000000000000088a43bbdf9d098eec7bceda4e2494615dfd9bb9c","id":5}
+
+        '
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f63f9f54752-DFW
+      - 925e1dc1ae8301b0-GRU
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Tue, 14 Jan 2025 20:39:23 GMT
+      - Tue, 25 Mar 2025 11:37:26 GMT
       NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=PWwqa60zhW1gwgjvWJdpkw18%2FM0nhRpu4Eu4mtNLcwJCSUot4HMi72PYpNLbbgU11UPt3vacxaC8uo0TvGd36Te8uQUw8oJwcE8tkj71PV3b9pEeUsRs5MkZkq%2F4KfkIMXyQ"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=slt9trDD66DBq6yGhKxcxZRBeRb%2FtZsTcExXuQfD7g%2BVpwJ2nKdaR5NtPrA%2BvbV%2BH0C00TZuqaeXpiY974OjuiPaUw%2FYugnRFTZW2FmUhl%2FOqd7VR2U3aiIITUrD9u8CHOjkWuwJ62iqGYQ8q6k%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
+      Strict-Transport-Security:
+      - max-age=2592000
       Transfer-Encoding:
       - chunked
-      alt-svc:
-      - h3=":443"; ma=86400
+      X-Content-Type-Options:
+      - nosniff
+      cf-cache-status:
+      - DYNAMIC
       content-length:
-      - '102'
-      server-timing:
-      - cfL4;desc="?proto=TCP&rtt=24293&min_rtt=23965&rtt_var=6930&sent=4&recv=8&lost=0&retrans=0&sent_bytes=2842&recv_bytes=1145&delivery_rate=118738&cwnd=249&unsent_bytes=0&cid=e7fa8f10a7aadd4f&ts=145&x=0"
-      x-cache:
-      - 'false'
+      - '103'
+      vary:
+      - Origin
+      x-proxyd-cache-status:
+      - MISS
     status:
       code: 200
       message: OK
 - request:
     body: '{"jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0xeDF6D2a16e8081F777eB623EeB4411466556aF3d",
       "data": "0x252dba4200000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e0000000000000000000000000000000000000000000000000000000000000016000000000000000000000000088a43bbdf9d098eec7bceda4e2494615dfd9bb9c000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000040902f1ac0000000000000000000000000000000000000000000000000000000000000000000000000000000088a43bbdf9d098eec7bceda4e2494615dfd9bb9c000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000040dfe16810000000000000000000000000000000000000000000000000000000000000000000000000000000088a43bbdf9d098eec7bceda4e2494615dfd9bb9c00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004d21220a700000000000000000000000000000000000000000000000000000000"},
-      "0x12abab6"], "id": 4}'
+      "0x12abab6"], "id": 6}'
     headers:
       Accept:
       - '*/*'
@@ -267,40 +409,46 @@ interactions:
       - '1238'
       Content-Type:
       - application/json
+      Cookie:
+      - __cf_bm=P4Aq9z_v_76R1ml.0ha_HVZi_zbUKuMMD2OqIxHqiSQ-1742902644-1.0.1.1-0ftlocAve64E.wSNvNiE722GF5q080BFKGu_kZEZItJGUVoaMYpE16lJdwk1eDqZVdgpKVCqFxHD1dcYVu1hVPQgK5OeWdDr.mmm67_01bg
       User-Agent:
-      - web3.py/7.6.1/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
-    uri: https://base.llamarpc.com/
+    uri: https://mainnet.base.org/
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":4,"result":"0x00000000000000000000000000000000000000000000000000000000012abab600000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001200000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000018967a462b07d44ea3000000000000000000000000000000000000000000000000000000f73353ceb10000000000000000000000000000000000000000000000000000000066dfd239000000000000000000000000000000000000000000000000000000000000002000000000000000000000000042000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000020000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda02913"}'
+      string: '{"jsonrpc":"2.0","result":"0x00000000000000000000000000000000000000000000000000000000012abab600000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001200000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000018967a462b07d44ea3000000000000000000000000000000000000000000000000000000f73353ceb10000000000000000000000000000000000000000000000000000000066dfd239000000000000000000000000000000000000000000000000000000000000002000000000000000000000000042000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000020000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda02913","id":6}
+
+        '
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f656ce32cd8-DFW
+      - 925e1dc5dc0a622d-GRU
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Tue, 14 Jan 2025 20:39:23 GMT
+      - Tue, 25 Mar 2025 11:37:26 GMT
       NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=jD3CqlNI0Ch1G1lTAtudyp3vzSjFYyREeCc1fgDeb58v09gE2wL6zLE4vo1qVlIHJNVw2SYzCay1cg%2FYaxFGG68bhe%2Bn6rTuIkYWP2PBv0fJYJusZkhmTeYB0neFmn3JndSx"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=VznvEzWEOKDO%2FDFuilObtQGzy8oWL%2FSGH5Vabxr5BJ0LlKCPvB50m0XAoeZf4GBQOy0b5rb6KVMNwRSGoQ7mWtKLIwmPlPWa8PNsL4ln2zjCDIY2NsOJoxgmc94rtWSMZdDPFXfStmgrr1r6%2BNg%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
+      Strict-Transport-Security:
+      - max-age=2592000
       Transfer-Encoding:
       - chunked
-      alt-svc:
-      - h3=":443"; ma=86400
+      X-Content-Type-Options:
+      - nosniff
+      cf-cache-status:
+      - DYNAMIC
       content-length:
-      - '934'
-      server-timing:
-      - cfL4;desc="?proto=TCP&rtt=24475&min_rtt=24194&rtt_var=6977&sent=5&recv=8&lost=0&retrans=0&sent_bytes=2841&recv_bytes=2109&delivery_rate=117965&cwnd=236&unsent_bytes=0&cid=50b119d5511735d7&ts=159&x=0"
-      x-cache:
-      - 'false'
+      - '935'
+      vary:
+      - Origin
+      x-proxyd-cache-status:
+      - MISS
     status:
       code: 200
       message: OK
@@ -314,19 +462,19 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
     method: GET
     uri: https://api.coingecko.com/api/v3/simple/price/?ids=ethereum&vs_currencies=usd
   response:
     body:
-      string: '{"ethereum":{"usd":3214.21}}'
+      string: '{"ethereum":{"usd":2072.75}}'
     headers:
       Age:
-      - '191'
+      - '57'
       CF-Cache-Status:
       - HIT
       CF-RAY:
-      - 90206f671e3ef086-DFW
+      - 925e1dc78e4efbee-GRU
       Cache-Control:
       - max-age=30, public, must-revalidate, s-maxage=60
       Connection:
@@ -334,7 +482,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 14 Jan 2025 20:39:24 GMT
+      - Tue, 25 Mar 2025 11:37:26 GMT
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -354,9 +502,9 @@ interactions:
       alternate-protocol:
       - 443:npn-spdy/2
       content-length:
-      - '24'
+      - '28'
       etag:
-      - W/"b0d93fc203838b2ff04fdccede2f50a5"
+      - W/"0f5214844eec6384a8451dc72b6d74fa"
       referrer-policy:
       - strict-origin-when-cross-origin
       strict-transport-security:
@@ -372,9 +520,9 @@ interactions:
       x-permitted-cross-domain-policies:
       - none
       x-request-id:
-      - 424579d6-7403-4243-a6ef-ab458160b1f5
+      - 7ff6e2a3-cae6-4cc6-8cc3-fb514c24e199
       x-runtime:
-      - '0.014380'
+      - '0.002727'
       x-xss-protection:
       - '0'
     status:
@@ -390,19 +538,19 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
     method: GET
     uri: https://api.coingecko.com/api/v3/simple/price/?ids=usd-coin&vs_currencies=usd
   response:
     body:
-      string: '{"usd-coin":{"usd":0.999996}}'
+      string: '{"usd-coin":{"usd":0.999873}}'
     headers:
       Age:
-      - '190'
+      - '57'
       CF-Cache-Status:
       - HIT
       CF-RAY:
-      - 90206f67dfdc6bcc-DFW
+      - 925e1dc83bc58e5a-GRU
       Cache-Control:
       - max-age=30, public, must-revalidate, s-maxage=60
       Connection:
@@ -410,7 +558,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 14 Jan 2025 20:39:24 GMT
+      - Tue, 25 Mar 2025 11:37:27 GMT
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -432,7 +580,7 @@ interactions:
       content-length:
       - '29'
       etag:
-      - W/"07ea5625b8079c1379a314b14ef3ddc2"
+      - W/"ecee01067892dd5913f908cc36bcbf38"
       referrer-policy:
       - strict-origin-when-cross-origin
       strict-transport-security:
@@ -448,9 +596,9 @@ interactions:
       x-permitted-cross-domain-policies:
       - none
       x-request-id:
-      - 89905b66-a4cd-4453-a90a-9ca2d3df675d
+      - 1e092f2b-e144-457d-a586-1ec87aaeebe8
       x-runtime:
-      - '0.003951'
+      - '0.001594'
       x-xss-protection:
       - '0'
     status:
@@ -466,7 +614,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
     method: GET
     uri: https://api.arbiscan.io/api?action=eth_call&data=0xe6a4390500000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab1000000000000000000000000af88d065e77c8cc2239327c5edb3a432268e5831&module=proxy&to=0xf1D7CC64Fb4452F05c498126312eBE29f30Fbcf9
   response:
@@ -481,10 +629,8 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f68bcb54761-DFW
+      - 925e1dc8eba9a169-GRU
       Cache-Control:
       - private
       Connection:
@@ -492,11 +638,11 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 14 Jan 2025 20:39:24 GMT
+      - Tue, 25 Mar 2025 11:37:27 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=nvseRBt4A3fWIRX68vb6Lqs9hQH14GRKyUFTsKuw8qpFHJayfUiTizHXuA6zq7PSYbdCUpiezvCp7sEsjSl5tU2YdW1Xb1OdzAKy3uNxZ4h%2BNCtCfe1dY2WEtLY1JJA6uw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=5hgajQniFJ%2FhxQ0%2FUgv6DYR3dXpzMZ%2Ff1ylYS11r9Jm3%2B9FGRINwFz%2FuzKpKXdrGnuNBnXDderBFmiswdWnmWoxaGTDixTMSUav%2Fn0lPey%2BJ9xKawNwvUtZxwZ5kTBK7yJHbzmjKXgAOVmgQAQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Vary:
@@ -505,68 +651,12 @@ interactions:
       - SAMEORIGIN
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '103'
       server-timing:
-      - cfL4;desc="?proto=TCP&rtt=24099&min_rtt=23833&rtt_var=9128&sent=4&recv=6&lost=0&retrans=0&sent_bytes=2838&recv_bytes=1037&delivery_rate=120840&cwnd=236&unsent_bytes=0&cid=6d4b7089c8ecf8ca&ts=151&x=0"
-      svid:
-      - arb1
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
-    method: GET
-    uri: https://api.arbiscan.io/api?action=eth_call&data=0x252dba4200000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000160000000000000000000000000f64dfe17c8b87f012fcf50fbda1d62bfa148366a000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000040902f1ac00000000000000000000000000000000000000000000000000000000000000000000000000000000f64dfe17c8b87f012fcf50fbda1d62bfa148366a000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000040dfe168100000000000000000000000000000000000000000000000000000000000000000000000000000000f64dfe17c8b87f012fcf50fbda1d62bfa148366a00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004d21220a700000000000000000000000000000000000000000000000000000000&module=proxy&to=0xcA11bde05977b3631167028862bE2a173976CA11
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000149f95000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001200000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000001802ad3c66d48723400000000000000000000000000000000000000000000000000000014b3dcfac1000000000000000000000000000000000000000000000000000000006786c8f9000000000000000000000000000000000000000000000000000000000000002000000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab10000000000000000000000000000000000000000000000000000000000000020000000000000000000000000af88d065e77c8cc2239327c5edb3a432268e5831"}
-
-        '
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 90206f6a288d3ab9-DFW
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 14 Jan 2025 20:39:24 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=2ofcoiuIGWuwy2gJduMV9TLFo3rQchd%2BoAdPoUh5FHOQa4QBLPRbx%2FHBfApk7BXK2lv04G97jAUeSBSsi9%2FMY7LcDMCzBBpeQKhVy7BwGxFngWb6ils4JUaCxim6rS5jvQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400
-      content-length:
-      - '935'
-      server-timing:
-      - cfL4;desc="?proto=TCP&rtt=23628&min_rtt=23432&rtt_var=8927&sent=4&recv=7&lost=0&retrans=0&sent_bytes=2838&recv_bytes=1997&delivery_rate=122908&cwnd=222&unsent_bytes=0&cid=c552c6525f7dc227&ts=129&x=0"
+      - cfL4;desc="?proto=TCP&rtt=25383&min_rtt=25124&rtt_var=7261&sent=5&recv=7&lost=0&retrans=0&sent_bytes=2839&recv_bytes=1046&delivery_rate=160304&cwnd=241&unsent_bytes=0&cid=c579a159d38ba7ee&ts=286&x=0"
       svid:
       - arb2
     status:
@@ -582,7 +672,65 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
+    method: GET
+    uri: https://api.arbiscan.io/api?action=eth_call&data=0x252dba4200000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000160000000000000000000000000f64dfe17c8b87f012fcf50fbda1d62bfa148366a000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000040902f1ac00000000000000000000000000000000000000000000000000000000000000000000000000000000f64dfe17c8b87f012fcf50fbda1d62bfa148366a000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000040dfe168100000000000000000000000000000000000000000000000000000000000000000000000000000000f64dfe17c8b87f012fcf50fbda1d62bfa148366a00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004d21220a700000000000000000000000000000000000000000000000000000000&module=proxy&to=0xcA11bde05977b3631167028862bE2a173976CA11
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000151948f00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e0000000000000000000000000000000000000000000000000000000000000012000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000023a4adfdefd0bbbee00000000000000000000000000000000000000000000000000000013cb67e7b90000000000000000000000000000000000000000000000000000000067e28d67000000000000000000000000000000000000000000000000000000000000002000000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab10000000000000000000000000000000000000000000000000000000000000020000000000000000000000000af88d065e77c8cc2239327c5edb3a432268e5831"}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-RAY:
+      - 925e1dcb1bef6222-GRU
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 25 Mar 2025 11:37:27 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=bVXwzkMeszKNxq6QoSfboMfLwSA72%2BHgstNLqrHhS786zBCMR8RBcbNnXlCH7VbmWVpYK9u6O2SnQ9doV8%2Bu%2B5aO%2Bz18kEFKMCXQvbJ%2BVb16OtLKJqw6J9ZRa3hBeVamt6irEM5CkNU8N%2BdJsg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '935'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=23578&min_rtt=23251&rtt_var=5209&sent=5&recv=9&lost=0&retrans=0&sent_bytes=2837&recv_bytes=2006&delivery_rate=173183&cwnd=252&unsent_bytes=0&cid=9a4c2dcb62f6725b&ts=280&x=0"
+      svid:
+      - arb2
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
     method: GET
     uri: https://api.polygonscan.com/api?action=getblocknobytime&closest=before&module=block&timestamp=1725944400
   response:
@@ -602,7 +750,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 14 Jan 2025 20:39:24 GMT
+      - Tue, 25 Mar 2025 11:37:31 GMT
       Server:
       - nginx
       Vary:
@@ -612,7 +760,7 @@ interactions:
       content-length:
       - '49'
       svid:
-      - poly1
+      - poly2
     status:
       code: 200
       message: OK
@@ -631,23 +779,21 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.6.1/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://polygon.drpc.org/
   response:
     body:
       string: '{"id":0,"jsonrpc":"2.0","result":"Geth/v10.0.0/drpc"}'
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f6d1a1e46c8-DFW
+      - 925e1de82a964d47-GRU
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Tue, 14 Jan 2025 20:39:25 GMT
+      - Tue, 25 Mar 2025 11:37:32 GMT
       Server:
       - cloudflare
       access-control-allow-credentials:
@@ -660,6 +806,8 @@ interactions:
       - '*'
       access-control-max-age:
       - '1728000'
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '53'
       strict-transport-security:
@@ -669,9 +817,9 @@ interactions:
       x-drpc-owner-id:
       - cb501251-31a8-4028-8b0a-54679f15c385
       x-drpc-owner-tier:
-      - paid
+      - free
       x-drpc-trace-id:
-      - c05c6ddde43e17b74d19636ff51eb0f1
+      - 2ca123b09f8589e84623534e1d308e13
       x-frame-options:
       - SAMEORIGIN
     status:
@@ -691,23 +839,21 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.6.1/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://polygon.drpc.org/
   response:
     body:
       string: '{"id":1,"jsonrpc":"2.0","result":"137"}'
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f6e5e1b460c-DFW
+      - 925e1de8dba56025-GRU
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Tue, 14 Jan 2025 20:39:25 GMT
+      - Tue, 25 Mar 2025 11:37:32 GMT
       Server:
       - cloudflare
       access-control-allow-credentials:
@@ -720,6 +866,8 @@ interactions:
       - '*'
       access-control-max-age:
       - '1728000'
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '39'
       strict-transport-security:
@@ -729,9 +877,9 @@ interactions:
       x-drpc-owner-id:
       - cb501251-31a8-4028-8b0a-54679f15c385
       x-drpc-owner-tier:
-      - paid
+      - free
       x-drpc-trace-id:
-      - bc443a93a8006e1e9e4c4f84f28b71aa
+      - 63931d67c738958ac172ceac8bdaf305
       x-frame-options:
       - SAMEORIGIN
     status:
@@ -751,23 +899,21 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.6.1/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://polygon.drpc.org/
   response:
     body:
-      string: '{"id":2,"jsonrpc":"2.0","result":"0x3f9c8af"}'
+      string: '{"id":2,"jsonrpc":"2.0","result":"0x4243130"}'
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f6f9e1269bf-DFW
+      - 925e1de99c04af2f-GRU
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Tue, 14 Jan 2025 20:39:25 GMT
+      - Tue, 25 Mar 2025 11:37:32 GMT
       Server:
       - cloudflare
       access-control-allow-credentials:
@@ -780,6 +926,8 @@ interactions:
       - '*'
       access-control-max-age:
       - '1728000'
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '45'
       strict-transport-security:
@@ -789,11 +937,11 @@ interactions:
       x-drpc-owner-id:
       - cb501251-31a8-4028-8b0a-54679f15c385
       x-drpc-owner-tier:
-      - paid
+      - free
       x-drpc-provider-id:
       - drpc-public-multiregion
       x-drpc-trace-id:
-      - b430c261de848b3b010b24b6225595de
+      - d2940c2a4124842dad08475a57a85013
       x-frame-options:
       - SAMEORIGIN
     status:
@@ -814,23 +962,21 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.6.1/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://polygon.drpc.org/
   response:
     body:
       string: '{"id":3,"jsonrpc":"2.0","result":"0x15"}'
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f70cf4a4755-DFW
+      - 925e1dea5d7baf56-GRU
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Tue, 14 Jan 2025 20:39:26 GMT
+      - Tue, 25 Mar 2025 11:37:32 GMT
       Server:
       - cloudflare
       access-control-allow-credentials:
@@ -843,6 +989,8 @@ interactions:
       - '*'
       access-control-max-age:
       - '1728000'
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '40'
       strict-transport-security:
@@ -852,11 +1000,11 @@ interactions:
       x-drpc-owner-id:
       - cb501251-31a8-4028-8b0a-54679f15c385
       x-drpc-owner-tier:
-      - paid
+      - free
       x-drpc-provider-id:
       - drpc-public-multiregion
       x-drpc-trace-id:
-      - e29a41f92bcb9d765c7b0917b1596034
+      - adae74c1760cd16bd924e32ad6d25ff3
       x-frame-options:
       - SAMEORIGIN
     status:
@@ -877,23 +1025,21 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.6.1/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://polygon.drpc.org/
   response:
     body:
-      string: '{"id":4,"jsonrpc":"2.0","result":{"blockHash":"0x937b1a9a6686ca5d845d41cf6264586e4333caa009c9001ce71f174748881c4f","blockNumber":"0x1bf","transactionIndex":"0x0","hash":"0xf6c3feac09aa84558510f74af0c9bf7fd51ff15f902f68d51592e09cad8896b2","from":"0x5973918275c01f50555d44e92c9d9b353cadad54","to":"0xc3f60bc338e0af8f46f52650c813fbd3c071e165","input":"0x","nonce":"0x0","value":"0x15","gas":"0x5208","gasPrice":"0x3b9aca00","chainId":"0x89","type":"0x0","v":"0x135","r":"0x7ea5c6406f306030d054a613eee4d5709ddd35db52ec5e75066d515f82c6d043","s":"0x398b5d7960cd48ef0cfda44a9482dd784e9f6d264aa13f83f233e2a86b81d34f"}}'
+      string: '{"id":4,"jsonrpc":"2.0","result":{"blockHash":"0x937b1a9a6686ca5d845d41cf6264586e4333caa009c9001ce71f174748881c4f","blockNumber":"0x1bf","from":"0x5973918275c01f50555d44e92c9d9b353cadad54","gas":"0x5208","gasPrice":"0x3b9aca00","hash":"0xf6c3feac09aa84558510f74af0c9bf7fd51ff15f902f68d51592e09cad8896b2","input":"0x","nonce":"0x0","to":"0xc3f60bc338e0af8f46f52650c813fbd3c071e165","transactionIndex":"0x0","value":"0x15","type":"0x0","chainId":"0x89","v":"0x135","r":"0x7ea5c6406f306030d054a613eee4d5709ddd35db52ec5e75066d515f82c6d043","s":"0x398b5d7960cd48ef0cfda44a9482dd784e9f6d264aa13f83f233e2a86b81d34f"}}'
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f79198fe7e7-DFW
+      - 925e1decbc05f249-GRU
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Tue, 14 Jan 2025 20:39:26 GMT
+      - Tue, 25 Mar 2025 11:37:33 GMT
       Server:
       - cloudflare
       access-control-allow-credentials:
@@ -906,6 +1052,8 @@ interactions:
       - '*'
       access-control-max-age:
       - '1728000'
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '610'
       strict-transport-security:
@@ -915,11 +1063,11 @@ interactions:
       x-drpc-owner-id:
       - cb501251-31a8-4028-8b0a-54679f15c385
       x-drpc-owner-tier:
-      - paid
+      - free
       x-drpc-provider-id:
-      - drpc-public-multiregion
+      - playnance-dedicated
       x-drpc-trace-id:
-      - 118e495e8df412c6e7107c2d36ec8cea
+      - f6c63e578e850c58e7dd380b5c5fc64a
       x-frame-options:
       - SAMEORIGIN
     status:
@@ -941,23 +1089,21 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.6.1/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://polygon.drpc.org/
   response:
     body:
-      string: '{"id":5,"jsonrpc":"2.0","result":"0x0000000000000000000000000000000000000000000000000000000003f9c8b000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000e0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000088f3c15523544835ff6c738ddb30995339ad57d60000000000000000000000000000000000000000000000000000000000000020000000000000000000000000a374094527e1673a86de625aa59517c5de346d32000000000000000000000000000000000000000000000000000000000000002000000000000000000000000067e708986a809acefde16f2417fa5701241e3935"}'
+      string: '{"id":5,"jsonrpc":"2.0","result":"0x000000000000000000000000000000000000000000000000000000000424313000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000e0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000088f3c15523544835ff6c738ddb30995339ad57d60000000000000000000000000000000000000000000000000000000000000020000000000000000000000000a374094527e1673a86de625aa59517c5de346d32000000000000000000000000000000000000000000000000000000000000002000000000000000000000000067e708986a809acefde16f2417fa5701241e3935"}'
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f7a684d45e9-DFW
+      - 925e1dee5ab02d4c-GRU
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Tue, 14 Jan 2025 20:39:27 GMT
+      - Tue, 25 Mar 2025 11:37:33 GMT
       Server:
       - cloudflare
       access-control-allow-credentials:
@@ -970,6 +1116,8 @@ interactions:
       - '*'
       access-control-max-age:
       - '1728000'
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '806'
       strict-transport-security:
@@ -979,11 +1127,11 @@ interactions:
       x-drpc-owner-id:
       - cb501251-31a8-4028-8b0a-54679f15c385
       x-drpc-owner-tier:
-      - paid
+      - free
       x-drpc-provider-id:
       - drpc-public-multiregion
       x-drpc-trace-id:
-      - 1c0a0fecf62c528d240af69dc9636746
+      - e55689369c89cfebd9b2ab584db73a90
       x-frame-options:
       - SAMEORIGIN
     status:
@@ -1004,23 +1152,21 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.6.1/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://polygon.drpc.org/
   response:
     body:
-      string: '{"id":6,"jsonrpc":"2.0","result":"0x00000000000000000000000000000000000000000000000003b5a3f7a77871d5"}'
+      string: '{"id":6,"jsonrpc":"2.0","result":"0x00000000000000000000000000000000000000000000000000778a78cedfef90"}'
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f7c3e8d46cc-DFW
+      - 925e1df09b3ba444-GRU
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Tue, 14 Jan 2025 20:39:27 GMT
+      - Tue, 25 Mar 2025 11:37:33 GMT
       Server:
       - cloudflare
       access-control-allow-credentials:
@@ -1033,6 +1179,8 @@ interactions:
       - '*'
       access-control-max-age:
       - '1728000'
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '102'
       strict-transport-security:
@@ -1042,11 +1190,11 @@ interactions:
       x-drpc-owner-id:
       - cb501251-31a8-4028-8b0a-54679f15c385
       x-drpc-owner-tier:
-      - paid
+      - free
       x-drpc-provider-id:
       - drpc-public-multiregion
       x-drpc-trace-id:
-      - e31718c6e00e2ff5360967ce964c423d
+      - 918a4dafdc414aead35bf2c05d6bb6f6
       x-frame-options:
       - SAMEORIGIN
     status:
@@ -1067,23 +1215,21 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.6.1/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://polygon.drpc.org/
   response:
     body:
-      string: '{"id":7,"jsonrpc":"2.0","result":"0x000000000000000000000000000000000000000000000000284f8f85f7384dc7"}'
+      string: '{"id":7,"jsonrpc":"2.0","result":"0x0000000000000000000000000000000000000000000000003d0bfffc54cc9948"}'
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f7ddf9b466c-DFW
+      - 925e1df288c001c6-GRU
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Tue, 14 Jan 2025 20:39:27 GMT
+      - Tue, 25 Mar 2025 11:37:34 GMT
       Server:
       - cloudflare
       access-control-allow-credentials:
@@ -1096,6 +1242,8 @@ interactions:
       - '*'
       access-control-max-age:
       - '1728000'
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '102'
       strict-transport-security:
@@ -1105,11 +1253,11 @@ interactions:
       x-drpc-owner-id:
       - cb501251-31a8-4028-8b0a-54679f15c385
       x-drpc-owner-tier:
-      - paid
+      - free
       x-drpc-provider-id:
       - drpc-public-multiregion
       x-drpc-trace-id:
-      - 1892d9f6c67e7d0636ef815d17e02b1b
+      - 50a0dcf10f285bf0a5a39c8856e377ac
       x-frame-options:
       - SAMEORIGIN
     status:
@@ -1130,23 +1278,21 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.6.1/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://polygon.drpc.org/
   response:
     body:
-      string: '{"id":8,"jsonrpc":"2.0","result":"0x000000000000000000000000000000000000000000000000000449f9662daab9"}'
+      string: '{"id":8,"jsonrpc":"2.0","result":"0x0000000000000000000000000000000000000000000000000008e08ba2c50a61"}'
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f7f7b9c485c-DFW
+      - 925e1df50ed51af5-GRU
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Tue, 14 Jan 2025 20:39:28 GMT
+      - Tue, 25 Mar 2025 11:37:34 GMT
       Server:
       - cloudflare
       access-control-allow-credentials:
@@ -1159,6 +1305,8 @@ interactions:
       - '*'
       access-control-max-age:
       - '1728000'
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '102'
       strict-transport-security:
@@ -1168,11 +1316,11 @@ interactions:
       x-drpc-owner-id:
       - cb501251-31a8-4028-8b0a-54679f15c385
       x-drpc-owner-tier:
-      - paid
+      - free
       x-drpc-provider-id:
       - drpc-public-multiregion
       x-drpc-trace-id:
-      - 3e971cb74fd4162f0ad8d4e571f7bd3c
+      - 26df9571c43287bcf05f2d8d64876516
       x-frame-options:
       - SAMEORIGIN
     status:
@@ -1194,23 +1342,21 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.6.1/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.8.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://polygon.drpc.org/
   response:
     body:
       string: '{"id":9,"jsonrpc":"2.0","result":"0x0000000000000000000000000000000000000000000000000000000003ac92e0000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000016000000000000000000000000000000000000000000000000000000000000001a000000000000000000000000000000000000000000000000000000000000000e0000000000000000000000000000000000000000000000a52ad8f77620b6319bbfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffba2aa000000000000000000000000000000000000000000000000000000000000095900000000000000000000000000000000000000000000000000000000000009c400000000000000000000000000000000000000000000000000000000000009c40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000d500b1d8e8ef31e21c99d1db9a6444d3adf127000000000000000000000000000000000000000000000000000000000000000200000000000000000000000002791bca1f2de4661ed88a30c99a7a9449aa84174"}'
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f822e922cbe-DFW
+      - 925e1df6f96cf1f5-GRU
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Tue, 14 Jan 2025 20:39:28 GMT
+      - Tue, 25 Mar 2025 11:37:35 GMT
       Server:
       - cloudflare
       access-control-allow-credentials:
@@ -1223,6 +1369,8 @@ interactions:
       - '*'
       access-control-max-age:
       - '1728000'
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '1190'
       strict-transport-security:
@@ -1232,11 +1380,11 @@ interactions:
       x-drpc-owner-id:
       - cb501251-31a8-4028-8b0a-54679f15c385
       x-drpc-owner-tier:
-      - paid
+      - free
       x-drpc-provider-id:
       - drpc-public-multiregion
       x-drpc-trace-id:
-      - 7978f62ab10d337713510a054119fc74
+      - ceb6a6c050e6ad382ff54235bd1b6bc5
       x-frame-options:
       - SAMEORIGIN
     status:
@@ -1252,12 +1400,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
     method: GET
     uri: https://api-optimistic.etherscan.io/api?action=eth_call&data=0x252dba42000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000014000000000000000000000000000000000000000000000000000000000000002200000000000000000000000001f98431c8ad98523631ae4a59f267346ea31f984000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000641698ee82000000000000000000000000420000000000000000000000000000000000000600000000000000000000000094b008aa00579c1307b0ef2c499ad98a8ce58e580000000000000000000000000000000000000000000000000000000000000bb8000000000000000000000000000000000000000000000000000000000000000000000000000000001f98431c8ad98523631ae4a59f267346ea31f984000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000641698ee82000000000000000000000000420000000000000000000000000000000000000600000000000000000000000094b008aa00579c1307b0ef2c499ad98a8ce58e5800000000000000000000000000000000000000000000000000000000000001f4000000000000000000000000000000000000000000000000000000000000000000000000000000001f98431c8ad98523631ae4a59f267346ea31f984000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000641698ee82000000000000000000000000420000000000000000000000000000000000000600000000000000000000000094b008aa00579c1307b0ef2c499ad98a8ce58e58000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000000000&module=proxy&to=0x2DC0E2aa608532Da689e89e237dF582B783E552C
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000000000007c978e300000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000dd0c6bae8ad5998c358b823df15a2a4181da1b800000000000000000000000000000000000000000000000000000000000000020000000000000000000000000c858a329bf053be78d6239c4a4343b8fbd21472b00000000000000000000000000000000000000000000000000000000000000200000000000000000000000002df05e4cdbd758cb1a99a34bb0d767e040d6b078"}
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000000000007f75de000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000dd0c6bae8ad5998c358b823df15a2a4181da1b800000000000000000000000000000000000000000000000000000000000000020000000000000000000000000c858a329bf053be78d6239c4a4343b8fbd21472b00000000000000000000000000000000000000000000000000000000000000200000000000000000000000002df05e4cdbd758cb1a99a34bb0d767e040d6b078"}
 
         '
     headers:
@@ -1267,10 +1415,8 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f848c5be534-DFW
+      - 925e1dfb3d07a40b-GRU
       Cache-Control:
       - private
       Connection:
@@ -1278,7 +1424,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 14 Jan 2025 20:39:28 GMT
+      - Tue, 25 Mar 2025 11:37:35 GMT
       Server:
       - cloudflare
       Vary:
@@ -1287,6 +1433,8 @@ interactions:
       - SAMEORIGIN
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '807'
       svid:
@@ -1304,12 +1452,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
     method: GET
     uri: https://api-optimistic.etherscan.io/api?action=eth_call&data=0x1a686502&module=proxy&to=0xdd0c6bAe8Ad5998c358b823df15A2A4181Da1b80
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000008f4b46609c381"}
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000002f3cdcf267c9f"}
 
         '
     headers:
@@ -1319,10 +1467,8 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f85ffc82ccd-DFW
+      - 925e1dfd5f601b25-GRU
       Cache-Control:
       - private
       Connection:
@@ -1330,7 +1476,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 14 Jan 2025 20:39:29 GMT
+      - Tue, 25 Mar 2025 11:37:35 GMT
       Server:
       - cloudflare
       Vary:
@@ -1339,6 +1485,8 @@ interactions:
       - SAMEORIGIN
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '103'
       svid:
@@ -1356,12 +1504,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
     method: GET
     uri: https://api-optimistic.etherscan.io/api?action=eth_call&data=0x1a686502&module=proxy&to=0xc858A329Bf053BE78D6239C4A4343B8FbD21472b
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000050d1a7342a25ba"}
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000019d63c7862530e"}
 
         '
     headers:
@@ -1371,10 +1519,8 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f873c882c93-DFW
+      - 925e1dff799401be-GRU
       Cache-Control:
       - private
       Connection:
@@ -1382,7 +1528,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 14 Jan 2025 20:39:29 GMT
+      - Tue, 25 Mar 2025 11:37:36 GMT
       Server:
       - cloudflare
       Vary:
@@ -1391,6 +1537,8 @@ interactions:
       - SAMEORIGIN
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '103'
       svid:
@@ -1408,12 +1556,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
     method: GET
     uri: https://api-optimistic.etherscan.io/api?action=eth_call&data=0x1a686502&module=proxy&to=0x2DF05E4cdbD758cb1A99a34bb0D767E040d6b078
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000003eb87686fbb3"}
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000b91a69c5456"}
 
         '
     headers:
@@ -1423,10 +1571,8 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f888eb928b1-DFW
+      - 925e1e01af3903e5-GRU
       Cache-Control:
       - private
       Connection:
@@ -1434,7 +1580,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 14 Jan 2025 20:39:29 GMT
+      - Tue, 25 Mar 2025 11:37:36 GMT
       Server:
       - cloudflare
       Vary:
@@ -1443,6 +1589,8 @@ interactions:
       - SAMEORIGIN
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '103'
       svid:
@@ -1460,12 +1608,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
     method: GET
     uri: https://api-optimistic.etherscan.io/api?action=eth_call&data=0x252dba4200000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000160000000000000000000000000c858a329bf053be78d6239c4a4343b8fbd21472b000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000043850c7bd00000000000000000000000000000000000000000000000000000000000000000000000000000000c858a329bf053be78d6239c4a4343b8fbd21472b000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000040dfe168100000000000000000000000000000000000000000000000000000000000000000000000000000000c858a329bf053be78d6239c4a4343b8fbd21472b00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004d21220a700000000000000000000000000000000000000000000000000000000&module=proxy&to=0x2DC0E2aa608532Da689e89e237dF582B783E552C
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000000000007c978e4000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000016000000000000000000000000000000000000000000000000000000000000001a000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000003b736f1bf0924cfcb3f50fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd0412000000000000000000000000000000000000000000000000000000000000078d00000000000000000000000000000000000000000000000000000000000007d000000000000000000000000000000000000000000000000000000000000007d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000004200000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000002000000000000000000000000094b008aa00579c1307b0ef2c499ad98a8ce58e58"}
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000000000007f75de1000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000016000000000000000000000000000000000000000000000000000000000000001a000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000002fbafb69ecabe84db8b98fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffcf2ea00000000000000000000000000000000000000000000000000000000000007ae00000000000000000000000000000000000000000000000000000000000007d000000000000000000000000000000000000000000000000000000000000007d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000004200000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000002000000000000000000000000094b008aa00579c1307b0ef2c499ad98a8ce58e58"}
 
         '
     headers:
@@ -1475,10 +1623,8 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 90206f89f8768787-DFW
+      - 925e1e03d84f2912-GRU
       Cache-Control:
       - private
       Connection:
@@ -1486,7 +1632,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 14 Jan 2025 20:39:29 GMT
+      - Tue, 25 Mar 2025 11:37:36 GMT
       Server:
       - cloudflare
       Vary:
@@ -1495,6 +1641,8 @@ interactions:
       - SAMEORIGIN
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       content-length:
       - '1191'
       svid:
@@ -1512,12 +1660,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
     method: GET
     uri: https://api.bscscan.com/api?action=eth_call&data=0x252dba4200000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000001400000000000000000000000000000000000000000000000000000000000000220000000000000000000000000db1d10011ad0ff90774d0c6bb92e5c5c8b4461f7000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000641698ee8200000000000000000000000055d398326f99059ff775485246999027b3197955000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c0000000000000000000000000000000000000000000000000000000000000bb800000000000000000000000000000000000000000000000000000000000000000000000000000000db1d10011ad0ff90774d0c6bb92e5c5c8b4461f7000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000641698ee8200000000000000000000000055d398326f99059ff775485246999027b3197955000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c00000000000000000000000000000000000000000000000000000000000001f400000000000000000000000000000000000000000000000000000000000000000000000000000000db1d10011ad0ff90774d0c6bb92e5c5c8b4461f7000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000641698ee8200000000000000000000000055d398326f99059ff775485246999027b3197955000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000000000&module=proxy&to=0xcA11bde05977b3631167028862bE2a173976CA11
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000000000002ba5fb300000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000000200000000000000000000000007862d9b4be2156b15d54f41ee4ede2d5b0b455e400000000000000000000000000000000000000000000000000000000000000200000000000000000000000006fe9e9de56356f7edbfcbb29fab7cd69471a486900000000000000000000000000000000000000000000000000000000000000200000000000000000000000004d170f8714367c44787ae98259ce8adb72240067"}
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000000000002d8f7ce00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000000200000000000000000000000007862d9b4be2156b15d54f41ee4ede2d5b0b455e400000000000000000000000000000000000000000000000000000000000000200000000000000000000000006fe9e9de56356f7edbfcbb29fab7cd69471a486900000000000000000000000000000000000000000000000000000000000000200000000000000000000000004d170f8714367c44787ae98259ce8adb72240067"}
 
         '
     headers:
@@ -1534,7 +1682,53 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 14 Jan 2025 20:39:29 GMT
+      - Tue, 25 Mar 2025 11:37:41 GMT
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      content-length:
+      - '807'
+      svid:
+      - bsc4
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
+    method: GET
+    uri: https://api.bscscan.com/api?action=eth_call&data=0x1a686502&module=proxy&to=0x7862D9B4bE2156B15d54F41ee4EDE2d5b0b455e4
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000004fbab7e6f685170450e3"}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 25 Mar 2025 11:37:42 GMT
       Server:
       - nginx
       Vary:
@@ -1542,7 +1736,7 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       content-length:
-      - '807'
+      - '103'
       svid:
       - bsc13
     status:
@@ -1558,12 +1752,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
     method: GET
-    uri: https://api.bscscan.com/api?action=eth_call&data=0x1a686502&module=proxy&to=0x7862D9B4bE2156B15d54F41ee4EDE2d5b0b455e4
+    uri: https://api.bscscan.com/api?action=eth_call&data=0x1a686502&module=proxy&to=0x6fe9E9de56356F7eDBfcBB29FAB7cd69471a4869
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000bc475bfa5a3e745f787"}
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000009e5691abcb6b8fc3e01"}
 
         '
     headers:
@@ -1580,9 +1774,9 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 14 Jan 2025 20:39:30 GMT
+      - Tue, 25 Mar 2025 11:37:44 GMT
       Server:
-      - nginx
+      - nginx/1.18.0 (Ubuntu)
       Vary:
       - Accept-Encoding
       X-Frame-Options:
@@ -1604,58 +1798,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
-    method: GET
-    uri: https://api.bscscan.com/api?action=eth_call&data=0x1a686502&module=proxy&to=0x6fe9E9de56356F7eDBfcBB29FAB7cd69471a4869
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000b6809a3502d816679b9c"}
-
-        '
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Tue, 14 Jan 2025 20:39:30 GMT
-      Server:
-      - nginx/1.18.0 (Ubuntu)
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      content-length:
-      - '103'
-      svid:
-      - bsc13
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
     method: GET
     uri: https://api.bscscan.com/api?action=eth_call&data=0x1a686502&module=proxy&to=0x4d170f8714367C44787AE98259CE8Adb72240067
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000028f692f799ecdde4c98"}
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000039e8243a4dd5dac7f76"}
 
         '
     headers:
@@ -1672,7 +1820,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 14 Jan 2025 20:39:30 GMT
+      - Tue, 25 Mar 2025 11:37:45 GMT
       Server:
       - nginx
       Vary:
@@ -1696,12 +1844,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.36.2.dev193+gef1106a1a
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
     method: GET
-    uri: https://api.bscscan.com/api?action=eth_call&data=0x252dba4200000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001600000000000000000000000006fe9e9de56356f7edbfcbb29fab7cd69471a4869000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000043850c7bd000000000000000000000000000000000000000000000000000000000000000000000000000000006fe9e9de56356f7edbfcbb29fab7cd69471a4869000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000040dfe1681000000000000000000000000000000000000000000000000000000000000000000000000000000006fe9e9de56356f7edbfcbb29fab7cd69471a486900000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004d21220a700000000000000000000000000000000000000000000000000000000&module=proxy&to=0xcA11bde05977b3631167028862bE2a173976CA11
+    uri: https://api.bscscan.com/api?action=eth_call&data=0x252dba4200000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001600000000000000000000000007862d9b4be2156b15d54f41ee4ede2d5b0b455e4000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000043850c7bd000000000000000000000000000000000000000000000000000000000000000000000000000000007862d9b4be2156b15d54f41ee4ede2d5b0b455e4000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000040dfe1681000000000000000000000000000000000000000000000000000000000000000000000000000000007862d9b4be2156b15d54f41ee4ede2d5b0b455e400000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004d21220a700000000000000000000000000000000000000000000000000000000&module=proxy&to=0xcA11bde05977b3631167028862bE2a173976CA11
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000000000002ba5fb3000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000016000000000000000000000000000000000000000000000000000000000000001a000000000000000000000000000000000000000000000000000000000000000e0000000000000000000000000000000000000000009b13afcc8916e8000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0037000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000000000000000000003e800000000000000000000000000000000000000000000000000000000000003e800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000002000000000000000000000000055d398326f99059ff775485246999027b31979550000000000000000000000000000000000000000000000000000000000000020000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"}
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000000000002d8f7d0000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000016000000000000000000000000000000000000000000000000000000000000001a000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000a296fc2711a9910c80033a4ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff03ea000000000000000000000000000000000000000000000000000000000000004f0000000000000000000000000000000000000000000000000000000000000050000000000000000000000000000000000000000000000000000000000000005000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000002000000000000000000000000055d398326f99059ff775485246999027b31979550000000000000000000000000000000000000000000000000000000000000020000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"}
 
         '
     headers:
@@ -1718,7 +1866,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 14 Jan 2025 20:39:31 GMT
+      - Tue, 25 Mar 2025 11:37:46 GMT
       Server:
       - nginx
       Vary:
