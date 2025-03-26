@@ -538,8 +538,6 @@ interactions:
       - __cf_bm=9GYbPVjpfaE8ek1pYkZ3jJfL6AePAbcBsUAymMa2huI-1732734244-1.0.1.1-hB30s7TJJhgRBX4mUEE0jFg.nwTEraw1eCQi4bzK_FLgCDsYCq0gS2WlDa8vuRHJxuJvPcmJHkQo1Rj27ugQVQ;
         path=/; expires=Wed, 27-Nov-24 19:34:04 GMT; domain=.api.coingecko.com; HttpOnly;
         Secure; SameSite=None
-      Transfer-Encoding:
-      - chunked
       access-control-allow-headers:
       - Origin, X-Requested-With, Content-Type, Accept, Authorization
       access-control-allow-methods:
@@ -616,8 +614,6 @@ interactions:
       - Wed, 27 Nov 2024 19:04:04 GMT
       Server:
       - cloudflare
-      Transfer-Encoding:
-      - chunked
       access-control-allow-headers:
       - Origin, X-Requested-With, Content-Type, Accept, Authorization
       access-control-allow-methods:
@@ -656,6 +652,64 @@ interactions:
       - '0.011289'
       x-xss-protection:
       - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.38.1.dev27+g6d6f53a47
+    method: GET
+    uri: https://api.arbiscan.io/api?action=eth_call&data=0x2621db2f&module=proxy&to=0xB5c6082d3307088C98dA8D79991501E113e6365d
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab1"}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-RAY:
+      - 925e63943bf3458f-ATL
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 25 Mar 2025 12:25:06 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=eZ7RPgQ4mSTIliRinUH2AdyXI34HxEOI0vWHRx4eE7b5mFXBpUUA8KNxdimsdP9qeodc9XRrqHPK0XgkOpbHWNkC%2FEAI8qBLaCGpmCRAqWyug2aY8LqIxKRoWs5WdehY9w%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '103'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=26339&min_rtt=26182&rtt_var=9930&sent=4&recv=6&lost=0&retrans=0&sent_bytes=2837&recv_bytes=908&delivery_rate=109999&cwnd=250&unsent_bytes=0&cid=3872d3c7f181e561&ts=97&x=0"
+      svid:
+      - arb2
     status:
       code: 200
       message: OK
