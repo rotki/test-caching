@@ -11,7 +11,7 @@ interactions:
       User-Agent:
       - rotki/1.30.3.dev291+gc065b7691
     method: GET
-    uri: https://api.etherscan.io/api?action=getblocknobytime&closest=before&module=block&timestamp=1700464075
+    uri: https://api.etherscan.io/v2/api?action=getblocknobytime&chainid=1&closest=before&module=block&timestamp=1700464075
   response:
     body:
       string: '{"status":"1","message":"OK","result":"18611413"}'
@@ -53,7 +53,7 @@ interactions:
       User-Agent:
       - rotki/1.30.3.dev291+gc065b7691
     method: GET
-    uri: https://api.etherscan.io/api?action=txsBeaconWithdrawal&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&endBlock=18611413&module=account&sort=asc&startBlock=0
+    uri: https://api.etherscan.io/v2/api?action=txsBeaconWithdrawal&chainid=1&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&endBlock=18611413&module=account&sort=asc&startBlock=0
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
