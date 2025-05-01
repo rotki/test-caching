@@ -11,7 +11,7 @@ interactions:
       User-Agent:
       - rotki/1.31.2.dev11+gd476fcaa0.d20231218
     method: GET
-    uri: https://api.etherscan.io/api?action=txlist&address=0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5&module=account&offset=1&page=1
+    uri: https://api.etherscan.io/v2/api?action=txlist&chainid=1&address=0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5&module=account&offset=1&page=1
   response:
     body:
       string: '{"status":"1","message":"OK","result":[{"blockNumber":"15688488","timeStamp":"1665052355","hash":"0xf97d03429d58c1508e68109d0f2a52d6f7ce41bb799a4f21ce941a1575562c1b","nonce":"0","blockHash":"0x36dbb7b20a027be9a42edd3cf8b9142427841cd8155b249c06b2198f5be73ffd","transactionIndex":"249","from":"0x95222290dd7278aa3ddd389cc1e1d165cc4bafe5","to":"0x0b3b161b8abeb6b04cb95c3e6047f80c120a0292","value":"58111783231682072","gas":"30000","gasPrice":"4835293352","isError":"0","txreceipt_status":"1","input":"0x","contractAddress":"","cumulativeGasUsed":"19531392","gasUsed":"21000","confirmations":"3132263","methodId":"0x","functionName":""}]}'
@@ -53,7 +53,7 @@ interactions:
       User-Agent:
       - rotki/1.31.2.dev11+gd476fcaa0.d20231218
     method: GET
-    uri: https://api.etherscan.io/api?action=txlist&address=0x3C69Bc9B9681683890ad82953Fe67d13Cd91D5EE&module=account&offset=1&page=1
+    uri: https://api.etherscan.io/v2/api?action=txlist&chainid=1&address=0x3C69Bc9B9681683890ad82953Fe67d13Cd91D5EE&module=account&offset=1&page=1
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -95,7 +95,7 @@ interactions:
       User-Agent:
       - rotki/1.31.2.dev11+gd476fcaa0.d20231218
     method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&address=0x3C69Bc9B9681683890ad82953Fe67d13Cd91D5EE&module=account&offset=1&page=1
+    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=1&address=0x3C69Bc9B9681683890ad82953Fe67d13Cd91D5EE&module=account&offset=1&page=1
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -137,7 +137,7 @@ interactions:
       User-Agent:
       - rotki/1.31.2.dev11+gd476fcaa0.d20231218
     method: GET
-    uri: https://api.etherscan.io/api?action=tokentx&address=0x3C69Bc9B9681683890ad82953Fe67d13Cd91D5EE&module=account&offset=1&page=1
+    uri: https://api.etherscan.io/v2/api?action=tokentx&chainid=1&address=0x3C69Bc9B9681683890ad82953Fe67d13Cd91D5EE&module=account&offset=1&page=1
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -179,7 +179,7 @@ interactions:
       User-Agent:
       - rotki/1.31.2.dev11+gd476fcaa0.d20231218
     method: GET
-    uri: https://api.etherscan.io/api?action=balance&address=0x3C69Bc9B9681683890ad82953Fe67d13Cd91D5EE&module=account
+    uri: https://api.etherscan.io/v2/api?action=balance&chainid=1&address=0x3C69Bc9B9681683890ad82953Fe67d13Cd91D5EE&module=account
   response:
     body:
       string: '{"status":"1","message":"OK","result":"960071318000000000"}'
@@ -221,7 +221,7 @@ interactions:
       User-Agent:
       - rotki/1.31.2.dev11+gd476fcaa0.d20231218
     method: GET
-    uri: https://api.etherscan.io/api?action=txlist&address=0x725E35e01bbEDadd6ac13cE1c4a98bA4Cf00dF21&module=account&offset=1&page=1
+    uri: https://api.etherscan.io/v2/api?action=txlist&chainid=1&address=0x725E35e01bbEDadd6ac13cE1c4a98bA4Cf00dF21&module=account&offset=1&page=1
   response:
     body:
       string: '{"status":"1","message":"OK","result":[{"blockNumber":"18820694","timeStamp":"1702997399","hash":"0xe8c6b5b090201da2f7645c240ebbe843fed6dedc81a06f492c78a662b8362755","nonce":"0","blockHash":"0x15f582aaf83cac9a47abd4b29c0023d1e897e4757aed512f7f43ce0a6a07f7aa","transactionIndex":"158","from":"0x725e35e01bbedadd6ac13ce1c4a98ba4cf00df21","to":"0x3fc91a3afd70395cd496c647d5a6cc9d4b2b7fad","value":"91140463403680000","gas":"221325","gasPrice":"58254415012","isError":"0","txreceipt_status":"1","input":"0x3593564c000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000006581afd700000000000000000000000000000000000000000000000000000000000000020b080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000143cbc4c1d74100000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000143cbc4c1d7410000000000000000000000000000000000000000000000005ea5c7736fb2967ad300000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2000000000000000000000000244748587f145c0571e92e85429d711d1b4cc43a","contractAddress":"","cumulativeGasUsed":"14707824","gasUsed":"156740","confirmations":"57","methodId":"0x3593564c","functionName":"execute(bytes
@@ -264,7 +264,7 @@ interactions:
       User-Agent:
       - rotki/1.31.2.dev11+gd476fcaa0.d20231218
     method: GET
-    uri: https://api.etherscan.io/api?action=txlist&address=0x014cd0535b2Ea668150a681524392B7633c8681c&module=account&offset=1&page=1
+    uri: https://api.etherscan.io/v2/api?action=txlist&chainid=1&address=0x014cd0535b2Ea668150a681524392B7633c8681c&module=account&offset=1&page=1
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -306,7 +306,7 @@ interactions:
       User-Agent:
       - rotki/1.31.2.dev11+gd476fcaa0.d20231218
     method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&address=0x014cd0535b2Ea668150a681524392B7633c8681c&module=account&offset=1&page=1
+    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=1&address=0x014cd0535b2Ea668150a681524392B7633c8681c&module=account&offset=1&page=1
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -348,7 +348,7 @@ interactions:
       User-Agent:
       - rotki/1.31.2.dev11+gd476fcaa0.d20231218
     method: GET
-    uri: https://api.etherscan.io/api?action=tokentx&address=0x014cd0535b2Ea668150a681524392B7633c8681c&module=account&offset=1&page=1
+    uri: https://api.etherscan.io/v2/api?action=tokentx&chainid=1&address=0x014cd0535b2Ea668150a681524392B7633c8681c&module=account&offset=1&page=1
   response:
     body:
       string: '{"status":"1","message":"OK","result":[{"blockNumber":"17777418","timeStamp":"1690376507","hash":"0xfac14479d8732e9084d5cc8083253f57a0b9ce29d08aa2ceea51fe5c9caabfb2","nonce":"2","blockHash":"0x4fd6a1459912cddb366fbc3591ce339b030d7be89b43e676dacb7a44f606923d","from":"0x67288250e971c203a03363a64fa149517aed160c","contractAddress":"0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb","to":"0x014cd0535b2ea668150a681524392b7633c8681c","value":"1500000000000000000000","tokenName":"Hummingbot
@@ -391,7 +391,7 @@ interactions:
       User-Agent:
       - rotki/1.31.2.dev11+gd476fcaa0.d20231218
     method: GET
-    uri: https://api.etherscan.io/api?action=txlist&address=0x6c66149E65c517605e0a2e4F707550ca342f9c1B&module=account&offset=1&page=1
+    uri: https://api.etherscan.io/v2/api?action=txlist&chainid=1&address=0x6c66149E65c517605e0a2e4F707550ca342f9c1B&module=account&offset=1&page=1
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -433,7 +433,7 @@ interactions:
       User-Agent:
       - rotki/1.31.2.dev11+gd476fcaa0.d20231218
     method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&address=0x6c66149E65c517605e0a2e4F707550ca342f9c1B&module=account&offset=1&page=1
+    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=1&address=0x6c66149E65c517605e0a2e4F707550ca342f9c1B&module=account&offset=1&page=1
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -475,7 +475,7 @@ interactions:
       User-Agent:
       - rotki/1.31.2.dev11+gd476fcaa0.d20231218
     method: GET
-    uri: https://api.etherscan.io/api?action=tokentx&address=0x6c66149E65c517605e0a2e4F707550ca342f9c1B&module=account&offset=1&page=1
+    uri: https://api.etherscan.io/v2/api?action=tokentx&chainid=1&address=0x6c66149E65c517605e0a2e4F707550ca342f9c1B&module=account&offset=1&page=1
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -517,7 +517,7 @@ interactions:
       User-Agent:
       - rotki/1.31.2.dev11+gd476fcaa0.d20231218
     method: GET
-    uri: https://api.etherscan.io/api?action=balance&address=0x6c66149E65c517605e0a2e4F707550ca342f9c1B&module=account
+    uri: https://api.etherscan.io/v2/api?action=balance&chainid=1&address=0x6c66149E65c517605e0a2e4F707550ca342f9c1B&module=account
   response:
     body:
       string: '{"status":"1","message":"OK","result":"0"}'

@@ -9,9 +9,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=getblocknobytime&closest=before&module=block&timestamp=1707346800
+    uri: https://api.etherscan.io/v2/api?action=getblocknobytime&chainid=1&closest=before&module=block&timestamp=1707346800
   response:
     body:
       string: '{"status":"1","message":"OK","result":"19179448"}'
@@ -26,16 +26,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 30 Apr 2025 11:17:25 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
+      content-length:
       - '49'
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Fri, 03 May 2024 19:27:25 GMT
-      Server:
-      - nginx
-      X-Frame-Options:
-      - SAMEORIGIN
+      svid:
+      - '58'
     status:
       code: 200
       message: OK
@@ -49,12 +55,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=txlist&address=0xaFB7ed3beBE50E0b62Fa862FAba93e7A46e59cA7&endBlock=19179448&module=account&sort=asc&startBlock=0
+    uri: https://api.etherscan.io/v2/api?action=txlist&address=0xaFB7ed3beBE50E0b62Fa862FAba93e7A46e59cA7&chainid=1&endBlock=19179448&module=account&sort=asc&startBlock=0
   response:
     body:
-      string: '{"status":"1","message":"OK","result":[{"blockNumber":"111083","timeStamp":"1439984408","hash":"0x13684203a4bf07aaed0112983cb380db6004acac772af2a5d46cb2a28245fbad","nonce":"100","blockHash":"0x0de4bf928f3bba9afc8ab48f52acac0fee806b62ae9850f718e5ab3198d12740","transactionIndex":"0","from":"0xc47aaa860008be6f65b58c6c6e02a84e666efe31","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","value":"37451082560000003241","gas":"90000","gasPrice":"58471444665","isError":"0","txreceipt_status":"","input":"0x","contractAddress":"","cumulativeGasUsed":"21000","gasUsed":"21000","confirmations":"19680586","methodId":"0x","functionName":""},{"blockNumber":"1375816","timeStamp":"1461221228","hash":"0xe58af420fd8430c061303e4c5bd2668fafbc0fd41078fa6aa01d7781c1dadc7a","nonce":"326","blockHash":"0x9b5eed04447644f5a3a0282a86ba28b5d488999c4249f499db95fc53f333f5b9","transactionIndex":"0","from":"0x9e6316f44baeeee5d41a1070516cc5fa47baf227","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","value":"389359660000000000","gas":"250000","gasPrice":"20000000000","isError":"0","txreceipt_status":"","input":"0x","contractAddress":"","cumulativeGasUsed":"21000","gasUsed":"21000","confirmations":"18415853","methodId":"0x","functionName":""},{"blockNumber":"1388248","timeStamp":"1461399856","hash":"0x0ae8b470b4a69c7f6905b9ec09f50c8772821080d11ba0acc83ac23a7ccb4ad8","nonce":"0","blockHash":"0x2bd10be8b6798468a7eaa567e187702cd6bb2263082ba6bd7b5622fe5d1d719e","transactionIndex":"7","from":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","to":"0x2910543af39aba0cd09dbb2d50200b3e800a63d2","value":"37840020860000003241","gas":"21068","gasPrice":"20000000000","isError":"0","txreceipt_status":"","input":"0x01","contractAddress":"","cumulativeGasUsed":"168340","gasUsed":"21068","confirmations":"18403421","methodId":"0x01","functionName":""},{"blockNumber":"3685519","timeStamp":"1494458609","hash":"0x2f6f167e32e9cb1bef40b92e831c3f1d1cd0348bb72dcc723bde94f51944ebd6","nonce":"1","blockHash":"0x115741854f6062339ec5e9574fa82954c56c68d98d8ab7ced9f26fe4cb82157a","transactionIndex":"2","from":"0x4ad11d04ccd80a83d48096478b73d1e8e0ed49d6","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","value":"6000000000000000000","gas":"21000","gasPrice":"21000000000","isError":"0","txreceipt_status":"","input":"0x","contractAddress":"","cumulativeGasUsed":"63000","gasUsed":"21000","confirmations":"16106150","methodId":"0x","functionName":""},{"blockNumber":"3685532","timeStamp":"1494458861","hash":"0x5d81f937ad37349f89dc6e9926988855bb6c6e1e00c683ee3b7cb7d7b09b5567","nonce":"1","blockHash":"0xdffacb4a2be87534e2023b1ee90e8462b581f020487b6c2819d47079614ed79e","transactionIndex":"22","from":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","to":"0xfa52274dd61e1643d2205169732f29114bc240b3","value":"5999300000000000000","gas":"35000","gasPrice":"20000000000","isError":"0","txreceipt_status":"","input":"0xf7654176","contractAddress":"","cumulativeGasUsed":"1363543","gasUsed":"30981","confirmations":"16106137","methodId":"0xf7654176","functionName":"split()"},{"blockNumber":"11376155","timeStamp":"1606952281","hash":"0x507be341aa3fc47c42fc5abd570808870f694efe150dff7ae27d70d05016d6b7","nonce":"14","blockHash":"0xd817f3944e0ea4972f24f7324223aeab691765f7f1791217a734b79a6b67503a","transactionIndex":"137","from":"0xdbc6c90a259f1353f79a2a34bda1ab2ef008bebc","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","value":"999654250016677000","gas":"21000","gasPrice":"31250000000","isError":"0","txreceipt_status":"1","input":"0x","contractAddress":"","cumulativeGasUsed":"7582181","gasUsed":"21000","confirmations":"8415514","methodId":"0x","functionName":""},{"blockNumber":"11376158","timeStamp":"1606952321","hash":"0xc34002ad5de69f6aba8227676718df9ee619bb3fe14b2b06d05f475eaf6b6005","nonce":"2","blockHash":"0x6e63dfa53da93ca5c5b5c0c546381989b48b618e294e132fd4a6f854c8fd62b9","transactionIndex":"231","from":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","to":"0xfa52274dd61e1643d2205169732f29114bc240b3","value":"998426505016677000","gas":"35000","gasPrice":"37375000000","isError":"0","txreceipt_status":"1","input":"0xf7654176","contractAddress":"","cumulativeGasUsed":"8772139","gasUsed":"31373","confirmations":"8415511","methodId":"0xf7654176","functionName":"split()"},{"blockNumber":"11738585","timeStamp":"1611760222","hash":"0xd8b76a45edb525b934865ebeb53efb43ab9e3ba486dfa2a53373d112a8b8912b","nonce":"16","blockHash":"0xc245f19e3dd0efddaec4ae8e66e3ed5aa31922deaa62e52c8db2d00674f5138c","transactionIndex":"265","from":"0x919b6b42c1d83a70a9db5d32802d9aea86e3d1c8","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","value":"5000000000000000000","gas":"21000","gasPrice":"337500000000","isError":"0","txreceipt_status":"1","input":"0x","contractAddress":"","cumulativeGasUsed":"12066456","gasUsed":"21000","confirmations":"8053084","methodId":"0x","functionName":""},{"blockNumber":"11738588","timeStamp":"1611760278","hash":"0x1737c9c49c4a6e545ae6f5960e5352f96b1aedf45f75ed7eb5c661ef956cebda","nonce":"3","blockHash":"0x6ba3a54458bb7d4ea8ce906dbc23ae34402e0ee265e358f51172d17f7d9574dc","transactionIndex":"12","from":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","to":"0xfa52274dd61e1643d2205169732f29114bc240b3","value":"4990351186625000000","gas":"35000","gasPrice":"279553500000","isError":"0","txreceipt_status":"1","input":"0xf7654176","contractAddress":"","cumulativeGasUsed":"563576","gasUsed":"31373","confirmations":"8053081","methodId":"0xf7654176","functionName":"split()"},{"blockNumber":"13071075","timeStamp":"1629581597","hash":"0x3758b19c016e0a8d08b226f1bcbe58909b485bfd1d253d88eb069baad62ff80d","nonce":"31","blockHash":"0x1e9a001ff422a19c75e0d3f03e27177ad1067a96ea60049b2f298f21f4b5bc2e","transactionIndex":"161","from":"0x919b6b42c1d83a70a9db5d32802d9aea86e3d1c8","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","value":"25000000000000000000","gas":"21000","gasPrice":"34000000000","isError":"0","txreceipt_status":"1","input":"0x","contractAddress":"","cumulativeGasUsed":"11934277","gasUsed":"21000","confirmations":"6720594","methodId":"0x","functionName":""},{"blockNumber":"13071078","timeStamp":"1629581637","hash":"0x4a8da9e3f64e8b5447aacaed09ee29045262482a071a669879119b7c378f0c9a","nonce":"4","blockHash":"0xf254368d137e9843e43ed25f8cd812d58a75780b27f1a1e6608dacaf54dc39bf","transactionIndex":"51","from":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","to":"0xfa52274dd61e1643d2205169732f29114bc240b3","value":"24999091140480736000","gas":"38000","gasPrice":"50600001678","isError":"0","txreceipt_status":"1","input":"0xf7654176","contractAddress":"","cumulativeGasUsed":"4078848","gasUsed":"34573","confirmations":"6720591","methodId":"0xf7654176","functionName":"split()"}]}'
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"111083","blockHash":"0x0de4bf928f3bba9afc8ab48f52acac0fee806b62ae9850f718e5ab3198d12740","timeStamp":"1439984408","hash":"0x13684203a4bf07aaed0112983cb380db6004acac772af2a5d46cb2a28245fbad","nonce":"100","transactionIndex":"0","from":"0xc47aaa860008be6f65b58c6c6e02a84e666efe31","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","value":"37451082560000003241","gas":"90000","gasPrice":"58471444665","input":"0x","methodId":"0x","functionName":"","contractAddress":"","cumulativeGasUsed":"21000","txreceipt_status":"","gasUsed":"21000","confirmations":"22270428","isError":"0"},{"blockNumber":"1375816","blockHash":"0x9b5eed04447644f5a3a0282a86ba28b5d488999c4249f499db95fc53f333f5b9","timeStamp":"1461221228","hash":"0xe58af420fd8430c061303e4c5bd2668fafbc0fd41078fa6aa01d7781c1dadc7a","nonce":"326","transactionIndex":"0","from":"0x9e6316f44baeeee5d41a1070516cc5fa47baf227","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","value":"389359660000000000","gas":"250000","gasPrice":"20000000000","input":"0x","methodId":"0x","functionName":"","contractAddress":"","cumulativeGasUsed":"21000","txreceipt_status":"","gasUsed":"21000","confirmations":"21005695","isError":"0"},{"blockNumber":"1388248","blockHash":"0x2bd10be8b6798468a7eaa567e187702cd6bb2263082ba6bd7b5622fe5d1d719e","timeStamp":"1461399856","hash":"0x0ae8b470b4a69c7f6905b9ec09f50c8772821080d11ba0acc83ac23a7ccb4ad8","nonce":"0","transactionIndex":"7","from":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","to":"0x2910543af39aba0cd09dbb2d50200b3e800a63d2","value":"37840020860000003241","gas":"21068","gasPrice":"20000000000","input":"0x01","methodId":"0x01","functionName":"","contractAddress":"","cumulativeGasUsed":"168340","txreceipt_status":"","gasUsed":"21068","confirmations":"20993263","isError":"0"},{"blockNumber":"3685519","blockHash":"0x115741854f6062339ec5e9574fa82954c56c68d98d8ab7ced9f26fe4cb82157a","timeStamp":"1494458609","hash":"0x2f6f167e32e9cb1bef40b92e831c3f1d1cd0348bb72dcc723bde94f51944ebd6","nonce":"1","transactionIndex":"2","from":"0x4ad11d04ccd80a83d48096478b73d1e8e0ed49d6","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","value":"6000000000000000000","gas":"21000","gasPrice":"21000000000","input":"0x","methodId":"0x","functionName":"","contractAddress":"","cumulativeGasUsed":"63000","txreceipt_status":"","gasUsed":"21000","confirmations":"18695992","isError":"0"},{"blockNumber":"3685532","blockHash":"0xdffacb4a2be87534e2023b1ee90e8462b581f020487b6c2819d47079614ed79e","timeStamp":"1494458861","hash":"0x5d81f937ad37349f89dc6e9926988855bb6c6e1e00c683ee3b7cb7d7b09b5567","nonce":"1","transactionIndex":"22","from":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","to":"0xfa52274dd61e1643d2205169732f29114bc240b3","value":"5999300000000000000","gas":"35000","gasPrice":"20000000000","input":"0xf7654176","methodId":"0xf7654176","functionName":"split()","contractAddress":"","cumulativeGasUsed":"1363543","txreceipt_status":"","gasUsed":"30981","confirmations":"18695979","isError":"0"},{"blockNumber":"11376155","blockHash":"0xd817f3944e0ea4972f24f7324223aeab691765f7f1791217a734b79a6b67503a","timeStamp":"1606952281","hash":"0x507be341aa3fc47c42fc5abd570808870f694efe150dff7ae27d70d05016d6b7","nonce":"14","transactionIndex":"137","from":"0xdbc6c90a259f1353f79a2a34bda1ab2ef008bebc","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","value":"999654250016677000","gas":"21000","gasPrice":"31250000000","input":"0x","methodId":"0x","functionName":"","contractAddress":"","cumulativeGasUsed":"7582181","txreceipt_status":"1","gasUsed":"21000","confirmations":"11005356","isError":"0"},{"blockNumber":"11376158","blockHash":"0x6e63dfa53da93ca5c5b5c0c546381989b48b618e294e132fd4a6f854c8fd62b9","timeStamp":"1606952321","hash":"0xc34002ad5de69f6aba8227676718df9ee619bb3fe14b2b06d05f475eaf6b6005","nonce":"2","transactionIndex":"231","from":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","to":"0xfa52274dd61e1643d2205169732f29114bc240b3","value":"998426505016677000","gas":"35000","gasPrice":"37375000000","input":"0xf7654176","methodId":"0xf7654176","functionName":"split()","contractAddress":"","cumulativeGasUsed":"8772139","txreceipt_status":"1","gasUsed":"31373","confirmations":"11005353","isError":"0"},{"blockNumber":"11738585","blockHash":"0xc245f19e3dd0efddaec4ae8e66e3ed5aa31922deaa62e52c8db2d00674f5138c","timeStamp":"1611760222","hash":"0xd8b76a45edb525b934865ebeb53efb43ab9e3ba486dfa2a53373d112a8b8912b","nonce":"16","transactionIndex":"265","from":"0x919b6b42c1d83a70a9db5d32802d9aea86e3d1c8","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","value":"5000000000000000000","gas":"21000","gasPrice":"337500000000","input":"0x","methodId":"0x","functionName":"","contractAddress":"","cumulativeGasUsed":"12066456","txreceipt_status":"1","gasUsed":"21000","confirmations":"10642926","isError":"0"},{"blockNumber":"11738588","blockHash":"0x6ba3a54458bb7d4ea8ce906dbc23ae34402e0ee265e358f51172d17f7d9574dc","timeStamp":"1611760278","hash":"0x1737c9c49c4a6e545ae6f5960e5352f96b1aedf45f75ed7eb5c661ef956cebda","nonce":"3","transactionIndex":"12","from":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","to":"0xfa52274dd61e1643d2205169732f29114bc240b3","value":"4990351186625000000","gas":"35000","gasPrice":"279553500000","input":"0xf7654176","methodId":"0xf7654176","functionName":"split()","contractAddress":"","cumulativeGasUsed":"563576","txreceipt_status":"1","gasUsed":"31373","confirmations":"10642923","isError":"0"},{"blockNumber":"13071075","blockHash":"0x1e9a001ff422a19c75e0d3f03e27177ad1067a96ea60049b2f298f21f4b5bc2e","timeStamp":"1629581597","hash":"0x3758b19c016e0a8d08b226f1bcbe58909b485bfd1d253d88eb069baad62ff80d","nonce":"31","transactionIndex":"161","from":"0x919b6b42c1d83a70a9db5d32802d9aea86e3d1c8","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","value":"25000000000000000000","gas":"21000","gasPrice":"34000000000","input":"0x","methodId":"0x","functionName":"","contractAddress":"","cumulativeGasUsed":"11934277","txreceipt_status":"1","gasUsed":"21000","confirmations":"9310436","isError":"0"},{"blockNumber":"13071078","blockHash":"0xf254368d137e9843e43ed25f8cd812d58a75780b27f1a1e6608dacaf54dc39bf","timeStamp":"1629581637","hash":"0x4a8da9e3f64e8b5447aacaed09ee29045262482a071a669879119b7c378f0c9a","nonce":"4","transactionIndex":"51","from":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","to":"0xfa52274dd61e1643d2205169732f29114bc240b3","value":"24999091140480736000","gas":"38000","gasPrice":"50600001678","input":"0xf7654176","methodId":"0xf7654176","functionName":"split()","contractAddress":"","cumulativeGasUsed":"4078848","txreceipt_status":"1","gasUsed":"34573","confirmations":"9310433","isError":"0"}]}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
@@ -66,16 +72,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '6680'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:26 GMT
+      - Wed, 30 Apr 2025 11:17:26 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
+      content-length:
+      - '6684'
+      svid:
+      - '58'
     status:
       code: 200
       message: OK
@@ -89,9 +101,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&address=0xaFB7ed3beBE50E0b62Fa862FAba93e7A46e59cA7&endBlock=19179448&module=account&sort=asc&startBlock=0
+    uri: https://api.etherscan.io/v2/api?action=txlistinternal&address=0xaFB7ed3beBE50E0b62Fa862FAba93e7A46e59cA7&chainid=1&endBlock=19179448&module=account&sort=asc&startBlock=0
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -109,15 +121,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:28 GMT
+      - Wed, 30 Apr 2025 11:17:27 GMT
       Server:
       - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '2'
       content-length:
       - '60'
+      svid:
+      - '3'
     status:
       code: 200
       message: OK
@@ -131,9 +147,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=tokentx&address=0xaFB7ed3beBE50E0b62Fa862FAba93e7A46e59cA7&endBlock=19179448&module=account&sort=asc&startBlock=0
+    uri: https://api.etherscan.io/v2/api?action=tokentx&address=0xaFB7ed3beBE50E0b62Fa862FAba93e7A46e59cA7&chainid=1&endBlock=19179448&module=account&sort=asc&startBlock=0
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -151,15 +167,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:29 GMT
+      - Wed, 30 Apr 2025 11:17:27 GMT
       Server:
       - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '2'
       content-length:
       - '60'
+      svid:
+      - '3'
     status:
       code: 200
       message: OK
@@ -173,12 +193,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=txlist&address=0x4193122032b38236825BBa166F42e54fc3F4A1EE&endBlock=19179448&module=account&sort=asc&startBlock=0
+    uri: https://api.etherscan.io/v2/api?action=txlist&address=0x4193122032b38236825BBa166F42e54fc3F4A1EE&chainid=1&endBlock=19179448&module=account&sort=asc&startBlock=0
   response:
     body:
-      string: '{"status":"1","message":"OK","result":[{"blockNumber":"110763","timeStamp":"1439979000","hash":"0x2964f3a91408337b05aeb8f8f670f4107999be05376e630742404664c96a5c31","nonce":"30","blockHash":"0xc28fb1d8364e58b7f43b187b6c56958164f75493e9c1a2d1fafc0a26ba430cd4","transactionIndex":"2","from":"0x976349705b839e2f5719387fb27d2519d519da03","to":"0x4193122032b38236825bba166f42e54fc3f4a1ee","value":"100000000000000000","gas":"90000","gasPrice":"57080649960","isError":"0","txreceipt_status":"","input":"0x","contractAddress":"","cumulativeGasUsed":"63000","gasUsed":"21000","confirmations":"19680906","methodId":"0x","functionName":""},{"blockNumber":"111111","timeStamp":"1439984825","hash":"0xb99a6e0b40f38c4887617bc1df560fde1d0456b712cb2bb1b52fdb8880d3cd74","nonce":"0","blockHash":"0xeee8b88724e7d5720d9079a0fa8f1cc9a173330063ddd022ebfec09a54cf50f7","transactionIndex":"0","from":"0x4193122032b38236825bba166f42e54fc3f4a1ee","to":"0x1177848589133f5c4e69edfcb18bbcd9cace72d1","value":"20000000000000000","gas":"90000","gasPrice":"59819612547","isError":"0","txreceipt_status":"","input":"0x","contractAddress":"","cumulativeGasUsed":"21000","gasUsed":"21000","confirmations":"19680558","methodId":"0x","functionName":""},{"blockNumber":"4341870","timeStamp":"1507291254","hash":"0xfadf1f12281ee2c0311055848b4ffc0046ac80afae4a9d3640b5f57bb8a7795a","nonce":"1","blockHash":"0xcaf90fed22daf044860acb68d62fc4d6794bd25af29d7382346943a004881340","transactionIndex":"86","from":"0x4193122032b38236825bba166f42e54fc3f4a1ee","to":"0x2b06e2ea21e184589853225888c93b9b8e0642f6","value":"78722788136513000","gas":"21000","gasPrice":"1000000000","isError":"0","txreceipt_status":"","input":"0x","contractAddress":"","cumulativeGasUsed":"1884112","gasUsed":"21000","confirmations":"15449799","methodId":"0x","functionName":""}]}'
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"110763","blockHash":"0xc28fb1d8364e58b7f43b187b6c56958164f75493e9c1a2d1fafc0a26ba430cd4","timeStamp":"1439979000","hash":"0x2964f3a91408337b05aeb8f8f670f4107999be05376e630742404664c96a5c31","nonce":"30","transactionIndex":"2","from":"0x976349705b839e2f5719387fb27d2519d519da03","to":"0x4193122032b38236825bba166f42e54fc3f4a1ee","value":"100000000000000000","gas":"90000","gasPrice":"57080649960","input":"0x","methodId":"0x","functionName":"","contractAddress":"","cumulativeGasUsed":"63000","txreceipt_status":"","gasUsed":"21000","confirmations":"22270748","isError":"0"},{"blockNumber":"111111","blockHash":"0xeee8b88724e7d5720d9079a0fa8f1cc9a173330063ddd022ebfec09a54cf50f7","timeStamp":"1439984825","hash":"0xb99a6e0b40f38c4887617bc1df560fde1d0456b712cb2bb1b52fdb8880d3cd74","nonce":"0","transactionIndex":"0","from":"0x4193122032b38236825bba166f42e54fc3f4a1ee","to":"0x1177848589133f5c4e69edfcb18bbcd9cace72d1","value":"20000000000000000","gas":"90000","gasPrice":"59819612547","input":"0x","methodId":"0x","functionName":"","contractAddress":"","cumulativeGasUsed":"21000","txreceipt_status":"","gasUsed":"21000","confirmations":"22270400","isError":"0"},{"blockNumber":"4341870","blockHash":"0xcaf90fed22daf044860acb68d62fc4d6794bd25af29d7382346943a004881340","timeStamp":"1507291254","hash":"0xfadf1f12281ee2c0311055848b4ffc0046ac80afae4a9d3640b5f57bb8a7795a","nonce":"1","transactionIndex":"86","from":"0x4193122032b38236825bba166f42e54fc3f4a1ee","to":"0x2b06e2ea21e184589853225888c93b9b8e0642f6","value":"78722788136513000","gas":"21000","gasPrice":"1000000000","input":"0x","methodId":"0x","functionName":"","contractAddress":"","cumulativeGasUsed":"1884112","txreceipt_status":"","gasUsed":"21000","confirmations":"18039641","isError":"0"}]}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
@@ -193,15 +213,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:29 GMT
+      - Wed, 30 Apr 2025 11:17:28 GMT
       Server:
       - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
       content-length:
       - '1809'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -215,9 +239,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&address=0x4193122032b38236825BBa166F42e54fc3F4A1EE&endBlock=19179448&module=account&sort=asc&startBlock=0
+    uri: https://api.etherscan.io/v2/api?action=txlistinternal&address=0x4193122032b38236825BBa166F42e54fc3F4A1EE&chainid=1&endBlock=19179448&module=account&sort=asc&startBlock=0
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -232,16 +256,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '60'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:30 GMT
+      - Wed, 30 Apr 2025 11:17:28 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '60'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -255,9 +285,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=tokentx&address=0x4193122032b38236825BBa166F42e54fc3F4A1EE&endBlock=19179448&module=account&sort=asc&startBlock=0
+    uri: https://api.etherscan.io/v2/api?action=tokentx&address=0x4193122032b38236825BBa166F42e54fc3F4A1EE&chainid=1&endBlock=19179448&module=account&sort=asc&startBlock=0
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -272,16 +302,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '60'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:31 GMT
+      - Wed, 30 Apr 2025 11:17:28 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '60'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -295,9 +331,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0x13684203a4bf07aaed0112983cb380db6004acac772af2a5d46cb2a28245fbad
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionByHash&chainid=1&module=proxy&txhash=0x13684203a4bf07aaed0112983cb380db6004acac772af2a5d46cb2a28245fbad
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0x0de4bf928f3bba9afc8ab48f52acac0fee806b62ae9850f718e5ab3198d12740","blockNumber":"0x1b1eb","from":"0xc47aaa860008be6f65b58c6c6e02a84e666efe31","gas":"0x15f90","gasPrice":"0xd9d2b70b9","hash":"0x13684203a4bf07aaed0112983cb380db6004acac772af2a5d46cb2a28245fbad","input":"0x","nonce":"0x64","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","transactionIndex":"0x0","value":"0x207bcf929faa08ca9","type":"0x0","v":"0x1c","r":"0x2e88b63be1b8f46bc89f8393926b4b7f1a5289ce2c7522f6ec539758d0f14c3a","s":"0x110e8587a7dde7399f1ad4316738a46bb0c06b73f50a0726618540351f21f0bf"}}
@@ -314,16 +350,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '613'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:31 GMT
+      - Wed, 30 Apr 2025 11:17:29 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '4'
+      content-length:
+      - '613'
+      svid:
+      - d1
     status:
       code: 200
       message: OK
@@ -337,12 +379,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x1b1eb
+    uri: https://api.etherscan.io/v2/api?action=eth_getBlockByNumber&boolean=true&chainid=1&module=proxy&tag=0x1b1eb
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":{"difficulty":"0x402aea8769d","extraData":"0x476574682f76312e302e312d38326566323666362f6c696e75782f676f312e34","gasLimit":"0x2fefd8","gasUsed":"0x5208","hash":"0x0de4bf928f3bba9afc8ab48f52acac0fee806b62ae9850f718e5ab3198d12740","logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","miner":"0xe6a7a1d47ff21b6321162aea7c6cb457d5476bca","mixHash":"0x556809b1c6ee6ad4cb6ade8ddf8dd5a6fa5a0dd2c5a2c002e5b523961d5939c1","nonce":"0xcde42d7cda3c0257","number":"0x1b1eb","parentHash":"0x4d2d239218d9a1164658c7d91f711f67889f7c3859b372fb8eec41365cf3e562","receiptsRoot":"0x1245b90390b946eb6642ed3b67b126e44d2fe166af165cd2007badf9162e4cc4","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0x298","stateRoot":"0xe1779bb8e195c99cb5cadf015b9209fbdc0fac9f23d5a69ec7f4f5c84125d3ed","timestamp":"0x55d46b18","totalDifficulty":"0x300fb0211d0c80b","transactions":[{"blockHash":"0x0de4bf928f3bba9afc8ab48f52acac0fee806b62ae9850f718e5ab3198d12740","blockNumber":"0x1b1eb","from":"0xc47aaa860008be6f65b58c6c6e02a84e666efe31","gas":"0x15f90","gasPrice":"0xd9d2b70b9","hash":"0x13684203a4bf07aaed0112983cb380db6004acac772af2a5d46cb2a28245fbad","input":"0x","nonce":"0x64","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","transactionIndex":"0x0","value":"0x207bcf929faa08ca9","type":"0x0","v":"0x1c","r":"0x2e88b63be1b8f46bc89f8393926b4b7f1a5289ce2c7522f6ec539758d0f14c3a","s":"0x110e8587a7dde7399f1ad4316738a46bb0c06b73f50a0726618540351f21f0bf"}],"transactionsRoot":"0x8dc7239fde12c089b828911fc31c01bece9798e746ade291a741391da0af41c8","uncles":[]}}
+      string: '{"jsonrpc":"2.0","id":1,"result":{"difficulty":"0x402aea8769d","extraData":"0x476574682f76312e302e312d38326566323666362f6c696e75782f676f312e34","gasLimit":"0x2fefd8","gasUsed":"0x5208","hash":"0x0de4bf928f3bba9afc8ab48f52acac0fee806b62ae9850f718e5ab3198d12740","logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","miner":"0xe6a7a1d47ff21b6321162aea7c6cb457d5476bca","mixHash":"0x556809b1c6ee6ad4cb6ade8ddf8dd5a6fa5a0dd2c5a2c002e5b523961d5939c1","nonce":"0xcde42d7cda3c0257","number":"0x1b1eb","parentHash":"0x4d2d239218d9a1164658c7d91f711f67889f7c3859b372fb8eec41365cf3e562","receiptsRoot":"0x1245b90390b946eb6642ed3b67b126e44d2fe166af165cd2007badf9162e4cc4","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0x298","stateRoot":"0xe1779bb8e195c99cb5cadf015b9209fbdc0fac9f23d5a69ec7f4f5c84125d3ed","timestamp":"0x55d46b18","transactions":[{"blockHash":"0x0de4bf928f3bba9afc8ab48f52acac0fee806b62ae9850f718e5ab3198d12740","blockNumber":"0x1b1eb","from":"0xc47aaa860008be6f65b58c6c6e02a84e666efe31","gas":"0x15f90","gasPrice":"0xd9d2b70b9","hash":"0x13684203a4bf07aaed0112983cb380db6004acac772af2a5d46cb2a28245fbad","input":"0x","nonce":"0x64","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","transactionIndex":"0x0","value":"0x207bcf929faa08ca9","type":"0x0","v":"0x1c","r":"0x2e88b63be1b8f46bc89f8393926b4b7f1a5289ce2c7522f6ec539758d0f14c3a","s":"0x110e8587a7dde7399f1ad4316738a46bb0c06b73f50a0726618540351f21f0bf"}],"transactionsRoot":"0x8dc7239fde12c089b828911fc31c01bece9798e746ade291a741391da0af41c8","uncles":[]}}
 
         '
     headers:
@@ -356,16 +398,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '2075'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:32 GMT
+      - Wed, 30 Apr 2025 11:17:30 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '4'
+      content-length:
+      - '2037'
+      svid:
+      - d1
     status:
       code: 200
       message: OK
@@ -379,9 +427,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x13684203a4bf07aaed0112983cb380db6004acac772af2a5d46cb2a28245fbad
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0x13684203a4bf07aaed0112983cb380db6004acac772af2a5d46cb2a28245fbad
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0x0de4bf928f3bba9afc8ab48f52acac0fee806b62ae9850f718e5ab3198d12740","blockNumber":"0x1b1eb","contractAddress":null,"cumulativeGasUsed":"0x5208","effectiveGasPrice":"0xd9d2b70b9","from":"0xc47aaa860008be6f65b58c6c6e02a84e666efe31","gasUsed":"0x5208","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0xb29770d07e3923d72bfb44873f728e7b9d7632f19d2f00590af8b4cf6f5d75f2","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","transactionHash":"0x13684203a4bf07aaed0112983cb380db6004acac772af2a5d46cb2a28245fbad","transactionIndex":"0x0","type":"0x0"}}
@@ -398,16 +446,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '1088'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:33 GMT
+      - Wed, 30 Apr 2025 11:17:31 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
+      content-length:
+      - '1088'
+      svid:
+      - '58'
     status:
       code: 200
       message: OK
@@ -421,9 +475,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0x13684203a4bf07aaed0112983cb380db6004acac772af2a5d46cb2a28245fbad
+    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=1&module=account&sort=asc&txHash=0x13684203a4bf07aaed0112983cb380db6004acac772af2a5d46cb2a28245fbad
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -438,16 +492,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '60'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:33 GMT
+      - Wed, 30 Apr 2025 11:17:31 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
+      content-length:
+      - '60'
+      svid:
+      - '58'
     status:
       code: 200
       message: OK
@@ -461,9 +521,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getTransactionByHash&module=proxy&txhash=0x2964f3a91408337b05aeb8f8f670f4107999be05376e630742404664c96a5c31
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionByHash&chainid=1&module=proxy&txhash=0x2964f3a91408337b05aeb8f8f670f4107999be05376e630742404664c96a5c31
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0xc28fb1d8364e58b7f43b187b6c56958164f75493e9c1a2d1fafc0a26ba430cd4","blockNumber":"0x1b0ab","from":"0x976349705b839e2f5719387fb27d2519d519da03","gas":"0x15f90","gasPrice":"0xd4a4598e8","hash":"0x2964f3a91408337b05aeb8f8f670f4107999be05376e630742404664c96a5c31","input":"0x","nonce":"0x1e","to":"0x4193122032b38236825bba166f42e54fc3f4a1ee","transactionIndex":"0x2","value":"0x16345785d8a0000","type":"0x0","v":"0x1b","r":"0x8d328d6644d32bc40183dc72d4a21732d83d085e7cb17247212acbe14d91a01d","s":"0x53d612ceba9fd978c001e1a47a07a1a0cba6590ac9df21229fd28c35adeb4d34"}}
@@ -480,16 +540,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '611'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:34 GMT
+      - Wed, 30 Apr 2025 11:17:33 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '611'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -503,12 +569,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getBlockByNumber&boolean=true&module=proxy&tag=0x1b0ab
+    uri: https://api.etherscan.io/v2/api?action=eth_getBlockByNumber&boolean=true&chainid=1&module=proxy&tag=0x1b0ab
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":{"difficulty":"0x3ffb7c52c45","extraData":"0x476574682f76312e302e312d38326566323666362f6c696e75782f676f312e34","gasLimit":"0x2fefd8","gasUsed":"0x14820","hash":"0xc28fb1d8364e58b7f43b187b6c56958164f75493e9c1a2d1fafc0a26ba430cd4","logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","miner":"0xe6a7a1d47ff21b6321162aea7c6cb457d5476bca","mixHash":"0x452334dd48dd199dba19927b9aff404feba83c83feb4eeef28697d1c5c285a4a","nonce":"0x4cd9cc2a70080ada","number":"0x1b0ab","parentHash":"0xd86252ecc5fa5086cb1bb33d13705c68855298508ade35df0c3248bcfd412186","receiptsRoot":"0xcddbe7c6d2a6eb2bb7a87f42cbeef94e771655f6916a88e1085f6b8d2f251ac1","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0x3e7","stateRoot":"0xaf047a2c05ba7f867534b024b2a54a38c6b91c30d423d82b55318c40cd789bb3","timestamp":"0x55d455f8","totalDifficulty":"0x2fbf8ac6bc67bd5","transactions":[{"blockHash":"0xc28fb1d8364e58b7f43b187b6c56958164f75493e9c1a2d1fafc0a26ba430cd4","blockNumber":"0x1b0ab","from":"0xa70a9a7040d542c632d8e0be7c5513a8a5bbc752","gas":"0x5208","gasPrice":"0xe6c8e4c1c","hash":"0xbe1db3e891c2b0d4b802e5c50ddd0d6c240bbe1050041be2e5c294057bdb55c2","input":"0x","nonce":"0x11e","to":"0x32be343b94f860124dc4fee278fdcbd38c102d88","transactionIndex":"0x0","value":"0x455ef24d3e552400","type":"0x0","v":"0x1c","r":"0x1e15e4988257b3174fad603ecd3dee11578bcf061b6c887db03023f6509ea228","s":"0x61430283ea798c9f649fb71ab38f32bbbb4e41c8e7954f47a88fa07f05def3bd"},{"blockHash":"0xc28fb1d8364e58b7f43b187b6c56958164f75493e9c1a2d1fafc0a26ba430cd4","blockNumber":"0x1b0ab","from":"0x976349705b839e2f5719387fb27d2519d519da03","gas":"0x15f90","gasPrice":"0xd4a4598e8","hash":"0xcfa7e7bdff19aa1f6e4deb415cab9ff628269b2669ad90923dd7e9f9fed111f9","input":"0x","nonce":"0x1d","to":"0xf8826dfd9f3f8d2cf1b2b14607cb82a223b9d7bb","transactionIndex":"0x1","value":"0x16345785d8a0000","type":"0x0","v":"0x1b","r":"0xa7d5338144167dff151bb089527157b82cc139c79c6fba2bd586088766c24543","s":"0x7dca2299dc2bd690b9deff23ee11d41630c736e52084e2861261aebca43bee3c"},{"blockHash":"0xc28fb1d8364e58b7f43b187b6c56958164f75493e9c1a2d1fafc0a26ba430cd4","blockNumber":"0x1b0ab","from":"0x976349705b839e2f5719387fb27d2519d519da03","gas":"0x15f90","gasPrice":"0xd4a4598e8","hash":"0x2964f3a91408337b05aeb8f8f670f4107999be05376e630742404664c96a5c31","input":"0x","nonce":"0x1e","to":"0x4193122032b38236825bba166f42e54fc3f4a1ee","transactionIndex":"0x2","value":"0x16345785d8a0000","type":"0x0","v":"0x1b","r":"0x8d328d6644d32bc40183dc72d4a21732d83d085e7cb17247212acbe14d91a01d","s":"0x53d612ceba9fd978c001e1a47a07a1a0cba6590ac9df21229fd28c35adeb4d34"},{"blockHash":"0xc28fb1d8364e58b7f43b187b6c56958164f75493e9c1a2d1fafc0a26ba430cd4","blockNumber":"0x1b0ab","from":"0x976349705b839e2f5719387fb27d2519d519da03","gas":"0x15f90","gasPrice":"0xd4a4598e8","hash":"0xf62d7aed0599efa0c26b6b44fbd53945fa1abbc3fd2e24bf88b0835eb71c5a32","input":"0x","nonce":"0x1f","to":"0x1177848589133f5c4e69edfcb18bbcd9cace72d1","transactionIndex":"0x3","value":"0x16345785d8a0000","type":"0x0","v":"0x1c","r":"0xb8d432cb2e7f30c2b9fd839370efdee15925641c292f4e35f69c5b1c995ed486","s":"0x3f2b81854e89a31c492cf0a038010a016f5f64edb1da6f09879808bf773ffc17"}],"transactionsRoot":"0xcc16cd4cf86c14f1d170b779b003f3402ee00541df3e636ed7c7998cabbd9ee5","uncles":[]}}
+      string: '{"jsonrpc":"2.0","id":1,"result":{"difficulty":"0x3ffb7c52c45","extraData":"0x476574682f76312e302e312d38326566323666362f6c696e75782f676f312e34","gasLimit":"0x2fefd8","gasUsed":"0x14820","hash":"0xc28fb1d8364e58b7f43b187b6c56958164f75493e9c1a2d1fafc0a26ba430cd4","logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","miner":"0xe6a7a1d47ff21b6321162aea7c6cb457d5476bca","mixHash":"0x452334dd48dd199dba19927b9aff404feba83c83feb4eeef28697d1c5c285a4a","nonce":"0x4cd9cc2a70080ada","number":"0x1b0ab","parentHash":"0xd86252ecc5fa5086cb1bb33d13705c68855298508ade35df0c3248bcfd412186","receiptsRoot":"0xcddbe7c6d2a6eb2bb7a87f42cbeef94e771655f6916a88e1085f6b8d2f251ac1","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0x3e7","stateRoot":"0xaf047a2c05ba7f867534b024b2a54a38c6b91c30d423d82b55318c40cd789bb3","timestamp":"0x55d455f8","transactions":[{"blockHash":"0xc28fb1d8364e58b7f43b187b6c56958164f75493e9c1a2d1fafc0a26ba430cd4","blockNumber":"0x1b0ab","from":"0xa70a9a7040d542c632d8e0be7c5513a8a5bbc752","gas":"0x5208","gasPrice":"0xe6c8e4c1c","hash":"0xbe1db3e891c2b0d4b802e5c50ddd0d6c240bbe1050041be2e5c294057bdb55c2","input":"0x","nonce":"0x11e","to":"0x32be343b94f860124dc4fee278fdcbd38c102d88","transactionIndex":"0x0","value":"0x455ef24d3e552400","type":"0x0","v":"0x1c","r":"0x1e15e4988257b3174fad603ecd3dee11578bcf061b6c887db03023f6509ea228","s":"0x61430283ea798c9f649fb71ab38f32bbbb4e41c8e7954f47a88fa07f05def3bd"},{"blockHash":"0xc28fb1d8364e58b7f43b187b6c56958164f75493e9c1a2d1fafc0a26ba430cd4","blockNumber":"0x1b0ab","from":"0x976349705b839e2f5719387fb27d2519d519da03","gas":"0x15f90","gasPrice":"0xd4a4598e8","hash":"0xcfa7e7bdff19aa1f6e4deb415cab9ff628269b2669ad90923dd7e9f9fed111f9","input":"0x","nonce":"0x1d","to":"0xf8826dfd9f3f8d2cf1b2b14607cb82a223b9d7bb","transactionIndex":"0x1","value":"0x16345785d8a0000","type":"0x0","v":"0x1b","r":"0xa7d5338144167dff151bb089527157b82cc139c79c6fba2bd586088766c24543","s":"0x7dca2299dc2bd690b9deff23ee11d41630c736e52084e2861261aebca43bee3c"},{"blockHash":"0xc28fb1d8364e58b7f43b187b6c56958164f75493e9c1a2d1fafc0a26ba430cd4","blockNumber":"0x1b0ab","from":"0x976349705b839e2f5719387fb27d2519d519da03","gas":"0x15f90","gasPrice":"0xd4a4598e8","hash":"0x2964f3a91408337b05aeb8f8f670f4107999be05376e630742404664c96a5c31","input":"0x","nonce":"0x1e","to":"0x4193122032b38236825bba166f42e54fc3f4a1ee","transactionIndex":"0x2","value":"0x16345785d8a0000","type":"0x0","v":"0x1b","r":"0x8d328d6644d32bc40183dc72d4a21732d83d085e7cb17247212acbe14d91a01d","s":"0x53d612ceba9fd978c001e1a47a07a1a0cba6590ac9df21229fd28c35adeb4d34"},{"blockHash":"0xc28fb1d8364e58b7f43b187b6c56958164f75493e9c1a2d1fafc0a26ba430cd4","blockNumber":"0x1b0ab","from":"0x976349705b839e2f5719387fb27d2519d519da03","gas":"0x15f90","gasPrice":"0xd4a4598e8","hash":"0xf62d7aed0599efa0c26b6b44fbd53945fa1abbc3fd2e24bf88b0835eb71c5a32","input":"0x","nonce":"0x1f","to":"0x1177848589133f5c4e69edfcb18bbcd9cace72d1","transactionIndex":"0x3","value":"0x16345785d8a0000","type":"0x0","v":"0x1c","r":"0xb8d432cb2e7f30c2b9fd839370efdee15925641c292f4e35f69c5b1c995ed486","s":"0x3f2b81854e89a31c492cf0a038010a016f5f64edb1da6f09879808bf773ffc17"}],"transactionsRoot":"0xcc16cd4cf86c14f1d170b779b003f3402ee00541df3e636ed7c7998cabbd9ee5","uncles":[]}}
 
         '
     headers:
@@ -522,16 +588,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '3806'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:35 GMT
+      - Wed, 30 Apr 2025 11:17:33 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '3768'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -545,9 +617,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x2964f3a91408337b05aeb8f8f670f4107999be05376e630742404664c96a5c31
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0x2964f3a91408337b05aeb8f8f670f4107999be05376e630742404664c96a5c31
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0xc28fb1d8364e58b7f43b187b6c56958164f75493e9c1a2d1fafc0a26ba430cd4","blockNumber":"0x1b0ab","contractAddress":null,"cumulativeGasUsed":"0xf618","effectiveGasPrice":"0xd4a4598e8","from":"0x976349705b839e2f5719387fb27d2519d519da03","gasUsed":"0x5208","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0x5a1f354b61d4c3bc4c0b0a7758f3f155957ffeb949bbdde103f7c60a46ac477f","to":"0x4193122032b38236825bba166f42e54fc3f4a1ee","transactionHash":"0x2964f3a91408337b05aeb8f8f670f4107999be05376e630742404664c96a5c31","transactionIndex":"0x2","type":"0x0"}}
@@ -564,16 +636,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '1088'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:36 GMT
+      - Wed, 30 Apr 2025 11:17:34 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '1088'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -587,9 +665,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0x2964f3a91408337b05aeb8f8f670f4107999be05376e630742404664c96a5c31
+    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=1&module=account&sort=asc&txHash=0x2964f3a91408337b05aeb8f8f670f4107999be05376e630742404664c96a5c31
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -604,16 +682,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '60'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:36 GMT
+      - Wed, 30 Apr 2025 11:17:34 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '60'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -627,9 +711,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x0ae8b470b4a69c7f6905b9ec09f50c8772821080d11ba0acc83ac23a7ccb4ad8
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0x0ae8b470b4a69c7f6905b9ec09f50c8772821080d11ba0acc83ac23a7ccb4ad8
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0x2bd10be8b6798468a7eaa567e187702cd6bb2263082ba6bd7b5622fe5d1d719e","blockNumber":"0x152ed8","contractAddress":null,"cumulativeGasUsed":"0x29194","effectiveGasPrice":"0x4a817c800","from":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","gasUsed":"0x524c","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0x47f0cadb0cab412da982011ad5e2f0db64ec28981e399202b1f327f84d4bdc1a","to":"0x2910543af39aba0cd09dbb2d50200b3e800a63d2","transactionHash":"0x0ae8b470b4a69c7f6905b9ec09f50c8772821080d11ba0acc83ac23a7ccb4ad8","transactionIndex":"0x7","type":"0x0"}}
@@ -646,16 +730,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '1090'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:38 GMT
+      - Wed, 30 Apr 2025 11:17:35 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '1090'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -669,9 +759,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x1737c9c49c4a6e545ae6f5960e5352f96b1aedf45f75ed7eb5c661ef956cebda
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0x1737c9c49c4a6e545ae6f5960e5352f96b1aedf45f75ed7eb5c661ef956cebda
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0x6ba3a54458bb7d4ea8ce906dbc23ae34402e0ee265e358f51172d17f7d9574dc","blockNumber":"0xb31ddc","contractAddress":null,"cumulativeGasUsed":"0x89978","effectiveGasPrice":"0x4116afe360","from":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","gasUsed":"0x7a8d","logs":[{"address":"0xfa52274dd61e1643d2205169732f29114bc240b3","topics":["0x56b138798bd325f6cc79f626c4644aa2fd6703ecb0ab0fb168f883caed75bf32","0x000000000000000000000000afb7ed3bebe50e0b62fa862faba93e7a46e59ca7","0x000000000000000000000000267be1c1d684f78cb4f6a176c4911b741e4ffdc0"],"data":"0x000000000000000000000000000000000000000000000000454149f6d73b7240","blockNumber":"0xb31ddc","transactionHash":"0x1737c9c49c4a6e545ae6f5960e5352f96b1aedf45f75ed7eb5c661ef956cebda","transactionIndex":"0xc","blockHash":"0x6ba3a54458bb7d4ea8ce906dbc23ae34402e0ee265e358f51172d17f7d9574dc","logIndex":"0xb","removed":false}],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000040000000000000080000004000000000000000000000000000000000000000000000000000000000000000000000000004000200000000000000800000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000100000000000000000100000000000000000000000000000000000000000000400000000000000000000000000000000","status":"0x1","to":"0xfa52274dd61e1643d2205169732f29114bc240b3","transactionHash":"0x1737c9c49c4a6e545ae6f5960e5352f96b1aedf45f75ed7eb5c661ef956cebda","transactionIndex":"0xc","type":"0x0"}}
@@ -688,16 +778,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '1631'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:38 GMT
+      - Wed, 30 Apr 2025 11:17:35 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '1631'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -711,9 +807,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x2f6f167e32e9cb1bef40b92e831c3f1d1cd0348bb72dcc723bde94f51944ebd6
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0x2f6f167e32e9cb1bef40b92e831c3f1d1cd0348bb72dcc723bde94f51944ebd6
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0x115741854f6062339ec5e9574fa82954c56c68d98d8ab7ced9f26fe4cb82157a","blockNumber":"0x383c8f","contractAddress":null,"cumulativeGasUsed":"0xf618","effectiveGasPrice":"0x4e3b29200","from":"0x4ad11d04ccd80a83d48096478b73d1e8e0ed49d6","gasUsed":"0x5208","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0x2c0a6aeafcfa254daa301b01e85d530cfb81313695dbefc07d1a8332ff232045","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","transactionHash":"0x2f6f167e32e9cb1bef40b92e831c3f1d1cd0348bb72dcc723bde94f51944ebd6","transactionIndex":"0x2","type":"0x0"}}
@@ -730,16 +826,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '1089'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:39 GMT
+      - Wed, 30 Apr 2025 11:17:36 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '1089'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -753,9 +855,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x3758b19c016e0a8d08b226f1bcbe58909b485bfd1d253d88eb069baad62ff80d
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0x3758b19c016e0a8d08b226f1bcbe58909b485bfd1d253d88eb069baad62ff80d
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0x1e9a001ff422a19c75e0d3f03e27177ad1067a96ea60049b2f298f21f4b5bc2e","blockNumber":"0xc772e3","contractAddress":null,"cumulativeGasUsed":"0xb61a45","effectiveGasPrice":"0x7ea8ed400","from":"0x919b6b42c1d83a70a9db5d32802d9aea86e3d1c8","gasUsed":"0x5208","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","transactionHash":"0x3758b19c016e0a8d08b226f1bcbe58909b485bfd1d253d88eb069baad62ff80d","transactionIndex":"0xa1","type":"0x0"}}
@@ -772,16 +874,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '1031'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:39 GMT
+      - Wed, 30 Apr 2025 11:17:36 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '1031'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -795,9 +903,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x4a8da9e3f64e8b5447aacaed09ee29045262482a071a669879119b7c378f0c9a
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0x4a8da9e3f64e8b5447aacaed09ee29045262482a071a669879119b7c378f0c9a
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0xf254368d137e9843e43ed25f8cd812d58a75780b27f1a1e6608dacaf54dc39bf","blockNumber":"0xc772e6","contractAddress":null,"cumulativeGasUsed":"0x3e3d00","effectiveGasPrice":"0xbc7fec08e","from":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","gasUsed":"0x870d","logs":[{"address":"0xfa52274dd61e1643d2205169732f29114bc240b3","topics":["0x56b138798bd325f6cc79f626c4644aa2fd6703ecb0ab0fb168f883caed75bf32","0x000000000000000000000000afb7ed3bebe50e0b62fa862faba93e7a46e59ca7","0x000000000000000000000000267be1c1d684f78cb4f6a176c4911b741e4ffdc0"],"data":"0x0000000000000000000000000000000000000000000000015aee9cf0fff81b00","blockNumber":"0xc772e6","transactionHash":"0x4a8da9e3f64e8b5447aacaed09ee29045262482a071a669879119b7c378f0c9a","transactionIndex":"0x33","blockHash":"0xf254368d137e9843e43ed25f8cd812d58a75780b27f1a1e6608dacaf54dc39bf","logIndex":"0x71","removed":false}],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000040000000000000080000004000000000000000000000000000000000000000000000000000000000000000000000000004000200000000000000800000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000100000000000000000100000000000000000000000000000000000000000000400000000000000000000000000000000","status":"0x1","to":"0xfa52274dd61e1643d2205169732f29114bc240b3","transactionHash":"0x4a8da9e3f64e8b5447aacaed09ee29045262482a071a669879119b7c378f0c9a","transactionIndex":"0x33","type":"0x0"}}
@@ -814,16 +922,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '1634'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:40 GMT
+      - Wed, 30 Apr 2025 11:17:37 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '1634'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -837,9 +951,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x507be341aa3fc47c42fc5abd570808870f694efe150dff7ae27d70d05016d6b7
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0x507be341aa3fc47c42fc5abd570808870f694efe150dff7ae27d70d05016d6b7
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0xd817f3944e0ea4972f24f7324223aeab691765f7f1791217a734b79a6b67503a","blockNumber":"0xad961b","contractAddress":null,"cumulativeGasUsed":"0x73b1e5","effectiveGasPrice":"0x746a52880","from":"0xdbc6c90a259f1353f79a2a34bda1ab2ef008bebc","gasUsed":"0x5208","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","transactionHash":"0x507be341aa3fc47c42fc5abd570808870f694efe150dff7ae27d70d05016d6b7","transactionIndex":"0x89","type":"0x0"}}
@@ -856,16 +970,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '1031'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:41 GMT
+      - Wed, 30 Apr 2025 11:17:37 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '1031'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -879,9 +999,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0x5d81f937ad37349f89dc6e9926988855bb6c6e1e00c683ee3b7cb7d7b09b5567
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0x5d81f937ad37349f89dc6e9926988855bb6c6e1e00c683ee3b7cb7d7b09b5567
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0xdffacb4a2be87534e2023b1ee90e8462b581f020487b6c2819d47079614ed79e","blockNumber":"0x383c9c","contractAddress":null,"cumulativeGasUsed":"0x14ce57","effectiveGasPrice":"0x4a817c800","from":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","gasUsed":"0x7905","logs":[{"address":"0xfa52274dd61e1643d2205169732f29114bc240b3","topics":["0x56b138798bd325f6cc79f626c4644aa2fd6703ecb0ab0fb168f883caed75bf32","0x000000000000000000000000afb7ed3bebe50e0b62fa862faba93e7a46e59ca7","0x000000000000000000000000267be1c1d684f78cb4f6a176c4911b741e4ffdc0"],"data":"0x0000000000000000000000000000000000000000000000005341cb9079004000","blockNumber":"0x383c9c","transactionHash":"0x5d81f937ad37349f89dc6e9926988855bb6c6e1e00c683ee3b7cb7d7b09b5567","transactionIndex":"0x16","blockHash":"0xdffacb4a2be87534e2023b1ee90e8462b581f020487b6c2819d47079614ed79e","logIndex":"0xf","removed":false}],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000040000000000000080000004000000000000000000000000000000000000000000000000000000000000000000000000004000200000000000000800000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000100000000000000000100000000000000000000000000000000000000000000400000000000000000000000000000000","root":"0xfdf74de464ce46137a02acf6cf0d19cf5582cdefad43f5254a17f797297a322f","to":"0xfa52274dd61e1643d2205169732f29114bc240b3","transactionHash":"0x5d81f937ad37349f89dc6e9926988855bb6c6e1e00c683ee3b7cb7d7b09b5567","transactionIndex":"0x16","type":"0x0"}}
@@ -898,16 +1018,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '1694'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:41 GMT
+      - Wed, 30 Apr 2025 11:17:38 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '1694'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -921,9 +1047,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xb99a6e0b40f38c4887617bc1df560fde1d0456b712cb2bb1b52fdb8880d3cd74
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0xb99a6e0b40f38c4887617bc1df560fde1d0456b712cb2bb1b52fdb8880d3cd74
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0xeee8b88724e7d5720d9079a0fa8f1cc9a173330063ddd022ebfec09a54cf50f7","blockNumber":"0x1b207","contractAddress":null,"cumulativeGasUsed":"0x5208","effectiveGasPrice":"0xded86d983","from":"0x4193122032b38236825bba166f42e54fc3f4a1ee","gasUsed":"0x5208","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0xbdf9a1f8c92522356aadde9fca4eb402b51775791f9f1e576622181aedc522c6","to":"0x1177848589133f5c4e69edfcb18bbcd9cace72d1","transactionHash":"0xb99a6e0b40f38c4887617bc1df560fde1d0456b712cb2bb1b52fdb8880d3cd74","transactionIndex":"0x0","type":"0x0"}}
@@ -940,16 +1066,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '1088'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:42 GMT
+      - Wed, 30 Apr 2025 11:17:38 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '1088'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -963,9 +1095,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xc34002ad5de69f6aba8227676718df9ee619bb3fe14b2b06d05f475eaf6b6005
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0xc34002ad5de69f6aba8227676718df9ee619bb3fe14b2b06d05f475eaf6b6005
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0x6e63dfa53da93ca5c5b5c0c546381989b48b618e294e132fd4a6f854c8fd62b9","blockNumber":"0xad961e","contractAddress":null,"cumulativeGasUsed":"0x85da2b","effectiveGasPrice":"0x8b3b93dc0","from":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","gasUsed":"0x7a8d","logs":[{"address":"0xfa52274dd61e1643d2205169732f29114bc240b3","topics":["0x56b138798bd325f6cc79f626c4644aa2fd6703ecb0ab0fb168f883caed75bf32","0x000000000000000000000000afb7ed3bebe50e0b62fa862faba93e7a46e59ca7","0x000000000000000000000000267be1c1d684f78cb4f6a176c4911b741e4ffdc0"],"data":"0x0000000000000000000000000000000000000000000000000ddb1f9dcdda9288","blockNumber":"0xad961e","transactionHash":"0xc34002ad5de69f6aba8227676718df9ee619bb3fe14b2b06d05f475eaf6b6005","transactionIndex":"0xe7","blockHash":"0x6e63dfa53da93ca5c5b5c0c546381989b48b618e294e132fd4a6f854c8fd62b9","logIndex":"0x86","removed":false}],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000040000000000000080000004000000000000000000000000000000000000000000000000000000000000000000000000004000200000000000000800000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000100000000000000000100000000000000000000000000000000000000000000400000000000000000000000000000000","status":"0x1","to":"0xfa52274dd61e1643d2205169732f29114bc240b3","transactionHash":"0xc34002ad5de69f6aba8227676718df9ee619bb3fe14b2b06d05f475eaf6b6005","transactionIndex":"0xe7","type":"0x0"}}
@@ -982,16 +1114,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '1634'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:42 GMT
+      - Wed, 30 Apr 2025 11:17:39 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '1634'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -1005,9 +1143,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xd8b76a45edb525b934865ebeb53efb43ab9e3ba486dfa2a53373d112a8b8912b
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0xd8b76a45edb525b934865ebeb53efb43ab9e3ba486dfa2a53373d112a8b8912b
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0xc245f19e3dd0efddaec4ae8e66e3ed5aa31922deaa62e52c8db2d00674f5138c","blockNumber":"0xb31dd9","contractAddress":null,"cumulativeGasUsed":"0xb81e98","effectiveGasPrice":"0x4e94914f00","from":"0x919b6b42c1d83a70a9db5d32802d9aea86e3d1c8","gasUsed":"0x5208","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","transactionHash":"0xd8b76a45edb525b934865ebeb53efb43ab9e3ba486dfa2a53373d112a8b8912b","transactionIndex":"0x109","type":"0x0"}}
@@ -1024,16 +1162,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '1033'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:43 GMT
+      - Wed, 30 Apr 2025 11:17:39 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '1033'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -1047,9 +1191,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xe58af420fd8430c061303e4c5bd2668fafbc0fd41078fa6aa01d7781c1dadc7a
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0xe58af420fd8430c061303e4c5bd2668fafbc0fd41078fa6aa01d7781c1dadc7a
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0x9b5eed04447644f5a3a0282a86ba28b5d488999c4249f499db95fc53f333f5b9","blockNumber":"0x14fe48","contractAddress":null,"cumulativeGasUsed":"0x5208","effectiveGasPrice":"0x4a817c800","from":"0x9e6316f44baeeee5d41a1070516cc5fa47baf227","gasUsed":"0x5208","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0xbb51d2ab1358499bbaf2cbfe8c911e256ce4819640565556b8141088da05d4fb","to":"0xafb7ed3bebe50e0b62fa862faba93e7a46e59ca7","transactionHash":"0xe58af420fd8430c061303e4c5bd2668fafbc0fd41078fa6aa01d7781c1dadc7a","transactionIndex":"0x0","type":"0x0"}}
@@ -1066,16 +1210,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '1089'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:44 GMT
+      - Wed, 30 Apr 2025 11:17:40 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '1089'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK
@@ -1089,9 +1239,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.32.3.dev24+g5933e9bd2.d20240403
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.etherscan.io/api?action=eth_getTransactionReceipt&module=proxy&txhash=0xfadf1f12281ee2c0311055848b4ffc0046ac80afae4a9d3640b5f57bb8a7795a
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0xfadf1f12281ee2c0311055848b4ffc0046ac80afae4a9d3640b5f57bb8a7795a
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0xcaf90fed22daf044860acb68d62fc4d6794bd25af29d7382346943a004881340","blockNumber":"0x42406e","contractAddress":null,"cumulativeGasUsed":"0x1cbfd0","effectiveGasPrice":"0x3b9aca00","from":"0x4193122032b38236825bba166f42e54fc3f4a1ee","gasUsed":"0x5208","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0xe4752913d03695544fd757d03f4b0d3a8fda392105c5f442a53a40b36a95c9d4","to":"0x2b06e2ea21e184589853225888c93b9b8e0642f6","transactionHash":"0xfadf1f12281ee2c0311055848b4ffc0046ac80afae4a9d3640b5f57bb8a7795a","transactionIndex":"0x56","type":"0x0"}}
@@ -1108,16 +1258,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '1091'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 03 May 2024 19:27:44 GMT
+      - Wed, 30 Apr 2025 11:17:40 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '1091'
+      svid:
+      - '15'
     status:
       code: 200
       message: OK

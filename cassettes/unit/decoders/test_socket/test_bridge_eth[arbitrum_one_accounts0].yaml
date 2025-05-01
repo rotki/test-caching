@@ -9,9 +9,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev258+g36694cd1f
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.arbiscan.io/api?module=proxy&action=eth_getTransactionByHash&txhash=0xb1e29bebca0300ff02ee478dfa6c0c2197169761e1c0dcc87418c53a6530d3a5&apikey=VQUFYKKJR4RK8HFHYIJ9I93FIUVP44TN99
+    uri: https://api.etherscan.io/v2/api?module=proxy&action=eth_getTransactionByHash&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4&chainid=42161&txhash=0xb1e29bebca0300ff02ee478dfa6c0c2197169761e1c0dcc87418c53a6530d3a5
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0x2fe177f403f9696d7098d14e2c45cba81a3db078d6fbaf5ca549c05d94e21801","blockNumber":"0x82b75ed","from":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","gas":"0xcaa90","gasPrice":"0x5f5e100","hash":"0xb1e29bebca0300ff02ee478dfa6c0c2197169761e1c0dcc87418c53a6530d3a5","input":"0x0000018476cfd5d0000000000000000000000000000000000000000000000000002386f26fc10000000000000000000000000000000000000000000000000000000000000000210500000000000000000000000000000000000000000000000000000000000000cd000000000000000000000000c37b40abdb939635068d3c5f13e7faf686f03b6500000000000000000000000000000000000000000000000000000000651be9a40000000000000000000000000000000000000000000000000043f92de891b7e0","nonce":"0x37","to":"0x3a23f943181408eac424116af7b7790c94cb97a5","transactionIndex":"0x1","value":"0x2386f26fc10000","type":"0x0","chainId":"0xa4b1","v":"0x14986","r":"0x6c8db1ff1bda8c0b0dcbf4d4487761c60d55d4eb10b87341f83d19816372a05","s":"0x74672d365b4b0590678a3a2db215d3dc2cbcdd7fa24e34b0039a1b91e1991688"}}
@@ -24,10 +24,6 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 8492187e9f5e6689-MAD
       Cache-Control:
       - private
       Connection:
@@ -35,21 +31,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 21 Jan 2024 19:52:06 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2Fr0Njn01W2oZCDGeLAU8I7PpTc%2BgtnaJ3WICUYZIp%2BfIqu5IQBc8qSK9ZgwzPRiBPRqvTedcj%2Fi1pv3chqe6D5TWkcMqrQVfwrEpyT7VGP1r%2B0iFenJH51C2rVBbhIv0S9bir4N4oQaGO%2FRzaw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      - Tue, 29 Apr 2025 13:24:02 GMT
       Server:
-      - cloudflare
+      - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400
+      X-Nginx-Id:
+      - '3'
       content-length:
       - '1031'
+      svid:
+      - arb1
     status:
       code: 200
       message: OK
@@ -63,9 +57,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev258+g36694cd1f
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.arbiscan.io/api?module=proxy&action=eth_getBlockByNumber&tag=0x82b75ed&boolean=true&apikey=VQUFYKKJR4RK8HFHYIJ9I93FIUVP44TN99
+    uri: https://api.etherscan.io/v2/api?module=proxy&action=eth_getBlockByNumber&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4&chainid=42161&tag=0x82b75ed&boolean=true
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"baseFeePerGas":"0x5f5e100","difficulty":"0x1","extraData":"0x0b2c725709456d3500bca2343a9a5ae2718487d5d19a3930bac9de2cb0ac9032","gasLimit":"0x4000000000000","gasUsed":"0x71820","hash":"0x2fe177f403f9696d7098d14e2c45cba81a3db078d6fbaf5ca549c05d94e21801","l1BlockNumber":"0x116c4d4","logsBloom":"0x00000000000100000000000000000000000000000000000000000000000000040000000000000000000004000000000020004000000000000401000000000000000000010000000000000008400000000001000000000000000000000000000000010000020000000000000400000800000000000000000000000010000000000000000000000000000000000000000000000001000000000000000020000000000000040000000000000000000000000000000002200100000000000000000000000002000000000000000000008000000000000000000000000000002020000000000000028008000080000000000000101000000000000000000000000000","miner":"0xa4b000000000000000000073657175656e636572","mixHash":"0x0000000000016a9f000000000116c4d4000000000000000a0000000000000000","nonce":"0x000000000010e778","number":"0x82b75ed","parentHash":"0x37dab00027552c1eaf770b883e4bf5b9e448bc4aadc03973a99fc8bd8379f833","receiptsRoot":"0x380b44cba24b4a3a5185660db7e942ff685e36233f80f913512912d4322fb68d","sendCount":"0x16a9f","sendRoot":"0x0b2c725709456d3500bca2343a9a5ae2718487d5d19a3930bac9de2cb0ac9032","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0x3f6","stateRoot":"0xd08c773a089fd491d15c232be7106abe45a0bab3c46eb0ce315819af42521014","timestamp":"0x651bebd1","totalDifficulty":"0x6d898a5","transactions":[{"blockHash":"0x2fe177f403f9696d7098d14e2c45cba81a3db078d6fbaf5ca549c05d94e21801","blockNumber":"0x82b75ed","from":"0x00000000000000000000000000000000000a4b05","gas":"0x0","gasPrice":"0x0","hash":"0x8af5e0d92a4d3731960d16783c106f7c68797cee254b74616e5a559475ee53d9","input":"0x6bf6a42d0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000116c4d400000000000000000000000000000000000000000000000000000000082b75ed0000000000000000000000000000000000000000000000000000000000000001","nonce":"0x0","to":"0x00000000000000000000000000000000000a4b05","transactionIndex":"0x0","value":"0x0","type":"0x6a","chainId":"0xa4b1","v":"0x0","r":"0x0","s":"0x0"},{"blockHash":"0x2fe177f403f9696d7098d14e2c45cba81a3db078d6fbaf5ca549c05d94e21801","blockNumber":"0x82b75ed","from":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","gas":"0xcaa90","gasPrice":"0x5f5e100","hash":"0xb1e29bebca0300ff02ee478dfa6c0c2197169761e1c0dcc87418c53a6530d3a5","input":"0x0000018476cfd5d0000000000000000000000000000000000000000000000000002386f26fc10000000000000000000000000000000000000000000000000000000000000000210500000000000000000000000000000000000000000000000000000000000000cd000000000000000000000000c37b40abdb939635068d3c5f13e7faf686f03b6500000000000000000000000000000000000000000000000000000000651be9a40000000000000000000000000000000000000000000000000043f92de891b7e0","nonce":"0x37","to":"0x3a23f943181408eac424116af7b7790c94cb97a5","transactionIndex":"0x1","value":"0x2386f26fc10000","type":"0x0","chainId":"0xa4b1","v":"0x14986","r":"0x6c8db1ff1bda8c0b0dcbf4d4487761c60d55d4eb10b87341f83d19816372a05","s":"0x74672d365b4b0590678a3a2db215d3dc2cbcdd7fa24e34b0039a1b91e1991688"}],"transactionsRoot":"0xeeb3b00febef603761065992b61be203ab7b7f60409b6a155e1165233dd16023","uncles":[]}}
@@ -78,10 +72,6 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 8492187ff9866665-MAD
       Cache-Control:
       - private
       Connection:
@@ -89,21 +79,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 21 Jan 2024 19:52:06 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=GQfyuB5R58zTm6KA5uPmmtQVKCIOPlwy5pfHyOwN7suq8rlguUdFWfkvFm8%2FwnyBPjJ8vTt1NkXW1MOY4IZbzf6BtVQkWte7Xc%2BBg6yhGcisSQqDgyBLLBli9w2a9iDDRie%2BkY64A0kCDxUyyA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      - Tue, 29 Apr 2025 13:24:03 GMT
       Server:
-      - cloudflare
+      - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400
+      X-Nginx-Id:
+      - '3'
       content-length:
       - '3352'
+      svid:
+      - arb1
     status:
       code: 200
       message: OK
@@ -117,9 +105,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev258+g36694cd1f
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.arbiscan.io/api?module=proxy&action=eth_getTransactionReceipt&txhash=0xb1e29bebca0300ff02ee478dfa6c0c2197169761e1c0dcc87418c53a6530d3a5&apikey=VQUFYKKJR4RK8HFHYIJ9I93FIUVP44TN99
+    uri: https://api.etherscan.io/v2/api?module=proxy&action=eth_getTransactionReceipt&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4&chainid=42161&txhash=0xb1e29bebca0300ff02ee478dfa6c0c2197169761e1c0dcc87418c53a6530d3a5
   response:
     body:
       string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0x2fe177f403f9696d7098d14e2c45cba81a3db078d6fbaf5ca549c05d94e21801","blockNumber":"0x82b75ed","contractAddress":null,"cumulativeGasUsed":"0x71820","effectiveGasPrice":"0x5f5e100","from":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","gasUsed":"0x71820","gasUsedForL1":"0x59efa","l1BlockNumber":"0x116c4d4","logs":[{"address":"0x82af49447d8a07e3bd95bd0d56f35241523fbab1","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x0000000000000000000000000000000000000000000000000000000000000000","0x000000000000000000000000e35e9842fceaca96570b734083f4a58e8f7c5f2a"],"data":"0x000000000000000000000000000000000000000000000000002386f26fc10000","blockNumber":"0x82b75ed","transactionHash":"0xb1e29bebca0300ff02ee478dfa6c0c2197169761e1c0dcc87418c53a6530d3a5","transactionIndex":"0x1","blockHash":"0x2fe177f403f9696d7098d14e2c45cba81a3db078d6fbaf5ca549c05d94e21801","logIndex":"0x0","removed":false},{"address":"0xe35e9842fceaca96570b734083f4a58e8f7c5f2a","topics":["0xafc4df6845a4ab948b492800d3d8a25d538a102a2bc07cd01f1cfa097fddcff6","0x0000000000000000000000000000000000000000000000000000000000002105","0x0000000000000000000000000000000000000000000000000000000000116df2","0x0000000000000000000000003a23f943181408eac424116af7b7790c94cb97a5"],"data":"0x000000000000000000000000000000000000000000000000002386f26fc10000000000000000000000000000000000000000000000000000000000000000a4b10000000000000000000000000000000000000000000000000043f92de891b7e000000000000000000000000000000000000000000000000000000000651be9a400000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab1000000000000000000000000c37b40abdb939635068d3c5f13e7faf686f03b6500000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000000","blockNumber":"0x82b75ed","transactionHash":"0xb1e29bebca0300ff02ee478dfa6c0c2197169761e1c0dcc87418c53a6530d3a5","transactionIndex":"0x1","blockHash":"0x2fe177f403f9696d7098d14e2c45cba81a3db078d6fbaf5ca549c05d94e21801","logIndex":"0x1","removed":false},{"address":"0x3a23f943181408eac424116af7b7790c94cb97a5","topics":["0x74594da9e31ee4068e17809037db37db496702bf7d8d63afe6f97949277d1609"],"data":"0x000000000000000000000000000000000000000000000000002386f26fc10000000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee0000000000000000000000000000000000000000000000000000000000002105709f58818bedd58450336213e1f2f6ff7405a2b1e594f64270a17b7e2249419c000000000000000000000000c37b40abdb939635068d3c5f13e7faf686f03b65000000000000000000000000c37b40abdb939635068d3c5f13e7faf686f03b6500000000000000000000000000000000000000000000000000000000000000cd","blockNumber":"0x82b75ed","transactionHash":"0xb1e29bebca0300ff02ee478dfa6c0c2197169761e1c0dcc87418c53a6530d3a5","transactionIndex":"0x1","blockHash":"0x2fe177f403f9696d7098d14e2c45cba81a3db078d6fbaf5ca549c05d94e21801","logIndex":"0x2","removed":false}],"logsBloom":"0x00000000000100000000000000000000000000000000000000000000000000040000000000000000000004000000000020004000000000000401000000000000000000010000000000000008400000000001000000000000000000000000000000010000020000000000000400000800000000000000000000000010000000000000000000000000000000000000000000000001000000000000000020000000000000040000000000000000000000000000000002200100000000000000000000000002000000000000000000008000000000000000000000000000002020000000000000028008000080000000000000101000000000000000000000000000","status":"0x1","to":"0x3a23f943181408eac424116af7b7790c94cb97a5","transactionHash":"0xb1e29bebca0300ff02ee478dfa6c0c2197169761e1c0dcc87418c53a6530d3a5","transactionIndex":"0x1","type":"0x0"}}
@@ -132,10 +120,6 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 849218832b93691c-LIS
       Cache-Control:
       - private
       Connection:
@@ -143,21 +127,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 21 Jan 2024 19:52:07 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=cdtKULpo%2FT5mxZKsl%2BdJk3MiRuBJ15W%2B%2BIPZYtYtggp38i0kB8W%2FeDaiienPIwSdCqhxg%2Fbuz58VwFGHvMv8m5uzbruVlBzVkrezA2ECtGoh%2Fb1dOBJn15lK4eog9Ptg3jo%2BLUw1ftNnbWTolA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      - Tue, 29 Apr 2025 13:24:04 GMT
       Server:
-      - cloudflare
+      - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400
+      X-Nginx-Id:
+      - '3'
       content-length:
       - '3653'
+      svid:
+      - arb2
     status:
       code: 200
       message: OK
@@ -171,9 +153,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.3.dev258+g36694cd1f
+      - rotki/1.38.2.dev249+g57d353120.d20250419
     method: GET
-    uri: https://api.arbiscan.io/api?module=account&action=txlistinternal&sort=asc&txHash=0xb1e29bebca0300ff02ee478dfa6c0c2197169761e1c0dcc87418c53a6530d3a5&apikey=VQUFYKKJR4RK8HFHYIJ9I93FIUVP44TN99
+    uri: https://api.etherscan.io/v2/api?module=account&action=txlistinternal&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4&chainid=42161&sort=asc&txHash=0xb1e29bebca0300ff02ee478dfa6c0c2197169761e1c0dcc87418c53a6530d3a5
   response:
     body:
       string: '{"status":"1","message":"OK","result":[{"blockNumber":"137065965","timeStamp":"1696328657","from":"0x3a23f943181408eac424116af7b7790c94cb97a5","to":"0xe35e9842fceaca96570b734083f4a58e8f7c5f2a","value":"10000000000000000","contractAddress":"","input":"","type":"call","gas":"410489","gasUsed":"58566","isError":"0","errCode":""},{"blockNumber":"137065965","timeStamp":"1696328657","from":"0xe35e9842fceaca96570b734083f4a58e8f7c5f2a","to":"0x82af49447d8a07e3bd95bd0d56f35241523fbab1","value":"10000000000000000","contractAddress":"","input":"","type":"call","gas":"364287","gasUsed":"19811","isError":"0","errCode":""}]}'
@@ -184,10 +166,6 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 8492188518a06611-MAD
       Cache-Control:
       - private
       Connection:
@@ -195,21 +173,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 21 Jan 2024 19:52:07 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5QCb5BLLbyikzTyxwgelMgFS%2FIEzcfRI7nESnkA29K%2BZu4UmmdqsAD2PJUoGLmVGcxD4DC35lmbZ10ki7b3WjC4DJwBS3jc3fUeiSf0lDwP4ueetG4CJ%2FosAo5uh%2BH0M3u2rq0MiL3mKzobEbg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      - Tue, 29 Apr 2025 13:24:04 GMT
       Server:
-      - cloudflare
+      - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400
+      X-Nginx-Id:
+      - '3'
       content-length:
       - '618'
+      svid:
+      - arb1
     status:
       code: 200
       message: OK
