@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.38.2.dev249+g57d353120.d20250419
+      - rotki/1.38.3.dev204+gcd9b2b93f
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getTransactionByHash&chainid=8453&module=proxy&txhash=0x2029ab1ad9985a21c8a064be8384b531d55864f37f16a1716a00da8577891aab
   response:
@@ -26,20 +26,22 @@ interactions:
       - private
       Connection:
       - keep-alive
-      Content-Length:
-      - '1035'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 29 Apr 2025 13:14:26 GMT
+      - Tue, 06 May 2025 18:29:25 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '2'
+      - '4'
+      content-length:
+      - '1035'
       svid:
-      - base2new
+      - baseelastic2
     status:
       code: 200
       message: OK
@@ -53,7 +55,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.38.2.dev249+g57d353120.d20250419
+      - rotki/1.38.3.dev204+gcd9b2b93f
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getBlockByNumber&boolean=true&chainid=8453&module=proxy&tag=0x10752ad
   response:
@@ -73,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 29 Apr 2025 13:14:26 GMT
+      - Tue, 06 May 2025 18:29:26 GMT
       Server:
       - nginx
       Vary:
@@ -99,7 +101,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.38.2.dev249+g57d353120.d20250419
+      - rotki/1.38.3.dev204+gcd9b2b93f
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=8453&module=proxy&txhash=0x2029ab1ad9985a21c8a064be8384b531d55864f37f16a1716a00da8577891aab
   response:
@@ -116,22 +118,20 @@ interactions:
       - private
       Connection:
       - keep-alive
+      Content-Length:
+      - '8347'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 29 Apr 2025 13:14:27 GMT
+      - Tue, 06 May 2025 18:29:26 GMT
       Server:
       - nginx
-      Vary:
-      - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '2'
-      content-length:
-      - '8347'
+      - '3'
       svid:
-      - baseelastic2
+      - base2new
     status:
       code: 200
       message: OK
@@ -145,7 +145,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.38.2.dev249+g57d353120.d20250419
+      - rotki/1.38.3.dev204+gcd9b2b93f
     method: GET
     uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=8453&module=account&sort=asc&txHash=0x2029ab1ad9985a21c8a064be8384b531d55864f37f16a1716a00da8577891aab
   response:
@@ -165,7 +165,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 29 Apr 2025 13:14:27 GMT
+      - Tue, 06 May 2025 18:29:26 GMT
       Server:
       - nginx
       Vary:
@@ -173,11 +173,101 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '2'
+      - '5'
       content-length:
       - '887'
       svid:
       - baseelastic2
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.38.3.dev204+gcd9b2b93f
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=8453&module=account&sort=asc&txHash=0x2029ab1ad9985a21c8a064be8384b531d55864f37f16a1716a00da8577891aab
+  response:
+    body:
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"17257133","timeStamp":"1721303613","from":"0x4200000000000000000000000000000000000006","to":"0xfb2139331532e3ee59777fbbcb14af674f3fd671","value":"3163240870272189","contractAddress":"","input":"","type":"call","gas":"2300","gasUsed":"55","isError":"0","errCode":""},{"blockNumber":"17257133","timeStamp":"1721303613","from":"0xfb2139331532e3ee59777fbbcb14af674f3fd671","to":"0x19ceead7105607cd444f5ad10dd51356436095a1","value":"3163240870272189","contractAddress":"","input":"","type":"call","gas":"2300","gasUsed":"55","isError":"0","errCode":""},{"blockNumber":"17257133","timeStamp":"1721303613","from":"0x19ceead7105607cd444f5ad10dd51356436095a1","to":"0x19b43787fbc106d427be3ca3307d4fb0a73d83dc","value":"3163240870272189","contractAddress":"","input":"","type":"call","gas":"365039","gasUsed":"0","isError":"0","errCode":""}]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 06 May 2025 18:29:26 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '4'
+      content-length:
+      - '887'
+      svid:
+      - baseelastic2
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.38.3.dev204+gcd9b2b93f
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=8453&module=account&sort=asc&txHash=0x2029ab1ad9985a21c8a064be8384b531d55864f37f16a1716a00da8577891aab
+  response:
+    body:
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"17257133","timeStamp":"1721303613","from":"0x4200000000000000000000000000000000000006","to":"0xfb2139331532e3ee59777fbbcb14af674f3fd671","value":"3163240870272189","contractAddress":"","input":"","type":"call","gas":"2300","gasUsed":"55","isError":"0","errCode":""},{"blockNumber":"17257133","timeStamp":"1721303613","from":"0xfb2139331532e3ee59777fbbcb14af674f3fd671","to":"0x19ceead7105607cd444f5ad10dd51356436095a1","value":"3163240870272189","contractAddress":"","input":"","type":"call","gas":"2300","gasUsed":"55","isError":"0","errCode":""},{"blockNumber":"17257133","timeStamp":"1721303613","from":"0x19ceead7105607cd444f5ad10dd51356436095a1","to":"0x19b43787fbc106d427be3ca3307d4fb0a73d83dc","value":"3163240870272189","contractAddress":"","input":"","type":"call","gas":"365039","gasUsed":"0","isError":"0","errCode":""}]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '887'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 06 May 2025 18:29:26 GMT
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '2'
+      svid:
+      - base2new
     status:
       code: 200
       message: OK
