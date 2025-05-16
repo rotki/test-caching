@@ -1738,6 +1738,52 @@ interactions:
       content-length:
       - '103'
       svid:
+      - bsc4
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.38.1.dev39+g854e30dfe.d20250311
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=56&data=0x1a686502&module=proxy&to=0x7862D9B4bE2156B15d54F41ee4EDE2d5b0b455e4
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000004fbab7e6f685170450e3"}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 25 Mar 2025 11:37:42 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      content-length:
+      - '103'
+      svid:
       - bsc13
     status:
       code: 200
