@@ -134,7 +134,7 @@ interactions:
       User-Agent:
       - rotki/0.1.dev14880+gffc31b0.d20240415
     method: GET
-    uri: https://api.arbiscan.io/api?action=eth_blockNumber&module=proxy
+    uri: https://api.etherscan.io/v2/api?action=eth_blockNumber&chainid=42161&module=proxy
   response:
     body:
       string: '{"jsonrpc":"2.0","id":83,"result":"0xc25a2d8"}
@@ -396,7 +396,7 @@ interactions:
       User-Agent:
       - rotki/0.1.dev14880+gffc31b0.d20240415
     method: GET
-    uri: https://api.arbiscan.io/api?action=txlistinternal&module=account&sort=asc&txHash=0x3c846f305330969fb0ddb87c5ae411b4e9692f451a7ff3237b6f71020030c7d1
+    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=42161&module=account&sort=asc&txHash=0x3c846f305330969fb0ddb87c5ae411b4e9692f451a7ff3237b6f71020030c7d1
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
