@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/0.1.dev14880+gffc31b0.d20240415
+      - rotki/1.38.1.dev83+gde864f7da
     method: GET
     uri: https://api.etherscan.io/v2/api?action=getblocknobytime&chainid=100&closest=before&module=block&timestamp=1714733100
   response:
@@ -22,10 +22,6 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 8800d1bfda7cf2ba-BOM
       Cache-Control:
       - private
       Connection:
@@ -33,21 +29,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 07 May 2024 11:20:12 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=bjcxkX%2BLOtvESxJvyfEvaCNxDXPdKljYvvYjWuNCE0fy67K9Eha69DN5OfUJutQtd26bkqn%2B7ky10OBplOJyqRo1WuzeiDJLGHihMXWw0cMrbuf0YqiMkwHN%2B4zFs2AZCXJU"}],"group":"cf-nel","max_age":604800}'
+      - Mon, 19 May 2025 14:26:26 GMT
       Server:
-      - cloudflare
+      - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400
+      X-Nginx-Id:
+      - '3'
       content-length:
       - '49'
+      svid:
+      - gnosis1
     status:
       code: 200
       message: OK
@@ -61,13 +55,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/0.1.dev14880+gffc31b0.d20240415
+      - rotki/1.38.1.dev83+gde864f7da
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=tokentx&chainid=100&address=0xF5d90Ac6747CB3352F05BF61f48b991ACeaE28eB&endBlock=33754669&module=account&sort=asc&startBlock=0
+    uri: https://api.etherscan.io/v2/api?action=tokentx&address=0xF5d90Ac6747CB3352F05BF61f48b991ACeaE28eB&chainid=100&endBlock=33754669&module=account&sort=asc&startBlock=0
   response:
     body:
-      string: "{\"status\":\"1\",\"message\":\"OK\",\"result\":[{\"blockNumber\":\"31261542\",\"timeStamp\":\"1701636825\",\"hash\":\"0x6dd944a617253bc297bb6b60a9fbe2dcd821883b4c1df1f2e003d8fab155205f\",\"nonce\":\"59410\",\"blockHash\":\"0x6ab6a53e289df8b795e929d08a525bfb47510a011de6d3a2690c85962480dd61\",\"from\":\"0xddafbb505ad214d7b80b1f830fccc89b60fb7a83\",\"contractAddress\":\"0xc1bec4618b212441e367ed363540d5d665e8e4f0\",\"to\":\"0xf5d90ac6747cb3352f05bf61f48b991aceae28eb\",\"value\":\"1000\",\"tokenName\":\"USD-SWAP\u02F3COM\",\"tokenSymbol\":\"USDC\",\"tokenDecimal\":\"0\",\"transactionIndex\":\"8\",\"gas\":\"1696053\",\"gasPrice\":\"3749893366\",\"gasUsed\":\"1693852\",\"cumulativeGasUsed\":\"3975099\",\"input\":\"deprecated\",\"confirmations\":\"2560853\"},{\"blockNumber\":\"33722392\",\"timeStamp\":\"1714564705\",\"hash\":\"0x3d4ce2ccb0a646569409305286cf824043f6eff502070b7b1f886e3ecb1e3ac3\",\"nonce\":\"18073\",\"blockHash\":\"0x1ed6cfb3c04b80285f723a71d8c164c3661c36017cf781bb8aafd824c72b30cd\",\"from\":\"0xd9c242f6ca08fe45c58ca9e9a8558cfe7497e7c2\",\"contractAddress\":\"0x8786b9c1a0c676b191284a4bc7e448321197bb05\",\"to\":\"0xf5d90ac6747cb3352f05bf61f48b991aceae28eb\",\"value\":\"150000000000000000000\",\"tokenName\":\"https://zirclut.xyz/
-        ( Airdrop Voucher )\",\"tokenSymbol\":\"Claim by link: zirclut.xyz\",\"tokenDecimal\":\"18\",\"transactionIndex\":\"7\",\"gas\":\"75493\",\"gasPrice\":\"2300001562\",\"gasUsed\":\"68630\",\"cumulativeGasUsed\":\"10427454\",\"input\":\"deprecated\",\"confirmations\":\"100003\"}]}"
+      string: "{\"status\":\"1\",\"message\":\"OK\",\"result\":[{\"blockNumber\":\"31261542\",\"timeStamp\":\"1701636825\",\"hash\":\"0x6dd944a617253bc297bb6b60a9fbe2dcd821883b4c1df1f2e003d8fab155205f\",\"nonce\":\"59410\",\"blockHash\":\"0x6ab6a53e289df8b795e929d08a525bfb47510a011de6d3a2690c85962480dd61\",\"from\":\"0xddafbb505ad214d7b80b1f830fccc89b60fb7a83\",\"contractAddress\":\"0xc1bec4618b212441e367ed363540d5d665e8e4f0\",\"to\":\"0xf5d90ac6747cb3352f05bf61f48b991aceae28eb\",\"value\":\"1000\",\"tokenName\":\"USD-SWAP\u02F3COM\",\"tokenSymbol\":\"USDC\",\"tokenDecimal\":\"0\",\"transactionIndex\":\"8\",\"gas\":\"1696053\",\"gasPrice\":\"3749893366\",\"gasUsed\":\"1693852\",\"cumulativeGasUsed\":\"3975099\",\"input\":\"deprecated\",\"confirmations\":\"8881147\"},{\"blockNumber\":\"33722392\",\"timeStamp\":\"1714564705\",\"hash\":\"0x3d4ce2ccb0a646569409305286cf824043f6eff502070b7b1f886e3ecb1e3ac3\",\"nonce\":\"18073\",\"blockHash\":\"0x1ed6cfb3c04b80285f723a71d8c164c3661c36017cf781bb8aafd824c72b30cd\",\"from\":\"0xd9c242f6ca08fe45c58ca9e9a8558cfe7497e7c2\",\"contractAddress\":\"0x8786b9c1a0c676b191284a4bc7e448321197bb05\",\"to\":\"0xf5d90ac6747cb3352f05bf61f48b991aceae28eb\",\"value\":\"150000000000000000000\",\"tokenName\":\"https://zirclut.xyz/
+        ( Airdrop Voucher )\",\"tokenSymbol\":\"Claim by link: zirclut.xyz\",\"tokenDecimal\":\"18\",\"transactionIndex\":\"7\",\"gas\":\"75493\",\"gasPrice\":\"2300001562\",\"gasUsed\":\"68630\",\"cumulativeGasUsed\":\"10427454\",\"input\":\"deprecated\",\"confirmations\":\"6420297\"}]}"
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
@@ -75,10 +69,6 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 8800d1c3db343a16-BOM
       Cache-Control:
       - private
       Connection:
@@ -86,21 +76,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 07 May 2024 11:20:12 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=tEUgZECQ7J1uyIHOJY45QD9KGhCSzoWDHxJBtkWyYU2Y93Snx6qjnlbA%2Fqm4K5DgwunvH6z0G1X5zHavP5wjOT4hwghlJS7d7uv%2FL%2FVPBVraUCBHXHT5JlOY0Qu6GZhm%2FPP8"}],"group":"cf-nel","max_age":604800}'
+      - Mon, 19 May 2025 14:26:27 GMT
       Server:
-      - cloudflare
+      - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400
+      X-Nginx-Id:
+      - '3'
       content-length:
-      - '1369'
+      - '1370'
+      svid:
+      - gnosis1
     status:
       code: 200
       message: OK
@@ -114,7 +102,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/0.1.dev14880+gffc31b0.d20240415
+      - rotki/1.38.1.dev83+gde864f7da
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=100&module=proxy&txhash=0x6dd944a617253bc297bb6b60a9fbe2dcd821883b4c1df1f2e003d8fab155205f
   response:
@@ -127,10 +115,6 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 8800d1c7a82c59e7-DEL
       Cache-Control:
       - private
       Connection:
@@ -138,21 +122,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 07 May 2024 11:20:13 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=kCls9WDqFHAEpvHuhV13e1pU%2FyafEsCYBj5AROI%2FFpdRnsSm%2FQhG7m2Y2O%2FiE27ece7vopEWz1nUpu57NAgExmh9LAQ4eL4yxHMKioCsPlfKv7JRpTO22zVPzga5r19cu4ZE"}],"group":"cf-nel","max_age":604800}'
+      - Mon, 19 May 2025 14:26:28 GMT
       Server:
-      - cloudflare
+      - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400
+      X-Nginx-Id:
+      - '2'
       content-length:
       - '364030'
+      svid:
+      - gnosis1
     status:
       code: 200
       message: OK
@@ -166,7 +148,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/0.1.dev14880+gffc31b0.d20240415
+      - rotki/1.38.1.dev83+gde864f7da
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=100&module=proxy&txhash=0x3d4ce2ccb0a646569409305286cf824043f6eff502070b7b1f886e3ecb1e3ac3
   response:
@@ -179,10 +161,6 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 8800d1cdd87f2dff-BOM
       Cache-Control:
       - private
       Connection:
@@ -190,21 +168,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 07 May 2024 11:20:14 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=LGMwOj8jQtOeEI2CWZOklFpgvMic6O0i2MXF5LzSaXmdwzrxEnkvPayVL%2BSvqV5ABgsdjHDwoOg%2FzhpU3AFt9IFvMkCx10Lik2R7Q9To3GIbM19Q42kZQVQTIq3iAEKXCTHg"}],"group":"cf-nel","max_age":604800}'
+      - Mon, 19 May 2025 14:26:29 GMT
       Server:
-      - cloudflare
+      - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400
+      X-Nginx-Id:
+      - '2'
       content-length:
       - '10709'
+      svid:
+      - gnosis1
     status:
       code: 200
       message: OK
@@ -218,9 +194,65 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.31.0
+      - rotki/1.38.1.dev83+gde864f7da
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=tokentx&chainid=100&address=0xF5d90Ac6747CB3352F05BF61f48b991ACeaE28eB&endBlock=33754669&module=account&sort=asc&startBlock=33754669
+    uri: https://gnosis.blockscout.com/api?action=getblocknobytime&closest=before&module=block&timestamp=1714733100
+  response:
+    body:
+      string: '{"message":"OK","result":{"blockNumber":"33754669"},"status":"1"}'
+    headers:
+      CF-RAY:
+      - 942445047cb0cbc4-MAD
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 19 May 2025 14:26:29 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=xj30%2FTuLTK%2FYXyK96R%2F9xSJ8KWisbw1TgGkP5pnyro1lA2EUS8YUkD87CjH8P6%2B3TmWgzdel933I3i09sEDEUiLkK7Pcn6len7X7l7EGdfhNi4QigcaJI%2FmHWyqDyE2riVO4G4lCsQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - ''
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '65'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=21404&min_rtt=21332&rtt_var=8051&sent=4&recv=6&lost=0&retrans=0&sent_bytes=2403&recv_bytes=854&delivery_rate=135008&cwnd=251&unsent_bytes=0&cid=17cf40853fa1fc27&ts=160&x=0"
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-request-id:
+      - 07bad06b0d638d6bf695fb465f1329ed
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.38.1.dev83+gde864f7da
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=tokentx&address=0xF5d90Ac6747CB3352F05BF61f48b991ACeaE28eB&chainid=100&endBlock=33754669&module=account&sort=asc&startBlock=33754669
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -231,10 +263,6 @@ interactions:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 8800d1d1c8ec47e1-BOM
       Cache-Control:
       - private
       Connection:
@@ -242,21 +270,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 07 May 2024 11:20:14 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=3Civ5KFzYnot%2Bwe%2FAcfgUdVjyScxZvfxc%2B%2B01QJGZxrt0dy0%2FuS8x4GpaNOVP1V1sDcNpV3xeZjbYUbzdfW%2BvXVx7ZN5s7RsBAOXY2Y1PQYyvLiFZhU%2FmYiaY%2BMiKpPM7pPW"}],"group":"cf-nel","max_age":604800}'
+      - Mon, 19 May 2025 14:26:29 GMT
       Server:
-      - cloudflare
+      - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
-      alt-svc:
-      - h3=":443"; ma=86400
+      X-Nginx-Id:
+      - '5'
       content-length:
       - '60'
+      svid:
+      - gnosis1
     status:
       code: 200
       message: OK

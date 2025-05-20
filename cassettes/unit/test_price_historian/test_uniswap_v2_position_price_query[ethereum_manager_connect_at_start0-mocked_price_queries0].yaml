@@ -11,10 +11,10 @@ interactions:
       User-Agent:
       - rotki/1.38.1.dev39+g854e30dfe.d20250311
     method: GET
-    uri: https://api.etherscan.io/v2/api?module=block&chainid=1&action=getblocknobytime&apikey=8JT7WQBB2VQP5C3416Y8X3S8GBA3CVZKP4&timestamp=1742814047&closest=before
+    uri: https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1742814047&closest=before
   response:
     body:
-      string: '{"status":"1","message":"OK","result":"22116329"}'
+      string: '{"message":"OK","result":{"blockNumber":"22116329"},"status":"1"}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
