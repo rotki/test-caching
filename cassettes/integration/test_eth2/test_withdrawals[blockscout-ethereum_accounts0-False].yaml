@@ -9,6 +9,62 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
+      - rotki/1.38.1.dev83+gde864f7da
+    method: GET
+    uri: https://eth.blockscout.com/api?action=getblocknobytime&closest=before&module=block&timestamp=1707090600
+  response:
+    body:
+      string: '{"message":"OK","result":{"blockNumber":"19158316"},"status":"1"}'
+    headers:
+      CF-RAY:
+      - 943c88055883041c-MAD
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 22 May 2025 13:06:32 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=yeDJ3%2B5EOPgs%2BrqHRHUrmWF8PHT0iH1ewCu5og7lePwTTLofGk5%2BVt%2Bf%2BbPofBuTsi170u81kKP%2FNF82e%2BuO1WGEMeqx9AzWfjfRPfqViJJ7MwBvaXguEL7MN8U3R9UXYwsA%2BQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - ''
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '65'
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=22438&min_rtt=22261&rtt_var=8474&sent=4&recv=6&lost=0&retrans=0&sent_bytes=2403&recv_bytes=851&delivery_rate=129374&cwnd=251&unsent_bytes=0&cid=a6934ea8819d483c&ts=135&x=0"
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-request-id:
+      - 14c3ea35d54e37ee164bddfed6a3d726
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
       - rotki/1.31.4.dev276+g394cf66c8.d20240201
     method: GET
     uri: https://eth.blockscout.com/api/v2/addresses/0x23F02E9272EAc1F12F5be76D48b4a15323778f08/withdrawals

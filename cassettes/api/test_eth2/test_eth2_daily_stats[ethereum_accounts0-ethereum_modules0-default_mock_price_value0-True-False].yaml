@@ -414,10 +414,10 @@ interactions:
       User-Agent:
       - rotki/1.33.2.dev11+g245682981.d20240613
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=getblocknobytime&chainid=1&closest=before&module=block&timestamp=1718907480
+    uri: https://eth.blockscout.com/api?action=getblocknobytime&closest=before&module=block&timestamp=1718907480
   response:
     body:
-      string: '{"status":"1","message":"OK","result":"20134675"}'
+      string: '{"message":"OK","result":{"blockNumber":"20134675"},"status":"1"}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
