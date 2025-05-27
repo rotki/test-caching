@@ -1,0 +1,211 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.38.3.dev204+gcd9b2b93f
+    method: GET
+    uri: https://beaconcha.in/api/v1/validator/eth1/0xa966b01E2136953DF4F4914CfA9D37724E99a187
+  response:
+    body:
+      string: '{"status":"OK","data":[{"publickey":"0x8f4bbc39e8319c17050fd94bb609bc21b5f45d2208de5ecf73fc5f38cccfdd434aefb13ed77dea5c1745fa76b627a8af","valid_signature":true,"validatorindex":765881},{"publickey":"0xa0b8002cc3aa29416eb07f455d6714a2dcb015c2e4554bc282151dc09801375b0b5c369107bce5b3586940ac6920950f","valid_signature":true,"validatorindex":765882},{"publickey":"0xaa424d6ef8b66b634f88a40e7ebaa3f35c7cfd31fd57b1ef3e570bd3c91912cf5bc715227a2d752489a2ebbdd3032926","valid_signature":true,"validatorindex":765883},{"publickey":"0x99d6d95255e56991965d825c8b26a2b80409d21c0c5505a37221a818800cd078107cc40d88b5a5f1081c3ab868b6e097","valid_signature":true,"validatorindex":765884}]}
+
+        '
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Headers:
+      - '*, Authorization'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - EXPIRED
+      CF-RAY:
+      - 9467868a4cca7071-IAD
+      Cache-Control:
+      - public, max-age=12
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 27 May 2025 18:20:19 GMT
+      Expires:
+      - Tue, 27 May 2025 18:20:31 GMT
+      Last-Modified:
+      - Tue, 27 May 2025 18:20:19 GMT
+      Permissions-Policy:
+      - interest-cohort=()
+      Ratelimit-Bucket:
+      - default
+      Ratelimit-Limit:
+      - '5'
+      Ratelimit-Remaining:
+      - '4'
+      Ratelimit-Reset:
+      - '1'
+      Ratelimit-Validapikey:
+      - 'false'
+      Ratelimit-Window:
+      - second
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=IM.hLHd8bp.wmI7PP_ADMZpTukz1HlhRtLnn3Rl0CDc-1748370019-1.0.1.1-R3ds8oey2Ft5pVu3FZMn9BvKtQFAqbay5Eps6FNf0z34QGUcDg4puY1nWtfjiexQK3ZMU5Eiv.gROKj.zeri0DfB_5NsqQDd7XRO5knMqCw;
+        path=/; expires=Tue, 27-May-25 18:50:19 GMT; domain=.beaconcha.in; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=WKsvCaCzDfoRh6qQ5kVfliVwPPRG7XKyAP38fSyvbds-1748370019168-0.0.1.1-604800000;
+        path=/; domain=.beaconcha.in; HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=7257600
+      Vary:
+      - Cookie
+      - Accept-Encoding
+      Via:
+      - 1.1 google
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Ratelimit-Limit-Day:
+      - '30000'
+      X-Ratelimit-Limit-Hour:
+      - '30000'
+      X-Ratelimit-Limit-Minute:
+      - '30000'
+      X-Ratelimit-Limit-Month:
+      - '30000'
+      X-Ratelimit-Limit-Second:
+      - '5'
+      X-Ratelimit-Remaining-Day:
+      - '9995'
+      X-Ratelimit-Remaining-Hour:
+      - '9995'
+      X-Ratelimit-Remaining-Minute:
+      - '9995'
+      X-Ratelimit-Remaining-Month:
+      - '9995'
+      X-Ratelimit-Remaining-Second:
+      - '4'
+      X-XSS-Protection:
+      - 1; mode=block
+      alt-svc:
+      - h3=":443"; ma=86400
+      content-length:
+      - '673'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"indicesOrPubkey": "765882,765884,765881,765883"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '50'
+      Content-Type:
+      - application/json
+      Cookie:
+      - __cf_bm=IM.hLHd8bp.wmI7PP_ADMZpTukz1HlhRtLnn3Rl0CDc-1748370019-1.0.1.1-R3ds8oey2Ft5pVu3FZMn9BvKtQFAqbay5Eps6FNf0z34QGUcDg4puY1nWtfjiexQK3ZMU5Eiv.gROKj.zeri0DfB_5NsqQDd7XRO5knMqCw;
+        _cfuvid=WKsvCaCzDfoRh6qQ5kVfliVwPPRG7XKyAP38fSyvbds-1748370019168-0.0.1.1-604800000
+      User-Agent:
+      - rotki/1.38.3.dev204+gcd9b2b93f
+    method: POST
+    uri: https://beaconcha.in/api/v1/validator
+  response:
+    body:
+      string: "{\"status\":\"OK\",\"data\":[{\"activationeligibilityepoch\":206818,\"activationepoch\":217035,\"balance\":128113189394,\"effectivebalance\":128000000000,\"exitepoch\":9223372036854775807,\"lastattestationslot\":11795478,\"name\":\"Iris
+        \u8001\u859B 765881\",\"pubkey\":\"0x8f4bbc39e8319c17050fd94bb609bc21b5f45d2208de5ecf73fc5f38cccfdd434aefb13ed77dea5c1745fa76b627a8af\",\"slashed\":false,\"status\":\"active_online\",\"validatorindex\":765881,\"withdrawableepoch\":9223372036854775807,\"withdrawalcredentials\":\"0x020000000000000000000000a966b01e2136953df4f4914cfa9d37724e99a187\",\"total_withdrawals\":1717693324},{\"activationeligibilityepoch\":206818,\"activationepoch\":217035,\"balance\":0,\"effectivebalance\":0,\"exitepoch\":365423,\"lastattestationslot\":11693526,\"name\":\"Iris
+        \u8001\u859B 765882\",\"pubkey\":\"0xa0b8002cc3aa29416eb07f455d6714a2dcb015c2e4554bc282151dc09801375b0b5c369107bce5b3586940ac6920950f\",\"slashed\":false,\"status\":\"exited\",\"validatorindex\":765882,\"withdrawableepoch\":365679,\"withdrawalcredentials\":\"0x010000000000000000000000a966b01e2136953df4f4914cfa9d37724e99a187\",\"total_withdrawals\":33629229793},{\"activationeligibilityepoch\":206818,\"activationepoch\":217035,\"balance\":0,\"effectivebalance\":0,\"exitepoch\":365424,\"lastattestationslot\":11693538,\"name\":\"Iris
+        \u8001\u859B 765883\",\"pubkey\":\"0xaa424d6ef8b66b634f88a40e7ebaa3f35c7cfd31fd57b1ef3e570bd3c91912cf5bc715227a2d752489a2ebbdd3032926\",\"slashed\":false,\"status\":\"exited\",\"validatorindex\":765883,\"withdrawableepoch\":365680,\"withdrawalcredentials\":\"0x010000000000000000000000a966b01e2136953df4f4914cfa9d37724e99a187\",\"total_withdrawals\":33600672957},{\"activationeligibilityepoch\":206818,\"activationepoch\":217035,\"balance\":0,\"effectivebalance\":0,\"exitepoch\":365424,\"lastattestationslot\":11693559,\"name\":\"Iris
+        \u8001\u859B 765884\",\"pubkey\":\"0x99d6d95255e56991965d825c8b26a2b80409d21c0c5505a37221a818800cd078107cc40d88b5a5f1081c3ab868b6e097\",\"slashed\":false,\"status\":\"exited\",\"validatorindex\":765884,\"withdrawableepoch\":365680,\"withdrawalcredentials\":\"0x010000000000000000000000a966b01e2136953df4f4914cfa9d37724e99a187\",\"total_withdrawals\":33670652410}]}\n"
+    headers:
+      Access-Control-Allow-Headers:
+      - '*, Authorization'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-RAY:
+      - 9467868c888e454b-ATL
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 27 May 2025 18:20:19 GMT
+      Permissions-Policy:
+      - interest-cohort=()
+      Ratelimit-Bucket:
+      - default
+      Ratelimit-Limit:
+      - '5'
+      Ratelimit-Remaining:
+      - '3'
+      Ratelimit-Reset:
+      - '1'
+      Ratelimit-Validapikey:
+      - 'false'
+      Ratelimit-Window:
+      - second
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=7257600
+      Vary:
+      - Cookie
+      - Accept-Encoding
+      Via:
+      - 1.1 google
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Ratelimit-Limit-Day:
+      - '30000'
+      X-Ratelimit-Limit-Hour:
+      - '30000'
+      X-Ratelimit-Limit-Minute:
+      - '30000'
+      X-Ratelimit-Limit-Month:
+      - '30000'
+      X-Ratelimit-Limit-Second:
+      - '5'
+      X-Ratelimit-Remaining-Day:
+      - '9994'
+      X-Ratelimit-Remaining-Hour:
+      - '9994'
+      X-Ratelimit-Remaining-Minute:
+      - '9994'
+      X-Ratelimit-Remaining-Month:
+      - '9994'
+      X-Ratelimit-Remaining-Second:
+      - '3'
+      X-XSS-Protection:
+      - 1; mode=block
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '2055'
+    status:
+      code: 200
+      message: OK
+version: 1
