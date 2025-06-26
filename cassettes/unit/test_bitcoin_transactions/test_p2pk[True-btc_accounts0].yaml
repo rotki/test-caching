@@ -1,0 +1,65 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.blockcypher.com/v1/btc/main/txs/1db6251a9afce7025a2061a19e63c700dffc3bec368bd1883decfac353357a9d?limit=200
+  response:
+    body:
+      string: "{\n  \"block_hash\": \"0000000000000564f91b41d1d82f08c755a0091e7bc2811e56778d1e75f91b2f\",\n
+        \ \"block_height\": 140496,\n  \"block_index\": 3,\n  \"hash\": \"1db6251a9afce7025a2061a19e63c700dffc3bec368bd1883decfac353357a9d\",\n
+        \ \"addresses\": [\n    \"15WvMGm9qG1wDb54TMcvgzZsfvz9KdxzoN\",\n    \"1PJJygLB42VsaTgo2twFPgRT8CNz1bpGNE\"\n
+        \ ],\n  \"total\": 30000000000,\n  \"fees\": 0,\n  \"size\": 234,\n  \"vsize\":
+        234,\n  \"preference\": \"low\",\n  \"confirmed\": \"2011-08-11T05:56:28Z\",\n
+        \ \"received\": \"2011-08-11T05:56:28Z\",\n  \"ver\": 1,\n  \"double_spend\":
+        false,\n  \"vin_sz\": 1,\n  \"vout_sz\": 2,\n  \"confirmations\": 762360,\n
+        \ \"confidence\": 1,\n  \"inputs\": [\n    {\n      \"prev_hash\": \"d675157268aee592e02d5434414209f5673ac4d190d50e44ef6c522ee8430474\",\n
+        \     \"output_index\": 1,\n      \"script\": \"483045022078e86c021003cca23842d4b2862dfdb68d2478a98c08c10dcdffa060e55c72be022100f6a41da12cdc2e350045f4c97feeab76a7c0ab937bd8a9e507293ce6d37c9cc201\",\n
+        \     \"output_value\": 30000000000,\n      \"sequence\": 4294967295,\n      \"addresses\":
+        [\n        \"1PJJygLB42VsaTgo2twFPgRT8CNz1bpGNE\"\n      ],\n      \"script_type\":
+        \"pay-to-pubkey\",\n      \"age\": 140396\n    }\n  ],\n  \"outputs\": [\n
+        \   {\n      \"value\": 5000000000,\n      \"script\": \"76a91431891996d28cc0214faa3760a765b40846bd035888ac\",\n
+        \     \"spent_by\": \"73d557dba7908f87af43fcecae4fe15eddaeb55a3f634cb9e8f1da0b65f6da09\",\n
+        \     \"addresses\": [\n        \"15WvMGm9qG1wDb54TMcvgzZsfvz9KdxzoN\"\n      ],\n
+        \     \"script_type\": \"pay-to-pubkey-hash\"\n    },\n    {\n      \"value\":
+        25000000000,\n      \"script\": \"41049464205950188c29d377eebca6535e0f3699ce4069ecd77ffebfbd0bcf95e3c134cb7d2742d800a12df41413a09ef87a80516353a2f0a280547bb5512dc03da8ac\",\n
+        \     \"spent_by\": \"e827a366ad4fc9a305e0901fe1eefc7e9fb8d70655a079877cf1ead0c3618ec0\",\n
+        \     \"addresses\": [\n        \"1PJJygLB42VsaTgo2twFPgRT8CNz1bpGNE\"\n      ],\n
+        \     \"script_type\": \"pay-to-pubkey\"\n    }\n  ]\n}"
+    headers:
+      CF-RAY:
+      - 955f2d538caeadf4-JAX
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 26 Jun 2025 19:40:33 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      access-control-allow-methods:
+      - GET, POST, PUT, DELETE
+      access-control-allow-origin:
+      - '*'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1829'
+      x-ratelimit-remaining:
+      - '1'
+    status:
+      code: 200
+      message: OK
+version: 1
