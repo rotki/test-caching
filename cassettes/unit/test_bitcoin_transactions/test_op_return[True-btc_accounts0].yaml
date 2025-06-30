@@ -1,0 +1,64 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.blockcypher.com/v1/btc/main/txs/eb4d2def800c4993928a6f8cc3dd350933a1fb71e6706902025f29a061e5547f?limit=200
+  response:
+    body:
+      string: "{\n  \"block_hash\": \"00000000000000000001faac0071c6461362fc3ae22a1127c6ee4ff68157bac8\",\n
+        \ \"block_height\": 866983,\n  \"block_index\": 2874,\n  \"hash\": \"eb4d2def800c4993928a6f8cc3dd350933a1fb71e6706902025f29a061e5547f\",\n
+        \ \"addresses\": [\n    \"bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4\"\n  ],\n
+        \ \"total\": 0,\n  \"fees\": 1000,\n  \"size\": 184,\n  \"vsize\": 103,\n
+        \ \"preference\": \"low\",\n  \"relayed_by\": \"18.190.155.122:8333\",\n  \"confirmed\":
+        \"2024-10-23T10:04:21Z\",\n  \"received\": \"2024-10-22T23:46:15.541Z\",\n
+        \ \"ver\": 1,\n  \"double_spend\": true,\n  \"double_spend_tx\": \"bb5bebb65bb312779d3a9a47984cf2d5369b9e81ebd240585cb1e6afcae560bf\",\n
+        \ \"vin_sz\": 1,\n  \"vout_sz\": 1,\n  \"data_protocol\": \"unknown\",\n  \"confirmations\":
+        35873,\n  \"confidence\": 1,\n  \"inputs\": [\n    {\n      \"prev_hash\":
+        \"5d42e1c971a631dc7449794a3ff0d69ed0f7e213d577fa55c78ec9a218f4f7b2\",\n      \"output_index\":
+        1,\n      \"output_value\": 1000,\n      \"sequence\": 4294967295,\n      \"addresses\":
+        [\n        \"bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4\"\n      ],\n      \"script_type\":
+        \"pay-to-witness-pubkey-hash\",\n      \"age\": 866914,\n      \"witness\":
+        [\n        \"304402202eafb44176eb3ac8dbc8f5e20dbeeabf56e656cbb85c5b5dbd3842e6d392094702207ab9c34bb62bcc0efd9ee9dfe618821acb7fe696fa58dd8510ad7ffb12b2460101\",\n
+        \       \"0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798\"\n
+        \     ]\n    }\n  ],\n  \"outputs\": [\n    {\n      \"value\": 0,\n      \"script\":
+        \"6a0d234672656553616d6f75726169\",\n      \"addresses\": null,\n      \"script_type\":
+        \"null-data\",\n      \"data_hex\": \"234672656553616d6f75726169\",\n      \"data_string\":
+        \"#FreeSamourai\"\n    }\n  ]\n}"
+    headers:
+      CF-RAY:
+      - 955f2fa46cef708f-ATL
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 26 Jun 2025 19:42:08 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      access-control-allow-methods:
+      - GET, POST, PUT, DELETE
+      access-control-allow-origin:
+      - '*'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1577'
+      x-ratelimit-remaining:
+      - '1'
+    status:
+      code: 200
+      message: OK
+version: 1
