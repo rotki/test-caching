@@ -13,7 +13,7 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - rotki/1.37.2.dev189+g30143f50e
+      - rotki/1.39.1.dev252+gce8625102
     method: POST
     uri: https://beaconcha.in/api/v1/validator
   response:
@@ -29,13 +29,13 @@ interactions:
       Access-Control-Allow-Origin:
       - '*'
       CF-RAY:
-      - 910db15d3bb8f01b-LHR
+      - 964d45e7ee16b5f7-WAW
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Wed, 12 Feb 2025 15:43:11 GMT
+      - Fri, 25 Jul 2025 17:10:51 GMT
       Permissions-Policy:
       - interest-cohort=()
       Ratelimit-Bucket:
@@ -55,10 +55,10 @@ interactions:
       Server:
       - cloudflare
       Set-Cookie:
-      - __cf_bm=JUv0qeuTLo8Gz94gaXpgE4C3nXXBKfrykzJlGEnsB50-1739374991-1.0.1.1-oYVHcstEDAYA7AZ._d1yAN71TJfF69pZnV35PZEE6wdxGi3keiwNvpe6_uVn5xMvAsQCfVq.xbSxzpfMQcJadQ;
-        path=/; expires=Wed, 12-Feb-25 16:13:11 GMT; domain=.beaconcha.in; HttpOnly;
+      - __cf_bm=6NL04MlO4FvaMKv.jgjt4ODktJXsjwdusVZy67jWU.Q-1753463451-1.0.1.1-.slldySMxsEC11hDQ8c1t.jDY4bufUsyInh1_MqNGVcVZGPdeqhAg3upERJBRVfFyv0W4vI_RhymYhgzUJ5QUNiKZ5lokOMnoFo43rpU8wI;
+        path=/; expires=Fri, 25-Jul-25 17:40:51 GMT; domain=.beaconcha.in; HttpOnly;
         Secure; SameSite=None
-      - _cfuvid=1P796zOHERwhZdOGzxn2Eh65.VE6liSEwXEDhZKPoRo-1739374991052-0.0.1.1-604800000;
+      - _cfuvid=k_ITVB2h0dn.VA.FmNcNEUY9ViXTXxI2D4KRZtl.alI-1753463451021-0.0.1.1-604800000;
         path=/; domain=.beaconcha.in; HttpOnly; Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=7257600
@@ -82,15 +82,115 @@ interactions:
       X-Ratelimit-Limit-Second:
       - '5'
       X-Ratelimit-Remaining-Day:
-      - '29997'
+      - '29804'
       X-Ratelimit-Remaining-Hour:
-      - '29997'
+      - '29804'
       X-Ratelimit-Remaining-Minute:
-      - '29997'
+      - '29804'
       X-Ratelimit-Remaining-Month:
-      - '29997'
+      - '29804'
       X-Ratelimit-Remaining-Second:
       - '4'
+      X-XSS-Protection:
+      - 1; mode=block
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '498'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"indicesOrPubkey": "0xa5de79a98e323f28de94fec045407324bbcd19bfddfe84b1cbc64df0f7bc77886f13c5bb639b2441238d2cd9c2b501d5"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '121'
+      Content-Type:
+      - application/json
+      Cookie:
+      - __cf_bm=6NL04MlO4FvaMKv.jgjt4ODktJXsjwdusVZy67jWU.Q-1753463451-1.0.1.1-.slldySMxsEC11hDQ8c1t.jDY4bufUsyInh1_MqNGVcVZGPdeqhAg3upERJBRVfFyv0W4vI_RhymYhgzUJ5QUNiKZ5lokOMnoFo43rpU8wI;
+        _cfuvid=k_ITVB2h0dn.VA.FmNcNEUY9ViXTXxI2D4KRZtl.alI-1753463451021-0.0.1.1-604800000
+      User-Agent:
+      - rotki/1.39.1.dev252+gce8625102
+    method: POST
+    uri: https://beaconcha.in/api/v1/validator
+  response:
+    body:
+      string: '{"status":"OK","data":{"activationeligibilityepoch":192674,"activationepoch":192683,"balance":0,"effectivebalance":0,"exitepoch":260390,"lastattestationslot":8332476,"name":"","pubkey":"0xa5de79a98e323f28de94fec045407324bbcd19bfddfe84b1cbc64df0f7bc77886f13c5bb639b2441238d2cd9c2b501d5","slashed":false,"status":"exited","validatorindex":564618,"withdrawableepoch":260646,"withdrawalcredentials":"0x010000000000000000000000f368a42d316070cd53515fbf67ac219aa29d5fe0","total_withdrawals":32741961954}}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - '*, Authorization'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-RAY:
+      - 964d45e92a52e521-TXL
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 25 Jul 2025 17:10:51 GMT
+      Permissions-Policy:
+      - interest-cohort=()
+      Ratelimit-Bucket:
+      - default
+      Ratelimit-Limit:
+      - '5'
+      Ratelimit-Remaining:
+      - '3'
+      Ratelimit-Reset:
+      - '1'
+      Ratelimit-Validapikey:
+      - 'false'
+      Ratelimit-Window:
+      - second
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=7257600
+      Vary:
+      - Cookie
+      - Accept-Encoding
+      Via:
+      - 1.1 google
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Ratelimit-Limit-Day:
+      - '30000'
+      X-Ratelimit-Limit-Hour:
+      - '30000'
+      X-Ratelimit-Limit-Minute:
+      - '30000'
+      X-Ratelimit-Limit-Month:
+      - '30000'
+      X-Ratelimit-Limit-Second:
+      - '5'
+      X-Ratelimit-Remaining-Day:
+      - '29803'
+      X-Ratelimit-Remaining-Hour:
+      - '29803'
+      X-Ratelimit-Remaining-Minute:
+      - '29803'
+      X-Ratelimit-Remaining-Month:
+      - '29803'
+      X-Ratelimit-Remaining-Second:
+      - '3'
       X-XSS-Protection:
       - 1; mode=block
       alt-svc:
