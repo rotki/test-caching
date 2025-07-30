@@ -11,6 +11,39 @@ interactions:
       User-Agent:
       - python-requests/2.32.4
     method: GET
+    uri: https://api.haskoin.com/bch/health
+  response:
+    body:
+      string: '{"blocks":{"blocks":909438,"diff":0,"headers":909438,"max":3,"ok":true},"last-block":{"age":563,"max":14400,"ok":true},"last-tx":{"age":2,"max":1200,"ok":true},"net":"bch","ok":true,"peers":{"count":4,"min":1,"ok":true},"pending-txs":{"count":0,"max":1000,"ok":true},"time":"2025-07-30
+        13:59:09 UTC","version":"1.5.14"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 16 Jul 2025 09:56:53 GMT
+      Server:
+      - nginx/1.24.0 (Ubuntu)
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
     uri: https://api.haskoin.com/bch/address/transactions/full?addresses=1Mnwij9Zkk6HtmdNzyEUFgp6ojoLaZekP8,bitcoincash:qpplh0vyfn67cupcmhq4g2dt3s50rlarmclu9vnndt,qrfec2pytp47p5drvfsdexqd0ue4r3hrhv9tq7vj5z&height=1700000000
   response:
     body:
