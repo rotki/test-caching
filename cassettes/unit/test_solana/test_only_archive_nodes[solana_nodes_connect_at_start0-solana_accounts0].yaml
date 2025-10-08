@@ -1,0 +1,404 @@
+interactions:
+- request:
+    body: '{"method":"getHealth","jsonrpc":"2.0","id":0}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '45'
+      content-type:
+      - application/json
+      host:
+      - solana.therpc.io
+      user-agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://solana.therpc.io
+  response:
+    body:
+      string: '{"id":0,"result":"ok","jsonrpc":"2.0"}'
+    headers:
+      CF-RAY:
+      - 98b865e8da64e5b6-IAD
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 08 Oct 2025 20:30:47 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=AK4khdFrpIQC20ZLR%2FR21ZBoxcNTWP%2B%2FfsxHzFdFdjiqAgmTc89bCTM%2BMO1MWPF55N9HcgWM%2BkSrng74irRJm5t8DHzKdby5RQzp0BxtsVI%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '38'
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      vary:
+      - Accept-Encoding
+      - Origin
+      x-request-id:
+      - c3687ce1-96aa-430e-bb40-9807dcc926f5
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"method":"getBlock","jsonrpc":"2.0","id":0,"params":[0,{"encoding":"json","transactionDetails":null,"rewards":null,"maxSupportedTransactionVersion":null}]}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '156'
+      content-type:
+      - application/json
+      host:
+      - solana.therpc.io
+      user-agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://solana.therpc.io
+  response:
+    body:
+      string: '{"id":0,"error":{"code":-32001,"message":"Block 0 cleaned up, does
+        not exist on node. First available block: 371704855"},"jsonrpc":"2.0"}'
+    headers:
+      CF-RAY:
+      - 98b865ea6f4fe5b6-IAD
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 08 Oct 2025 20:30:47 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=kFxAvSTDd8SPxAFn84GGnTOUsvYsdQl14oa1K8v1fyu8CpDFeccBEKSeHMgFl5wGcNqaLPPIfni6djk3NkDHAQ0KJAVpzLG3cUWzhdFk0Pc%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '137'
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      vary:
+      - Accept-Encoding
+      - Origin
+      x-request-id:
+      - 26380705-d353-46d4-9e2f-1d50606228f8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"method":"getHealth","jsonrpc":"2.0","id":0}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '45'
+      content-type:
+      - application/json
+      host:
+      - api.mainnet-beta.solana.com
+      user-agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"ok","id":0}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      content-length:
+      - '39'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 08 Oct 2025 20:30:47 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-1103'
+      x-ratelimit-method-limit:
+      - '40'
+      x-ratelimit-method-remaining:
+      - '39'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '99'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - pit37
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"method":"getBlock","jsonrpc":"2.0","id":0,"params":[0,{"encoding":"json","transactionDetails":null,"rewards":null,"maxSupportedTransactionVersion":null}]}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '156'
+      content-type:
+      - application/json
+      host:
+      - api.mainnet-beta.solana.com
+      user-agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"blockHeight":0,"blockTime":1584368940,"blockhash":"4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn","parentSlot":0,"previousBlockhash":"4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn","rewards":[],"transactions":[]},"id":0}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      content-length:
+      - '247'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 08 Oct 2025 20:30:47 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-1102'
+      x-ratelimit-method-limit:
+      - '5'
+      x-ratelimit-method-remaining:
+      - '4'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '98'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - pit37
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"method":"getSignaturesForAddress","jsonrpc":"2.0","id":0,"params":["7T8ckKtdc5DH7ACS5AnCny7rVXYJPEsaAbdBri1FhPxY",{"before":null,"until":null,"limit":1000,"commitment":"finalized","minContextSlot":null}]}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '206'
+      content-type:
+      - application/json
+      host:
+      - api.mainnet-beta.solana.com
+      user-agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":[{"blockTime":1758217544,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"4awgHCjCD2Da2UbaKitSfUWExW2eVSA1x5PBrdHBi61NdCpWWxG1JbCDRbKUsQYSPZfPzMKLGrJw2XhajUUvz2Tc","slot":367689057},{"blockTime":1758217533,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"5LB5yWMEqGZLTQxuSmU3un4dVZoCZbXBrQJnW2zXJhZu2WaYfdtUKpzwGPZk8AdRPQ9yqfFN5HetrgpDP6DWXx5a","slot":367689028},{"blockTime":1758217533,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"4PXgKteR5ofZLbMGxNzstUc5f1GHLVoPh47FCaXLRETARUtym99DtW74EmxjazpQ94BJeMAPiYXEjiBGDeioj32y","slot":367689027},{"blockTime":1758217533,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"3hCosDF24XcUSbBUizxzTdeT8XpFHhT95ECH7k95Rm1b5Zv8wK99YaEvgxhwYTPvZJhytgtsVGnE3XM4QKkKszvp","slot":367689027},{"blockTime":1758217532,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"4QcjXswG2mXRSdTnSJ8JkpMiDTcfeJgA3g5N4GqMsJxyF8VgKzdvW1HYqZyUEMbwKMyimaiqwdyWuJvcYA9kVVrg","slot":367689026},{"blockTime":1758217531,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"5vBFfTGrcdkE7ZdsUDSU2kRkhoFp4EgKtLLB6h2m1uQoG5wCddCkFGnNjXaHrV2r1kZ8CpJfh7UcWJ9tFXAyKc8Q","slot":367689024},{"blockTime":1757498663,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"XRPmRDDwjMRmzPpGY2aPp4wQ5ZGsCXdYZPxyQXGwy58jwDCHSenbukBpYvDmrNV1ntPmKEiC3KFTp2gsRrJtn5d","slot":365873488},{"blockTime":1757490702,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"3AKCn9Pg1bwRfimNPFABHBYcrtSEQWqzL6bezUTos8MTYyNqd84fZ9DSeKHBhEtYYwWeqUDPTbBymphT3da8xqGz","slot":365853710},{"blockTime":1754132669,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"3iuwjtepirNaxk9HvrvBNJpjuKVJB7rM8B1dB3UEpDdCasGqJrNFfS1cPngt41Gti3sRKdm1jnLxz77trrFsuMBx","slot":357366220},{"blockTime":1753911942,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"2ZYFMzQMpDFcAmXo2UMhGErSitNpuZ4zeu548QvMU8k37cgetF91wTYnGmN1oZq6EG7zXaZyNPCzWtakDnSJEtgF","slot":356811099},{"blockTime":1753836968,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"4UoyrhPVWBCkiWUMWdyHUQQ29qMxCFXM6iXt7pL9ufaGgcnA8nz1qGQZfgKJcRURgvwmpLWeBVwfp1EJDZoVXPDA","slot":356623156},{"blockTime":1753836967,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"zXGZgpE77nKe41FLFAvCrnK4BrnQvQzvcD9ddRJuPvBDca16BZbQe4zJYQSs9VWpYqvVL2Sqm2E3QQLwbA7ZjjV","slot":356623152},{"blockTime":1753836965,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"5HzJs4E3KobYW4dfDAvxzuUPriKdK71iPG7g7w3VQBC1bgpQmHjeevkBBmp8WFf3FeosqMkcgSHV5LPqwDfmvr2X","slot":356623147},{"blockTime":1753836925,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"5yPBcj2gPfWhkbRi3MFNigkJUzn67WKq4Xj8jEevBpwXRezZgBN6VArxDYTtggvW8xsbTvBJFntSkqiQoz4cgMbU","slot":356623046},{"blockTime":1753836840,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"LLco7QQYo9HVc8w6YZeabxrdhZAjQxGRvrk1hNCJPrHGYAELjh3HwQKvTA1n8bWmkcLyKkFivieooK8C9LvYZuy","slot":356622828},{"blockTime":1751014772,"confirmationStatus":"finalized","err":null,"memo":"[25]
+        Blockchain monitor reward","signature":"A13P8suuyXTCbGGxCZUadorigBjBb7vysBDSfZvwKUCvRr6eL4qsGqdN6wT6g9H7ft1khqS487emv5TDkP4ZyVU","slot":349506632},{"blockTime":1750705647,"confirmationStatus":"finalized","err":null,"memo":"[25]
+        Blockchain monitor reward","signature":"2orVkzMy669Vw5ZVhGej9dJvA2kmzWXwMU4Q6ehBfn5D5FQvDMCHGwTW7cieqkdXZV4KUZSyCbY7tEFiCbT8hJpC","slot":348735628},{"blockTime":1750461071,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"2nVkDxHGv3uy8bW2uLdUxiqxNpzPN2ZHBLTJk7xeouQLXsfhGfm9D4Fre2TXGTQCNmxJzJFTKDGFDG8oGNxWdYEg","slot":348128144},{"blockTime":1750461071,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"4jjcKoc5Xjawj6TxKVk4gxELQJnTo5dq8yDFTCcBQyJG46cND6M9rVyYLG3hUB61wfpXJTX56PSEKC5cUX5DC8Tm","slot":348128144},{"blockTime":1750461068,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"2WgLioggWnPbpBxoY5k175c9UK5FMmYN1QvcuKP7ayQbrMSVjV3z7uKzXufk5dm31mM9FdCaVMR8qj7qViuNYsmd","slot":348128134},{"blockTime":1750076260,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"5KjVBYq15EwE8XeARGNbKoPCphvvn1mcNnaV5unZHL7rXeSQLUovVgopnHvevVBVTQv8BJRcQBbqdBTSVKWUxpGd","slot":347168662},{"blockTime":1750032880,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"3xhpv3urXYRNWFdEpoDXPFphmXHjDPyeniQ31LgpYaqy2akSnKNAxjuiVoibkZrcQg9dkARaVvrtu1RvjW6T85iR","slot":347060258},{"blockTime":1749989954,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"5WUJXiUwEf3NgwBVGQ7XZUwC719eywuXFyvkRKykeLq9D3n7GcwG4KFhHdL23URPrfh1HDSkxkfYMkmWbAmULfL1","slot":346953046},{"blockTime":1742516275,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"5DjnzZjr4Rw69Rfh1HY7igpxA3uC8F4qhmQUHkCVCcHpfkrimBGU2rzZYYSWi7Zb94onbKFu1rrj9cNnGeDGiyok","slot":328107132},{"blockTime":1740228955,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"Ku3ETwypzaNyw4yp1wqSiYx3MHre8n5XCzLEocP9SZdfH5irDrjefnnsxsYP9kHozs4Awoqx367eZQ8ZDq5wVZi","slot":322346375},{"blockTime":1738368057,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"7CsYJQjMBgKzpmHTHdccSidvqozkfQG9HVxdwFN395iS4a9jtiBgHaAr5vk6w1UWqvnTAyd2Ux1VtcEh6rhidrV","slot":317661675},{"blockTime":1737487163,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"3wcWAKSiS1Vem6ccBY5ZAPGR3Qj8GvGEDD6FsRVZPMPdzkFifTdjWf2DfGGNN4BYZb3zqwLQJupqgxAtztuNmrYf","slot":315485487},{"blockTime":1737415338,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"4iS4K8XJLdnmx4Xdx8NSZ8Za6jHLE9kfnVqW2gLDZxYXfHsLxq9tc7p5EC4xEgcYXmY9VMp96XFBEMWtVRmzaoUv","slot":315309263},{"blockTime":1737387177,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"3dGva87tDyRYSJxV9w98tmAFrgpahi9mLvedYqtnk2GGXFG5pbQQJyyHbPsN4u7sCFmbzL4pcsQg8FNBn6Nsc5zU","slot":315240428},{"blockTime":1737344687,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"R3sNVS4SBasgySyGVipnM8bZRUzVKwPHHeFnjqzVkm3hFDcYWgEA6iVG1HYiPUjbgKFb1WnV7J1mbTHksnvQYGz","slot":315136017},{"blockTime":1737325567,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"5eGwuWFDerns2Ft1b1jqAEWki3PSibUjYxW4mqxcCFdJFgipHZtyMDtA4abmF5KYEJrsPjD8Jh4izixPstAzegDQ","slot":315088576},{"blockTime":1737325557,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"5ojYVPAfjmyDqHyDAVwrA5dk95NyQWweu9pWLkFnbHxUuSShhtRZbk5kaPuLbMDswPA2eE2F6k3a7PaFJU3q2uJt","slot":315088554},{"blockTime":1737294360,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"brMraACVTazgyG28wwMf8EqSJui8iHiFHACRUiqqAv3344bVw7eHJeLbidA68ZsperFj5TYSooQuev1YiziBk7g","slot":315012367},{"blockTime":1737248604,"confirmationStatus":"finalized","err":{"InsufficientFundsForRent":{"account_index":15}},"memo":null,"signature":"3oiVYBFo1YpCQAA1JbL4XkzqXUU7VdX4umaXAMomSGpvDveTAT2Ta94wZi9uLCLBWd5jr7FkqZhnMuCuvr3ACgro","slot":314899729},{"blockTime":1737248596,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"4Fc4uAmaYLTkkiNtnJqrP7FNSmEDXupMTgoPB8LpLdiSZzybBB2BwKRDFiYBYQSHwatrQyLrQSWRr9eDnJh2R92R","slot":314899707},{"blockTime":1737248596,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"32w1PUNkfxfReCRf27T6fGAU3ZLzApGmWCCNaeHi9AGFH9RThstfqULQ2New2iqHrBgkCToGLSnZ9XPNKYyhJtJa","slot":314899707},{"blockTime":1737248590,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"3Tkk5XtHbJVDZRHdMSgLeFPZZwP57wZPUuFbjQQ3sT1BAnjvNpRGKJE6V7cYaBSh8jm31tBz7d4Hyg4FXQY3Gqtb","slot":314899696},{"blockTime":1736165910,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"58VnKrhwEuMdPhqzQNBc72w1MirFqdSDDGgRVj1XnP2aLzBpj89t7RPcF2JL7uiaPt3KWPAdXK2LR1RJSGbRTrma","slot":312240872},{"blockTime":1736122920,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"3fNhx3umDf9he6mms5Awuy1qvDepQGM54ZpL2KdTpm5tpiSL1WjXvwuSSPobe7SGvmgPzaZ6becB5kxYj9RF3CUh","slot":312135348},{"blockTime":1736116430,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"4mNiqLEJfYtRJs2nYKg7rmM8rizNGTDyu5t1Ee4ymjnBSfBBVQqPwtoLVgVc8aMUAGGHTfaTAJoW5CKfn8hWGZEk","slot":312119508},{"blockTime":1736113703,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"2RcgFJFoC4VuRSCkEdYX1jjdzTsLgvdKZr7xLvcocD2by5gzAU4GNscc24nsigkg5FGuQngzGS4yAUJgn78So4GS","slot":312112817},{"blockTime":1735776836,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"2xaXVYmujAACvZxpaKiKFwYfABJX9vPZ2ixayKuz4v7h9jhRFZMVmZYJvg7kYKQtUGj5FcB7qq1F9MmopRgSFmAi","slot":311294628},{"blockTime":1735734234,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"3bMSeFqP6cwMku1G6QZhFrJAFmgQTZhP8wCXqVAmWweUKxYkzguvkQaXNoCq9JZM3wHLADyhxfyx7VuAD4iUSweJ","slot":311190657},{"blockTime":1735692626,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"58mxeFBuE55h8Be7ZoAdf2MvkS1Tk7XmwhEVfJiTqpVuPDdd9RstKu2oYcCcY16MkPCPoaZnfrrok6HJaJ1gXLLm","slot":311088515},{"blockTime":1735690215,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"PtXCPeYqcapD9pU6G9M6xUPQcu7PQDNCwygQWTTPwBf9VbVf4Pj9Mn11j4VLKvqpevHDh1D6HAuP3uPMitjtrZi","slot":311082652},{"blockTime":1735689170,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"4Rwn72z2gPEuxF8oU9HanFUPGxC7oqR8P8bNsZxKMA6WsLwXc9QQjUiyppLvZN2Phj2iLkzcLtTHzut4wynKFR6K","slot":311080111},{"blockTime":1735689170,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"M5xXyBeeeZ9s1kuz4kVs1LUCbvpVgwjPhqCPXjxFQbhYey5DKQMxb4b4WXrqprDAphp6ebYxpmFyzUFSxLbjuq2","slot":311080111},{"blockTime":1735689161,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"3cgwLCNRckgm3YYLRfUdCJQUXTPLgnYG4wgHFz2Fc68sADmNLLhjbuGiUPD4h79Nc2L1VWznFWqAjNBeoH1m8rB6","slot":311080088},{"blockTime":1733531171,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"mE5ES9z33uVCDaetdmBvDktPgUWfhQr8Rjwj7PVC1iXYbKxX9L9VsjPdDW8CSPjZxzBwitH6dmsg55xbZuBkLeb","slot":305868104},{"blockTime":1733530651,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"2a8KMQW1rCDV3KMAwVnwPpdizoCYJYHA4FUGXNRVSWYeg1FyamoCvxRRqRt1t92XrAaWepUugRmzqxAVrqR6rkit","slot":305866872},{"blockTime":1733530649,"confirmationStatus":"finalized","err":{"InsufficientFundsForRent":{"account_index":1}},"memo":null,"signature":"rg5HqbteccQmuSJj4WR7mHrjw4x4M3jPwfFgJWJMntTcSsWxYkiHvuXMYtYoHCkvmrcLLwbJP6UP1eZq5oJnasy","slot":305866869},{"blockTime":1733530643,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"2GWyg5oH8MZsErtiaymANzoKd9mc4o2MQWvhHsQgdBY54UuChM1prTXKhqPogriRwEQuVNpW3NdaHUE3nxcqE4Bq","slot":305866853},{"blockTime":1733487978,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"2dpTW3vMF3x8UfPWrg2uyqC5trE13v8t1B4vG7cAN9bLV3E3ks8qRV4NqTqdWPjzeTsGFH7breFbbjmMpzR6FZdS","slot":305765280},{"blockTime":1733451487,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"TdLKucD1yw92yLFXPYx2ojABjSSAjBxhzrRJU76bX9UDta9M2SR4GbgzgExvCeGQ1di3ALqDgMw6oV7eTphyY5i","slot":305676811},{"blockTime":1733451410,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"2So2grkNJ5pdrca11UTfUmacqSmxVZLueaPEXhmWEqDPVmkHmdUVxQUo8QebMXPBwGHLYDsrifZRuTuqFkPkGY66","slot":305676623},{"blockTime":1733451200,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"6zwCdT4B37Y8suMWkypiqiN6mFpi64YfEcxxVbpP53f4JunNaG1TMmrAZeyoDDyKSjor3u5aAS8mM8BRLCnJvwy","slot":305676119},{"blockTime":1733450771,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"2MARK1HFq2DB1wGKus5ZVcfg5onBmszCXCnFc2d9W54VMQRkDv5RycdEvy4dp9DUXbAojAsFbzhPyDrdVUShfVQP","slot":305675110},{"blockTime":1733450729,"confirmationStatus":"finalized","err":{"InstructionError":[3,{"Custom":6003}]},"memo":null,"signature":"22KR17yPhY1dwnVnfFEg54vh8PTrH4bPZke5aBktzrnMAwzx8kPTCxhnm7UsUujNH2Yc42DUdQNEgCdtSVq3TUj8","slot":305675016},{"blockTime":1733450455,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"3ZaeWJn6E3eVFArRXDpmDE2Fp19YKrfgwvPSHgKNQ5DbDoyLpWtDwmCoCsCh3Sdg8qY9m8UFYttz5ykiw43HCPKW","slot":305674395},{"blockTime":1733450232,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"5cKTu4LSVGSJtk71MAjhmHjLKH7Xw2FbbtiVTpMwGADJfSciVmNXYizSnNhf31CVeSbPbafH4P8xpZ9fm7JFXcZf","slot":305673872},{"blockTime":1733450160,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"24HDNsvQvppcsfZTyb9a9ujsH3qT38gBb9vtwX429FHJN4pPGkAaDRFArAgkBGgZ3HaqeJ5XFzmynMgW4CMxnKZB","slot":305673701},{"blockTime":1733450160,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"2CB84HRQRmyEgmQ8jw6FG4DuGfQn4hoYGhT4iorFgWv54ssRnueUFqyCDX1oaMSqep8NXLu8MwUEn9xiWqBNpWCH","slot":305673701},{"blockTime":1733450149,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"3jcrTrZYm1pf7iPYtS8BqJE9rnCHB9G9zrbNAiG1feXDfG5h6fAqTd2vJLXgBBV7eRareduQVgGWEUCTEjd4cEJq","slot":305673679},{"blockTime":1733183921,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"Ars2bdNxYNVRDmWsGCwr9j8jHgRkb6gq7giaritpLw9yj6kiefwEUZpqz4Hr6SxRnJLTLtNnQaVNjuX6jjMAL7T","slot":305044372}],"id":0}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      content-length:
+      - '13066'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 08 Oct 2025 20:30:48 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-1102'
+      x-ratelimit-method-limit:
+      - '2'
+      x-ratelimit-method-remaining:
+      - '1'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '97'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - pit37
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"method":"getMultipleAccounts","jsonrpc":"2.0","id":0,"params":[["7T8ckKtdc5DH7ACS5AnCny7rVXYJPEsaAbdBri1FhPxY"],{"encoding":"base64","dataSlice":null,"commitment":"finalized","minContextSlot":null}]}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '201'
+      content-type:
+      - application/json
+      host:
+      - solana.therpc.io
+      user-agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://solana.therpc.io
+  response:
+    body:
+      string: '{"id":0,"result":{"context":{"apiVersion":"2.3.6","slot":372080545},"value":[{"data":["","base64"],"executable":false,"lamports":1283986514,"owner":"11111111111111111111111111111111","rentEpoch":18446744073709551615,"space":0}]},"jsonrpc":"2.0"}'
+    headers:
+      CF-RAY:
+      - 98b865f038eee5b6-IAD
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 08 Oct 2025 20:30:48 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=JkX0jP7OhRyX92kyjDygMJO1dvTim6tQMECd1r8gvvKyz%2FydtPqpnNtlJ8%2FzDbYwJMiFUA0zplrTy2JKm9kCIIE%2FNJJyD%2BNmjJEhboaU2x4%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '245'
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      vary:
+      - Accept-Encoding
+      - Origin
+      x-request-id:
+      - c48a91ac-fbc0-41b1-94a5-14d8c505c79f
+    status:
+      code: 200
+      message: OK
+version: 1
