@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.38.3.dev306+g4fc431ebc
+      - rotki/1.40.2.dev292+g4701ba0467
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getTransactionByHash&chainid=1&module=proxy&txhash=0x42402dcf6658abaf2c47593a7ebe1264fb2f331de918239d1717a7a9d2996abf
   response:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 09 May 2025 19:35:33 GMT
+      - Mon, 27 Oct 2025 11:42:59 GMT
       Server:
       - nginx
       Vary:
@@ -43,7 +43,7 @@ interactions:
       content-length:
       - '995'
       svid:
-      - '56'
+      - '3'
     status:
       code: 200
       message: OK
@@ -57,7 +57,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.38.3.dev306+g4fc431ebc
+      - rotki/1.40.2.dev292+g4701ba0467
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getBlockByNumber&boolean=true&chainid=1&module=proxy&tag=0x156463f
   response:
@@ -79,7 +79,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 09 May 2025 19:35:34 GMT
+      - Mon, 27 Oct 2025 11:42:59 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -89,11 +89,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '2'
+      - '4'
       content-length:
       - '260863'
       svid:
-      - '5'
+      - '3'
     status:
       code: 200
       message: OK
@@ -107,7 +107,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.38.3.dev306+g4fc431ebc
+      - rotki/1.40.2.dev292+g4701ba0467
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0x42402dcf6658abaf2c47593a7ebe1264fb2f331de918239d1717a7a9d2996abf
   response:
@@ -129,7 +129,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 09 May 2025 19:35:36 GMT
+      - Mon, 27 Oct 2025 11:43:00 GMT
       Server:
       - nginx
       Vary:
@@ -141,7 +141,7 @@ interactions:
       content-length:
       - '1032'
       svid:
-      - '13'
+      - d1
     status:
       code: 200
       message: OK
@@ -155,7 +155,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.38.3.dev306+g4fc431ebc
+      - rotki/1.40.2.dev292+g4701ba0467
     method: GET
     uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=1&module=account&sort=asc&txHash=0x42402dcf6658abaf2c47593a7ebe1264fb2f331de918239d1717a7a9d2996abf
   response:
@@ -175,7 +175,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 09 May 2025 19:35:37 GMT
+      - Mon, 27 Oct 2025 11:43:01 GMT
       Server:
       - nginx
       Vary:
@@ -183,11 +183,59 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '3'
+      - '5'
       content-length:
       - '60'
       svid:
-      - '56'
+      - d1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.40.2.dev292+g4701ba0467
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=1&data=0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000160000000000000000000000000f4ae64c5c4fb632d0e0d77097b957941c399d26e00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004e75235b800000000000000000000000000000000000000000000000000000000000000000000000000000000f4ae64c5c4fb632d0e0d77097b957941c399d26e00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004ffa1ad7400000000000000000000000000000000000000000000000000000000000000000000000000000000f4ae64c5c4fb632d0e0d77097b957941c399d26e000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000043408e47000000000000000000000000000000000000000000000000000000000&module=proxy&to=0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000"}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 27 Oct 2025 11:43:02 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '2'
+      content-length:
+      - '935'
+      svid:
+      - d1
     status:
       code: 200
       message: OK
