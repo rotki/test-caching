@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.32.5
     method: GET
     uri: https://raw.githubusercontent.com/polkascan/py-scale-codec/v1.0/scalecodec/type_registry/kusama.json
   response:
@@ -188,17 +188,17 @@ interactions:
       Cross-Origin-Resource-Policy:
       - cross-origin
       Date:
-      - Thu, 12 Oct 2023 10:07:00 GMT
+      - Sun, 09 Nov 2025 17:52:03 GMT
       ETag:
       - W/"2a58ec0f68582044933263f07a8553dfa19fd5d67b24127ada6c6caed804b3ae"
       Expires:
-      - Thu, 12 Oct 2023 10:12:00 GMT
+      - Sun, 09 Nov 2025 17:57:03 GMT
       Source-Age:
-      - '58'
+      - '29'
       Strict-Transport-Security:
       - max-age=31536000
       Vary:
-      - Authorization,Accept-Encoding,Origin
+      - Authorization,Accept-Encoding
       Via:
       - 1.1 varnish
       X-Cache:
@@ -208,15 +208,15 @@ interactions:
       X-Content-Type-Options:
       - nosniff
       X-Fastly-Request-ID:
-      - 9be574740e2801d643d1f847e3849bb26951d7dd
+      - bd5521f8fd4a6fb39c25351b160ef4a7d68b58c1
       X-Frame-Options:
       - deny
       X-GitHub-Request-Id:
-      - C264:D351:BF35D:C930D:65279977
+      - 5D8E:1C603D:E93339:10D5608:6910D1AC
       X-Served-By:
-      - cache-fra-eddf8230086-FRA
+      - cache-fra-etou8220030-FRA
       X-Timer:
-      - S1697105221.643382,VS0,VE2
+      - S1762710724.534625,VS0,VE4
       X-XSS-Protection:
       - 1; mode=block
       content-length:
@@ -236,35 +236,41 @@ interactions:
       Content-Length:
       - '67'
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.32.5
       cache-control:
       - no-cache
       content-type:
       - application/json
     method: POST
-    uri: https://ksm.getblock.io/ae78eb1d-2643-4e22-b691-0ecb9d9c5e08/mainnet/
+    uri: https://assethub-kusama.api.onfinality.io/rpc
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":"Kusama","id":1}'
+      string: '{"jsonrpc":"2.0","id":1,"result":"Kusama Asset Hub"}'
     headers:
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - '*'
-      access-control-expose-headers:
+      Access-Control-Expose-Headers:
       - '*'
-      content-length:
-      - '42'
-      content-type:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '52'
+      Content-Type:
       - application/json; charset=utf-8
-      date:
-      - Thu, 12 Oct 2023 10:07:00 GMT
-      server:
-      - envoy
-      vary:
-      - origin,access-control-request-method,access-control-request-headers
-      x-cluster:
-      - Shared nodes
-      x-envoy-upstream-service-time:
-      - '148'
+      Date:
+      - Sun, 09 Nov 2025 17:52:03 GMT
+      Vary:
+      - origin, access-control-request-method, access-control-request-headers
+      X-Cluster:
+      - nv
+      X-Continent:
+      - NA
+      X-Kong-Proxy-Latency:
+      - '0'
+      X-Kong-Request-Id:
+      - 99384b094ef80b40260fe6148ee16955
+      X-Kong-Upstream-Latency:
+      - '2'
     status:
       code: 200
       message: OK
@@ -280,35 +286,41 @@ interactions:
       Content-Length:
       - '66'
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.32.5
       cache-control:
       - no-cache
       content-type:
       - application/json
     method: POST
-    uri: https://ksm.getblock.io/ae78eb1d-2643-4e22-b691-0ecb9d9c5e08/mainnet/
+    uri: https://assethub-kusama.api.onfinality.io/rpc
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"methods":["account_nextIndex","author_hasKey","author_hasSessionKeys","author_insertKey","author_pendingExtrinsics","author_removeExtrinsic","author_rotateKeys","author_submitAndWatchExtrinsic","author_submitExtrinsic","author_unwatchExtrinsic","babe_epochAuthorship","beefy_getFinalizedHead","beefy_subscribeJustifications","beefy_unsubscribeJustifications","chainHead_unstable_body","chainHead_unstable_call","chainHead_unstable_follow","chainHead_unstable_genesisHash","chainHead_unstable_header","chainHead_unstable_stopBody","chainHead_unstable_stopCall","chainHead_unstable_stopStorage","chainHead_unstable_storage","chainHead_unstable_unfollow","chainHead_unstable_unpin","chain_getBlock","chain_getBlockHash","chain_getFinalisedHead","chain_getFinalizedHead","chain_getHead","chain_getHeader","chain_getRuntimeVersion","chain_subscribeAllHeads","chain_subscribeFinalisedHeads","chain_subscribeFinalizedHeads","chain_subscribeNewHead","chain_subscribeNewHeads","chain_subscribeRuntimeVersion","chain_unsubscribeAllHeads","chain_unsubscribeFinalisedHeads","chain_unsubscribeFinalizedHeads","chain_unsubscribeNewHead","chain_unsubscribeNewHeads","chain_unsubscribeRuntimeVersion","childstate_getKeys","childstate_getKeysPaged","childstate_getKeysPagedAt","childstate_getStorage","childstate_getStorageEntries","childstate_getStorageHash","childstate_getStorageSize","grandpa_proveFinality","grandpa_roundState","grandpa_subscribeJustifications","grandpa_unsubscribeJustifications","mmr_generateProof","mmr_root","mmr_verifyProof","mmr_verifyProofStateless","offchain_localStorageGet","offchain_localStorageSet","payment_queryFeeDetails","payment_queryInfo","state_call","state_callAt","state_getChildReadProof","state_getKeys","state_getKeysPaged","state_getKeysPagedAt","state_getMetadata","state_getPairs","state_getReadProof","state_getRuntimeVersion","state_getStorage","state_getStorageAt","state_getStorageHash","state_getStorageHashAt","state_getStorageSize","state_getStorageSizeAt","state_queryStorage","state_queryStorageAt","state_subscribeRuntimeVersion","state_subscribeStorage","state_traceBlock","state_trieMigrationStatus","state_unsubscribeRuntimeVersion","state_unsubscribeStorage","subscribe_newHead","sync_state_genSyncSpec","system_accountNextIndex","system_addLogFilter","system_addReservedPeer","system_chain","system_chainType","system_dryRun","system_dryRunAt","system_health","system_localListenAddresses","system_localPeerId","system_name","system_nodeRoles","system_peers","system_properties","system_removeReservedPeer","system_reservedPeers","system_resetLogFilter","system_syncState","system_unstable_networkState","system_version","transaction_unstable_submitAndWatch","transaction_unstable_unwatch","unsubscribe_newHead"]},"id":2}'
+      string: '{"jsonrpc":"2.0","id":2,"result":{"methods":["account_nextIndex","archive_v1_body","archive_v1_call","archive_v1_finalizedHeight","archive_v1_genesisHash","archive_v1_hashByHeight","archive_v1_header","archive_v1_stopStorage","archive_v1_storage","archive_v1_storageDiff","archive_v1_storageDiff_stopStorageDiff","author_hasKey","author_hasSessionKeys","author_insertKey","author_pendingExtrinsics","author_removeExtrinsic","author_rotateKeys","author_submitAndWatchExtrinsic","author_submitExtrinsic","author_unwatchExtrinsic","chainHead_v1_body","chainHead_v1_call","chainHead_v1_continue","chainHead_v1_follow","chainHead_v1_header","chainHead_v1_stopOperation","chainHead_v1_storage","chainHead_v1_unfollow","chainHead_v1_unpin","chainSpec_v1_chainName","chainSpec_v1_genesisHash","chainSpec_v1_properties","chain_getBlock","chain_getBlockHash","chain_getFinalisedHead","chain_getFinalizedHead","chain_getHead","chain_getHeader","chain_getRuntimeVersion","chain_subscribeAllHeads","chain_subscribeFinalisedHeads","chain_subscribeFinalizedHeads","chain_subscribeNewHead","chain_subscribeNewHeads","chain_subscribeRuntimeVersion","chain_unsubscribeAllHeads","chain_unsubscribeFinalisedHeads","chain_unsubscribeFinalizedHeads","chain_unsubscribeNewHead","chain_unsubscribeNewHeads","chain_unsubscribeRuntimeVersion","childstate_getKeys","childstate_getKeysPaged","childstate_getKeysPagedAt","childstate_getStorage","childstate_getStorageEntries","childstate_getStorageHash","childstate_getStorageSize","dev_getBlockStats","offchain_localStorageClear","offchain_localStorageGet","offchain_localStorageSet","payment_queryFeeDetails","payment_queryInfo","rpc_methods","state_call","state_callAt","state_getChildReadProof","state_getKeys","state_getKeysPaged","state_getKeysPagedAt","state_getMetadata","state_getPairs","state_getReadProof","state_getRuntimeVersion","state_getStorage","state_getStorageAt","state_getStorageHash","state_getStorageHashAt","state_getStorageSize","state_getStorageSizeAt","state_queryStorage","state_queryStorageAt","state_subscribeRuntimeVersion","state_subscribeStorage","state_traceBlock","state_trieMigrationStatus","state_unsubscribeRuntimeVersion","state_unsubscribeStorage","subscribe_newHead","system_accountNextIndex","system_addLogFilter","system_addReservedPeer","system_chain","system_chainType","system_dryRun","system_dryRunAt","system_health","system_localListenAddresses","system_localPeerId","system_name","system_nodeRoles","system_peers","system_properties","system_removeReservedPeer","system_reservedPeers","system_resetLogFilter","system_syncState","system_unstable_networkState","system_version","transactionWatch_v1_submitAndWatch","transactionWatch_v1_unwatch","transaction_v1_broadcast","transaction_v1_stop","unsubscribe_newHead"]}}'
     headers:
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - '*'
-      access-control-expose-headers:
+      Access-Control-Expose-Headers:
       - '*'
-      content-length:
-      - '2796'
-      content-type:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2787'
+      Content-Type:
       - application/json; charset=utf-8
-      date:
-      - Thu, 12 Oct 2023 10:07:00 GMT
-      server:
-      - envoy
-      vary:
-      - origin,access-control-request-method,access-control-request-headers
-      x-cluster:
-      - Shared nodes
-      x-envoy-upstream-service-time:
-      - '167'
+      Date:
+      - Sun, 09 Nov 2025 17:52:03 GMT
+      Vary:
+      - origin, access-control-request-method, access-control-request-headers
+      X-Cluster:
+      - nv
+      X-Continent:
+      - NA
+      X-Kong-Proxy-Latency:
+      - '0'
+      X-Kong-Request-Id:
+      - b7dd5b2d4b23d877ab6d2d74b16d8509
+      X-Kong-Upstream-Latency:
+      - '3'
     status:
       code: 200
       message: OK
@@ -324,40 +336,46 @@ interactions:
       Content-Length:
       - '68'
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.32.5
       cache-control:
       - no-cache
       content-type:
       - application/json
     method: POST
-    uri: https://ksm.getblock.io/ae78eb1d-2643-4e22-b691-0ecb9d9c5e08/mainnet/
+    uri: https://assethub-kusama.api.onfinality.io/rpc
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":"0x91d3e339bc2fd3b825f7f788678846be5f0a4c01fa60a5ec19428501caa62cfc","id":3}'
+      string: '{"jsonrpc":"2.0","id":3,"result":"0x8a645ed4682ea792834be0ad7ab3739d99e2dbacbb26aae6e9442f07a0686081"}'
     headers:
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - '*'
-      access-control-expose-headers:
+      Access-Control-Expose-Headers:
       - '*'
-      content-length:
+      Connection:
+      - keep-alive
+      Content-Length:
       - '102'
-      content-type:
+      Content-Type:
       - application/json; charset=utf-8
-      date:
-      - Thu, 12 Oct 2023 10:07:00 GMT
-      server:
-      - envoy
-      vary:
-      - origin,access-control-request-method,access-control-request-headers
-      x-cluster:
-      - Shared nodes
-      x-envoy-upstream-service-time:
-      - '107'
+      Date:
+      - Sun, 09 Nov 2025 17:52:03 GMT
+      Vary:
+      - origin, access-control-request-method, access-control-request-headers
+      X-Cluster:
+      - nv
+      X-Continent:
+      - NA
+      X-Kong-Proxy-Latency:
+      - '0'
+      X-Kong-Request-Id:
+      - 1c9dbf0c6d9e602137e42605e428ce75
+      X-Kong-Upstream-Latency:
+      - '4'
     status:
       code: 200
       message: OK
 - request:
-    body: '{"jsonrpc": "2.0", "method": "chain_getHeader", "params": ["0x91d3e339bc2fd3b825f7f788678846be5f0a4c01fa60a5ec19428501caa62cfc"],
+    body: '{"jsonrpc": "2.0", "method": "chain_getHeader", "params": ["0x8a645ed4682ea792834be0ad7ab3739d99e2dbacbb26aae6e9442f07a0686081"],
       "id": 4}'
     headers:
       Accept:
@@ -369,35 +387,41 @@ interactions:
       Content-Length:
       - '138'
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.32.5
       cache-control:
       - no-cache
       content-type:
       - application/json
     method: POST
-    uri: https://ksm.getblock.io/ae78eb1d-2643-4e22-b691-0ecb9d9c5e08/mainnet/
+    uri: https://assethub-kusama.api.onfinality.io/rpc
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"parentHash":"0x9178f446f56a0de182328834e773836bba812c33327f87fd173a67c081dcf752","number":"0x13259d5","stateRoot":"0xcc33ea6eda849ca5bc34b60d72949a5f35840d9d400ccfb82b778347aa960699","extrinsicsRoot":"0xa52b8c38488b512413d6d88f32ff9a466ed9305ecc902ad5dbb51e50ce6a53a3","digest":{"logs":["0x0642414245b501031202000036f6db10000000007e2e51868bcc4386f234ca1d436d1579bce9f74906aa62cec35291ccb7e7a8019107534da93652e97550e641e85b6722c5195923b04887e44420fe5ae6228c0426d209efa7794c9054c495c74284165ecb2f8345cf7e1fe5cc36f136ba278702","0x05424142450101b4812d68f247f8139da5b57342cc04141fccc53f909979b6f84c00140880ac6813b36849a1109e0b7752c01264c057f0a625ce5077fe9ad09594e70e2649b487"]}},"id":4}'
+      string: '{"jsonrpc":"2.0","id":4,"result":{"parentHash":"0x847270861bbb2100d6feef3e2552f591940deeef1f6218850938bb7283b35577","number":"0xb0af20","stateRoot":"0xc91086e68a908e1259478ef638cabf389a5f404499267af18c1566da8628bebb","extrinsicsRoot":"0x4b71183d570085d15e03d46f4b4f8f652fffa38716c4e24043dc964c26525c5a","digest":{"logs":["0x0661757261200f67c10800000000","0x0452505352907a01534bc36c6d11de265a85a8916c9b19f02978b6870dffffbdd7f1baed8efc76b25d07","0x05617572610101b85c74dbd1d1935761c91d80da209c4271a5b2ebaca48713e3596ac02f5d3f0f97da26f3e20f4f382b1fc11ccddee2dfa4d1bf0599b6d50b50e261a1b642cd86"]}}}'
     headers:
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - '*'
-      access-control-expose-headers:
+      Access-Control-Expose-Headers:
       - '*'
-      content-length:
-      - '709'
-      content-type:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '593'
+      Content-Type:
       - application/json; charset=utf-8
-      date:
-      - Thu, 12 Oct 2023 10:07:01 GMT
-      server:
-      - envoy
-      vary:
-      - origin,access-control-request-method,access-control-request-headers
-      x-cluster:
-      - Shared nodes
-      x-envoy-upstream-service-time:
-      - '126'
+      Date:
+      - Sun, 09 Nov 2025 17:52:04 GMT
+      Vary:
+      - origin, access-control-request-method, access-control-request-headers
+      X-Cluster:
+      - nv
+      X-Continent:
+      - NA
+      X-Kong-Proxy-Latency:
+      - '0'
+      X-Kong-Request-Id:
+      - 24444a556d35540a39aaa363e08b1430
+      X-Kong-Upstream-Latency:
+      - '3'
     status:
       code: 200
       message: OK
@@ -413,12 +437,12 @@ interactions:
       Content-Length:
       - '0'
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.32.5
     method: POST
-    uri: https://kusama.api.subscan.io/api/scan/metadata
+    uri: https://assethub-kusama.api.subscan.io/api/scan/metadata
   response:
     body:
-      string: '{"code":0,"message":"Success","generated_at":1697105214,"data":{"addressType":"2","avgBlockTime":"6","blockNum":"20077011","blockTime":"6","bootTime":"1574962074","commissionAccuracy":"9","count_account":"293981","count_event":"502806883","count_signed_extrinsic":"10874196","count_transfer":"7156793","currentPools":"155","current_era":"5757","current_validator_count":"1000","epochLength":"600","epochProcess":"388","eraLength":"3600","eraProcess":"2188","exist_roles":"registrar,fellowship,convictionDelegate,convictionDelegated,democracyDelegate,nominator,proxy,proxies,onChainIdentity,module,validator,multisig,multisigMember,democracyDelegated","finalized_blockNum":"20077008","history_depth":"0","implName":"parity-kusama","maxNominatorRewardedPerValidator":"512","maxPools":"256","networkNode":"kusama","specVersion":"9430","unbondDuration":"100800","validator_count":"1000","waiting_validator":"1145"}}'
+      string: '{"code":0,"message":"Success","generated_at":1762710718,"data":{"addressType":"2","avgBlockTime":"6.6834","blockNum":"11579168","blockTime":"6","bootTime":"0","commissionAccuracy":"9","count_account":"404262","count_account_all":"724577","count_event":"7998818","count_signed_extrinsic":"344947","count_transfer":"2960906","currentPools":"197","current_era":"8794","current_validator_count":"1000","enabledNewTransferableFormulas":"true","epochLength":"600","epochProcess":"210","eraLength":"3237","eraProcess":"2363","eraStartBlock":"11576805","exist_roles":"onChainIdentity,convictionDelegate,validator,proxy,proxies,multisig,module,activeBlockAuthor,nominator,multisigMember,convictionDelegated,collator","finalized_blockNum":"11579163","history_depth":"84","implName":"statemine","maxNominatorRewardedPerValidator":"-1","min_nominator_bond":"100000000000","networkNode":"statemine","nftsRefreshAt":"1762683288","ref_time_rate":"7594","specVersion":"2000001","tps_15min":"0.024444444444444446","treasuryAccountId":"6d6f646c70792f74727372790000000000000000000000000000000000000000","unbondDuration":"90636","uniquesRefreshAt":"1762709517","validator_count":"1000","waiting_validator":"915"}}'
     headers:
       Access-Control-Allow-Credentials:
       - 'true'
@@ -426,34 +450,26 @@ interactions:
       - ''
       Access-Control-Expose-Headers:
       - '*'
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 814e8891cefe35c2-WAW
       Cache-Control:
       - no-store
-      Connection:
-      - keep-alive
+      Content-Length:
+      - '1193'
       Content-Type:
       - application/json; charset=utf-8
+      Daily-Limit:
+      - '0'
+      Daily-Remaining:
+      - '0'
       Date:
-      - Thu, 12 Oct 2023 10:07:01 GMT
+      - Sun, 09 Nov 2025 17:52:05 GMT
       Ratelimit-Limit:
       - '2'
       Ratelimit-Remaining:
       - '1'
-      Ratelimit-Reset:
+      Retry-After:
       - '1'
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
       Vary:
       - Origin
-      alt-svc:
-      - h3=":443"; ma=86400
-      content-length:
-      - '911'
     status:
       code: 200
       message: OK
@@ -469,35 +485,41 @@ interactions:
       Content-Length:
       - '72'
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.32.5
       cache-control:
       - no-cache
       content-type:
       - application/json
     method: POST
-    uri: https://ksm.getblock.io/ae78eb1d-2643-4e22-b691-0ecb9d9c5e08/mainnet/
+    uri: https://assethub-kusama.api.onfinality.io/rpc
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"ss58Format":2,"tokenDecimals":12,"tokenSymbol":"KSM"},"id":5}'
+      string: '{"jsonrpc":"2.0","id":5,"result":{"ss58Format":2,"tokenDecimals":12,"tokenSymbol":"KSM"}}'
     headers:
-      access-control-allow-origin:
+      Access-Control-Allow-Origin:
       - '*'
-      access-control-expose-headers:
+      Access-Control-Expose-Headers:
       - '*'
-      content-length:
+      Connection:
+      - keep-alive
+      Content-Length:
       - '89'
-      content-type:
+      Content-Type:
       - application/json; charset=utf-8
-      date:
-      - Thu, 12 Oct 2023 10:07:01 GMT
-      server:
-      - envoy
-      vary:
-      - origin,access-control-request-method,access-control-request-headers
-      x-cluster:
-      - Shared nodes
-      x-envoy-upstream-service-time:
-      - '78'
+      Date:
+      - Sun, 09 Nov 2025 17:52:04 GMT
+      Vary:
+      - origin, access-control-request-method, access-control-request-headers
+      X-Cluster:
+      - nv
+      X-Continent:
+      - NA
+      X-Kong-Proxy-Latency:
+      - '0'
+      X-Kong-Request-Id:
+      - 2666e958c1f48565c6e9156aab200c4b
+      X-Kong-Upstream-Latency:
+      - '3'
     status:
       code: 200
       message: OK
