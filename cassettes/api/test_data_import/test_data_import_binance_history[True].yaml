@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.32.4
+      - python-requests/2.32.5
     method: GET
     uri: https://www.x-rates.com/historical/?from=EUR&amount=1&date=2020-11-03
   response:
@@ -97,7 +97,7 @@ interactions:
         isOutputPage = $(\".li-historicallookup\").hasClass(\"selected\");\n\t\t\t\t$(\"#historicalDate\").datepicker({
         \n\t\t\t\t\t\t\t\tchangeYear: true, \n\t\t\t\t\t\t\t\tchangeMonth: true, \n\t\t\t\t\t\t\t\tdateFormat:
         'yy-mm-dd', \n\t\t\t\t\t\t\t\tminDate: new Date(2015, 0, 01), \n\t\t\t\t\t\t\t\tmaxDate:
-        new Date(2025, 7, 13),\n\t\t\t\t\t\t\t\tyearRange: '2015:2025',\n\t\t\t\t\t\t\t\tbeforeShow:
+        new Date(2025, 10, 25),\n\t\t\t\t\t\t\t\tyearRange: '2015:2025',\n\t\t\t\t\t\t\t\tbeforeShow:
         function(){ \n\t\t\t\t\t\t\t\t\tif(!isOutputPage){ \n\t\t\t\t\t\t\t\t\t\t$(\".li-historicallookup\").addClass(\"selected\");\n\t\t\t\t\t\t\t\t\t}
         \n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\tonClose: function(){ \n\t\t\t\t\t\t\t\t\tif(!isOutputPage){
         \n\t\t\t\t\t\t\t\t\t\t$(\".li-historicallookup\").removeClass(\"selected\");\n\t\t\t\t\t\t\t\t\t}
@@ -522,17 +522,17 @@ interactions:
         >\t\t\t\n\t\t\t\t\t\t<div class=\"module bottomMargin\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div
         class='moduleContent'>\n\t\t\t\n\t\t\t\t\t<h4 class=\"ratesChangetableHdr\">Percent
         Change in the Last 24 Hours</h4>\n\t\t<ul id='ratesTrends' class='currencyPairUL'>\n\t\t\t<li>EUR/USD<span
-        class='up'>+0.26488%</span></li><li class=\"left-border\">USD/JPY<span class='down'>-0.19116%</span></li><li
-        class=\"clear-left\">GBP/USD<span class='up'>+0.52901%</span></li><li class=\"left-border\">USD/CHF<span
-        class='down'>-0.25508%</span></li><li class=\"clear-left\">USD/CAD<span class='down'>-0.06234%</span></li><li
-        class=\"left-border\">EUR/JPY<span class='up'>+0.07321%</span></li><li class=\"clear-left\">AUD/USD<span
-        class='up'>+0.15976%</span></li><li class=\"left-border\">CNY/USD<span class='up'>+0.07637%</span></li>\n\t\t</ul>\n\t\t<script
+        class='up'>+0.49835%</span></li><li class=\"left-border\">USD/JPY<span class='down'>-0.61866%</span></li><li
+        class=\"clear-left\">GBP/USD<span class='up'>+0.78370%</span></li><li class=\"left-border\">USD/CHF<span
+        class='down'>-0.21029%</span></li><li class=\"clear-left\">USD/CAD<span class='down'>-0.11772%</span></li><li
+        class=\"left-border\">EUR/JPY<span class='down'>-0.12339%</span></li><li class=\"clear-left\">AUD/USD<span
+        class='up'>+0.22248%</span></li><li class=\"left-border\">CNY/USD<span class='up'>+0.25182%</span></li>\n\t\t</ul>\n\t\t<script
         type=\"text/javascript\">\n\t\t\tif(typeof(registerAfterRefreshFunction) ==
         \"function\")\n\t\t\t{\n\t\t\t\tregisterRefreshFunctions(\n\t\t\t\t\tfunction(responseText){updateContents(['#ratesTrends',
         '#ratesTrendsTimestamp'], responseText); $('#ratesTrends').fadeTo(300,1);},
         \n\t\t\t\t\tfunction(){refreshFadeOut('#ratesTrends');});\n\t\t\t}\n\t\t</script>\t\t\n\t\t</div>\n\t\t\t\t\t<div
-        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTrendsTimestamp\">Aug 13, 2025
-        18:50 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\n\t\t\t</div>\n\t\t</div>\t\t
+        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTrendsTimestamp\">Nov 25, 2025
+        17:43 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\n\t\t\t</div>\n\t\t</div>\t\t
         <div class=\"grid\">\n\t                <div class=\"grid__cell\" >\t\t\t\n\t\t\t\t\t\t<div
         class=\"module bottomMargin\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div class='moduleContent'>\n\t\t\t\n\t\t\t\t\t<div
         id=\"output_rs\" class='rightsideAd'>\n\t\t\t\t\t<script type=\"text/javascript\">\n\t\t\t\t\t\te9AdSlots['output_rs']['mobileAd']
@@ -573,15 +573,15 @@ interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Wed, 13 Aug 2025 18:50:02 GMT
+      - Tue, 25 Nov 2025 17:43:17 GMT
       Server:
-      - Apache/2.4.64 () OpenSSL/1.0.2k-fips PHP/7.4.33
+      - Apache
       Vary:
       - Accept-Encoding
       X-Powered-By:
       - PHP/7.4.33
       content-length:
-      - '47465'
+      - '47468'
     status:
       code: 200
       message: OK
@@ -602,10 +602,8 @@ interactions:
     body:
       string: '{"coins":{"ethereum:0xB8c77482e45F1F44dE1745F52C74426C631bDD52":{"decimals":18,"symbol":"BNB","price":26.765469766407215,"timestamp":1604437689}}}'
     headers:
-      Age:
-      - '303'
       CF-RAY:
-      - 96ea6557cbeccc4a-BCN
+      - 9a42f29248d9d7ce-LHR
       Cache-Control:
       - max-age=3600
       Connection:
@@ -613,31 +611,31 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 13 Aug 2025 18:50:02 GMT
+      - Tue, 25 Nov 2025 17:43:18 GMT
       Server:
       - cloudflare
       Transfer-Encoding:
       - chunked
       Vary:
-      - Accept-Encoding
+      - accept-encoding
       access-control-allow-credentials:
       - 'true'
       access-control-allow-origin:
       - '*'
       apigw-requestid:
-      - PQd-0jHGFiAEMrA=
+      - UnGchi7fFiAEMvw=
       cf-cache-status:
-      - HIT
+      - MISS
       content-length:
       - '146'
       last-modified:
-      - Wed, 13 Aug 2025 18:44:59 GMT
+      - Tue, 25 Nov 2025 17:43:18 GMT
       via:
-      - 1.1 1c301b860f1012db2b746c01d3e8617e.cloudfront.net (CloudFront)
+      - 1.1 a05c188e51bae9a78597941cbf106e52.cloudfront.net (CloudFront)
       x-amz-cf-id:
-      - MMlnEbbNREG4j6bSphjbqpU7i5Z7feDtIqpIw22Duqv_QrogbGX-cQ==
+      - S7UxZBgYiFXhA8cShGqlPEcR7qJ36wvtlkLg6gB05rKXjCBtZC4wVg==
       x-amz-cf-pop:
-      - MAD51-C2
+      - LHR61-P7
       x-cache:
       - Miss from cloudfront
     status:
@@ -653,7 +651,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.39.2.dev353+gd15f376e6
+      - rotki/1.41.2.dev3+gb9c0673f32.d20251125
     method: GET
     uri: https://data-api.cryptocompare.com/index/cc/v1/historical/days?limit=1&market=cadli&to_ts=1604437979&instrument=ETH-USD
   response:
@@ -679,7 +677,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Wed, 13 Aug 2025 18:50:04 GMT
+      - Tue, 25 Nov 2025 17:43:18 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -692,6 +690,770 @@ interactions:
       - cc-api-data-20
       content-length:
       - '822'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://www.x-rates.com/historical/?from=EUR&amount=1&date=2025-10-29
+  response:
+    body:
+      string: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=utf-8\"/>\n<meta name=\"format-detection\" content=\"telephone=no\"/>\n<meta
+        name=\"description\" content=\"Get historic exchange rates for past Euro foreign
+        expenses. Select your currencies and the date to get histroical rate tables.\"/>\n<meta
+        name=\"keywords\" content=\"1 EUR to EUR, historical exchange rates, historic
+        rates, x-rates, historic currency table, past exchange rates, currency lookup\"/>\n<link
+        rel=\"canonical\" href=\"https://www.x-rates.com/historical/?from=EUR&amount=1&date=2025-10-29\"/>\n\t\t\t<script
+        type='text/javascript'>\n\t\t\t\tvar e9AdSlots  = { \n\t\t\t\t  output_lb
+        : {site:'ExchangeRates', adSpace:'Homepage', size:'728x90,468x60', noAd: '1'},\noutput_rs
+        : {site:'ExchangeRates', adSpace:'Homepage', size:'300x250,300x600,160x600',
+        noAd: '1'},\nros_ls : {site:'XEInternal', adSpace:'HRROS', size:'300x250',
+        rsize: '238x230', noAd: '1', async: false},\nros_ms : {site:'XEInternal',
+        adSpace:'HRROS', size:'468x60', rsize: '300x90', noAd: '1', async: false}\n\t\t\t\t};\t\t\t\n\t\t\t</script>\t\t<link
+        rel='stylesheet' href='/themes/x-rates/t_css/output_resp.2e.css' type='text/css'
+        /><script src='/themes/x-rates/t_js/output.1e.js' type='text/javascript'></script>
+        \           <script>\n                if (!gdprIsCookieTagAllowed(\"tag_GoogleAnalytics\"))
+        {\n                            window['ga-disable-UA-851277-2'] = true;\n
+        \               }\n\n                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n
+        \               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n
+        \               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n
+        \               })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\n
+        \               ga('create', 'UA-851277-2', 'auto');\n                ga('require',
+        'displayfeatures');\n                ga('send', 'pageview');;\n                \n
+        \           </script><script type=\"text/javascript\">\n    var converterToolExcludeArgs
+        = {ratestable: ['to'],historicallookup: ['to']};\n</script>        <script
+        async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2110917264626924&ivt=false\"
+        crossorigin=\"anonymous\"></script>\n        <script async src=\"https://securepubads.g.doubleclick.net/tag/js/gpt.js\"></script>\n
+        \       <title>EUR Historical Exchange Rates (Euro) - X-Rates</title>\n        <!--[if
+        IE]><script src=\"http://html5shiv.googlecode.com/svn/trunk/html5.js\"></script><![endif]-->\n
+        \   </head>\n\n    <body>\n                <div id=\"skip\"><a href=\"#content\">Skip
+        to Main Content</a></div>\n        <header>\n            \t<div class=\"navbar
+        clearfix\">\t\n\t<div class=\"navbar-inner\">\t\t                \n\t\t<div
+        class=\"wrapper clearfix\">\n\t\t\t<a href='https://www.x-rates.com/' class='brand'><img
+        alt='xrates logo' src='/themes/x-rates/images/xrates_sm_tm.png' border='0'/></a>\n\t\t\t<div
+        id=\"headerTri\"></div>  \n\t\t\t<!--[if !IE 8]><!-->\n\t\t\t\t<a class=\"navtoggle\"
+        id=\"navtoggle\">\n\t\t\t\t\t<div class=\"nav-icon\"></div>\n\t\t\t\t</a>\t\t\t\n\t\t\t
+        <!--<![endif]-->\n\t\t\t<nav class=\"nav-collapse\">\n\t\t\t\t<ul class='nav'><li><a
+        href='https://www.x-rates.com/' rel='homepage'>Home</a></li>\n<li><a href='https://www.x-rates.com/calculator/'
+        onclick=\"submitConverterArgs(this)\" rel='currencycalculator'>Currency Calculator</a></li>\n<li><a
+        href='https://www.x-rates.com/graph/' onclick=\"submitConverterArgs(this)\"
+        rel='currencygraph'>Graphs</a></li>\n<li><a href='https://www.x-rates.com/table/'
+        onclick=\"submitConverterArgs(this)\" rel='ratestable'>Rates Table</a></li>\n<li><a
+        href='https://www.x-rates.com/average/' onclick=\"submitConverterWithExtraArgs(this)\"
+        rel='monthlyaverage'>Monthly Average</a></li>\n<li class='selected'><a href='https://www.x-rates.com/historical/'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Historic
+        Lookup</a></li>\n</ul>\t\t\t\t\t\n\t\t\t</nav>   \n\t\t\t\t\t\t\t\n\t\t</div>\n\n\t</div>\n\t</div>\n\t\t<script
+        type=\"text/javascript\">\n      \t\t$(document).ready(function() {\t\n      \t\t\t$(\"#navtoggle\").click(function()
+        {\n\t\t\t$(\"header .nav-collapse\").slideToggle(300);\n\t\t\t $(\".nav-icon\").toggleClass(\"open\");
+        \  \n      \t\t\t});\n      \t\t\n      \t\t});\n    \t</script>\n\n        </header>\n
+        \               <div class=\"wrapper\">\n\n            <div class=\"grid clearfix\"
+        \ ontouchstart=\"void(0);\">\n\n                \t\n\t\t<div class=\"grid
+        clearfix\" id=\"ads-group\">\n\t\t<div class=\"grid__cell\">\n\t\t     <div
+        class=\"home-logo\" >\n\t               \t <a href='https://www.x-rates.com/'><img
+        class='main-logo' alt='xrates logo' src='/themes/x-rates/images/xrates_lg_tm.png'
+        border='0'/></a>\n\t                </div>\n\t                <div class=\"home-ad\"
+        \ id=\"output_lb\" >\n\t               \t \t\t<script type=\"text/javascript\">\n\t\t\t\t\t\te9AdSlots['output_lb']['mobileAd']
+        = \"<a href='http://www.xe.com/xecurrencydata/?WT.mc_id=XDF-300x50-RROS-ADL-XX-V01-130901'><img
+        alt='Ad' src='/themes/x-rates/images/ads/728x90_dfs.png' border='0'/></a>\";\n\t\t\te9AdSlots['output_lb']['desktopAd']
+        = \"<a href='http://www.xe.com/xecurrencydata/?WT.mc_id=XDF-728x90-RROS-ADL-XX-V01-130901'><img
+        alt='Ad' src='/themes/x-rates/images/ads/728x90_dfs.png' border='0'/></a>\";\n\t\t\te9AdSlots['output_lb']['mobileThreshold']
+        = 767;\t\t\t\n\t\t\tenqueueAd('output_lb');\n\t\t</script>\n\t\t<noscript>\n\t\t\t<div
+        align=\"center\"><a href='http://www.xe.com/xecurrencydata/?WT.mc_id=XDF-728x90-RROS-ADL-XX-V01-130901'><img
+        alt='Ad' src='/themes/x-rates/images/ads/728x90_dfs.png' border='0'/></a></div>\n\t\t</noscript>\n\t
+        \               </div>\n\t                </div>\n\t           \n\t\t</div>\n\t
+        \               \n\t\t<div class=\"grid-cell breadcrumb\" id=\"breadcrumb\">\n\t\t\t<a
+        href='https://www.x-rates.com/'>Home</a> &gt; Euro Historical Rates Table\n\t\t</div>\n
+        \               <div class=\"grid__cell main\" id=\"content\" >\n                    \t\t
+        <div class=\"grid\">\n\t                <div class=\"grid__cell\" >\t\t\t\n\t\t\t\t\t\t<div
+        class=\"col2 pull-right module bottomMargin\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div
+        class='moduleContent'>\n\t\t\t\t\t<h1 class=\"basicH1 historicallookupH1\">\n\t\t\t\t\t<span
+        class=\"OutputHeader\">Euro Historical Rates Table</span>\n\t\t<a href='#converter'
+        class='backToConverterButton'>Converter</a>\n\t\t<span class=\"OutputArgs\"></span>\t\n\t\t</h1>\n\t\t\t\t\t<span
+        class='ratesTablePopu'>Top 10</span>\n\t\t\t\t\t\t\t<div id=\"historicallookupTip\"
+        class=\"converterLinkTooltip\">\r\n\t\t\t<form id=\"historicallookupForm\"
+        action=\"https://www.x-rates.com/historical/\" onSubmit=\"submitConverterWithExtraArgs(this,'historicallookup');return
+        false;\">\r\n\t\t\t\t\t\t<label for=\"historialDate\" class=\"sr-only\">historical
+        date</label>\n\t\t<input type=\"text\" value=\"2025-10-29\" name=\"date\"
+        id=\"historicalDate\">\n\t\t<input type=\"submit\" value=\"Go!\" class=\"goButton\">\r\n\t\t\t</form>\r\n\t\t</div>\n\t\t\t<script
+        type='text/javascript'>\n\t\t\t\t$(function() {\n\t\t\t\t\t\t\t\t\t$.datepicker.setDefaults({\n\t\t\t\t\tvalidateDateMinMax:
+        'service.historicallookup.error.date.invalid'\n\t\t\t\t});\n\n\t\t\t\tvar
+        isOutputPage = $(\".li-historicallookup\").hasClass(\"selected\");\n\t\t\t\t$(\"#historicalDate\").datepicker({
+        \n\t\t\t\t\t\t\t\tchangeYear: true, \n\t\t\t\t\t\t\t\tchangeMonth: true, \n\t\t\t\t\t\t\t\tdateFormat:
+        'yy-mm-dd', \n\t\t\t\t\t\t\t\tminDate: new Date(2015, 0, 01), \n\t\t\t\t\t\t\t\tmaxDate:
+        new Date(2025, 10, 25),\n\t\t\t\t\t\t\t\tyearRange: '2015:2025',\n\t\t\t\t\t\t\t\tbeforeShow:
+        function(){ \n\t\t\t\t\t\t\t\t\tif(!isOutputPage){ \n\t\t\t\t\t\t\t\t\t\t$(\".li-historicallookup\").addClass(\"selected\");\n\t\t\t\t\t\t\t\t\t}
+        \n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\tonClose: function(){ \n\t\t\t\t\t\t\t\t\tif(!isOutputPage){
+        \n\t\t\t\t\t\t\t\t\t\t$(\".li-historicallookup\").removeClass(\"selected\");\n\t\t\t\t\t\t\t\t\t}
+        \n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t});\n\n\t\t\t\t$(\"#historicallookupForm\").validate({\n\t\t\t\t\t\t\t\terrorLabelContainer:
+        \"#validationErrors\",\n\t\t\t\t\t\t\t\tshowErrors: function(errorMap, errorList)
+        {\n\t\t\t\t\t\t\t\t\t\t$(\"#historicallookupErrors\").html('');\n\t\t\t\t\t\t\t\t\t\tthis.defaultShowErrors();\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t});\t\t\t\t\t\t\t\n\t\t\t\t});
+        \n\t\t\t</script>\t\t<span class=\"ratesTimestamp\">Oct 29, 2025 16:00 UTC</span>\n<table
+        class=\"ratesTable\" cellpadding=0 cellspacing=0>\n \t<thead>\n \t\t\t<tr>\n\t\t<th
+        class='rtHeader rtHeaderCurr'>Euro</th>\n\t\t<th class='rtHeader rtHeaderValues'>1.00
+        EUR</th>\n\t\t<th class='rtHeader rtHeaderValues'>inv. 1.00 EUR</th>\n\t</tr>\n
+        \t</thead>\n\t<tbody>\n\t\t\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>US Dollar</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=USD'>1.165593</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=EUR'>0.857932</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>British Pound</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=GBP'>0.877914</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=GBP&amp;to=EUR'>1.139064</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Indian Rupee</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=INR'>102.836718</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=INR&amp;to=EUR'>0.009724</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Australian Dollar</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=AUD'>1.770282</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=AUD&amp;to=EUR'>0.564882</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Canadian Dollar</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CAD'>1.624877</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CAD&amp;to=EUR'>0.615431</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Singapore Dollar</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=SGD'>1.507681</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SGD&amp;to=EUR'>0.663270</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Swiss Franc</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CHF'>0.924318</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CHF&amp;to=EUR'>1.081879</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Malaysian Ringgit</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=MYR'>4.893782</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MYR&amp;to=EUR'>0.204341</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Japanese Yen</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=JPY'>176.955621</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=JPY&amp;to=EUR'>0.005651</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Chinese Yuan
+        Renminbi</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CNY'>8.265414</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CNY&amp;to=EUR'>0.120986</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t</tbody>\n</table>\n\t\t\t<span class='ratesTableAlpha'>Alphabetical
+        order</span>\n\t\t\t<span class=\"ratesTimestamp\">Oct 29, 2025 16:00 UTC</span>\n<table
+        class=\"tablesorter ratesTable\" cellpadding=0 cellspacing=0>\n \t<thead>\n
+        \t\t\t<tr>\n\t\t<th class='rtHeader rtHeaderCurr'>Euro</th>\n\t\t<th class='rtHeader
+        rtHeaderValues'>1.00 EUR</th>\n\t\t<th class='rtHeader rtHeaderValues'>inv.
+        1.00 EUR</th>\n\t</tr>\n \t</thead>\n\t<tbody>\n\t\t\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Argentine
+        Peso</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=ARS'>1717.373556</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ARS&amp;to=EUR'>0.000582</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Australian Dollar</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=AUD'>1.770282</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=AUD&amp;to=EUR'>0.564882</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Bahraini Dinar</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=BHD'>0.438263</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BHD&amp;to=EUR'>2.281735</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Botswana Pula</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=BWP'>16.525669</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BWP&amp;to=EUR'>0.060512</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Brazilian Real</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=BRL'>6.247265</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BRL&amp;to=EUR'>0.160070</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Bruneian Dollar</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=BND'>1.507681</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BND&amp;to=EUR'>0.663270</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Bulgarian Lev</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=BGN'>1.955830</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BGN&amp;to=EUR'>0.511292</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Canadian Dollar</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CAD'>1.624877</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CAD&amp;to=EUR'>0.615431</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Chilean Peso</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CLP'>1099.112026</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CLP&amp;to=EUR'>0.000910</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Chinese Yuan
+        Renminbi</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CNY'>8.265414</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CNY&amp;to=EUR'>0.120986</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Colombian Peso</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=COP'>4535.667851</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=COP&amp;to=EUR'>0.000220</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Czech Koruna</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CZK'>24.317264</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CZK&amp;to=EUR'>0.041123</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Danish Krone</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=DKK'>7.468721</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=DKK&amp;to=EUR'>0.133892</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Hong Kong Dollar</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=HKD'>9.055746</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=HKD&amp;to=EUR'>0.110427</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Hungarian Forint</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=HUF'>388.252306</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=HUF&amp;to=EUR'>0.002576</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Icelandic Krona</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=ISK'>143.410189</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ISK&amp;to=EUR'>0.006973</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Indian Rupee</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=INR'>102.836718</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=INR&amp;to=EUR'>0.009724</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Indonesian Rupiah</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=IDR'>19352.422288</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=IDR&amp;to=EUR'>0.000052</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Iranian Rial</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=IRR'>48944.486138</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=IRR&amp;to=EUR'>0.000020</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Israeli Shekel</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=ILS'>3.797733</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ILS&amp;to=EUR'>0.263315</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Japanese Yen</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=JPY'>176.955621</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=JPY&amp;to=EUR'>0.005651</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Kazakhstani Tenge</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=KZT'>621.895675</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=KZT&amp;to=EUR'>0.001608</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>South Korean
+        Won</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=KRW'>1667.133028</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=KRW&amp;to=EUR'>0.000600</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Kuwaiti Dinar</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=KWD'>0.357414</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=KWD&amp;to=EUR'>2.797873</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Libyan Dinar</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=LYD'>6.340663</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=LYD&amp;to=EUR'>0.157712</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Malaysian Ringgit</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=MYR'>4.893782</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MYR&amp;to=EUR'>0.204341</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Mauritian Rupee</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=MUR'>52.863437</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MUR&amp;to=EUR'>0.018917</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Mexican Peso</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=MXN'>21.480612</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MXN&amp;to=EUR'>0.046554</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Nepalese Rupee</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=NPR'>164.615877</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=NPR&amp;to=EUR'>0.006075</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>New Zealand Dollar</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=NZD'>2.015937</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=NZD&amp;to=EUR'>0.496047</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Norwegian Krone</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=NOK'>11.631247</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=NOK&amp;to=EUR'>0.085975</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Omani Rial</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=OMR'>0.448657</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=OMR&amp;to=EUR'>2.228873</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Pakistani Rupee</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=PKR'>329.132345</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=PKR&amp;to=EUR'>0.003038</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Philippine Peso</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=PHP'>68.921262</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=PHP&amp;to=EUR'>0.014509</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Polish Zloty</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=PLN'>4.232186</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=PLN&amp;to=EUR'>0.236284</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Qatari Riyal</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=QAR'>4.242759</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=QAR&amp;to=EUR'>0.235696</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Romanian New
+        Leu</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=RON'>5.084210</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=RON&amp;to=EUR'>0.196687</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Russian Ruble</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=RUB'>92.365323</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=RUB&amp;to=EUR'>0.010827</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Saudi Arabian
+        Riyal</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=SAR'>4.370975</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SAR&amp;to=EUR'>0.228782</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Singapore Dollar</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=SGD'>1.507681</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SGD&amp;to=EUR'>0.663270</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>South African
+        Rand</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=ZAR'>19.995419</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ZAR&amp;to=EUR'>0.050011</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Sri Lankan Rupee</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=LKR'>354.766494</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=LKR&amp;to=EUR'>0.002819</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Swedish Krona</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=SEK'>10.925072</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SEK&amp;to=EUR'>0.091533</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Swiss Franc</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CHF'>0.924318</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CHF&amp;to=EUR'>1.081879</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Taiwan New Dollar</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=TWD'>35.629378</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=TWD&amp;to=EUR'>0.028067</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Thai Baht</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=THB'>37.704274</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=THB&amp;to=EUR'>0.026522</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Trinidadian Dollar</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=TTD'>7.914828</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=TTD&amp;to=EUR'>0.126345</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Turkish Lira</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=TRY'>48.913208</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=TRY&amp;to=EUR'>0.020444</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Emirati Dirham</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=AED'>4.280641</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=AED&amp;to=EUR'>0.233610</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>British Pound</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=GBP'>0.877914</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=GBP&amp;to=EUR'>1.139064</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>US Dollar</td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=USD'>1.165593</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=EUR'>0.857932</a></td>
+        \t\t\t\t\n\t \t\t\t\t</tr>\n\t</tbody>\n</table>\n\t\t<script type=\"text/javascript\">\n\t\t\t$(function()
+        {\n\t\t\t\t$(\".tablesorter\").tablesorter({\n\t\t\t\t\tsortList: [[0,0]]
+        \n\t\t\t    });\n\t\t    }); \n\t\t</script> \t\n\t\t</div>\n\t\t\t\t\t<div
+        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTableTimestamp\">Oct 29, 2025
+        16:00 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\t\t<div class=\"col1 pull-left\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div
+        class='moduleContent bottomMargin'>\n\t\t\t\n\t\t\t\t\t<div class=\"converterFields\">\n\t\t\t<a
+        name='converter'></a>\n\t\t\t<div class=\"converterSteps\"><span>1.</span>
+        Configure Converter</div>\n\t\t\t<div class=\"converterAmountWrapper\">\n\t\t\t\t<label
+        for=\"amount\" class=\"sr-only\">amount</label>\n\t\t\t\t<input type=\"text\"
+        name=\"amount\" id=\"amount\" class=\"converterAmount\" onfocus=\"if(this.value
+        == '1') this.value='';\" onblur=\"if(this.value == '') this.value='1' ;\"
+        value=\"1\" maxlength=\"50\" tabindex=\"1\"/>\n\t\t\t\t<a href='https://www.x-rates.com/historical/'
+        onclick=\"submitConverterWithExtraArgs(this)\" class='amountFieldArrow' rel='historicallookup'>&nbsp;<span
+        class=\"contentArrow\">&#9658;</span></a>\n\t\t\t</div>\n\t\t\t\t\t\t<div>\n\t\t\t\t<div
+        id=\"fromInput\">\n\t\t\t\t\t<select class=\"ccDbx\" name=\"from\" id=\"from\"
+        size=\"1\" tabindex=\"2\">\n\t\t\t\t\t\t<option value='AUD'>AUD - Australian
+        Dollar</option>\n<option value='CAD'>CAD - Canadian Dollar</option>\n<option
+        value='CHF'>CHF - Swiss Franc</option>\n<option value='CNY'>CNY - Chinese
+        Yuan Renminbi</option>\n<option value='DKK'>DKK - Danish Krone</option>\n<option
+        value='EUR' selected=\"selected\">EUR - Euro</option>\n<option value='GBP'>GBP
+        - British Pound</option>\n<option value='HKD'>HKD - Hong Kong Dollar</option>\n<option
+        value='HUF'>HUF - Hungarian Forint</option>\n<option value='INR'>INR - Indian
+        Rupee</option>\n<option value='JPY'>JPY - Japanese Yen</option>\n<option value='MXN'>MXN
+        - Mexican Peso</option>\n<option value='MYR'>MYR - Malaysian Ringgit</option>\n<option
+        value='NOK'>NOK - Norwegian Krone</option>\n<option value='NZD'>NZD - New
+        Zealand Dollar</option>\n<option value='PHP'>PHP - Philippine Peso</option>\n<option
+        value='RUB'>RUB - Russian Ruble</option>\n<option value='SEK'>SEK - Swedish
+        Krona</option>\n<option value='SGD'>SGD - Singapore Dollar</option>\n<option
+        value='THB'>THB - Thai Baht</option>\n<option value='TRY'>TRY - Turkish Lira</option>\n<option
+        value='USD'>USD - US Dollar</option>\n<option value='ZAR'>ZAR - South African
+        Rand</option>\n\n\t\t\t\t\t</select>\n\t\t\t\t\t<script type=\"text/javascript\">\n\t\t\t\t\t\t$(\"#fromInput\").html(\"<input
+        type='text' id='from' class='converterCurrencyFrom' tabindex='2' value=''/><input
+        type='hidden' name='from' id='from_var' value='EUR'/>\");\n\t\t\t\t\t\toptions.customizeCurrency
+        = null;\noptions.allowObsolete = true;\noptions.obsoleteTitle = \"currency.obsolete.title\";\noptions.expiringTitle
+        = \"currency.expiring.title\";\noptions.cacheLength = currenciesArray.length;\noptions.selectLast
+        = true;\noptions.resultsClass = 'ac_results';\noptions.filterOutList = null;\nvar
+        recentListCookie = $.cookie('fromCurrencies');\nvar fromRecentList = recentListCookie
+        != null? recentListCookie.split(',') : 'USD,EUR,GBP,INR,AUD,CAD,SGD'.split(',');\noptions.recentList
+        = fromRecentList;\noptions.searchHelp = \"Type to search ...\";\noptions.recentListTitle
+        = \"Recent\";\noptions.allListTitle = \"All Currencies\";\noptions.nothingToDisplayTip
+        = \"\";\noptions.inputTip = \"\";\noptions.allListTitleDetail = \"\";\n$('#from').autocomplete(allCurrenciesArray,
+        options).result(currencyArgsCheckTrigger);\nsetUCCInputValue($('#from'), 'EUR');\n\n\t\t\t\t\t</script>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<a
+        href='#' onclick=\"return false\" class='converterInverseButton'><span class='inverseArrow
+        exclude'>\u2194</span></a>\n\t\t\t\t\t\t<div>\n\t\t\t\t<div id=\"toInput\">\n\t\t\t\t\t<select
+        class=\"ccDbx\" name=\"to\" id=\"to\" size=\"1\" tabindex=\"3\">\n\t\t\t\t\t\t<option
+        value='AUD'>AUD - Australian Dollar</option>\n<option value='CAD'>CAD - Canadian
+        Dollar</option>\n<option value='CHF'>CHF - Swiss Franc</option>\n<option value='CNY'>CNY
+        - Chinese Yuan Renminbi</option>\n<option value='DKK'>DKK - Danish Krone</option>\n<option
+        value='EUR' selected=\"selected\">EUR - Euro</option>\n<option value='GBP'>GBP
+        - British Pound</option>\n<option value='HKD'>HKD - Hong Kong Dollar</option>\n<option
+        value='HUF'>HUF - Hungarian Forint</option>\n<option value='INR'>INR - Indian
+        Rupee</option>\n<option value='JPY'>JPY - Japanese Yen</option>\n<option value='MXN'>MXN
+        - Mexican Peso</option>\n<option value='MYR'>MYR - Malaysian Ringgit</option>\n<option
+        value='NOK'>NOK - Norwegian Krone</option>\n<option value='NZD'>NZD - New
+        Zealand Dollar</option>\n<option value='PHP'>PHP - Philippine Peso</option>\n<option
+        value='RUB'>RUB - Russian Ruble</option>\n<option value='SEK'>SEK - Swedish
+        Krona</option>\n<option value='SGD'>SGD - Singapore Dollar</option>\n<option
+        value='THB'>THB - Thai Baht</option>\n<option value='TRY'>TRY - Turkish Lira</option>\n<option
+        value='USD'>USD - US Dollar</option>\n<option value='ZAR'>ZAR - South African
+        Rand</option>\n\n\t\t\t\t\t</select>\n\t\t\t\t\t<script type=\"text/javascript\">\n\t\t\t\t\t\t$(\"#toInput\").html(\"<input
+        type='text' id='to' class='converterCurrencyTo exclude' tabindex='3' value=''/><input
+        type='hidden' name='to' id='to_var' value='EUR'/>\");\n\t\t\t\t\t\toptions.allowObsolete
+        = true;\noptions.obsoleteTitle = \"currency.obsolete.title\";\noptions.expiringTitle
+        = \"currency.expiring.title\";\noptions.filterOutList = null;\nvar recentListCookie
+        = $.cookie('toCurrencies');\nvar toRecentList = recentListCookie != null?
+        recentListCookie.split(',') : 'USD,EUR,GBP,INR,AUD,CAD,SGD'.split(',');\noptions.recentList
+        = toRecentList;\noptions.searchHelp = \"Type to search ...\";\noptions.recentListTitle
+        = \"Recent\";\noptions.allListTitle = \"All Currencies\";\noptions.nothingToDisplayTip
+        = \"\";\noptions.allListTitleDetail = \"\";\n$('#to').autocomplete(allCurrenciesArray,
+        options).result(onUCCSelect);\n\n\t\t\t\t\t</script>\n\t\t\t\t</div>\n\t\t\t</div>\t\t\t\t\t\t<script
+        type=\"text/javascript\">\n\t\t\t\t\t\t\tsetUCCInputValue($('#to'), extractCurrencyCode($('#from'))
+        != options.recentList[0] ? options.recentList[0] : options.recentList[1]);\n\t\t\t\t\t\t</script>\n\t\t</div>\n\t\t\t\t<script
+        type='text/javascript'>\n\t\t\t$(function() \n\t\t\t{\n\t\t\t\t$('#amount').bind('blur
+        keyup', function(e) {\n\t\t\t\t    if(e.type === 'keyup' && e.keyCode !==
+        10 && e.keyCode !== 13) return;\n\t\t\t\t    converterArgsCheckTrigger('historicallookup');\n\t\t\t\t});\n\t\t\t});\n\t\t</script>\t\t<div
+        class=\"converterResult bottomMargin\">\n\t\t\t\n\t\t\t<ul class=\"converterButtons5Set\">\n\t\t\t\t\t\t\t\t<li
+        class=\"li-currencycalculator\">\n\t\t\t\t\t<span class=\"actionArrow\">&#9658;</span><a
+        href='https://www.x-rates.com/calculator/' onclick=\"submitConverterArgs(this)\"
+        rel='currencycalculator'><span class=\"converterButtonsSmallTooltip\">Currency
+        Calculator</span><span class=\"activeArrow pull-right\">&#9658;</span></a>\n\t\t\t\t</li>\t\t\t\t<li
+        class=\"li-currencygraph\">\n\t\t\t\t\t<span class=\"actionArrow\">&#9658;</span><a
+        href='https://www.x-rates.com/graph/' onclick=\"submitConverterArgs(this)\"
+        rel='currencygraph'><span class=\"converterButtonsSmallTooltip\">Graphs</span><span
+        class=\"activeArrow pull-right\">&#9658;</span></a>\n\t\t\t\t</li>\t\t\t\t<li
+        class=\"li-ratestable\">\n\t\t\t\t\t<span class=\"actionArrow\">&#9658;</span><a
+        href='https://www.x-rates.com/table/' onclick=\"submitConverterArgs(this)\"
+        rel='ratestable'><span class=\"converterButtonsSmallTooltip\">Rates Table</span><span
+        class=\"activeArrow pull-right\">&#9658;</span></a>\n\t\t\t\t</li>\t\t\t\t<li
+        class=\"li-monthlyaverage\">\n\t\t\t\t\t<span class=\"actionArrow\">&#9658;</span><a
+        href='https://www.x-rates.com/average/' onclick=\"submitConverterWithExtraArgs(this)\"
+        rel='monthlyaverage'><span class=\"converterButtonsSmallTooltip\">Monthly
+        Average</span></a>\t\t<div id=\"monthlyaverageTip\" class=\"converterLinkTooltip\">\r\n\t\t\t<form
+        id=\"monthlyaverageForm\" action=\"https://www.x-rates.com/average/\" onSubmit=\"submitConverterWithExtraArgs(this,'monthlyaverage');return
+        false;\">\r\n\t\t\t\t          \t<label for=\"averageYear\" class=\"sr-only\">averageYear</label>\n\t\t<select
+        id=\"averageYear\" name=\"year\" class=\"monthlyaveragedropdown\" onChange=\"submitConverterWithExtraArgs(this,'monthlyaverage','https://www.x-rates.com/average/')\">\r\n\t\t\t<option
+        value='2025' selected=\"selected\">2025</option>\n<option value='2024'>2024</option>\n<option
+        value='2023'>2023</option>\n<option value='2022'>2022</option>\n<option value='2021'>2021</option>\n<option
+        value='2020'>2020</option>\n<option value='2019'>2019</option>\n<option value='2018'>2018</option>\n<option
+        value='2017'>2017</option>\n<option value='2016'>2016</option>\n<option value='2015'>2015</option>\n\r\n\t\t</select>\r\n\t\t<input
+        type=\"submit\" value=\"Go!\" class=\"goButton\">\r\n\t\t\t</form>\r\n\t\t</div>\n\t\t\t\t</li>\t\t\t\t<li
+        class=\"li-historicallookup selected\">\n\t\t\t\t\t<span class=\"actionArrow\">&#9658;</span><a
+        href='https://www.x-rates.com/historical/' onclick=\"submitConverterWithExtraArgs(this)\"
+        rel='historicallookup'><span class=\"converterButtonsSmallTooltip\">Historic
+        Lookup</span><span class=\"activeArrow pull-right\">&#9658;</span></a>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t</div>\n\t\t\n\n\t\t</div>\n\t\t\t\n\t\t</div>\t\t\t\t<div
+        class=\"col1 xeLeftAd\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div class='moduleContent
+        bottomMargin'>\n\t\t\t\n\t\t\t<div id='ros_ls'>\t\t<script type=\"text/javascript\">\n\t\t\t\n\t\t\tenqueueAd('ros_ls');\n\t\t</script>\n\t\t<noscript>\n\t\t\t<div
+        align=\"center\"></div>\n\t\t</noscript></div>\n\t\t</div>\n\t\t\t\n\t\t</div>\t\t\t\t<div
+        class=\"col2 pull-right xeMiddleAd\">\n\t\t\t\n\t\t\t\n\t\t\t<div id='ros_ms'>\t\t<script
+        type=\"text/javascript\">\n\t\t\t\n\t\t\tenqueueAd('ros_ms');\n\t\t</script>\n\t\t<noscript>\n\t\t\t<div
+        align=\"center\"></div>\n\t\t</noscript></div>\n\t\t\t\n\t\t</div>\t\t\n\t\t\t</div>\n\t\t</div>\t\t
+        <div class=\"grid\">\n\t                <div class=\"grid__cell\" >\t\t\t\n\t\t\t\t\t\t<div
+        class=\"module bottomMargin\">\n\t\t\t\t\t<h2>\t\t<span class='historicallookupH2'>Change
+        Historical Lookup base currency</span></h2>\n\t\t\t\n\t\t\t\t\t<div class='moduleContent'>\n\t\t\t\n\t\t\t<ul
+        class='currencyList historicallookup'><li><a href='https://www.x-rates.com/historical/?from=ARS'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Argentine
+        Peso</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=AUD'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Australian
+        Dollar</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=BHD'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Bahraini
+        Dinar</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=BWP'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Botswana
+        Pula</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=BRL'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Brazilian
+        Real</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=BND'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Bruneian
+        Dollar</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=BGN'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Bulgarian
+        Lev</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=CAD' onclick=\"submitConverterWithExtraArgs(this)\"
+        rel='historicallookup'>Canadian Dollar</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=CLP'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Chilean
+        Peso</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=CNY'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Chinese
+        Yuan Renminbi</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=COP'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Colombian
+        Peso</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=HRK'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Croatian
+        Kuna</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=CZK'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Czech
+        Koruna</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=DKK'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Danish
+        Krone</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=EUR'
+        onclick=\"submitConverterWithExtraArgs(this)\" class='selected' rel='historicallookup'>Euro</a></li>\n<li><a
+        href='https://www.x-rates.com/historical/?from=HKD' onclick=\"submitConverterWithExtraArgs(this)\"
+        rel='historicallookup'>Hong Kong Dollar</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=HUF'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Hungarian
+        Forint</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=ISK'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Icelandic
+        Krona</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=INR'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Indian
+        Rupee</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=IDR'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Indonesian
+        Rupiah</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=IRR'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Iranian
+        Rial</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=ILS'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Israeli
+        Shekel</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=JPY'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Japanese
+        Yen</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=KZT' onclick=\"submitConverterWithExtraArgs(this)\"
+        rel='historicallookup'>Kazakhstani Tenge</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=KRW'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>South
+        Korean Won</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=KWD'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Kuwaiti
+        Dinar</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=LYD'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Libyan
+        Dinar</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=MYR'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Malaysian
+        Ringgit</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=MUR'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Mauritian
+        Rupee</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=MXN'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Mexican
+        Peso</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=NPR'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Nepalese
+        Rupee</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=NZD'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>New
+        Zealand Dollar</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=NOK'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Norwegian
+        Krone</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=OMR'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Omani
+        Rial</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=PKR'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Pakistani
+        Rupee</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=PHP'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Philippine
+        Peso</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=PLN'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Polish
+        Zloty</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=QAR'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Qatari
+        Riyal</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=RON'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Romanian
+        New Leu</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=RUB'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Russian
+        Ruble</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=SAR'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Saudi
+        Arabian Riyal</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=SGD'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Singapore
+        Dollar</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=ZAR'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>South
+        African Rand</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=LKR'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Sri
+        Lankan Rupee</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=SEK'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Swedish
+        Krona</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=CHF'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Swiss
+        Franc</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=TWD'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Taiwan
+        New Dollar</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=THB'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Thai
+        Baht</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=TTD'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Trinidadian
+        Dollar</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=TRY'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Turkish
+        Lira</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=AED'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>Emirati
+        Dirham</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=GBP'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>British
+        Pound</a></li>\n<li><a href='https://www.x-rates.com/historical/?from=USD'
+        onclick=\"submitConverterWithExtraArgs(this)\" rel='historicallookup'>US Dollar</a></li>\n<li><a
+        href='https://www.x-rates.com/historical/?from=VEF' onclick=\"submitConverterWithExtraArgs(this)\"
+        rel='historicallookup'>Venezuelan Bolivar</a></li>\n</ul>\n\t\t</div>\n\t\t\t\n\t\t</div>\t\t\n\t\t\t</div>\n\t\t</div>
+        \               </div>\n\n                <div class=\"grid__cell sidebar\">\n
+        \                   \t\t <div class=\"grid\">\n\t                <div class=\"grid__cell\"
+        >\t\t\t\n\t\t\t\t\t\t<div class=\"module bottomMargin\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div
+        class='moduleContent'>\n\t\t\t\n\t\t\t\t\t<h4 class=\"ratesChangetableHdr\">Percent
+        Change in the Last 24 Hours</h4>\n\t\t<ul id='ratesTrends' class='currencyPairUL'>\n\t\t\t<li>EUR/USD<span
+        class='up'>+0.49835%</span></li><li class=\"left-border\">USD/JPY<span class='down'>-0.61866%</span></li><li
+        class=\"clear-left\">GBP/USD<span class='up'>+0.78370%</span></li><li class=\"left-border\">USD/CHF<span
+        class='down'>-0.21029%</span></li><li class=\"clear-left\">USD/CAD<span class='down'>-0.11772%</span></li><li
+        class=\"left-border\">EUR/JPY<span class='down'>-0.12339%</span></li><li class=\"clear-left\">AUD/USD<span
+        class='up'>+0.22248%</span></li><li class=\"left-border\">CNY/USD<span class='up'>+0.25182%</span></li>\n\t\t</ul>\n\t\t<script
+        type=\"text/javascript\">\n\t\t\tif(typeof(registerAfterRefreshFunction) ==
+        \"function\")\n\t\t\t{\n\t\t\t\tregisterRefreshFunctions(\n\t\t\t\t\tfunction(responseText){updateContents(['#ratesTrends',
+        '#ratesTrendsTimestamp'], responseText); $('#ratesTrends').fadeTo(300,1);},
+        \n\t\t\t\t\tfunction(){refreshFadeOut('#ratesTrends');});\n\t\t\t}\n\t\t</script>\t\t\n\t\t</div>\n\t\t\t\t\t<div
+        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTrendsTimestamp\">Nov 25, 2025
+        17:43 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\n\t\t\t</div>\n\t\t</div>\t\t
+        <div class=\"grid\">\n\t                <div class=\"grid__cell\" >\t\t\t\n\t\t\t\t\t\t<div
+        class=\"module bottomMargin\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div class='moduleContent'>\n\t\t\t\n\t\t\t\t\t<div
+        id=\"output_rs\" class='rightsideAd'>\n\t\t\t\t\t<script type=\"text/javascript\">\n\t\t\t\t\t\te9AdSlots['output_rs']['mobileAd']
+        = \"<a href='http://www.xe.com/xecurrencydata/?WT.mc_id=XDF-300x250-RROS-ADL-XX-V01-130901'><img
+        alt='Ad' src='/themes/x-rates/images/ads/300x250_dfs.png' border='0'/></a>\";\n\t\t\te9AdSlots['output_rs']['desktopAd']
+        = \"<a href='http://www.xe.com/xecurrencydata/?WT.mc_id=XDF-300x250-RROS-ADL-XX-V01-130901'><img
+        alt='Ad' src='/themes/x-rates/images/ads/300x250_dfs.png' border='0'/></a>\";\n\t\t\te9AdSlots['output_rs']['mobileThreshold']
+        = 850;\t\t\t\n\t\t\tenqueueAd('output_rs');\n\t\t</script>\n\t\t<noscript>\n\t\t\t<div
+        align=\"center\"><a href='http://www.xe.com/xecurrencydata/?WT.mc_id=XDF-300x250-RROS-ADL-XX-V01-130901'><img
+        alt='Ad' src='/themes/x-rates/images/ads/300x250_dfs.png' border='0'/></a></div>\n\t\t</noscript>\n\t\t</div>\n\t\t</div>\n\t\t\t\t\t<div
+        class=\"moduleFooter\">\n\t\t\tAD\n\t\t</div>\n\t\t</div>\t\t\n\t\t\t</div>\n\t\t</div>\t\t
+        <div class=\"grid\">\n\t                <div class=\"grid__cell\" >\t\t\t\n\t\t\t\t\t\t<div
+        class=\"module bottomMargin\">\n\t\t\t\t\t<h2>Useful Links</h2>\n\t\t\t\n\t\t\t\t\t<div
+        class='moduleContent'>\n\t\t\t\n\t\t\t<ul class='module'><li><a href='https://www.x-rates.com/euro/'
+        rel='euroInfo'>Euro Information</a></li>\n<li><a href='https://www.x-rates.com/faq/'
+        rel='faq'>FAQ</a></li>\n<li><a href='https://www.x-rates.com/feedback/' rel='feedback'>Feedback</a></li>\n</ul>\n\t\t</div>\n\t\t\t\n\t\t</div>\t\t\n\t\t\t</div>\n\t\t</div>
+        \               </div>\n\n            </div>\n        </div>\n\n        <footer>\n
+        \           \t\t<div class=\"navbar clearfix\">\n\t\t\t<div class=\"navbar-inner\">\n\t\t\t\t<div
+        class=\"wrapper clearfix\">\t\t\t\n\t\t\t\t\t<nav class=\"nav-collapse\">\n\t\t\t\t\t\t<ul
+        class='nav'><li><a href='https://www.x-rates.com/terms/' rel='termsofservice'>Terms
+        of Service</a></li>\n<li><a href='https://www.x-rates.com/privacy/' rel='privacy'>Privacy</a></li>\n<li><a
+        href='https://www.x-rates.com/cookiepolicy/' rel='cookie_policy'>Cookie Policy</a></li>\n<li><a
+        href='https://www.x-rates.com/advertise/' rel='advertise'>Advertise on X-Rates</a></li>\n<li><a
+        href='https://www.x-rates.com/feedback/' rel='feedback'>Feedback</a></li>\n<li><a
+        href='https://www.x-rates.com/faq/' rel='faq'>FAQ</a></li>\n</ul>\n\t\t\t\t\t</nav>\n\t\t\t\t\t<div
+        id=\"footerTri\"></div>\n\t\t\t\t\t<div class=\"footer-decor\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div
+        class=\"copyright\">\n\t\t\t&copy; X-Rates 2025\n\t\t</div>        </footer>\n\n
+        \                   <script type=\"text/javascript\">\n            var utag_data
+        = {\n              isGeoEurope : \"\" // geo ip from xe platform\n            }\n
+        \           </script>\n            \n            <!-- Loading script asynchronously
+        -->\n            <script type=\"text/javascript\">\n                (function(a,b,c,d){\n
+        \               a='//tags.tiqcdn.com/utag/xe/xrates/prod/utag.js';\n                b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;\n
+        \               a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);\n
+        \               })();\n            </script>\n    </body>\n\n</html>\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Tue, 25 Nov 2025 17:43:19 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/7.4.33
+      content-length:
+      - '47207'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.41.2.dev3+gb9c0673f32.d20251125
+    method: GET
+    uri: https://data-api.cryptocompare.com/index/cc/v1/historical/days?limit=1&market=cadli&to_ts=1761762960&instrument=ETH-USD
+  response:
+    body:
+      string: '{"Data":[{"UNIT":"DAY","TIMESTAMP":1761696000,"TYPE":"267","MARKET":"cadli","INSTRUMENT":"ETH-USD","OPEN":3983.58745399428,"HIGH":4038.57011728226,"LOW":3862.16919591868,"CLOSE":3906.77168760658,"FIRST_MESSAGE_TIMESTAMP":1761696000,"LAST_MESSAGE_TIMESTAMP":1761782399,"FIRST_MESSAGE_VALUE":3983.58712690043,"HIGH_MESSAGE_VALUE":4038.57011728226,"HIGH_MESSAGE_TIMESTAMP":1761717975,"LOW_MESSAGE_VALUE":3862.16919591868,"LOW_MESSAGE_TIMESTAMP":1761763355,"LAST_MESSAGE_VALUE":3906.77168760658,"TOTAL_INDEX_UPDATES":1676581,"VOLUME":4560418.71469957,"QUOTE_VOLUME":18090293961.777,"VOLUME_TOP_TIER":2383575.41603956,"QUOTE_VOLUME_TOP_TIER":9451188160.42825,"VOLUME_DIRECT":438511.9420863,"QUOTE_VOLUME_DIRECT":1736168896.34289,"VOLUME_TOP_TIER_DIRECT":401145.33682684,"QUOTE_VOLUME_TOP_TIER_DIRECT":1587914288.87148}],"Err":{}}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - 'null'
+      Access-Control-Expose-Headers:
+      - Content-Disposition, AMP-Access-Control-Allow-Source-Origin
+      Cache-Control:
+      - public, max-age=300
+      Connection:
+      - keep-alive
+      Content-Security-Policy:
+      - frame-ancestors 'none'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Nov 2025 17:43:20 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-CryptoCompare-Cache-Hit:
+      - 'true'
+      X-CryptoCompare-Server-Id:
+      - cc-api-data-21
+      content-length:
+      - '824'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.41.2.dev3+gb9c0673f32.d20251125
+    method: GET
+    uri: https://api.coingecko.com/api/v3/coins/binancecoin/history?date=29-10-2025&localization=false
+  response:
+    body:
+      string: '{"id":"binancecoin","symbol":"bnb","name":"BNB","image":{"thumb":"https://coin-images.coingecko.com/coins/images/825/thumb/bnb-icon2_2x.png?1696501970","small":"https://coin-images.coingecko.com/coins/images/825/small/bnb-icon2_2x.png?1696501970"},"market_data":{"current_price":{"aed":4052.9537395445195,"ars":1626140.777197543,"aud":1676.5444576416305,"bch":1.97694132238025,"bdt":135062.22511179012,"bhd":416.0421849866329,"bmd":1103.595300080196,"bnb":1.0,"brl":5914.719010779809,"btc":0.009769173423118414,"cad":1538.7870707138204,"chf":875.517466603222,"clp":1041127.6411269943,"cny":7834.754113859335,"czk":23028.61276724344,"dkk":7073.162997273992,"dot":361.36619308391363,"eos":3866.957520387817,"eth":0.2771006638983489,"eur":947.0767930510222,"gbp":831.4056588637163,"gel":3001.779216218133,"hkd":8573.589095357023,"huf":367661.6706264172,"idr":18302852.8857923,"ils":3594.691309162718,"inr":97365.52304605034,"jpy":167693.52835568867,"krw":1574799.475564935,"kwd":338.49806122649795,"lkr":336059.3837869786,"ltc":11.404477015166833,"mmk":2316225.815808315,"mxn":20342.461806848245,"myr":4632.341272086622,"ngn":1607640.381485824,"nok":11013.976003996153,"nzd":1909.1834504938356,"php":65205.37761118364,"pkr":311701.44633697654,"pln":4007.97560949445,"rub":87461.11720708902,"sar":4138.577284496542,"sek":10346.59330020216,"sgd":1427.8227704813562,"sol":5.678022838914333,"thb":35701.30795759434,"try":46304.97936856898,"twd":33723.77553938063,"uah":46461.64906815427,"usd":1103.595300080196,"vef":110.50299739702993,"vnd":29046628.29811075,"xag":23.408779276215057,"xau":0.27867988517625103,"xdr":773.5949226643155,"xlm":3466.4214521706617,"xrp":423.2423169881666,"yfi":0.23058204427186643,"zar":18928.91514516872,"bits":9769.173423118415,"link":61.81207650562532,"sats":976917.3423118413},"market_cap":{"aed":558246552849.19,"ars":223981703630313.44,"aud":230924215849.06525,"bch":272300339.2898142,"bdt":18603227777594.01,"bhd":57304901692.446686,"bmd":152007230183.57797,"bnb":137738200.02,"brl":814682750168.8859,"btc":1345588.3629835523,"cad":211949761334.17,"chf":120592199935.99826,"clp":143403047279900.7,"cny":1079144929242.2749,"czk":3171919671517.7026,"dkk":974244739692.5878,"dot":49773928983.45803,"eos":532627768412.0204,"eth":38167346.66970558,"eur":130448652755.56184,"gbp":114516318938.33044,"gel":413459666099.33203,"hkd":1180910729705.5764,"huf":50641056728428.81,"idr":2521002011719894,"ils":495126310551.6101,"inr":13410951888368.8,"jpy":23097804750715.38,"krw":216910045156754.12,"kwd":46624113663.59757,"lkr":46288214622648.805,"ltc":1570832136.2385414,"mmk":319032774709293.4,"mxn":2801934073250.8735,"myr":638050348695.5684,"ngn":221433492425323.53,"nok":1517045229853.902,"nzd":262967491978.99362,"php":8981271343788.842,"pkr":42933196162085.766,"pln":552051346175.828,"rub":12046736855842.691,"sar":570040185810.2131,"sek":1425121137508.837,"sgd":196665738353.67157,"sol":782080645.5045106,"thb":4917433896438.747,"try":6377964510189.928,"twd":4645052140672.793,"uah":6399543912608.4795,"usd":152007230183.57797,"vef":15220483958.281643,"vnd":4000830298431770.5,"xag":3224283122.1713395,"xau":38384865.765957095,"xdr":106553572192.39392,"xlm":477458651332.70135,"xrp":58296634914.24433,"yfi":31759955.73493883,"zar":2607234700426.8564,"bits":1345588362983.5522,"link":8513884157.383363,"sats":134558836298355.2},"total_volume":{"aed":11281859570.310953,"ars":4526548554181.313,"aud":4666852954.660586,"bch":5503041.932165094,"bdt":375961127337.2651,"bhd":1158100932.7957482,"bmd":3071983545.353561,"bnb":2783606.959765835,"brl":16464295811.322407,"btc":27193.609836272655,"cad":4283389536.628284,"chf":2437102850.0024314,"clp":2898097683020.649,"cny":21808932783.528538,"czk":64102773442.53822,"dkk":19688956938.880043,"dot":1005904065.4850298,"eos":10764117854.026148,"eth":771341.3421028677,"eur":2636296407.050247,"gbp":2314312595.711104,"gel":8355795243.361686,"hkd":23865564327.471836,"huf":1023428246150.9935,"idr":50948081143599.52,"ils":10006233763.02061,"inr":271028052276.47693,"jpy":466794086322.69586,"krw":4383634178050.0044,"kwd":942248008.9814804,"lkr":935459671838.2504,"ltc":31745664.131959904,"mmk":6447479064988.054,"mxn":56625565493.14765,"myr":12894650931.62157,"ngn":4475050590022.894,"nok":30658659973.213413,"nzd":5314430158.004662,"php":181506614857.42606,"pkr":867656571335.9918,"pln":11156657808.93652,"rub":243458007567.53162,"sar":11520202485.660755,"sek":28800924003.914036,"sgd":3974507735.1100726,"sol":15805424.98687609,"thb":99378667692.1877,"try":128895197975.05768,"twd":93873980377.26863,"uah":129331305975.1067,"usd":3071983545.353561,"vef":307597712.39625186,"vnd":80854606913705.7,"xag":65161010.33424159,"xau":775737.2848726811,"xdr":2153389809.6713033,"xlm":9649179968.014582,"xrp":1178143322.4575,"yfi":641851.4520727717,"zar":52690796937.18027,"bits":27193609836.272655,"link":172060973.72435153,"sats":2719360983627.2656}},"community_data":{"facebook_likes":null,"reddit_average_posts_48h":0.0,"reddit_average_comments_48h":0.0,"reddit_subscribers":null,"reddit_accounts_active_48h":0.0},"developer_data":{"forks":null,"stars":null,"subscribers":null,"total_issues":null,"closed_issues":null,"pull_requests_merged":null,"pull_request_contributors":null,"code_additions_deletions_4_weeks":{"additions":null,"deletions":null},"commit_count_4_weeks":null},"public_interest_stats":{"alexa_rank":null,"bing_matches":null}}'
+    headers:
+      CF-RAY:
+      - 9a42f2a4bea958fc-LIS
+      Cache-Control:
+      - max-age=30, public, must-revalidate, s-maxage=1800
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 25 Nov 2025 17:43:21 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      access-control-allow-methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - link, per-page, total
+      access-control-request-method:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      alternate-protocol:
+      - 443:npn-spdy/2
+      cf-cache-status:
+      - EXPIRED
+      content-length:
+      - '5402'
+      content-security-policy-report-only:
+      - script-src https://accounts.google.com/gsi/client; frame-src https://accounts.google.com/gsi/;
+        connect-src https://accounts.google.com/gsi/;
+      etag:
+      - W/"4c760bdadc2260247bb0da19e0ec02ac"
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      strict-transport-security:
+      - max-age=15724800; includeSubdomains
+      vary:
+      - Accept-Encoding, Origin
+      x-content-type-options:
+      - nosniff
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-request-id:
+      - 9bf0eb0f-4b5d-407f-af83-e9f9c6df3875
+      x-runtime:
+      - '0.059136'
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.41.2.dev3+gb9c0673f32.d20251125
+    method: GET
+    uri: https://data-api.cryptocompare.com/index/cc/v1/historical/days?limit=1&market=cadli&to_ts=1761762960&instrument=BTC-USD
+  response:
+    body:
+      string: '{"Data":[{"UNIT":"DAY","TIMESTAMP":1761696000,"TYPE":"267","MARKET":"cadli","INSTRUMENT":"BTC-USD","OPEN":112964.048665163,"HIGH":113702.901950938,"LOW":109571.846317101,"CLOSE":110108.026746427,"FIRST_MESSAGE_TIMESTAMP":1761696000,"LAST_MESSAGE_TIMESTAMP":1761782399,"FIRST_MESSAGE_VALUE":112964.049110447,"HIGH_MESSAGE_VALUE":113702.901950938,"HIGH_MESSAGE_TIMESTAMP":1761744430,"LOW_MESSAGE_VALUE":109571.846317101,"LOW_MESSAGE_TIMESTAMP":1761763332,"LAST_MESSAGE_VALUE":110108.026746427,"TOTAL_INDEX_UPDATES":1980837,"VOLUME":264332.077204589,"QUOTE_VOLUME":29600006298.3297,"VOLUME_TOP_TIER":142849.690913093,"QUOTE_VOLUME_TOP_TIER":15988035037.6305,"VOLUME_DIRECT":32306.42796013,"QUOTE_VOLUME_DIRECT":3611438260.45842,"VOLUME_TOP_TIER_DIRECT":25603.41124989,"QUOTE_VOLUME_TOP_TIER_DIRECT":2861528225.81406}],"Err":{}}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - 'null'
+      Access-Control-Expose-Headers:
+      - Content-Disposition, AMP-Access-Control-Allow-Source-Origin
+      Cache-Control:
+      - public, max-age=300
+      Connection:
+      - keep-alive
+      Content-Security-Policy:
+      - frame-ancestors 'none'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Nov 2025 17:43:21 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-CryptoCompare-Cache-Hit:
+      - 'false'
+      X-CryptoCompare-Server-Id:
+      - cc-api-data-17
+      content-length:
+      - '824'
     status:
       code: 200
       message: OK
