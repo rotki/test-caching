@@ -1,0 +1,98 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.40.2.dev116+g207224582
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionByHash&chainid=56&module=proxy&txhash=0xd1bd1b511948bcbef89304a4a6004eed3e99bb36b90b19a814ab3b3719cc98ad
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0x992982fb0956fb072a7c42c051ae6c7a758ffc1e4a9974cfb3fd8fc6b78fb7a3","blockNumber":"0x3c30896","from":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","gas":"0x14e53","gasPrice":"0x3b9aca00","hash":"0xd1bd1b511948bcbef89304a4a6004eed3e99bb36b90b19a814ab3b3719cc98ad","input":"0x322bba21000000000000000000000000fb6115445bff7b52feb98650c87f44907e58f802000000000000000000000000c37b40abdb939635068d3c5f13e7faf686f03b6500000000000000000000000000000000000000000000000000038d7ea4c68000000000000000000000000000000000000000000000000000000c50df90a0cb4c98b1f9b8b7473ee9404975c563edcf6e9c954804d267963e87163d105e00b1a300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000068dd55d0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000027db","nonce":"0x1","to":"0xba3cb449bd2b4adddbc894d8697f5170800eadec","transactionIndex":"0x3c","value":"0x38d7ea4c68000","type":"0x0","chainId":"0x38","v":"0x93","r":"0x941522c83b53c55312a29e80c2eca225384958a679bd01a6122617386e811b2d","s":"0x1dff7866cac20d258e5bc750191a0cb8145d470a3fcf19a6a161523fee447c16"}}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Oct 2025 07:50:29 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '4'
+      content-length:
+      - '1211'
+      svid:
+      - bsc14
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.40.2.dev116+g207224582
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_getBlockByNumber&boolean=true&chainid=56&module=proxy&tag=0x3c30896
+  response:
+    body:
+      string: '{"status":"0","message":"NOTOK","result":"Free API access is temporarily
+        unavailable due to unusually high network activity. To maintain uninterrupted
+        service, we recommend upgrading to a paid plan: https://etherscan.io/apis"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Oct 2025 07:50:29 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '4'
+      content-length:
+      - '226'
+      svid:
+      - bsc10
+    status:
+      code: 200
+      message: OK
+version: 1

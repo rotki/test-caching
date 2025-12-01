@@ -9,12 +9,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.4.dev276+g394cf66c8.d20240201
+      - rotki/1.41.2.dev21+gcf9e950180.d20251127
     method: GET
-    uri: https://eth.blockscout.com/api?action=getblocknobytime&closest=before&module=block&timestamp=1707090600
+    uri: https://api.etherscan.io/v2/api?action=getblocknobytime&chainid=1&closest=before&module=block&timestamp=1707090600
   response:
     body:
-      string: '{"message":"OK","result":{"blockNumber":"19158316"},"status":"1"}'
+      string: '{"status":"1","message":"OK","result":"19158316"}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
@@ -29,15 +29,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 04 Feb 2024 23:56:43 GMT
+      - Mon, 01 Dec 2025 15:02:33 GMT
       Server:
       - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '2'
       content-length:
       - '49'
+      svid:
+      - '9'
     status:
       code: 200
       message: OK
@@ -51,9 +55,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.4.dev276+g394cf66c8.d20240201
+      - rotki/1.41.2.dev21+gcf9e950180.d20251127
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=txsBeaconWithdrawal&chainid=1&address=0x23F02E9272EAc1F12F5be76D48b4a15323778f08&endBlock=19158316&module=account&sort=asc&startBlock=0
+    uri: https://api.etherscan.io/v2/api?action=txsBeaconWithdrawal&address=0x23F02E9272EAc1F12F5be76D48b4a15323778f08&chainid=1&endblock=19158316&module=account&sort=asc&startblock=0
   response:
     body:
       string: '{"status":"1","message":"OK","result":[{"withdrawalIndex":"1261047","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"1650449","blockNumber":"17113691","timestamp":"1682309531"},{"withdrawalIndex":"1755847","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"12404137","blockNumber":"17144616","timestamp":"1682684819"},{"withdrawalIndex":"2251866","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"12334500","blockNumber":"17175618","timestamp":"1683061259"},{"withdrawalIndex":"2750600","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"12409160","blockNumber":"17206790","timestamp":"1683439691"},{"withdrawalIndex":"3250327","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"10507927","blockNumber":"17238023","timestamp":"1683819227"},{"withdrawalIndex":"3756648","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"12173112","blockNumber":"17269670","timestamp":"1684208387"},{"withdrawalIndex":"4272081","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"11811833","blockNumber":"17301887","timestamp":"1684600847"},{"withdrawalIndex":"4797646","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"12382659","blockNumber":"17334737","timestamp":"1685000363"},{"withdrawalIndex":"5332405","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"11397893","blockNumber":"17368163","timestamp":"1685406035"},{"withdrawalIndex":"5882844","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"13249870","blockNumber":"17402570","timestamp":"1685824763"},{"withdrawalIndex":"6446200","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"13525812","blockNumber":"17437784","timestamp":"1686254195"},{"withdrawalIndex":"7019526","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"13606564","blockNumber":"17473622","timestamp":"1686690227"},{"withdrawalIndex":"7600542","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"13700403","blockNumber":"17509940","timestamp":"1687131023"},{"withdrawalIndex":"8190109","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"13756701","blockNumber":"17546792","timestamp":"1687578167"},{"withdrawalIndex":"8786548","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"13927903","blockNumber":"17584074","timestamp":"1688031035"},{"withdrawalIndex":"9392425","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"13753903","blockNumber":"17621946","timestamp":"1688490599"},{"withdrawalIndex":"10009116","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"49877787","blockNumber":"17660493","timestamp":"1688958443"},{"withdrawalIndex":"10636390","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"14313030","blockNumber":"17699700","timestamp":"1689435383"},{"withdrawalIndex":"11273808","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"14420820","blockNumber":"17739544","timestamp":"1689918623"},{"withdrawalIndex":"11923456","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"14601866","blockNumber":"17780152","timestamp":"1690409483"},{"withdrawalIndex":"12584661","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"51533970","blockNumber":"17821480","timestamp":"1690908911"},{"withdrawalIndex":"13258184","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"14901718","blockNumber":"17863579","timestamp":"1691417639"},{"withdrawalIndex":"13943840","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"15086506","blockNumber":"17906436","timestamp":"1691935727"},{"withdrawalIndex":"14643028","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"15164183","blockNumber":"17950138","timestamp":"1692464051"},{"withdrawalIndex":"15356225","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"15244796","blockNumber":"17994715","timestamp":"1693002851"},{"withdrawalIndex":"16083505","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"15498447","blockNumber":"18040173","timestamp":"1693552847"},{"withdrawalIndex":"16825652","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"15650737","blockNumber":"18086559","timestamp":"1694113979"},{"withdrawalIndex":"17582645","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"15154088","blockNumber":"18133873","timestamp":"1694686679"},{"withdrawalIndex":"18355124","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"14865287","blockNumber":"18182155","timestamp":"1695273875"},{"withdrawalIndex":"19145337","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"16137289","blockNumber":"18231544","timestamp":"1695871439"},{"withdrawalIndex":"19951420","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"16068620","blockNumber":"18281924","timestamp":"1696480067"},{"withdrawalIndex":"20774327","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"15199767","blockNumber":"18333356","timestamp":"1697101859"},{"withdrawalIndex":"21610593","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"16834223","blockNumber":"18385622","timestamp":"1697733551"},{"withdrawalIndex":"22451753","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"16747361","blockNumber":"18438195","timestamp":"1698369239"},{"withdrawalIndex":"23296508","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"57761879","blockNumber":"18490992","timestamp":"1699007963"},{"withdrawalIndex":"24151189","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"17016153","blockNumber":"18544409","timestamp":"1699653875"},{"withdrawalIndex":"25017028","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"17087659","blockNumber":"18598524","timestamp":"1700308067"},{"withdrawalIndex":"25881915","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"17166694","blockNumber":"18652580","timestamp":"1700962115"},{"withdrawalIndex":"26754729","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"17314989","blockNumber":"18707131","timestamp":"1701621851"},{"withdrawalIndex":"27634090","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"17258183","blockNumber":"18762091","timestamp":"1702287143"},{"withdrawalIndex":"28517456","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"16834684","blockNumber":"18817301","timestamp":"1702956071"},{"withdrawalIndex":"29400366","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"17033623","blockNumber":"18872483","timestamp":"1703625371"},{"withdrawalIndex":"30285806","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"17277299","blockNumber":"18927823","timestamp":"1704296915"},{"withdrawalIndex":"31178970","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"17234915","blockNumber":"18983646","timestamp":"1704975659"},{"withdrawalIndex":"32076520","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"17467035","blockNumber":"19039743","timestamp":"1705653287"},{"withdrawalIndex":"32969447","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"16865676","blockNumber":"19095551","timestamp":"1706329871"},{"withdrawalIndex":"33875985","validatorIndex":"583243","address":"0x23f02e9272eac1f12f5be76d48b4a15323778f08","amount":"17688291","blockNumber":"19152209","timestamp":"1707016367"}]}'
@@ -71,15 +75,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 04 Feb 2024 23:56:44 GMT
+      - Mon, 01 Dec 2025 15:02:33 GMT
       Server:
       - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '2'
       content-length:
       - '8577'
+      svid:
+      - '9'
     status:
       code: 200
       message: OK
@@ -92,88 +100,97 @@ interactions:
       - gzip, deflate
       Connection:
       - keep-alive
+      Content-Length:
+      - '29'
+      Content-Type:
+      - application/json
       User-Agent:
-      - rotki/1.31.4.dev276+g394cf66c8.d20240201
+      - rotki/1.41.2.dev21+gcf9e950180.d20251127
     method: POST
     uri: https://beaconcha.in/api/v1/validator
   response:
     body:
-      string: '{"status":"OK","data":{"activationeligibilityepoch":195555,"activationepoch":196429,"balance":32001889455,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8355556,"name":"","pubkey":"0x823837958bd2abd92f03232d6d1266bcd9ce6c6d03e2c71a84dd67bad487fa67f46e11c961608e2560ae340cb604cb9b","slashed":false,"status":"active_online","validatorindex":583243,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x01000000000000000000000023f02e9272eac1f12f5be76d48b4a15323778f08","total_withdrawals":803900401}}
+      string: '{"status":"OK","data":{"activationeligibilityepoch":195555,"activationepoch":196429,"balance":0,"effectivebalance":0,"exitepoch":268709,"lastattestationslot":8598663,"name":"","pubkey":"0x823837958bd2abd92f03232d6d1266bcd9ce6c6d03e2c71a84dd67bad487fa67f46e11c961608e2560ae340cb604cb9b","slashed":false,"status":"exited","validatorindex":583243,"withdrawableepoch":268965,"withdrawalcredentials":"0x01000000000000000000000023f02e9272eac1f12f5be76d48b4a15323778f08","total_withdrawals":32917496634}}
 
         '
     headers:
-      Accept-Ranges:
-      - bytes
-      CF-Cache-Status:
-      - EXPIRED
+      Access-Control-Allow-Headers:
+      - '*, Authorization'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
       CF-RAY:
-      - 8506da195870ca7d-HAM
-      Cache-Control:
-      - max-age=12
+      - 9a73775e58cacc49-MAD
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Sun, 04 Feb 2024 23:56:44 GMT
-      Last-Modified:
-      - Sun, 04 Feb 2024 23:55:51 GMT
+      - Mon, 01 Dec 2025 15:02:34 GMT
       Permissions-Policy:
       - interest-cohort=()
-      RateLimit-Limit:
+      Ratelimit-Bucket:
+      - default
+      Ratelimit-Limit:
       - '5'
-      RateLimit-Remaining:
+      Ratelimit-Remaining:
       - '4'
-      RateLimit-Reset:
+      Ratelimit-Reset:
       - '1'
+      Ratelimit-Validapikey:
+      - 'true'
+      Ratelimit-Window:
+      - second
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Server:
       - cloudflare
+      Set-Cookie:
+      - __cf_bm=9imMVsujyyptHATKmpm.HFrVP9dOQPOzi_bWEotbRxI-1764601354-1.0.1.1-.WVaO3Jq_EXzxRoFgdsgQv4bycmwOJ60aI40SbpLBJSwZkcZKJ9uweJ55TwYBoxAwLnTndovw8598DMK7MHmqCKRMHEckCChpNsfDFmfOhk;
+        path=/; expires=Mon, 01-Dec-25 15:32:34 GMT; domain=.beaconcha.in; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=T6Q6ec61jOXAYenl5ApG1cE5L_9LxTG3h.C8LoZ_djM-1764601354118-0.0.1.1-604800000;
+        path=/; domain=.beaconcha.in; HttpOnly; Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=7257600
+      Vary:
+      - Cookie
+      - Accept-Encoding
       Via:
-      - 1.1 google, 1.1 google
-      WWW-Authenticate:
-      - Key realm="kong"
+      - 1.1 google
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - DENY
-      X-RateLimit-Limit-Day:
+      X-Ratelimit-Limit-Day:
       - '30000'
-      X-RateLimit-Limit-Hour:
-      - '10000'
-      X-RateLimit-Limit-Minute:
-      - '20'
-      X-RateLimit-Limit-Month:
-      - '120000'
-      X-RateLimit-Limit-Second:
+      X-Ratelimit-Limit-Hour:
+      - '30000'
+      X-Ratelimit-Limit-Minute:
+      - '30000'
+      X-Ratelimit-Limit-Month:
+      - '30000'
+      X-Ratelimit-Limit-Second:
       - '5'
-      X-RateLimit-Remaining-Day:
-      - '29997'
-      X-RateLimit-Remaining-Hour:
-      - '9997'
-      X-RateLimit-Remaining-Minute:
-      - '19'
-      X-RateLimit-Remaining-Month:
-      - '119997'
-      X-RateLimit-Remaining-Second:
+      X-Ratelimit-Remaining-Day:
+      - '29935'
+      X-Ratelimit-Remaining-Hour:
+      - '29935'
+      X-Ratelimit-Remaining-Minute:
+      - '29935'
+      X-Ratelimit-Remaining-Month:
+      - '29935'
+      X-Ratelimit-Remaining-Second:
       - '4'
       X-XSS-Protection:
       - 1; mode=block
-      access-control-allow-headers:
-      - '*, Authorization'
-      access-control-allow-methods:
-      - '*'
-      access-control-allow-origin:
-      - '*'
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       content-length:
-      - '549'
-      vary:
-      - Cookie,Accept-Encoding
+      - '498'
     status:
       code: 200
       message: OK
@@ -187,9 +204,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.31.4.dev276+g394cf66c8.d20240201
+      - rotki/1.41.2.dev21+gcf9e950180.d20251127
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=txsBeaconWithdrawal&chainid=1&address=0xCb2a5c130709a4C6c4BA39368879A523C0060c71&endBlock=19158316&module=account&sort=asc&startBlock=0
+    uri: https://api.etherscan.io/v2/api?action=txsBeaconWithdrawal&address=0xCb2a5c130709a4C6c4BA39368879A523C0060c71&chainid=1&endblock=19158316&module=account&sort=asc&startblock=0
   response:
     body:
       string: '{"status":"1","message":"OK","result":[{"withdrawalIndex":"1260543","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"1188734","blockNumber":"17113660","timestamp":"1682309159"},{"withdrawalIndex":"1755342","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"12316563","blockNumber":"17144585","timestamp":"1682684435"},{"withdrawalIndex":"2251361","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"45701079","blockNumber":"17175587","timestamp":"1683060887"},{"withdrawalIndex":"2750095","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"12425102","blockNumber":"17206758","timestamp":"1683439307"},{"withdrawalIndex":"3249822","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"12434496","blockNumber":"17237992","timestamp":"1683818843"},{"withdrawalIndex":"3756143","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"12434763","blockNumber":"17269638","timestamp":"1684208003"},{"withdrawalIndex":"4271576","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"12740875","blockNumber":"17301855","timestamp":"1684600463"},{"withdrawalIndex":"4797141","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"12890775","blockNumber":"17334706","timestamp":"1684999979"},{"withdrawalIndex":"5331901","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"11828920","blockNumber":"17368132","timestamp":"1685405663"},{"withdrawalIndex":"5882340","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"13327511","blockNumber":"17402538","timestamp":"1685824367"},{"withdrawalIndex":"6445696","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"12680946","blockNumber":"17437753","timestamp":"1686253823"},{"withdrawalIndex":"7019022","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"13776428","blockNumber":"17473590","timestamp":"1686689843"},{"withdrawalIndex":"7600038","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"13096524","blockNumber":"17509908","timestamp":"1687130639"},{"withdrawalIndex":"8189606","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"13937477","blockNumber":"17546761","timestamp":"1687577783"},{"withdrawalIndex":"8786047","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"13826215","blockNumber":"17584043","timestamp":"1688030663"},{"withdrawalIndex":"9391924","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"14115035","blockNumber":"17621914","timestamp":"1688490203"},{"withdrawalIndex":"10008615","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"12665833","blockNumber":"17660462","timestamp":"1688958071"},{"withdrawalIndex":"10635889","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"14410851","blockNumber":"17699669","timestamp":"1689434999"},{"withdrawalIndex":"11273307","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"14554784","blockNumber":"17739512","timestamp":"1689918239"},{"withdrawalIndex":"11922955","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"14700240","blockNumber":"17780120","timestamp":"1690409099"},{"withdrawalIndex":"12584160","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"14825528","blockNumber":"17821449","timestamp":"1690908527"},{"withdrawalIndex":"13257691","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"52304174","blockNumber":"17863548","timestamp":"1691417267"},{"withdrawalIndex":"13943347","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"15079708","blockNumber":"17906406","timestamp":"1691935367"},{"withdrawalIndex":"14642634","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"15281052","blockNumber":"17950113","timestamp":"1692463751"},{"withdrawalIndex":"15355831","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"15454907","blockNumber":"17994690","timestamp":"1693002551"},{"withdrawalIndex":"16083111","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"15588288","blockNumber":"18040148","timestamp":"1693552535"},{"withdrawalIndex":"16825259","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"15816650","blockNumber":"18086535","timestamp":"1694113691"},{"withdrawalIndex":"17582252","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"15909046","blockNumber":"18133849","timestamp":"1694686391"},{"withdrawalIndex":"18354731","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"16125460","blockNumber":"18182130","timestamp":"1695273575"},{"withdrawalIndex":"19144944","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"16369124","blockNumber":"18231519","timestamp":"1695871127"},{"withdrawalIndex":"19951027","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"16498503","blockNumber":"18281899","timestamp":"1696479767"},{"withdrawalIndex":"20773934","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"16600102","blockNumber":"18333331","timestamp":"1697101559"},{"withdrawalIndex":"21610200","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"15252247","blockNumber":"18385598","timestamp":"1697733263"},{"withdrawalIndex":"22451360","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"16899759","blockNumber":"18438170","timestamp":"1698368939"},{"withdrawalIndex":"23296115","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"16924587","blockNumber":"18490967","timestamp":"1699007663"},{"withdrawalIndex":"24150796","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"17057922","blockNumber":"18544385","timestamp":"1699653587"},{"withdrawalIndex":"25016635","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"58843062","blockNumber":"18598500","timestamp":"1700307779"},{"withdrawalIndex":"25881522","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"17163386","blockNumber":"18652555","timestamp":"1700961815"},{"withdrawalIndex":"26754336","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"17367244","blockNumber":"18707106","timestamp":"1701621551"},{"withdrawalIndex":"27633697","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"17455687","blockNumber":"18762066","timestamp":"1702286843"},{"withdrawalIndex":"28517063","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"17389354","blockNumber":"18817277","timestamp":"1702955783"},{"withdrawalIndex":"29399973","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"17419443","blockNumber":"18872458","timestamp":"1703625071"},{"withdrawalIndex":"30285413","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"17373854","blockNumber":"18927798","timestamp":"1704296615"},{"withdrawalIndex":"31178577","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"17574926","blockNumber":"18983621","timestamp":"1704975359"},{"withdrawalIndex":"32076128","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"17731866","blockNumber":"19039718","timestamp":"1705652987"},{"withdrawalIndex":"32969054","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"16374998","blockNumber":"19095526","timestamp":"1706329571"},{"withdrawalIndex":"33875592","validatorIndex":"582738","address":"0xcb2a5c130709a4c6c4ba39368879a523c0060c71","amount":"15484739","blockNumber":"19152185","timestamp":"1707016067"}]}'
@@ -207,15 +224,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 04 Feb 2024 23:56:45 GMT
+      - Mon, 01 Dec 2025 15:02:34 GMT
       Server:
       - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '2'
       content-length:
       - '8577'
+      svid:
+      - '9'
     status:
       code: 200
       message: OK
@@ -228,182 +249,94 @@ interactions:
       - gzip, deflate
       Connection:
       - keep-alive
+      Content-Length:
+      - '29'
+      Content-Type:
+      - application/json
+      Cookie:
+      - __cf_bm=9imMVsujyyptHATKmpm.HFrVP9dOQPOzi_bWEotbRxI-1764601354-1.0.1.1-.WVaO3Jq_EXzxRoFgdsgQv4bycmwOJ60aI40SbpLBJSwZkcZKJ9uweJ55TwYBoxAwLnTndovw8598DMK7MHmqCKRMHEckCChpNsfDFmfOhk;
+        _cfuvid=T6Q6ec61jOXAYenl5ApG1cE5L_9LxTG3h.C8LoZ_djM-1764601354118-0.0.1.1-604800000
       User-Agent:
-      - rotki/1.31.4.dev276+g394cf66c8.d20240201
+      - rotki/1.41.2.dev21+gcf9e950180.d20251127
     method: POST
     uri: https://beaconcha.in/api/v1/validator
   response:
     body:
-      string: '{"status":"OK","data":{"activationeligibilityepoch":195556,"activationepoch":196480,"balance":32044407259,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8355552,"name":"","pubkey":"0xb339277725bde688ae048331d5d33a07d6fef1d25bcd9a85d39261829e24b1f3bd4939bf45d2d14761601e326d104752","slashed":false,"status":"active_online","validatorindex":582738,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x010000000000000000000000cb2a5c130709a4c6c4ba39368879a523c0060c71","total_withdrawals":807218767}}
+      string: '{"status":"OK","data":{"activationeligibilityepoch":195556,"activationepoch":196480,"balance":0,"effectivebalance":0,"exitepoch":318894,"lastattestationslot":10204597,"name":"","pubkey":"0xb339277725bde688ae048331d5d33a07d6fef1d25bcd9a85d39261829e24b1f3bd4939bf45d2d14761601e326d104752","slashed":false,"status":"exited","validatorindex":582738,"withdrawableepoch":319150,"withdrawalcredentials":"0x010000000000000000000000cb2a5c130709a4c6c4ba39368879a523c0060c71","total_withdrawals":33508092105}}
 
         '
     headers:
-      Accept-Ranges:
-      - bytes
-      CF-Cache-Status:
-      - EXPIRED
+      Access-Control-Allow-Headers:
+      - '*, Authorization'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
       CF-RAY:
-      - 8506da1f0fc06310-HAM
-      Cache-Control:
-      - max-age=12
+      - 9a737763e8a03eb3-BCN
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Sun, 04 Feb 2024 23:56:45 GMT
-      Last-Modified:
-      - Sun, 04 Feb 2024 23:55:51 GMT
+      - Mon, 01 Dec 2025 15:02:35 GMT
       Permissions-Policy:
       - interest-cohort=()
-      RateLimit-Limit:
+      Ratelimit-Bucket:
+      - default
+      Ratelimit-Limit:
       - '5'
-      RateLimit-Remaining:
-      - '4'
-      RateLimit-Reset:
+      Ratelimit-Remaining:
+      - '3'
+      Ratelimit-Reset:
       - '1'
+      Ratelimit-Validapikey:
+      - 'true'
+      Ratelimit-Window:
+      - second
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=7257600
+      Vary:
+      - Cookie
+      - Accept-Encoding
       Via:
-      - 1.1 google, 1.1 google
-      WWW-Authenticate:
-      - Key realm="kong"
+      - 1.1 google
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - DENY
-      X-RateLimit-Limit-Day:
+      X-Ratelimit-Limit-Day:
       - '30000'
-      X-RateLimit-Limit-Hour:
-      - '10000'
-      X-RateLimit-Limit-Minute:
-      - '20'
-      X-RateLimit-Limit-Month:
-      - '120000'
-      X-RateLimit-Limit-Second:
-      - '5'
-      X-RateLimit-Remaining-Day:
-      - '29992'
-      X-RateLimit-Remaining-Hour:
-      - '9992'
-      X-RateLimit-Remaining-Minute:
-      - '19'
-      X-RateLimit-Remaining-Month:
-      - '119992'
-      X-RateLimit-Remaining-Second:
-      - '4'
-      X-XSS-Protection:
-      - 1; mode=block
-      access-control-allow-headers:
-      - '*, Authorization'
-      access-control-allow-methods:
-      - '*'
-      access-control-allow-origin:
-      - '*'
-      alt-svc:
-      - h3=":443"; ma=86400
-      content-length:
-      - '549'
-      vary:
-      - Cookie,Accept-Encoding
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"indicesOrPubkey": "582738,583243"}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.31.4.dev276+g394cf66c8.d20240201
-    method: POST
-    uri: https://beaconcha.in/api/v1/validator
-  response:
-    body:
-      string: '{"status":"OK","data":[{"activationeligibilityepoch":195556,"activationepoch":196480,"balance":32044407259,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8355552,"name":"","pubkey":"0xb339277725bde688ae048331d5d33a07d6fef1d25bcd9a85d39261829e24b1f3bd4939bf45d2d14761601e326d104752","slashed":false,"status":"active_online","validatorindex":582738,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x010000000000000000000000cb2a5c130709a4c6c4ba39368879a523c0060c71","total_withdrawals":807218767},{"activationeligibilityepoch":195555,"activationepoch":196429,"balance":32001889455,"effectivebalance":32000000000,"exitepoch":9223372036854775807,"lastattestationslot":8355556,"name":"","pubkey":"0x823837958bd2abd92f03232d6d1266bcd9ce6c6d03e2c71a84dd67bad487fa67f46e11c961608e2560ae340cb604cb9b","slashed":false,"status":"active_online","validatorindex":583243,"withdrawableepoch":9223372036854775807,"withdrawalcredentials":"0x01000000000000000000000023f02e9272eac1f12f5be76d48b4a15323778f08","total_withdrawals":803900401}]}
-
-        '
-    headers:
-      Accept-Ranges:
-      - bytes
-      CF-Cache-Status:
-      - EXPIRED
-      CF-RAY:
-      - 8506da20ec22630a-HAM
-      Cache-Control:
-      - max-age=12
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 04 Feb 2024 23:56:45 GMT
-      Last-Modified:
-      - Sun, 04 Feb 2024 23:55:52 GMT
-      Permissions-Policy:
-      - interest-cohort=()
-      RateLimit-Limit:
-      - '5'
-      RateLimit-Remaining:
-      - '3'
-      RateLimit-Reset:
-      - '1'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Server:
-      - cloudflare
-      Strict-Transport-Security:
-      - max-age=7257600
-      Via:
-      - 1.1 google, 1.1 google
-      WWW-Authenticate:
-      - Key realm="kong"
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - DENY
-      X-RateLimit-Limit-Day:
+      X-Ratelimit-Limit-Hour:
       - '30000'
-      X-RateLimit-Limit-Hour:
-      - '10000'
-      X-RateLimit-Limit-Minute:
-      - '20'
-      X-RateLimit-Limit-Month:
-      - '120000'
-      X-RateLimit-Limit-Second:
+      X-Ratelimit-Limit-Minute:
+      - '30000'
+      X-Ratelimit-Limit-Month:
+      - '30000'
+      X-Ratelimit-Limit-Second:
       - '5'
-      X-RateLimit-Remaining-Day:
-      - '29991'
-      X-RateLimit-Remaining-Hour:
-      - '9991'
-      X-RateLimit-Remaining-Minute:
-      - '18'
-      X-RateLimit-Remaining-Month:
-      - '119991'
-      X-RateLimit-Remaining-Second:
+      X-Ratelimit-Remaining-Day:
+      - '29934'
+      X-Ratelimit-Remaining-Hour:
+      - '29934'
+      X-Ratelimit-Remaining-Minute:
+      - '29934'
+      X-Ratelimit-Remaining-Month:
+      - '29934'
+      X-Ratelimit-Remaining-Second:
       - '3'
       X-XSS-Protection:
       - 1; mode=block
-      access-control-allow-headers:
-      - '*, Authorization'
-      access-control-allow-methods:
-      - '*'
-      access-control-allow-origin:
-      - '*'
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       content-length:
-      - '1077'
-      vary:
-      - Cookie,Accept-Encoding
+      - '499'
     status:
       code: 200
       message: OK
