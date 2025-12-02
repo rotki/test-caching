@@ -9,12 +9,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.30.3.dev291+gc065b7691
+      - rotki/1.41.2.dev21+gcf9e950180.d20251127
     method: GET
-    uri: https://eth.blockscout.com/api?action=getblocknobytime&closest=before&module=block&timestamp=1700464075
+    uri: https://api.etherscan.io/v2/api?action=getblocknobytime&chainid=1&closest=before&module=block&timestamp=1700464075
   response:
     body:
-      string: '{"message":"OK","result":{"blockNumber":"18611413"},"status":"1"}'
+      string: '{"status":"1","message":"OK","result":"18611413"}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
@@ -29,15 +29,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 20 Nov 2023 09:11:14 GMT
+      - Mon, 01 Dec 2025 15:16:11 GMT
       Server:
       - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
       content-length:
       - '49'
+      svid:
+      - '9'
     status:
       code: 200
       message: OK
@@ -51,9 +55,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.30.3.dev291+gc065b7691
+      - rotki/1.41.2.dev21+gcf9e950180.d20251127
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=txsBeaconWithdrawal&chainid=1&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&endBlock=18611413&module=account&sort=asc&startBlock=0
+    uri: https://api.etherscan.io/v2/api?action=txsBeaconWithdrawal&address=0xc37b40ABdB939635068d3c5f13E7faF686F03B65&chainid=1&endblock=18611413&module=account&sort=asc&startblock=0
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -71,67 +75,19 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 20 Nov 2023 09:11:14 GMT
+      - Mon, 01 Dec 2025 15:16:12 GMT
       Server:
       - nginx
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
       content-length:
       - '60'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.30.3.dev291+gc065b7691
-    method: GET
-    uri: https://eth.blockscout.com/api/v2/addresses/0xc37b40ABdB939635068d3c5f13E7faF686F03B65/withdrawals
-  response:
-    body:
-      string: '{"items":[],"next_page_params":null}'
-    headers:
-      CF-Cache-Status:
-      - DYNAMIC
-      CF-RAY:
-      - 828f907e8e008674-MAD
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '36'
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Mon, 20 Nov 2023 09:11:15 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5yUEjp3ePuD6N%2BkzG%2FGYu8Pf6aoAg19U7WI5Vt04MawKrfjO5xGdPXJG3%2BAOkJHIvpPDWkEx9fcjIUaTpujQ3yFLd6AmIKpWZ9HRkMGwUkHwyFVjrnImz5RgtrHe4rayvuLHUVVPldpMvHnnmxXxTg%3D%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      access-control-allow-credentials:
-      - 'true'
-      access-control-allow-origin:
-      - '*'
-      access-control-expose-headers:
-      - ''
-      alt-svc:
-      - h3=":443"; ma=86400
-      strict-transport-security:
-      - max-age=15724800; includeSubDomains
-      x-request-id:
-      - 73f109acba0e08fb40a95c694c1a6229
+      svid:
+      - '9'
     status:
       code: 200
       message: OK

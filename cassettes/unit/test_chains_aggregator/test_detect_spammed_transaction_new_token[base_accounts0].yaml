@@ -11,10 +11,10 @@ interactions:
       User-Agent:
       - rotki/1.34.2.dev24+g1a503d48e
     method: GET
-    uri: https://base.blockscout.com/api?action=getblocknobytime&closest=before&module=block&timestamp=1717116105
+    uri: https://api.etherscan.io/v2/api?action=getblocknobytime&chainid=8453&closest=before&module=block&timestamp=1717116105
   response:
     body:
-      string: '{"message":"OK","result":{"blockNumber":"15163379"},"status":"1"}'
+      string: '{"status":"1","message":"OK","result":"15163379"}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
@@ -63,10 +63,10 @@ interactions:
       User-Agent:
       - rotki/1.34.2.dev24+g1a503d48e
     method: GET
-    uri: https://base.blockscout.com/api?action=getblocknobytime&closest=before&module=block&timestamp=1717416305
+    uri: https://api.etherscan.io/v2/api?action=getblocknobytime&chainid=8453&closest=before&module=block&timestamp=1717416305
   response:
     body:
-      string: '{"message":"OK","result":{"blockNumber":"15313479"},"status":"1"}'
+      string: '{"status":"1","message":"OK","result":"15163379"}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
@@ -115,7 +115,7 @@ interactions:
       User-Agent:
       - rotki/1.34.2.dev24+g1a503d48e
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=tokentx&chainid=8453&address=0xeA2B3D309bC480Fe385BBF8aEF6D45D81825A784&endBlock=15313479&module=account&sort=asc&startBlock=15163379
+    uri: https://api.etherscan.io/v2/api?action=tokentx&chainid=8453&address=0xeA2B3D309bC480Fe385BBF8aEF6D45D81825A784&endBlock=15313479&module=account&sort=asc&startBlock=15163379&endblock=15163379
   response:
     body:
       string: '{"status":"1","message":"OK","result":[{"blockNumber":"15163429","timeStamp":"1717116205","hash":"0x582bc42507195abfe1a39ac1b9d92241234a4046c07360d65e783b2281c9d0ba","nonce":"2263","blockHash":"0xb7248447ec24bae2512563730c34570bf8c3e701cccc5331849779925793e45a","from":"0x28376af8568d3b2bca90c14c3850b1541319dc47","contractAddress":"0x41a5189f62e71c75824e6f7ff033e29b44cfe2d3","to":"0xea2b3d309bc480fe385bbf8aef6d45d81825a784","value":"30000000000000000","tokenName":"Oomer","tokenSymbol":"OOMER","tokenDecimal":"18","transactionIndex":"40","gas":"18554240","gasPrice":"1079543","gasUsed":"13373504","cumulativeGasUsed":"18085327","input":"deprecated","confirmations":"2969269"}]}'

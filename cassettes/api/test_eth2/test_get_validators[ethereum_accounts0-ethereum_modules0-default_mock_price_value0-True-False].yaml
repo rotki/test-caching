@@ -666,8 +666,6 @@ interactions:
       - cloudflare
       Strict-Transport-Security:
       - max-age=7257600
-      Transfer-Encoding:
-      - chunked
       Vary:
       - Cookie
       - Accept-Encoding
@@ -1197,6 +1195,52 @@ interactions:
       - DYNAMIC
       content-length:
       - '550'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.41.2.dev21+gcf9e950180.d20251127
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=getblocknobytime&chainid=1&closest=before&module=block&timestamp=1753459200
+  response:
+    body:
+      string: '{"status":"1","message":"OK","result":"22997210"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 01 Dec 2025 14:25:20 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
+      content-length:
+      - '49'
+      svid:
+      - '9'
     status:
       code: 200
       message: OK
