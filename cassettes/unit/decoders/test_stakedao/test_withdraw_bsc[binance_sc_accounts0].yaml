@@ -82,8 +82,6 @@ interactions:
       - Tue, 29 Apr 2025 13:24:55 GMT
       Server:
       - nginx
-      Transfer-Encoding:
-      - chunked
       Vary:
       - Accept-Encoding
       X-Frame-Options:
@@ -428,6 +426,53 @@ interactions:
       - '1383'
       svid:
       - bsc8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.41.2.dev135+gd5b291e260.d20251208
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=56&data=0x2dc7d74c&module=proxy&to=0xE36c375AD28C0822ab476Bd62A8BEAd88d9a4e34
+  response:
+    body:
+      string: '{"status":"0","message":"NOTOK","result":"Free API access is not supported
+        for this chain. Please upgrade your api plan for full chain coverage. https://etherscan.io/apis"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 08 Dec 2025 16:33:03 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '2'
+      content-length:
+      - '172'
+      svid:
+      - bsc13
     status:
       code: 200
       message: OK
