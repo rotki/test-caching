@@ -161,7 +161,7 @@ interactions:
       User-Agent:
       - rotki/1.35.1.dev199+g40ac3104a.d20241029
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=10&module=account&sort=asc&txHash=0xe2111cddcd42c8214770c7a3270490c31663cd8b4b20b3fc27018ca3ce7a3979
+    uri: https://explorer.optimism.io/api?action=txlistinternal&module=account&sort=asc&txhash=0xe2111cddcd42c8214770c7a3270490c31663cd8b4b20b3fc27018ca3ce7a3979
   response:
     body:
       string: '{"status":"0","message":"No transactions found","result":[]}'
@@ -589,10 +589,10 @@ interactions:
       User-Agent:
       - rotki/1.35.1.dev199+g40ac3104a.d20241029
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=8453&module=account&sort=asc&txHash=0xe451ca095dd9d48f6558a226fc6cc9b28d19f39080545db63b8ba9410fe3df3e
+    uri: https://base.blockscout.com/api?action=txlistinternal&module=account&sort=asc&txhash=0xe451ca095dd9d48f6558a226fc6cc9b28d19f39080545db63b8ba9410fe3df3e
   response:
     body:
-      string: '{"status":"1","message":"OK","result":[{"blockNumber":"21245067","timeStamp":"1729279481","from":"0x4200000000000000000000000000000000000010","to":"0x4200000000000000000000000000000000000007","value":"133008393312312648710","contractAddress":"","input":"","type":"call","gas":"150290","gasUsed":"72286","isError":"0","errCode":""},{"blockNumber":"21245067","timeStamp":"1729279481","from":"0x4200000000000000000000000000000000000007","to":"0x4200000000000000000000000000000000000016","value":"133008393312312648710","contractAddress":"","input":"","type":"call","gas":"126012","gasUsed":"43260","isError":"0","errCode":""}]}'
+      string: '{"message":"OK","result":[{"blockNumber":"21245067","callType":"delegatecall","contractAddress":"","errCode":"","from":"0x4200000000000000000000000000000000000010","gas":"170321","gasUsed":"90072","index":"1","input":"0x32b7006d","isError":"0","timeStamp":"1729279481","to":"0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d30010","transactionHash":"0xe451ca095dd9d48f6558a226fc6cc9b28d19f39080545db63b8ba9410fe3df3e","type":"call","value":"133008393312312648710"},{"blockNumber":"21245067","callType":"call","contractAddress":"","errCode":"","from":"0x4200000000000000000000000000000000000010","gas":"150290","gasUsed":"72286","index":"2","input":"0x3dbb202b","isError":"0","timeStamp":"1729279481","to":"0x4200000000000000000000000000000000000007","transactionHash":"0xe451ca095dd9d48f6558a226fc6cc9b28d19f39080545db63b8ba9410fe3df3e","type":"call","value":"133008393312312648710"},{"blockNumber":"21245067","callType":"delegatecall","contractAddress":"","errCode":"","from":"0x4200000000000000000000000000000000000007","gas":"143042","gasUsed":"67273","index":"3","input":"0x3dbb202b","isError":"0","timeStamp":"1729279481","to":"0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d30007","transactionHash":"0xe451ca095dd9d48f6558a226fc6cc9b28d19f39080545db63b8ba9410fe3df3e","type":"call","value":"133008393312312648710"},{"blockNumber":"21245067","callType":"call","contractAddress":"","errCode":"","from":"0x4200000000000000000000000000000000000007","gas":"126012","gasUsed":"43260","index":"4","input":"0xc2b3e5ac","isError":"0","timeStamp":"1729279481","to":"0x4200000000000000000000000000000000000016","transactionHash":"0xe451ca095dd9d48f6558a226fc6cc9b28d19f39080545db63b8ba9410fe3df3e","type":"call","value":"133008393312312648710"},{"blockNumber":"21245067","callType":"delegatecall","contractAddress":"","errCode":"","from":"0x4200000000000000000000000000000000000016","gas":"119075","gasUsed":"38178","index":"5","input":"0xc2b3e5ac","isError":"0","timeStamp":"1729279481","to":"0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d30016","transactionHash":"0xe451ca095dd9d48f6558a226fc6cc9b28d19f39080545db63b8ba9410fe3df3e","type":"call","value":"133008393312312648710"}],"status":"1"}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type

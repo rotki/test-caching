@@ -385,8 +385,6 @@ interactions:
       - Mon, 23 Jun 2025 07:43:02 GMT
       Server:
       - nginx
-      Transfer-Encoding:
-      - chunked
       Vary:
       - Accept-Encoding
       X-Frame-Options:
@@ -1147,8 +1145,6 @@ interactions:
       - Mon, 23 Jun 2025 07:43:13 GMT
       Server:
       - nginx
-      Transfer-Encoding:
-      - chunked
       Vary:
       - Accept-Encoding
       X-Frame-Options:
@@ -1659,6 +1655,98 @@ interactions:
       - DYNAMIC
       content-length:
       - '552'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.41.2.dev21+gcf9e950180.d20251127
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=getblocknobytime&chainid=1&closest=before&module=block&timestamp=1750665600
+  response:
+    body:
+      string: '{"status":"1","message":"OK","result":"22765797"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 01 Dec 2025 14:23:53 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
+      content-length:
+      - '49'
+      svid:
+      - '9'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.41.2.dev21+gcf9e950180.d20251127
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=txsBeaconWithdrawal&address=0x2cFc3fE6C747BFd91FF3F840C3a34F44339a0Dff&chainid=1&endblock=22765797&module=account&sort=asc&startblock=0
+  response:
+    body:
+      string: '{"status":"1","message":"OK","result":[{"withdrawalIndex":"34411832","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"2567963","blockNumber":"19185700","timestamp":"1707422627"},{"withdrawalIndex":"35328905","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"60130004","blockNumber":"19243017","timestamp":"1708117559"},{"withdrawalIndex":"36263100","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"17299714","blockNumber":"19301404","timestamp":"1708825523"},{"withdrawalIndex":"37217122","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18060133","blockNumber":"19361030","timestamp":"1709546015"},{"withdrawalIndex":"38185859","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"17750193","blockNumber":"19421576","timestamp":"1710277583"},{"withdrawalIndex":"39159061","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"17276755","blockNumber":"19482401","timestamp":"1711016351"},{"withdrawalIndex":"40129459","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18212464","blockNumber":"19543051","timestamp":"1711756523"},{"withdrawalIndex":"41104101","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18247646","blockNumber":"19603966","timestamp":"1712494691"},{"withdrawalIndex":"42077163","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18330442","blockNumber":"19664783","timestamp":"1713231011"},{"withdrawalIndex":"43053951","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18333533","blockNumber":"19725833","timestamp":"1713968963"},{"withdrawalIndex":"44036611","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18345304","blockNumber":"19787249","timestamp":"1714711055"},{"withdrawalIndex":"45030193","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18471812","blockNumber":"19849348","timestamp":"1715461355"},{"withdrawalIndex":"46032221","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18550578","blockNumber":"19911975","timestamp":"1716218219"},{"withdrawalIndex":"47030758","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"58649347","blockNumber":"19974383","timestamp":"1716971975"},{"withdrawalIndex":"48029903","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18529672","blockNumber":"20036830","timestamp":"1717725707"},{"withdrawalIndex":"49037877","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"16859373","blockNumber":"20099828","timestamp":"1718486351"},{"withdrawalIndex":"50055832","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"12483241","blockNumber":"20163450","timestamp":"1719255143"},{"withdrawalIndex":"51080876","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"17014726","blockNumber":"20227516","timestamp":"1720028207"},{"withdrawalIndex":"52110498","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18259674","blockNumber":"20291867","timestamp":"1720804679"},{"withdrawalIndex":"53139981","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"9842509","blockNumber":"20356210","timestamp":"1721580575"},{"withdrawalIndex":"54172611","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"64039486","blockNumber":"20420749","timestamp":"1722359171"},{"withdrawalIndex":"55216481","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18535038","blockNumber":"20485991","timestamp":"1723145663"},{"withdrawalIndex":"56266269","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"60100507","blockNumber":"20551603","timestamp":"1723937027"},{"withdrawalIndex":"57319279","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"19054722","blockNumber":"20617416","timestamp":"1724731463"},{"withdrawalIndex":"58375044","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"19078787","blockNumber":"20683401","timestamp":"1725527459"},{"withdrawalIndex":"59436398","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"6106312","blockNumber":"20749736","timestamp":"1726327643"},{"withdrawalIndex":"61568055","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"61131679","blockNumber":"20882964","timestamp":"1727934095"},{"withdrawalIndex":"62642224","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"19171635","blockNumber":"20950100","timestamp":"1728743111"},{"withdrawalIndex":"63712868","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"19348887","blockNumber":"21017015","timestamp":"1729550567"},{"withdrawalIndex":"64784210","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"19245048","blockNumber":"21083974","timestamp":"1730357927"},{"withdrawalIndex":"65860208","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18605959","blockNumber":"21151224","timestamp":"1731168911"},{"withdrawalIndex":"66940935","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"8570696","blockNumber":"21218769","timestamp":"1731983063"},{"withdrawalIndex":"68014948","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"13449133","blockNumber":"21285895","timestamp":"1732793219"},{"withdrawalIndex":"69085343","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"14414574","blockNumber":"21352795","timestamp":"1733600855"},{"withdrawalIndex":"70157264","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"64578331","blockNumber":"21419790","timestamp":"1734408827"},{"withdrawalIndex":"71223261","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18927461","blockNumber":"21486415","timestamp":"1735213403"},{"withdrawalIndex":"72281283","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"19162775","blockNumber":"21552541","timestamp":"1736010875"},{"withdrawalIndex":"73339622","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"19200033","blockNumber":"21618687","timestamp":"1736808971"},{"withdrawalIndex":"74397291","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18889248","blockNumber":"21684792","timestamp":"1737606371"},{"withdrawalIndex":"75455969","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"16257919","blockNumber":"21750959","timestamp":"1738404335"},{"withdrawalIndex":"76507445","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18383853","blockNumber":"21816676","timestamp":"1739197223"},{"withdrawalIndex":"77556394","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"19087697","blockNumber":"21882235","timestamp":"1739990051"},{"withdrawalIndex":"78603609","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18779514","blockNumber":"21947686","timestamp":"1740779927"},{"withdrawalIndex":"79650510","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18751496","blockNumber":"22013118","timestamp":"1741569227"},{"withdrawalIndex":"80700790","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18898456","blockNumber":"22078760","timestamp":"1742361251"},{"withdrawalIndex":"81756336","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"6891308","blockNumber":"22144732","timestamp":"1743156695"},{"withdrawalIndex":"82817941","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"14374722","blockNumber":"22211082","timestamp":"1743957131"},{"withdrawalIndex":"83885464","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"19155748","blockNumber":"22277802","timestamp":"1744761323"},{"withdrawalIndex":"84955738","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"10356097","blockNumber":"22344694","timestamp":"1745567915"},{"withdrawalIndex":"86018726","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18973173","blockNumber":"22411131","timestamp":"1746370631"},{"withdrawalIndex":"87082349","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"19035164","blockNumber":"22477608","timestamp":"1747179443"},{"withdrawalIndex":"88148123","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"19181633","blockNumber":"22544219","timestamp":"1747987019"},{"withdrawalIndex":"89205241","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18888475","blockNumber":"22610288","timestamp":"1748786219"},{"withdrawalIndex":"90257717","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18207196","blockNumber":"22676068","timestamp":"1749581447"},{"withdrawalIndex":"91318405","validatorIndex":"1187604","address":"0x2cfc3fe6c747bfd91ff3f840c3a34f44339a0dff","amount":"18984849","blockNumber":"22742361","timestamp":"1750382351"}]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 01 Dec 2025 14:23:54 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
+      content-length:
+      - '10100'
+      svid:
+      - '9'
     status:
       code: 200
       message: OK
