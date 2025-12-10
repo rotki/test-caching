@@ -499,4 +499,45 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.34.4.dev165+g163051ed7.d20240903
+    method: GET
+    uri: https://www.x-rates.com/table/?from=USD&amount=1
+  response:
+    body:
+      string: '<!DOCTYPE html>
+        <html>
+        <head><title>USD Exchange Rates</title></head>
+        <body>
+        <table class="tablesorter ratesTable">
+        <tbody>
+        <tr>
+        <td>Euro</td>
+        <td><a href="https://www.x-rates.com/graph/?from=USD&amp;to=EUR">0.91</a></td>
+        </tr>
+        </tbody>
+        </table>
+        </body>
+        </html>'
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Wed, 11 Sep 2024 11:54:03 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
 version: 1
