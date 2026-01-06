@@ -189,4 +189,51 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.41.2.dev199+g0b4b699f8.d20251218
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=txlist&address=0x36BDE71C97B33Cc4729cf772aE268934f7AB70B2&chainid=10&endblock=124251811&module=account&startblock=124251811
+  response:
+    body:
+      string: '{"status":"0","message":"NOTOK","result":"Free API access is not supported
+        for this chain. Please upgrade your api plan for full chain coverage. https://etherscan.io/apis"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 06 Jan 2026 16:21:03 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
+      content-length:
+      - '172'
+      svid:
+      - op1
+    status:
+      code: 200
+      message: OK
 version: 1
