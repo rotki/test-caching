@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.40.2.dev329+ga93904c32.d20251029
+      - rotki/1.41.2.dev199+g0b4b699f8.d20251218
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getTransactionByHash&chainid=137&module=proxy&txhash=0x6fd0d431c6c1b3dcbd3da59055720a975a45a4099339e2187032d04b66c2cf9f
   response:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 04 Nov 2025 16:28:01 GMT
+      - Tue, 06 Jan 2026 15:58:58 GMT
       Server:
       - nginx
       Vary:
@@ -43,7 +43,7 @@ interactions:
       content-length:
       - '2739'
       svid:
-      - poly2
+      - poly5
     status:
       code: 200
       message: OK
@@ -57,7 +57,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.40.2.dev329+ga93904c32.d20251029
+      - rotki/1.41.2.dev199+g0b4b699f8.d20251218
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getBlockByNumber&boolean=true&chainid=137&module=proxy&tag=0x4adb26c
   response:
@@ -79,7 +79,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 04 Nov 2025 16:28:01 GMT
+      - Tue, 06 Jan 2026 15:58:58 GMT
       Server:
       - nginx
       Vary:
@@ -87,11 +87,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '5'
+      - '3'
       content-length:
       - '203876'
       svid:
-      - poly1
+      - poly4
     status:
       code: 200
       message: OK
@@ -105,7 +105,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.40.2.dev329+ga93904c32.d20251029
+      - rotki/1.41.2.dev199+g0b4b699f8.d20251218
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=137&module=proxy&txhash=0x6fd0d431c6c1b3dcbd3da59055720a975a45a4099339e2187032d04b66c2cf9f
   response:
@@ -127,7 +127,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 04 Nov 2025 16:28:05 GMT
+      - Tue, 06 Jan 2026 15:58:59 GMT
       Server:
       - nginx
       Vary:
@@ -135,11 +135,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '4'
+      - '2'
       content-length:
       - '12785'
       svid:
-      - poly1
+      - poly4
     status:
       code: 200
       message: OK
@@ -153,9 +153,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.40.2.dev329+ga93904c32.d20251029
+      - rotki/1.41.2.dev199+g0b4b699f8.d20251218
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=137&module=account&sort=asc&txHash=0x6fd0d431c6c1b3dcbd3da59055720a975a45a4099339e2187032d04b66c2cf9f
+    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=137&module=account&sort=asc&txhash=0x6fd0d431c6c1b3dcbd3da59055720a975a45a4099339e2187032d04b66c2cf9f
   response:
     body:
       string: '{"status":"1","message":"OK","result":[{"blockNumber":"78492268","timeStamp":"1762089389","from":"0x2d9c3a9e67c966c711208cc78b34fb9e9f8db589","to":"0xb261b51938a9767406ef83bbfbaafe16691b7047","value":"82000000000000000000","contractAddress":"","input":"","type":"call","gas":"508331","gasUsed":"62","isError":"0","errCode":""},{"blockNumber":"78492268","timeStamp":"1762089389","from":"0xb261b51938a9767406ef83bbfbaafe16691b7047","to":"0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270","value":"82000000000000000000","contractAddress":"","input":"","type":"call","gas":"489327","gasUsed":"23977","isError":"0","errCode":""}]}'
@@ -173,7 +173,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 04 Nov 2025 16:28:06 GMT
+      - Tue, 06 Jan 2026 15:59:00 GMT
       Server:
       - nginx
       Vary:
@@ -185,7 +185,55 @@ interactions:
       content-length:
       - '619'
       svid:
-      - poly2
+      - poly1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.41.2.dev199+g0b4b699f8.d20251218
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=137&data=0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001600000000000000000000000003f33f9f7e2d7cfbcbdf8ea8b870a6e3d449664c200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004313ce567000000000000000000000000000000000000000000000000000000000000000000000000000000003f33f9f7e2d7cfbcbdf8ea8b870a6e3d449664c20000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000495d89b41000000000000000000000000000000000000000000000000000000000000000000000000000000003f33f9f7e2d7cfbcbdf8ea8b870a6e3d449664c20000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000406fdde0300000000000000000000000000000000000000000000000000000000&module=proxy&to=0x275617327c958bD06b5D6b871E7f491D76113dd8
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001a0000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001200000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000007636f6d70504f4c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000c436f6d706f756e6420504f4c0000000000000000000000000000000000000000"}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 06 Jan 2026 15:59:01 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '2'
+      content-length:
+      - '1383'
+      svid:
+      - poly1
     status:
       code: 200
       message: OK
