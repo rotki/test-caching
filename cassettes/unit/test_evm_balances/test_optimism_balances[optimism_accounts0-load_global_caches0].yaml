@@ -827,8 +827,6 @@ interactions:
       - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=JnvFOWdLatqFEzvDs0bsT%2BwJcaTPM9Q%2BeFBDsEyzbpI50%2BcOLXr6MaaQ7QvAv6VzlPCalWDZU2tUT5uCxrlh3Q9dS%2FK%2F9Md2lUH9WcwApkDUOmXR"}]}'
       Server:
       - cloudflare
-      Transfer-Encoding:
-      - chunked
       access-control-allow-credentials:
       - 'true'
       access-control-allow-origin:
@@ -853,6 +851,176 @@ interactions:
       - '52799'
       x-request-id:
       - 3a753c181f69b0f3f262d23cf4de0c43
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=10&data=0x100f2c00000000000000000000000000d25711edfbf747efce181442cc1d8f5f8fc8a0d3&module=proxy&to=0xf96764f4d357A9A16AB8050D0E3abcAa67e50eF9
+  response:
+    body:
+      string: '{"status":"0","message":"NOTOK","result":"Free API access is not supported
+        for this chain. Please upgrade your api plan for full chain coverage. https://etherscan.io/apis"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 14 Jan 2026 21:35:58 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '4'
+      content-length:
+      - '172'
+      svid:
+      - op1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+    method: GET
+    uri: https://api.routescan.io/v2/network/mainnet/evm/10/etherscan/api?action=eth_call&data=0x100f2c00000000000000000000000000d25711edfbf747efce181442cc1d8f5f8fc8a0d3&module=proxy&to=0xf96764f4d357A9A16AB8050D0E3abcAa67e50eF9
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000012000000000000000000000000420000000000000000000000000000000000000600000000000000000000000042000000000000000000000000000000000000420000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e76414d4d56322d574554482f4f50000000000000000000000000000000000000"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '550'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 14 Jan 2026 21:35:59 GMT
+      Via:
+      - 1.1 dd8c160abdaf9c95041bf719c46a2c40.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - uovWh1OHhnEYN505oKhK5C48JYWYYiA1pAvVNMTNcRqFJcCqzS6trA==
+      X-Amz-Cf-Pop:
+      - ORD58-P10
+      X-Cache:
+      - Miss from cloudfront
+      access-control-allow-origin:
+      - '*'
+      x-ratelimit-rpd-limit:
+      - '100000'
+      x-ratelimit-rpd-remaining:
+      - '99960'
+      x-ratelimit-rpd-reset:
+      - '78704'
+      x-ratelimit-rpm-limit:
+      - '300'
+      x-ratelimit-rpm-remaining:
+      - '299'
+      x-ratelimit-rpm-reset:
+      - '60'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"id": 0, "jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0x54eCF3f6f61F63fdFE7c27Ee8A86e54899600C92",
+      "data": "0xb0d861b800000000000000000000000078c13393aee675dd7ed07ce992210750d1f5db8800000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000001000000000000000000000000cc53cd0a8ec812d46f0e2c7cc5aadd869b6f0292"},
+      "latest"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '403'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+    method: POST
+    uri: https://explorer.optimism.io/api/eth-rpc
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000991419b46f364b","id":
+        0}
+
+        '
+    headers:
+      CF-RAY:
+      - 9be0442fb9d1dd1a-ATL
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 14 Jan 2026 21:36:00 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ys4ByErDXcX8ocwf0HRDBWf1uoVKGLnhL5ejQVyExJc2IAlT5%2FmkZ4xgm1iZvFZ1rWCmX3PiLhhgjLV7F0r3VeLlkOw%2Brj8E8WsMdIG2L2tiR35E"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - bypass-429-option,x-ratelimit-reset,x-ratelimit-limit,x-ratelimit-remaining,api-v2-temp-token
+      alt-svc:
+      - h3=":443"; ma=86400
+      bypass-429-option:
+      - no_bypass
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '233'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-ratelimit-limit:
+      - '600'
+      x-ratelimit-remaining:
+      - '599'
+      x-ratelimit-reset:
+      - '1'
+      x-request-id:
+      - 0ec2d0e9b80dbfbd566b89c43eeb8ebe
     status:
       code: 200
       message: OK
