@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev4+gcb8d185fe.d20251124
+      - rotki/1.41.4.dev420+gd91fa9ae0a.d20260126
     method: GET
     uri: https://explorer.optimism.io/api?action=getblocknobytime&closest=before&module=block&timestamp=1689113567
   response:
@@ -17,7 +17,7 @@ interactions:
       string: '{"message":"OK","result":{"blockNumber":"106757395"},"status":"1"}'
     headers:
       CF-RAY:
-      - 9a3b624f0d8c3207-MEM
+      - 9c417c5568c4bf0c-LHR
       Cache-Control:
       - max-age=0, private, must-revalidate
       Connection:
@@ -25,11 +25,11 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 24 Nov 2025 19:41:28 GMT
+      - Mon, 26 Jan 2026 16:46:18 GMT
       Nel:
       - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
       Report-To:
-      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ytFkLl2p7tbpEJkKZRLGhWuvm2Hhl7PKJuAylmSwfAJOkAsR2PRUBhOzkEv%2BZyptKXwklCIXuheDatAtA2wQGk7jTRODmDn9mZc8e%2BVl3Ghp%2Bg%3D%3D"}]}'
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=JmI7OQhoQbIGDIYBNkJ4uozfZm%2BqVWVofO%2F%2BTSs96BuYjYZyuD54e3vETlLi5fZVbC1IL%2F7hIcZdBKKtyPszun1VB0FIP8nzE6ORf9xmDFoqZG3g"}]}'
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -55,9 +55,9 @@ interactions:
       x-ratelimit-remaining:
       - '599'
       x-ratelimit-reset:
-      - '31134'
+      - '41518'
       x-request-id:
-      - b8b9e27365f8b3ffebeb010cd0580494
+      - 17748acca8d399885405b0ddca778716
     status:
       code: 200
       message: OK
@@ -71,62 +71,15 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev4+gcb8d185fe.d20251124
-    method: GET
-    uri: https://api.etherscan.io/v2/api?action=txlist&address=0xd6Ade875eEC93a7aAb7EfB7DBF13d1457443f95B&chainid=10&endBlock=106757395&module=account&sort=asc&startBlock=106757395
-  response:
-    body:
-      string: '{"status":"0","message":"NOTOK","result":"Free API access is not supported
-        for this chain. Please upgrade your api plan for full chain coverage. https://etherscan.io/apis"}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Mon, 24 Nov 2025 19:41:29 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Nginx-Id:
-      - '2'
-      content-length:
-      - '172'
-      svid:
-      - op1
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.41.2.dev4+gcb8d185fe.d20251124
+      - rotki/1.41.4.dev420+gd91fa9ae0a.d20260126
     method: GET
     uri: https://explorer.optimism.io/api?action=txlist&address=0xd6Ade875eEC93a7aAb7EfB7DBF13d1457443f95B&endblock=106757395&module=account&sort=asc&startblock=106757395
   response:
     body:
-      string: '{"message":"OK","result":[{"blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"106757395","confirmations":"37449860","contractAddress":"","cumulativeGasUsed":"1700361","from":"0xd6ade875eec93a7aab7efb7dbf13d1457443f95b","gas":"66152","gasPrice":"66","gasUsed":"47252","hash":"0x07797f73aa274fb79e990701184b495341dd482840673564d3c0743669d421e1","input":"0x095ea7b3000000000000000000000000def1abe32c034e558cdd535791643c58a13acc10ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff","isError":"0","methodId":"0x","nonce":"10","timeStamp":"1689113567","to":"0x4200000000000000000000000000000000000042","transactionIndex":"6","txreceipt_status":"1","value":"0"},{"blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"106757395","confirmations":"37449860","contractAddress":"","cumulativeGasUsed":"2023164","from":"0xd6ade875eec93a7aab7efb7dbf13d1457443f95b","gas":"523212","gasPrice":"66","gasUsed":"322803","hash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","input":"0x415565b000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d48000000000000000000000000000000000000000000000000000000000128186800000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000360000000000000000000000000000000000000000000000000000000000000000f000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000002c00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c316070000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000028000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000001f574f4f46690000000000000000000000000000000000000000000000000000000000000000000000e410c6e7b20a9d48000000000000000000000000000000000000000000000000000000000128186800000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000020000000000000000000000000eaf1ac8e89ea0ae13e0f03634a4ff23502527024000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000020000000000000000000000004200000000000000000000000000000000000042000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee0000000000000000000000000000000000000000000000000000000000000000869584cd000000000000000000000000382ffce2287252f930e1c8dc9328dac5bf282ba10000000000000000000000000000000000000000000000e5867b475164add3cb","isError":"0","methodId":"0x","nonce":"11","timeStamp":"1689113567","to":"0xdef1abe32c034e558cdd535791643c58a13acc10","transactionIndex":"7","txreceipt_status":"1","value":"0"}],"status":"1"}'
+      string: '{"message":"OK","result":[{"blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"106757395","confirmations":"40166205","contractAddress":"","cumulativeGasUsed":"1700361","from":"0xd6ade875eec93a7aab7efb7dbf13d1457443f95b","gas":"66152","gasPrice":"66","gasUsed":"47252","hash":"0x07797f73aa274fb79e990701184b495341dd482840673564d3c0743669d421e1","input":"0x095ea7b3000000000000000000000000def1abe32c034e558cdd535791643c58a13acc10ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff","isError":"0","methodId":"0x","nonce":"10","timeStamp":"1689113567","to":"0x4200000000000000000000000000000000000042","transactionIndex":"6","txreceipt_status":"1","value":"0"},{"blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"106757395","confirmations":"40166205","contractAddress":"","cumulativeGasUsed":"2023164","from":"0xd6ade875eec93a7aab7efb7dbf13d1457443f95b","gas":"523212","gasPrice":"66","gasUsed":"322803","hash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","input":"0x415565b000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d48000000000000000000000000000000000000000000000000000000000128186800000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000360000000000000000000000000000000000000000000000000000000000000000f000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000002c00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c316070000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000028000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000001f574f4f46690000000000000000000000000000000000000000000000000000000000000000000000e410c6e7b20a9d48000000000000000000000000000000000000000000000000000000000128186800000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000020000000000000000000000000eaf1ac8e89ea0ae13e0f03634a4ff23502527024000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000020000000000000000000000004200000000000000000000000000000000000042000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee0000000000000000000000000000000000000000000000000000000000000000869584cd000000000000000000000000382ffce2287252f930e1c8dc9328dac5bf282ba10000000000000000000000000000000000000000000000e5867b475164add3cb","isError":"0","methodId":"0x","nonce":"11","timeStamp":"1689113567","to":"0xdef1abe32c034e558cdd535791643c58a13acc10","transactionIndex":"7","txreceipt_status":"1","value":"0"}],"status":"1"}'
     headers:
       CF-RAY:
-      - 9a3b62529bd0d691-IAD
+      - 9c417c587f87653d-LHR
       Cache-Control:
       - max-age=0, private, must-revalidate
       Connection:
@@ -134,11 +87,11 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 24 Nov 2025 19:41:29 GMT
+      - Mon, 26 Jan 2026 16:46:18 GMT
       Nel:
       - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
       Report-To:
-      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=RLAMSx6gnzp5G%2Bf%2FHtFDBGcewoJRZMDUR1Qd5JqOWCv7SfE%2BI%2BFqSUAcER%2BZCeYSfpJgVVlTQyZg71cJEIPhxinIvlj3moCbwzdvdli6o2SYOA%3D%3D"}]}'
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=74Ef5DUhOYhr71Rm1xG%2FLFbkwtIG0xgKb1Y0LpI7v5UZO1fwkX35stcarjbDyLg2O7%2FBxyfGuXGhqPRTW7dzfo%2BfX8tbcSqRyyXYvtBwwXQi%2BKaQ"}]}'
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -164,9 +117,9 @@ interactions:
       x-ratelimit-remaining:
       - '598'
       x-ratelimit-reset:
-      - '30575'
+      - '41018'
       x-request-id:
-      - 54c9fe7c3590dc91a974f5dc59919eb5
+      - e535aec1f35f02f76c51b2ef6e69205e
     status:
       code: 200
       message: OK
@@ -180,62 +133,21 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev4+gcb8d185fe.d20251124
+      - rotki/1.41.4.dev420+gd91fa9ae0a.d20260126
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=txlistinternal&address=0xd6Ade875eEC93a7aAb7EfB7DBF13d1457443f95B&chainid=10&endBlock=106757395&module=account&sort=asc&startBlock=106757395
+    uri: https://explorer.optimism.io/api/v2/transactions/0x07797f73aa274fb79e990701184b495341dd482840673564d3c0743669d421e1
   response:
     body:
-      string: '{"status":"0","message":"NOTOK","result":"Free API access is not supported
-        for this chain. Please upgrade your api plan for full chain coverage. https://etherscan.io/apis"}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Mon, 24 Nov 2025 19:41:29 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Nginx-Id:
-      - '3'
-      content-length:
-      - '172'
-      svid:
-      - op1
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.41.2.dev4+gcb8d185fe.d20251124
-    method: GET
-    uri: https://explorer.optimism.io/api?action=txlistinternal&address=0xd6Ade875eEC93a7aAb7EfB7DBF13d1457443f95B&endblock=106757395&module=account&sort=asc&startblock=106757395
-  response:
-    body:
-      string: '{"message":"No internal transactions found","result":[],"status":"0"}'
+      string: '{"l1_gas_used":"2564","priority_fee":"283512","raw_input":"0x095ea7b3000000000000000000000000def1abe32c034e558cdd535791643c58a13acc10ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff","is_pending_update":false,"op_withdrawals":[],"result":"success","hash":"0x07797f73aa274fb79e990701184b495341dd482840673564d3c0743669d421e1","max_fee_per_gas":"66","revert_reason":null,"confirmation_duration":[0,2.0e3],"transaction_burnt_fee":"2835120","type":2,"token_transfers_overflow":false,"confirmations":40166207,"position":6,"max_priority_fee_per_gas":"12","transaction_tag":null,"created_contract":null,"value":"0","l1_fee_scalar":"0.684","from":{"ens_domain_name":null,"hash":"0xd6Ade875eEC93a7aAb7EfB7DBF13d1457443f95B","implementations":[],"is_contract":false,"is_scam":false,"is_verified":false,"metadata":null,"name":null,"private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"gas_used":"47252","status":"ok","to":{"ens_domain_name":null,"hash":"0x4200000000000000000000000000000000000042","implementations":[],"is_contract":true,"is_scam":false,"is_verified":true,"metadata":{"tags":[{"meta":{},"name":"Predeploys:
+        GovernanceToken","ordinal":1000,"slug":"predeploys-governancetoken","tagType":"name"},{"meta":{"projectName":"Optimism","tagUrl":"https://app.klerosscout.eth.limo/#/?registry=Single_Tags&itemdetails=0xc0dfea1e971d267b1cd7778b5d724d3a7bda959ba41b6f37ee182140a1c57396@0x66260c69d03837016d88c9877e61e08ef74c59f2","tokenAttributes":"{\"logo_url\":\"https://cdn.kleros.link/ipfs/QmXTBGyjmPAD9PqKwumL1qSEkY96ZdJPDj1fo8kERzYVm3/optimism.png\",\"token_symbol\":\"OP\",\"token_name\":\"Optimism\",\"decimals\":18}","tooltipDescription":"Optimism''s
+        official OP Token contract on Optimism","tooltipUrl":"https://www.optimism.io/"},"name":"Optimism:
+        OP Token","ordinal":10,"slug":"optimism-op-token","tagType":"name"},{"meta":{},"name":"Token
+        Contract","ordinal":0,"slug":"token-contract","tagType":"generic"},{"meta":{},"name":"Optimism","ordinal":0,"slug":"optimism","tagType":"protocol"},{"meta":{"data":"Ok"},"name":"Credible
+        token","ordinal":0,"slug":"credible-token","tagType":"token_reputation"}]},"name":"GovernanceToken","private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"authorization_list":[],"l1_fee":"29750378541748","method":"approve","fee":{"type":"actual","value":"29750381660380"},"actions":[],"gas_limit":"66152","gas_price":"66","decoded_input":{"method_call":"approve(address
+        spender, uint256 amount)","method_id":"095ea7b3","parameters":[{"name":"spender","type":"address","value":"0xDEF1ABE32c034e558Cdd535791643C58a13aCC10"},{"name":"amount","type":"uint256","value":"115792089237316195423570985008687907853269984665640564039457584007913129639935"}]},"l1_gas_price":"16963613678","token_transfers":[],"base_fee_per_gas":"60","timestamp":"2023-07-11T22:12:47.000000Z","nonce":10,"historic_exchange_rate":"1873.33","transaction_types":["contract_call"],"exchange_rate":"2905.84","block_number":106757395,"has_error_in_internal_transactions":false}'
     headers:
       CF-RAY:
-      - 9a3b62558f7d4f7b-ATL
+      - 9c417c5bcf0653a3-LHR
       Cache-Control:
       - max-age=0, private, must-revalidate
       Connection:
@@ -243,11 +155,147 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 24 Nov 2025 19:41:30 GMT
+      - Mon, 26 Jan 2026 16:46:19 GMT
       Nel:
       - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
       Report-To:
-      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dWy%2FXKRJ0DoVR6zvAh407X2u3YpeoA7mQiYV8qhIuBVFwJ%2FuWqCoVobF0I58Zbw3aYPHGqbZxSqh%2Fo%2FfBgZl2Wz2f8XNXW3kDGdzaid1jTwEYE4J"}]}'
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YVloe5%2FbWsJ%2FHAKEXI6qMwDP7tKCjS0PEb6nPOXS%2BXYYuQQTLBgQYTR6eI749xxYl1MA04pngo5asbXTO0wx6udo5JcHLDZym7rqqdgc1sqnOFET"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - bypass-429-option,x-ratelimit-reset,x-ratelimit-limit,x-ratelimit-remaining,api-v2-temp-token
+      alt-svc:
+      - h3=":443"; ma=86400
+      bypass-429-option:
+      - temporary_token
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '3067'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-ratelimit-limit:
+      - '600'
+      x-ratelimit-remaining:
+      - '597'
+      x-ratelimit-reset:
+      - '40505'
+      x-request-id:
+      - df99ec9e0037208c87919362e144df9c
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.41.4.dev420+gd91fa9ae0a.d20260126
+    method: GET
+    uri: https://explorer.optimism.io/api/v2/transactions/0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665
+  response:
+    body:
+      string: '{"l1_gas_used":"9976","priority_fee":"1936818","raw_input":"0x415565b000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d48000000000000000000000000000000000000000000000000000000000128186800000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000360000000000000000000000000000000000000000000000000000000000000000f000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000002c00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c316070000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000028000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000001f574f4f46690000000000000000000000000000000000000000000000000000000000000000000000e410c6e7b20a9d48000000000000000000000000000000000000000000000000000000000128186800000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000020000000000000000000000000eaf1ac8e89ea0ae13e0f03634a4ff23502527024000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000020000000000000000000000004200000000000000000000000000000000000042000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee0000000000000000000000000000000000000000000000000000000000000000869584cd000000000000000000000000382ffce2287252f930e1c8dc9328dac5bf282ba10000000000000000000000000000000000000000000000e5867b475164add3cb","is_pending_update":false,"op_withdrawals":[],"result":"success","hash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","max_fee_per_gas":"66","revert_reason":null,"confirmation_duration":[0,2.0e3],"transaction_burnt_fee":"19368180","type":2,"token_transfers_overflow":false,"confirmations":40166207,"position":7,"max_priority_fee_per_gas":"12","transaction_tag":null,"created_contract":null,"value":"0","l1_fee_scalar":"0.684","from":{"ens_domain_name":null,"hash":"0xd6Ade875eEC93a7aAb7EfB7DBF13d1457443f95B","implementations":[],"is_contract":false,"is_scam":false,"is_verified":false,"metadata":null,"name":null,"private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"gas_used":"322803","status":"ok","to":{"ens_domain_name":null,"hash":"0xDEF1ABE32c034e558Cdd535791643C58a13aCC10","implementations":[],"is_contract":true,"is_scam":false,"is_verified":true,"metadata":{"tags":[{"meta":{"main_entity":"0x","projectName":"0x","tagUrl":"https://app.klerosscout.eth.limo/#/?registry=Single_Tags&itemdetails=0xc24a01143415d849ee31889d9ed31b4c2e03a9ee85c1b6bfe8e1286577f17157@0x66260c69d03837016d88c9877e61e08ef74c59f2","tooltipDescription":"0x''s
+        official Exchange Proxy contract on Optimism","tooltipUrl":"https://0x.org/","verifiedDomains":["swapr.eth.limo","app.unidex.exchange","de.fi","swap.defillama.com","zapper.xyz","matcha.xyz"]},"name":"Exchange
+        Proxy","ordinal":10,"slug":"exchange-proxy","tagType":"name"},{"meta":{"bgColor":"linear-gradient(to
+        right,rgba(96, 165, 250, 0.2),rgba(168, 85, 247, 0.2),rgba(236, 72, 153, 0.2));","tooltipDescription":"Provided
+        by OLI"},"name":"ZeroEx","ordinal":0,"slug":"zeroex","tagType":"name"},{"meta":{"appActionButtonText":"0x","appID":"0x"},"name":"0x","ordinal":0,"slug":"0x","tagType":"protocol"}]},"name":"ZeroEx","private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"authorization_list":[],"l1_fee":"115752642875381","method":"transformERC20","fee":{"type":"actual","value":"115752664180379"},"actions":[],"gas_limit":"523212","gas_price":"66","decoded_input":{"method_call":"transformERC20(address
+        inputToken, address outputToken, uint256 inputTokenAmount, uint256 minOutputTokenAmount,
+        (uint32,bytes)[] transformations)","method_id":"415565b0","parameters":[{"name":"inputToken","type":"address","value":"0x4200000000000000000000000000000000000042"},{"name":"outputToken","type":"address","value":"0x7F5c764cBc14f9669B88837ca1490cCa17c31607"},{"name":"inputTokenAmount","type":"uint256","value":"16433853738701725000"},{"name":"minOutputTokenAmount","type":"uint256","value":"19404904"},{"name":"transformations","type":"(uint32,bytes)[]","value":[["15","0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c316070000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000028000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000001f574f4f46690000000000000000000000000000000000000000000000000000000000000000000000e410c6e7b20a9d48000000000000000000000000000000000000000000000000000000000128186800000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000020000000000000000000000000eaf1ac8e89ea0ae13e0f03634a4ff23502527024000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"],["11","0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000020000000000000000000000004200000000000000000000000000000000000042000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee0000000000000000000000000000000000000000000000000000000000000000"]]}]},"l1_gas_price":"16963613678","token_transfers":[{"block_hash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","block_number":106757395,"from":{"ens_domain_name":null,"hash":"0xd6Ade875eEC93a7aAb7EfB7DBF13d1457443f95B","implementations":[],"is_contract":false,"is_scam":false,"is_verified":false,"metadata":null,"name":null,"private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"log_index":38,"method":null,"timestamp":null,"to":{"ens_domain_name":null,"hash":"0xA3128d9b7Cca7d5Af29780a56abEec12B05a6740","implementations":[],"is_contract":true,"is_scam":false,"is_verified":false,"metadata":null,"name":null,"private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"token":{"address_hash":"0x4200000000000000000000000000000000000042","circulating_market_cap":"577326319.8725446","decimals":"18","exchange_rate":"0.296768","holders_count":"1382245","icon_url":"https://assets.coingecko.com/coins/images/25244/small/Optimism.png?1696524385","name":"Optimism","reputation":"ok","symbol":"OP","total_supply":"4294963292498750113616177748","type":"ERC-20","volume_24h":"73379665.11914091"},"token_type":"ERC-20","total":{"decimals":"18","value":"16433853738701725000"},"transaction_hash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","type":"token_transfer"},{"block_hash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","block_number":106757395,"from":{"ens_domain_name":null,"hash":"0xA3128d9b7Cca7d5Af29780a56abEec12B05a6740","implementations":[],"is_contract":true,"is_scam":false,"is_verified":false,"metadata":null,"name":null,"private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"log_index":40,"method":null,"timestamp":null,"to":{"ens_domain_name":null,"hash":"0xd1778F9DF3eee5473A9640f13682e3846f61fEbC","implementations":[],"is_contract":true,"is_scam":false,"is_verified":true,"metadata":{"tags":[{"meta":{"bgColor":"linear-gradient(to
+        right,rgba(96, 165, 250, 0.2),rgba(168, 85, 247, 0.2),rgba(236, 72, 153, 0.2));","tooltipDescription":"Provided
+        by OLI"},"name":"WooPPV2","ordinal":0,"slug":"wooppv2","tagType":"name"}]},"name":null,"private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"token":{"address_hash":"0x4200000000000000000000000000000000000042","circulating_market_cap":"577326319.8725446","decimals":"18","exchange_rate":"0.296768","holders_count":"1382245","icon_url":"https://assets.coingecko.com/coins/images/25244/small/Optimism.png?1696524385","name":"Optimism","reputation":"ok","symbol":"OP","total_supply":"4294963292498750113616177748","type":"ERC-20","volume_24h":"73379665.11914091"},"token_type":"ERC-20","total":{"decimals":"18","value":"16433853738701725000"},"transaction_hash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","type":"token_transfer"},{"block_hash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","block_number":106757395,"from":{"ens_domain_name":null,"hash":"0xd1778F9DF3eee5473A9640f13682e3846f61fEbC","implementations":[],"is_contract":true,"is_scam":false,"is_verified":true,"metadata":{"tags":[{"meta":{"bgColor":"linear-gradient(to
+        right,rgba(96, 165, 250, 0.2),rgba(168, 85, 247, 0.2),rgba(236, 72, 153, 0.2));","tooltipDescription":"Provided
+        by OLI"},"name":"WooPPV2","ordinal":0,"slug":"wooppv2","tagType":"name"}]},"name":null,"private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"log_index":41,"method":null,"timestamp":null,"to":{"ens_domain_name":null,"hash":"0xA3128d9b7Cca7d5Af29780a56abEec12B05a6740","implementations":[],"is_contract":true,"is_scam":false,"is_verified":false,"metadata":null,"name":null,"private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"token":{"address_hash":"0x7F5c764cBc14f9669B88837ca1490cCa17c31607","circulating_market_cap":"28945831.550196517","decimals":"6","exchange_rate":"0.998933","holders_count":"946383","icon_url":"https://assets.coingecko.com/coins/images/31580/small/USDC-icon.png?1696530397","name":"USD
+        Coin","reputation":"ok","symbol":"USDC","total_supply":"28963002700439","type":"ERC-20","volume_24h":"761514.7245190738"},"token_type":"ERC-20","total":{"decimals":"6","value":"20005056"},"transaction_hash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","type":"token_transfer"},{"block_hash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","block_number":106757395,"from":{"ens_domain_name":null,"hash":"0xA3128d9b7Cca7d5Af29780a56abEec12B05a6740","implementations":[],"is_contract":true,"is_scam":false,"is_verified":false,"metadata":null,"name":null,"private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"log_index":45,"method":null,"timestamp":null,"to":{"ens_domain_name":null,"hash":"0xd6Ade875eEC93a7aAb7EfB7DBF13d1457443f95B","implementations":[],"is_contract":false,"is_scam":false,"is_verified":false,"metadata":null,"name":null,"private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"token":{"address_hash":"0x7F5c764cBc14f9669B88837ca1490cCa17c31607","circulating_market_cap":"28945831.550196517","decimals":"6","exchange_rate":"0.998933","holders_count":"946383","icon_url":"https://assets.coingecko.com/coins/images/31580/small/USDC-icon.png?1696530397","name":"USD
+        Coin","reputation":"ok","symbol":"USDC","total_supply":"28963002700439","type":"ERC-20","volume_24h":"761514.7245190738"},"token_type":"ERC-20","total":{"decimals":"6","value":"20005056"},"transaction_hash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","type":"token_transfer"}],"base_fee_per_gas":"60","timestamp":"2023-07-11T22:12:47.000000Z","nonce":11,"historic_exchange_rate":"1873.33","transaction_types":["contract_call","token_transfer"],"exchange_rate":"2906.36","block_number":106757395,"has_error_in_internal_transactions":false}'
+    headers:
+      CF-RAY:
+      - 9c417c617f3a001d-LHR
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 26 Jan 2026 16:46:21 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=O5Ox4hRVNPjeCVBcuqCcuZmDNzISGqkw7Jj96GYRvvRzHvszXAtcwvJKxod0aOayQO0bNwUSjBCqrsJGDvMt14ewZotYOIoCDWX6vOhaRs6i08gu"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - bypass-429-option,x-ratelimit-reset,x-ratelimit-limit,x-ratelimit-remaining,api-v2-temp-token
+      alt-svc:
+      - h3=":443"; ma=86400
+      bypass-429-option:
+      - temporary_token
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '13560'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-ratelimit-limit:
+      - '600'
+      x-ratelimit-remaining:
+      - '596'
+      x-ratelimit-reset:
+      - '39597'
+      x-request-id:
+      - 28cbb06ca642d2afb3cb117755ed868d
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.41.4.dev420+gd91fa9ae0a.d20260126
+    method: GET
+    uri: https://explorer.optimism.io/api?action=txlistinternal&address=0xd6Ade875eEC93a7aAb7EfB7DBF13d1457443f95B&endblock=106757395&module=account&sort=asc&startblock=106757395
+  response:
+    body:
+      string: '{"message":"No internal transactions found","result":[],"status":"0"}'
+    headers:
+      CF-RAY:
+      - 9c417c6c48b060fb-LHR
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 26 Jan 2026 16:46:22 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=g2IOGNPNZE7NlrLRie8h3Q6cFJ9LaYkNiKGNwKGpX67nBLkkg2ySHeer8NyxX1k1c89D2aOaWk5teuEJCQBv%2FI%2Bva6drl5klLuuKhZWGBiNwwwmp"}]}'
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -271,11 +319,11 @@ interactions:
       x-ratelimit-limit:
       - '600'
       x-ratelimit-remaining:
-      - '597'
+      - '595'
       x-ratelimit-reset:
-      - '29840'
+      - '37860'
       x-request-id:
-      - b72c7530c90bca1fd52df8a1d7895593
+      - 0c05599627027e6f19a934ebe8418b31
     status:
       code: 200
       message: OK
@@ -289,67 +337,20 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev4+gcb8d185fe.d20251124
-    method: GET
-    uri: https://api.etherscan.io/v2/api?action=tokentx&address=0xd6Ade875eEC93a7aAb7EfB7DBF13d1457443f95B&chainid=10&endblock=106757395&module=account&sort=asc&startblock=106757395
-  response:
-    body:
-      string: '{"status":"0","message":"NOTOK","result":"Free API access is not supported
-        for this chain. Please upgrade your api plan for full chain coverage. https://etherscan.io/apis"}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Mon, 24 Nov 2025 19:41:30 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Nginx-Id:
-      - '5'
-      content-length:
-      - '172'
-      svid:
-      - op1
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.41.2.dev4+gcb8d185fe.d20251124
+      - rotki/1.41.4.dev420+gd91fa9ae0a.d20260126
     method: GET
     uri: https://explorer.optimism.io/api?action=tokentx&address=0xd6Ade875eEC93a7aAb7EfB7DBF13d1457443f95B&endblock=106757395&module=account&sort=asc&startblock=106757395
   response:
     body:
-      string: '{"message":"OK","result":[{"value":"16433853738701725000","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"106757395","confirmations":"37449861","contractAddress":"0x4200000000000000000000000000000000000042","cumulativeGasUsed":"2023164","from":"0xd6ade875eec93a7aab7efb7dbf13d1457443f95b","functionName":"transformERC20(address
+      string: '{"message":"OK","result":[{"value":"16433853738701725000","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"106757395","confirmations":"40166207","contractAddress":"0x4200000000000000000000000000000000000042","cumulativeGasUsed":"2023164","from":"0xd6ade875eec93a7aab7efb7dbf13d1457443f95b","functionName":"transformERC20(address
         inputToken, address outputToken, uint256 inputTokenAmount, uint256 minOutputTokenAmount,
-        (uint32,bytes)[] transformations)","gas":"523212","gasPrice":"66","gasUsed":"322803","hash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","input":"0x415565b000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d48000000000000000000000000000000000000000000000000000000000128186800000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000360000000000000000000000000000000000000000000000000000000000000000f000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000002c00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c316070000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000028000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000001f574f4f46690000000000000000000000000000000000000000000000000000000000000000000000e410c6e7b20a9d48000000000000000000000000000000000000000000000000000000000128186800000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000020000000000000000000000000eaf1ac8e89ea0ae13e0f03634a4ff23502527024000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000020000000000000000000000004200000000000000000000000000000000000042000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee0000000000000000000000000000000000000000000000000000000000000000869584cd000000000000000000000000382ffce2287252f930e1c8dc9328dac5bf282ba10000000000000000000000000000000000000000000000e5867b475164add3cb","methodId":"415565b0","nonce":"11","timeStamp":"1689113567","to":"0xa3128d9b7cca7d5af29780a56abeec12b05a6740","tokenDecimal":"18","tokenName":"Optimism","tokenSymbol":"OP","transactionIndex":"7"},{"value":"20005056","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"106757395","confirmations":"37449861","contractAddress":"0x7f5c764cbc14f9669b88837ca1490cca17c31607","cumulativeGasUsed":"2023164","from":"0xa3128d9b7cca7d5af29780a56abeec12b05a6740","functionName":"transformERC20(address
+        (uint32,bytes)[] transformations)","gas":"523212","gasPrice":"66","gasUsed":"322803","hash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","input":"0x415565b000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d48000000000000000000000000000000000000000000000000000000000128186800000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000360000000000000000000000000000000000000000000000000000000000000000f000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000002c00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c316070000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000028000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000001f574f4f46690000000000000000000000000000000000000000000000000000000000000000000000e410c6e7b20a9d48000000000000000000000000000000000000000000000000000000000128186800000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000020000000000000000000000000eaf1ac8e89ea0ae13e0f03634a4ff23502527024000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000020000000000000000000000004200000000000000000000000000000000000042000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee0000000000000000000000000000000000000000000000000000000000000000869584cd000000000000000000000000382ffce2287252f930e1c8dc9328dac5bf282ba10000000000000000000000000000000000000000000000e5867b475164add3cb","methodId":"415565b0","nonce":"11","timeStamp":"1689113567","to":"0xa3128d9b7cca7d5af29780a56abeec12b05a6740","tokenDecimal":"18","tokenName":"Optimism","tokenSymbol":"OP","transactionIndex":"7"},{"value":"20005056","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"106757395","confirmations":"40166207","contractAddress":"0x7f5c764cbc14f9669b88837ca1490cca17c31607","cumulativeGasUsed":"2023164","from":"0xa3128d9b7cca7d5af29780a56abeec12b05a6740","functionName":"transformERC20(address
         inputToken, address outputToken, uint256 inputTokenAmount, uint256 minOutputTokenAmount,
         (uint32,bytes)[] transformations)","gas":"523212","gasPrice":"66","gasUsed":"322803","hash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","input":"0x415565b000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d48000000000000000000000000000000000000000000000000000000000128186800000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000360000000000000000000000000000000000000000000000000000000000000000f000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000002c00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c316070000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000028000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000001f574f4f46690000000000000000000000000000000000000000000000000000000000000000000000e410c6e7b20a9d48000000000000000000000000000000000000000000000000000000000128186800000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000020000000000000000000000000eaf1ac8e89ea0ae13e0f03634a4ff23502527024000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000020000000000000000000000004200000000000000000000000000000000000042000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee0000000000000000000000000000000000000000000000000000000000000000869584cd000000000000000000000000382ffce2287252f930e1c8dc9328dac5bf282ba10000000000000000000000000000000000000000000000e5867b475164add3cb","methodId":"415565b0","nonce":"11","timeStamp":"1689113567","to":"0xd6ade875eec93a7aab7efb7dbf13d1457443f95b","tokenDecimal":"6","tokenName":"USD
         Coin","tokenSymbol":"USDC","transactionIndex":"7"}],"status":"1"}'
     headers:
       CF-RAY:
-      - 9a3b625aca7f1bca-MEM
+      - 9c417c6fa875ecea-LHR
       Cache-Control:
       - max-age=0, private, must-revalidate
       Connection:
@@ -357,11 +358,11 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 24 Nov 2025 19:41:31 GMT
+      - Mon, 26 Jan 2026 16:46:22 GMT
       Nel:
       - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
       Report-To:
-      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4%2Fd84xFlmi0cNROUUAvNx9UgqyHwgjDxFUkGGoPkbU3Vk4NrtY1QCTIRFvsDlY3YIVGiiD1g1PlvNRFqZseiC4JW70ZxT%2BbURIzBM2fM8HQH6A%3D%3D"}]}'
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4Y8Kqa%2BHcE6djrM5Yp1PQhIL%2FeUAlPQQhU9cSdEMDKin5VLBcD83gVGtDJB10g90RNkoBVFCen6I0URCkhexaElUatkZiRsPxlefCWWsR93yY206"}]}'
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -385,11 +386,11 @@ interactions:
       x-ratelimit-limit:
       - '600'
       x-ratelimit-remaining:
-      - '596'
+      - '594'
       x-ratelimit-reset:
-      - '29249'
+      - '37321'
       x-request-id:
-      - ac256d8de92ea335ea7b80d1befd4955
+      - d36b8575009dab92936b05e56fae30a3
     status:
       code: 200
       message: OK
@@ -408,25 +409,25 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.optimism.io/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":"Geth/v1.101511.1-stable-c6e05723/linux-amd64/go1.24.5","id":0}
+      string: '{"jsonrpc":"2.0","result":"Geth/v1.101605.0-stable-f03d103a/linux-amd64/go1.24.11","id":0}
 
         '
     headers:
       Alt-Svc:
       - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
       Content-Length:
-      - '90'
+      - '91'
       Content-Type:
       - application/json
       Date:
-      - Mon, 24 Nov 2025 19:41:31 GMT
+      - Mon, 26 Jan 2026 16:46:23 GMT
       Set-Cookie:
-      - lb1=edge-proxyd-mainnet-proxyd-quicknode-http; Path=/
+      - lb1=bd40a79ebf64e93e; Path=/
       Vary:
       - Origin
       Via:
@@ -450,9 +451,9 @@ interactions:
       Content-Type:
       - application/json
       Cookie:
-      - lb1=edge-proxyd-mainnet-proxyd-quicknode-http
+      - lb1=bd40a79ebf64e93e
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.optimism.io/
   response:
@@ -468,7 +469,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 24 Nov 2025 19:41:31 GMT
+      - Mon, 26 Jan 2026 16:46:23 GMT
       Vary:
       - Origin
       Via:
@@ -492,14 +493,14 @@ interactions:
       Content-Type:
       - application/json
       Cookie:
-      - lb1=edge-proxyd-mainnet-proxyd-quicknode-http
+      - lb1=bd40a79ebf64e93e
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.optimism.io/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":"0x8986d99","id":2}
+      string: '{"jsonrpc":"2.0","result":"0x8c1e053","id":2}
 
         '
     headers:
@@ -510,7 +511,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 24 Nov 2025 19:41:31 GMT
+      - Mon, 26 Jan 2026 16:46:24 GMT
       Vary:
       - Origin
       Via:
@@ -535,9 +536,9 @@ interactions:
       Content-Type:
       - application/json
       Cookie:
-      - lb1=edge-proxyd-mainnet-proxyd-quicknode-http
+      - lb1=bd40a79ebf64e93e
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.optimism.io/
   response:
@@ -553,7 +554,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 24 Nov 2025 19:41:31 GMT
+      - Mon, 26 Jan 2026 16:46:24 GMT
       Vary:
       - Origin
       Via:
@@ -578,9 +579,9 @@ interactions:
       Content-Type:
       - application/json
       Cookie:
-      - lb1=edge-proxyd-mainnet-proxyd-quicknode-http
+      - lb1=bd40a79ebf64e93e
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.optimism.io/
   response:
@@ -596,7 +597,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 24 Nov 2025 19:41:32 GMT
+      - Mon, 26 Jan 2026 16:46:24 GMT
       Vary:
       - Origin
       Via:
@@ -621,9 +622,9 @@ interactions:
       Content-Type:
       - application/json
       Cookie:
-      - lb1=edge-proxyd-mainnet-proxyd-quicknode-http
+      - lb1=bd40a79ebf64e93e
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.optimism.io/
   response:
@@ -637,7 +638,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 24 Nov 2025 19:41:32 GMT
+      - Mon, 26 Jan 2026 16:46:25 GMT
       Transfer-Encoding:
       - chunked
       Vary:
@@ -664,9 +665,9 @@ interactions:
       Content-Type:
       - application/json
       Cookie:
-      - lb1=edge-proxyd-mainnet-proxyd-quicknode-http
+      - lb1=bd40a79ebf64e93e
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.optimism.io/
   response:
@@ -682,7 +683,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 24 Nov 2025 19:41:32 GMT
+      - Mon, 26 Jan 2026 16:46:25 GMT
       Vary:
       - Origin
       Via:
@@ -707,14 +708,14 @@ interactions:
       Content-Type:
       - application/json
       Cookie:
-      - lb1=edge-proxyd-mainnet-proxyd-quicknode-http
+      - lb1=bd40a79ebf64e93e
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.optimism.io/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","contractAddress":null,"cumulativeGasUsed":"0x1edefc","effectiveGasPrice":"0x42","from":"0xd6ade875eec93a7aab7efb7dbf13d1457443f95b","gasUsed":"0x4ecf3","l1Fee":"0x6946c3290ff5","l1FeeScalar":"0.684","l1GasPrice":"0x3f31c33ee","l1GasUsed":"0x26f8","logs":[{"address":"0x4200000000000000000000000000000000000042","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x000000000000000000000000000000000000000000000000e410c6e7b20a9d48","logIndex":"0x26","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000d6ade875eec93a7aab7efb7dbf13d1457443f95b","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x4200000000000000000000000000000000000042","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x000000000000000000000000000000000000000000029b6899850eb772cffbab000000000000000000000000000000000000000000029b67b57447cfc0c55e63","logIndex":"0x27","removed":false,"topics":["0xdec2bacdd2f05b59de34da9b523dff8be42e5e38e818c82fdb0bae774387a724","0x0000000000000000000000005e349eca2dc61abcd9dd99ce94d04136151a09ee"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x4200000000000000000000000000000000000042","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x000000000000000000000000000000000000000000000000e410c6e7b20a9d48","logIndex":"0x28","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740","0x000000000000000000000000d1778f9df3eee5473a9640f13682e3846f61febc"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x7f5c764cbc14f9669b88837ca1490cca17c31607","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x00000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x29","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000d1778f9df3eee5473a9640f13682e3846f61febc","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xd1778f9df3eee5473a9640f13682e3846f61febc","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0000000000000000000000000eaf1ac8e89ea0ae13e0f03634a4ff23502527024000000000000000000000000bfdcbb4c05843163f491c24f9c0019c510786304000000000000000000000000000000000000000000000000000000000131544a000000000000000000000000000000000000000000000000000000000000138a","logIndex":"0x2a","removed":false,"topics":["0x0e8e403c2d36126272b08c75823e988381d9dc47f2f0a9a080d95f891d95c469","0x0000000000000000000000004200000000000000000000000000000000000042","0x0000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xeaf1ac8e89ea0ae13e0f03634a4ff23502527024","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740000000000000000000000000bfdcbb4c05843163f491c24f9c0019c510786304","logIndex":"0x2b","removed":false,"topics":["0x27c98e911efdd224f4002f6cd831c3ad0d2759ee176f9ee8466d95826af22a1c","0x0000000000000000000000004200000000000000000000000000000000000042","0x0000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xa3128d9b7cca7d5af29780a56abeec12b05a6740","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x0000000000000000000000000000001f574f4f4669000000000000000000000000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x2c","removed":false,"topics":["0xe59e71a14fe90157eedc866c4f8c767d3943d6b6b2e8cd64dddcc92ab4c55af8"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x7f5c764cbc14f9669b88837ca1490cca17c31607","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x00000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x2d","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740","0x000000000000000000000000d6ade875eec93a7aab7efb7dbf13d1457443f95b"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xdef1abe32c034e558cdd535791643c58a13acc10","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x00000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x2e","removed":false,"topics":["0x0f6672f78a59ba8e5e5b5d38df3ebc67f3c792e2c9259b8d97d7f00dd78ba1b3","0x000000000000000000000000d6ade875eec93a7aab7efb7dbf13d1457443f95b"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"}],"logsBloom":"0x000001000004000000000090000000000000000000000004040000000000000000018000000002000001000000000001000000400000000200004100000000c000000000000000002000000800000000000000000000000020000400000000000200008100000000004000100000000000000002000000000000001000000001040000000000000000000000000000000000040000a000000000001000000000040000000000000000000800000003000000000000000000000000000040000000020002000000000000000000000000108000000000000000000000000000001000000000000000051000000000000401000000000200000000000000031001","status":"0x1","to":"0xdef1abe32c034e558cdd535791643c58a13acc10","transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7","type":"0x2"},"id":7}
+      string: '{"jsonrpc":"2.0","result":{"blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","contractAddress":null,"cumulativeGasUsed":"0x1edefc","effectiveGasPrice":"0x42","from":"0xd6ade875eec93a7aab7efb7dbf13d1457443f95b","gasUsed":"0x4ecf3","l1Fee":"0x6946c3290ff5","l1FeeScalar":"0.684","l1GasPrice":"0x3f31c33ee","l1GasUsed":"0x26f8","logs":[{"address":"0x4200000000000000000000000000000000000042","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x000000000000000000000000000000000000000000000000e410c6e7b20a9d48","logIndex":"0x26","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000d6ade875eec93a7aab7efb7dbf13d1457443f95b","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x4200000000000000000000000000000000000042","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x000000000000000000000000000000000000000000029b6899850eb772cffbab000000000000000000000000000000000000000000029b67b57447cfc0c55e63","logIndex":"0x27","removed":false,"topics":["0xdec2bacdd2f05b59de34da9b523dff8be42e5e38e818c82fdb0bae774387a724","0x0000000000000000000000005e349eca2dc61abcd9dd99ce94d04136151a09ee"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x4200000000000000000000000000000000000042","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x000000000000000000000000000000000000000000000000e410c6e7b20a9d48","logIndex":"0x28","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740","0x000000000000000000000000d1778f9df3eee5473a9640f13682e3846f61febc"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x7f5c764cbc14f9669b88837ca1490cca17c31607","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x00000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x29","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000d1778f9df3eee5473a9640f13682e3846f61febc","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xd1778f9df3eee5473a9640f13682e3846f61febc","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0000000000000000000000000eaf1ac8e89ea0ae13e0f03634a4ff23502527024000000000000000000000000bfdcbb4c05843163f491c24f9c0019c510786304000000000000000000000000000000000000000000000000000000000131544a000000000000000000000000000000000000000000000000000000000000138a","logIndex":"0x2a","removed":false,"topics":["0x0e8e403c2d36126272b08c75823e988381d9dc47f2f0a9a080d95f891d95c469","0x0000000000000000000000004200000000000000000000000000000000000042","0x0000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xeaf1ac8e89ea0ae13e0f03634a4ff23502527024","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740000000000000000000000000bfdcbb4c05843163f491c24f9c0019c510786304","logIndex":"0x2b","removed":false,"topics":["0x27c98e911efdd224f4002f6cd831c3ad0d2759ee176f9ee8466d95826af22a1c","0x0000000000000000000000004200000000000000000000000000000000000042","0x0000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xa3128d9b7cca7d5af29780a56abeec12b05a6740","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x0000000000000000000000000000001f574f4f4669000000000000000000000000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x2c","removed":false,"topics":["0xe59e71a14fe90157eedc866c4f8c767d3943d6b6b2e8cd64dddcc92ab4c55af8"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x7f5c764cbc14f9669b88837ca1490cca17c31607","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x00000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x2d","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740","0x000000000000000000000000d6ade875eec93a7aab7efb7dbf13d1457443f95b"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xdef1abe32c034e558cdd535791643c58a13acc10","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x00000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x2e","removed":false,"topics":["0x0f6672f78a59ba8e5e5b5d38df3ebc67f3c792e2c9259b8d97d7f00dd78ba1b3","0x000000000000000000000000d6ade875eec93a7aab7efb7dbf13d1457443f95b"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"}],"logsBloom":"0x000001000004000000000090000000000000000000000004040000000000000000018000000002000001000000000001000000400000000200004100000000c000000000000000002000000800000000000000000000000020000400000000000200008100000000004000100000000000000002000000000000001000000001040000000000000000000000000000000000040000a000000000001000000000040000000000000000000800000003000000000000000000000000000040000000020002000000000000000000000000108000000000000000000000000000001000000000000000051000000000000401000000000200000000000000031001","status":"0x1","to":"0xdef1abe32c034e558cdd535791643c58a13acc10","transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7","type":"0x2"},"id":7}
 
         '
     headers:
@@ -723,7 +724,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 24 Nov 2025 19:41:32 GMT
+      - Mon, 26 Jan 2026 16:46:26 GMT
       Transfer-Encoding:
       - chunked
       Vary:
@@ -750,9 +751,9 @@ interactions:
       Content-Type:
       - application/json
       Cookie:
-      - lb1=edge-proxyd-mainnet-proxyd-quicknode-http
+      - lb1=bd40a79ebf64e93e
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.optimism.io/
   response:
@@ -766,7 +767,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 24 Nov 2025 19:41:33 GMT
+      - Mon, 26 Jan 2026 16:46:26 GMT
       Transfer-Encoding:
       - chunked
       Vary:
@@ -793,9 +794,9 @@ interactions:
       Content-Type:
       - application/json
       Cookie:
-      - lb1=edge-proxyd-mainnet-proxyd-quicknode-http
+      - lb1=bd40a79ebf64e93e
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.optimism.io/
   response:
@@ -811,7 +812,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 24 Nov 2025 19:41:33 GMT
+      - Mon, 26 Jan 2026 16:46:27 GMT
       Vary:
       - Origin
       Via:
@@ -836,14 +837,14 @@ interactions:
       Content-Type:
       - application/json
       Cookie:
-      - lb1=edge-proxyd-mainnet-proxyd-quicknode-http
+      - lb1=bd40a79ebf64e93e
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.optimism.io/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","contractAddress":null,"cumulativeGasUsed":"0x1edefc","effectiveGasPrice":"0x42","from":"0xd6ade875eec93a7aab7efb7dbf13d1457443f95b","gasUsed":"0x4ecf3","l1Fee":"0x6946c3290ff5","l1FeeScalar":"0.684","l1GasPrice":"0x3f31c33ee","l1GasUsed":"0x26f8","logs":[{"address":"0x4200000000000000000000000000000000000042","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x000000000000000000000000000000000000000000000000e410c6e7b20a9d48","logIndex":"0x26","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000d6ade875eec93a7aab7efb7dbf13d1457443f95b","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x4200000000000000000000000000000000000042","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x000000000000000000000000000000000000000000029b6899850eb772cffbab000000000000000000000000000000000000000000029b67b57447cfc0c55e63","logIndex":"0x27","removed":false,"topics":["0xdec2bacdd2f05b59de34da9b523dff8be42e5e38e818c82fdb0bae774387a724","0x0000000000000000000000005e349eca2dc61abcd9dd99ce94d04136151a09ee"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x4200000000000000000000000000000000000042","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x000000000000000000000000000000000000000000000000e410c6e7b20a9d48","logIndex":"0x28","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740","0x000000000000000000000000d1778f9df3eee5473a9640f13682e3846f61febc"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x7f5c764cbc14f9669b88837ca1490cca17c31607","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x00000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x29","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000d1778f9df3eee5473a9640f13682e3846f61febc","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xd1778f9df3eee5473a9640f13682e3846f61febc","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0000000000000000000000000eaf1ac8e89ea0ae13e0f03634a4ff23502527024000000000000000000000000bfdcbb4c05843163f491c24f9c0019c510786304000000000000000000000000000000000000000000000000000000000131544a000000000000000000000000000000000000000000000000000000000000138a","logIndex":"0x2a","removed":false,"topics":["0x0e8e403c2d36126272b08c75823e988381d9dc47f2f0a9a080d95f891d95c469","0x0000000000000000000000004200000000000000000000000000000000000042","0x0000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xeaf1ac8e89ea0ae13e0f03634a4ff23502527024","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740000000000000000000000000bfdcbb4c05843163f491c24f9c0019c510786304","logIndex":"0x2b","removed":false,"topics":["0x27c98e911efdd224f4002f6cd831c3ad0d2759ee176f9ee8466d95826af22a1c","0x0000000000000000000000004200000000000000000000000000000000000042","0x0000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xa3128d9b7cca7d5af29780a56abeec12b05a6740","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x0000000000000000000000000000001f574f4f4669000000000000000000000000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x2c","removed":false,"topics":["0xe59e71a14fe90157eedc866c4f8c767d3943d6b6b2e8cd64dddcc92ab4c55af8"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x7f5c764cbc14f9669b88837ca1490cca17c31607","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x00000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x2d","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740","0x000000000000000000000000d6ade875eec93a7aab7efb7dbf13d1457443f95b"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xdef1abe32c034e558cdd535791643c58a13acc10","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x00000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x2e","removed":false,"topics":["0x0f6672f78a59ba8e5e5b5d38df3ebc67f3c792e2c9259b8d97d7f00dd78ba1b3","0x000000000000000000000000d6ade875eec93a7aab7efb7dbf13d1457443f95b"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"}],"logsBloom":"0x000001000004000000000090000000000000000000000004040000000000000000018000000002000001000000000001000000400000000200004100000000c000000000000000002000000800000000000000000000000020000400000000000200008100000000004000100000000000000002000000000000001000000001040000000000000000000000000000000000040000a000000000001000000000040000000000000000000800000003000000000000000000000000000040000000020002000000000000000000000000108000000000000000000000000000001000000000000000051000000000000401000000000200000000000000031001","status":"0x1","to":"0xdef1abe32c034e558cdd535791643c58a13acc10","transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7","type":"0x2"},"id":10}
+      string: '{"jsonrpc":"2.0","result":{"blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","contractAddress":null,"cumulativeGasUsed":"0x1edefc","effectiveGasPrice":"0x42","from":"0xd6ade875eec93a7aab7efb7dbf13d1457443f95b","gasUsed":"0x4ecf3","l1Fee":"0x6946c3290ff5","l1FeeScalar":"0.684","l1GasPrice":"0x3f31c33ee","l1GasUsed":"0x26f8","logs":[{"address":"0x4200000000000000000000000000000000000042","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x000000000000000000000000000000000000000000000000e410c6e7b20a9d48","logIndex":"0x26","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000d6ade875eec93a7aab7efb7dbf13d1457443f95b","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x4200000000000000000000000000000000000042","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x000000000000000000000000000000000000000000029b6899850eb772cffbab000000000000000000000000000000000000000000029b67b57447cfc0c55e63","logIndex":"0x27","removed":false,"topics":["0xdec2bacdd2f05b59de34da9b523dff8be42e5e38e818c82fdb0bae774387a724","0x0000000000000000000000005e349eca2dc61abcd9dd99ce94d04136151a09ee"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x4200000000000000000000000000000000000042","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x000000000000000000000000000000000000000000000000e410c6e7b20a9d48","logIndex":"0x28","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740","0x000000000000000000000000d1778f9df3eee5473a9640f13682e3846f61febc"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x7f5c764cbc14f9669b88837ca1490cca17c31607","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x00000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x29","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000d1778f9df3eee5473a9640f13682e3846f61febc","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xd1778f9df3eee5473a9640f13682e3846f61febc","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0000000000000000000000000eaf1ac8e89ea0ae13e0f03634a4ff23502527024000000000000000000000000bfdcbb4c05843163f491c24f9c0019c510786304000000000000000000000000000000000000000000000000000000000131544a000000000000000000000000000000000000000000000000000000000000138a","logIndex":"0x2a","removed":false,"topics":["0x0e8e403c2d36126272b08c75823e988381d9dc47f2f0a9a080d95f891d95c469","0x0000000000000000000000004200000000000000000000000000000000000042","0x0000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xeaf1ac8e89ea0ae13e0f03634a4ff23502527024","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740000000000000000000000000bfdcbb4c05843163f491c24f9c0019c510786304","logIndex":"0x2b","removed":false,"topics":["0x27c98e911efdd224f4002f6cd831c3ad0d2759ee176f9ee8466d95826af22a1c","0x0000000000000000000000004200000000000000000000000000000000000042","0x0000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xa3128d9b7cca7d5af29780a56abeec12b05a6740","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x0000000000000000000000000000001f574f4f4669000000000000000000000000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x2c","removed":false,"topics":["0xe59e71a14fe90157eedc866c4f8c767d3943d6b6b2e8cd64dddcc92ab4c55af8"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x7f5c764cbc14f9669b88837ca1490cca17c31607","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x00000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x2d","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740","0x000000000000000000000000d6ade875eec93a7aab7efb7dbf13d1457443f95b"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xdef1abe32c034e558cdd535791643c58a13acc10","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","blockTimestamp":"0x64add3df","data":"0x00000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x2e","removed":false,"topics":["0x0f6672f78a59ba8e5e5b5d38df3ebc67f3c792e2c9259b8d97d7f00dd78ba1b3","0x000000000000000000000000d6ade875eec93a7aab7efb7dbf13d1457443f95b"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"}],"logsBloom":"0x000001000004000000000090000000000000000000000004040000000000000000018000000002000001000000000001000000400000000200004100000000c000000000000000002000000800000000000000000000000020000400000000000200008100000000004000100000000000000002000000000000001000000001040000000000000000000000000000000000040000a000000000001000000000040000000000000000000800000003000000000000000000000000000040000000020002000000000000000000000000108000000000000000000000000000001000000000000000051000000000000401000000000200000000000000031001","status":"0x1","to":"0xdef1abe32c034e558cdd535791643c58a13acc10","transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7","type":"0x2"},"id":10}
 
         '
     headers:
@@ -852,136 +853,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 24 Nov 2025 19:41:33 GMT
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      Via:
-      - 1.1 google
-      X-Proxyd-Cache-Status:
-      - MISS
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665"],
-      "id": 11}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '148'
-      Content-Type:
-      - application/json
-      Cookie:
-      - lb1=edge-proxyd-mainnet-proxyd-quicknode-http
-      User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://mainnet.optimism.io/
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":{"accessList":[],"blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","chainId":"0xa","from":"0xd6ade875eec93a7aab7efb7dbf13d1457443f95b","gas":"0x7fbcc","gasPrice":"0x42","hash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","input":"0x415565b000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d48000000000000000000000000000000000000000000000000000000000128186800000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000360000000000000000000000000000000000000000000000000000000000000000f000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000002c00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c316070000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000000000028000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000240000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000280000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000001f574f4f46690000000000000000000000000000000000000000000000000000000000000000000000e410c6e7b20a9d48000000000000000000000000000000000000000000000000000000000128186800000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000020000000000000000000000000eaf1ac8e89ea0ae13e0f03634a4ff23502527024000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000020000000000000000000000004200000000000000000000000000000000000042000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee0000000000000000000000000000000000000000000000000000000000000000869584cd000000000000000000000000382ffce2287252f930e1c8dc9328dac5bf282ba10000000000000000000000000000000000000000000000e5867b475164add3cb","maxFeePerGas":"0x42","maxPriorityFeePerGas":"0xc","nonce":"0xb","r":"0x66f6b75271024833577512f5ca02ddbe0b134d8f434a4328ec0df7e32d38d131","s":"0x1bf15740a112ecf796c6af734c718383ee532b3d5d81c938c5094703fac84724","to":"0xdef1abe32c034e558cdd535791643c58a13acc10","transactionIndex":"0x7","type":"0x2","v":"0x1","value":"0x0","yParity":"0x1"},"id":11}
-
-        '
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Type:
-      - application/json
-      Date:
-      - Mon, 24 Nov 2025 19:41:36 GMT
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      Via:
-      - 1.1 google
-      X-Proxyd-Cache-Status:
-      - MISS
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getBlockByNumber", "params": ["0x65cfd13",
-      false], "id": 12}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '94'
-      Content-Type:
-      - application/json
-      Cookie:
-      - lb1=edge-proxyd-mainnet-proxyd-quicknode-http
-      User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://mainnet.optimism.io/
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":{"baseFeePerGas":"0x3c","difficulty":"0x0","extraData":"0x","gasLimit":"0x1c9c380","gasUsed":"0x1edefc","hash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","logsBloom":"0x840001420804000060000090000000000001400000080004240400000400001044018140000102010001001100181029001080400001211210004344016500c02a400400080000082001000c0000200010801000004640002000048000000000020400819204100100c21810000008000400900200004400020020900809000104020004000400020000030000000000000014002aa804040000009008000080068020005000020020001a24801003024020210010090000008000000052020100429042000008001040080400800000108000400000c2000000080200006000101081490200040005100000000011040301040081d208040048400029031005","miner":"0x4200000000000000000000000000000000000011","mixHash":"0xfa49b43a1c68be8091074531559aaf4c3df55e673b7b1d2fe0d3ab75ff8ef074","nonce":"0x0000000000000000","number":"0x65cfd13","parentHash":"0xa30971f6b4727a437f7a27bf78149857f9ebf35c367fda19ba4719ba77285c6e","receiptsRoot":"0x0357636bce25ad4d3ec318d14eab97a0e7b26ce419585d86ae845cc2ed849e52","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0x16bf","stateRoot":"0xbaf7e478699b7a0949a5813e8e1c7f4fca5f242c7b135de100e6efc83afc5485","timestamp":"0x64add3df","transactions":["0x8a2d8ce0c7f0a68d003877ae723afade0784bf1b8abe29c1a2dc528826b6d1e0","0x1a566b7ab702ab493f15dce81dbf5e172ef38744fd6c48860830f59bf4aa4085","0x23b2ed7ef540128dfc2442839e7e54d3de0e73db17a169575250313b36b0694b","0xa13d14cccd423e8bcde28cdf9f0f33c44ef4b54d112620352d434e5b8d782bb9","0x68c9e4b49cc4ac0bb855e4ce18945887c6a7b1076ee4fe35148000f69cef89df","0x075ef2c1e225fd62955eeb2f518efc45712470da438f195d9a5ac9a4aa3de912","0x07797f73aa274fb79e990701184b495341dd482840673564d3c0743669d421e1","0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665"],"transactionsRoot":"0xea1e495d8627f276e5117de3e7ed9cf1971aebf95da63076c7660f83ed6f9bc8","uncles":[]},"id":12}
-
-        '
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Length:
-      - '1966'
-      Content-Type:
-      - application/json
-      Date:
-      - Mon, 24 Nov 2025 19:41:36 GMT
-      Vary:
-      - Origin
-      Via:
-      - 1.1 google
-      X-Proxyd-Cache-Status:
-      - MISS
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionReceipt", "params": ["0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665"],
-      "id": 13}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '149'
-      Content-Type:
-      - application/json
-      Cookie:
-      - lb1=edge-proxyd-mainnet-proxyd-quicknode-http
-      User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://mainnet.optimism.io/
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":{"blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","contractAddress":null,"cumulativeGasUsed":"0x1edefc","effectiveGasPrice":"0x42","from":"0xd6ade875eec93a7aab7efb7dbf13d1457443f95b","gasUsed":"0x4ecf3","l1Fee":"0x6946c3290ff5","l1FeeScalar":"0.684","l1GasPrice":"0x3f31c33ee","l1GasUsed":"0x26f8","logs":[{"address":"0x4200000000000000000000000000000000000042","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x000000000000000000000000000000000000000000000000e410c6e7b20a9d48","logIndex":"0x26","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000d6ade875eec93a7aab7efb7dbf13d1457443f95b","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x4200000000000000000000000000000000000042","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x000000000000000000000000000000000000000000029b6899850eb772cffbab000000000000000000000000000000000000000000029b67b57447cfc0c55e63","logIndex":"0x27","removed":false,"topics":["0xdec2bacdd2f05b59de34da9b523dff8be42e5e38e818c82fdb0bae774387a724","0x0000000000000000000000005e349eca2dc61abcd9dd99ce94d04136151a09ee"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x4200000000000000000000000000000000000042","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x000000000000000000000000000000000000000000000000e410c6e7b20a9d48","logIndex":"0x28","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740","0x000000000000000000000000d1778f9df3eee5473a9640f13682e3846f61febc"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x7f5c764cbc14f9669b88837ca1490cca17c31607","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x00000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x29","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000d1778f9df3eee5473a9640f13682e3846f61febc","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xd1778f9df3eee5473a9640f13682e3846f61febc","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0000000000000000000000000eaf1ac8e89ea0ae13e0f03634a4ff23502527024000000000000000000000000bfdcbb4c05843163f491c24f9c0019c510786304000000000000000000000000000000000000000000000000000000000131544a000000000000000000000000000000000000000000000000000000000000138a","logIndex":"0x2a","removed":false,"topics":["0x0e8e403c2d36126272b08c75823e988381d9dc47f2f0a9a080d95f891d95c469","0x0000000000000000000000004200000000000000000000000000000000000042","0x0000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xeaf1ac8e89ea0ae13e0f03634a4ff23502527024","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740000000000000000000000000bfdcbb4c05843163f491c24f9c0019c510786304","logIndex":"0x2b","removed":false,"topics":["0x27c98e911efdd224f4002f6cd831c3ad0d2759ee176f9ee8466d95826af22a1c","0x0000000000000000000000004200000000000000000000000000000000000042","0x0000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xa3128d9b7cca7d5af29780a56abeec12b05a6740","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x0000000000000000000000000000001f574f4f4669000000000000000000000000000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x2c","removed":false,"topics":["0xe59e71a14fe90157eedc866c4f8c767d3943d6b6b2e8cd64dddcc92ab4c55af8"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0x7f5c764cbc14f9669b88837ca1490cca17c31607","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x00000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x2d","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000a3128d9b7cca7d5af29780a56abeec12b05a6740","0x000000000000000000000000d6ade875eec93a7aab7efb7dbf13d1457443f95b"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"},{"address":"0xdef1abe32c034e558cdd535791643c58a13acc10","blockHash":"0x6e989431f650c6e32effd2647ca852673a7d91f54bec0a3529ac8c050d1f9687","blockNumber":"0x65cfd13","data":"0x00000000000000000000000042000000000000000000000000000000000000420000000000000000000000007f5c764cbc14f9669b88837ca1490cca17c31607000000000000000000000000000000000000000000000000e410c6e7b20a9d4800000000000000000000000000000000000000000000000000000000013140c0","logIndex":"0x2e","removed":false,"topics":["0x0f6672f78a59ba8e5e5b5d38df3ebc67f3c792e2c9259b8d97d7f00dd78ba1b3","0x000000000000000000000000d6ade875eec93a7aab7efb7dbf13d1457443f95b"],"transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7"}],"logsBloom":"0x000001000004000000000090000000000000000000000004040000000000000000018000000002000001000000000001000000400000000200004100000000c000000000000000002000000800000000000000000000000020000400000000000200008100000000004000100000000000000002000000000000001000000001040000000000000000000000000000000000040000a000000000001000000000040000000000000000000800000003000000000000000000000000000040000000020002000000000000000000000000108000000000000000000000000000001000000000000000051000000000000401000000000200000000000000031001","status":"0x1","to":"0xdef1abe32c034e558cdd535791643c58a13acc10","transactionHash":"0x6eb136db4d36cf695f4026da16f602ed4a2583b2420dbbcbd4f436943190b665","transactionIndex":"0x7","type":"0x2"},"id":13}
-
-        '
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Type:
-      - application/json
-      Date:
-      - Mon, 24 Nov 2025 19:41:36 GMT
+      - Mon, 26 Jan 2026 16:46:27 GMT
       Transfer-Encoding:
       - chunked
       Vary:
