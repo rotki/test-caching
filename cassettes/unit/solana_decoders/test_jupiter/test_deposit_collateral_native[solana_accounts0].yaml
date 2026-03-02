@@ -1,0 +1,459 @@
+interactions:
+- request:
+    body: '{"method":"getHealth","jsonrpc":"2.0","id":0}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '45'
+      content-type:
+      - application/json
+      host:
+      - api.mainnet-beta.solana.com
+      user-agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"ok","id":0}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      content-length:
+      - '39'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2026 21:42:23 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-821'
+      x-ratelimit-method-limit:
+      - '40'
+      x-ratelimit-method-remaining:
+      - '39'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '96'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - dal38
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"method":"getTransaction","jsonrpc":"2.0","id":0,"params":["5P8xF7oLokSYkat4ShGghmqWZFR37odt5XKyM5cZEJbPiNUJkqpB6o8kpmTScmfMokHUnnBcfNGFoorjNjTYnnxB",{"encoding":"json","commitment":"finalized","maxSupportedTransactionVersion":0}]}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '232'
+      content-type:
+      - application/json
+      host:
+      - api.mainnet-beta.solana.com
+      user-agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"blockTime":1772199571,"meta":{"computeUnitsConsumed":235528,"costUnits":243058,"err":null,"fee":105000,"innerInstructions":[{"index":2,"instructions":[{"accounts":[27],"data":"84eT","programIdIndex":11,"stackHeight":2},{"accounts":[0,1],"data":"11119os1e9qSs2u7TsThXqkBSRVFxhmYaFKFZ1waB2X7armDmvK3p5GmLdUxYdg3h7QSrL","programIdIndex":10,"stackHeight":2},{"accounts":[1],"data":"P","programIdIndex":11,"stackHeight":2},{"accounts":[1,27],"data":"6TaqHgXRRtvV7NeHxAKyYGwZEzR87nz9GsWo3MHh4zYPW","programIdIndex":11,"stackHeight":2}]},{"index":5,"instructions":[{"accounts":[0,2],"data":"11113wVRMNeTqMKuLWLrnhfLsDA9Cqwi3BSURyxLhg2fTMY7vmpaZhfk9spXv7nNL3ayia","programIdIndex":10,"stackHeight":2},{"accounts":[0,3],"data":"11114XtYk9gGfZoo968fyjNUYQJKf9gdmkGoaoBpzFv4vyaSMBn3VKxZdv7mZLzoyX5YNC","programIdIndex":10,"stackHeight":2},{"accounts":[3],"data":"2zkT8z9vdbUbm36Xb4jDTfLsUxa2ppPrbS5HSntkXV1ojW39","programIdIndex":11,"stackHeight":2},{"accounts":[0,4,0,3,10,11],"data":"1","programIdIndex":9,"stackHeight":2},{"accounts":[3],"data":"84eT","programIdIndex":11,"stackHeight":3},{"accounts":[0,4],"data":"11119os1e9qSs2u7TsThXqkBSRVFxhmYaFKFZ1waB2X7armDmvK3p5GmLdUxYdg3h7QSrL","programIdIndex":10,"stackHeight":3},{"accounts":[4],"data":"P","programIdIndex":11,"stackHeight":3},{"accounts":[4,3],"data":"6TaqHgXRRtvV7NeHxAKyYGwZEzR87nz9GsWo3MHh4zYPW","programIdIndex":11,"stackHeight":3},{"accounts":[5,13,3,28,0,28,10,29,11],"data":"3RMmK7Ti9v5NrjZCv3waWGJJ9L3Pdhp6rxtauqz8axfbLr9LvywNdcm6vYQkdtWFNetwX8PrtMb4nHobihjQuu9GfHabW5TJ9um9haPWB2SfguXCUD9rSxbessiQXyykhRc9nS1n4Apd5","programIdIndex":13,"stackHeight":2},{"accounts":[0,5],"data":"3Bxs4EM3hQgDpNyd","programIdIndex":10,"stackHeight":3},{"accounts":[5],"data":"9krTDGKLJBg7SB59","programIdIndex":10,"stackHeight":3},{"accounts":[5],"data":"SYXsBkG6yKW2wWDcW8EDHR6D3P82bKxJGPpM65DD8nHqBfMP","programIdIndex":10,"stackHeight":3},{"accounts":[3,4,28],"data":"6AuM4xMCPFhR","programIdIndex":11,"stackHeight":2},{"accounts":[3,28],"data":"31tb","programIdIndex":11,"stackHeight":2}]},{"index":6,"instructions":[{"accounts":[30,35,21,36,23,19,9,11],"data":"7T5SFNucaogWnJZbsZTSzpBH94CPZhHCLU9t3fMfVqGtXRUa7xJXRRJ","programIdIndex":36,"stackHeight":2},{"accounts":[1,27,23,0],"data":"g7yoeQB2nKrDn","programIdIndex":11,"stackHeight":2},{"accounts":[30,35,19,27,23,21,22,33,36,36,36,36,11,9],"data":"5D3nYNAt6Sarg8R2gYw6P3S2JBw7nAZXhSoVkQ2e1zSTqahXCFM3jTvKZsM5qNqHbByVs9tGAzBiotrj3ocULx5ZLTjoit2CzxB459P2ZueP6nuviCweABYAoeqSXzBs6Wcu5zRrE4iHMrYQ","programIdIndex":36,"stackHeight":2}]}],"loadedAddresses":{"readonly":["So11111111111111111111111111111111111111112","4Pgx2M7ZsDRvXU4CitoT94EJUohxqSk3eBuLsoz834dm","Sysvar1nstructions1111111111111111111111111","4Zv5s4v92XjFVifBevuvLtXQJEWooSqbDtmNJ4AvQK6i","cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij","kWpMbzDF7JcjDNZ6oabFnuR3ocLsA28hufuBz7CtcDA","Acvyi9HBGmqh3Exe1N4PjBVyY8fokq2AdC6fSLqV6KSo","EqpNebkM6hdhPGQw7wMkC5ctCjja8z7Z7DCt2K1tuMPu","7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z","jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC","jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc","7UVimffxr9ow1uXYxsr4LHAcV58mLzhmwaeKvJ1pjLiE"],"writable":["3p7DUwMU4nJKKs8DegNoivip6KzJjXiQfSpSmzTy7wYy","GZhg5X8uMis4DoKDCr9anDZAS2iyonbK1KDboPDP5mea","2cUiHLEEgYsw8oW1svGuFeTYCxoDsaqohjMvs5g3weJG","4Y66HtUEqbbbpZdENGtFdVhUMS3tnagffn3M4do59Nfy","DALcPrc81yGgwqaBuuCRXtEU8PHFLv2xEgWyhnfvbVKH","BjBZUYwXoabRTmVMijgUyyg81FwRj4DqSGrXzweGaZi8","93JY1kGfH6PXRXWYpXdurfHHBrvGJZjNfLpQ4SdG3pnP","5JP5zgYCb9W37QQLgAHRHuinFLrKt87akDY1CgZoTPzr","E7VPMhsjvVXpGVFMJRJgJjRmc5bhERpRjtYEbmBhWNcF","D9W2tHLJ5RQdScQzBQHozBVTy4chEM2CFq5fjDAFWm3j","3sYxttgvEegjMr2349w38H6adba18oshrhxQ2ugshquP"]},"logMessages":["Program
+        ComputeBudget111111111111111111111111111111 invoke [1]","Program ComputeBudget111111111111111111111111111111
+        success","Program ComputeBudget111111111111111111111111111111 invoke [1]","Program
+        ComputeBudget111111111111111111111111111111 success","Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL
+        invoke [1]","Program log: Create","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        invoke [2]","Program log: Instruction: GetAccountDataSize","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        consumed 1569 of 994387 compute units","Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        pQAAAAAAAAA=","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program
+        11111111111111111111111111111111 invoke [2]","Program 11111111111111111111111111111111
+        success","Program log: Initialize the associated token account","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        invoke [2]","Program log: Instruction: InitializeImmutableOwner","Program
+        log: Please upgrade to SPL Token 2022 for immutable owner support","Program
+        TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 1405 of 987908 compute
+        units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program
+        TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program log: Instruction:
+        InitializeAccount3","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed
+        3158 of 984079 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        success","Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 19062
+        of 999700 compute units","Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL
+        success","Program 11111111111111111111111111111111 invoke [1]","Program 11111111111111111111111111111111
+        success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]","Program
+        log: Instruction: SyncNative","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        consumed 3045 of 980488 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        success","Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]","Program
+        log: Instruction: InitPosition","Program 11111111111111111111111111111111
+        invoke [2]","Program 11111111111111111111111111111111 success","Program 11111111111111111111111111111111
+        invoke [2]","Program 11111111111111111111111111111111 success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        invoke [2]","Program log: Instruction: InitializeMint2","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        consumed 2780 of 959201 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        success","Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [2]","Program
+        log: Create","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]","Program
+        log: Instruction: GetAccountDataSize","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        consumed 1595 of 942440 compute units","Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        pQAAAAAAAAA=","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program
+        11111111111111111111111111111111 invoke [3]","Program 11111111111111111111111111111111
+        success","Program log: Initialize the associated token account","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        invoke [3]","Program log: Instruction: InitializeImmutableOwner","Program
+        log: Please upgrade to SPL Token 2022 for immutable owner support","Program
+        TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 1405 of 935935 compute
+        units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program
+        TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]","Program log: Instruction:
+        InitializeAccount3","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed
+        4214 of 932106 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        success","Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 21674
+        of 949283 compute units","Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL
+        success","Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [2]","Program
+        log: IX: Create","Program 11111111111111111111111111111111 invoke [3]","Program
+        11111111111111111111111111111111 success","Program log: Allocate space for
+        the account","Program 11111111111111111111111111111111 invoke [3]","Program
+        11111111111111111111111111111111 success","Program log: Assign the account
+        to the owning program","Program 11111111111111111111111111111111 invoke [3]","Program
+        11111111111111111111111111111111 success","Program log: Ignoring print supply
+        for selected token standard","Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s
+        consumed 45246 of 916189 compute units","Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s
+        success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program
+        log: Instruction: MintTo","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        consumed 4492 of 868796 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program
+        log: Instruction: SetAuthority","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        consumed 2911 of 862527 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        success","Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 118668
+        of 977443 compute units","Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi
+        success","Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]","Program
+        log: Instruction: Operate","Program data: LizVKjc7voVf19Wbb60rRW8FP6IqoxzTEYpZH9BNPSr6qiQ9K/OvjXUBAAAcAGTQ5AkN10uRxIM+bZbL661LiYF/gL5jjGLFOpaQQIikAAAAgHMLyRwAAAAAAAAAAAAAAAA=","Program
+        jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]","Program log: Instruction:
+        PreOperate","Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed
+        9304 of 816408 compute units","Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC
+        success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program
+        log: Instruction: TransferChecked","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        consumed 6238 of 804330 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        success","Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]","Program
+        log: Instruction: Operate","Program data: tAhRRxOErQg1Aas0bPv1PEp/2i5Qdx07xiMMMo8sJltO2r3ln2z8mwabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABAWXNHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABl9d/9fISvdail973OoWIuKzq/h/xTqHG5CFYaOosb3mX13/18hK91qKX3vc6hYi4rOr+H/FOocbkIVho6ixve52ncsO0AAACPDngj8AAAAA==","Program
+        jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 21072 of 789221 compute
+        units","Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 52ncsO0AAACPDngj8AAAAA==","Program
+        jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success","Program data: tAhRRxOErQhf19Wbb60rRW8FP6IqoxzTEYpZH9BNPSr6qiQ9K/OvjXUBAAABZc0dAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF/X1ZtvrStFbwU/oiqjHNMRilkf0E09KvqqJD0r86+N","Program
+        jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 94303 of 858775 compute
+        units","Program return: jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi dQEAAAFlzR0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","Program
+        jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi success"],"postBalances":[619161575,2039280,1385040,1461600,2039280,15115600,2039280,1287600,1,3316541054,1,5574786489,1141440,5272268,1009200,1824120,1774800,1169280,1218000,2232220,2227200,1753920,1726080,511318618625353,2039280,1218000,2749200,1426435516201,3667920,0,2415120,100638396,2832720,1259760,1259760,3006821,1141440,1141440,1825021],"postTokenBalances":[{"accountIndex":1,"mint":"So11111111111111111111111111111111111111112","owner":"7T8ckKtdc5DH7ACS5AnCny7rVXYJPEsaAbdBri1FhPxY","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"0","decimals":9,"uiAmount":null,"uiAmountString":"0"}},{"accountIndex":4,"mint":"7nYWoWcvupvV8ESCvxfnvWkJBxJKkWp1c3dHHiJD83oy","owner":"7T8ckKtdc5DH7ACS5AnCny7rVXYJPEsaAbdBri1FhPxY","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"1","decimals":0,"uiAmount":1.0,"uiAmountString":"1"}},{"accountIndex":6,"mint":"cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij","owner":"7T8ckKtdc5DH7ACS5AnCny7rVXYJPEsaAbdBri1FhPxY","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"84","decimals":8,"uiAmount":8.4e-7,"uiAmountString":"0.00000084"}},{"accountIndex":23,"mint":"So11111111111111111111111111111111111111112","owner":"7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"511318616585801","decimals":9,"uiAmount":511318.616585801,"uiAmountString":"511318.616585801"}},{"accountIndex":24,"mint":"cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij","owner":"7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"44139359327","decimals":8,"uiAmount":441.39359327,"uiAmountString":"441.39359327"}}],"preBalances":[1141307376,0,0,0,0,0,2039280,1287600,1,3316541054,1,5574786489,1141440,5272268,1009200,1824120,1774800,1169280,1218000,2232220,2227200,1753920,1726080,511318118625352,2039280,1218000,2749200,1426435516201,3667920,0,2415120,100638396,2832720,1259760,1259760,3006821,1141440,1141440,1825021],"preTokenBalances":[{"accountIndex":6,"mint":"cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij","owner":"7T8ckKtdc5DH7ACS5AnCny7rVXYJPEsaAbdBri1FhPxY","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"84","decimals":8,"uiAmount":8.4e-7,"uiAmountString":"0.00000084"}},{"accountIndex":23,"mint":"So11111111111111111111111111111111111111112","owner":"7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"511318116585800","decimals":9,"uiAmount":511318.1165858,"uiAmountString":"511318.1165858"}},{"accountIndex":24,"mint":"cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij","owner":"7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"44139359327","decimals":8,"uiAmount":441.39359327,"uiAmountString":"441.39359327"}}],"returnData":{"data":["dQEAAAFlzR0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","base64"],"programId":"jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi"},"rewards":[],"status":{"Ok":null}},"slot":403073319,"transaction":{"message":{"accountKeys":["7T8ckKtdc5DH7ACS5AnCny7rVXYJPEsaAbdBri1FhPxY","99ncnS6bSwFYRQusWq71qt5gZAFH15R37Px3dkBWk4Y9","5UjfB4irAJYh5EWsZKSJ8wbTrdmjnRBV7RNHfcGCE6RG","7nYWoWcvupvV8ESCvxfnvWkJBxJKkWp1c3dHHiJD83oy","AqFWF1FSnQCQ7JdErhrQDsgBt3mttYsS6AnfDQxmas1B","7Ny5TgfeCFgWoz9sUA6bX43XoFGw3kA6KZMEthRYEAnX","HTxu2vz8RDCJnyKY7zY1WB2ULcLH7A97Qh1vpg8BKXvx","3JRKKRZkpQ6quyH3jSiEbrxhimefH3zv4AARbNuxkTKt","ComputeBudget111111111111111111111111111111","ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL","11111111111111111111111111111111","TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi","metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s","SysvarRent111111111111111111111111111111111","4cSM2e6rvbGQUFiJbqytoVMi5GgghSMr8LwVrT9VPSPo"],"addressTableLookups":[{"accountKey":"Ffob94C16NLvtPipvd8YnMzbfnTwZSV3eDhBChQVo32N","readonlyIndexes":[4,0,53,1,5,6,11,12,13,45,46,58],"writableIndexes":[2,3,21,7,8,9,10,43,44,19,27]}],"header":{"numReadonlySignedAccounts":0,"numReadonlyUnsignedAccounts":8,"numRequiredSignatures":1},"instructions":[{"accounts":[],"data":"FjL4FH","programIdIndex":8,"stackHeight":1},{"accounts":[],"data":"3gJqkocMWaMm","programIdIndex":8,"stackHeight":1},{"accounts":[0,1,0,27,10,11],"data":"","programIdIndex":9,"stackHeight":1},{"accounts":[0,1],"data":"3Bxs416DgARFTTxs","programIdIndex":10,"stackHeight":1},{"accounts":[1],"data":"J","programIdIndex":11,"stackHeight":1},{"accounts":[0,28,16,2,3,4,5,11,9,10,29,13,14],"data":"2FTFoH7kYoxxZ5KMEraT","programIdIndex":12,"stackHeight":1},{"accounts":[0,1,6,12,12,12,30,16,27,31,32,2,4,17,17,7,7,18,19,20,21,22,33,34,23,24,12,12,35,36,37,11,11,9,10,38,15,25,26,26],"data":"cChpZziPXfzNHRLMbKpPXtB73jWz7e6rfh3CEM1wXU1enM5EdAmo79GmkE8MDM4om9b","programIdIndex":12,"stackHeight":1}],"recentBlockhash":"4hSynLPnRHvwkhwT24GBUMpKMUjyzHVSCfTWsgzk461V"},"signatures":["5P8xF7oLokSYkat4ShGghmqWZFR37odt5XKyM5cZEJbPiNUJkqpB6o8kpmTScmfMokHUnnBcfNGFoorjNjTYnnxB"]},"version":0},"id":0}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      content-length:
+      - '15979'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2026 21:42:23 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-824'
+      x-ratelimit-method-limit:
+      - '2'
+      x-ratelimit-method-remaining:
+      - '1'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '95'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - dal38
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"method":"getAccountInfo","jsonrpc":"2.0","id":0,"params":["Ffob94C16NLvtPipvd8YnMzbfnTwZSV3eDhBChQVo32N",{"encoding":"base64","dataSlice":null,"commitment":"finalized","minContextSlot":null}]}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '194'
+      content-type:
+      - application/json
+      host:
+      - api.mainnet-beta.solana.com
+      user-agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.8","slot":403146950},"value":{"data":["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","base64"],"executable":false,"lamports":19320960,"owner":"AddressLookupTab1e1111111111111111111111111","rentEpoch":18446744073709551615,"space":2648}},"id":0}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      content-length:
+      - '3788'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2026 21:42:24 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-828'
+      x-ratelimit-method-limit:
+      - '30'
+      x-ratelimit-method-remaining:
+      - '28'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '95'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - dal38
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"method":"getAccountInfo","jsonrpc":"2.0","id":0,"params":["7nYWoWcvupvV8ESCvxfnvWkJBxJKkWp1c3dHHiJD83oy",{"encoding":"base64","dataSlice":null,"commitment":"finalized","minContextSlot":null}]}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '194'
+      content-type:
+      - application/json
+      host:
+      - api.mainnet-beta.solana.com
+      user-agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.8","slot":403146950},"value":{"data":["AAAAADJjAjmRNutTB+7vGm1CLLb4ejC4ZNLxnqagEz5rdSegAQAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==","base64"],"executable":false,"lamports":1461600,"owner":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","rentEpoch":18446744073709551615,"space":82}},"id":0}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      content-length:
+      - '365'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2026 21:42:23 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-832'
+      x-ratelimit-method-limit:
+      - '30'
+      x-ratelimit-method-remaining:
+      - '27'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '94'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - dal38
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"method":"getAccountInfo","jsonrpc":"2.0","id":0,"params":["7Ny5TgfeCFgWoz9sUA6bX43XoFGw3kA6KZMEthRYEAnX",{"encoding":"base64","dataSlice":null,"commitment":"finalized","minContextSlot":null}]}'
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '194'
+      content-type:
+      - application/json
+      host:
+      - api.mainnet-beta.solana.com
+      user-agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.8","slot":403146950},"value":{"data":["BDJjAjmRNutTB+7vGm1CLLb4ejC4ZNLxnqagEz5rdSegZNDkCQ3XS5HEgz5tlsvrrUuJgX+AvmOMYsU6lpBAiKQgAAAAanVwaXRlciB2YXVsdCAyOAAAAAAAAAAAAAAAAAAAAAAKAAAAanYyOAAAAAAAAMgAAABodHRwczovL2Nkbi5pbnN0YWRhcHAuaW8vc29sYW5hL3ZhdWx0cy9tZXRhZGF0YS8yOC5qc29uAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAf8BAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==","base64"],"executable":false,"lamports":5115600,"owner":"metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s","rentEpoch":18446744073709551615,"space":607}},"id":0}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      content-length:
+      - '1066'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Feb 2026 21:42:23 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-835'
+      x-ratelimit-method-limit:
+      - '30'
+      x-ratelimit-method-remaining:
+      - '26'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '93'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - dal38
+    status:
+      code: 200
+      message: OK
+version: 1
