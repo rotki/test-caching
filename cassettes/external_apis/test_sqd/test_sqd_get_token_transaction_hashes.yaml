@@ -1,0 +1,76 @@
+interactions:
+- request:
+    body: '{"type": "evm", "fromBlock": 21148990, "toBlock": 21149020, "fields": {"block":
+      {"number": true, "timestamp": true}, "log": {"transactionHash": true}}, "logs":
+      [{"topic0": ["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"],
+      "topic1": ["0x000000000000000000000000c37b40abdb939635068d3c5f13e7faf686f03b65"]},
+      {"topic0": ["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"],
+      "topic2": ["0x000000000000000000000000c37b40abdb939635068d3c5f13e7faf686f03b65"]}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '493'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - rotki/1.41.4.dev777+g2e6079a775.d20260224
+    method: POST
+    uri: https://portal.sqd.dev/datasets/ethereum-mainnet/finalized-stream
+  response:
+    body:
+      string: '{"header":{"number":21148990,"timestamp":1731141971}}
+
+        {"header":{"number":21148997,"timestamp":1731142055},"logs":[{"transactionHash":"0x68746fb44d41c1e561adaae83a1199b1dc37615e70a3e6d492fc9f28fcaa9a37"}]}
+
+        {"header":{"number":21149010,"timestamp":1731142211},"logs":[{"transactionHash":"0x7e7693ef4d68f67e34aa63ca2d66ce5cbf8b18a927953968fd1aac684b1db790"}]}
+
+        {"header":{"number":21149020,"timestamp":1731142331}}
+
+        '
+    headers:
+      CF-RAY:
+      - 9d2ffb0e0a04ae4b-LHR
+      Cache-Control:
+      - no-transform
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/jsonl
+      Date:
+      - Tue, 24 Feb 2026 15:26:20 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=zVprQWbehnG6%2BXgCejOU3ysC4JaZl0nloqWGGEwsuPF3uyi7UNCX365ruucLnFZmDjGssMldpYJkkiWvIA8FUV8aFBx7OcnMdsT0pOI%3D"}]}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '412'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - origin, access-control-request-method, access-control-request-headers
+      - accept-encoding
+      x-sqd-data-source:
+      - network
+      x-sqd-finalized-head-hash:
+      - '0xabe74750dd3ccdcb45f0f513d5f2d447c8cb602f825edcbd116dd4d03f2297c8'
+      x-sqd-finalized-head-number:
+      - '24527399'
+      x-sqd-head-number:
+      - '24527578'
+    status:
+      code: 200
+      message: OK
+version: 1
