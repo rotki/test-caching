@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.42.1.dev18+gb663f08a05
+      - rotki/1.41.2.dev927+ge84fe3f5bf.d20260221
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getTransactionByHash&chainid=100&module=proxy&txhash=0x4f34125588875b708faae04c0711473171982b48f7c0f2de8ca33bc5dcc974a3
   response:
@@ -29,7 +29,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 26 Feb 2026 12:29:34 GMT
+      - Wed, 04 Mar 2026 08:25:15 GMT
       Server:
       - nginx
       Vary:
@@ -37,7 +37,7 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '4'
+      - '2'
       content-length:
       - '12512'
       svid:
@@ -55,7 +55,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.42.1.dev18+gb663f08a05
+      - rotki/1.41.2.dev927+ge84fe3f5bf.d20260221
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getBlockByNumber&boolean=true&chainid=100&module=proxy&tag=0x1f002e0
   response:
@@ -75,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 26 Feb 2026 12:29:34 GMT
+      - Wed, 04 Mar 2026 08:25:15 GMT
       Server:
       - nginx
       Vary:
@@ -83,7 +83,7 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '4'
+      - '2'
       content-length:
       - '79591'
       svid:
@@ -101,7 +101,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.42.1.dev18+gb663f08a05
+      - rotki/1.41.2.dev927+ge84fe3f5bf.d20260221
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=100&module=proxy&txhash=0x4f34125588875b708faae04c0711473171982b48f7c0f2de8ca33bc5dcc974a3
   response:
@@ -121,7 +121,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 26 Feb 2026 12:29:40 GMT
+      - Wed, 04 Mar 2026 08:25:16 GMT
       Server:
       - nginx
       Vary:
@@ -147,7 +147,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.42.1.dev18+gb663f08a05
+      - rotki/1.41.2.dev927+ge84fe3f5bf.d20260221
     method: GET
     uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=100&module=account&sort=asc&txhash=0x4f34125588875b708faae04c0711473171982b48f7c0f2de8ca33bc5dcc974a3
   response:
@@ -167,7 +167,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 26 Feb 2026 12:29:41 GMT
+      - Wed, 04 Mar 2026 08:25:17 GMT
       Server:
       - nginx
       Vary:
@@ -175,11 +175,63 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '2'
+      - '4'
       content-length:
       - '60'
       svid:
       - gnosis1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.5
+    method: GET
+    uri: https://api.cow.fi/xdai/api/v1/orders/0x38f92d04fcf4ee34a7e3560928d4f2194d04bc7dfa0f88953a9378a5a3b191f0eccf11f03cefe8a68bb01caf66e76ceefeaaee5e65d17b75
+  response:
+    body:
+      string: '{"creationDate":"2024-02-18T03:07:27.304174Z","owner":"0xeccf11f03cefe8a68bb01caf66e76ceefeaaee5e","uid":"0x38f92d04fcf4ee34a7e3560928d4f2194d04bc7dfa0f88953a9378a5a3b191f0eccf11f03cefe8a68bb01caf66e76ceefeaaee5e65d17b75","availableBalance":null,"executedBuyAmount":"56204042821142175","executedSellAmount":"15000000000000000000","executedSellAmountBeforeFees":"15000000000000000000","executedFeeAmount":"0","executedFee":"1560830547084829","executedFeeToken":"0xcb444e90d8198415266c6a2724b7900fb12fc56e","invalidated":false,"status":"fulfilled","class":"limit","settlementContract":"0x9008d19f58aabd9ed0d60971565aa8510560ab41","isLiquidityOrder":false,"fullAppData":"{\"appCode\":\"CoW
+        Swap\",\"environment\":\"production\",\"metadata\":{\"orderClass\":{\"orderClass\":\"market\"},\"quote\":{\"slippageBips\":\"50\"},\"utm\":{\"utmContent\":\"landing-cta-button\",\"utmMedium\":\"web\",\"utmSource\":\"cow.fi\"}},\"version\":\"0.11.0\"}","quote":{"gasAmount":"878442","gasPrice":"1212501572.125","sellTokenPrice":"1.0767095687988310626082011367543600499629974365234375","sellAmount":"15000000000000000000","buyAmount":"56209891762216228","feeAmount":"989228977698100","solver":"0x056545021b39790efb0a074827e7fddcb751a179","verified":false,"metadata":{}},"sellToken":"0xcb444e90d8198415266c6a2724b7900fb12fc56e","buyToken":"0x9c58bacc331c9aa871afd802db6379a98e80cedb","receiver":"0xeccf11f03cefe8a68bb01caf66e76ceefeaaee5e","sellAmount":"15000000000000000000","buyAmount":"55925153874638770","validTo":1708227445,"appData":"0x59d659d0839809c1fff90bfa74609099a42655b9956e4872e59df7fe96b47004","feeAmount":"0","kind":"sell","partiallyFillable":false,"sellTokenBalance":"erc20","buyTokenBalance":"erc20","signingScheme":"eip712","signature":"0xc25b596aa197676ca2202e53663ea73a24703aa4237bc9be0f8dafac842b436f74ca5560f15223380e81e1f671a1e2fe6b4840be5afb0f27e8ee035fd2355ebc1c","interactions":{"pre":[],"post":[]}}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin, Content-Type, X-Auth-Token, X-AppId
+      Access-Control-Allow-Methods:
+      - OPTIONS, GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Max-Age:
+      - '1728000'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 04 Mar 2026 08:25:17 GMT
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 f94680c3a1fc159ee44d04d5ded8c264.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - INB7YBLJ4wB6xIKE-c19EP7-UFzAjWT4zjXOnYZB5NtY3jqSkYr1YQ==
+      X-Amz-Cf-Pop:
+      - TXL50-P5
+      X-Cache:
+      - Miss from cloudfront
+      access-control-allow-origin:
+      - '*'
+      content-length:
+      - '1909'
+      vary:
+      - origin, access-control-request-method, access-control-request-headers
+      - accept-encoding
     status:
       code: 200
       message: OK
