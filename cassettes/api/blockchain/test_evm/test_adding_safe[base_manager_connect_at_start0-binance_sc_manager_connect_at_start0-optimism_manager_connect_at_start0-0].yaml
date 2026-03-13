@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getCode&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=1&module=proxy
   response:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:10:56 GMT
+      - Fri, 13 Mar 2026 05:32:35 GMT
       Server:
       - nginx
       Vary:
@@ -43,226 +43,13 @@ interactions:
       content-length:
       - '39'
       svid:
-      - '8'
+      - '7'
     status:
       code: 200
       message: OK
 - request:
-    body: '{"jsonrpc": "2.0", "method": "web3_clientVersion", "params": [], "id":
-      0}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '73'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://mainnet.optimism.io/
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"reth/v1.9.3-27a8c0f/x86_64-unknown-linux-gnu/base/v0.2.1","id":0}
-
-        '
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Length:
-      - '93'
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 15 Jan 2026 17:10:57 GMT
-      Set-Cookie:
-      - lb1=3d5a7df2f7437523; Path=/
-      Vary:
-      - Origin
-      Via:
-      - 1.1 google
-      X-Proxyd-Cache-Status:
-      - MISS
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "net_version", "params": [], "id": 1}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '66'
-      Content-Type:
-      - application/json
-      Cookie:
-      - lb1=3d5a7df2f7437523
-      User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://mainnet.optimism.io/
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"10","id":1}
-
-        '
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Length:
-      - '39'
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 15 Jan 2026 17:10:57 GMT
-      Vary:
-      - Origin
-      Via:
-      - 1.1 google
-      X-Proxyd-Cache-Status:
-      - HIT
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 2}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '70'
-      Content-Type:
-      - application/json
-      Cookie:
-      - lb1=3d5a7df2f7437523
-      User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://mainnet.optimism.io/
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"0x8baa2f4","id":2}
-
-        '
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Length:
-      - '46'
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 15 Jan 2026 17:10:57 GMT
-      Vary:
-      - Origin
-      Via:
-      - 1.1 google
-      X-Proxyd-Cache-Status:
-      - MISS
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x76a05Df20bFEF5EcE3eB16afF9cb10134199A921",
-      "0x12110"], "id": 3}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '124'
-      Content-Type:
-      - application/json
-      Cookie:
-      - lb1=3d5a7df2f7437523
-      User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://mainnet.optimism.io/
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"0xb1a2bc2ec50000","id":3}
-
-        '
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Length:
-      - '53'
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 15 Jan 2026 17:10:57 GMT
-      Vary:
-      - Origin
-      Via:
-      - 1.1 google
-      X-Proxyd-Cache-Status:
-      - MISS
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0x5e77a04531c7c107af1882d76cbff9486d0a9aa53701c30888509d4f5f2b003a"],
-      "id": 4}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '147'
-      Content-Type:
-      - application/json
-      Cookie:
-      - lb1=3d5a7df2f7437523
-      User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://mainnet.optimism.io/
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":{"blockHash":"0xbee7192e575af30420cae0c7776304ac196077ee72b048970549e4f08e875453","blockNumber":"0x1","from":"0x70b17c0fe982ab4a7ac17a4c25485643151a1f2d","gas":"0x7a120","gasPrice":"0x1","hash":"0x5e77a04531c7c107af1882d76cbff9486d0a9aa53701c30888509d4f5f2b003a","index":"0x0","input":"0x202ee0ed000000000000000000000000000000000000000000000000000000000001421800000000000000000000000000000000000000000000000000000000d0e3ebf0","l1BlockNumber":"0xcf7a45","l1Timestamp":"0x618d8837","l1TxOrigin":null,"nonce":"0x28972","queueIndex":null,"queueOrigin":"sequencer","r":"0xc878d22e771004beb73e7a4268fd4f447735812b94b217f6807412efcec90d61","rawTransaction":"0xf8a883028972018307a120948ce8c13d816fe6daf12d6fd9e4952e1fc88850af80b844202ee0ed000000000000000000000000000000000000000000000000000000000001421800000000000000000000000000000000000000000000000000000000d0e3ebf038a0c878d22e771004beb73e7a4268fd4f447735812b94b217f6807412efcec90d61a03588018735fb361c49e5de54b266b8b157c1ba3d6ee08e3bcbdee7cd725c16e8","s":"0x3588018735fb361c49e5de54b266b8b157c1ba3d6ee08e3bcbdee7cd725c16e8","to":"0x8ce8c13d816fe6daf12d6fd9e4952e1fc88850af","transactionIndex":"0x0","v":"0x38","value":"0x0"},"id":4}
-
-        '
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Length:
-      - '1203'
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 15 Jan 2026 17:10:58 GMT
-      Vary:
-      - Origin
-      Via:
-      - 1.1 google
-      X-Proxyd-Cache-Status:
-      - MISS
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getCode", "params": ["0x9d25AdBcffE28923E619f4Af88ECDe732c985b63",
-      "latest"], "id": 5}'
+    body: '{"id": 0, "jsonrpc": "2.0", "method": "eth_getCode", "params": ["0x9d25AdBcffE28923E619f4Af88ECDe732c985b63",
+      "latest"]}'
     headers:
       Accept:
       - '*/*'
@@ -274,32 +61,56 @@ interactions:
       - '120'
       Content-Type:
       - application/json
-      Cookie:
-      - lb1=3d5a7df2f7437523
       User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: POST
-    uri: https://mainnet.optimism.io/
+    uri: https://explorer.optimism.io/api/eth-rpc
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":"0x","id":5}
+      string: '{"jsonrpc":"2.0","result": "0x","id": 0}
 
         '
     headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      CF-RAY:
+      - 9db8a8b0be32035e-MAD
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
       Content-Length:
-      - '39'
+      - '41'
       Content-Type:
-      - application/json
+      - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:10:58 GMT
-      Vary:
-      - Origin
-      Via:
-      - 1.1 google
-      X-Proxyd-Cache-Status:
-      - MISS
+      - Fri, 13 Mar 2026 05:32:35 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=6ourGE4dGOBXefhET5cu%2Br9WdzIAKvuGw4SoCgNKQqJENBd6m6B0gHUsBK%2FJCBoxY1GnWaTHRswafdZsgKjnvyBxsvm03pSmA14M%2B7o0qttfTQ%3D%3D"}]}'
+      Server:
+      - cloudflare
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - bypass-429-option,x-ratelimit-reset,x-ratelimit-limit,x-ratelimit-remaining,api-v2-temp-token
+      alt-svc:
+      - h3=":443"; ma=86400
+      bypass-429-option:
+      - no_bypass
+      cf-cache-status:
+      - DYNAMIC
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-ratelimit-limit:
+      - '600'
+      x-ratelimit-remaining:
+      - '599'
+      x-ratelimit-reset:
+      - '24669'
+      x-request-id:
+      - d436e9432d67e72711930646af7ecd34
     status:
       code: 200
       message: OK
@@ -313,7 +124,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getCode&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=137&module=proxy
   response:
@@ -335,7 +146,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:10:58 GMT
+      - Fri, 13 Mar 2026 05:32:36 GMT
       Server:
       - nginx
       Vary:
@@ -343,11 +154,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '5'
+      - '4'
       content-length:
       - '39'
       svid:
-      - poly2
+      - poly4
     status:
       code: 200
       message: OK
@@ -361,7 +172,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getCode&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=42161&module=proxy
   response:
@@ -383,7 +194,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:10:59 GMT
+      - Fri, 13 Mar 2026 05:32:36 GMT
       Server:
       - nginx
       Vary:
@@ -400,289 +211,8 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"jsonrpc": "2.0", "method": "web3_clientVersion", "params": [], "id":
-      0}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '73'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://mainnet.base.org/
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"Geth/v1.101605.0-stable-f03d103a/linux-amd64/go1.24.11","id":0}
-
-        '
-    headers:
-      CF-RAY:
-      - 9be6fd5c0b3c4c7e-ATL
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 15 Jan 2026 17:10:59 GMT
-      NEL:
-      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=OchQlyZcA21hm%2BW1FTTailEgFHr9LyXdKEF18zFEsFCkAcNH7KI%2B0h8IwwuVFTiXewOlPTt0f6whaq%2FiaPbA%2FopgYw1y48huC5MWGKMS5zqwiFSCaWDlWrE8k2Yb2P1rXkU%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Set-Cookie:
-      - __cf_bm=QSkL8.VRjxGQ2WUkN272ndsCMQc2L.LdDELunEMay00-1768497059-1.0.1.1-AE8vGN1MXyNSthTGCa_KlMR2NIclGsXqfooZqon7I2ubrlb_c0cbNq5bUoyoWIQfHl3JIvZQ1F4y9VUg2fUN60PzDOW0sEnB2_.PNMX5ZLc;
-        path=/; expires=Thu, 15-Jan-26 17:40:59 GMT; domain=.base.org; HttpOnly; Secure;
-        SameSite=None
-      Strict-Transport-Security:
-      - max-age=2592000
-      Transfer-Encoding:
-      - chunked
-      X-Content-Type-Options:
-      - nosniff
-      cf-cache-status:
-      - DYNAMIC
-      content-length:
-      - '91'
-      vary:
-      - Origin
-      x-proxyd-cache-status:
-      - MISS
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "net_version", "params": [], "id": 1}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '66'
-      Content-Type:
-      - application/json
-      Cookie:
-      - __cf_bm=QSkL8.VRjxGQ2WUkN272ndsCMQc2L.LdDELunEMay00-1768497059-1.0.1.1-AE8vGN1MXyNSthTGCa_KlMR2NIclGsXqfooZqon7I2ubrlb_c0cbNq5bUoyoWIQfHl3JIvZQ1F4y9VUg2fUN60PzDOW0sEnB2_.PNMX5ZLc
-      User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://mainnet.base.org/
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"8453","id":1}
-
-        '
-    headers:
-      CF-RAY:
-      - 9be6fd5d68eebf86-ATL
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '41'
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 15 Jan 2026 17:10:59 GMT
-      NEL:
-      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=tJOYseV0fSKsnNy%2Fuj7vnbFG7ZVCxXkDOIwYOZepGOpQugTP%2BVjzwKcCxDa9r%2BWQ04teY%2FAM854h3b1yKF8PltmlP8PBgy195Ihc4NvtUNtOOqdh%2BmgGYQhJuurMwVrtabg%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Strict-Transport-Security:
-      - max-age=2592000
-      X-Content-Type-Options:
-      - nosniff
-      cf-cache-status:
-      - DYNAMIC
-      vary:
-      - Origin
-      x-proxyd-cache-status:
-      - HIT
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 2}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '70'
-      Content-Type:
-      - application/json
-      Cookie:
-      - __cf_bm=QSkL8.VRjxGQ2WUkN272ndsCMQc2L.LdDELunEMay00-1768497059-1.0.1.1-AE8vGN1MXyNSthTGCa_KlMR2NIclGsXqfooZqon7I2ubrlb_c0cbNq5bUoyoWIQfHl3JIvZQ1F4y9VUg2fUN60PzDOW0sEnB2_.PNMX5ZLc
-      User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://mainnet.base.org/
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"0x26f6160","id":2}
-
-        '
-    headers:
-      CF-RAY:
-      - 9be6fd5e3c1b3555-ATL
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '46'
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 15 Jan 2026 17:10:59 GMT
-      NEL:
-      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Yn8hTh5zMnQFuGi0xECxLmATEHWxMAK7EI77%2FgN2rzFXVYj%2Fw5HzHzVch8iD3Oga6czmp%2FrlgOE%2B%2BsmimvE5Av2jrTcnC%2FnSlYzbmRAiGbgh9eDWaOQtwioWsDE50GxUJOo%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Strict-Transport-Security:
-      - max-age=2592000
-      X-Content-Type-Options:
-      - nosniff
-      cf-cache-status:
-      - DYNAMIC
-      vary:
-      - Origin
-      x-proxyd-cache-status:
-      - MISS
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x3a9e669d9e2d0171c8a057031a9e9C048b7FEE60",
-      "0x3e541a"], "id": 3}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '125'
-      Content-Type:
-      - application/json
-      Cookie:
-      - __cf_bm=QSkL8.VRjxGQ2WUkN272ndsCMQc2L.LdDELunEMay00-1768497059-1.0.1.1-AE8vGN1MXyNSthTGCa_KlMR2NIclGsXqfooZqon7I2ubrlb_c0cbNq5bUoyoWIQfHl3JIvZQ1F4y9VUg2fUN60PzDOW0sEnB2_.PNMX5ZLc
-      User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://mainnet.base.org/
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"0x2386f26fc10000","id":3}
-
-        '
-    headers:
-      CF-RAY:
-      - 9be6fd5f59692de3-ATL
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 15 Jan 2026 17:10:59 GMT
-      NEL:
-      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=hwn1OhuJ4Bxb1aVqyxECDQi5UlHTH8uoWml5IFDOrm%2F9BIe7ldLoUO7VW0YQvn78kiF4RZ%2FwCtmHh9pQ5E12%2Bt2q739wN5EkCOViWGP0EJb9Hx27WE0WCOBB9BzsPWfLFMM%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Strict-Transport-Security:
-      - max-age=2592000
-      Transfer-Encoding:
-      - chunked
-      X-Content-Type-Options:
-      - nosniff
-      cf-cache-status:
-      - DYNAMIC
-      content-length:
-      - '53'
-      vary:
-      - Origin
-      x-proxyd-cache-status:
-      - MISS
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0xc7e021f71a972940c2728717f058f49833e3aa4d074c3599054530f108c281b2"],
-      "id": 4}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '147'
-      Content-Type:
-      - application/json
-      Cookie:
-      - __cf_bm=QSkL8.VRjxGQ2WUkN272ndsCMQc2L.LdDELunEMay00-1768497059-1.0.1.1-AE8vGN1MXyNSthTGCa_KlMR2NIclGsXqfooZqon7I2ubrlb_c0cbNq5bUoyoWIQfHl3JIvZQ1F4y9VUg2fUN60PzDOW0sEnB2_.PNMX5ZLc
-      User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://mainnet.base.org/
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":{"accessList":[],"blockHash":"0x493369ae3bb8df04408d15ed1d9971c0ae93a2a7fdc832a583240a723be3bbc4","blockNumber":"0x3e541a","chainId":"0x2105","from":"0x15718b9b0dade1c17d8329a13bb9553f3b38e172","gas":"0x5208","gasPrice":"0xdaf45a","hash":"0xc7e021f71a972940c2728717f058f49833e3aa4d074c3599054530f108c281b2","input":"0x","maxFeePerGas":"0x104a18f","maxPriorityFeePerGas":"0x5aeeeb","nonce":"0x1","r":"0x23df55c709dccbe0ddbca9867f1658f8a7b97ccc06bd0c2c74ad66ef05308b43","s":"0x6e72646fcd901f4d9ebf8e29f1b447bcc7c1fab524a3534bac2b85872940da67","to":"0x3a9e669d9e2d0171c8a057031a9e9c048b7fee60","transactionIndex":"0xf","type":"0x2","v":"0x0","value":"0x2386f26fc10000","yParity":"0x0"},"id":4}
-
-        '
-    headers:
-      CF-RAY:
-      - 9be6fd60987323e7-ATL
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 15 Jan 2026 17:10:59 GMT
-      NEL:
-      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=0u2ef6UGbSJ99HrihG625MUQRQFBJw3XFiKF6R2n2NHYl1O515sYRZeEeF4xMfHEROhJCjmQPT1gIn0WIo9yLUhaunxudqGsYfY2uzLGGF%2FFdDvPEPRt9vWhGvE7PIScM6c%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Strict-Transport-Security:
-      - max-age=2592000
-      Transfer-Encoding:
-      - chunked
-      X-Content-Type-Options:
-      - nosniff
-      cf-cache-status:
-      - DYNAMIC
-      content-length:
-      - '717'
-      vary:
-      - Origin
-      x-proxyd-cache-status:
-      - MISS
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getCode", "params": ["0x9d25AdBcffE28923E619f4Af88ECDe732c985b63",
-      "latest"], "id": 5}'
+    body: '{"id": 0, "jsonrpc": "2.0", "method": "eth_getCode", "params": ["0x9d25AdBcffE28923E619f4Af88ECDe732c985b63",
+      "latest"]}'
     headers:
       Accept:
       - '*/*'
@@ -694,46 +224,59 @@ interactions:
       - '120'
       Content-Type:
       - application/json
-      Cookie:
-      - __cf_bm=QSkL8.VRjxGQ2WUkN272ndsCMQc2L.LdDELunEMay00-1768497059-1.0.1.1-AE8vGN1MXyNSthTGCa_KlMR2NIclGsXqfooZqon7I2ubrlb_c0cbNq5bUoyoWIQfHl3JIvZQ1F4y9VUg2fUN60PzDOW0sEnB2_.PNMX5ZLc
       User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: POST
-    uri: https://mainnet.base.org/
+    uri: https://base.blockscout.com/api/eth-rpc
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":"0x608060405273ffffffffffffffffffffffffffffffffffffffff600054167fa619486e0000000000000000000000000000000000000000000000000000000060003514156050578060005260206000f35b3660008037600080366000845af43d6000803e60008114156070573d6000fd5b3d6000f3fea264697066735822122003d1488ee65e08fa41e58e888a9865554c535f2c77126a82cb4c0f917f31441364736f6c63430007060033","id":5}
+      string: '{"jsonrpc":"2.0","result": "0x608060405273ffffffffffffffffffffffffffffffffffffffff600054167fa619486e0000000000000000000000000000000000000000000000000000000060003514156050578060005260206000f35b3660008037600080366000845af43d6000803e60008114156070573d6000fd5b3d6000f3fea264697066735822122003d1488ee65e08fa41e58e888a9865554c535f2c77126a82cb4c0f917f31441364736f6c63430007060033","id":
+        0}
 
         '
     headers:
       CF-RAY:
-      - 9be6fd619997eee7-ATL
+      - 9db8a8b9a983ecad-MAD
+      Cache-Control:
+      - max-age=0, private, must-revalidate
       Connection:
       - keep-alive
       Content-Type:
-      - application/json
+      - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:00 GMT
-      NEL:
-      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      - Fri, 13 Mar 2026 05:32:37 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=d1KAqSzQzn5RZ%2FLPKaTDH7xvFN547TGazABWoc6MyUxJPrU%2B0LtZG%2BjLUVBabGwlBavyoxfn9qea8dCcZUrStVVS4NeT5NLaddvTYVoGEL0JK1L13jPQxBh8JBZJGgpes04%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=T0ftRrk1phalSEy2SD1CrwWYcDpvqlFXaVBj%2F5611%2BefRGU7mKI3r5IE0cnpAm5p6Lbajzkhk8W%2FuJRi18fAPTmxYwzrwq%2FvI3znOLsrPaRsVw%3D%3D"}]}'
       Server:
       - cloudflare
-      Strict-Transport-Security:
-      - max-age=2592000
       Transfer-Encoding:
       - chunked
-      X-Content-Type-Options:
-      - nosniff
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - bypass-429-option,x-ratelimit-reset,x-ratelimit-limit,x-ratelimit-remaining,api-v2-temp-token
+      alt-svc:
+      - h3=":443"; ma=86400
+      bypass-429-option:
+      - no_bypass
       cf-cache-status:
       - DYNAMIC
       content-length:
-      - '381'
-      vary:
-      - Origin
-      x-proxyd-cache-status:
-      - MISS
+      - '383'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-ratelimit-limit:
+      - '600'
+      x-ratelimit-remaining:
+      - '599'
+      x-ratelimit-reset:
+      - '23132'
+      x-request-id:
+      - 1fbe528eb4eb427b11159b857c042c99
     status:
       code: 200
       message: OK
@@ -747,7 +290,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getCode&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=100&module=proxy
   response:
@@ -767,7 +310,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:00 GMT
+      - Fri, 13 Mar 2026 05:32:37 GMT
       Server:
       - nginx
       Vary:
@@ -775,7 +318,7 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '3'
+      - '4'
       content-length:
       - '38'
       svid:
@@ -793,7 +336,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getCode&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=534352&module=proxy
   response:
@@ -815,7 +358,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:00 GMT
+      - Fri, 13 Mar 2026 05:32:38 GMT
       Server:
       - nginx
       Vary:
@@ -823,228 +366,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '4'
+      - '5'
       content-length:
       - '39'
       svid:
-      - scroll1
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "web3_clientVersion", "params": [], "id":
-      0}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '73'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://1rpc.io/bnb
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":0,"result":"Geth/v1.6.5/linux-amd64/go1.24.11"}
-
-        '
-    headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 15 Jan 2026 17:11:01 GMT
-      Transfer-Encoding:
-      - chunked
-      content-length:
-      - '70'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "net_version", "params": [], "id": 1}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '66'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://1rpc.io/bnb
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"56","id":1}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '38'
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 15 Jan 2026 17:11:01 GMT
-      access-control-allow-origin:
-      - '*'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 2}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '70'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://1rpc.io/bnb
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":"0x47f465a","id":2}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '45'
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 15 Jan 2026 17:11:01 GMT
-      access-control-allow-origin:
-      - '*'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0xf29991AB7C30dC0dAfc4C39Bf1acD7d2534ecC85",
-      "0xea72fb"], "id": 3}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '125'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://1rpc.io/bnb
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":3,"error":{"code":-32000,"message":"header not
-        found"}}
-
-        '
-    headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 15 Jan 2026 17:11:02 GMT
-      Transfer-Encoding:
-      - chunked
-      content-length:
-      - '78'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0xb9fa80f75dc13c921cb1a30c3c9d220625c3fe59bb7dc49082d80b70d95b74d0"],
-      "id": 4}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '147'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://1rpc.io/bnb
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":4,"result":null}
-
-        '
-    headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 15 Jan 2026 17:11:02 GMT
-      Transfer-Encoding:
-      - chunked
-      content-length:
-      - '39'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getCode", "params": ["0x9d25AdBcffE28923E619f4Af88ECDe732c985b63",
-      "latest"], "id": 5}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '120'
-      Content-Type:
-      - application/json
-      User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
-    method: POST
-    uri: https://1rpc.io/bnb
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":5,"result":"0x"}
-
-        '
-    headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Thu, 15 Jan 2026 17:11:03 GMT
-      Transfer-Encoding:
-      - chunked
-      content-length:
-      - '39'
+      - scrollela1
     status:
       code: 200
       message: OK
@@ -1058,7 +384,54 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_getCode&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=56&module=proxy
+  response:
+    body:
+      string: '{"status":"0","message":"NOTOK","result":"Free API access is not supported
+        for this chain. Please upgrade your api plan for full chain coverage. https://etherscan.io/apis"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 13 Mar 2026 05:32:38 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '172'
+      svid:
+      - bsc13
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=txlist&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=1&module=account&offset=1&page=1
   response:
@@ -1078,7 +451,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:03 GMT
+      - Fri, 13 Mar 2026 05:32:39 GMT
       Server:
       - nginx
       Vary:
@@ -1090,7 +463,7 @@ interactions:
       content-length:
       - '60'
       svid:
-      - '54'
+      - '55'
     status:
       code: 200
       message: OK
@@ -1104,7 +477,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=txlistinternal&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=1&module=account&offset=1&page=1
   response:
@@ -1124,7 +497,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:03 GMT
+      - Fri, 13 Mar 2026 05:32:40 GMT
       Server:
       - nginx
       Vary:
@@ -1132,11 +505,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '4'
+      - '2'
       content-length:
       - '60'
       svid:
-      - '8'
+      - '55'
     status:
       code: 200
       message: OK
@@ -1150,7 +523,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=tokentx&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=1&module=account&offset=1&page=1
   response:
@@ -1170,7 +543,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:03 GMT
+      - Fri, 13 Mar 2026 05:32:40 GMT
       Server:
       - nginx
       Vary:
@@ -1178,11 +551,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '4'
+      - '3'
       content-length:
       - '60'
       svid:
-      - '8'
+      - '7'
     status:
       code: 200
       message: OK
@@ -1196,7 +569,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=balance&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=1&module=account
   response:
@@ -1216,7 +589,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:05 GMT
+      - Fri, 13 Mar 2026 05:32:41 GMT
       Server:
       - nginx
       Vary:
@@ -1224,11 +597,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '4'
+      - '3'
       content-length:
       - '42'
       svid:
-      - '8'
+      - '7'
     status:
       code: 200
       message: OK
@@ -1242,7 +615,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://explorer.optimism.io/api?action=txlist&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&module=account&page=1
   response:
@@ -1250,7 +623,7 @@ interactions:
       string: '{"message":"No transactions found","result":[],"status":"0"}'
     headers:
       CF-RAY:
-      - 9be6fd83dceb651a-ATL
+      - 9db8a8d9a98f2d40-MAD
       Cache-Control:
       - max-age=0, private, must-revalidate
       Connection:
@@ -1258,11 +631,11 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:05 GMT
+      - Fri, 13 Mar 2026 05:32:41 GMT
       Nel:
       - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
       Report-To:
-      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=uqNz8yNniCTe3JgC%2FmzBl%2BnUFUFayUPDYb3y5sqdsioTnYdWfOgOS183Oj8swRX7S5NFz%2BEeJMaR1X3%2BlJuRDHIHFTMQPG%2BDvX%2FISUZzqcISoI7G"}]}'
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ZYFN1kJ4loAZ6Eax66c0H0ip%2Fylx2o%2FDJ8MUFurWs0FZSJSal2aRMkaRShKbL%2BqArVOoDDlD58PUuGjVhg77gXIolSOjocnqssJE3VuWfYmjKA%3D%3D"}]}'
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -1286,11 +659,11 @@ interactions:
       x-ratelimit-limit:
       - '600'
       x-ratelimit-remaining:
-      - '599'
+      - '598'
       x-ratelimit-reset:
-      - '54103'
+      - '18119'
       x-request-id:
-      - 4e9447f9d0efd5394c482b282811cc36
+      - 6dd461c5cc0915ed4671577e2b58147b
     status:
       code: 200
       message: OK
@@ -1304,7 +677,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://explorer.optimism.io/api?action=txlistinternal&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&module=account&page=1
   response:
@@ -1312,7 +685,7 @@ interactions:
       string: '{"message":"No internal transactions found","result":[],"status":"0"}'
     headers:
       CF-RAY:
-      - 9be6fd86bf46451f-ATL
+      - 9db8a8da4cd8191e-MAD
       Cache-Control:
       - max-age=0, private, must-revalidate
       Connection:
@@ -1320,11 +693,11 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:06 GMT
+      - Fri, 13 Mar 2026 05:32:42 GMT
       Nel:
       - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
       Report-To:
-      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=2FH31V4UN3W26Fl8Y7z031FFE46E6bnPxYvSjKy%2B%2BhpF8iCoK9CbD65JaLaBZoFd8oNDZHPHtEAgZD99thf%2F4AGIAAvnMxwskHkNSAwZ87x0L%2F3G"}]}'
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=PueIiLnLEEDg44x0if7RltNTr8P4BzMfJBA%2FaSqasc%2Bmgb3q85tBSw4cdC2RGfQZYkAHWb8RobuAncat8VDKr9QtD1Oe8cSavSvEtT71X7%2B9RA%3D%3D"}]}'
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -1348,11 +721,11 @@ interactions:
       x-ratelimit-limit:
       - '600'
       x-ratelimit-remaining:
-      - '598'
+      - '597'
       x-ratelimit-reset:
-      - '53628'
+      - '18011'
       x-request-id:
-      - e758deedefb2c40f0083d5add2b8e70b
+      - d4db3cb3ac1095ea87a3827054b26030
     status:
       code: 200
       message: OK
@@ -1366,7 +739,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://explorer.optimism.io/api?action=tokentx&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&module=account&page=1
   response:
@@ -1374,7 +747,7 @@ interactions:
       string: '{"message":"No token transfers found","result":[],"status":"0"}'
     headers:
       CF-RAY:
-      - 9be6fd89ca66d912-ATL
+      - 9db8a8daef90fab8-MAD
       Cache-Control:
       - max-age=0, private, must-revalidate
       Connection:
@@ -1382,11 +755,11 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:06 GMT
+      - Fri, 13 Mar 2026 05:32:42 GMT
       Nel:
       - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
       Report-To:
-      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=1Om7bCCaAtO0YjqIovF0RS0hT52CmLqqgrork7fq1Sxb5IwQQj06UefHjfr%2F4M8wYEX%2FKo0XNjJ3M2xOe623RaJ9cUJKPTuzAnBG2PbEzJFuS99J"}]}'
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=5e%2Ff2LiKoX36gBu6emfKMTOI0ebLq6FLi3W%2BsI%2FOHPst3tIu9hVrmnhjL2BUTwJ8viNWxhtcM%2FEqgJ7gDPvr4lrRTjFE8NBTXlvtOvphfxAVA4ZW"}]}'
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -1410,11 +783,11 @@ interactions:
       x-ratelimit-limit:
       - '600'
       x-ratelimit-remaining:
-      - '597'
+      - '596'
       x-ratelimit-reset:
-      - '53152'
+      - '17915'
       x-request-id:
-      - c6bfecd8f1736f6259776946c51aa623
+      - 91e32514bbaea22f15b056fed329a2b4
     status:
       code: 200
       message: OK
@@ -1433,7 +806,7 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.14.1/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://api.avax.network/ext/bc/C/rpc
   response:
@@ -1445,7 +818,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-Ray:
-      - 9be6fd8ddd7aadd5-ATL
+      - 9db8a8dc7914f298-BCN
       Cache-Control:
       - private, no-cache
       Connection:
@@ -1455,21 +828,21 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 15 Jan 2026 17:11:07 GMT
+      - Fri, 13 Mar 2026 05:32:42 GMT
       Server:
       - cloudflare
       Set-Cookie:
-      - api-session=1768497068.271.29.916041|7ae8221c362939422032901274ef6e58; Max-Age=172800;
+      - api-session=1773379963.349.212.227953|ea6fe5debfaeb9a420bd8a2d86ef8cc1; Max-Age=172800;
         Path=/; Secure; HttpOnly; SameSite=None
-      - __cflb=04dToa6dk9jmZpD9PMHj6xdkjR3Dj1RKcLGX7fawmn; SameSite=Lax; path=/; expires=Fri,
-        16-Jan-26 17:11:07 GMT; HttpOnly
-      - __cf_bm=huEj4vPpUTnBbbVE0fKtEwrgzTSafjUNZL3F4JOJ9Js-1768497067-1.0.1.1-wxn_srIPk8V2YJeyu71nhoSVy3lHI8kIq0so5d_vwyfMVZCajLI4w2s0XezRjEe1C3NaNXjC0J2NJilPNcA9VF6e5.bk8PLG9_iKspXYvEA;
-        path=/; expires=Thu, 15-Jan-26 17:41:07 GMT; domain=.avax.network; HttpOnly;
-        Secure; SameSite=None
+      - __cflb=02DiuGkhLNKExmHfnCWvsWTNjzm8aijt6gopUUpt1yNPv; SameSite=Lax; path=/;
+        expires=Sat, 14-Mar-26 05:32:42 GMT; HttpOnly
+      - __cf_bm=72jWYRIj5Wc.JvAF8MVXotRDT2BrCNmToY33xvJib74-1773379962.3136725-1.0.1.1-M.5nQTnJFogzdIscPmkRhuixmZs2Qsyn6UL.Set.ucWrcQ98nIpuCq3amAr1HI4ulZjTkGLro8aViSNBKMHRn.kmiOdVf4W5xPwPQABSnNPJTmqsP7ZNQuaRwfN6NUJ5;
+        HttpOnly; Secure; Path=/; Domain=avax.network; Expires=Fri, 13 Mar 2026 06:02:42
+        GMT
       Strict-Transport-Security:
       - max-age=0
       Vary:
-      - Origin, Accept-Encoding
+      - Origin
       X-Robots-Tag:
       - noindex
       x-cache:
@@ -1494,10 +867,10 @@ interactions:
       Content-Type:
       - application/json
       Cookie:
-      - api-session=1768497068.271.29.916041|7ae8221c362939422032901274ef6e58; __cflb=04dToa6dk9jmZpD9PMHj6xdkjR3Dj1RKcLGX7fawmn;
-        __cf_bm=huEj4vPpUTnBbbVE0fKtEwrgzTSafjUNZL3F4JOJ9Js-1768497067-1.0.1.1-wxn_srIPk8V2YJeyu71nhoSVy3lHI8kIq0so5d_vwyfMVZCajLI4w2s0XezRjEe1C3NaNXjC0J2NJilPNcA9VF6e5.bk8PLG9_iKspXYvEA
+      - api-session=1773379963.349.212.227953|ea6fe5debfaeb9a420bd8a2d86ef8cc1; __cflb=02DiuGkhLNKExmHfnCWvsWTNjzm8aijt6gopUUpt1yNPv;
+        __cf_bm=72jWYRIj5Wc.JvAF8MVXotRDT2BrCNmToY33xvJib74-1773379962.3136725-1.0.1.1-M.5nQTnJFogzdIscPmkRhuixmZs2Qsyn6UL.Set.ucWrcQ98nIpuCq3amAr1HI4ulZjTkGLro8aViSNBKMHRn.kmiOdVf4W5xPwPQABSnNPJTmqsP7ZNQuaRwfN6NUJ5
       User-Agent:
-      - web3.py/7.14.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.14.1/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://api.avax.network/ext/bc/C/rpc
   response:
@@ -1509,7 +882,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-Ray:
-      - 9be6fd8f7f3de590-ATL
+      - 9db8a8dd6e5faa4b-BCN
       Cache-Control:
       - private, no-cache
       Connection:
@@ -1519,9 +892,13 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 15 Jan 2026 17:11:07 GMT
+      - Fri, 13 Mar 2026 05:32:42 GMT
       Server:
       - cloudflare
+      Set-Cookie:
+      - __cf_bm=Ftpcds2QpPI1VbR3uTR16Muo2ufXu_Y5cV1PiwT8iKc-1773379962-1.0.1.1-m2Pe.8zfTTcyCoJ5hGNToGzz_hK_BRkE2FxbHRxD62GsNhf9_pEsh8hvw_VhsEQs4h5._7uQOgucPFWw.y1Gn0dCueN3cFomlniaiiM4e2Y;
+        path=/; expires=Fri, 13-Mar-26 06:02:42 GMT; domain=.avax.network; HttpOnly;
+        Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=0
       Vary:
@@ -1545,7 +922,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=txlist&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=137&module=account&offset=1&page=1
   response:
@@ -1565,7 +942,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:07 GMT
+      - Fri, 13 Mar 2026 05:32:43 GMT
       Server:
       - nginx
       Vary:
@@ -1573,11 +950,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '3'
+      - '4'
       content-length:
       - '60'
       svid:
-      - poly2
+      - poly4
     status:
       code: 200
       message: OK
@@ -1591,7 +968,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=txlistinternal&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=137&module=account&offset=1&page=1
   response:
@@ -1611,7 +988,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:08 GMT
+      - Fri, 13 Mar 2026 05:32:43 GMT
       Server:
       - nginx
       Vary:
@@ -1623,7 +1000,7 @@ interactions:
       content-length:
       - '60'
       svid:
-      - poly5
+      - poly2
     status:
       code: 200
       message: OK
@@ -1637,7 +1014,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=tokentx&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=137&module=account&offset=1&page=1
   response:
@@ -1657,7 +1034,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:08 GMT
+      - Fri, 13 Mar 2026 05:32:44 GMT
       Server:
       - nginx
       Vary:
@@ -1665,11 +1042,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '2'
+      - '4'
       content-length:
       - '60'
       svid:
-      - poly2
+      - poly1
     status:
       code: 200
       message: OK
@@ -1683,7 +1060,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=txlist&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=42161&module=account&offset=1&page=1
   response:
@@ -1703,7 +1080,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:10 GMT
+      - Fri, 13 Mar 2026 05:32:58 GMT
       Server:
       - nginx
       Vary:
@@ -1729,7 +1106,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=txlistinternal&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=42161&module=account&offset=1&page=1
   response:
@@ -1749,7 +1126,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:10 GMT
+      - Fri, 13 Mar 2026 05:33:03 GMT
       Server:
       - nginx
       Vary:
@@ -1757,7 +1134,7 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '5'
+      - '4'
       content-length:
       - '412'
       svid:
@@ -1775,7 +1152,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://base.blockscout.com/api?action=txlist&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&module=account&page=1
   response:
@@ -1783,7 +1160,7 @@ interactions:
       string: '{"message":"No transactions found","result":[],"status":"0"}'
     headers:
       CF-RAY:
-      - 9be6fda36babc15d-ATL
+      - 9db8a9612dd0e17e-MAD
       Cache-Control:
       - max-age=0, private, must-revalidate
       Connection:
@@ -1791,11 +1168,11 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:10 GMT
+      - Fri, 13 Mar 2026 05:33:03 GMT
       Nel:
       - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
       Report-To:
-      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=TsLy4eZA3Vsk%2BaJ7K85tKW%2FwaaBBDlj3FmsXQb2aojl9zIUCtocrgFYM5qXRLnqB7BCMOJWM1uZiGnKXweL8JUv93H4sgqOgyVgKtOI5bA3lyA%3D%3D"}]}'
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=rh1bilraI10qmoUt%2Fg9%2BkctAf87%2B7nwLJAV2Laf3pJCqo0L1iCjGE8TJdnV2BkCogBtQITBObVoLdchdli21Tg5pvEfGxIPJYW%2BswyjDkVlvmg%3D%3D"}]}'
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -1821,9 +1198,9 @@ interactions:
       x-ratelimit-remaining:
       - '599'
       x-ratelimit-reset:
-      - '49060'
+      - '56344'
       x-request-id:
-      - 93377059df7e2aceb85bcfb5ab0827cb
+      - 4f513ada632b063e8dd5ea7347081656
     status:
       code: 200
       message: OK
@@ -1837,7 +1214,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://base.blockscout.com/api?action=txlistinternal&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&module=account&page=1
   response:
@@ -1846,7 +1223,7 @@ interactions:
         not yet been processed","result":[{"blockNumber":"24441912","callType":"","contractAddress":"0x9d25adbcffe28923e619f4af88ecde732c985b63","errCode":"","from":"0x4e1dcf7ad4e460cfd30791ccc4f9c8a4f820ec67","gas":"823818","gasUsed":"56609","index":"1","input":"","isError":"0","timeStamp":"1735673171","to":"","transactionHash":"0xe0f8790a8595b9793424ddcfbf34e821c0a15449bfd2df9295ce473be1705a37","type":"create2","value":"0"}],"status":"2"}'
     headers:
       CF-RAY:
-      - 9be6fda67f12dad0-ATL
+      - 9db8a962b91d8d3c-MAD
       Cache-Control:
       - max-age=0, private, must-revalidate
       Connection:
@@ -1854,11 +1231,11 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:13 GMT
+      - Fri, 13 Mar 2026 05:33:05 GMT
       Nel:
       - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
       Report-To:
-      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=wz6e9xAU8X1DLcYIOwGP6M%2B6my7%2BBJN0mD3NRZXpfzPZrOvBXzKGcRTuhh5m6SmP5cdok1tVEqExdwcJDGQT07H4cClLrVhqttbaqNcQL1AwDQ%3D%3D"}]}'
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Laxio5Fq8tIcEPDer1X5wrbdoKp9PG1MwNex60Cb7WoXl8gJZZAyrsDGUp8wYB%2BeOPiVRMNOJfRI2D8WG8Mi5ntI18iWYtVt8sacFOsVhkFTRw%3D%3D"}]}'
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -1884,9 +1261,9 @@ interactions:
       x-ratelimit-remaining:
       - '598'
       x-ratelimit-reset:
-      - '48566'
+      - '56183'
       x-request-id:
-      - ede3edb2a871aee984eb45c4c04410ab
+      - c341232061b7517f68a8b7961680244e
     status:
       code: 200
       message: OK
@@ -1900,7 +1277,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.routescan.io/v2/network/mainnet/evm/8453/etherscan/api?action=txlist&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&module=account&offset=1&page=1
   response:
@@ -1916,13 +1293,13 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:13 GMT
+      - Fri, 13 Mar 2026 05:33:06 GMT
       Via:
-      - 1.1 527aa39b97a843ada9af4a97a50f2838.cloudfront.net (CloudFront)
+      - 1.1 185db6e0753c08dbdc14490ff94c7484.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - 7jtzbDZ8ThbESK0Ar6EXJyQ_pkjXTLZgsJWWbAxY2nfPSrcIjtri0A==
+      - UWuli0VTy2CfQwDMYri3j-qB7MFncb6I1uHwKmgFho-f6QJ2-nvKXA==
       X-Amz-Cf-Pop:
-      - ATL58-P8
+      - MAD53-P6
       X-Cache:
       - Miss from cloudfront
       access-control-allow-origin:
@@ -1930,9 +1307,9 @@ interactions:
       x-ratelimit-rpd-limit:
       - '100000'
       x-ratelimit-rpd-remaining:
-      - '99981'
+      - '99994'
       x-ratelimit-rpd-reset:
-      - '79093'
+      - '60841'
       x-ratelimit-rpm-limit:
       - '300'
       x-ratelimit-rpm-remaining:
@@ -1952,7 +1329,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.routescan.io/v2/network/mainnet/evm/8453/etherscan/api?action=txlistinternal&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&module=account&offset=1&page=1
   response:
@@ -1968,13 +1345,13 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:14 GMT
+      - Fri, 13 Mar 2026 05:33:08 GMT
       Via:
-      - 1.1 7471d40a57945d25345873323210b262.cloudfront.net (CloudFront)
+      - 1.1 e48a14501e2d5f7f3b7b6724900bcac0.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - xOwoBlKPwn6iXilJaltcWExGjp_4-IThJF-ip7Bbk15BxLpG_xzokQ==
+      - l3QpAOHT7nPkfCULHNNDmkKKwJgTlEj_odIw_gWKgkabwlLH5P23mg==
       X-Amz-Cf-Pop:
-      - ATL58-P8
+      - MAD53-P6
       X-Cache:
       - Miss from cloudfront
       access-control-allow-origin:
@@ -1982,9 +1359,9 @@ interactions:
       x-ratelimit-rpd-limit:
       - '100000'
       x-ratelimit-rpd-remaining:
-      - '99980'
+      - '99993'
       x-ratelimit-rpd-reset:
-      - '79093'
+      - '60840'
       x-ratelimit-rpm-limit:
       - '300'
       x-ratelimit-rpm-remaining:
@@ -2004,7 +1381,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=txlist&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=100&module=account&offset=1&page=1
   response:
@@ -2024,7 +1401,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:14 GMT
+      - Fri, 13 Mar 2026 05:33:09 GMT
       Server:
       - nginx
       Vary:
@@ -2050,7 +1427,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=txlistinternal&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=100&module=account&offset=1&page=1
   response:
@@ -2070,7 +1447,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:15 GMT
+      - Fri, 13 Mar 2026 05:33:10 GMT
       Server:
       - nginx
       Vary:
@@ -2078,7 +1455,7 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '2'
+      - '4'
       content-length:
       - '60'
       svid:
@@ -2096,7 +1473,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=tokentx&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=100&module=account&offset=1&page=1
   response:
@@ -2116,7 +1493,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:15 GMT
+      - Fri, 13 Mar 2026 05:33:10 GMT
       Server:
       - nginx
       Vary:
@@ -2124,7 +1501,7 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '3'
+      - '4'
       content-length:
       - '60'
       svid:
@@ -2142,7 +1519,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=balance&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=100&module=account
   response:
@@ -2162,7 +1539,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:17 GMT
+      - Fri, 13 Mar 2026 05:33:11 GMT
       Server:
       - nginx
       Vary:
@@ -2170,7 +1547,7 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '3'
+      - '4'
       content-length:
       - '42'
       svid:
@@ -2188,7 +1565,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=txlist&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=534352&module=account&offset=1&page=1
   response:
@@ -2208,7 +1585,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:17 GMT
+      - Fri, 13 Mar 2026 05:33:11 GMT
       Server:
       - nginx
       Vary:
@@ -2234,7 +1611,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=txlistinternal&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=534352&module=account&offset=1&page=1
   response:
@@ -2254,7 +1631,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:17 GMT
+      - Fri, 13 Mar 2026 05:33:12 GMT
       Server:
       - nginx
       Vary:
@@ -2280,7 +1657,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.etherscan.io/v2/api?action=tokentx&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=534352&module=account&offset=1&page=1
   response:
@@ -2300,7 +1677,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 15 Jan 2026 17:11:19 GMT
+      - Fri, 13 Mar 2026 05:33:13 GMT
       Server:
       - nginx
       Vary:
@@ -2308,7 +1685,7 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '3'
+      - '4'
       content-length:
       - '60'
       svid:
@@ -2326,59 +1703,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
-    method: GET
-    uri: https://api.etherscan.io/v2/api?action=txlist&address=0x9d25AdBcffE28923E619f4Af88ECDe732c985b63&chainid=56&module=account&offset=1&page=1
-  response:
-    body:
-      string: '{"status":"0","message":"NOTOK","result":"Free API access is not supported
-        for this chain. Please upgrade your api plan for full chain coverage. https://etherscan.io/apis"}'
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Thu, 15 Jan 2026 17:11:19 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Nginx-Id:
-      - '2'
-      content-length:
-      - '172'
-      svid:
-      - bsc10
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.41.2.dev441+ga56b3c0f52.d20260113
+      - rotki/1.42.1.dev203+gb4cd351d55
     method: GET
     uri: https://api.zksync.io/api/v0.2/accounts/0x9d25AdBcffE28923E619f4Af88ECDe732c985b63/transactions?direction=older&from=latest&limit=1
   response:
     body:
-      string: '{"request":{"network":"mainnet","apiVersion":"v02","resource":"/api/v0.2/accounts/0x9d25AdBcffE28923E619f4Af88ECDe732c985b63/transactions","args":{"from":"latest","direction":"older","limit":"1","account_id_or_address":"0x9d25AdBcffE28923E619f4Af88ECDe732c985b63"},"timestamp":"2026-01-15T17:11:19.582149286Z"},"status":"success","error":null,"result":{"list":[],"pagination":{"from":"0x0000000000000000000000000000000000000000000000000000000000000000","limit":1,"direction":"older","count":0}}}'
+      string: '{"request":{"network":"mainnet","apiVersion":"v02","resource":"/api/v0.2/accounts/0x9d25AdBcffE28923E619f4Af88ECDe732c985b63/transactions","args":{"limit":"1","account_id_or_address":"0x9d25AdBcffE28923E619f4Af88ECDe732c985b63","direction":"older","from":"latest"},"timestamp":"2026-03-13T05:33:13.662125325Z"},"status":"success","error":null,"result":{"list":[],"pagination":{"from":"0x0000000000000000000000000000000000000000000000000000000000000000","limit":1,"direction":"older","count":0}}}'
     headers:
       Access-Control-Allow-Credentials:
       - 'true'
@@ -2395,7 +1725,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 15 Jan 2026 17:11:19 GMT
+      - Fri, 13 Mar 2026 05:33:13 GMT
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Transfer-Encoding:
