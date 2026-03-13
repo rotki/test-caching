@@ -2,22 +2,22 @@ interactions:
 - request:
     body: '{"method":"getHealth","jsonrpc":"2.0","id":0}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '45'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
       string: '{"jsonrpc":"2.0","result":"ok","id":0}
@@ -39,7 +39,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 22 Jan 2026 16:04:13 GMT
+      - Fri, 13 Mar 2026 13:48:41 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -55,7 +55,7 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-884'
+      - '-705'
       x-ratelimit-method-limit:
       - '40'
       x-ratelimit-method-remaining:
@@ -67,33 +67,33 @@ interactions:
       x-ratelimit-rps-limit:
       - '100'
       x-ratelimit-rps-remaining:
-      - '99'
+      - '98'
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - pit36
+      - fra268
     status:
       code: 200
       message: OK
 - request:
     body: '{"method":"getTransaction","jsonrpc":"2.0","id":0,"params":["5yPBcj2gPfWhkbRi3MFNigkJUzn67WKq4Xj8jEevBpwXRezZgBN6VArxDYTtggvW8xsbTvBJFntSkqiQoz4cgMbU",{"encoding":"json","commitment":"finalized","maxSupportedTransactionVersion":0}]}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '232'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
       string: '{"jsonrpc":"2.0","result":{"blockTime":1753836925,"meta":{"computeUnitsConsumed":98977,"err":null,"fee":5000,"innerInstructions":[{"index":0,"instructions":[{"accounts":[],"data":"2GJh7oUmkZKoz2D12tUqcLDtxh1HhKeuByzYw4L64xJ7SaZxaZUSxftCPQgw76fJLAtW6qLg8w7Lykj74nSX6aeQZktkNtPtx8S1xx9NaQ7mnu9rdEU4dB3nXvx68544QKK7SCBCgUVkmzZ5mBHDyRmEZMQCPe8ZNZknAy5JNGugSZek3CDNz8UDw57pDB41KmgtbqYJd7gGUUJgKpzg6M1BsZtN3a3vPKunVmSSQnWaUtpLv6QwjPrkdevaX8Gk3BY1N3gQHP3BZ8QSF7oC47ANmxfMW","programIdIndex":6,"stackHeight":2},{"accounts":[2,3,6],"data":"8RkZ9BWdS73Hv1ECdBfQ1EY1EoFSEGmeCdJ4raBCk3S24Umg5jHM2S8","programIdIndex":5,"stackHeight":2},{"accounts":[],"data":"117NctUeJFDEfGggMLtdpKbZ13jXS7EfABApmQB7Nw1GUnumaPUWT5QPTUhyhB2nCXW2URqu9zWRzrPaXRzSakx17pekymeGEW2xDnLUvUSN6BX1CRXEsphSbozneBEzqp8936boEwBDHmtouAUNAog1A2dUJvfwyJjNzoiwWY2iWiyocbrj51ZEYujXDyLVTMfPvKoKwUSaJWms256BtcfJW6kmVF9yBNiHkPc8zV4vBChs2M6Z1875tjZ1RZRLtmaX6HFDLXTRejgwos5TsGhS2DqfPxMSAzG21B8t57uQrP2EUdK5m3kyByT1zFooh5WQ8RVhvDTs5wpC6HiXuMVGM3jgF6gZyeo27mpTeUu3fxKaD1s3ws4DKhVAz7Qs6siwXTdasQWVXBszit3ubyqngiXUC9MC2FpFDe5voAaK6dRfLMz1CH59cw2rtgQr6MiP8aA5CoRsUkJ3EZ1Gk7oPJmr2RbGRywx8ViMG55ppJBb8Jgyc1E5zF4CsnFSbuVK7pLvrAVGghXiXEdGjVvBVkMdiXTnVzKzxMACMc4d3sANynCuujCByfiJFPD69mDZe1XDS9Adqnn4ughiU6paEuRVPYTxxYbkue2VQJNEGtSQZ7Q929HKuR2U1BzXFs6RvcrEqHrKV99ZdFQXYqgZunj2ajME77T7DuuGiu36nYP2nnPhCykeeqMAhFGXvW8gQjwqBB73MQXHnkYQ8QWWPByos1UKsrxppdk3F41auoKjrBgyEphf1jes256yARaYgoUo6v17VAfx11emWbV3DiCcoCYaVRu2VjmMaiK2adDJR3Kd6DKnwZdoSxAeFD6VAz2t2B7oJbeVdDS7cdrb65VWATmcXx68yJknTYgL9gEXUzUMRDtSS7KaLRa2HxQk7sqhAwpcynGNThHnj9VRGpdTr3oNZkSAuQktkawVHtHsnPrrJnYJAbXkiA64U6DLP1ZZYvzL4ALEzkJ81rsDb5kfYp4MDjiLPJUmdeVxqFFuN5LFVcPuTnreZNvkH9ov1YfS3KLb2tYzwSNt2cYZSHFD","programIdIndex":6,"stackHeight":3}]},{"index":1,"instructions":[{"accounts":[],"data":"2GJh7oUmkZKnaHgnq9YSV3KnQCD4BLNzE8eycR73PYgrjsFMSS14KMBKrA5P2rT1Ycpa7kDdx8wLaadbpZFcMXgPLQmMgRmyG6Sms2n9eTDxMgpMwxn4YQEvNZyouZEQ3jUZP2N2XVTVxn5mi4SYTffJdbKNFQYjxTCLw4chGKqUGreeRgMxEegRjPBsGHh9Rc54QsuzwLWMyYUSz5WZ8wfyW6BNqJ7Au3CzjeH1mZaNgTYcLb1turU6TgbFZpPxvURPTgKvmvy9pFF9wT2UVW7DDVqL4","programIdIndex":6,"stackHeight":2},{"accounts":[2,3,6],"data":"8RkZ9BWdS73QicPEhDbTAAcqDPRbntM4rYNd8otyohXgk3ULJxGwPck","programIdIndex":5,"stackHeight":2},{"accounts":[],"data":"117NctUeJFDEfGggMLtdpKbZ13jXS7EfABApmQB7Nw1GUnumaPUcFa5CAfCfRTjdEmavS7GVLXj3KAZo5nRgxepNUCzpeZb9y3GadUnEy4uDsQ8S7XbKJcY5zyv3WnVH5tBxvmEYK36G9BdLAQZxUM7J12Rau5e7tGTHXsB8T4kuNZT1jYbCPPdF8Z1qbYRuK6zWp2P34EUPJrjeD89HbUfQ5KkGBiaCvg2hHXsutTVK5FGFq9p4LpVvp51bZDrM7TGKgCPCE51KrBpyQQN4VM6fTZHFJuNUi1JYZhDFxkYMHXZLL5aUjAbf4Gaw3AvMUDAyoubA2qMMP6o8UubRhR2PuJ9ZtGszBygrwohfUPQV7PseksCtUtebhqWtKyzKD16NDee5moQXg7Q4c1vf8jTuXvxh2HNe82EXUsGm8Wng44nD7gvTVUBA7LqACiGJFV4SZTX4UMh6Jqgs6GUfE6tFzuDkAh2pj8fXw6mXtwRKDUsZJyMDGZ1kEZ54GHzz8cR3NjL43Nb9ExixivT9nRFptvVAuzmYAjxo84oJ8sHEF9MooraVFmNUeftjAzSTvAwWEbg2dERSFi3LPLkcFRwdkxMtEBaBSCQpyKz8XZYyoJa9Cu2sAnb94QgWvZhnWmUPv1rh2QjYE2pqf5sqeRWgUbQde5gGGRG5huuQFqV2eurUQX1Yy8pqqvXhwN69iBVv7oFS5vAZYB5fvBbk1npq37sUpbZBUQ6Ld4tQ7VsaKH3Wo9zYqeu5wM2wCuhzontjqF48cFJFuzNdNPxau5rWrKNBDrowHdN1uB7oodoDDbexBsDr6hDMdnqvkV3o4xCnyMNMLN4NzPcfcsZxY2HzjgQz63K2jteQSgqu8fdsXAAwqZQ6cNwomANQbe1AatinkNyy8qERVAqWxFm43LLviY9oj5ydebq97uyX9EvbJLa7MBErywGuKjQDKDifZRfHWwLwMxAjwhNG8Dx96iRpg5rvtoTQGmVAsCjMVjterDmSMWbyzP4HvVaFKChTXCagdQskkp2og2xoASqWx3FKP8b","programIdIndex":6,"stackHeight":3}]}],"loadedAddresses":{"readonly":[],"writable":[]},"logMessages":["Program
@@ -143,7 +143,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 22 Jan 2026 16:04:13 GMT
+      - Fri, 13 Mar 2026 13:48:41 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -159,11 +159,11 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-882'
+      - '-709'
       x-ratelimit-method-limit:
       - '2'
       x-ratelimit-method-remaining:
-      - '1'
+      - '0'
       x-ratelimit-pubsub-limit:
       - '5'
       x-ratelimit-pubsub-remaining:
@@ -171,33 +171,33 @@ interactions:
       x-ratelimit-rps-limit:
       - '100'
       x-ratelimit-rps-remaining:
-      - '98'
+      - '97'
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - pit36
+      - fra268
     status:
       code: 200
       message: OK
 - request:
     body: '{"method":"getTransaction","jsonrpc":"2.0","id":0,"params":["zXGZgpE77nKe41FLFAvCrnK4BrnQvQzvcD9ddRJuPvBDca16BZbQe4zJYQSs9VWpYqvVL2Sqm2E3QQLwbA7ZjjV",{"encoding":"json","commitment":"finalized","maxSupportedTransactionVersion":0}]}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '231'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
       string: '{"jsonrpc":"2.0","result":{"blockTime":1753836967,"meta":{"computeUnitsConsumed":2550,"err":null,"fee":5000,"innerInstructions":[],"loadedAddresses":{"readonly":[],"writable":[]},"logMessages":["Program
@@ -237,7 +237,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 22 Jan 2026 16:04:15 GMT
+      - Fri, 13 Mar 2026 13:48:53 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -253,11 +253,11 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-877'
+      - '-742'
       x-ratelimit-method-limit:
       - '2'
       x-ratelimit-method-remaining:
-      - '0'
+      - '1'
       x-ratelimit-pubsub-limit:
       - '5'
       x-ratelimit-pubsub-remaining:
@@ -265,33 +265,33 @@ interactions:
       x-ratelimit-rps-limit:
       - '100'
       x-ratelimit-rps-remaining:
-      - '97'
+      - '99'
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - pit36
+      - fra268
     status:
       code: 200
       message: OK
 - request:
     body: '{"method":"getTransaction","jsonrpc":"2.0","id":0,"params":["2ZYFMzQMpDFcAmXo2UMhGErSitNpuZ4zeu548QvMU8k37cgetF91wTYnGmN1oZq6EG7zXaZyNPCzWtakDnSJEtgF",{"encoding":"json","commitment":"finalized","maxSupportedTransactionVersion":0}]}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '232'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
       string: '{"jsonrpc":"2.0","result":{"blockTime":1753911942,"meta":{"computeUnitsConsumed":900,"err":null,"fee":13000,"innerInstructions":[],"loadedAddresses":{"readonly":[],"writable":[]},"logMessages":["Program
@@ -321,7 +321,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 22 Jan 2026 16:04:38 GMT
+      - Fri, 13 Mar 2026 13:48:53 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -337,11 +337,11 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-757'
+      - '-742'
       x-ratelimit-method-limit:
       - '2'
       x-ratelimit-method-remaining:
-      - '1'
+      - '0'
       x-ratelimit-pubsub-limit:
       - '5'
       x-ratelimit-pubsub-remaining:
@@ -349,33 +349,33 @@ interactions:
       x-ratelimit-rps-limit:
       - '100'
       x-ratelimit-rps-remaining:
-      - '99'
+      - '98'
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - pit36
+      - fra268
     status:
       code: 200
       message: OK
 - request:
     body: '{"method":"getTransaction","jsonrpc":"2.0","id":0,"params":["4XaCfTLNno3rAETUgRC5tfPwzvvkJzARQYcyjas4nEyzkM7iFgZtHC2rY85JxJsb7baJqcnLSdqHdrhjgffQXuyo",{"encoding":"json","commitment":"finalized","maxSupportedTransactionVersion":0}]}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '232'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
       string: '{"jsonrpc":"2.0","result":{"blockTime":1762473839,"meta":{"computeUnitsConsumed":127598,"costUnits":132617,"err":null,"fee":20001,"innerInstructions":[{"index":0,"instructions":[{"accounts":[0,2,0,4,20,18],"data":"1","programIdIndex":19,"stackHeight":2},{"accounts":[4],"data":"84eT","programIdIndex":18,"stackHeight":3},{"accounts":[0,2],"data":"11116Jest8ZCQoJ1XdoNCrchghEy972gG2rHGPQ32sgerg21uxUSPw4RrnfWKAR8QHzW4s","programIdIndex":20,"stackHeight":3},{"accounts":[2],"data":"P","programIdIndex":18,"stackHeight":3},{"accounts":[2,4],"data":"6TaqHgXRRtvV7NeHxAKyYGwZEzR87nz9GsWo3MHh4zYPW","programIdIndex":18,"stackHeight":3},{"accounts":[0,5,6,1,2,7,8,9,17,18,15,3,4,10,11,12,13],"data":"ASCsAbe1UnDmjcYZ81poh3Cctx7uCfBXiETepCQH5jTQfJZ523qFJiMn","programIdIndex":21,"stackHeight":2},{"accounts":[1,3,7,0],"data":"g75WwQvhbPQ37","programIdIndex":17,"stackHeight":3},{"accounts":[8,4,2,6],"data":"inqQKCFPa2hBm","programIdIndex":18,"stackHeight":3}]}],"loadedAddresses":{"readonly":["TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL","11111111111111111111111111111111","CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK"],"writable":[]},"logMessages":["Program
@@ -429,7 +429,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 22 Jan 2026 16:04:37 GMT
+      - Fri, 13 Mar 2026 13:49:16 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -445,11 +445,11 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-750'
+      - '-895'
       x-ratelimit-method-limit:
       - '2'
       x-ratelimit-method-remaining:
-      - '0'
+      - '1'
       x-ratelimit-pubsub-limit:
       - '5'
       x-ratelimit-pubsub-remaining:
@@ -457,36 +457,36 @@ interactions:
       x-ratelimit-rps-limit:
       - '100'
       x-ratelimit-rps-remaining:
-      - '98'
+      - '99'
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - pit36
+      - fra268
     status:
       code: 200
       message: OK
 - request:
     body: '{"method":"getAccountInfo","jsonrpc":"2.0","id":0,"params":["2immgwYNHBbyVQKVGCEkgWpi53bLwWNRMB5G2nbgYV17",{"encoding":"base64","dataSlice":null,"commitment":"finalized","minContextSlot":null}]}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '194'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.0.13","slot":395219260},"value":{"data":["AQAAAP//////////d49+DAAAAAAAAQZMWvw7GUNJdaccNBVnb57OKakxL2BHLYvhRwVILRsgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMGRm/lIRcy/+ytunLDm+e8jOW7xfcSayxDmzpAAAAABt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkG3fbh7nWP3hhCXbzkbM3athr8TYO5DSf+vfko2KGL/AVKU1D4XciC1hSlVnJ4iilt3x6rq9CmBniISTL07vagBqfVFxksXFEhjMlMPUrxf1ja7gibof1E49vZigAAAAAGp9UXGMd0yShWY5hpHV62i164o5tLbVxzVVshAAAAAIyXJY9OJInxuz0QKRSODYMLWhOZ2v8QhASOe9jb6fhZC3BlsePRfEU4nVJ/awTDzVi4bHMaoP21SbbRvAP4KUbIScv+6Yw2LHF/6K0ZjUPibbSWXCirYPGuuVl7zT789IUPLW4CpHr4JNCatp3ELXDLKMv6JJ+37le50lbBJ2LvDQdRqCgtphMF/imcN7mY5YRx2xE1A3MQ+L4QRaYK9u4GRfZP3LsAd00a+IkCpA22UNQMKdq5BFbJuwuOLqc8zxCTDlqxBG8J0HcxtfogQHDK06ukzfaXiNDKAob1MqBHS9lJxDYCwz8gd5DtFqNSTKG5l1zxIaKpDP/sffi2is1H9aKveyXSu5StXElYRl9SD5As0DHE4N0GLnf84/siiKXVyp4Ez121kLcUui/jLLFZEz/BwZK3Ilf9B9OcsEAeDMKAy2vjGSxQODgBz0QwGA+eP4ZjIjrIAQaXENv31QfLlOdXSRCkaybRniDHF4C8YcwhcvsqrOVuTP4B2Na+9wLdtrB31uz2rtlFI5kahdsnp/d1SrASDInYCtTYtdoke4kX+hoKWcEWM4Tle8pTUkUVv4BxS6fje/EzKBE4Qu9N9LMnrw/JNO0hqMVB4rk/2ou4AB1loQ7FZoPwut2o4KZB+0p9xnbrQKw038qjpHar+PyDwvxBRcu5hpHw3dguezeWv+IwvgW5icu8EGkhGa9AkFPPJT7VMSFb8xowveU=","base64"],"executable":false,"lamports":180602362,"owner":"AddressLookupTab1e1111111111111111111111111","rentEpoch":18446744073709551615,"space":824}},"id":0}
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.10","slot":406147861},"value":{"data":["AQAAAP//////////d49+DAAAAAAAAQZMWvw7GUNJdaccNBVnb57OKakxL2BHLYvhRwVILRsgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMGRm/lIRcy/+ytunLDm+e8jOW7xfcSayxDmzpAAAAABt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkG3fbh7nWP3hhCXbzkbM3athr8TYO5DSf+vfko2KGL/AVKU1D4XciC1hSlVnJ4iilt3x6rq9CmBniISTL07vagBqfVFxksXFEhjMlMPUrxf1ja7gibof1E49vZigAAAAAGp9UXGMd0yShWY5hpHV62i164o5tLbVxzVVshAAAAAIyXJY9OJInxuz0QKRSODYMLWhOZ2v8QhASOe9jb6fhZC3BlsePRfEU4nVJ/awTDzVi4bHMaoP21SbbRvAP4KUbIScv+6Yw2LHF/6K0ZjUPibbSWXCirYPGuuVl7zT789IUPLW4CpHr4JNCatp3ELXDLKMv6JJ+37le50lbBJ2LvDQdRqCgtphMF/imcN7mY5YRx2xE1A3MQ+L4QRaYK9u4GRfZP3LsAd00a+IkCpA22UNQMKdq5BFbJuwuOLqc8zxCTDlqxBG8J0HcxtfogQHDK06ukzfaXiNDKAob1MqBHS9lJxDYCwz8gd5DtFqNSTKG5l1zxIaKpDP/sffi2is1H9aKveyXSu5StXElYRl9SD5As0DHE4N0GLnf84/siiKXVyp4Ez121kLcUui/jLLFZEz/BwZK3Ilf9B9OcsEAeDMKAy2vjGSxQODgBz0QwGA+eP4ZjIjrIAQaXENv31QfLlOdXSRCkaybRniDHF4C8YcwhcvsqrOVuTP4B2Na+9wLdtrB31uz2rtlFI5kahdsnp/d1SrASDInYCtTYtdoke4kX+hoKWcEWM4Tle8pTUkUVv4BxS6fje/EzKBE4Qu9N9LMnrw/JNO0hqMVB4rk/2ou4AB1loQ7FZoPwut2o4KZB+0p9xnbrQKw038qjpHar+PyDwvxBRcu5hpHw3dguezeWv+IwvgW5icu8EGkhGa9AkFPPJT7VMSFb8xowveU=","base64"],"executable":false,"lamports":180602362,"owner":"AddressLookupTab1e1111111111111111111111111","rentEpoch":18446744073709551615,"space":824}},"id":0}
 
         '
     headers:
@@ -505,7 +505,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 22 Jan 2026 16:04:38 GMT
+      - Fri, 13 Mar 2026 13:49:16 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -521,7 +521,7 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-768'
+      - '-895'
       x-ratelimit-method-limit:
       - '30'
       x-ratelimit-method-remaining:
@@ -533,33 +533,33 @@ interactions:
       x-ratelimit-rps-limit:
       - '100'
       x-ratelimit-rps-remaining:
-      - '97'
+      - '98'
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - pit36
+      - fra268
     status:
       code: 200
       message: OK
 - request:
     body: '{"method":"getSignaturesForAddress","jsonrpc":"2.0","id":0,"params":["7T8ckKtdc5DH7ACS5AnCny7rVXYJPEsaAbdBri1FhPxY",{"before":"2ZYFMzQMpDFcAmXo2UMhGErSitNpuZ4zeu548QvMU8k37cgetF91wTYnGmN1oZq6EG7zXaZyNPCzWtakDnSJEtgF","until":"5yPBcj2gPfWhkbRi3MFNigkJUzn67WKq4Xj8jEevBpwXRezZgBN6VArxDYTtggvW8xsbTvBJFntSkqiQoz4cgMbU","limit":1000,"commitment":"finalized","minContextSlot":null}]}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '378'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
       string: '{"jsonrpc":"2.0","result":[{"blockTime":1753836968,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"4UoyrhPVWBCkiWUMWdyHUQQ29qMxCFXM6iXt7pL9ufaGgcnA8nz1qGQZfgKJcRURgvwmpLWeBVwfp1EJDZoVXPDA","slot":356623156},{"blockTime":1753836967,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"zXGZgpE77nKe41FLFAvCrnK4BrnQvQzvcD9ddRJuPvBDca16BZbQe4zJYQSs9VWpYqvVL2Sqm2E3QQLwbA7ZjjV","slot":356623152},{"blockTime":1753836965,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"5HzJs4E3KobYW4dfDAvxzuUPriKdK71iPG7g7w3VQBC1bgpQmHjeevkBBmp8WFf3FeosqMkcgSHV5LPqwDfmvr2X","slot":356623147}],"id":0}
@@ -581,7 +581,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 22 Jan 2026 16:04:38 GMT
+      - Fri, 13 Mar 2026 13:49:16 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -597,7 +597,7 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-771'
+      - '-892'
       x-ratelimit-method-limit:
       - '2'
       x-ratelimit-method-remaining:
@@ -609,33 +609,33 @@ interactions:
       x-ratelimit-rps-limit:
       - '100'
       x-ratelimit-rps-remaining:
-      - '96'
+      - '97'
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - pit36
+      - fra268
     status:
       code: 200
       message: OK
 - request:
     body: '{"method":"getTransaction","jsonrpc":"2.0","id":0,"params":["4UoyrhPVWBCkiWUMWdyHUQQ29qMxCFXM6iXt7pL9ufaGgcnA8nz1qGQZfgKJcRURgvwmpLWeBVwfp1EJDZoVXPDA",{"encoding":"json","commitment":"finalized","maxSupportedTransactionVersion":0}]}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '232'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
       string: '{"jsonrpc":"2.0","result":{"blockTime":1753836968,"meta":{"computeUnitsConsumed":2550,"err":null,"fee":5000,"innerInstructions":[],"loadedAddresses":{"readonly":[],"writable":[]},"logMessages":["Program
@@ -675,7 +675,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 22 Jan 2026 16:04:53 GMT
+      - Fri, 13 Mar 2026 13:49:17 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -691,11 +691,11 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-817'
+      - '-891'
       x-ratelimit-method-limit:
       - '2'
       x-ratelimit-method-remaining:
-      - '1'
+      - '0'
       x-ratelimit-pubsub-limit:
       - '5'
       x-ratelimit-pubsub-remaining:
@@ -703,33 +703,33 @@ interactions:
       x-ratelimit-rps-limit:
       - '100'
       x-ratelimit-rps-remaining:
-      - '99'
+      - '96'
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - pit36
+      - fra268
     status:
       code: 200
       message: OK
 - request:
     body: '{"method":"getTransaction","jsonrpc":"2.0","id":0,"params":["5HzJs4E3KobYW4dfDAvxzuUPriKdK71iPG7g7w3VQBC1bgpQmHjeevkBBmp8WFf3FeosqMkcgSHV5LPqwDfmvr2X",{"encoding":"json","commitment":"finalized","maxSupportedTransactionVersion":0}]}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '232'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
       string: '{"jsonrpc":"2.0","result":{"blockTime":1753836965,"meta":{"computeUnitsConsumed":86134,"err":null,"fee":20000,"innerInstructions":[{"index":4,"instructions":[{"accounts":[6,14,1,4],"data":"gKJveBa3Dom2p","programIdIndex":13,"stackHeight":2},{"accounts":[7,16,9,4],"data":"iBq8aRowuvJyj","programIdIndex":13,"stackHeight":2}]},{"index":6,"instructions":[{"accounts":[2,10,0],"data":"6uisGWzpevBq","programIdIndex":18,"stackHeight":2},{"accounts":[2,0,0],"data":"A","programIdIndex":18,"stackHeight":2},{"accounts":[10,0,3],"data":"A","programIdIndex":18,"stackHeight":2}]}],"loadedAddresses":{"readonly":["SysvarRent111111111111111111111111111111111","TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr"],"writable":[]},"logMessages":["Program
@@ -785,7 +785,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 22 Jan 2026 16:04:53 GMT
+      - Fri, 13 Mar 2026 13:49:28 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -801,7 +801,7 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-812'
+      - '-800'
       x-ratelimit-method-limit:
       - '2'
       x-ratelimit-method-remaining:
@@ -813,36 +813,36 @@ interactions:
       x-ratelimit-rps-limit:
       - '100'
       x-ratelimit-rps-remaining:
-      - '98'
+      - '97'
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - pit36
+      - fra268
     status:
       code: 200
       message: OK
 - request:
     body: '{"method":"getAccountInfo","jsonrpc":"2.0","id":0,"params":["AcL1Vo8oy1ULiavEcjSUcwfBSForXMudcZvDZy5nzJkU",{"encoding":"base64","dataSlice":null,"commitment":"finalized","minContextSlot":null}]}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '194'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.0.14","slot":395219299},"value":{"data":["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","base64"],"executable":false,"lamports":16871040,"owner":"AddressLookupTab1e1111111111111111111111111","rentEpoch":18446744073709551615,"space":2296}},"id":0}
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.10","slot":406147892},"value":{"data":["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","base64"],"executable":false,"lamports":16871040,"owner":"AddressLookupTab1e1111111111111111111111111","rentEpoch":18446744073709551615,"space":2296}},"id":0}
 
         '
     headers:
@@ -861,7 +861,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 22 Jan 2026 16:04:54 GMT
+      - Fri, 13 Mar 2026 13:49:28 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -877,7 +877,7 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-815'
+      - '-807'
       x-ratelimit-method-limit:
       - '30'
       x-ratelimit-method-remaining:
@@ -889,33 +889,33 @@ interactions:
       x-ratelimit-rps-limit:
       - '100'
       x-ratelimit-rps-remaining:
-      - '98'
+      - '97'
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - pit36
+      - fra268
     status:
       code: 200
       message: OK
 - request:
     body: '{"method":"getSignaturesForAddress","jsonrpc":"2.0","id":0,"params":["BeWvKX4GCSzfQdWgvzH1nzNFujCAktbV2wYrUMGpQz3",{"before":"4XaCfTLNno3rAETUgRC5tfPwzvvkJzARQYcyjas4nEyzkM7iFgZtHC2rY85JxJsb7baJqcnLSdqHdrhjgffQXuyo","until":null,"limit":1000,"commitment":"finalized","minContextSlot":null}]}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '291'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
       string: '{"jsonrpc":"2.0","result":[{"blockTime":1762471062,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"3bg38hZgFD5xwnwf3gj3oik8F22kF3GtKZmQd3bj1syK7b9GCNqbGKnir4XuhjUXhpe4qQbeYPZjCzowLUH17Rx1","slot":378394892},{"blockTime":1762471060,"confirmationStatus":"finalized","err":null,"memo":null,"signature":"3Nz9gnhcxgYSeK7B9PNvabUDKCt37eYNaEx8kZoXBuvY3SS9xuw9emEPdwBPBcSBL1QZ8sBDR1xGpFLj3XGVGxFb","slot":378394887}],"id":0}
@@ -937,7 +937,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 22 Jan 2026 16:04:54 GMT
+      - Fri, 13 Mar 2026 13:49:28 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -953,7 +953,7 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-815'
+      - '-816'
       x-ratelimit-method-limit:
       - '2'
       x-ratelimit-method-remaining:
@@ -965,33 +965,33 @@ interactions:
       x-ratelimit-rps-limit:
       - '100'
       x-ratelimit-rps-remaining:
-      - '97'
+      - '96'
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - pit36
+      - fra268
     status:
       code: 200
       message: OK
 - request:
     body: '{"method":"getTransaction","jsonrpc":"2.0","id":0,"params":["3bg38hZgFD5xwnwf3gj3oik8F22kF3GtKZmQd3bj1syK7b9GCNqbGKnir4XuhjUXhpe4qQbeYPZjCzowLUH17Rx1",{"encoding":"json","commitment":"finalized","maxSupportedTransactionVersion":0}]}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '232'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
       string: '{"jsonrpc":"2.0","result":{"blockTime":1762471062,"meta":{"computeUnitsConsumed":53027,"costUnits":55097,"err":null,"fee":5000,"innerInstructions":[{"index":1,"instructions":[{"accounts":[0,1],"data":"1111585ceTqzRJ5dgkTQXzrNgQz9vy3yBsWhcSHAoBGyicsfEHzP3dHo84eYXjp9mxMLhF","programIdIndex":4,"stackHeight":2},{"accounts":[2,9,3,6],"data":"h2hvpy3AGyBu7","programIdIndex":11,"stackHeight":2},{"accounts":[10],"data":"9TsSUqX1Euf1kfjPg6QzPHF6EcEiYpP1oKAJqkEqMLr1cPJSyAcKXDZnnfacxHUJKgdPCkSihPxbUCWcDAJyLYCLSZwgHegTi3rjsnTziChqxFeQQgQ8TZ3dMHoWAYy55C5Ep9FbLS9VWmD6ZXBtAGQYvSDnDFT1xHX7vAffxD2FbCAFvvaJGFMN4aCZ26Fy3AMm5LbaeaoEJKg5YAZXqpHYwsH6Rgb52EFyaps8cntiaKxzQ9cLRAiaCMV959VvcLUurzpQsGtuqLtwpkFs8NKujaGT8dH69sViD38XUhgU3SQ5WEbbXas4juvWLStEthBPVPhMtsP2QDqzu6GtrLQTtRciAQJM31tysJ4LsWGk3jhU2pr1Nt1ZbFRbJvQwQB8dPR4aCDZY2bJY1STB4bwAvniDoySu1SDFUqcWbPVAQ2DiFjtNGC8KWGfafX4L7ZfvYrhx7TqhZ4wdSHmswvbg1NkcRLkijYAGiAJyYd2KepMtwwZea63f7WZUhZs8eLB4ucxgmLTzWs8oGyJsxWoP4ghjwqHKuyyLvmLnAXPaKLb","programIdIndex":8,"stackHeight":2}]}],"loadedAddresses":{"readonly":[],"writable":[]},"logMessages":["Program
@@ -1026,7 +1026,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 22 Jan 2026 16:04:59 GMT
+      - Fri, 13 Mar 2026 13:49:40 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -1042,7 +1042,7 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-818'
+      - '-922'
       x-ratelimit-method-limit:
       - '2'
       x-ratelimit-method-remaining:
@@ -1054,33 +1054,33 @@ interactions:
       x-ratelimit-rps-limit:
       - '100'
       x-ratelimit-rps-remaining:
-      - '97'
+      - '99'
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - pit36
+      - fra268
     status:
       code: 200
       message: OK
 - request:
     body: '{"method":"getTransaction","jsonrpc":"2.0","id":0,"params":["3Nz9gnhcxgYSeK7B9PNvabUDKCt37eYNaEx8kZoXBuvY3SS9xuw9emEPdwBPBcSBL1QZ8sBDR1xGpFLj3XGVGxFb",{"encoding":"json","commitment":"finalized","maxSupportedTransactionVersion":0}]}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '232'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
       string: '{"jsonrpc":"2.0","result":{"blockTime":1762471060,"meta":{"computeUnitsConsumed":20514,"costUnits":21898,"err":null,"fee":5000,"innerInstructions":[{"index":0,"instructions":[{"accounts":[5],"data":"84eT","programIdIndex":6,"stackHeight":2},{"accounts":[0,1],"data":"11119os1e9qSs2u7TsThXqkBSRVFxhmYaFKFZ1waB2X7armDmvK3p5GmLdUxYdg3h7QSrL","programIdIndex":2,"stackHeight":2},{"accounts":[1],"data":"P","programIdIndex":6,"stackHeight":2},{"accounts":[1,5],"data":"6TaqHgXRRtvV7NeHxAKyYGwZEzR87nz9GsWo3MHh4zYPW","programIdIndex":6,"stackHeight":2}]}],"loadedAddresses":{"readonly":[],"writable":[]},"logMessages":["Program
@@ -1119,7 +1119,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 22 Jan 2026 16:05:00 GMT
+      - Fri, 13 Mar 2026 13:49:41 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -1135,7 +1135,7 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-808'
+      - '-920'
       x-ratelimit-method-limit:
       - '2'
       x-ratelimit-method-remaining:
@@ -1147,11 +1147,11 @@ interactions:
       x-ratelimit-rps-limit:
       - '100'
       x-ratelimit-rps-remaining:
-      - '96'
+      - '98'
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - pit36
+      - fra268
     status:
       code: 200
       message: OK

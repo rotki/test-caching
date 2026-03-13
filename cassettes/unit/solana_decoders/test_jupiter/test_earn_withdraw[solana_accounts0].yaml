@@ -2,22 +2,22 @@ interactions:
 - request:
     body: '{"method":"getHealth","jsonrpc":"2.0","id":0}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '45'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
       string: '{"jsonrpc":"2.0","result":"ok","id":0}
@@ -39,7 +39,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 26 Feb 2026 21:27:13 GMT
+      - Fri, 13 Mar 2026 13:44:39 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -55,7 +55,7 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-871'
+      - '-1600'
       x-ratelimit-method-limit:
       - '40'
       x-ratelimit-method-remaining:
@@ -67,33 +67,33 @@ interactions:
       x-ratelimit-rps-limit:
       - '100'
       x-ratelimit-rps-remaining:
-      - '95'
+      - '97'
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - dal38
+      - fra268
     status:
       code: 200
       message: OK
 - request:
     body: '{"method":"getTransaction","jsonrpc":"2.0","id":0,"params":["4Tnpv3ZgMcUTcYdq6tPkR1y9kHqMtXtscR5S22A5hb7diKxUH81fit2FRQZ2iaYfocMj7PJP5XysnwXmTDSt84pG",{"encoding":"json","commitment":"finalized","maxSupportedTransactionVersion":0}]}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '232'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
       string: '{"jsonrpc":"2.0","result":{"blockTime":1772123306,"meta":{"computeUnitsConsumed":71593,"costUnits":76321,"err":null,"fee":5000,"innerInstructions":[{"index":0,"instructions":[{"accounts":[1,4,0],"data":"7Sr4UtxZF8F9","programIdIndex":16,"stackHeight":2},{"accounts":[3,9,5,13,7,6,10,14,2,10,10,10,16,17],"data":"5D3nYNAt6SauHaFEuijCzw1tK6zpatuQREdUJwqmyboZoVHVeKdmYxCaZWfhDiEfdaqWvpVSonLL2zZnDKB7JGosT4v2YQuTTaT8UBVHYGWr5LQ6kGErGq4A8KszdY9bUCfcx1iJAiiK9Pd2","programIdIndex":10,"stackHeight":2},{"accounts":[7,13,2,9],"data":"i67c6xMDvVZSm","programIdIndex":16,"stackHeight":3}]}],"loadedAddresses":{"readonly":[],"writable":[]},"logMessages":["Program
@@ -130,7 +130,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 26 Feb 2026 21:27:13 GMT
+      - Fri, 13 Mar 2026 13:44:39 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -146,11 +146,163 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-869'
+      - '-1592'
       x-ratelimit-method-limit:
       - '2'
       x-ratelimit-method-remaining:
-      - '0'
+      - '1'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '96'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra268
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"method":"getAccountInfo","jsonrpc":"2.0","id":0,"params":["9fvHrYNw1A8Evpcj7X2yy4k4fT7nNHcA9L6UsamNHAif",{"encoding":"base64","dataSlice":null,"commitment":"finalized","minContextSlot":null}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '194'
+      Content-Type:
+      - application/json
+      Host:
+      - api.mainnet-beta.solana.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.10","slot":406147163},"value":{"data":["AQAAAEcn8RD5rZyCj3b2Rq49ZiVsmScRvvn3bU9qhBHACBPVvXS5lNotAAAGAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==","base64"],"executable":false,"lamports":1461600,"owner":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","rentEpoch":18446744073709551615,"space":82}},"id":0}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      content-length:
+      - '366'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 13 Mar 2026 13:44:39 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-1577'
+      x-ratelimit-method-limit:
+      - '30'
+      x-ratelimit-method-remaining:
+      - '24'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '95'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra268
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"method":"getAccountInfo","jsonrpc":"2.0","id":0,"params":["2dQVs3ckSfiymJeK5kyfBRTDuaPHKdS6PDcAS41AQi3v",{"encoding":"base64","dataSlice":null,"commitment":"finalized","minContextSlot":null}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '194'
+      Content-Type:
+      - application/json
+      Host:
+      - api.mainnet-beta.solana.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.10","slot":406147164},"value":{"data":["BEcn8RD5rZyCj3b2Rq49ZiVsmScRvvn3bU9qhBHACBPVgNXSb65gpspyF0O1/txlPkAxHiv4sDJVx8ZJ9rstgEQgAAAAanVwaXRlciBsZW5kIFVTREcAAAAAAAAAAAAAAAAAAAAKAAAAamxVU0RHAAAAAMgAAABodHRwczovL2Nkbi5pbnN0YWRhcHAuaW8vc29sYW5hL3Rva2Vucy9tZXRhZGF0YS91c2RnLmpzb24AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAf8BAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==","base64"],"executable":false,"lamports":5115600,"owner":"metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s","rentEpoch":18446744073709551615,"space":607}},"id":0}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      content-length:
+      - '1067'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 13 Mar 2026 13:44:40 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-1574'
+      x-ratelimit-method-limit:
+      - '30'
+      x-ratelimit-method-remaining:
+      - '23'
       x-ratelimit-pubsub-limit:
       - '5'
       x-ratelimit-pubsub-remaining:
@@ -162,32 +314,32 @@ interactions:
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - dal38
+      - fra268
     status:
       code: 200
       message: OK
 - request:
-    body: '{"method":"getAccountInfo","jsonrpc":"2.0","id":0,"params":["9fvHrYNw1A8Evpcj7X2yy4k4fT7nNHcA9L6UsamNHAif",{"encoding":"base64","dataSlice":null,"commitment":"finalized","minContextSlot":null}]}'
+    body: '{"method":"getAccountInfo","jsonrpc":"2.0","id":0,"params":["2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",{"encoding":"base64","dataSlice":null,"commitment":"finalized","minContextSlot":null}]}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '194'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.8","slot":402924701},"value":{"data":["AQAAAEcn8RD5rZyCj3b2Rq49ZiVsmScRvvn3bU9qhBHACBPVrfstKz0uAAAGAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==","base64"],"executable":false,"lamports":1461600,"owner":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","rentEpoch":18446744073709551615,"space":82}},"id":0}
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.10","slot":406147164},"value":{"data":["AQAAACW7+VRuvzdb7gNflgBBldomzRryvPU2iRUDDIKjMLX+qxQ+kSlGAwAGAQEAAAAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQMAIAAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKwwAIAAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKwEAbAAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKxeFMmHvarhTKmfwU4ZarTEpP88HzxIKtbmhVwZUjcArAAAAAAAAAADSAgAAAAAAAAAAAAAAAAAAAADSAgAAAAAAAAAAAAAAAAAAAAAEAEEAF4UyYe9quFMqZ/BThlqtMSk/zwfPEgq1uaFXBlSNwCsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAIEAF4UyYe9quFMqZ/BThlqtMSk/zwfPEgq1uaFXBlSNwCsm0cx6nT0Kf+Fu2TflaERKcxbP98dKRVQu4LCksu7ubQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgBAABeFMmHvarhTKmfwU4ZarTEpP88HzxIKtbmhVwZUjcArAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAEAAF4UyYe9quFMqZ/BThlqtMSk/zwfPEgq1uaFXBlSNwCscLuZ/Ek327fKp0r9eOlM8dwG1j42qlXIQoeWwYYzSvhMArgAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKxwu5n8STfbt8qnSv146Uzx3AbWPjaqVchCh5bBhjNK+DQAAAEdsb2JhbCBEb2xsYXIEAAAAVVNER00AAABodHRwczovL3Rva2VuLW1ldGFkYXRhLnBheG9zLmNvbS91c2RnX21ldGFkYXRhL3Byb2Qvc29sYW5hL3VzZGdfbWV0YWRhdGEuanNvbgAAAAA=","base64"],"executable":false,"lamports":122662561,"owner":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","rentEpoch":18446744073709551615,"space":866}},"id":0}
 
         '
     headers:
@@ -202,11 +354,11 @@ interactions:
       allow:
       - OPTIONS, POST, GET
       content-length:
-      - '365'
+      - '1413'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 26 Feb 2026 21:27:12 GMT
+      - Fri, 13 Mar 2026 13:44:40 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -222,11 +374,11 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-867'
+      - '-1575'
       x-ratelimit-method-limit:
       - '30'
       x-ratelimit-method-remaining:
-      - '27'
+      - '22'
       x-ratelimit-pubsub-limit:
       - '5'
       x-ratelimit-pubsub-remaining:
@@ -238,159 +390,7 @@ interactions:
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - dal38
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"method":"getAccountInfo","jsonrpc":"2.0","id":0,"params":["2dQVs3ckSfiymJeK5kyfBRTDuaPHKdS6PDcAS41AQi3v",{"encoding":"base64","dataSlice":null,"commitment":"finalized","minContextSlot":null}]}'
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      content-length:
-      - '194'
-      content-type:
-      - application/json
-      host:
-      - api.mainnet-beta.solana.com
-      user-agent:
-      - python-httpx/0.28.1
-    method: POST
-    uri: https://api.mainnet-beta.solana.com
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.8","slot":402924701},"value":{"data":["BEcn8RD5rZyCj3b2Rq49ZiVsmScRvvn3bU9qhBHACBPVgNXSb65gpspyF0O1/txlPkAxHiv4sDJVx8ZJ9rstgEQgAAAAanVwaXRlciBsZW5kIFVTREcAAAAAAAAAAAAAAAAAAAAKAAAAamxVU0RHAAAAAMgAAABodHRwczovL2Nkbi5pbnN0YWRhcHAuaW8vc29sYW5hL3Rva2Vucy9tZXRhZGF0YS91c2RnLmpzb24AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAf8BAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==","base64"],"executable":false,"lamports":5115600,"owner":"metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s","rentEpoch":18446744073709551615,"space":607}},"id":0}
-
-        '
-    headers:
-      access-control-allow-headers:
-      - authorization, *
-      access-control-allow-methods:
-      - OPTIONS, POST, GET
-      access-control-allow-origin:
-      - backend_traffic
-      access-control-max-age:
-      - '86400'
-      allow:
-      - OPTIONS, POST, GET
-      content-length:
-      - '1066'
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Thu, 26 Feb 2026 21:27:12 GMT
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
-      x-ratelimit-conn-limit:
-      - '40'
-      x-ratelimit-conn-remaining:
-      - '39'
-      x-ratelimit-connrate-limit:
-      - '40'
-      x-ratelimit-connrate-remaining:
-      - '39'
-      x-ratelimit-endpoint-limit:
-      - unlimited
-      x-ratelimit-endpoint-remaining:
-      - '-866'
-      x-ratelimit-method-limit:
-      - '30'
-      x-ratelimit-method-remaining:
-      - '26'
-      x-ratelimit-pubsub-limit:
-      - '5'
-      x-ratelimit-pubsub-remaining:
-      - '5'
-      x-ratelimit-rps-limit:
-      - '100'
-      x-ratelimit-rps-remaining:
-      - '92'
-      x-ratelimit-tier:
-      - free
-      x-rpc-node:
-      - dal38
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"method":"getAccountInfo","jsonrpc":"2.0","id":0,"params":["2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",{"encoding":"base64","dataSlice":null,"commitment":"finalized","minContextSlot":null}]}'
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      content-length:
-      - '194'
-      content-type:
-      - application/json
-      host:
-      - api.mainnet-beta.solana.com
-      user-agent:
-      - python-httpx/0.28.1
-    method: POST
-    uri: https://api.mainnet-beta.solana.com
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.8","slot":402924701},"value":{"data":["AQAAACW7+VRuvzdb7gNflgBBldomzRryvPU2iRUDDIKjMLX+Ij3yR6tRAwAGAQEAAAAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQMAIAAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKwwAIAAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKwEAbAAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKxeFMmHvarhTKmfwU4ZarTEpP88HzxIKtbmhVwZUjcArAAAAAAAAAADSAgAAAAAAAAAAAAAAAAAAAADSAgAAAAAAAAAAAAAAAAAAAAAEAEEAF4UyYe9quFMqZ/BThlqtMSk/zwfPEgq1uaFXBlSNwCsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAIEAF4UyYe9quFMqZ/BThlqtMSk/zwfPEgq1uaFXBlSNwCsm0cx6nT0Kf+Fu2TflaERKcxbP98dKRVQu4LCksu7ubQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgBAABeFMmHvarhTKmfwU4ZarTEpP88HzxIKtbmhVwZUjcArAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAEAAF4UyYe9quFMqZ/BThlqtMSk/zwfPEgq1uaFXBlSNwCscLuZ/Ek327fKp0r9eOlM8dwG1j42qlXIQoeWwYYzSvhMArgAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKxwu5n8STfbt8qnSv146Uzx3AbWPjaqVchCh5bBhjNK+DQAAAEdsb2JhbCBEb2xsYXIEAAAAVVNER00AAABodHRwczovL3Rva2VuLW1ldGFkYXRhLnBheG9zLmNvbS91c2RnX21ldGFkYXRhL3Byb2Qvc29sYW5hL3VzZGdfbWV0YWRhdGEuanNvbgAAAAA=","base64"],"executable":false,"lamports":122662251,"owner":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","rentEpoch":18446744073709551615,"space":866}},"id":0}
-
-        '
-    headers:
-      access-control-allow-headers:
-      - authorization, *
-      access-control-allow-methods:
-      - OPTIONS, POST, GET
-      access-control-allow-origin:
-      - backend_traffic
-      access-control-max-age:
-      - '86400'
-      allow:
-      - OPTIONS, POST, GET
-      content-length:
-      - '1412'
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Thu, 26 Feb 2026 21:27:12 GMT
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
-      x-ratelimit-conn-limit:
-      - '40'
-      x-ratelimit-conn-remaining:
-      - '39'
-      x-ratelimit-connrate-limit:
-      - '40'
-      x-ratelimit-connrate-remaining:
-      - '39'
-      x-ratelimit-endpoint-limit:
-      - unlimited
-      x-ratelimit-endpoint-remaining:
-      - '-869'
-      x-ratelimit-method-limit:
-      - '30'
-      x-ratelimit-method-remaining:
-      - '25'
-      x-ratelimit-pubsub-limit:
-      - '5'
-      x-ratelimit-pubsub-remaining:
-      - '5'
-      x-ratelimit-rps-limit:
-      - '100'
-      x-ratelimit-rps-remaining:
-      - '91'
-      x-ratelimit-tier:
-      - free
-      x-rpc-node:
-      - dal38
+      - fra268
     status:
       code: 200
       message: OK

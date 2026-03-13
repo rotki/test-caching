@@ -2,22 +2,22 @@ interactions:
 - request:
     body: '{"method":"getHealth","jsonrpc":"2.0","id":0}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '45'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
       string: '{"jsonrpc":"2.0","result":"ok","id":0}
@@ -39,7 +39,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 08 Oct 2025 12:32:59 GMT
+      - Fri, 13 Mar 2026 13:45:48 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -55,11 +55,11 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-1225'
+      - '-1817'
       x-ratelimit-method-limit:
       - '40'
       x-ratelimit-method-remaining:
-      - '39'
+      - '38'
       x-ratelimit-pubsub-limit:
       - '5'
       x-ratelimit-pubsub-remaining:
@@ -67,33 +67,33 @@ interactions:
       x-ratelimit-rps-limit:
       - '100'
       x-ratelimit-rps-remaining:
-      - '99'
+      - '92'
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - fra120
+      - fra268
     status:
       code: 200
       message: OK
 - request:
     body: '{"method":"getTransaction","jsonrpc":"2.0","id":0,"params":["28f8jFzCX3D1dJ5sZSABgVmrziAQu3hPeERjRoKMJwvQGrahxDfSRARpgX4rBeGcYvGSMu77QPoEqYdyYTzx9TY7",{"encoding":"json","commitment":"finalized","maxSupportedTransactionVersion":0}]}'
     headers:
-      accept:
+      Accept:
       - '*/*'
-      accept-encoding:
+      Accept-Encoding:
       - gzip, deflate
-      connection:
+      Connection:
       - keep-alive
-      content-length:
+      Content-Length:
       - '232'
-      content-type:
+      Content-Type:
       - application/json
-      host:
+      Host:
       - api.mainnet-beta.solana.com
-      user-agent:
+      User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://api.mainnet-beta.solana.com
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
       string: '{"jsonrpc":"2.0","result":{"blockTime":1735930769,"meta":{"computeUnitsConsumed":6581,"err":null,"fee":15000,"innerInstructions":[],"loadedAddresses":{"readonly":[],"writable":[]},"logMessages":["Program
@@ -121,7 +121,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Wed, 08 Oct 2025 12:33:00 GMT
+      - Fri, 13 Mar 2026 13:45:59 GMT
       transfer-encoding:
       - chunked
       vary:
@@ -137,7 +137,7 @@ interactions:
       x-ratelimit-endpoint-limit:
       - unlimited
       x-ratelimit-endpoint-remaining:
-      - '-1215'
+      - '-1597'
       x-ratelimit-method-limit:
       - '2'
       x-ratelimit-method-remaining:
@@ -149,163 +149,11 @@ interactions:
       x-ratelimit-rps-limit:
       - '100'
       x-ratelimit-rps-remaining:
-      - '98'
-      x-ratelimit-tier:
-      - free
-      x-rpc-node:
-      - fra120
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"method":"getAccountInfo","jsonrpc":"2.0","id":0,"params":["EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",{"encoding":"base64","dataSlice":null,"commitment":"finalized","minContextSlot":null}]}'
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      content-length:
-      - '194'
-      content-type:
-      - application/json
-      host:
-      - api.mainnet-beta.solana.com
-      user-agent:
-      - python-httpx/0.28.1
-    method: POST
-    uri: https://api.mainnet-beta.solana.com
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"2.3.6","slot":372008109},"value":{"data":["AQAAAJj+huiNm+Lqi8HMpIeLKYjCQPUrhCS/tA7Rot3LXhmbQ5qX0JOmKQAGAQEAAABicKqKWcWUBbRShshncubNEm6bil06OFNtN/e0FOi2Zw==","base64"],"executable":false,"lamports":418848447354,"owner":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","rentEpoch":18446744073709551615,"space":82}},"id":0}
-
-        '
-    headers:
-      access-control-allow-headers:
-      - authorization, *
-      access-control-allow-methods:
-      - OPTIONS, POST, GET
-      access-control-allow-origin:
-      - backend_traffic
-      access-control-max-age:
-      - '86400'
-      allow:
-      - OPTIONS, POST, GET
-      content-length:
-      - '370'
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Wed, 08 Oct 2025 12:33:00 GMT
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
-      x-ratelimit-conn-limit:
-      - '40'
-      x-ratelimit-conn-remaining:
-      - '39'
-      x-ratelimit-connrate-limit:
-      - '40'
-      x-ratelimit-connrate-remaining:
-      - '39'
-      x-ratelimit-endpoint-limit:
-      - unlimited
-      x-ratelimit-endpoint-remaining:
-      - '-1256'
-      x-ratelimit-method-limit:
-      - '30'
-      x-ratelimit-method-remaining:
-      - '29'
-      x-ratelimit-pubsub-limit:
-      - '5'
-      x-ratelimit-pubsub-remaining:
-      - '5'
-      x-ratelimit-rps-limit:
-      - '100'
-      x-ratelimit-rps-remaining:
       - '97'
       x-ratelimit-tier:
       - free
       x-rpc-node:
-      - fra120
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"method":"getAccountInfo","jsonrpc":"2.0","id":0,"params":["5x38Kp4hvdomTCnCrAny4UtMUt5rQBdB6px2K1Ui45Wq",{"encoding":"base64","dataSlice":null,"commitment":"finalized","minContextSlot":null}]}'
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      content-length:
-      - '194'
-      content-type:
-      - application/json
-      host:
-      - api.mainnet-beta.solana.com
-      user-agent:
-      - python-httpx/0.28.1
-    method: POST
-    uri: https://api.mainnet-beta.solana.com
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"2.3.6","slot":372008109},"value":{"data":["BBzjWe1aAS4E+hQrnHUaHF6Hz9CgFhuchf/TG3jN/Nj2xvp6877brTo9ZfNqq8l0MbG75MLS9uDkfKYCA0UvXWEgAAAAVVNEIENvaW4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAAVVNEQwAAAAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAfwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==","base64"],"executable":false,"lamports":5616720,"owner":"metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s","rentEpoch":18446744073709551615,"space":679}},"id":0}
-
-        '
-    headers:
-      access-control-allow-headers:
-      - authorization, *
-      access-control-allow-methods:
-      - OPTIONS, POST, GET
-      access-control-allow-origin:
-      - backend_traffic
-      access-control-max-age:
-      - '86400'
-      allow:
-      - OPTIONS, POST, GET
-      content-length:
-      - '1162'
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Wed, 08 Oct 2025 12:33:00 GMT
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
-      x-ratelimit-conn-limit:
-      - '40'
-      x-ratelimit-conn-remaining:
-      - '39'
-      x-ratelimit-connrate-limit:
-      - '40'
-      x-ratelimit-connrate-remaining:
-      - '39'
-      x-ratelimit-endpoint-limit:
-      - unlimited
-      x-ratelimit-endpoint-remaining:
-      - '-1267'
-      x-ratelimit-method-limit:
-      - '30'
-      x-ratelimit-method-remaining:
-      - '28'
-      x-ratelimit-pubsub-limit:
-      - '5'
-      x-ratelimit-pubsub-remaining:
-      - '5'
-      x-ratelimit-rps-limit:
-      - '100'
-      x-ratelimit-rps-remaining:
-      - '96'
-      x-ratelimit-tier:
-      - free
-      x-rpc-node:
-      - fra120
+      - fra268
     status:
       code: 200
       message: OK
