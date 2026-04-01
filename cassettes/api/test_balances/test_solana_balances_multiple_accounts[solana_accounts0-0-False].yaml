@@ -9,15 +9,15 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.42.1.dev205+g00ba3914d3
+      - rotki/1.41.2.dev1269+gb7ca15496a
     method: GET
     uri: https://api.coingecko.com/api/v3/simple/price/?ids=solana&vs_currencies=eur
   response:
     body:
-      string: '{"solana":{"eur":79.76}}'
+      string: '{"solana":{"eur":71.99}}'
     headers:
       CF-RAY:
-      - 9dbbdca88bba9a49-BCN
+      - 9e58cc783fe5665e-AMS
       Cache-Control:
       - max-age=30, public, must-revalidate, s-maxage=60
       Connection:
@@ -25,7 +25,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 13 Mar 2026 14:52:21 GMT
+      - Wed, 01 Apr 2026 15:59:02 GMT
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -52,7 +52,7 @@ interactions:
       - script-src https://accounts.google.com/gsi/client; frame-src https://accounts.google.com/gsi/;
         connect-src https://accounts.google.com/gsi/;
       etag:
-      - W/"aa248ee0aea71e064a345508eab7b72c"
+      - W/"0db84325f1cb747841dd4b6740df9965"
       referrer-policy:
       - strict-origin-when-cross-origin
       strict-transport-security:
@@ -61,16 +61,14 @@ interactions:
       - Accept-Encoding, Origin
       x-content-type-options:
       - nosniff
-      x-download-options:
-      - noopen
       x-frame-options:
       - SAMEORIGIN
       x-permitted-cross-domain-policies:
       - none
       x-request-id:
-      - 86ed5461-e748-4349-9efe-33d4af2290a5
+      - 92f9af28-b254-4800-a690-b61dad006c17
       x-runtime:
-      - '0.003822'
+      - '0.003464'
       x-xss-protection:
       - '0'
     status:
@@ -90,100 +88,65 @@ interactions:
       Content-Type:
       - application/json
       Host:
-      - solana-rpc.publicnode.com
+      - api.mainnet-beta.solana.com
       User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://solana-rpc.publicnode.com/
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
       string: '{"jsonrpc":"2.0","result":"ok","id":0}
 
         '
     headers:
-      CF-RAY:
-      - 9dbbdcaa0f0998e6-BCN
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '39'
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 13 Mar 2026 14:52:21 GMT
-      Server:
-      - cloudflare
-      X-Content-Type-Options:
-      - nosniff
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
       access-control-max-age:
-      - '1728000'
-      alt-svc:
-      - h3=":443"; ma=86400
-      cf-cache-status:
-      - DYNAMIC
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains; preload
-      vary:
-      - Origin, accept-encoding
-      x-envoy-upstream-service-time:
-      - '2'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: '{"method":"getBlock","jsonrpc":"2.0","id":0,"params":[0,{"encoding":"json","transactionDetails":null,"rewards":null,"maxSupportedTransactionVersion":null}]}'
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '156'
-      Content-Type:
-      - application/json
-      Host:
-      - solana-rpc.publicnode.com
-      User-Agent:
-      - python-httpx/0.28.1
-    method: POST
-    uri: https://solana-rpc.publicnode.com/
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","error":{"code":-32001,"message":"Block 0 cleaned
-        up, does not exist on node. First available block: 405561379"},"id":0}
-
-        '
-    headers:
-      CF-RAY:
-      - 9dbbdcaabbbd6e11-BCN
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 13 Mar 2026 14:52:21 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Content-Type-Options:
-      - nosniff
-      access-control-max-age:
-      - '1728000'
-      alt-svc:
-      - h3=":443"; ma=86400
-      cf-cache-status:
-      - DYNAMIC
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
       content-length:
-      - '138'
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains; preload
+      - '39'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 01 Apr 2026 15:59:02 GMT
+      transfer-encoding:
+      - chunked
       vary:
-      - Origin, accept-encoding
-      x-envoy-upstream-service-time:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-2043'
+      x-ratelimit-method-limit:
+      - '40'
+      x-ratelimit-method-remaining:
+      - '39'
+      x-ratelimit-pubsub-limit:
       - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '99'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra286
     status:
       code: 200
       message: OK
@@ -201,45 +164,65 @@ interactions:
       Content-Type:
       - application/json
       Host:
-      - solana-rpc.publicnode.com
+      - api.mainnet-beta.solana.com
       User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://solana-rpc.publicnode.com/
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.10","slot":406157462},"value":[{"data":["","base64"],"executable":false,"lamports":564503502,"owner":"11111111111111111111111111111111","rentEpoch":18446744073709551615,"space":0},{"data":["","base64"],"executable":false,"lamports":10665754,"owner":"11111111111111111111111111111111","rentEpoch":18446744073709551615,"space":0}]},"id":0}
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.11","slot":410343008},"value":[{"data":["","base64"],"executable":false,"lamports":564503502,"owner":"11111111111111111111111111111111","rentEpoch":18446744073709551615,"space":0},{"data":["","base64"],"executable":false,"lamports":10665754,"owner":"11111111111111111111111111111111","rentEpoch":18446744073709551615,"space":0}]},"id":0}
 
         '
     headers:
-      CF-RAY:
-      - 9dbbdcab6a9cf298-BCN
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 13 Mar 2026 14:52:21 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Content-Type-Options:
-      - nosniff
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
       access-control-max-age:
-      - '1728000'
-      alt-svc:
-      - h3=":443"; ma=86400
-      cf-cache-status:
-      - DYNAMIC
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
       content-length:
       - '394'
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains; preload
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 01 Apr 2026 15:59:02 GMT
+      transfer-encoding:
+      - chunked
       vary:
-      - Origin, accept-encoding
-      x-envoy-upstream-service-time:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-2046'
+      x-ratelimit-method-limit:
+      - '30'
+      x-ratelimit-method-remaining:
+      - '29'
+      x-ratelimit-pubsub-limit:
       - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '98'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra286
     status:
       code: 200
       message: OK
@@ -257,45 +240,65 @@ interactions:
       Content-Type:
       - application/json
       Host:
-      - solana-rpc.publicnode.com
+      - api.mainnet-beta.solana.com
       User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://solana-rpc.publicnode.com/
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.10","slot":406157463},"value":[{"account":{"data":["/NFB6YMsrxCtkXSVyg8nG1spPNRwJ+pzcAftQOs5oL3bSISAHm+j57n/W3JyTUrfcGtV+0aWDgQAedIP6p1hu1tHBxgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","base64"],"executable":false,"lamports":2039280,"owner":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","rentEpoch":18446744073709551615,"space":165},"pubkey":"SmjjdvFPCLcCnUzzRGKDW3ECMVyyXwQuLSmueCrAEX5"},{"account":{"data":["CR5z0XpVJtRI5Ymupa/nwizWHFtmqGpCerJiMJUU5VzbSISAHm+j57n/W3JyTUrfcGtV+0aWDgQAedIP6p1hu0cEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","base64"],"executable":false,"lamports":2039280,"owner":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","rentEpoch":18446744073709551615,"space":165},"pubkey":"HX4MpEqvLYVYoJJNKT31M49mcCiGMiFDMbQZ3iQBc4vP"},{"account":{"data":["BS7XHji0Y8oWKlgJF73nGuvgWDE6XcuuhpIFy+qp+63bSISAHm+j57n/W3JyTUrfcGtV+0aWDgQAedIP6p1hu1LfDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","base64"],"executable":false,"lamports":2039280,"owner":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","rentEpoch":18446744073709551615,"space":165},"pubkey":"4frtd36KHAsP5PdeMTVXwHgczbgWKQrxgf1MuUz94muz"}]},"id":0}
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.11","slot":410343008},"value":[{"account":{"data":["/NFB6YMsrxCtkXSVyg8nG1spPNRwJ+pzcAftQOs5oL3bSISAHm+j57n/W3JyTUrfcGtV+0aWDgQAedIP6p1hu1tHBxgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","base64"],"executable":false,"lamports":2039280,"owner":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","rentEpoch":18446744073709551615,"space":165},"pubkey":"SmjjdvFPCLcCnUzzRGKDW3ECMVyyXwQuLSmueCrAEX5"},{"account":{"data":["BS7XHji0Y8oWKlgJF73nGuvgWDE6XcuuhpIFy+qp+63bSISAHm+j57n/W3JyTUrfcGtV+0aWDgQAedIP6p1hu1LfDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","base64"],"executable":false,"lamports":2039280,"owner":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","rentEpoch":18446744073709551615,"space":165},"pubkey":"4frtd36KHAsP5PdeMTVXwHgczbgWKQrxgf1MuUz94muz"},{"account":{"data":["CR5z0XpVJtRI5Ymupa/nwizWHFtmqGpCerJiMJUU5VzbSISAHm+j57n/W3JyTUrfcGtV+0aWDgQAedIP6p1hu0cEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","base64"],"executable":false,"lamports":2039280,"owner":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","rentEpoch":18446744073709551615,"space":165},"pubkey":"HX4MpEqvLYVYoJJNKT31M49mcCiGMiFDMbQZ3iQBc4vP"}]},"id":0}
 
         '
     headers:
-      CF-RAY:
-      - 9dbbdcac1e68d781-BCN
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 13 Mar 2026 14:52:21 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Content-Type-Options:
-      - nosniff
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
       access-control-max-age:
-      - '1728000'
-      alt-svc:
-      - h3=":443"; ma=86400
-      cf-cache-status:
-      - DYNAMIC
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
       content-length:
       - '1440'
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains; preload
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 01 Apr 2026 15:59:02 GMT
+      transfer-encoding:
+      - chunked
       vary:
-      - Origin, accept-encoding
-      x-envoy-upstream-service-time:
-      - '3'
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-2054'
+      x-ratelimit-method-limit:
+      - '2'
+      x-ratelimit-method-remaining:
+      - '1'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '97'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra286
     status:
       code: 200
       message: OK
@@ -313,45 +316,65 @@ interactions:
       Content-Type:
       - application/json
       Host:
-      - solana-rpc.publicnode.com
+      - api.mainnet-beta.solana.com
       User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://solana-rpc.publicnode.com/
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.10","slot":406157463},"value":[{"account":{"data":["F5JIO2yKKoe3Rx2BT5WR+TlchAqc49n01bp9OkuKdJ7bSISAHm+j57n/W3JyTUrfcGtV+0aWDgQAedIP6p1hu+YrBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgcAAAACAAgAAAAAAAAAAAAPAAEAAA==","base64"],"executable":false,"lamports":2192400,"owner":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","rentEpoch":18446744073709551615,"space":187},"pubkey":"9BDuBhQZEZBGeGAPkrDz6H2Hir118SqAPNe1BAqA99Mf"}]},"id":0}
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.11","slot":410343009},"value":[{"account":{"data":["F5JIO2yKKoe3Rx2BT5WR+TlchAqc49n01bp9OkuKdJ7bSISAHm+j57n/W3JyTUrfcGtV+0aWDgQAedIP6p1hu+YrBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgcAAAACAAgAAAAAAAAAAAAPAAEAAA==","base64"],"executable":false,"lamports":2192400,"owner":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","rentEpoch":18446744073709551615,"space":187},"pubkey":"9BDuBhQZEZBGeGAPkrDz6H2Hir118SqAPNe1BAqA99Mf"}]},"id":0}
 
         '
     headers:
-      CF-RAY:
-      - 9dbbdcacb837589a-BCN
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 13 Mar 2026 14:52:22 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Content-Type-Options:
-      - nosniff
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
       access-control-max-age:
-      - '1728000'
-      alt-svc:
-      - h3=":443"; ma=86400
-      cf-cache-status:
-      - DYNAMIC
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
       content-length:
       - '577'
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains; preload
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 01 Apr 2026 15:59:02 GMT
+      transfer-encoding:
+      - chunked
       vary:
-      - Origin, accept-encoding
-      x-envoy-upstream-service-time:
-      - '176'
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-2057'
+      x-ratelimit-method-limit:
+      - '2'
+      x-ratelimit-method-remaining:
+      - '0'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '96'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra286
     status:
       code: 200
       message: OK
@@ -369,45 +392,65 @@ interactions:
       Content-Type:
       - application/json
       Host:
-      - solana-rpc.publicnode.com
+      - api.mainnet-beta.solana.com
       User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://solana-rpc.publicnode.com/
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.10","slot":406157463},"value":{"data":["AQAAAFTlniTAUaihSnsel5fw4Szfp0kCFmUxlaalEqbxZmArfgFlDPOOIwAJAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==","base64"],"executable":false,"lamports":2818079712,"owner":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","rentEpoch":18446744073709551615,"space":82}},"id":0}
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.11","slot":410343009},"value":{"data":["AQAAAFTlniTAUaihSnsel5fw4Szfp0kCFmUxlaalEqbxZmArnqFZGxwOIAAJAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==","base64"],"executable":false,"lamports":2818079747,"owner":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","rentEpoch":18446744073709551615,"space":82}},"id":0}
 
         '
     headers:
-      CF-RAY:
-      - 9dbbdcae7efa4ffb-BCN
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 13 Mar 2026 14:52:22 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Content-Type-Options:
-      - nosniff
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
       access-control-max-age:
-      - '1728000'
-      alt-svc:
-      - h3=":443"; ma=86400
-      cf-cache-status:
-      - DYNAMIC
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
       content-length:
       - '369'
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains; preload
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 01 Apr 2026 15:59:02 GMT
+      transfer-encoding:
+      - chunked
       vary:
-      - Origin, accept-encoding
-      x-envoy-upstream-service-time:
-      - '18'
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-2064'
+      x-ratelimit-method-limit:
+      - '30'
+      x-ratelimit-method-remaining:
+      - '29'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '95'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra286
     status:
       code: 200
       message: OK
@@ -425,45 +468,65 @@ interactions:
       Content-Type:
       - application/json
       Host:
-      - solana-rpc.publicnode.com
+      - api.mainnet-beta.solana.com
       User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://solana-rpc.publicnode.com/
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.10","slot":406157464},"value":{"data":["BMRMC0OCUN+z22qnNe6j9AhUAxTVLRTZvX0pK6xUPI62/NFB6YMsrxCtkXSVyg8nG1spPNRwJ+pzcAftQOs5oL0gAAAASml0byBTdGFrZWQgU09MAAAAAAAAAAAAAAAAAAAAAAAKAAAASml0b1NPTAAAAMgAAABodHRwczovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vdG9rZW4tbWV0YWRhdGEvSml0b1NPTC5qc29uAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAfwBAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==","base64"],"executable":false,"lamports":5616720,"owner":"metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s","rentEpoch":18446744073709551615,"space":679}},"id":0}
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.11","slot":410343009},"value":{"data":["BMRMC0OCUN+z22qnNe6j9AhUAxTVLRTZvX0pK6xUPI62/NFB6YMsrxCtkXSVyg8nG1spPNRwJ+pzcAftQOs5oL0gAAAASml0byBTdGFrZWQgU09MAAAAAAAAAAAAAAAAAAAAAAAKAAAASml0b1NPTAAAAMgAAABodHRwczovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vdG9rZW4tbWV0YWRhdGEvSml0b1NPTC5qc29uAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAfwBAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==","base64"],"executable":false,"lamports":5616720,"owner":"metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s","rentEpoch":18446744073709551615,"space":679}},"id":0}
 
         '
     headers:
-      CF-RAY:
-      - 9dbbdcaf3a4c4ffb-BCN
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 13 Mar 2026 14:52:22 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Content-Type-Options:
-      - nosniff
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
       access-control-max-age:
-      - '1728000'
-      alt-svc:
-      - h3=":443"; ma=86400
-      cf-cache-status:
-      - DYNAMIC
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
       content-length:
       - '1163'
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains; preload
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 01 Apr 2026 15:59:02 GMT
+      transfer-encoding:
+      - chunked
       vary:
-      - Origin, accept-encoding
-      x-envoy-upstream-service-time:
-      - '9'
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-2065'
+      x-ratelimit-method-limit:
+      - '30'
+      x-ratelimit-method-remaining:
+      - '28'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '94'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra286
     status:
       code: 200
       message: OK
@@ -481,45 +544,65 @@ interactions:
       Content-Type:
       - application/json
       Host:
-      - solana-rpc.publicnode.com
+      - api.mainnet-beta.solana.com
       User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://solana-rpc.publicnode.com/
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.10","slot":406157464},"value":{"data":["AQAAAGyRqkllkBL4q+lh7CS2EHSSZUdTL/CU7VtpOYLbmHMT1YUdnMe5AgAGAQEAAAAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQMAIAAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKwwAIAAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKwEAbAAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKxeFMmHvarhTKmfwU4ZarTEpP88HzxIKtbmhVwZUjcArAAAAAAAAAABdAgAAAAAAAAAAAAAAAAAAAABdAgAAAAAAAAAAAAAAAAAAAAAEAEEAF4UyYe9quFMqZ/BThlqtMSk/zwfPEgq1uaFXBlSNwCsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAIEAF4UyYe9quFMqZ/BThlqtMSk/zwfPEgq1uaFXBlSNwCscN+ZDO3ME3YJzeuQNm4vzxJ9bDmxJqNUzKLPlBpAcVwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgBAABeFMmHvarhTKmfwU4ZarTEpP88HzxIKtbmhVwZUjcArAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAEAAF4UyYe9quFMqZ/BThlqtMSk/zwfPEgq1uaFXBlSNwCsXkkg7bIoqh7dHHYFPlZH5OVyECpzj2fTVun06S4p0nhMArgAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKxeSSDtsiiqHt0cdgU+Vkfk5XIQKnOPZ9NW6fTpLinSeCgAAAFBheVBhbCBVU0QFAAAAUFlVU0RPAAAAaHR0cHM6Ly90b2tlbi1tZXRhZGF0YS5wYXhvcy5jb20vcHl1c2RfbWV0YWRhdGEvcHJvZC9zb2xhbmEvcHl1c2RfbWV0YWRhdGEuanNvbgAAAAA=","base64"],"executable":false,"lamports":2076177974,"owner":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","rentEpoch":18446744073709551615,"space":866}},"id":0}
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.11","slot":410343010},"value":{"data":["AQAAAGyRqkllkBL4q+lh7CS2EHSSZUdTL/CU7VtpOYLbmHMTxWZb5wGCAgAGAQEAAAAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQMAIAAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKwwAIAAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKwEAbAAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKxeFMmHvarhTKmfwU4ZarTEpP88HzxIKtbmhVwZUjcArAAAAAAAAAABdAgAAAAAAAAAAAAAAAAAAAABdAgAAAAAAAAAAAAAAAAAAAAAEAEEAF4UyYe9quFMqZ/BThlqtMSk/zwfPEgq1uaFXBlSNwCsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAIEAF4UyYe9quFMqZ/BThlqtMSk/zwfPEgq1uaFXBlSNwCscN+ZDO3ME3YJzeuQNm4vzxJ9bDmxJqNUzKLPlBpAcVwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgBAABeFMmHvarhTKmfwU4ZarTEpP88HzxIKtbmhVwZUjcArAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAEAAF4UyYe9quFMqZ/BThlqtMSk/zwfPEgq1uaFXBlSNwCsXkkg7bIoqh7dHHYFPlZH5OVyECpzj2fTVun06S4p0nhMArgAXhTJh72q4Uypn8FOGWq0xKT/PB88SCrW5oVcGVI3AKxeSSDtsiiqHt0cdgU+Vkfk5XIQKnOPZ9NW6fTpLinSeCgAAAFBheVBhbCBVU0QFAAAAUFlVU0RPAAAAaHR0cHM6Ly90b2tlbi1tZXRhZGF0YS5wYXhvcy5jb20vcHl1c2RfbWV0YWRhdGEvcHJvZC9zb2xhbmEvcHl1c2RfbWV0YWRhdGEuanNvbgAAAAA=","base64"],"executable":false,"lamports":2076179631,"owner":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","rentEpoch":18446744073709551615,"space":866}},"id":0}
 
         '
     headers:
-      CF-RAY:
-      - 9dbbdcafe8f79a49-BCN
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 13 Mar 2026 14:52:22 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Content-Type-Options:
-      - nosniff
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
       access-control-max-age:
-      - '1728000'
-      alt-svc:
-      - h3=":443"; ma=86400
-      cf-cache-status:
-      - DYNAMIC
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
       content-length:
       - '1414'
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains; preload
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 01 Apr 2026 15:59:02 GMT
+      transfer-encoding:
+      - chunked
       vary:
-      - Origin, accept-encoding
-      x-envoy-upstream-service-time:
-      - '6'
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-2065'
+      x-ratelimit-method-limit:
+      - '30'
+      x-ratelimit-method-remaining:
+      - '27'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '93'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra286
     status:
       code: 200
       message: OK
@@ -533,15 +616,15 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.42.1.dev205+g00ba3914d3
+      - rotki/1.41.2.dev1269+gb7ca15496a
     method: GET
-    uri: https://api.coingecko.com/api/v3/simple/price/?ids=coinbase-wrapped-btc%2Cmeteora&vs_currencies=eur
+    uri: https://api.coingecko.com/api/v3/simple/price/?ids=meteora%2Ccoinbase-wrapped-btc&vs_currencies=eur
   response:
     body:
-      string: '{"coinbase-wrapped-btc":{"eur":63577},"meteora":{"eur":0.149512}}'
+      string: '{"coinbase-wrapped-btc":{"eur":59286},"meteora":{"eur":0.114203}}'
     headers:
       CF-RAY:
-      - 9dbbdcb0c8bb4ffb-BCN
+      - 9e58cc7e09de6d17-AMS
       Cache-Control:
       - max-age=30, public, must-revalidate, s-maxage=60
       Connection:
@@ -549,7 +632,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 13 Mar 2026 14:52:22 GMT
+      - Wed, 01 Apr 2026 15:59:03 GMT
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -576,7 +659,7 @@ interactions:
       - script-src https://accounts.google.com/gsi/client; frame-src https://accounts.google.com/gsi/;
         connect-src https://accounts.google.com/gsi/;
       etag:
-      - W/"8f878a5840f5f0bfca64795c51ea1d05"
+      - W/"901f6d3391d9cf375554795f68a00768"
       referrer-policy:
       - strict-origin-when-cross-origin
       strict-transport-security:
@@ -585,16 +668,14 @@ interactions:
       - Accept-Encoding, Origin
       x-content-type-options:
       - nosniff
-      x-download-options:
-      - noopen
       x-frame-options:
       - SAMEORIGIN
       x-permitted-cross-domain-policies:
       - none
       x-request-id:
-      - 6e073f7e-900b-435d-9c4a-ebd2ec4f130f
+      - e51e4a9a-b7ae-42db-bb18-c87e7fee37c8
       x-runtime:
-      - '0.006344'
+      - '0.008014'
       x-xss-protection:
       - '0'
     status:
@@ -615,16 +696,18 @@ interactions:
     uri: https://coins.llama.fi/prices/current/solana:J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn,solana:2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo
   response:
     body:
-      string: '{"coins":{"solana:2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo":{"decimals":6,"symbol":"pyusd","price":0.9998111901210156,"timestamp":1773413517,"confidence":0.99},"solana:J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn":{"decimals":9,"symbol":"JITOSOL","price":116.73910797854057,"timestamp":1773413106,"confidence":0.99}}}'
+      string: '{"coins":{"solana:2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo":{"decimals":6,"symbol":"pyusd","price":1.0003097356631752,"timestamp":1775058956,"confidence":0.99},"solana:J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn":{"decimals":9,"symbol":"JITOSOL","price":105.7915480553925,"timestamp":1775055544,"confidence":0.99}}}'
     headers:
+      Age:
+      - '134'
       CF-RAY:
-      - 9dbbdcb23bed78b2-BCN
+      - 9e58cc7f5e2965f0-AMS
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Fri, 13 Mar 2026 14:52:22 GMT
+      - Wed, 01 Apr 2026 15:59:03 GMT
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -634,21 +717,21 @@ interactions:
       access-control-allow-origin:
       - '*'
       apigw-requestid:
-      - aKqqIiGgFiAEJoA=
+      - bJb6JjgbFiAEPXA=
       cf-cache-status:
-      - MISS
+      - HIT
       content-length:
-      - '321'
+      - '320'
       expires:
-      - Fri, 13 Mar 2026 14:55:20 GMT
+      - Wed, 01 Apr 2026 16:00:20 GMT
       last-modified:
-      - Fri, 13 Mar 2026 14:52:22 GMT
+      - Wed, 01 Apr 2026 15:56:48 GMT
       via:
-      - 1.1 6c8543b98ba9d6529bbcae13263752ce.cloudfront.net (CloudFront)
+      - 1.1 2d8216898001f8ce3fde38c8796d2fa6.cloudfront.net (CloudFront)
       x-amz-cf-id:
-      - 7oQjz-gwzFFrzEJLOFkV0WXPrJjqvTbMXfig0uY-5KuPSz35q1d-FQ==
+      - zKgp9S-d80jKRiBtTkC4c9vzai8x6OeYAXjEIzc94Ihv3wDPHn6QUQ==
       x-amz-cf-pop:
-      - MAD53-P6
+      - AMS1-P2
       x-cache:
       - Miss from cloudfront
     status:
@@ -741,200 +824,200 @@ interactions:
         class='moduleContent'>\n\t\t\t\t\t<h1 class=\"basicH1 ratestableH1\">\n\t\t\t\t\t<span
         class=\"OutputHeader\">US Dollar Exchange Rates Table</span>\n\t\t<a href='#converter'
         class='backToConverterButton'>Converter</a>\n\t\t<span class=\"OutputArgs\"></span>\t\n\t\t</h1>\n\t\t\t\t\t<span
-        class='ratesTablePopu'>Top 10</span>\n\t\t<span class=\"ratesTimestamp\">Mar
-        13, 2026 14:52 UTC</span>\n<table class=\"ratesTable\" cellpadding=0 cellspacing=0>\n
+        class='ratesTablePopu'>Top 10</span>\n\t\t<span class=\"ratesTimestamp\">Apr
+        01, 2026 15:59 UTC</span>\n<table class=\"ratesTable\" cellpadding=0 cellspacing=0>\n
         \t<thead>\n \t\t\t<tr>\n\t\t<th class='rtHeader rtHeaderCurr'>US Dollar</th>\n\t\t<th
         class='rtHeader rtHeaderValues'>1.00 USD</th>\n\t\t<th class='rtHeader rtHeaderValues'>inv.
         1.00 USD</th>\n\t</tr>\n \t</thead>\n\t<tbody>\n\t\t\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Euro</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=EUR'>0.872246</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=USD'>1.146466</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=EUR'>0.860951</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=USD'>1.161506</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>British Pound</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=GBP'>0.753905</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=GBP&amp;to=USD'>1.326426</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=GBP'>0.750115</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=GBP&amp;to=USD'>1.333129</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Indian Rupee</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=INR'>92.421557</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=INR&amp;to=USD'>0.010820</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=INR'>93.171892</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=INR&amp;to=USD'>0.010733</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Australian Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=AUD'>1.421542</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=AUD&amp;to=USD'>0.703461</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=AUD'>1.439977</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=AUD&amp;to=USD'>0.694455</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Canadian Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=CAD'>1.370769</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CAD&amp;to=USD'>0.729517</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=CAD'>1.387724</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CAD&amp;to=USD'>0.720605</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Singapore Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=SGD'>1.280616</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SGD&amp;to=USD'>0.780874</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=SGD'>1.282295</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SGD&amp;to=USD'>0.779852</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Swiss Franc</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=CHF'>0.788449</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CHF&amp;to=USD'>1.268312</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=CHF'>0.793305</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CHF&amp;to=USD'>1.260549</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Malaysian Ringgit</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=MYR'>3.938275</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MYR&amp;to=USD'>0.253918</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=MYR'>4.026125</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MYR&amp;to=USD'>0.248378</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Japanese Yen</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=JPY'>159.330135</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=JPY&amp;to=USD'>0.006276</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=JPY'>158.604907</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=JPY&amp;to=USD'>0.006305</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Chinese Yuan
-        Renminbi</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=CNY'>6.896318</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CNY&amp;to=USD'>0.145005</a></td>
+        Renminbi</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=CNY'>6.872400</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CNY&amp;to=USD'>0.145510</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t</tbody>\n</table>\n\t\t\t<span class='ratesTableAlpha'>Alphabetical
-        order</span>\n\t\t\t<span class=\"ratesTimestamp\">Mar 13, 2026 14:52 UTC</span>\n<table
+        order</span>\n\t\t\t<span class=\"ratesTimestamp\">Apr 01, 2026 15:59 UTC</span>\n<table
         class=\"tablesorter ratesTable\" cellpadding=0 cellspacing=0>\n \t<thead>\n
         \t\t\t<tr>\n\t\t<th class='rtHeader rtHeaderCurr'>US Dollar</th>\n\t\t<th
         class='rtHeader rtHeaderValues'>1.00 USD</th>\n\t\t<th class='rtHeader rtHeaderValues'>inv.
         1.00 USD</th>\n\t</tr>\n \t</thead>\n\t<tbody>\n\t\t\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Argentine
-        Peso</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=ARS'>1390.970644</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ARS&amp;to=USD'>0.000719</a></td>
+        Peso</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=ARS'>1385.780978</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ARS&amp;to=USD'>0.000722</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Australian Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=AUD'>1.421542</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=AUD&amp;to=USD'>0.703461</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=AUD'>1.439977</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=AUD&amp;to=USD'>0.694455</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Bahraini Dinar</td>\n\t\t\t\t\t\t<td
         class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=BHD'>0.376000</a></td>\n\t\t\t\t\t\t<td
         class='rtRates'><a href='https://www.x-rates.com/graph/?from=BHD&amp;to=USD'>2.659574</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Botswana Pula</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=BWP'>13.630383</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BWP&amp;to=USD'>0.073366</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=BWP'>13.787013</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BWP&amp;to=USD'>0.072532</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Brazilian Real</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=BRL'>5.250447</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BRL&amp;to=USD'>0.190460</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=BRL'>5.152098</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BRL&amp;to=USD'>0.194096</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Bruneian Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=BND'>1.280616</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BND&amp;to=USD'>0.780874</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=BND'>1.282295</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BND&amp;to=USD'>0.779852</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Canadian Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=CAD'>1.370769</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CAD&amp;to=USD'>0.729517</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=CAD'>1.387724</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CAD&amp;to=USD'>0.720605</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Chilean Peso</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=CLP'>911.351868</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CLP&amp;to=USD'>0.001097</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=CLP'>913.270940</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CLP&amp;to=USD'>0.001095</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Chinese Yuan
-        Renminbi</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=CNY'>6.896318</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CNY&amp;to=USD'>0.145005</a></td>
+        Renminbi</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=CNY'>6.872400</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CNY&amp;to=USD'>0.145510</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Colombian Peso</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=COP'>3674.241240</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=COP'>3669.883752</a></td>\n\t\t\t\t\t\t<td
         class='rtRates'><a href='https://www.x-rates.com/graph/?from=COP&amp;to=USD'>0.000272</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Czech Koruna</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=CZK'>21.331756</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CZK&amp;to=USD'>0.046878</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=CZK'>21.107093</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CZK&amp;to=USD'>0.047377</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Danish Krone</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=DKK'>6.518046</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=DKK&amp;to=USD'>0.153420</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=DKK'>6.433380</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=DKK&amp;to=USD'>0.155439</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Euro</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=EUR'>0.872246</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=USD'>1.146466</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=EUR'>0.860951</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=USD'>1.161506</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Hong Kong Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=HKD'>7.827340</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=HKD&amp;to=USD'>0.127757</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=HKD'>7.837380</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=HKD&amp;to=USD'>0.127594</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Hungarian Forint</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=HUF'>340.814645</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=HUF&amp;to=USD'>0.002934</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=HUF'>329.580874</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=HUF&amp;to=USD'>0.003034</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Icelandic Krona</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=ISK'>125.782063</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ISK&amp;to=USD'>0.007950</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=ISK'>124.328292</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ISK&amp;to=USD'>0.008043</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Indian Rupee</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=INR'>92.421557</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=INR&amp;to=USD'>0.010820</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=INR'>93.171892</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=INR&amp;to=USD'>0.010733</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Indonesian Rupiah</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=IDR'>16937.205122</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=IDR'>16921.307953</a></td>\n\t\t\t\t\t\t<td
         class='rtRates'><a href='https://www.x-rates.com/graph/?from=IDR&amp;to=USD'>0.000059</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Iranian Rial</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=IRR'>1319634.995973</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=IRR'>1319718.433521</a></td>\n\t\t\t\t\t\t<td
         class='rtRates'><a href='https://www.x-rates.com/graph/?from=IRR&amp;to=USD'>0.000001</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Israeli Shekel</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=ILS'>3.130197</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ILS&amp;to=USD'>0.319469</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=ILS'>3.129981</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ILS&amp;to=USD'>0.319491</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Japanese Yen</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=JPY'>159.330135</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=JPY&amp;to=USD'>0.006276</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=JPY'>158.604907</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=JPY&amp;to=USD'>0.006305</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Kazakhstani Tenge</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=KZT'>489.165034</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=KZT&amp;to=USD'>0.002044</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=KZT'>474.964563</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=KZT&amp;to=USD'>0.002105</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>South Korean
-        Won</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=KRW'>1494.088782</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=KRW&amp;to=USD'>0.000669</a></td>
+        Won</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=KRW'>1512.291464</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=KRW&amp;to=USD'>0.000661</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Kuwaiti Dinar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=KWD'>0.306839</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=KWD&amp;to=USD'>3.259037</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=KWD'>0.308820</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=KWD&amp;to=USD'>3.238131</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Libyan Dinar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=LYD'>6.383586</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=LYD&amp;to=USD'>0.156652</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=LYD'>6.376948</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=LYD&amp;to=USD'>0.156815</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Malaysian Ringgit</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=MYR'>3.938275</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MYR&amp;to=USD'>0.253918</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=MYR'>4.026125</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MYR&amp;to=USD'>0.248378</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Mauritian Rupee</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=MUR'>46.192442</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MUR&amp;to=USD'>0.021649</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=MUR'>46.779721</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MUR&amp;to=USD'>0.021377</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Mexican Peso</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=MXN'>17.816482</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MXN&amp;to=USD'>0.056128</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=MXN'>17.802402</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MXN&amp;to=USD'>0.056172</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Nepalese Rupee</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=NPR'>147.943807</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=NPR&amp;to=USD'>0.006759</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=NPR'>149.144907</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=NPR&amp;to=USD'>0.006705</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>New Zealand Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=NZD'>1.717178</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=NZD&amp;to=USD'>0.582351</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=NZD'>1.733187</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=NZD&amp;to=USD'>0.576972</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Norwegian Krone</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=NOK'>9.717050</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=NOK&amp;to=USD'>0.102912</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=NOK'>9.704544</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=NOK&amp;to=USD'>0.103045</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Omani Rial</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=OMR'>0.384732</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=OMR&amp;to=USD'>2.599209</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=OMR'>0.384622</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=OMR&amp;to=USD'>2.599959</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Pakistani Rupee</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=PKR'>279.290448</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=PKR&amp;to=USD'>0.003581</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=PKR'>279.042626</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=PKR&amp;to=USD'>0.003584</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Philippine Peso</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=PHP'>59.736013</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=PHP&amp;to=USD'>0.016740</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=PHP'>60.222488</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=PHP&amp;to=USD'>0.016605</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Polish Zloty</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=PLN'>3.724122</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=PLN&amp;to=USD'>0.268520</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=PLN'>3.685587</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=PLN&amp;to=USD'>0.271327</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Qatari Riyal</td>\n\t\t\t\t\t\t<td
         class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=QAR'>3.640000</a></td>\n\t\t\t\t\t\t<td
         class='rtRates'><a href='https://www.x-rates.com/graph/?from=QAR&amp;to=USD'>0.274725</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Romanian New
-        Leu</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=RON'>4.442752</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=RON&amp;to=USD'>0.225086</a></td>
+        Leu</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=RON'>4.388731</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=RON&amp;to=USD'>0.227856</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Russian Ruble</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=RUB'>80.101315</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=RUB&amp;to=USD'>0.012484</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=RUB'>80.482810</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=RUB&amp;to=USD'>0.012425</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Saudi Arabian
         Riyal</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=SAR'>3.750000</a></td>\n\t\t\t\t\t\t<td
         class='rtRates'><a href='https://www.x-rates.com/graph/?from=SAR&amp;to=USD'>0.266667</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Singapore Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=SGD'>1.280616</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SGD&amp;to=USD'>0.780874</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=SGD'>1.282295</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SGD&amp;to=USD'>0.779852</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>South African
-        Rand</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=ZAR'>16.843343</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ZAR&amp;to=USD'>0.059371</a></td>
+        Rand</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=ZAR'>16.786425</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ZAR&amp;to=USD'>0.059572</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Sri Lankan Rupee</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=LKR'>311.299792</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=LKR&amp;to=USD'>0.003212</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=LKR'>315.163060</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=LKR&amp;to=USD'>0.003173</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Swedish Krona</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=SEK'>9.380440</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SEK&amp;to=USD'>0.106605</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=SEK'>9.380497</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SEK&amp;to=USD'>0.106604</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Swiss Franc</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=CHF'>0.788449</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CHF&amp;to=USD'>1.268312</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=CHF'>0.793305</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CHF&amp;to=USD'>1.260549</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Taiwan New Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=TWD'>32.047174</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=TWD&amp;to=USD'>0.031204</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=TWD'>31.981517</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=TWD&amp;to=USD'>0.031268</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Thai Baht</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=THB'>32.296420</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=THB&amp;to=USD'>0.030963</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=THB'>32.505605</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=THB&amp;to=USD'>0.030764</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Trinidadian Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=TTD'>6.782951</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=TTD&amp;to=USD'>0.147428</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=TTD'>6.784199</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=TTD&amp;to=USD'>0.147401</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Turkish Lira</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=TRY'>44.193436</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=TRY&amp;to=USD'>0.022628</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=TRY'>44.491797</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=TRY&amp;to=USD'>0.022476</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Emirati Dirham</td>\n\t\t\t\t\t\t<td
         class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=AED'>3.672500</a></td>\n\t\t\t\t\t\t<td
         class='rtRates'><a href='https://www.x-rates.com/graph/?from=AED&amp;to=USD'>0.272294</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>British Pound</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=GBP'>0.753905</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=GBP&amp;to=USD'>1.326426</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=GBP'>0.750115</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=GBP&amp;to=USD'>1.333129</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t</tbody>\n</table>\n\t\t<script type=\"text/javascript\">\n\t\t\t$(function()
         {\n\t\t\t\t$(\".tablesorter\").tablesorter({\n\t\t\t\t\tsortList: [[0,0]]
         \n\t\t\t    });\n\t\t    }); \n\t\t</script> \t\n\t\t</div>\n\t\t\t\t\t<div
-        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTableTimestamp\">Mar 13, 2026
-        14:52 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\t\t<div class=\"col1 pull-left\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div
+        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTableTimestamp\">Apr 01, 2026
+        15:59 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\t\t<div class=\"col1 pull-left\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div
         class='moduleContent bottomMargin'>\n\t\t\t\n\t\t\t\t\t<div class=\"converterFields\">\n\t\t\t<a
         name='converter'></a>\n\t\t\t<div class=\"converterSteps\"><span>1.</span>
         Configure Converter</div>\n\t\t\t<div class=\"converterAmountWrapper\">\n\t\t\t\t<label
@@ -1037,7 +1120,7 @@ interactions:
         id=\"historicallookupForm\" action=\"https://www.x-rates.com/historical/\"
         onSubmit=\"submitConverterWithExtraArgs(this,'historicallookup');return false;\">\r\n\t\t\t\t\t\t<label
         for=\"historialDate\" class=\"sr-only\">historical date</label>\n\t\t<input
-        type=\"text\" value=\"2026-03-13\" name=\"date\" id=\"historicalDate\">\n\t\t<input
+        type=\"text\" value=\"2026-04-01\" name=\"date\" id=\"historicalDate\">\n\t\t<input
         type=\"submit\" value=\"Go!\" class=\"goButton\">\r\n\t\t\t</form>\r\n\t\t</div>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t</div>\n\t\t\n\n\t\t</div>\n\t\t\t\n\t\t</div>\t\t\t\t<div
         class=\"col1 xeLeftAd\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div class='moduleContent
         bottomMargin'>\n\t\t\t\n\t\t\t<div id='ros_ls'>\t\t<script type=\"text/javascript\">\n\t\t\t\n\t\t\tenqueueAd('ros_ls');\n\t\t</script>\n\t\t<noscript>\n\t\t\t<div
@@ -1139,17 +1222,17 @@ interactions:
         >\t\t\t\n\t\t\t\t\t\t<div class=\"module bottomMargin\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div
         class='moduleContent'>\n\t\t\t\n\t\t\t\t\t<h4 class=\"ratesChangetableHdr\">Percent
         Change in the Last 24 Hours</h4>\n\t\t<ul id='ratesTrends' class='currencyPairUL'>\n\t\t\t<li>EUR/USD<span
-        class='down'>-0.46930%</span></li><li class=\"left-border\">USD/JPY<span class='up'>+0.11145%</span></li><li
-        class=\"clear-left\">GBP/USD<span class='down'>-0.68449%</span></li><li class=\"left-border\">USD/CHF<span
-        class='up'>+0.59401%</span></li><li class=\"clear-left\">USD/CAD<span class='up'>+0.73259%</span></li><li
-        class=\"left-border\">EUR/JPY<span class='down'>-0.35837%</span></li><li class=\"clear-left\">AUD/USD<span
-        class='down'>-0.75971%</span></li><li class=\"left-border\">CNY/USD<span class='down'>-0.36203%</span></li>\n\t\t</ul>\n\t\t<script
+        class='up'>+0.85991%</span></li><li class=\"left-border\">USD/JPY<span class='down'>-0.30072%</span></li><li
+        class=\"clear-left\">GBP/USD<span class='up'>+1.11787%</span></li><li class=\"left-border\">USD/CHF<span
+        class='down'>-1.14912%</span></li><li class=\"clear-left\">USD/CAD<span class='down'>-0.56548%</span></li><li
+        class=\"left-border\">EUR/JPY<span class='up'>+0.55660%</span></li><li class=\"clear-left\">AUD/USD<span
+        class='up'>+1.32499%</span></li><li class=\"left-border\">CNY/USD<span class='up'>+0.36241%</span></li>\n\t\t</ul>\n\t\t<script
         type=\"text/javascript\">\n\t\t\tif(typeof(registerAfterRefreshFunction) ==
         \"function\")\n\t\t\t{\n\t\t\t\tregisterRefreshFunctions(\n\t\t\t\t\tfunction(responseText){updateContents(['#ratesTrends',
         '#ratesTrendsTimestamp'], responseText); $('#ratesTrends').fadeTo(300,1);},
         \n\t\t\t\t\tfunction(){refreshFadeOut('#ratesTrends');});\n\t\t\t}\n\t\t</script>\t\t\n\t\t</div>\n\t\t\t\t\t<div
-        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTrendsTimestamp\">Mar 13, 2026
-        14:52 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\n\t\t\t</div>\n\t\t</div>\t\t
+        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTrendsTimestamp\">Apr 01, 2026
+        15:59 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\n\t\t\t</div>\n\t\t</div>\t\t
         <div class=\"grid\">\n\t                <div class=\"grid__cell\" >\t\t\t\n\t\t\t\t\t\t<div
         class=\"module bottomMargin\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div class='moduleContent'>\n\t\t\t\n\t\t\t\t\t<div
         id=\"output_rs\" class='rightsideAd'>\n\t\t\t\t\t<script type=\"text/javascript\">\n\t\t\t\t\t\te9AdSlots['output_rs']['mobileAd']
@@ -1190,13 +1273,89 @@ interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Fri, 13 Mar 2026 14:52:23 GMT
+      - Wed, 01 Apr 2026 15:59:03 GMT
       Server:
       - Apache
       Vary:
       - Accept-Encoding
       content-length:
-      - '44912'
+      - '44908'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"method":"getProgramAccounts","jsonrpc":"2.0","id":0,"params":["Stake11111111111111111111111111111111111111",{"filters":[{"memcmp":{"offset":44,"encoding":"base58","bytes":"FkzRQKW8Mzip4xXHamibLZB28sjqN9ZLFacQdbuVEYxa"}}],"encoding":"base64","dataSlice":null,"commitment":"finalized","minContextSlot":null,"withContext":null,"sortResults":null}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '347'
+      Content-Type:
+      - application/json
+      Host:
+      - api.mainnet-beta.solana.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":[],"id":0}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      content-length:
+      - '37'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 01 Apr 2026 15:59:04 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-2161'
+      x-ratelimit-method-limit:
+      - '2'
+      x-ratelimit-method-remaining:
+      - '1'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '92'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra286
     status:
       code: 200
       message: OK
@@ -1214,45 +1373,65 @@ interactions:
       Content-Type:
       - application/json
       Host:
-      - solana-rpc.publicnode.com
+      - api.mainnet-beta.solana.com
       User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://solana-rpc.publicnode.com/
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.10","slot":406157467},"value":[{"account":{"data":["xvp6877brTo9ZfNqq8l0MbG75MLS9uDkfKYCA0UvXWE+wGELJTcVtMv2/Hy+3Dtm9gOO3zv+HNuRl4Sn9Sk+vp4YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","base64"],"executable":false,"lamports":2039280,"owner":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","rentEpoch":18446744073709551615,"space":165},"pubkey":"DHsJgsxAQSPiCsP6zy69PzQ2RFk2B6th7ougge69DW3E"},{"account":{"data":["eXyzPK1sDIBzsh2kxDdkBYXtOfawRnLIelHWBYy3Jvo+wGELJTcVtMv2/Hy+3Dtm9gOO3zv+HNuRl4Sn9Sk+vkbST9QFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","base64"],"executable":false,"lamports":2039280,"owner":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","rentEpoch":18446744073709551615,"space":165},"pubkey":"8twpiTmQijkwA4gm7ZbimY7GSesjq4itskGSva12Bi4w"}]},"id":0}
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.11","slot":410343070},"value":[{"account":{"data":["eXyzPK1sDIBzsh2kxDdkBYXtOfawRnLIelHWBYy3Jvo+wGELJTcVtMv2/Hy+3Dtm9gOO3zv+HNuRl4Sn9Sk+vkbST9QFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","base64"],"executable":false,"lamports":2039280,"owner":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","rentEpoch":18446744073709551615,"space":165},"pubkey":"8twpiTmQijkwA4gm7ZbimY7GSesjq4itskGSva12Bi4w"},{"account":{"data":["xvp6877brTo9ZfNqq8l0MbG75MLS9uDkfKYCA0UvXWE+wGELJTcVtMv2/Hy+3Dtm9gOO3zv+HNuRl4Sn9Sk+vp4YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA","base64"],"executable":false,"lamports":2039280,"owner":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","rentEpoch":18446744073709551615,"space":165},"pubkey":"DHsJgsxAQSPiCsP6zy69PzQ2RFk2B6th7ougge69DW3E"}]},"id":0}
 
         '
     headers:
-      CF-RAY:
-      - 9dbbdcb689c53eb3-BCN
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 13 Mar 2026 14:52:23 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Content-Type-Options:
-      - nosniff
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
       access-control-max-age:
-      - '1728000'
-      alt-svc:
-      - h3=":443"; ma=86400
-      cf-cache-status:
-      - DYNAMIC
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
       content-length:
       - '993'
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains; preload
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 01 Apr 2026 15:59:26 GMT
+      transfer-encoding:
+      - chunked
       vary:
-      - Origin, accept-encoding
-      x-envoy-upstream-service-time:
-      - '10'
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-2073'
+      x-ratelimit-method-limit:
+      - '2'
+      x-ratelimit-method-remaining:
+      - '1'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '99'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra286
     status:
       code: 200
       message: OK
@@ -1270,45 +1449,65 @@ interactions:
       Content-Type:
       - application/json
       Host:
-      - solana-rpc.publicnode.com
+      - api.mainnet-beta.solana.com
       User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://solana-rpc.publicnode.com/
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.10","slot":406157467},"value":[{"account":{"data":["HC7mfxJN9u3yqdK/XjpTPHcBtY+NqpVyEKHlsGGM0r4+wGELJTcVtMv2/Hy+3Dtm9gOO3zv+HNuRl4Sn9Sk+vgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgcAAAACAAgAAAAAAAAAAAAPAAEAAA==","base64"],"executable":false,"lamports":2192400,"owner":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","rentEpoch":18446744073709551615,"space":187},"pubkey":"6WFzSmenHeLEh4u6ibFsZ1k7NJioNJrK1LamJrqfBpCG"}]},"id":0}
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.11","slot":410343070},"value":[{"account":{"data":["HC7mfxJN9u3yqdK/XjpTPHcBtY+NqpVyEKHlsGGM0r4+wGELJTcVtMv2/Hy+3Dtm9gOO3zv+HNuRl4Sn9Sk+vgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgcAAAACAAgAAAAAAAAAAAAPAAEAAA==","base64"],"executable":false,"lamports":2192400,"owner":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","rentEpoch":18446744073709551615,"space":187},"pubkey":"6WFzSmenHeLEh4u6ibFsZ1k7NJioNJrK1LamJrqfBpCG"}]},"id":0}
 
         '
     headers:
-      CF-RAY:
-      - 9dbbdcb73f0298e6-BCN
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 13 Mar 2026 14:52:23 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Content-Type-Options:
-      - nosniff
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
       access-control-max-age:
-      - '1728000'
-      alt-svc:
-      - h3=":443"; ma=86400
-      cf-cache-status:
-      - DYNAMIC
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
       content-length:
       - '577'
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains; preload
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 01 Apr 2026 15:59:25 GMT
+      transfer-encoding:
+      - chunked
       vary:
-      - Origin, accept-encoding
-      x-envoy-upstream-service-time:
-      - '6'
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-2070'
+      x-ratelimit-method-limit:
+      - '2'
+      x-ratelimit-method-remaining:
+      - '0'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '98'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra286
     status:
       code: 200
       message: OK
@@ -1326,45 +1525,65 @@ interactions:
       Content-Type:
       - application/json
       Host:
-      - solana-rpc.publicnode.com
+      - api.mainnet-beta.solana.com
       User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://solana-rpc.publicnode.com/
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.10","slot":406157467},"value":{"data":["AQAAAEcn8RD5rZyCj3b2Rq49ZiVsmScRvvn3bU9qhBHACBPViqCgZYrLAQAGAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==","base64"],"executable":false,"lamports":1461600,"owner":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","rentEpoch":18446744073709551615,"space":82}},"id":0}
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.11","slot":410343070},"value":{"data":["AQAAAEcn8RD5rZyCj3b2Rq49ZiVsmScRvvn3bU9qhBHACBPVBQ3Jcs+6AQAGAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==","base64"],"executable":false,"lamports":1461600,"owner":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","rentEpoch":18446744073709551615,"space":82}},"id":0}
 
         '
     headers:
-      CF-RAY:
-      - 9dbbdcb7d98498e6-BCN
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 13 Mar 2026 14:52:23 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Content-Type-Options:
-      - nosniff
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
       access-control-max-age:
-      - '1728000'
-      alt-svc:
-      - h3=":443"; ma=86400
-      cf-cache-status:
-      - DYNAMIC
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
       content-length:
       - '366'
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains; preload
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 01 Apr 2026 15:59:26 GMT
+      transfer-encoding:
+      - chunked
       vary:
-      - Origin, accept-encoding
-      x-envoy-upstream-service-time:
-      - '92'
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-2065'
+      x-ratelimit-method-limit:
+      - '30'
+      x-ratelimit-method-remaining:
+      - '29'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '97'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra286
     status:
       code: 200
       message: OK
@@ -1382,45 +1601,65 @@ interactions:
       Content-Type:
       - application/json
       Host:
-      - solana-rpc.publicnode.com
+      - api.mainnet-beta.solana.com
       User-Agent:
       - python-httpx/0.28.1
     method: POST
-    uri: https://solana-rpc.publicnode.com/
+    uri: https://api.mainnet-beta.solana.com/
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.10","slot":406157467},"value":{"data":["BEcn8RD5rZyCj3b2Rq49ZiVsmScRvvn3bU9qhBHACBPVeXyzPK1sDIBzsh2kxDdkBYXtOfawRnLIelHWBYy3JvogAAAAanVwaXRlciBsZW5kIFVTREMAAAAAAAAAAAAAAAAAAAAKAAAAamxVU0RDAAAAAMgAAABodHRwczovL2Nkbi5pbnN0YWRhcHAuaW8vc29sYW5hL3Rva2Vucy9tZXRhZGF0YS91c2RjLmpzb24AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAf4BAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==","base64"],"executable":false,"lamports":5115600,"owner":"metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s","rentEpoch":18446744073709551615,"space":607}},"id":0}
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"3.1.11","slot":410343071},"value":{"data":["BEcn8RD5rZyCj3b2Rq49ZiVsmScRvvn3bU9qhBHACBPVeXyzPK1sDIBzsh2kxDdkBYXtOfawRnLIelHWBYy3JvogAAAAanVwaXRlciBsZW5kIFVTREMAAAAAAAAAAAAAAAAAAAAKAAAAamxVU0RDAAAAAMgAAABodHRwczovL2Nkbi5pbnN0YWRhcHAuaW8vc29sYW5hL3Rva2Vucy9tZXRhZGF0YS91c2RjLmpzb24AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAf4BAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==","base64"],"executable":false,"lamports":5115600,"owner":"metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s","rentEpoch":18446744073709551615,"space":607}},"id":0}
 
         '
     headers:
-      CF-RAY:
-      - 9dbbdcb90c1b5111-BCN
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 13 Mar 2026 14:52:23 GMT
-      Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      X-Content-Type-Options:
-      - nosniff
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
       access-control-max-age:
-      - '1728000'
-      alt-svc:
-      - h3=":443"; ma=86400
-      cf-cache-status:
-      - DYNAMIC
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
       content-length:
       - '1067'
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains; preload
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 01 Apr 2026 15:59:26 GMT
+      transfer-encoding:
+      - chunked
       vary:
-      - Origin, accept-encoding
-      x-envoy-upstream-service-time:
-      - '63'
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-2068'
+      x-ratelimit-method-limit:
+      - '30'
+      x-ratelimit-method-remaining:
+      - '28'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '96'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra286
     status:
       code: 200
       message: OK
@@ -1434,15 +1673,15 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.42.1.dev205+g00ba3914d3
+      - rotki/1.41.2.dev1269+gb7ca15496a
     method: GET
     uri: https://api.coingecko.com/api/v3/simple/price/?ids=usd-coin&vs_currencies=eur
   response:
     body:
-      string: '{"usd-coin":{"eur":0.872241}}'
+      string: '{"usd-coin":{"eur":0.861024}}'
     headers:
       CF-RAY:
-      - 9dbbdcba1f203eb3-BCN
+      - 9e58cd117fa71a71-AMS
       Cache-Control:
       - max-age=30, public, must-revalidate, s-maxage=60
       Connection:
@@ -1450,7 +1689,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 13 Mar 2026 14:52:24 GMT
+      - Wed, 01 Apr 2026 15:59:27 GMT
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -1477,7 +1716,7 @@ interactions:
       - script-src https://accounts.google.com/gsi/client; frame-src https://accounts.google.com/gsi/;
         connect-src https://accounts.google.com/gsi/;
       etag:
-      - W/"f32c71bb04acc8ef863754b8ed04e6fd"
+      - W/"f0f28397e67a3ce4629bcca55616dcc4"
       referrer-policy:
       - strict-origin-when-cross-origin
       strict-transport-security:
@@ -1486,16 +1725,14 @@ interactions:
       - Accept-Encoding, Origin
       x-content-type-options:
       - nosniff
-      x-download-options:
-      - noopen
       x-frame-options:
       - SAMEORIGIN
       x-permitted-cross-domain-policies:
       - none
       x-request-id:
-      - be9f2817-f576-4778-8dd5-91482dd3b303
+      - acc20f74-5951-484d-aaeb-5f8d48b3f8dd
       x-runtime:
-      - '0.002467'
+      - '0.006292'
       x-xss-protection:
       - '0'
     status:
@@ -1516,16 +1753,18 @@ interactions:
     uri: https://coins.llama.fi/prices/current/solana:9BEcn9aPEmhSPbPQeFGjidRiEKki46fVQDyPpSQXPA2D
   response:
     body:
-      string: '{"coins":{"solana:9BEcn9aPEmhSPbPQeFGjidRiEKki46fVQDyPpSQXPA2D":{"decimals":6,"price":1.0360945310735503,"symbol":"jlUSDC","timestamp":1773412946,"confidence":0.9}}}'
+      string: '{"coins":{"solana:9BEcn9aPEmhSPbPQeFGjidRiEKki46fVQDyPpSQXPA2D":{"decimals":6,"price":1.0380694020838834,"symbol":"jlUSDC","timestamp":1775058208,"confidence":0.9}}}'
     headers:
+      Age:
+      - '157'
       CF-RAY:
-      - 9dbbdcbb8e1278b2-BCN
+      - 9e58cd12da48f6ad-AMS
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Fri, 13 Mar 2026 14:52:24 GMT
+      - Wed, 01 Apr 2026 15:59:27 GMT
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -1535,23 +1774,99 @@ interactions:
       access-control-allow-origin:
       - '*'
       apigw-requestid:
-      - aKqqXhMRliAEM1g=
+      - bJb6WgVlliAEMJA=
       cf-cache-status:
-      - MISS
+      - HIT
       content-length:
       - '165'
       expires:
-      - Fri, 13 Mar 2026 14:55:20 GMT
+      - Wed, 01 Apr 2026 16:00:20 GMT
       last-modified:
-      - Fri, 13 Mar 2026 14:52:24 GMT
+      - Wed, 01 Apr 2026 15:56:49 GMT
       via:
-      - 1.1 69f54fd525eb29c918e6e1c0a7125022.cloudfront.net (CloudFront)
+      - 1.1 c24bf4c03d36f2d43fb38710581fa0e6.cloudfront.net (CloudFront)
       x-amz-cf-id:
-      - 5CxDqw1I-EVRcZjg502tZ8-lE1ouWp2kd3GZXKw3cBpoGTa4t-44Tw==
+      - paqxTr-XvuWvdtoANUi4PGrAvY1Az1tFp5idE7r3AJyJcqbI4M2PKQ==
       x-amz-cf-pop:
-      - BCN50-P1
+      - AMS1-P2
       x-cache:
       - Miss from cloudfront
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"method":"getProgramAccounts","jsonrpc":"2.0","id":0,"params":["Stake11111111111111111111111111111111111111",{"filters":[{"memcmp":{"offset":44,"encoding":"base58","bytes":"5DxRG8hTcBfeCL7pz7NVMZSeqrQAiDJ5pv5RR9pM84ey"}}],"encoding":"base64","dataSlice":null,"commitment":"finalized","minContextSlot":null,"withContext":null,"sortResults":null}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '347'
+      Content-Type:
+      - application/json
+      Host:
+      - api.mainnet-beta.solana.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":[],"id":0}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      content-length:
+      - '37'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 01 Apr 2026 15:59:27 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-2074'
+      x-ratelimit-method-limit:
+      - '2'
+      x-ratelimit-method-remaining:
+      - '1'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '100'
+      x-ratelimit-rps-remaining:
+      - '95'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra286
     status:
       code: 200
       message: OK
@@ -1567,7 +1882,7 @@ interactions:
       User-Agent:
       - python-requests/2.32.5
     method: GET
-    uri: https://www.x-rates.com/historical/?from=EUR&amount=1&date=2026-01-01
+    uri: https://www.x-rates.com/historical/?from=EUR&amount=1&date=2026-04-01
   response:
     body:
       string: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta http-equiv=\"Content-Type\"
@@ -1576,7 +1891,7 @@ interactions:
         expenses. Select your currencies and the date to get histroical rate tables.\"/>\n<meta
         name=\"keywords\" content=\"1 EUR to EUR, historical exchange rates, historic
         rates, x-rates, historic currency table, past exchange rates, currency lookup\"/>\n<link
-        rel=\"canonical\" href=\"http://www.x-rates.com/historical/?from=EUR&amount=1&date=2026-01-01\"/>\n\t\t\t<script
+        rel=\"canonical\" href=\"http://www.x-rates.com/historical/?from=EUR&amount=1&date=2026-04-01\"/>\n\t\t\t<script
         type='text/javascript'>\n\t\t\t\tvar e9AdSlots  = { \n\t\t\t\t  output_lb
         : {site:'ExchangeRates', adSpace:'Homepage', size:'728x90,468x60', noAd: '1'},\noutput_rs
         : {site:'ExchangeRates', adSpace:'Homepage', size:'300x250,300x600,160x600',
@@ -1646,214 +1961,214 @@ interactions:
         class=\"converterLinkTooltip\">\r\n\t\t\t<form id=\"historicallookupForm\"
         action=\"https://www.x-rates.com/historical/\" onSubmit=\"submitConverterWithExtraArgs(this,'historicallookup');return
         false;\">\r\n\t\t\t\t\t\t<label for=\"historialDate\" class=\"sr-only\">historical
-        date</label>\n\t\t<input type=\"text\" value=\"2026-01-01\" name=\"date\"
+        date</label>\n\t\t<input type=\"text\" value=\"2026-04-01\" name=\"date\"
         id=\"historicalDate\">\n\t\t<input type=\"submit\" value=\"Go!\" class=\"goButton\">\r\n\t\t\t</form>\r\n\t\t</div>\n\t\t\t<script
         type='text/javascript'>\n\t\t\t\t$(function() {\n\t\t\t\t\t\t\t\t\t$.datepicker.setDefaults({\n\t\t\t\t\tvalidateDateMinMax:
         'service.historicallookup.error.date.invalid'\n\t\t\t\t});\n\n\t\t\t\tvar
         isOutputPage = $(\".li-historicallookup\").hasClass(\"selected\");\n\t\t\t\t$(\"#historicalDate\").datepicker({
         \n\t\t\t\t\t\t\t\tchangeYear: true, \n\t\t\t\t\t\t\t\tchangeMonth: true, \n\t\t\t\t\t\t\t\tdateFormat:
         'yy-mm-dd', \n\t\t\t\t\t\t\t\tminDate: new Date(2016, 0, 01), \n\t\t\t\t\t\t\t\tmaxDate:
-        new Date(2026, 2, 13),\n\t\t\t\t\t\t\t\tyearRange: '2016:2026',\n\t\t\t\t\t\t\t\tbeforeShow:
+        new Date(2026, 3, 01),\n\t\t\t\t\t\t\t\tyearRange: '2016:2026',\n\t\t\t\t\t\t\t\tbeforeShow:
         function(){ \n\t\t\t\t\t\t\t\t\tif(!isOutputPage){ \n\t\t\t\t\t\t\t\t\t\t$(\".li-historicallookup\").addClass(\"selected\");\n\t\t\t\t\t\t\t\t\t}
         \n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\tonClose: function(){ \n\t\t\t\t\t\t\t\t\tif(!isOutputPage){
         \n\t\t\t\t\t\t\t\t\t\t$(\".li-historicallookup\").removeClass(\"selected\");\n\t\t\t\t\t\t\t\t\t}
         \n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t});\n\n\t\t\t\t$(\"#historicallookupForm\").validate({\n\t\t\t\t\t\t\t\terrorLabelContainer:
         \"#validationErrors\",\n\t\t\t\t\t\t\t\tshowErrors: function(errorMap, errorList)
         {\n\t\t\t\t\t\t\t\t\t\t$(\"#historicallookupErrors\").html('');\n\t\t\t\t\t\t\t\t\t\tthis.defaultShowErrors();\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t});\t\t\t\t\t\t\t\n\t\t\t\t});
-        \n\t\t\t</script>\t\t<span class=\"ratesTimestamp\">Jan 01, 2026 17:00 UTC</span>\n<table
+        \n\t\t\t</script>\t\t<span class=\"ratesTimestamp\">Apr 01, 2026 15:59 UTC</span>\n<table
         class=\"ratesTable\" cellpadding=0 cellspacing=0>\n \t<thead>\n \t\t\t<tr>\n\t\t<th
         class='rtHeader rtHeaderCurr'>Euro</th>\n\t\t<th class='rtHeader rtHeaderValues'>1.00
         EUR</th>\n\t\t<th class='rtHeader rtHeaderValues'>inv. 1.00 EUR</th>\n\t</tr>\n
         \t</thead>\n\t<tbody>\n\t\t\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>US Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=USD'>1.174527</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=EUR'>0.851407</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=USD'>1.161506</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=EUR'>0.860951</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>British Pound</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=GBP'>0.871533</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=GBP&amp;to=EUR'>1.147404</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=GBP'>0.871263</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=GBP&amp;to=EUR'>1.147759</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Indian Rupee</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=INR'>105.571257</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=INR&amp;to=EUR'>0.009472</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=INR'>108.219727</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=INR&amp;to=EUR'>0.009240</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Australian Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=AUD'>1.759989</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=AUD&amp;to=EUR'>0.568185</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=AUD'>1.672543</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=AUD&amp;to=EUR'>0.597892</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Canadian Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CAD'>1.611690</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CAD&amp;to=EUR'>0.620467</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CAD'>1.611850</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CAD&amp;to=EUR'>0.620405</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Singapore Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=SGD'>1.509900</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SGD&amp;to=EUR'>0.662295</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=SGD'>1.489394</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SGD&amp;to=EUR'>0.671414</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Swiss Franc</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CHF'>0.930272</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CHF&amp;to=EUR'>1.074955</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CHF'>0.921429</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CHF&amp;to=EUR'>1.085271</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Malaysian Ringgit</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=MYR'>4.766884</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MYR&amp;to=EUR'>0.209781</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=MYR'>4.676369</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MYR&amp;to=EUR'>0.213841</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Japanese Yen</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=JPY'>184.056834</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=JPY&amp;to=EUR'>0.005433</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=JPY'>184.220577</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=JPY&amp;to=EUR'>0.005428</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Chinese Yuan
-        Renminbi</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CNY'>8.223970</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CNY&amp;to=EUR'>0.121596</a></td>
+        Renminbi</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CNY'>7.982335</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CNY&amp;to=EUR'>0.125277</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t</tbody>\n</table>\n\t\t\t<span class='ratesTableAlpha'>Alphabetical
-        order</span>\n\t\t\t<span class=\"ratesTimestamp\">Jan 01, 2026 17:00 UTC</span>\n<table
+        order</span>\n\t\t\t<span class=\"ratesTimestamp\">Apr 01, 2026 15:59 UTC</span>\n<table
         class=\"tablesorter ratesTable\" cellpadding=0 cellspacing=0>\n \t<thead>\n
         \t\t\t<tr>\n\t\t<th class='rtHeader rtHeaderCurr'>Euro</th>\n\t\t<th class='rtHeader
         rtHeaderValues'>1.00 EUR</th>\n\t\t<th class='rtHeader rtHeaderValues'>inv.
         1.00 EUR</th>\n\t</tr>\n \t</thead>\n\t<tbody>\n\t\t\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Argentine
-        Peso</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=ARS'>1705.207343</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ARS&amp;to=EUR'>0.000586</a></td>
+        Peso</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=ARS'>1609.593144</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ARS&amp;to=EUR'>0.000621</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Australian Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=AUD'>1.759989</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=AUD&amp;to=EUR'>0.568185</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=AUD'>1.672543</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=AUD&amp;to=EUR'>0.597892</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Bahraini Dinar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=BHD'>0.441622</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BHD&amp;to=EUR'>2.264379</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=BHD'>0.436726</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BHD&amp;to=EUR'>2.289764</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Botswana Pula</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=BWP'>15.437889</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BWP&amp;to=EUR'>0.064776</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=BWP'>16.013701</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BWP&amp;to=EUR'>0.062447</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Brazilian Real</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=BRL'>6.473724</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BRL&amp;to=EUR'>0.154471</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=BRL'>5.984193</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BRL&amp;to=EUR'>0.167107</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Bruneian Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=BND'>1.509900</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BND&amp;to=EUR'>0.662295</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=BND'>1.489394</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=BND&amp;to=EUR'>0.671414</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Canadian Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CAD'>1.611690</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CAD&amp;to=EUR'>0.620467</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CAD'>1.611850</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CAD&amp;to=EUR'>0.620405</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Chilean Peso</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CLP'>1057.163071</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CLP&amp;to=EUR'>0.000946</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CLP'>1060.769824</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CLP&amp;to=EUR'>0.000943</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Chinese Yuan
-        Renminbi</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CNY'>8.223970</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CNY&amp;to=EUR'>0.121596</a></td>
+        Renminbi</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CNY'>7.982335</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CNY&amp;to=EUR'>0.125277</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Colombian Peso</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=COP'>4427.244675</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=COP&amp;to=EUR'>0.000226</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=COP'>4262.592590</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=COP&amp;to=EUR'>0.000235</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Czech Koruna</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CZK'>24.169841</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CZK&amp;to=EUR'>0.041374</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CZK'>24.516019</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CZK&amp;to=EUR'>0.040790</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Danish Krone</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=DKK'>7.470991</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=DKK&amp;to=EUR'>0.133851</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=DKK'>7.472411</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=DKK&amp;to=EUR'>0.133826</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Hong Kong Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=HKD'>9.138296</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=HKD&amp;to=EUR'>0.109430</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=HKD'>9.103165</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=HKD&amp;to=EUR'>0.109852</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Hungarian Forint</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=HUF'>384.522089</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=HUF&amp;to=EUR'>0.002601</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=HUF'>382.810216</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=HUF&amp;to=EUR'>0.002612</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Icelandic Krona</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=ISK'>147.229812</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ISK&amp;to=EUR'>0.006792</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=ISK'>144.408077</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ISK&amp;to=EUR'>0.006925</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Indian Rupee</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=INR'>105.571257</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=INR&amp;to=EUR'>0.009472</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=INR'>108.219727</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=INR&amp;to=EUR'>0.009240</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Indonesian Rupiah</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=IDR'>19613.366807</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=IDR'>19654.203446</a></td>\n\t\t\t\t\t\t<td
         class='rtRates'><a href='https://www.x-rates.com/graph/?from=IDR&amp;to=EUR'>0.000051</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Iranian Rial</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=IRR'>49390.172940</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=IRR&amp;to=EUR'>0.000020</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=IRR'>1532861.091853</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=IRR&amp;to=EUR'>0.000001</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Israeli Shekel</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=ILS'>3.741011</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ILS&amp;to=EUR'>0.267307</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=ILS'>3.635492</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ILS&amp;to=EUR'>0.275066</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Japanese Yen</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=JPY'>184.056834</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=JPY&amp;to=EUR'>0.005433</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=JPY'>184.220577</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=JPY&amp;to=EUR'>0.005428</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Kazakhstani Tenge</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=KZT'>595.768171</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=KZT&amp;to=EUR'>0.001679</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=KZT'>551.674266</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=KZT&amp;to=EUR'>0.001813</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>South Korean
-        Won</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=KRW'>1693.877820</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=KRW&amp;to=EUR'>0.000590</a></td>
+        Won</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=KRW'>1756.535854</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=KRW&amp;to=EUR'>0.000569</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Kuwaiti Dinar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=KWD'>0.361503</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=KWD&amp;to=EUR'>2.766231</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=KWD'>0.358696</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=KWD&amp;to=EUR'>2.787873</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Libyan Dinar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=LYD'>6.365520</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=LYD&amp;to=EUR'>0.157096</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=LYD'>7.406865</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=LYD&amp;to=EUR'>0.135010</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Malaysian Ringgit</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=MYR'>4.766884</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MYR&amp;to=EUR'>0.209781</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=MYR'>4.676369</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MYR&amp;to=EUR'>0.213841</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Mauritian Rupee</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=MUR'>54.263581</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MUR&amp;to=EUR'>0.018429</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=MUR'>54.334935</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MUR&amp;to=EUR'>0.018404</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Mexican Peso</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=MXN'>21.154404</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MXN&amp;to=EUR'>0.047271</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=MXN'>20.677600</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=MXN&amp;to=EUR'>0.048362</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Nepalese Rupee</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=NPR'>168.993190</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=NPR&amp;to=EUR'>0.005917</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=NPR'>173.232728</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=NPR&amp;to=EUR'>0.005773</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>New Zealand Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=NZD'>2.043141</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=NZD&amp;to=EUR'>0.489442</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=NZD'>2.013107</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=NZD&amp;to=EUR'>0.496745</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Norwegian Krone</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=NOK'>11.852676</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=NOK&amp;to=EUR'>0.084369</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=NOK'>11.271887</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=NOK&amp;to=EUR'>0.088716</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Omani Rial</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=OMR'>0.452007</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=OMR&amp;to=EUR'>2.212357</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=OMR'>0.446740</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=OMR&amp;to=EUR'>2.238437</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Pakistani Rupee</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=PKR'>329.134381</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=PKR&amp;to=EUR'>0.003038</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=PKR'>324.109730</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=PKR&amp;to=EUR'>0.003085</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Philippine Peso</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=PHP'>69.183443</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=PHP&amp;to=EUR'>0.014454</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=PHP'>69.948791</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=PHP&amp;to=EUR'>0.014296</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Polish Zloty</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=PLN'>4.217522</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=PLN&amp;to=EUR'>0.237106</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=PLN'>4.280832</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=PLN&amp;to=EUR'>0.233599</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Qatari Riyal</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=QAR'>4.275278</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=QAR&amp;to=EUR'>0.233903</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=QAR'>4.227882</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=QAR&amp;to=EUR'>0.236525</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Romanian New
-        Leu</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=RON'>5.095613</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=RON&amp;to=EUR'>0.196247</a></td>
+        Leu</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=RON'>5.097538</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=RON&amp;to=EUR'>0.196173</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Russian Ruble</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=RUB'>92.829212</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=RUB&amp;to=EUR'>0.010772</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=RUB'>93.481279</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=RUB&amp;to=EUR'>0.010697</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Saudi Arabian
-        Riyal</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=SAR'>4.404476</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SAR&amp;to=EUR'>0.227042</a></td>
+        Riyal</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=SAR'>4.355648</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SAR&amp;to=EUR'>0.229587</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Singapore Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=SGD'>1.509900</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SGD&amp;to=EUR'>0.662295</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=SGD'>1.489394</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SGD&amp;to=EUR'>0.671414</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>South African
-        Rand</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=ZAR'>19.399356</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ZAR&amp;to=EUR'>0.051548</a></td>
+        Rand</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=ZAR'>19.497536</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=ZAR&amp;to=EUR'>0.051289</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Sri Lankan Rupee</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=LKR'>363.996928</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=LKR&amp;to=EUR'>0.002747</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=LKR'>366.063836</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=LKR&amp;to=EUR'>0.002732</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Swedish Krona</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=SEK'>10.817866</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SEK&amp;to=EUR'>0.092440</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=SEK'>10.895505</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=SEK&amp;to=EUR'>0.091781</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Swiss Franc</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CHF'>0.930272</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CHF&amp;to=EUR'>1.074955</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CHF'>0.921429</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=CHF&amp;to=EUR'>1.085271</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Taiwan New Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=TWD'>36.807094</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=TWD&amp;to=EUR'>0.027169</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=TWD'>37.146729</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=TWD&amp;to=EUR'>0.026920</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Thai Baht</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=THB'>36.996602</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=THB&amp;to=EUR'>0.027030</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=THB'>37.755460</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=THB&amp;to=EUR'>0.026486</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Trinidadian Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=TTD'>7.983620</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=TTD&amp;to=EUR'>0.125256</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=TTD'>7.879888</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=TTD&amp;to=EUR'>0.126905</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Turkish Lira</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=TRY'>50.507365</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=TRY&amp;to=EUR'>0.019799</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=TRY'>51.677497</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=TRY&amp;to=EUR'>0.019351</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>Emirati Dirham</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=AED'>4.313450</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=AED&amp;to=EUR'>0.231833</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=AED'>4.265631</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=AED&amp;to=EUR'>0.234432</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>British Pound</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=GBP'>0.871533</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=GBP&amp;to=EUR'>1.147404</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=GBP'>0.871263</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=GBP&amp;to=EUR'>1.147759</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t \t\t\t\t<tr>\n\t\t\t\t\t\t<td>US Dollar</td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=USD'>1.174527</a></td>\n\t\t\t\t\t\t<td
-        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=EUR'>0.851407</a></td>
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=USD'>1.161506</a></td>\n\t\t\t\t\t\t<td
+        class='rtRates'><a href='https://www.x-rates.com/graph/?from=USD&amp;to=EUR'>0.860951</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t</tbody>\n</table>\n\t\t<script type=\"text/javascript\">\n\t\t\t$(function()
         {\n\t\t\t\t$(\".tablesorter\").tablesorter({\n\t\t\t\t\tsortList: [[0,0]]
         \n\t\t\t    });\n\t\t    }); \n\t\t</script> \t\n\t\t</div>\n\t\t\t\t\t<div
-        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTableTimestamp\">Jan 01, 2026
-        17:00 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\t\t<div class=\"col1 pull-left\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div
+        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTableTimestamp\">Apr 01, 2026
+        15:59 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\t\t<div class=\"col1 pull-left\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div
         class='moduleContent bottomMargin'>\n\t\t\t\n\t\t\t\t\t<div class=\"converterFields\">\n\t\t\t<a
         name='converter'></a>\n\t\t\t<div class=\"converterSteps\"><span>1.</span>
         Configure Converter</div>\n\t\t\t<div class=\"converterAmountWrapper\">\n\t\t\t\t<label
@@ -2072,17 +2387,17 @@ interactions:
         >\t\t\t\n\t\t\t\t\t\t<div class=\"module bottomMargin\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div
         class='moduleContent'>\n\t\t\t\n\t\t\t\t\t<h4 class=\"ratesChangetableHdr\">Percent
         Change in the Last 24 Hours</h4>\n\t\t<ul id='ratesTrends' class='currencyPairUL'>\n\t\t\t<li>EUR/USD<span
-        class='down'>-0.46930%</span></li><li class=\"left-border\">USD/JPY<span class='up'>+0.11145%</span></li><li
-        class=\"clear-left\">GBP/USD<span class='down'>-0.68449%</span></li><li class=\"left-border\">USD/CHF<span
-        class='up'>+0.59401%</span></li><li class=\"clear-left\">USD/CAD<span class='up'>+0.73259%</span></li><li
-        class=\"left-border\">EUR/JPY<span class='down'>-0.35837%</span></li><li class=\"clear-left\">AUD/USD<span
-        class='down'>-0.75971%</span></li><li class=\"left-border\">CNY/USD<span class='down'>-0.36203%</span></li>\n\t\t</ul>\n\t\t<script
+        class='up'>+0.85991%</span></li><li class=\"left-border\">USD/JPY<span class='down'>-0.30072%</span></li><li
+        class=\"clear-left\">GBP/USD<span class='up'>+1.11787%</span></li><li class=\"left-border\">USD/CHF<span
+        class='down'>-1.14912%</span></li><li class=\"clear-left\">USD/CAD<span class='down'>-0.56548%</span></li><li
+        class=\"left-border\">EUR/JPY<span class='up'>+0.55660%</span></li><li class=\"clear-left\">AUD/USD<span
+        class='up'>+1.32499%</span></li><li class=\"left-border\">CNY/USD<span class='up'>+0.36241%</span></li>\n\t\t</ul>\n\t\t<script
         type=\"text/javascript\">\n\t\t\tif(typeof(registerAfterRefreshFunction) ==
         \"function\")\n\t\t\t{\n\t\t\t\tregisterRefreshFunctions(\n\t\t\t\t\tfunction(responseText){updateContents(['#ratesTrends',
         '#ratesTrendsTimestamp'], responseText); $('#ratesTrends').fadeTo(300,1);},
         \n\t\t\t\t\tfunction(){refreshFadeOut('#ratesTrends');});\n\t\t\t}\n\t\t</script>\t\t\n\t\t</div>\n\t\t\t\t\t<div
-        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTrendsTimestamp\">Mar 13, 2026
-        14:52 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\n\t\t\t</div>\n\t\t</div>\t\t
+        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTrendsTimestamp\">Apr 01, 2026
+        15:59 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\n\t\t\t</div>\n\t\t</div>\t\t
         <div class=\"grid\">\n\t                <div class=\"grid__cell\" >\t\t\t\n\t\t\t\t\t\t<div
         class=\"module bottomMargin\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div class='moduleContent'>\n\t\t\t\n\t\t\t\t\t<div
         id=\"output_rs\" class='rightsideAd'>\n\t\t\t\t\t<script type=\"text/javascript\">\n\t\t\t\t\t\te9AdSlots['output_rs']['mobileAd']
@@ -2123,13 +2438,13 @@ interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Fri, 13 Mar 2026 14:52:24 GMT
+      - Wed, 01 Apr 2026 15:59:27 GMT
       Server:
       - Apache
       Vary:
       - Accept-Encoding
       content-length:
-      - '46923'
+      - '46921'
     status:
       code: 200
       message: OK
