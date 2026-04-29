@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev21+gcf9e950180.d20251127
+      - rotki/1.42.2.dev317+g7a75c36007.d20260424
     method: GET
     uri: https://api.etherscan.io/v2/api?action=getblocknobytime&chainid=1&closest=before&module=block&timestamp=1707090600
   response:
@@ -29,7 +29,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 01 Dec 2025 15:02:33 GMT
+      - Wed, 29 Apr 2026 15:24:42 GMT
       Server:
       - nginx
       Vary:
@@ -37,11 +37,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '2'
+      - '4'
       content-length:
       - '49'
       svid:
-      - '9'
+      - '7'
     status:
       code: 200
       message: OK
@@ -55,7 +55,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev21+gcf9e950180.d20251127
+      - rotki/1.42.2.dev317+g7a75c36007.d20260424
     method: GET
     uri: https://api.etherscan.io/v2/api?action=txsBeaconWithdrawal&address=0x23F02E9272EAc1F12F5be76D48b4a15323778f08&chainid=1&endblock=19158316&module=account&sort=asc&startblock=0
   response:
@@ -75,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 01 Dec 2025 15:02:33 GMT
+      - Wed, 29 Apr 2026 15:24:43 GMT
       Server:
       - nginx
       Vary:
@@ -83,59 +83,55 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '2'
+      - '4'
       content-length:
       - '8577'
       svid:
-      - '9'
+      - '7'
     status:
       code: 200
       message: OK
 - request:
-    body: '{"indicesOrPubkey": "583243"}'
+    body: '{"validator": {"validator_identifiers": [583243]}, "chain": "mainnet"}'
     headers:
       Accept:
       - '*/*'
       Accept-Encoding:
       - gzip, deflate
+      Authorization:
+      - Bearer sCfhbcO2V5SGmpaPLkyjSyfsa2MyXNy3ptmRqU0jcHb
       Connection:
       - keep-alive
       Content-Length:
-      - '29'
+      - '70'
       Content-Type:
       - application/json
       User-Agent:
-      - rotki/1.41.2.dev21+gcf9e950180.d20251127
+      - rotki/1.42.2.dev317+g7a75c36007.d20260424
     method: POST
-    uri: https://beaconcha.in/api/v1/validator
+    uri: https://beaconcha.in/api/v2/ethereum/validators
   response:
     body:
-      string: '{"status":"OK","data":{"activationeligibilityepoch":195555,"activationepoch":196429,"balance":0,"effectivebalance":0,"exitepoch":268709,"lastattestationslot":8598663,"name":"","pubkey":"0x823837958bd2abd92f03232d6d1266bcd9ce6c6d03e2c71a84dd67bad487fa67f46e11c961608e2560ae340cb604cb9b","slashed":false,"status":"exited","validatorindex":583243,"withdrawableepoch":268965,"withdrawalcredentials":"0x01000000000000000000000023f02e9272eac1f12f5be76d48b4a15323778f08","total_withdrawals":32917496634}}
+      string: '{"data":[{"validator":{"index":583243,"public_key":"0x823837958bd2abd92f03232d6d1266bcd9ce6c6d03e2c71a84dd67bad487fa67f46e11c961608e2560ae340cb604cb9b"},"slashed":false,"status":"withdrawal_done","online":null,"withdrawal_credentials":{"type":"execution_address","prefix":"0x01","credential":"0x01000000000000000000000023f02e9272eac1f12f5be76d48b4a15323778f08","address":"0x23F02E9272EAc1F12F5be76D48b4a15323778f08"},"life_cycle_epochs":{"activation_eligibility":195555,"activation":196429,"exit":268709,"withdrawable":268965},"balances":{"current":"0","effective":"0"},"finality":"not_finalized"}],"paging":{"next_cursor":""},"range":{"slot":{"start":14220992,"end":14221023},"epoch":{"start":444406,"end":444406},"timestamp":{"start":1777475927,"end":1777476310}}}
 
         '
     headers:
-      Access-Control-Allow-Headers:
-      - '*, Authorization'
-      Access-Control-Allow-Methods:
-      - '*'
-      Access-Control-Allow-Origin:
-      - '*'
       CF-RAY:
-      - 9a73775e58cacc49-MAD
+      - 9f3f50b51bc1e712-BCN
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Mon, 01 Dec 2025 15:02:34 GMT
+      - Wed, 29 Apr 2026 15:24:43 GMT
       Permissions-Policy:
       - interest-cohort=()
       Ratelimit-Bucket:
       - default
       Ratelimit-Limit:
-      - '5'
+      - '1'
       Ratelimit-Remaining:
-      - '4'
+      - '0'
       Ratelimit-Reset:
       - '1'
       Ratelimit-Validapikey:
@@ -146,43 +142,38 @@ interactions:
       - strict-origin-when-cross-origin
       Server:
       - cloudflare
-      Set-Cookie:
-      - __cf_bm=9imMVsujyyptHATKmpm.HFrVP9dOQPOzi_bWEotbRxI-1764601354-1.0.1.1-.WVaO3Jq_EXzxRoFgdsgQv4bycmwOJ60aI40SbpLBJSwZkcZKJ9uweJ55TwYBoxAwLnTndovw8598DMK7MHmqCKRMHEckCChpNsfDFmfOhk;
-        path=/; expires=Mon, 01-Dec-25 15:32:34 GMT; domain=.beaconcha.in; HttpOnly;
-        Secure; SameSite=None
-      - _cfuvid=T6Q6ec61jOXAYenl5ApG1cE5L_9LxTG3h.C8LoZ_djM-1764601354118-0.0.1.1-604800000;
-        path=/; domain=.beaconcha.in; HttpOnly; Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=7257600
-      Vary:
-      - Cookie
-      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 google
+      X-Beaconchain-Version:
+      - 26.17.2
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - DENY
       X-Ratelimit-Limit-Day:
-      - '30000'
+      - '1000'
       X-Ratelimit-Limit-Hour:
-      - '30000'
+      - '1000'
       X-Ratelimit-Limit-Minute:
-      - '30000'
+      - '1000'
       X-Ratelimit-Limit-Month:
-      - '30000'
+      - '1000'
       X-Ratelimit-Limit-Second:
-      - '5'
+      - '1'
       X-Ratelimit-Remaining-Day:
-      - '29935'
+      - '682'
       X-Ratelimit-Remaining-Hour:
-      - '29935'
+      - '682'
       X-Ratelimit-Remaining-Minute:
-      - '29935'
+      - '682'
       X-Ratelimit-Remaining-Month:
-      - '29935'
+      - '682'
       X-Ratelimit-Remaining-Second:
-      - '4'
+      - '0'
       X-XSS-Protection:
       - 1; mode=block
       alt-svc:
@@ -190,7 +181,11 @@ interactions:
       cf-cache-status:
       - DYNAMIC
       content-length:
-      - '498'
+      - '767'
+      set-cookie:
+      - __cf_bm=ss4tMvBAq3G31IKfwTwHW7qUwqoOYbW9LSfP_8IlT8E-1777476283.691563-1.0.1.1-0gSllWvVG8gmHdtPupI8qYjTXfe07ZIFWVWjmzIN0.qXMaEqhHH_Kym_OS8gWgX5W_1BMBAsI1I8Wu68t8F5xPmQvV7TIb61FEUa8wAuzO7uXcizjuAU2NnqHCI.bwRh;
+        HttpOnly; Secure; Path=/; Domain=beaconcha.in; Expires=Wed, 29 Apr 2026 15:54:43
+        GMT
     status:
       code: 200
       message: OK
@@ -204,7 +199,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev21+gcf9e950180.d20251127
+      - rotki/1.42.2.dev317+g7a75c36007.d20260424
     method: GET
     uri: https://api.etherscan.io/v2/api?action=txsBeaconWithdrawal&address=0xCb2a5c130709a4C6c4BA39368879A523C0060c71&chainid=1&endblock=19158316&module=account&sort=asc&startblock=0
   response:
@@ -224,7 +219,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 01 Dec 2025 15:02:34 GMT
+      - Wed, 29 Apr 2026 15:24:44 GMT
       Server:
       - nginx
       Vary:
@@ -232,62 +227,57 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '2'
+      - '3'
       content-length:
       - '8577'
       svid:
-      - '9'
+      - '7'
     status:
       code: 200
       message: OK
 - request:
-    body: '{"indicesOrPubkey": "582738"}'
+    body: '{"validator": {"validator_identifiers": [582738]}, "chain": "mainnet"}'
     headers:
       Accept:
       - '*/*'
       Accept-Encoding:
       - gzip, deflate
+      Authorization:
+      - Bearer sCfhbcO2V5SGmpaPLkyjSyfsa2MyXNy3ptmRqU0jcHb
       Connection:
       - keep-alive
       Content-Length:
-      - '29'
+      - '70'
       Content-Type:
       - application/json
       Cookie:
-      - __cf_bm=9imMVsujyyptHATKmpm.HFrVP9dOQPOzi_bWEotbRxI-1764601354-1.0.1.1-.WVaO3Jq_EXzxRoFgdsgQv4bycmwOJ60aI40SbpLBJSwZkcZKJ9uweJ55TwYBoxAwLnTndovw8598DMK7MHmqCKRMHEckCChpNsfDFmfOhk;
-        _cfuvid=T6Q6ec61jOXAYenl5ApG1cE5L_9LxTG3h.C8LoZ_djM-1764601354118-0.0.1.1-604800000
+      - __cf_bm=ss4tMvBAq3G31IKfwTwHW7qUwqoOYbW9LSfP_8IlT8E-1777476283.691563-1.0.1.1-0gSllWvVG8gmHdtPupI8qYjTXfe07ZIFWVWjmzIN0.qXMaEqhHH_Kym_OS8gWgX5W_1BMBAsI1I8Wu68t8F5xPmQvV7TIb61FEUa8wAuzO7uXcizjuAU2NnqHCI.bwRh
       User-Agent:
-      - rotki/1.41.2.dev21+gcf9e950180.d20251127
+      - rotki/1.42.2.dev317+g7a75c36007.d20260424
     method: POST
-    uri: https://beaconcha.in/api/v1/validator
+    uri: https://beaconcha.in/api/v2/ethereum/validators
   response:
     body:
-      string: '{"status":"OK","data":{"activationeligibilityepoch":195556,"activationepoch":196480,"balance":0,"effectivebalance":0,"exitepoch":318894,"lastattestationslot":10204597,"name":"","pubkey":"0xb339277725bde688ae048331d5d33a07d6fef1d25bcd9a85d39261829e24b1f3bd4939bf45d2d14761601e326d104752","slashed":false,"status":"exited","validatorindex":582738,"withdrawableepoch":319150,"withdrawalcredentials":"0x010000000000000000000000cb2a5c130709a4c6c4ba39368879a523c0060c71","total_withdrawals":33508092105}}
+      string: '{"data":[{"validator":{"index":582738,"public_key":"0xb339277725bde688ae048331d5d33a07d6fef1d25bcd9a85d39261829e24b1f3bd4939bf45d2d14761601e326d104752"},"slashed":false,"status":"withdrawal_done","online":null,"withdrawal_credentials":{"type":"execution_address","prefix":"0x01","credential":"0x010000000000000000000000cb2a5c130709a4c6c4ba39368879a523c0060c71","address":"0xCb2a5c130709a4C6c4BA39368879A523C0060c71"},"life_cycle_epochs":{"activation_eligibility":195556,"activation":196480,"exit":318894,"withdrawable":319150},"balances":{"current":"0","effective":"0"},"finality":"not_finalized"}],"paging":{"next_cursor":""},"range":{"slot":{"start":14220992,"end":14221023},"epoch":{"start":444406,"end":444406},"timestamp":{"start":1777475927,"end":1777476310}}}
 
         '
     headers:
-      Access-Control-Allow-Headers:
-      - '*, Authorization'
-      Access-Control-Allow-Methods:
-      - '*'
-      Access-Control-Allow-Origin:
-      - '*'
       CF-RAY:
-      - 9a737763e8a03eb3-BCN
+      - 9f3f50c1b9c81644-BCN
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Date:
-      - Mon, 01 Dec 2025 15:02:35 GMT
+      - Wed, 29 Apr 2026 15:24:45 GMT
       Permissions-Policy:
       - interest-cohort=()
       Ratelimit-Bucket:
       - default
       Ratelimit-Limit:
-      - '5'
+      - '1'
       Ratelimit-Remaining:
-      - '3'
+      - '0'
       Ratelimit-Reset:
       - '1'
       Ratelimit-Validapikey:
@@ -300,35 +290,36 @@ interactions:
       - cloudflare
       Strict-Transport-Security:
       - max-age=7257600
-      Vary:
-      - Cookie
-      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 google
+      X-Beaconchain-Version:
+      - 26.17.2
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - DENY
       X-Ratelimit-Limit-Day:
-      - '30000'
+      - '1000'
       X-Ratelimit-Limit-Hour:
-      - '30000'
+      - '1000'
       X-Ratelimit-Limit-Minute:
-      - '30000'
+      - '1000'
       X-Ratelimit-Limit-Month:
-      - '30000'
+      - '1000'
       X-Ratelimit-Limit-Second:
-      - '5'
+      - '1'
       X-Ratelimit-Remaining-Day:
-      - '29934'
+      - '681'
       X-Ratelimit-Remaining-Hour:
-      - '29934'
+      - '681'
       X-Ratelimit-Remaining-Minute:
-      - '29934'
+      - '681'
       X-Ratelimit-Remaining-Month:
-      - '29934'
+      - '681'
       X-Ratelimit-Remaining-Second:
-      - '3'
+      - '0'
       X-XSS-Protection:
       - 1; mode=block
       alt-svc:
@@ -336,7 +327,7 @@ interactions:
       cf-cache-status:
       - DYNAMIC
       content-length:
-      - '499'
+      - '767'
     status:
       code: 200
       message: OK
