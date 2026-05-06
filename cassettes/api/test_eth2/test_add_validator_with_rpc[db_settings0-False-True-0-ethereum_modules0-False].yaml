@@ -1,0 +1,156 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.33.1
+    method: GET
+    uri: https://ethereum-beacon-api.publicnode.com/eth/v1/node/version
+  response:
+    body:
+      string: '{"data":{"version":"Lighthouse/v8.1.3-176cce5/x86_64-linux"}}
+
+        '
+    headers:
+      CF-RAY:
+      - 9f71661568fef298-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 05 May 2026 17:17:27 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '62'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '1'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"ids": ["44"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '15'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.33.1
+    method: POST
+    uri: https://ethereum-beacon-api.publicnode.com/eth/v1/beacon/states/head/validators
+  response:
+    body:
+      string: '{"execution_optimistic":false,"finalized":false,"data":[{"index":"44","balance":"0","status":"withdrawal_done","validator":{"pubkey":"0xafad95cff162b9e33a965ec754d1225b3781207cd985ae4d594c4c087be8758a752e2045194a756ada3a65da4a2d05e5","withdrawal_credentials":"0x01000000000000000000000042751916bd8e4ef1966ca033d4ea1fa2a8563f88","effective_balance":"0","slashed":false,"activation_eligibility_epoch":"0","activation_epoch":"0","exit_epoch":"365684","withdrawable_epoch":"365940"}}]}'
+    headers:
+      CF-RAY:
+      - 9f7166163eaebaf8-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 05 May 2026 17:17:28 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '481'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '576'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"ids": ["0xafad95cff162b9e33a965ec754d1225b3781207cd985ae4d594c4c087be8758a752e2045194a756ada3a65da4a2d05e5"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '111'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.33.1
+    method: POST
+    uri: https://ethereum-beacon-api.publicnode.com/eth/v1/beacon/states/head/validators
+  response:
+    body:
+      string: '{"execution_optimistic":false,"finalized":false,"data":[{"index":"44","balance":"0","status":"withdrawal_done","validator":{"pubkey":"0xafad95cff162b9e33a965ec754d1225b3781207cd985ae4d594c4c087be8758a752e2045194a756ada3a65da4a2d05e5","withdrawal_credentials":"0x01000000000000000000000042751916bd8e4ef1966ca033d4ea1fa2a8563f88","effective_balance":"0","slashed":false,"activation_eligibility_epoch":"0","activation_epoch":"0","exit_epoch":"365684","withdrawable_epoch":"365940"}}]}'
+    headers:
+      CF-RAY:
+      - 9f71661abb945716-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 05 May 2026 17:17:28 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '481'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '314'
+    status:
+      code: 200
+      message: OK
+version: 1
