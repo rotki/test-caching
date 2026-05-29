@@ -9,12 +9,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.1.dev23+gab347d11b4.d20251109
+      - rotki/1.43.2.dev119+g5b4672f466
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=1&data=0x0178b8bf9de0b76f3b87380f0bcb9e41b403c69b88b01fbeaf785e83f38a6879902af71b&module=proxy&to=0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e
+    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=1&data=0x9061b92300000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000b056272756e6f03657468000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044f1cb7e069de0b76f3b87380f0bcb9e41b403c69b88b01fbeaf785e83f38a6879902af71b00000000000000000000000000000000000000000000000000000000000001b200000000000000000000000000000000000000000000000000000000&module=proxy&to=0xeEeEEEeE14D718C2B47D9923Deab1335E144EeEe
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000231b0ee14048e9dccd1d247744d114a4eb5e8e63"}
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000231b0ee14048e9dccd1d247744d114a4eb5e8e630000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000200aff6865635ae11013a83835c019d44ec3f865145943f487ae82a8e7bed3a66b"}
 
         '
     headers:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 09 Nov 2025 17:45:20 GMT
+      - Mon, 01 Jun 2026 08:41:01 GMT
       Server:
       - nginx
       Vary:
@@ -39,11 +39,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '5'
+      - '4'
       content-length:
-      - '103'
+      - '423'
       svid:
-      - '2'
+      - '7'
     status:
       code: 200
       message: OK
@@ -57,217 +57,185 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.1.dev23+gab347d11b4.d20251109
-    method: GET
-    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=1&data=0xf1cb7e069de0b76f3b87380f0bcb9e41b403c69b88b01fbeaf785e83f38a6879902af71b00000000000000000000000000000000000000000000000000000000000001b2&module=proxy&to=0x231b0Ee14048e9dCcD1d247744d114a4EB5E8E63
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000200aff6865635ae11013a83835c019d44ec3f865145943f487ae82a8e7bed3a66b"}
-
-        '
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sun, 09 Nov 2025 17:45:21 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Nginx-Id:
-      - '5'
-      content-length:
-      - '231'
-      svid:
-      - '2'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.5
+      - python-requests/2.33.1
     method: GET
     uri: https://raw.githubusercontent.com/polkascan/py-scale-codec/v1.0/scalecodec/type_registry/kusama.json
   response:
     body:
-      string: "{\n  \"runtime_id\": 9122,\n  \"types\": {\n    \"Address\": \"MultiAddress\",\n
-        \   \"LookupSource\": \"MultiAddress\",\n    \"AccountInfo\": \"AccountInfoWithTripleRefCount\",\n
-        \   \"BlockNumber\": \"U32\",\n    \"LeasePeriod\": \"BlockNumber\",\n    \"Weight\":
-        \"WeightV1\",\n    \"Keys\": {\n      \"type\": \"struct\",\n      \"type_mapping\":
-        [\n         [\"grandpa\", \"AccountId\"],\n         [\"babe\", \"AccountId\"],\n
-        \        [\"im_online\", \"AccountId\"],\n         [\"para_validator\", \"AccountId\"],\n
-        \        [\"para_assignment\", \"AccountId\"],\n         [\"authority_discovery\",
-        \"AccountId\"]\n      ]\n    },\n    \"DispatchInfo\": {\n      \"type\":
-        \"struct\",\n      \"type_mapping\": [\n         [\"weight\", \"Weight\"],\n
-        \        [\"class\", \"DispatchClass\"],\n         [\"paysFee\", \"Pays\"]\n
-        \     ]\n    },\n    \"ProxyType\": {\n      \"type\": \"enum\",\n      \"value_list\":
-        [\n        \"Any\",\n        \"NonTransfer\",\n        \"Governance\",\n        \"Staking\",\n
-        \       \"IdentityJudgement\",\n        \"CancelProxy\"\n      ]\n    },\n
-        \   \"RefCount\": \"u32\",\n    \"ValidatorPrefs\": \"ValidatorPrefsWithBlocked\",\n
-        \   \"CompactAssignments\":  \"CompactAssignmentsWith24\",\n    \"RawSolution\":
-        \"RawSolutionWith24\",\n    \"AssetInstance\": \"AssetInstanceV0\",\n    \"MultiAsset\":
-        \"MultiAssetV0\",\n    \"MultiLocation\": \"MultiLocationV0\",\n    \"Response\":
-        \"ResponseV0\",\n    \"Xcm\": \"XcmV0\",\n    \"XcmOrder\": \"XcmOrderV0\"\n
-        \ },\n  \"versioning\": [\n    {\n      \"runtime_range\": [1019, 1031],\n
-        \     \"types\": {\n        \"DispatchError\": {\n          \"type\": \"struct\",\n
-        \         \"type_mapping\": [\n            [\"module\", \"Option<u8>\"],\n
-        \           [\"error\", \"u8\"]\n          ]\n        }\n      }\n    },\n
-        \   {\n      \"runtime_range\": [1032, null],\n      \"types\": {\n        \"DispatchError\":
-        {\n          \"type\": \"enum\",\n          \"type_mapping\": [\n            [\"Other\",
-        \"Null\"],\n            [\"CannotLookup\", \"Null\"],\n            [\"BadOrigin\",
-        \"Null\"],\n            [\"Module\", \"DispatchErrorModule\"]\n          ]\n
-        \       }\n      }\n    },\n    {\n      \"runtime_range\": [1019, 1037],\n
-        \     \"types\": {\n        \"IdentityInfo\": {\n          \"type\": \"struct\",\n
-        \         \"type_mapping\": [\n             [\"additional\", \"Vec<IdentityInfoAdditional>\"],\n
-        \            [\"display\", \"Data\"],\n             [\"legal\", \"Data\"],\n
-        \            [\"web\", \"Data\"],\n             [\"riot\", \"Data\"],\n             [\"email\",
-        \"Data\"],\n             [\"pgp_fingerprint\", \"Option<H160>\"],\n             [\"image\",
-        \"Data\"]\n          ]\n        }\n      }\n    },\n    {\n      \"runtime_range\":
-        [1038, null],\n      \"types\": {\n        \"IdentityInfo\": {\n          \"type\":
-        \"struct\",\n          \"type_mapping\": [\n             [\"additional\",
-        \"Vec<IdentityInfoAdditional>\"],\n             [\"display\", \"Data\"],\n
-        \            [\"legal\", \"Data\"],\n             [\"web\", \"Data\"],\n             [\"riot\",
-        \"Data\"],\n             [\"email\", \"Data\"],\n             [\"pgp_fingerprint\",
-        \"Option<H160>\"],\n             [\"image\", \"Data\"],\n             [\"twitter\",
-        \"Data\"]\n          ]\n        }\n      }\n    },\n    {\n      \"runtime_range\":
-        [1019, 1042],\n      \"types\": {\n        \"SlashingSpans\": {\n          \"type\":
-        \"struct\",\n          \"type_mapping\": [\n             [\"span_index\",
-        \"SpanIndex\"],\n             [\"last_start\", \"EraIndex\"],\n             [\"prior\",
-        \"Vec<EraIndex>\"]\n          ]\n        }\n      }\n    },\n    {\n      \"runtime_range\":
-        [1043, null],\n      \"types\": {\n        \"SlashingSpans\": {\n          \"type\":
-        \"struct\",\n          \"type_mapping\": [\n             [\"span_index\",
-        \"SpanIndex\"],\n             [\"last_start\", \"EraIndex\"],\n             [\"last_nonzero_slash\",
-        \"EraIndex\"],\n             [\"prior\", \"Vec<EraIndex>\"]\n          ]\n
-        \       }\n      }\n    },\n    {\n      \"runtime_range\": [1019, 1045],\n
-        \     \"types\": {\n        \"StakingLedger\": \"StakingLedgerTo223\",\n        \"BalanceLock\":
-        {\n          \"type\": \"struct\",\n          \"type_mapping\": [\n             [\"id\",
-        \"LockIdentifier\"],\n             [\"amount\", \"Balance\"],\n             [\"until\",
-        \"BlockNumber\"],\n             [\"reasons\", \"WithdrawReasons\"]\n          ]\n
-        \       }\n      }\n    },\n    {\n      \"runtime_range\": [1050, 1056],\n
-        \     \"types\": {\n        \"StakingLedger\": \"StakingLedgerTo240\",\n        \"BalanceLock\":
-        {\n          \"type\": \"struct\",\n          \"type_mapping\": [\n             [\"id\",
-        \"LockIdentifier\"],\n             [\"amount\", \"Balance\"],\n             [\"reasons\",
-        \"Reasons\"]\n          ]\n        }\n      }\n    },\n    {\n      \"runtime_range\":
-        [1057, null],\n      \"types\": {\n        \"StakingLedger\": {\n          \"type\":
-        \"struct\",\n          \"type_mapping\": [\n            [\n              \"stash\",\n
-        \             \"AccountId\"\n            ],\n            [\n              \"total\",\n
-        \             \"Compact<Balance>\"\n            ],\n            [\n              \"active\",\n
-        \             \"Compact<Balance>\"\n            ],\n            [\n              \"unlocking\",\n
-        \             \"Vec<UnlockChunk>\"\n            ],\n            [\n              \"claimed_rewards\",\n
-        \             \"Vec<EraIndex>\"\n            ]\n          ]\n        },\n
-        \       \"BalanceLock\": {\n          \"type\": \"struct\",\n          \"type_mapping\":
-        [\n             [\"id\", \"LockIdentifier\"],\n             [\"amount\", \"Balance\"],\n
-        \            [\"reasons\", \"Reasons\"]\n          ]\n        }\n      }\n
-        \   },\n    {\n      \"runtime_range\": [1019, 1054],\n      \"types\": {\n
-        \       \"ReferendumInfo\": {\n          \"type\": \"struct\",\n          \"type_mapping\":
-        [\n             [\"end\", \"BlockNumber\"],\n             [\"proposal\", \"Proposal\"],\n
-        \            [\"threshold\", \"VoteThreshold\"],\n             [\"delay\",
-        \"BlockNumber\"]\n          ]\n        }\n      }\n    },\n    {\n      \"runtime_range\":
-        [1054, null],\n      \"types\": {\n        \"ReferendumInfo\": {\n          \"type\":
-        \"enum\",\n          \"type_mapping\": [\n            [\"Ongoing\", \"ReferendumStatus\"],\n
-        \           [\"Finished\", \"ReferendumInfoFinished\"]\n          ]\n        }\n
-        \     }\n    },\n    {\n      \"runtime_range\": [1019, 1056],\n      \"types\":
-        {\n        \"WeightV1\": \"u32\",\n        \"Weight\": \"WeightV1\"\n      }\n
-        \   },\n    {\n      \"runtime_range\": [1057, null],\n      \"types\": {\n
-        \       \"WeightV1\": \"u64\",\n        \"Weight\": \"WeightV1\"\n      }\n
-        \   },\n    {\n      \"runtime_range\": [1019, 1061],\n      \"types\": {\n
-        \       \"Heartbeat\": {\n          \"type\": \"struct\",\n          \"type_mapping\":
-        [\n             [\"block_number\", \"BlockNumber\"],\n             [\"network_state\",
-        \"OpaqueNetworkState\"],\n             [\"session_index\", \"SessionIndex\"],\n
-        \            [\"authority_index\", \"AuthIndex\"]\n          ]\n        },\n
-        \       \"DispatchInfo\": {\n          \"type\": \"struct\",\n          \"type_mapping\":
-        [\n             [\"weight\", \"Weight\"],\n             [\"class\", \"DispatchClass\"],\n
-        \            [\"pays_fee\", \"bool\"]\n          ]\n        }\n      }\n    },\n
-        \   {\n      \"runtime_range\": [1062, null],\n      \"types\": {\n        \"Heartbeat\":
-        {\n          \"type\": \"struct\",\n          \"type_mapping\": [\n             [\"block_number\",
-        \"BlockNumber\"],\n             [\"network_state\", \"OpaqueNetworkState\"],\n
-        \            [\"session_index\", \"SessionIndex\"],\n             [\"authority_index\",
-        \"AuthIndex\"],\n             [\"validators_len\", \"u32\"]\n          ]\n
-        \       },\n        \"DispatchInfo\": {\n          \"type\": \"struct\",\n
-        \         \"type_mapping\": [\n             [\"weight\", \"Weight\"],\n             [\"class\",
-        \"DispatchClass\"],\n             [\"pays_fee\", \"Pays\"]\n          ]\n
-        \       }\n      }\n    },\n    {\n      \"runtime_range\": [1019, 2012],\n
-        \     \"types\": {\n        \"OpenTip\": {\n          \"type\": \"struct\",\n
-        \         \"type_mapping\": [\n             [\"reason\", \"Hash\"],\n             [\"who\",
-        \"AccountId\"],\n             [\"finder\", \"Option<OpenTipFinder>\"],\n             [\"closes\",
-        \"Option<BlockNumber>\"],\n             [\"tips\", \"Vec<OpenTipTip>\"]\n
-        \         ]\n        }\n      }\n    },\n    {\n      \"runtime_range\": [2013,
-        null],\n      \"types\": {\n        \"OpenTip\": {\n          \"type\": \"struct\",\n
-        \         \"type_mapping\": [\n             [\"reason\", \"Hash\"],\n             [\"who\",
-        \"AccountId\"],\n             [\"finder\", \"AccountId\"],\n             [\"deposit\",
-        \"Balance\"],\n             [\"closes\", \"Option<BlockNumber>\"],\n             [\"tips\",
-        \"Vec<OpenTipTip>\"],\n             [\"finders_fee\", \"bool\"]\n          ]\n
-        \       }\n      }\n    },\n    {\n      \"runtime_range\": [1019, 2022],\n
-        \     \"types\": {\n        \"CompactAssignments\": \"CompactAssignmentsTo257\"\n
-        \     }\n    },\n    {\n      \"runtime_range\": [2023, 9009],\n      \"types\":
-        {\n        \"CompactAssignments\": \"CompactAssignmentsWith16\",\n        \"RawSolution\":
-        \"RawSolutionWith16\"\n      }\n    },\n    {\n      \"runtime_range\": [9010,
-        null],\n      \"types\": {\n        \"CompactAssignments\": \"CompactAssignmentsWith24\",\n
-        \       \"RawSolution\": \"RawSolutionWith24\"\n      }\n    },\n    {\n      \"runtime_range\":
-        [1019, 2024],\n      \"types\": {\n        \"RefCount\": \"u8\"\n      }\n
-        \   },\n    {\n      \"runtime_range\": [2025, null],\n      \"types\": {\n
-        \       \"RefCount\": \"u32\"\n      }\n    },\n    {\n      \"runtime_range\":
-        [1019, 1045],\n      \"types\": {\n        \"Address\": \"RawAddress\",\n
-        \       \"LookupSource\": \"RawAddress\",\n        \"AccountInfo\": \"AccountInfoWithRefCount\",\n
-        \       \"Keys\": {\n          \"type\": \"struct\",\n          \"type_mapping\":
-        [\n             [\"grandpa\", \"AccountId\"],\n             [\"babe\", \"AccountId\"],\n
-        \            [\"im_online\", \"AccountId\"],\n             [\"authority_discovery\",
-        \"AccountId\"],\n             [\"parachains\", \"AccountId\"]\n          ]\n
-        \       },\n        \"ValidatorPrefs\": \"ValidatorPrefsWithCommission\"\n
-        \     }\n    },\n    {\n      \"runtime_range\": [1050, 2027],\n      \"types\":
-        {\n        \"Address\": \"AccountIdAddress\",\n        \"LookupSource\": \"AccountIdAddress\",\n
-        \       \"AccountInfo\": \"AccountInfoWithRefCount\",\n        \"Keys\": {\n
-        \         \"type\": \"struct\",\n          \"type_mapping\": [\n             [\"grandpa\",
-        \"AccountId\"],\n             [\"babe\", \"AccountId\"],\n             [\"im_online\",
-        \"AccountId\"],\n             [\"authority_discovery\", \"AccountId\"],\n
-        \            [\"parachains\", \"AccountId\"]\n          ]\n        },\n        \"ValidatorPrefs\":
-        \"ValidatorPrefsWithCommission\"\n      }\n    },\n    {\n      \"runtime_range\":
-        [2028, null],\n      \"types\": {\n        \"Address\": \"MultiAddress\",\n
-        \       \"LookupSource\": \"MultiAddress\",\n        \"Keys\": {\n          \"type\":
-        \"struct\",\n          \"type_mapping\": [\n             [\"grandpa\", \"AccountId\"],\n
-        \            [\"babe\", \"AccountId\"],\n             [\"im_online\", \"AccountId\"],\n
-        \            [\"para_validator\", \"AccountId\"],\n             [\"para_assignment\",
-        \"AccountId\"],\n             [\"authority_discovery\", \"AccountId\"]\n          ]\n
-        \       },\n        \"ValidatorPrefs\": \"ValidatorPrefsWithBlocked\"\n      }\n
-        \   },\n    {\n      \"runtime_range\": [2028, 2029],\n      \"types\": {\n
-        \       \"AccountInfo\": \"AccountInfoWithDualRefCount\"\n      }\n    },\n
-        \   {\n      \"runtime_range\": [2030, null],\n      \"types\": {\n        \"AccountInfo\":
-        \"AccountInfoWithTripleRefCount\"\n      }\n    },\n    {\n      \"runtime_range\":
-        [9010, null],\n      \"types\": {\n        \"AssetInstance\": \"AssetInstanceV0\",\n
-        \       \"MultiAsset\": \"MultiAssetV0\",\n        \"MultiLocation\": \"MultiLocationV0\",\n
-        \       \"Response\": \"ResponseV0\",\n        \"Xcm\": \"XcmV0\",\n        \"XcmOrder\":
-        \"XcmOrderV0\"\n      }\n    }\n  ],\n  \"runtime_upgrades\": [\n    [0, 1020],
-        [26669, 1021], [38245, 1022], [54248, 1023], [59659, 1024],\n    [67651, 1025],
-        [82191, 1027], [83238, 1028], [101503, 1029], [203466, 1030],\n    [295787,
-        1031], [461692, 1032], [504329, 1033], [569327, 1038], [587687, 1039],\n    [653183,
-        1040], [693488, 1042], [901442, 1045], [1375086, 1050], [1445458, 1051],\n
-        \   [1472960, 1052], [1475648, 1053], [1491596, 1054], [1574408, 1055], [2064961,
-        1058],\n    [2201991, 1062], [2671528, 2005], [2704202, 2007], [2728002, 2008],
-        [2832534, 2011],\n    [2962294, 2012], [3240000, 2013], [3274408, 2015], [3323565,
-        2019], [3534175, 2022],\n    [3860281, 2023], [4143129, 2024], [4401242, 2025],
-        [4841367, 2026], [5961600, 2027],\n    [6137912, 2028], [6561855, 2029], [7100891,
-        2030], [7468792, 9010], [7668600, 9030],\n    [7812476, 9040], [8010981, 9050],
-        [8073833, 9070], [8555825, 9080], [8945245, 9090]\n  ]\n}\n"
+      string: "{\n  \"runtime_id\": 9122,\n  \"types\": {\n    \"Address\": \"MultiAddress\"\
+        ,\n    \"LookupSource\": \"MultiAddress\",\n    \"AccountInfo\": \"AccountInfoWithTripleRefCount\"\
+        ,\n    \"BlockNumber\": \"U32\",\n    \"LeasePeriod\": \"BlockNumber\",\n\
+        \    \"Weight\": \"WeightV1\",\n    \"Keys\": {\n      \"type\": \"struct\"\
+        ,\n      \"type_mapping\": [\n         [\"grandpa\", \"AccountId\"],\n   \
+        \      [\"babe\", \"AccountId\"],\n         [\"im_online\", \"AccountId\"\
+        ],\n         [\"para_validator\", \"AccountId\"],\n         [\"para_assignment\"\
+        , \"AccountId\"],\n         [\"authority_discovery\", \"AccountId\"]\n   \
+        \   ]\n    },\n    \"DispatchInfo\": {\n      \"type\": \"struct\",\n    \
+        \  \"type_mapping\": [\n         [\"weight\", \"Weight\"],\n         [\"class\"\
+        , \"DispatchClass\"],\n         [\"paysFee\", \"Pays\"]\n      ]\n    },\n\
+        \    \"ProxyType\": {\n      \"type\": \"enum\",\n      \"value_list\": [\n\
+        \        \"Any\",\n        \"NonTransfer\",\n        \"Governance\",\n   \
+        \     \"Staking\",\n        \"IdentityJudgement\",\n        \"CancelProxy\"\
+        \n      ]\n    },\n    \"RefCount\": \"u32\",\n    \"ValidatorPrefs\": \"\
+        ValidatorPrefsWithBlocked\",\n    \"CompactAssignments\":  \"CompactAssignmentsWith24\"\
+        ,\n    \"RawSolution\": \"RawSolutionWith24\",\n    \"AssetInstance\": \"\
+        AssetInstanceV0\",\n    \"MultiAsset\": \"MultiAssetV0\",\n    \"MultiLocation\"\
+        : \"MultiLocationV0\",\n    \"Response\": \"ResponseV0\",\n    \"Xcm\": \"\
+        XcmV0\",\n    \"XcmOrder\": \"XcmOrderV0\"\n  },\n  \"versioning\": [\n  \
+        \  {\n      \"runtime_range\": [1019, 1031],\n      \"types\": {\n       \
+        \ \"DispatchError\": {\n          \"type\": \"struct\",\n          \"type_mapping\"\
+        : [\n            [\"module\", \"Option<u8>\"],\n            [\"error\", \"\
+        u8\"]\n          ]\n        }\n      }\n    },\n    {\n      \"runtime_range\"\
+        : [1032, null],\n      \"types\": {\n        \"DispatchError\": {\n      \
+        \    \"type\": \"enum\",\n          \"type_mapping\": [\n            [\"Other\"\
+        , \"Null\"],\n            [\"CannotLookup\", \"Null\"],\n            [\"BadOrigin\"\
+        , \"Null\"],\n            [\"Module\", \"DispatchErrorModule\"]\n        \
+        \  ]\n        }\n      }\n    },\n    {\n      \"runtime_range\": [1019, 1037],\n\
+        \      \"types\": {\n        \"IdentityInfo\": {\n          \"type\": \"struct\"\
+        ,\n          \"type_mapping\": [\n             [\"additional\", \"Vec<IdentityInfoAdditional>\"\
+        ],\n             [\"display\", \"Data\"],\n             [\"legal\", \"Data\"\
+        ],\n             [\"web\", \"Data\"],\n             [\"riot\", \"Data\"],\n\
+        \             [\"email\", \"Data\"],\n             [\"pgp_fingerprint\", \"\
+        Option<H160>\"],\n             [\"image\", \"Data\"]\n          ]\n      \
+        \  }\n      }\n    },\n    {\n      \"runtime_range\": [1038, null],\n   \
+        \   \"types\": {\n        \"IdentityInfo\": {\n          \"type\": \"struct\"\
+        ,\n          \"type_mapping\": [\n             [\"additional\", \"Vec<IdentityInfoAdditional>\"\
+        ],\n             [\"display\", \"Data\"],\n             [\"legal\", \"Data\"\
+        ],\n             [\"web\", \"Data\"],\n             [\"riot\", \"Data\"],\n\
+        \             [\"email\", \"Data\"],\n             [\"pgp_fingerprint\", \"\
+        Option<H160>\"],\n             [\"image\", \"Data\"],\n             [\"twitter\"\
+        , \"Data\"]\n          ]\n        }\n      }\n    },\n    {\n      \"runtime_range\"\
+        : [1019, 1042],\n      \"types\": {\n        \"SlashingSpans\": {\n      \
+        \    \"type\": \"struct\",\n          \"type_mapping\": [\n             [\"\
+        span_index\", \"SpanIndex\"],\n             [\"last_start\", \"EraIndex\"\
+        ],\n             [\"prior\", \"Vec<EraIndex>\"]\n          ]\n        }\n\
+        \      }\n    },\n    {\n      \"runtime_range\": [1043, null],\n      \"\
+        types\": {\n        \"SlashingSpans\": {\n          \"type\": \"struct\",\n\
+        \          \"type_mapping\": [\n             [\"span_index\", \"SpanIndex\"\
+        ],\n             [\"last_start\", \"EraIndex\"],\n             [\"last_nonzero_slash\"\
+        , \"EraIndex\"],\n             [\"prior\", \"Vec<EraIndex>\"]\n          ]\n\
+        \        }\n      }\n    },\n    {\n      \"runtime_range\": [1019, 1045],\n\
+        \      \"types\": {\n        \"StakingLedger\": \"StakingLedgerTo223\",\n\
+        \        \"BalanceLock\": {\n          \"type\": \"struct\",\n          \"\
+        type_mapping\": [\n             [\"id\", \"LockIdentifier\"],\n          \
+        \   [\"amount\", \"Balance\"],\n             [\"until\", \"BlockNumber\"],\n\
+        \             [\"reasons\", \"WithdrawReasons\"]\n          ]\n        }\n\
+        \      }\n    },\n    {\n      \"runtime_range\": [1050, 1056],\n      \"\
+        types\": {\n        \"StakingLedger\": \"StakingLedgerTo240\",\n        \"\
+        BalanceLock\": {\n          \"type\": \"struct\",\n          \"type_mapping\"\
+        : [\n             [\"id\", \"LockIdentifier\"],\n             [\"amount\"\
+        , \"Balance\"],\n             [\"reasons\", \"Reasons\"]\n          ]\n  \
+        \      }\n      }\n    },\n    {\n      \"runtime_range\": [1057, null],\n\
+        \      \"types\": {\n        \"StakingLedger\": {\n          \"type\": \"\
+        struct\",\n          \"type_mapping\": [\n            [\n              \"\
+        stash\",\n              \"AccountId\"\n            ],\n            [\n   \
+        \           \"total\",\n              \"Compact<Balance>\"\n            ],\n\
+        \            [\n              \"active\",\n              \"Compact<Balance>\"\
+        \n            ],\n            [\n              \"unlocking\",\n          \
+        \    \"Vec<UnlockChunk>\"\n            ],\n            [\n              \"\
+        claimed_rewards\",\n              \"Vec<EraIndex>\"\n            ]\n     \
+        \     ]\n        },\n        \"BalanceLock\": {\n          \"type\": \"struct\"\
+        ,\n          \"type_mapping\": [\n             [\"id\", \"LockIdentifier\"\
+        ],\n             [\"amount\", \"Balance\"],\n             [\"reasons\", \"\
+        Reasons\"]\n          ]\n        }\n      }\n    },\n    {\n      \"runtime_range\"\
+        : [1019, 1054],\n      \"types\": {\n        \"ReferendumInfo\": {\n     \
+        \     \"type\": \"struct\",\n          \"type_mapping\": [\n             [\"\
+        end\", \"BlockNumber\"],\n             [\"proposal\", \"Proposal\"],\n   \
+        \          [\"threshold\", \"VoteThreshold\"],\n             [\"delay\", \"\
+        BlockNumber\"]\n          ]\n        }\n      }\n    },\n    {\n      \"runtime_range\"\
+        : [1054, null],\n      \"types\": {\n        \"ReferendumInfo\": {\n     \
+        \     \"type\": \"enum\",\n          \"type_mapping\": [\n            [\"\
+        Ongoing\", \"ReferendumStatus\"],\n            [\"Finished\", \"ReferendumInfoFinished\"\
+        ]\n          ]\n        }\n      }\n    },\n    {\n      \"runtime_range\"\
+        : [1019, 1056],\n      \"types\": {\n        \"WeightV1\": \"u32\",\n    \
+        \    \"Weight\": \"WeightV1\"\n      }\n    },\n    {\n      \"runtime_range\"\
+        : [1057, null],\n      \"types\": {\n        \"WeightV1\": \"u64\",\n    \
+        \    \"Weight\": \"WeightV1\"\n      }\n    },\n    {\n      \"runtime_range\"\
+        : [1019, 1061],\n      \"types\": {\n        \"Heartbeat\": {\n          \"\
+        type\": \"struct\",\n          \"type_mapping\": [\n             [\"block_number\"\
+        , \"BlockNumber\"],\n             [\"network_state\", \"OpaqueNetworkState\"\
+        ],\n             [\"session_index\", \"SessionIndex\"],\n             [\"\
+        authority_index\", \"AuthIndex\"]\n          ]\n        },\n        \"DispatchInfo\"\
+        : {\n          \"type\": \"struct\",\n          \"type_mapping\": [\n    \
+        \         [\"weight\", \"Weight\"],\n             [\"class\", \"DispatchClass\"\
+        ],\n             [\"pays_fee\", \"bool\"]\n          ]\n        }\n      }\n\
+        \    },\n    {\n      \"runtime_range\": [1062, null],\n      \"types\": {\n\
+        \        \"Heartbeat\": {\n          \"type\": \"struct\",\n          \"type_mapping\"\
+        : [\n             [\"block_number\", \"BlockNumber\"],\n             [\"network_state\"\
+        , \"OpaqueNetworkState\"],\n             [\"session_index\", \"SessionIndex\"\
+        ],\n             [\"authority_index\", \"AuthIndex\"],\n             [\"validators_len\"\
+        , \"u32\"]\n          ]\n        },\n        \"DispatchInfo\": {\n       \
+        \   \"type\": \"struct\",\n          \"type_mapping\": [\n             [\"\
+        weight\", \"Weight\"],\n             [\"class\", \"DispatchClass\"],\n   \
+        \          [\"pays_fee\", \"Pays\"]\n          ]\n        }\n      }\n   \
+        \ },\n    {\n      \"runtime_range\": [1019, 2012],\n      \"types\": {\n\
+        \        \"OpenTip\": {\n          \"type\": \"struct\",\n          \"type_mapping\"\
+        : [\n             [\"reason\", \"Hash\"],\n             [\"who\", \"AccountId\"\
+        ],\n             [\"finder\", \"Option<OpenTipFinder>\"],\n             [\"\
+        closes\", \"Option<BlockNumber>\"],\n             [\"tips\", \"Vec<OpenTipTip>\"\
+        ]\n          ]\n        }\n      }\n    },\n    {\n      \"runtime_range\"\
+        : [2013, null],\n      \"types\": {\n        \"OpenTip\": {\n          \"\
+        type\": \"struct\",\n          \"type_mapping\": [\n             [\"reason\"\
+        , \"Hash\"],\n             [\"who\", \"AccountId\"],\n             [\"finder\"\
+        , \"AccountId\"],\n             [\"deposit\", \"Balance\"],\n            \
+        \ [\"closes\", \"Option<BlockNumber>\"],\n             [\"tips\", \"Vec<OpenTipTip>\"\
+        ],\n             [\"finders_fee\", \"bool\"]\n          ]\n        }\n   \
+        \   }\n    },\n    {\n      \"runtime_range\": [1019, 2022],\n      \"types\"\
+        : {\n        \"CompactAssignments\": \"CompactAssignmentsTo257\"\n      }\n\
+        \    },\n    {\n      \"runtime_range\": [2023, 9009],\n      \"types\": {\n\
+        \        \"CompactAssignments\": \"CompactAssignmentsWith16\",\n        \"\
+        RawSolution\": \"RawSolutionWith16\"\n      }\n    },\n    {\n      \"runtime_range\"\
+        : [9010, null],\n      \"types\": {\n        \"CompactAssignments\": \"CompactAssignmentsWith24\"\
+        ,\n        \"RawSolution\": \"RawSolutionWith24\"\n      }\n    },\n    {\n\
+        \      \"runtime_range\": [1019, 2024],\n      \"types\": {\n        \"RefCount\"\
+        : \"u8\"\n      }\n    },\n    {\n      \"runtime_range\": [2025, null],\n\
+        \      \"types\": {\n        \"RefCount\": \"u32\"\n      }\n    },\n    {\n\
+        \      \"runtime_range\": [1019, 1045],\n      \"types\": {\n        \"Address\"\
+        : \"RawAddress\",\n        \"LookupSource\": \"RawAddress\",\n        \"AccountInfo\"\
+        : \"AccountInfoWithRefCount\",\n        \"Keys\": {\n          \"type\": \"\
+        struct\",\n          \"type_mapping\": [\n             [\"grandpa\", \"AccountId\"\
+        ],\n             [\"babe\", \"AccountId\"],\n             [\"im_online\",\
+        \ \"AccountId\"],\n             [\"authority_discovery\", \"AccountId\"],\n\
+        \             [\"parachains\", \"AccountId\"]\n          ]\n        },\n \
+        \       \"ValidatorPrefs\": \"ValidatorPrefsWithCommission\"\n      }\n  \
+        \  },\n    {\n      \"runtime_range\": [1050, 2027],\n      \"types\": {\n\
+        \        \"Address\": \"AccountIdAddress\",\n        \"LookupSource\": \"\
+        AccountIdAddress\",\n        \"AccountInfo\": \"AccountInfoWithRefCount\"\
+        ,\n        \"Keys\": {\n          \"type\": \"struct\",\n          \"type_mapping\"\
+        : [\n             [\"grandpa\", \"AccountId\"],\n             [\"babe\", \"\
+        AccountId\"],\n             [\"im_online\", \"AccountId\"],\n            \
+        \ [\"authority_discovery\", \"AccountId\"],\n             [\"parachains\"\
+        , \"AccountId\"]\n          ]\n        },\n        \"ValidatorPrefs\": \"\
+        ValidatorPrefsWithCommission\"\n      }\n    },\n    {\n      \"runtime_range\"\
+        : [2028, null],\n      \"types\": {\n        \"Address\": \"MultiAddress\"\
+        ,\n        \"LookupSource\": \"MultiAddress\",\n        \"Keys\": {\n    \
+        \      \"type\": \"struct\",\n          \"type_mapping\": [\n            \
+        \ [\"grandpa\", \"AccountId\"],\n             [\"babe\", \"AccountId\"],\n\
+        \             [\"im_online\", \"AccountId\"],\n             [\"para_validator\"\
+        , \"AccountId\"],\n             [\"para_assignment\", \"AccountId\"],\n  \
+        \           [\"authority_discovery\", \"AccountId\"]\n          ]\n      \
+        \  },\n        \"ValidatorPrefs\": \"ValidatorPrefsWithBlocked\"\n      }\n\
+        \    },\n    {\n      \"runtime_range\": [2028, 2029],\n      \"types\": {\n\
+        \        \"AccountInfo\": \"AccountInfoWithDualRefCount\"\n      }\n    },\n\
+        \    {\n      \"runtime_range\": [2030, null],\n      \"types\": {\n     \
+        \   \"AccountInfo\": \"AccountInfoWithTripleRefCount\"\n      }\n    },\n\
+        \    {\n      \"runtime_range\": [9010, null],\n      \"types\": {\n     \
+        \   \"AssetInstance\": \"AssetInstanceV0\",\n        \"MultiAsset\": \"MultiAssetV0\"\
+        ,\n        \"MultiLocation\": \"MultiLocationV0\",\n        \"Response\":\
+        \ \"ResponseV0\",\n        \"Xcm\": \"XcmV0\",\n        \"XcmOrder\": \"XcmOrderV0\"\
+        \n      }\n    }\n  ],\n  \"runtime_upgrades\": [\n    [0, 1020], [26669,\
+        \ 1021], [38245, 1022], [54248, 1023], [59659, 1024],\n    [67651, 1025],\
+        \ [82191, 1027], [83238, 1028], [101503, 1029], [203466, 1030],\n    [295787,\
+        \ 1031], [461692, 1032], [504329, 1033], [569327, 1038], [587687, 1039],\n\
+        \    [653183, 1040], [693488, 1042], [901442, 1045], [1375086, 1050], [1445458,\
+        \ 1051],\n    [1472960, 1052], [1475648, 1053], [1491596, 1054], [1574408,\
+        \ 1055], [2064961, 1058],\n    [2201991, 1062], [2671528, 2005], [2704202,\
+        \ 2007], [2728002, 2008], [2832534, 2011],\n    [2962294, 2012], [3240000,\
+        \ 2013], [3274408, 2015], [3323565, 2019], [3534175, 2022],\n    [3860281,\
+        \ 2023], [4143129, 2024], [4401242, 2025], [4841367, 2026], [5961600, 2027],\n\
+        \    [6137912, 2028], [6561855, 2029], [7100891, 2030], [7468792, 9010], [7668600,\
+        \ 9030],\n    [7812476, 9040], [8010981, 9050], [8073833, 9070], [8555825,\
+        \ 9080], [8945245, 9090]\n  ]\n}\n"
     headers:
       Accept-Ranges:
       - bytes
@@ -284,13 +252,13 @@ interactions:
       Cross-Origin-Resource-Policy:
       - cross-origin
       Date:
-      - Sun, 09 Nov 2025 17:45:21 GMT
+      - Mon, 01 Jun 2026 08:41:01 GMT
       ETag:
       - W/"2a58ec0f68582044933263f07a8553dfa19fd5d67b24127ada6c6caed804b3ae"
       Expires:
-      - Sun, 09 Nov 2025 17:50:21 GMT
+      - Mon, 01 Jun 2026 08:46:01 GMT
       Source-Age:
-      - '81'
+      - '0'
       Strict-Transport-Security:
       - max-age=31536000
       Vary:
@@ -298,21 +266,21 @@ interactions:
       Via:
       - 1.1 varnish
       X-Cache:
-      - HIT
+      - MISS
       X-Cache-Hits:
       - '0'
       X-Content-Type-Options:
       - nosniff
       X-Fastly-Request-ID:
-      - 3e8e1cd2d90ad3075c3dd83a8a742d88581e3d21
+      - 97cf04624fc291c8539316897bfcd5e626a306cd
       X-Frame-Options:
       - deny
       X-GitHub-Request-Id:
-      - 5D8E:1C603D:E93339:10D5608:6910D1AC
+      - 7536:1E2E8D:2B392F6:313B73E:6A1D459D
       X-Served-By:
-      - cache-fra-etou8220120-FRA
+      - cache-toj-leto2350042-TOJ
       X-Timer:
-      - S1762710321.441825,VS0,VE2
+      - S1780303262.551069,VS0,VE276
       X-XSS-Protection:
       - 1; mode=block
       content-length:
@@ -332,7 +300,7 @@ interactions:
       Content-Length:
       - '67'
       User-Agent:
-      - python-requests/2.32.5
+      - python-requests/2.33.1
       cache-control:
       - no-cache
       content-type:
@@ -354,7 +322,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 09 Nov 2025 17:45:21 GMT
+      - Mon, 01 Jun 2026 08:41:01 GMT
       Vary:
       - origin, access-control-request-method, access-control-request-headers
       X-Cluster:
@@ -364,9 +332,9 @@ interactions:
       X-Kong-Proxy-Latency:
       - '0'
       X-Kong-Request-Id:
-      - 1690e975f259cf29f609656673d7bd4d
+      - 1916e51a2d11cf4f7765325b215e4e69
       X-Kong-Upstream-Latency:
-      - '3'
+      - '2'
     status:
       code: 200
       message: OK
@@ -382,7 +350,7 @@ interactions:
       Content-Length:
       - '66'
       User-Agent:
-      - python-requests/2.32.5
+      - python-requests/2.33.1
       cache-control:
       - no-cache
       content-type:
@@ -391,7 +359,7 @@ interactions:
     uri: https://assethub-kusama.api.onfinality.io/rpc
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":2,"result":{"methods":["account_nextIndex","archive_v1_body","archive_v1_call","archive_v1_finalizedHeight","archive_v1_genesisHash","archive_v1_hashByHeight","archive_v1_header","archive_v1_stopStorage","archive_v1_storage","archive_v1_storageDiff","archive_v1_storageDiff_stopStorageDiff","author_hasKey","author_hasSessionKeys","author_insertKey","author_pendingExtrinsics","author_removeExtrinsic","author_rotateKeys","author_submitAndWatchExtrinsic","author_submitExtrinsic","author_unwatchExtrinsic","chainHead_v1_body","chainHead_v1_call","chainHead_v1_continue","chainHead_v1_follow","chainHead_v1_header","chainHead_v1_stopOperation","chainHead_v1_storage","chainHead_v1_unfollow","chainHead_v1_unpin","chainSpec_v1_chainName","chainSpec_v1_genesisHash","chainSpec_v1_properties","chain_getBlock","chain_getBlockHash","chain_getFinalisedHead","chain_getFinalizedHead","chain_getHead","chain_getHeader","chain_getRuntimeVersion","chain_subscribeAllHeads","chain_subscribeFinalisedHeads","chain_subscribeFinalizedHeads","chain_subscribeNewHead","chain_subscribeNewHeads","chain_subscribeRuntimeVersion","chain_unsubscribeAllHeads","chain_unsubscribeFinalisedHeads","chain_unsubscribeFinalizedHeads","chain_unsubscribeNewHead","chain_unsubscribeNewHeads","chain_unsubscribeRuntimeVersion","childstate_getKeys","childstate_getKeysPaged","childstate_getKeysPagedAt","childstate_getStorage","childstate_getStorageEntries","childstate_getStorageHash","childstate_getStorageSize","dev_getBlockStats","offchain_localStorageClear","offchain_localStorageGet","offchain_localStorageSet","payment_queryFeeDetails","payment_queryInfo","rpc_methods","state_call","state_callAt","state_getChildReadProof","state_getKeys","state_getKeysPaged","state_getKeysPagedAt","state_getMetadata","state_getPairs","state_getReadProof","state_getRuntimeVersion","state_getStorage","state_getStorageAt","state_getStorageHash","state_getStorageHashAt","state_getStorageSize","state_getStorageSizeAt","state_queryStorage","state_queryStorageAt","state_subscribeRuntimeVersion","state_subscribeStorage","state_traceBlock","state_trieMigrationStatus","state_unsubscribeRuntimeVersion","state_unsubscribeStorage","subscribe_newHead","system_accountNextIndex","system_addLogFilter","system_addReservedPeer","system_chain","system_chainType","system_dryRun","system_dryRunAt","system_health","system_localListenAddresses","system_localPeerId","system_name","system_nodeRoles","system_peers","system_properties","system_removeReservedPeer","system_reservedPeers","system_resetLogFilter","system_syncState","system_unstable_networkState","system_version","transactionWatch_v1_submitAndWatch","transactionWatch_v1_unwatch","transaction_v1_broadcast","transaction_v1_stop","unsubscribe_newHead"]}}'
+      string: '{"jsonrpc":"2.0","id":2,"result":{"methods":["account_nextIndex","archive_v1_body","archive_v1_call","archive_v1_finalizedHeight","archive_v1_genesisHash","archive_v1_hashByHeight","archive_v1_header","archive_v1_stopStorage","archive_v1_storage","archive_v1_storageDiff","archive_v1_storageDiff_stopStorageDiff","author_hasKey","author_hasSessionKeys","author_insertKey","author_pendingExtrinsics","author_removeExtrinsic","author_rotateKeys","author_rotateKeysWithOwner","author_submitAndWatchExtrinsic","author_submitExtrinsic","author_unwatchExtrinsic","chainHead_v1_body","chainHead_v1_call","chainHead_v1_continue","chainHead_v1_follow","chainHead_v1_header","chainHead_v1_stopOperation","chainHead_v1_storage","chainHead_v1_unfollow","chainHead_v1_unpin","chainSpec_v1_chainName","chainSpec_v1_genesisHash","chainSpec_v1_properties","chain_getBlock","chain_getBlockHash","chain_getFinalisedHead","chain_getFinalizedHead","chain_getHead","chain_getHeader","chain_getRuntimeVersion","chain_subscribeAllHeads","chain_subscribeFinalisedHeads","chain_subscribeFinalizedHeads","chain_subscribeNewHead","chain_subscribeNewHeads","chain_subscribeRuntimeVersion","chain_unsubscribeAllHeads","chain_unsubscribeFinalisedHeads","chain_unsubscribeFinalizedHeads","chain_unsubscribeNewHead","chain_unsubscribeNewHeads","chain_unsubscribeRuntimeVersion","childstate_getKeys","childstate_getKeysPaged","childstate_getKeysPagedAt","childstate_getStorage","childstate_getStorageEntries","childstate_getStorageHash","childstate_getStorageSize","dev_getBlockStats","offchain_localStorageClear","offchain_localStorageGet","offchain_localStorageSet","payment_queryFeeDetails","payment_queryInfo","rpc_methods","state_call","state_callAt","state_getChildReadProof","state_getKeys","state_getKeysPaged","state_getKeysPagedAt","state_getMetadata","state_getPairs","state_getReadProof","state_getRuntimeVersion","state_getStorage","state_getStorageAt","state_getStorageHash","state_getStorageHashAt","state_getStorageSize","state_getStorageSizeAt","state_queryStorage","state_queryStorageAt","state_subscribeRuntimeVersion","state_subscribeStorage","state_traceBlock","state_trieMigrationStatus","state_unsubscribeRuntimeVersion","state_unsubscribeStorage","subscribe_newHead","system_accountNextIndex","system_addLogFilter","system_addReservedPeer","system_chain","system_chainType","system_dryRun","system_dryRunAt","system_health","system_localListenAddresses","system_localPeerId","system_name","system_nodeRoles","system_peers","system_properties","system_removeReservedPeer","system_reservedPeers","system_resetLogFilter","system_syncState","system_unstable_networkState","system_version","transactionWatch_v1_submitAndWatch","transactionWatch_v1_unwatch","transaction_v1_broadcast","transaction_v1_stop","unsubscribe_newHead"]}}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
@@ -400,11 +368,11 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '2787'
+      - '2816'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 09 Nov 2025 17:45:21 GMT
+      - Mon, 01 Jun 2026 08:41:01 GMT
       Vary:
       - origin, access-control-request-method, access-control-request-headers
       X-Cluster:
@@ -412,11 +380,11 @@ interactions:
       X-Continent:
       - NA
       X-Kong-Proxy-Latency:
-      - '1'
+      - '0'
       X-Kong-Request-Id:
-      - 07619241c5d0c008e8e22047ad125f3b
+      - ee9f7b58c8d7ff27bdf8e84ecaafd441
       X-Kong-Upstream-Latency:
-      - '2'
+      - '3'
     status:
       code: 200
       message: OK
@@ -432,7 +400,7 @@ interactions:
       Content-Length:
       - '68'
       User-Agent:
-      - python-requests/2.32.5
+      - python-requests/2.33.1
       cache-control:
       - no-cache
       content-type:
@@ -441,7 +409,7 @@ interactions:
     uri: https://assethub-kusama.api.onfinality.io/rpc
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":3,"result":"0xdbc6c3d1af3a60c28e574de760e855133352740771e8bf9a39c6979e5798b8fb"}'
+      string: '{"jsonrpc":"2.0","id":3,"result":"0xff74053d6c9febec7503d60e7082d0e9ffc5ff0efa2b3b94e1e3c245aada841c"}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
@@ -454,7 +422,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 09 Nov 2025 17:45:21 GMT
+      - Mon, 01 Jun 2026 08:41:02 GMT
       Vary:
       - origin, access-control-request-method, access-control-request-headers
       X-Cluster:
@@ -462,16 +430,16 @@ interactions:
       X-Continent:
       - NA
       X-Kong-Proxy-Latency:
-      - '0'
+      - '1'
       X-Kong-Request-Id:
-      - a5f63f1b856a0d4f3f581b4a25655d23
+      - 3846a71ffde2155be272e82fae1eae57
       X-Kong-Upstream-Latency:
-      - '3'
+      - '1'
     status:
       code: 200
       message: OK
 - request:
-    body: '{"jsonrpc": "2.0", "method": "chain_getHeader", "params": ["0xdbc6c3d1af3a60c28e574de760e855133352740771e8bf9a39c6979e5798b8fb"],
+    body: '{"jsonrpc": "2.0", "method": "chain_getHeader", "params": ["0xff74053d6c9febec7503d60e7082d0e9ffc5ff0efa2b3b94e1e3c245aada841c"],
       "id": 4}'
     headers:
       Accept:
@@ -483,7 +451,7 @@ interactions:
       Content-Length:
       - '138'
       User-Agent:
-      - python-requests/2.32.5
+      - python-requests/2.33.1
       cache-control:
       - no-cache
       content-type:
@@ -492,7 +460,7 @@ interactions:
     uri: https://assethub-kusama.api.onfinality.io/rpc
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":4,"result":{"parentHash":"0x600e9ea1731b8effd8e638ebccfe2dccef11fa146e1fe2dc2420a4fefc5772fb","number":"0xb0aeea","stateRoot":"0xd1712593ac1e6550145acb91190e0f4b597fdd72f288d4932933cba420167257","extrinsicsRoot":"0xf300099d3444f80e885955e45fa00d4051881b17bfc2f776bfd412919d33171c","digest":{"logs":["0x066175726120ee66c10800000000","0x04525053529030ff1294d426f79d483d8041b25b92cafe8d2a4fe1469e858780bc217bec440876b15d07","0x0561757261010178e507ed4c78edfaa93bdb905da12250a2f40fb306b2c8284410847e4622e505ce88060b487c55e8bd6e669bf18cb1c65e8e3a033a9205533f65618ef6d7e78a"]}}}'
+      string: '{"jsonrpc":"2.0","id":4,"result":{"parentHash":"0x5eb777dbb62e4cc2b8742c749e66202e74452b9181370bea279e4326dad0eaf1","number":"0x1099912","stateRoot":"0xfce6aa32d98d0f1b6c790a3c899cf943e3a38308e945f204ac8400c8141311aa","extrinsicsRoot":"0x01bc345fcee5116b928067d0d6f57be1ea5b14be316f6d6d6e79f621a9b2c5aa","digest":{"logs":["0x06434d4c53100101010c","0x066175726120cbc5d70800000000","0x04525053529052a795c7c555ca5321d5e936573becf2f1280f0203c61c81ab1bf9c7e57d7a19562b0d08","0x056175726101012cfb502396d337ae548ee56ea6989600132bdfe714ec482be781130c18413c75e11b8f645a81a56d63c4b25fbce7f26d6a9bc9d9eb3d8aa1154bd3eeba01cb8c"]}}}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
@@ -501,11 +469,11 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '593'
+      - '619'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 09 Nov 2025 17:45:22 GMT
+      - Mon, 01 Jun 2026 08:41:03 GMT
       Vary:
       - origin, access-control-request-method, access-control-request-headers
       X-Cluster:
@@ -515,57 +483,9 @@ interactions:
       X-Kong-Proxy-Latency:
       - '1'
       X-Kong-Request-Id:
-      - 9ef5fd215954647550f4b81c0ae27266
+      - 751f7036be05f74b692c7b57a7b6eb0e
       X-Kong-Upstream-Latency:
-      - '6'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '0'
-      User-Agent:
-      - python-requests/2.32.5
-    method: POST
-    uri: https://assethub-kusama.api.subscan.io/api/scan/metadata
-  response:
-    body:
-      string: '{"code":0,"message":"Success","generated_at":1762710313,"data":{"addressType":"2","avgBlockTime":"6.6834","blockNum":"11579113","blockTime":"6","bootTime":"0","commissionAccuracy":"9","count_account":"404261","count_account_all":"724554","count_event":"7997947","count_signed_extrinsic":"344931","count_transfer":"2960858","currentPools":"197","current_era":"8794","current_validator_count":"1000","enabledNewTransferableFormulas":"true","epochLength":"600","epochProcess":"155","eraLength":"3237","eraProcess":"2308","eraStartBlock":"11576805","exist_roles":"activeBlockAuthor,collator,nominator,multisig,onChainIdentity,module,validator,proxy,multisigMember,convictionDelegate,proxies,convictionDelegated","finalized_blockNum":"11579107","history_depth":"84","implName":"statemine","maxNominatorRewardedPerValidator":"-1","min_nominator_bond":"100000000000","networkNode":"statemine","nftsRefreshAt":"1762683288","ref_time_rate":"7594","specVersion":"2000001","tps_15min":"0.04888888888888889","treasuryAccountId":"6d6f646c70792f74727372790000000000000000000000000000000000000000","unbondDuration":"90636","uniquesRefreshAt":"1762709517","validator_count":"1000","waiting_validator":"915"}}'
-    headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Origin:
-      - ''
-      Access-Control-Expose-Headers:
-      - '*'
-      Cache-Control:
-      - no-store
-      Content-Length:
-      - '1192'
-      Content-Type:
-      - application/json; charset=utf-8
-      Daily-Limit:
-      - '0'
-      Daily-Remaining:
-      - '0'
-      Date:
-      - Sun, 09 Nov 2025 17:45:23 GMT
-      Ratelimit-Limit:
-      - '2'
-      Ratelimit-Remaining:
       - '1'
-      Retry-After:
-      - '1'
-      Vary:
-      - Origin
     status:
       code: 200
       message: OK
@@ -581,7 +501,7 @@ interactions:
       Content-Length:
       - '72'
       User-Agent:
-      - python-requests/2.32.5
+      - python-requests/2.33.1
       cache-control:
       - no-cache
       content-type:
@@ -603,7 +523,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 09 Nov 2025 17:45:22 GMT
+      - Mon, 01 Jun 2026 08:41:04 GMT
       Vary:
       - origin, access-control-request-method, access-control-request-headers
       X-Cluster:
@@ -611,12 +531,49 @@ interactions:
       X-Continent:
       - NA
       X-Kong-Proxy-Latency:
-      - '0'
+      - '1'
       X-Kong-Request-Id:
-      - e9a0ee79407c336d0a47a92662c73b2f
+      - 9ddb2a3a4807033a5526475953685d39
       X-Kong-Upstream-Latency:
-      - '2'
+      - '8'
     status:
       code: 200
       message: OK
+- request: &id001
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.32.3
+    method: POST
+    uri: https://assethub-kusama.api.subscan.io/api/scan/metadata
+  response: &id002
+    body:
+      string: '{"code": 403, "message": "Subscan API strictly requires an API key.
+        Unauthenticated access is disabled. Visit https://support.subscan.io/ for
+        details."}'
+    headers:
+      Access-Control-Allow-Credentials: 'true'
+      Access-Control-Allow-Origin: ''
+      Access-Control-Expose-Headers: '*'
+      Cache-Control: no-store
+      Content-Length: '152'
+      Date: Mon, 01 Jun 2026 08:44:54 GMT
+      Vary: Origin
+      X-Subscan-Contact: hello@subscan.io
+      X-Subscan-Notice: Missing API Key. Get details at https://support.subscan.io/
+      X-Subscan-Waf: blocked
+      Content-Type: text/plain; charset=utf-8
+    status:
+      code: 400
+      message: Bad Request
+- request: *id001
+  response: *id002
 version: 1
