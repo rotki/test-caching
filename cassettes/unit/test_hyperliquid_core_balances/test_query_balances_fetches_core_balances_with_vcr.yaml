@@ -1,0 +1,102 @@
+interactions:
+- request:
+    body: '{"type": "spotClearinghouseState", "user": "0x7fC1b7863251Ac7F83c7a4E83ccd00d129Ee844c"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.33.1
+    method: POST
+    uri: https://api.hyperliquid.xyz/info
+  response:
+    body:
+      string: '{"balances":[{"coin":"USDC","token":0,"total":"13988.39433919","hold":"906.08","entryNtl":"0.0"},{"coin":"BRIDGE","token":73,"total":"725.04","hold":"0.0","entryNtl":"99.7945056"},{"coin":"HYPE","token":150,"total":"0.11327672","hold":"0.0","entryNtl":"4.84711084"}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '267'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 01 Jun 2026 07:04:38 GMT
+      Server:
+      - nginx/1.22.1
+      Via:
+      - 1.1 4b2ea665f2ce1ead8965b2716076228c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - wSc8fd0J8f94EW5OjmB56mUXikPx9rlSLPpXGM4vkMFiUQJwjBdJFQ==
+      X-Amz-Cf-Pop:
+      - MAD53-P7
+      X-Cache:
+      - Miss from cloudfront
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      vary:
+      - origin
+      - access-control-request-method
+      - access-control-request-headers
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"type": "clearinghouseState", "user": "0x7fC1b7863251Ac7F83c7a4E83ccd00d129Ee844c"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '84'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.33.1
+    method: POST
+    uri: https://api.hyperliquid.xyz/info
+  response:
+    body:
+      string: '{"marginSummary":{"accountValue":"0.004889","totalNtlPos":"0.0","totalRawUsd":"0.004889","totalMarginUsed":"0.0"},"crossMarginSummary":{"accountValue":"0.004889","totalNtlPos":"0.0","totalRawUsd":"0.004889","totalMarginUsed":"0.0"},"crossMaintenanceMarginUsed":"0.0","withdrawable":"0.004889","assetPositions":[],"time":1780297478106}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '334'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 01 Jun 2026 07:04:38 GMT
+      Server:
+      - nginx/1.22.1
+      Via:
+      - 1.1 6e148b0647c9c95500e00bf8e5a6b66c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 6USX27tUg9tVnMOeC2ZGAoTkYPXBeKhYaBPoBKh_j4AG8BgFlvl_6g==
+      X-Amz-Cf-Pop:
+      - MAD53-P7
+      X-Cache:
+      - Miss from cloudfront
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      vary:
+      - origin
+      - access-control-request-method
+      - access-control-request-headers
+    status:
+      code: 200
+      message: OK
+version: 1
