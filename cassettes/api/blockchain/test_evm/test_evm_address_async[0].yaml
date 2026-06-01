@@ -9,12 +9,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.39.1.dev82+g599377031.d20250618
+      - rotki/1.43.2.dev119+g5b4672f466
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=1&data=0x0178b8bf901b9e6b410c32a173374b1fc1d6e262b8d27002e03c6c2ce520b4c066b5429a&module=proxy&to=0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e
+    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=1&data=0x9061b92300000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000c05726f746b69046574686500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000243b3b57de901b9e6b410c32a173374b1fc1d6e262b8d27002e03c6c2ce520b4c066b5429a00000000000000000000000000000000000000000000000000000000&module=proxy&to=0xeEeEEEeE14D718C2B47D9923Deab1335E144EeEe
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000000000000000000"}
+      string: '{"jsonrpc":"2.0","id":1,"error":{"code":3,"message":"execution reverted","data":"0x77209fe80000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000c05726f746b690465746865000000000000000000000000000000000000000000"}}
 
         '
     headers:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 23 Jun 2025 07:27:23 GMT
+      - Mon, 01 Jun 2026 08:43:14 GMT
       Server:
       - nginx
       Vary:
@@ -41,9 +41,75 @@ interactions:
       X-Nginx-Id:
       - '4'
       content-length:
-      - '103'
+      - '287'
       svid:
-      - '11'
+      - '7'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"id": 0, "jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0xeEeEEEeE14D718C2B47D9923Deab1335E144EeEe",
+      "data": "0x9061b92300000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000c05726f746b69046574686500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000243b3b57de901b9e6b410c32a173374b1fc1d6e262b8d27002e03c6c2ce520b4c066b5429a00000000000000000000000000000000000000000000000000000000"},
+      "latest"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '595'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - rotki/1.43.2.dev119+g5b4672f466
+    method: POST
+    uri: https://api.blockscout.com/1/json-rpc
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","error": {"code":3,"data":"0x77209fe80000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000c05726f746b690465746865000000000000000000000000000000000000000000","message":"execution
+        reverted: 0x77209fe80000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000c05726f746b690465746865000000000000000000000000000000000000000000"},"id":
+        0}
+
+        '
+    headers:
+      CF-RAY:
+      - a04cedfb2e8e0b16-MAD
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 01 Jun 2026 08:43:15 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=V6tWUjJUii7gHhUBvdXlKHzT%2ByZNM2FdAPkez5I7Lnv%2FXttzDXi8KPspk6x42pcPDJvQFMaxh4rXbzDthyfSvbJY9qW0vBjOtGW7HT593JKGR5gxko9BPMhEUxxBicVr83akSA%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '493'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '99720'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '816'
+      x-request-id:
+      - 84873b122a1cad3000e66beb6253ed50
     status:
       code: 200
       message: OK
@@ -57,12 +123,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.39.1.dev82+g599377031.d20250618
+      - rotki/1.43.2.dev119+g5b4672f466
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=1&data=0x0178b8bfa92039d81cb82a6a9c69005ef09df58f6d692d7f28a09aa558d5a12655688e9b&module=proxy&to=0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e
+    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=1&data=0x9061b92300000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000b05726f746b69036574680000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000243b3b57dea92039d81cb82a6a9c69005ef09df58f6d692d7f28a09aa558d5a12655688e9b00000000000000000000000000000000000000000000000000000000&module=proxy&to=0xeEeEEEeE14D718C2B47D9923Deab1335E144EeEe
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000004976fb03c32e5b8cfe2b6ccb31c09ba78ebaba41"}
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000004976fb03c32e5b8cfe2b6ccb31c09ba78ebaba4100000000000000000000000000000000000000000000000000000000000000200000000000000000000000009531c059098e3d194ff87febb587ab07b30b1306"}
 
         '
     headers:
@@ -79,7 +145,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 23 Jun 2025 07:27:24 GMT
+      - Mon, 01 Jun 2026 08:43:16 GMT
       Server:
       - nginx
       Vary:
@@ -89,9 +155,9 @@ interactions:
       X-Nginx-Id:
       - '4'
       content-length:
-      - '103'
+      - '295'
       svid:
-      - '11'
+      - '7'
     status:
       code: 200
       message: OK
@@ -105,60 +171,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.39.1.dev82+g599377031.d20250618
-    method: GET
-    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=1&data=0x3b3b57dea92039d81cb82a6a9c69005ef09df58f6d692d7f28a09aa558d5a12655688e9b&module=proxy&to=0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41
-  response:
-    body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000009531c059098e3d194ff87febb587ab07b30b1306"}
-
-        '
-    headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Mon, 23 Jun 2025 07:27:24 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Nginx-Id:
-      - '4'
-      content-length:
-      - '103'
-      svid:
-      - '11'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - rotki/1.39.1.dev82+g599377031.d20250618
+      - rotki/1.43.2.dev119+g5b4672f466
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=1&data=0x252dba420000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000004678f0a6958e4d2bc4f1baf7bc52e8f3564f3fe400000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000024c45527910000000000000000000000009531c059098e3d194ff87febb587ab07b30b130600000000000000000000000000000000000000000000000000000000&module=proxy&to=0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000015b604200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000"}
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000180d91800000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000"}
 
         '
     headers:
@@ -175,7 +193,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 23 Jun 2025 07:27:25 GMT
+      - Mon, 01 Jun 2026 08:43:17 GMT
       Server:
       - nginx
       Vary:
@@ -183,15 +201,16 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '3'
+      - '4'
       content-length:
       - '423'
       svid:
-      - '11'
+      - '7'
     status:
       code: 200
       message: OK
-- request:
+- &id001
+  request:
     body: null
     headers:
       Accept:
@@ -201,42 +220,78 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.39.1.dev82+g599377031.d20250618
+      - python-requests/2.32.3
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=1&data=0x252dba42000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000807def5e7d057df05c796f4bc75c3fe82bd6eee100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000024cc9baa120000000000000000000000009531c059098e3d194ff87febb587ab07b30b130600000000000000000000000000000000000000000000000000000000&module=proxy&to=0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696
+    uri: https://api.routescan.io/v2/network/mainnet/evm/1/etherscan/api?action=eth_call&data=0x9061b92300000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000c05726f746b69046574686500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000243b3b57de901b9e6b410c32a173374b1fc1d6e262b8d27002e03c6c2ce520b4c066b5429a00000000000000000000000000000000000000000000000000000000&module=proxy&to=0xeEeEEEeE14D718C2B47D9923Deab1335E144EeEe
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000015b60430000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000020000000000000000000000000912af37a0ad2171b5327f8d209000501d4a5434b"}
-
-        '
+      string: '{"jsonrpc":"2.0","id":1,"error":{"code":3,"message":"RPC Request failed."}}'
     headers:
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
+      Date: Mon, 01 Jun 2026 08:43:46 GMT
+      Content-Type: application/json; charset=utf-8
+      Content-Length: '75'
+      Connection: keep-alive
+      CF-Ray: a04ceebe0bd8b835-MAD
+      CF-Cache-Status: BYPASS
+      Access-Control-Allow-Origin: '*'
+      Server: cloudflare
+      Vary: Origin, accept-encoding
+      Speculation-Rules: '"/cdn-cgi/speculation"'
+      x-ratelimit-rpd-limit: '10000'
+      x-ratelimit-rpd-remaining: '9980'
+      x-ratelimit-rpd-reset: '77728'
+      x-ratelimit-rpm-limit: '120'
+      x-ratelimit-rpm-remaining: '113'
+      x-ratelimit-rpm-reset: '19'
+      alt-svc: h3=":443"; ma=86400
+    status:
+      code: 500
+      message: Internal Server Error
+- &id002
+  request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
       Connection:
       - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Mon, 23 Jun 2025 07:27:25 GMT
-      Server:
-      - nginx
-      Vary:
-      - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Nginx-Id:
-      - '5'
-      content-length:
-      - '423'
-      svid:
-      - '8'
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.routescan.io/v2/network/mainnet/evm/1/etherscan/api?action=eth_call&data=0x9061b92300000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000b05726f746b69036574680000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000243b3b57dea92039d81cb82a6a9c69005ef09df58f6d692d7f28a09aa558d5a12655688e9b00000000000000000000000000000000000000000000000000000000&module=proxy&to=0xeEeEEEeE14D718C2B47D9923Deab1335E144EeEe
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000004976fb03c32e5b8cfe2b6ccb31c09ba78ebaba4100000000000000000000000000000000000000000000000000000000000000200000000000000000000000009531c059098e3d194ff87febb587ab07b30b1306"}'
+    headers:
+      Date: Mon, 01 Jun 2026 08:43:46 GMT
+      Content-Type: application/json; charset=utf-8
+      Transfer-Encoding: chunked
+      Connection: keep-alive
+      CF-Ray: a04ceec0df3ea986-MAD
+      CF-Cache-Status: HIT
+      x-ratelimit-rpm-reset: '21'
+      Access-Control-Allow-Origin: '*'
+      Age: '2'
+      Last-Modified: Mon, 01 Jun 2026 08:43:44 GMT
+      Server: cloudflare
+      Vary: Origin, accept-encoding
+      Speculation-Rules: '"/cdn-cgi/speculation"'
+      x-ratelimit-rpd-limit: '10000'
+      x-ratelimit-rpd-remaining: '9984'
+      x-ratelimit-rpd-reset: '77730'
+      x-ratelimit-rpm-limit: '120'
+      x-ratelimit-rpm-remaining: '117'
+      Content-Encoding: gzip
+      alt-svc: h3=":443"; ma=86400
     status:
       code: 200
       message: OK
+- *id001
+- *id002
+- *id001
+- *id002
+- *id001
+- *id002
 version: 1
