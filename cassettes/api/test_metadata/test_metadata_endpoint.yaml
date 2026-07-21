@@ -5,230 +5,287 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.31.0
+      - python-requests/2.33.1
     method: GET
-    uri: https://raw.githubusercontent.com/rotki/data/develop/airdrops/index_v3.json
+    uri: https://raw.githubusercontent.com/rotki/data/develop/airdrops/index_v4.json
   response:
     body:
-      string: "{\n    \"airdrops\": {\n        \"uniswap\": {\n            \"file_path\":
-        \"airdrops/uniswap.parquet\",\n            \"file_hash\": \"4d065eee2fd6dc40a0c4943b02ec4f0fcb75bb8ef16b0b9ee3aafba211d2ecff\",\n
-        \           \"asset_identifier\": \"eip155:1/erc20:0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984\",\n
-        \           \"url\": \"https://app.uniswap.org/\",\n            \"name\":
-        \"Uniswap\",\n            \"icon\": \"uniswap.svg\"\n        },\n        \"1inch\":
-        {\n            \"file_path\": \"airdrops/1inch.parquet\",\n            \"file_hash\":
-        \"c1fbc29c708ded810b7d6e73f7679e297211b246f82de714414d502db8f65a4d\",\n            \"asset_identifier\":
-        \"eip155:1/erc20:0x111111111117dC0aa78b770fA6A738034120C302\",\n            \"url\":
-        \"https://1inch.exchange/\",\n            \"name\": \"1inch\",\n            \"icon\":
-        \"1inch.svg\"\n        },\n        \"tornado\": {\n            \"file_path\":
-        \"airdrops/tornado.parquet\",\n            \"file_hash\": \"9f6f400671d075aba0df27ad9d565ebb8b170c81a0fce521f4b8db8739ea169f\",\n
-        \           \"asset_identifier\": \"eip155:1/erc20:0x77777FeDdddFfC19Ff86DB637967013e6C6A116C\",\n
-        \           \"url\": \"https://tornado.cash/\",\n            \"name\": \"Tornado
-        Cash\",\n            \"icon\": \"tornado.svg\",\n            \"has_decoder\":
-        false\n        },\n        \"cornichon\": {\n            \"file_path\": \"airdrops/cornichon_airdrop.parquet\",\n
-        \           \"file_hash\": \"695b01c73a821bb655081307894b2a2280812af366cc86eefb7ce33d2b9635d3\",\n
-        \           \"asset_identifier\": \"eip155:1/erc20:0xa456b515303B2Ce344E9d2601f91270f8c2Fea5E\",\n
-        \           \"url\": \"https://cornichon.ape.tax/\",\n            \"name\":
-        \"Cornichon\",\n            \"icon\": \"cornichon.svg\"\n        },\n        \"grain\":
-        {\n            \"file_path\": \"airdrops/grain_iou.parquet\",\n            \"file_hash\":
-        \"9ecb23818bf52d8286b1cb887806b952643cd041f2fc876873b5033add0a7c61\",\n            \"asset_identifier\":
-        \"eip155:1/erc20:0x6589fe1271A0F29346796C6bAf0cdF619e25e58e\",\n            \"url\":
-        \"https://claim.harvest.finance/\",\n            \"name\": \"Grain\",\n            \"icon\":
-        \"grain.png\"\n        },\n        \"furucombo\": {\n            \"file_path\":
-        \"airdrops/furucombo_airdrop.parquet\",\n            \"file_hash\": \"fb2186e5f72b8d399728ce5d4d156c8178a569ff0a7c88a66f9bc5973828aab8\",\n
-        \           \"asset_identifier\": \"eip155:1/erc20:0xfFffFffF2ba8F66D4e51811C5190992176930278\",\n
-        \           \"url\": \"https://furucombo.app/\",\n            \"name\": \"Furucombo\",\n
-        \           \"icon\": \"furucombo.png\",\n            \"has_decoder\": false\n
-        \       },\n        \"lido\": {\n            \"file_path\": \"airdrops/lido_airdrop.parquet\",\n
-        \           \"file_hash\": \"27b577d998b53fd0d4db1a6dab5448d9f509da49ff0d45a60f823247601c52e5\",\n
-        \           \"asset_identifier\": \"eip155:1/erc20:0x5A98FcBEA516Cf06857215779Fd812CA3beF1B32\",\n
-        \           \"url\": \"https://lido.fi/\",\n            \"name\": \"Lido\",\n
-        \           \"icon\": \"lido.svg\",\n            \"has_decoder\": false\n
-        \       },\n        \"curve\": {\n            \"file_path\": \"airdrops/curve_airdrop.parquet\",\n
-        \           \"file_hash\": \"a681dd8f020f313254f1ef99fc9ff41cdb78cea2e7275cb4b5f5b9faece2250d\",\n
-        \           \"asset_identifier\": \"eip155:1/erc20:0xD533a949740bb3306d119CC777fa900bA034cd52\",\n
-        \           \"url\": \"https://www.curve.fi/\",\n            \"name\": \"Curve
-        Finance\",\n            \"icon\": \"curve.png\",\n            \"has_decoder\":
-        false\n        },\n        \"convex\": {\n            \"file_path\": \"airdrops/convex_airdrop.parquet\",\n
-        \           \"file_hash\": \"541923f262f3002ef4bf66b9d6a0772745527ff259759778dd50562ec3b2ae13\",\n
-        \           \"asset_identifier\": \"eip155:1/erc20:0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B\",\n
-        \           \"url\": \"https://www.convexfinance.com/\",\n            \"name\":
-        \"Convex\",\n            \"icon\": \"convex.jpeg\"\n        },\n        \"shapeshift\":
-        {\n            \"file_path\": \"airdrops/shapeshift.parquet\",\n            \"file_hash\":
-        \"a0d21c55a1a4cb03e7a037b78ccd50721560ce7b7c7cfa9549344203c61c3bcb\",\n            \"asset_identifier\":
-        \"eip155:1/erc20:0xc770EEfAd204B5180dF6a14Ee197D99d808ee52d\",\n            \"url\":
-        \"https://shapeshift.com/shapeshift-decentralize-airdrop\",\n            \"name\":
-        \"ShapeShift\",\n            \"icon\": \"shapeshift.svg\",\n            \"cutoff_time\":
-        1634050800\n        },\n        \"ens\": {\n            \"file_path\": \"airdrops/ens.parquet\",\n
-        \           \"file_hash\": \"fd0b76d29fd8e62332ffecfd5598aa13921e4b84eaf44a9ea85e32b7160d799d\",\n
-        \           \"asset_identifier\": \"eip155:1/erc20:0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72\",\n
-        \           \"url\": \"https://claim.ens.domains/\",\n            \"name\":
-        \"ENS\",\n            \"icon\": \"ens.svg\"\n        },\n        \"psp\":
-        {\n            \"file_path\": \"airdrops/psp.parquet\",\n            \"file_hash\":
-        \"f009a53896b386f5651e04cbed62ddbc94a85a6debb960e155ea282a182c1042\",\n            \"asset_identifier\":
-        \"eip155:1/erc20:0xcAfE001067cDEF266AfB7Eb5A286dCFD277f3dE5\",\n            \"url\":
-        \"https://paraswap.io/\",\n            \"name\": \"ParaSwap\",\n            \"icon\":
-        \"paraswap.svg\",\n            \"has_decoder\": false\n        },\n        \"sdl\":
-        {\n            \"file_path\": \"airdrops/saddle_finance.parquet\",\n            \"file_hash\":
-        \"9ff44aec2c7bfa184d7fd331767ab79b328e29a45c5ad6d844eef043f8523fe0\",\n            \"asset_identifier\":
-        \"eip155:1/erc20:0xf1Dc500FdE233A4055e25e5BbF516372BC4F6871\",\n            \"url\":
-        \"https://saddle.exchange/#/\",\n            \"name\": \"SaddleFinance\",\n
-        \           \"icon\": \"saddle-finance.svg\",\n            \"has_decoder\":
-        false\n        },\n        \"cow_mainnet\": {\n            \"file_path\":
-        \"airdrops/cow_mainnet.parquet\",\n            \"file_hash\": \"079f37c11ae65e1dda896e46f46e429403a53922b157122886c62b40c38bb5ed\",\n
-        \           \"asset_identifier\": \"eip155:1/erc20:0xD057B63f5E69CF1B929b356b579Cba08D7688048\",\n
-        \           \"url\": \"https://cowswap.exchange/#/claim\",\n            \"name\":
-        \"COW (ethereum)\",\n            \"icon\": \"cow.svg\"\n        },\n        \"cow_gnosis\":
-        {\n            \"file_path\": \"airdrops/cow_gnosis.parquet\",\n            \"file_hash\":
-        \"674df927a06607ef5934c2e66f2e6ebcb80d7faa47d1c6039b2ea4387ea65914\",\n            \"asset_identifier\":
-        \"eip155:100/erc20:0xc20C9C13E853fc64d054b73fF21d3636B2d97eaB\",\n            \"url\":
-        \"https://cowswap.exchange/#/claim\",\n            \"name\": \"COW (gnosis
-        chain)\",\n            \"icon\": \"cow.svg\"\n        },\n        \"diva\":
-        {\n            \"file_path\": \"airdrops/diva.parquet\",\n            \"file_hash\":
-        \"8061df50c447212f30758e4202240dcc23508b9e5fae79bbc67e60009fd9e81b\",\n            \"asset_identifier\":
-        \"eip155:1/erc20:0xBFAbdE619ed5C4311811cF422562709710DB587d\",\n            \"url\":
-        \"https://claim.diva.community/\",\n            \"name\": \"DIVA\",\n            \"icon\":
-        \"diva.svg\"\n        },\n        \"shutter\": {\n            \"file_path\":
-        \"airdrops/shutter.parquet\",\n            \"file_hash\": \"9fd3b235c02e193aa8583df762ee749f7454782b30a18376b9ee11c32b506775\",\n
-        \           \"asset_identifier\": \"eip155:1/erc20:0xe485E2f1bab389C08721B291f6b59780feC83Fd7\",\n
-        \           \"url\": \"https://claim.shutter.network/\",\n            \"name\":
-        \"SHU\",\n            \"icon\": \"shutter.png\",\n            \"cutoff_time\":
-        1721000000,\n            \"new_asset_data\": {\n                \"asset_type\":
-        \"EVM_TOKEN\",\n                \"address\": \"0xe485E2f1bab389C08721B291f6b59780feC83Fd7\",\n
-        \               \"name\": \"Shutter\",\n                \"symbol\": \"SHU\",\n
-        \               \"chain_id\": 1,\n                \"decimals\": 18\n            }\n
-        \       },\n        \"starknet\": {\n            \"file_path\": \"airdrops/starknet.parquet\",\n
-        \           \"file_hash\": \"3a28d1cda91fd8df53ba73abbf24d577ed304ac6dd3f46d2c5118e3109c45dc2\",\n
-        \           \"asset_identifier\": \"eip155:1/erc20:0xCa14007Eff0dB1f8135f4C25B34De49AB0d42766\",\n
-        \           \"url\": \"https://provisions.starknet.io/\",\n            \"name\":
-        \"STRK\",\n            \"icon\": \"starknet.svg\",\n            \"icon_path\":
-        \"airdrops/icons/starknet.svg\",\n            \"cutoff_time\": 1718841600,\n
-        \           \"has_decoder\": false,\n            \"new_asset_data\": {\n                \"asset_type\":
-        \"EVM_TOKEN\",\n                \"address\": \"0xCa14007Eff0dB1f8135f4C25B34De49AB0d42766\",\n
-        \               \"name\": \"Starknet\",\n                \"symbol\": \"STRK\",\n
-        \               \"chain_id\": 1,\n                \"decimals\": 18,\n                \"coingecko\":
-        \"starknet\"\n            }\n        },\n        \"optimism_4\": {\n            \"file_path\":
-        \"airdrops/optimism_4.parquet\",\n            \"file_hash\": \"4b1636e5ef35d9f29278b4de1ad02f531e73b286f70d09a2e247d5506470cc87\",\n
-        \           \"asset_identifier\": \"eip155:10/erc20:0x4200000000000000000000000000000000000042\",\n
-        \           \"url\": \"https://app.optimism.io/airdrops/4\",\n            \"name\":
-        \"OP\",\n            \"icon\": \"optimism.svg\",\n            \"cutoff_time\":
-        1739491200\n        },\n        \"degen2_season1\": {\n            \"file_path\":
-        \"airdrops/degen2_season1.parquet\",\n            \"file_hash\": \"5d54cd67521d96ae9c05a8522e250d5054e1cd3d23705fbd18f5b202c6572d48\",\n
-        \           \"asset_identifier\": \"eip155:8453/erc20:0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed\",\n
-        \           \"url\": \"https://www.degen.tips/airdrop2/season1\",\n            \"name\":
-        \"DEGEN\",\n            \"icon\": \"degen.svg\",\n            \"icon_path\":
-        \"airdrops/icons/degen.svg\",\n            \"cutoff_time\": 1711843200,\n
-        \           \"new_asset_data\": {\n                \"asset_type\": \"EVM_TOKEN\",\n
-        \               \"address\": \"0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed\",\n
-        \               \"name\": \"Degen\",\n                \"symbol\": \"DEGEN\",\n
-        \               \"chain_id\": 8453,\n                \"decimals\": 18\n            }\n
-        \       },\n        \"omni\": {\n            \"file_path\": \"airdrops/omni.parquet\",\n
-        \           \"file_hash\": \"547eab6a215e8422c6a5774ac8484c08dc85a776df283181b7d081948c92a6f8\",\n
-        \           \"asset_identifier\": \"eip155:1/erc20:0x36E66fbBce51e4cD5bd3C62B637Eb411b18949D4\",\n
-        \           \"url\": \"https://claims.omni.network/\",\n            \"name\":
-        \"OMNI\",\n            \"icon\": \"omni.svg\",\n            \"icon_path\":
-        \"airdrops/icons/omni.svg\",\n            \"new_asset_data\": {\n                \"asset_type\":
-        \"EVM_TOKEN\",\n                \"address\": \"0x36E66fbBce51e4cD5bd3C62B637Eb411b18949D4\",\n
-        \               \"name\": \"Omni Network\",\n                \"symbol\": \"OMNI\",\n
-        \               \"chain_id\": 1,\n                \"decimals\": 18\n            }\n
-        \       },\n        \"degen2_season3\": {\n            \"file_path\": \"airdrops/degen2_season3.parquet\",\n
-        \           \"file_hash\": \"7b3ee9fd6bebfe5a640c40ba4effe29ce5f0bd1e05c9222fb25f1859f9af0a6f\",\n
-        \           \"asset_identifier\": \"eip155:8453/erc20:0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed\",\n
-        \           \"url\": \"https://www.degen.tips/airdrop2/season3\",\n            \"name\":
-        \"DEGEN\",\n            \"icon\": \"degen.svg\",\n            \"icon_path\":
-        \"airdrops/icons/degen.svg\",\n            \"cutoff_time\": 1716940800,\n
-        \           \"new_asset_data\": {\n                \"asset_type\": \"EVM_TOKEN\",\n
-        \               \"address\": \"0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed\",\n
-        \               \"name\": \"Degen\",\n                \"symbol\": \"DEGEN\",\n
-        \               \"chain_id\": 8453,\n                \"decimals\": 18\n            }\n
-        \       },\n        \"myso\": {\n            \"file_path\": \"airdrops/myso.parquet\",\n
-        \           \"file_hash\": \"b06cf1c89f1183bb22049d8625ba06fcabcaac2bbf1a106eaa107b9ddb91ff87\",\n
-        \           \"asset_identifier\": \"eip155:1/erc20:0x5fDe99e121F3aC02e7d6ACb081dB1f89c1e93C17\",\n
-        \           \"url\": \"https://app.myso.finance/airdrop\",\n            \"name\":
-        \"MYT\",\n            \"icon\": \"myso.svg\",\n            \"icon_path\":
-        \"airdrops/icons/myso.jpg\",\n            \"cutoff_time\": 1717145230,\n            \"has_decoder\":
-        false,\n            \"new_asset_data\": {\n                \"asset_type\":
-        \"EVM_TOKEN\",\n                \"address\": \"0x5fDe99e121F3aC02e7d6ACb081dB1f89c1e93C17\",\n
-        \               \"name\": \"MYSO Token\",\n                \"symbol\": \"MYT\",\n
-        \               \"chain_id\": 1,\n                \"decimals\": 18\n            }\n
-        \       },\n        \"zk\": {\n            \"file_path\": \"airdrops/zk.parquet\",\n
-        \           \"file_hash\": \"17c754bf5b051e322d2bb0a5034f4d541a5c2769ca42294d6b5c3632372debb7\",\n
-        \           \"asset_identifier\": \"eip155:324/erc20:0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E\",\n
-        \           \"url\": \"https://claim.zknation.io/\",\n            \"name\":
-        \"ZK\",\n            \"icon\": \"zksync.jpg\",\n            \"cutoff_time\":
-        1735862400,\n            \"has_decoder\": false,\n            \"new_asset_data\":
-        {\n                \"asset_type\": \"EVM_TOKEN\",\n                \"address\":
-        \"0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E\",\n                \"name\":
-        \"ZKsync\",\n                \"symbol\": \"ZK\",\n                \"chain_id\":
-        324,\n                \"decimals\": 18\n            }\n        },\n        \"eigen_phase_1\":{\n
-        \           \"asset_identifier\":\"eip155:1/erc20:0xec53bF9167f50cDEB3Ae105f56099aaaB9061F83\",\n
-        \           \"url\":\"https://eigenfoundation.org\",\n            \"api_url\":\"https://claims.eigenfoundation.org/clique-eigenlayer-api/campaign/eigenlayer/credentials?walletAddress={address}\",\n
-        \           \"amount_path\":\"phase1/data/pipelines/tokenQualified\",\n            \"name\":\"EIGEN
-        phase 1\",\n            \"icon\": \"eigenlayer.png\",\n            \"new_asset_data\":
-        {\n                \"asset_type\": \"EVM_TOKEN\",\n                \"address\":
-        \"0xec53bF9167f50cDEB3Ae105f56099aaaB9061F83\",\n                \"name\":
-        \"Eigen\",\n                \"symbol\": \"EIGEN\",\n                \"chain_id\":
-        1,\n                \"decimals\": 18\n            },\n            \"cutoff_time\":
-        1725667200\n        },\n        \"eigen_phase_2\":{\n            \"asset_identifier\":\"eip155:1/erc20:0xec53bF9167f50cDEB3Ae105f56099aaaB9061F83\",\n
-        \           \"url\":\"https://eigenfoundation.org\",\n            \"api_url\":\"https://claims.eigenfoundation.org/clique-eigenlayer-api/campaign/eigenlayer/credentials?walletAddress={address}\",\n
-        \           \"amount_path\":\"phase2/data/pipelines/tokenQualified\",\n            \"name\":\"EIGEN
-        phase 2\",\n            \"icon\": \"eigenlayer.png\",\n            \"new_asset_data\":
-        {\n                \"asset_type\": \"EVM_TOKEN\",\n                \"address\":
-        \"0xec53bF9167f50cDEB3Ae105f56099aaaB9061F83\",\n                \"name\":
-        \"Eigen\",\n                \"symbol\": \"EIGEN\",\n                \"chain_id\":
-        1,\n                \"decimals\": 18\n            },\n            \"cutoff_time\":
-        1725667200\n        }\n    },\n    \"poap_airdrops\": {\n        \"aave_v2_pioneers\":
-        [\n            \"airdrops/poap/poap_aave_v2_pioneers.json\",\n            \"https://poap.delivery/aave-v2-pioneers\",\n
-        \           \"AAVE V2 Pioneers\",\n            \"3c93a244714a8b00cf9543668d93dcd42ba7fef79ced360624045a0f0cbee422\"\n
-        \       ],\n        \"beacon_chain_first_1024\": [\n            \"airdrops/poap/poap_beacon_chain_first_1024.json\",\n
-        \           \"https://poap.delivery/beacon-chain-first-1024\",\n            \"Beacon
-        Chain First 1024 Depositors and Proposers\",\n            \"5d9c3e0f2a0d66bd2c1464e11cab372630b663729f62a38412df8842e1fb98c1\"\n
-        \       ],\n        \"beacon_chain_first_32769\": [\n            \"airdrops/poap/poap_beacon_chain_first_32769.json\",\n
-        \           \"https://poap.delivery/beacon-chain-first-32769\",\n            \"Beacon
-        Chain First 32,769 Block Validators\",\n            \"89384405cc89a441c8149fc85e33ed96735298304f60fefb21a2d7bdae21f0fb\"\n
-        \       ],\n        \"coingecko_yield_farming\": [\n            \"airdrops/poap/poap_coingecko_yield_farming.json\",\n
-        \           \"https://poap.delivery/coin-gecko\",\n            \"Coin Gecko
-        Yield Farming\",\n            \"4eedd7ed7e18147d072cd579b6e7cc296236c6f308797a730e055d0dc28b4d89\"\n
-        \       ],\n        \"eth2_genesis\": [\n            \"airdrops/poap/poap_eth2_genesis.json\",\n
-        \           \"https://poap.delivery/eth2-genesis/\",\n            \"Beacon
-        Chain Genesis Depositor\",\n            \"dace95be8447daf5e41c09bac2bd6c9ebeda2a25cd75b3b08e1c1b4335463571\"\n
-        \       ],\n        \"half_rekt\": [\n            \"airdrops/poap/poap_half_rekt.json\",\n
-        \           \"https://poap.delivery/half-rekt\",\n            \"Half Rekt\",\n
-        \           \"03cb853bb1461c6f0be85062a91e500569a15230df931d33d5f085e8209b4873\"\n
-        \       ],\n        \"keep_stakers\": [\n            \"airdrops/poap/poap_keep_stakers.json\",\n
-        \           \"https://poap.delivery/keep-stakers\",\n            \"KEEP Network
-        Mainnet Stakers\",\n            \"5164bbf3697943913d5fc21170633fb1b989dd4c9542d8b33f1432f8f61d692e\"\n
-        \       ],\n        \"lumberjackers\": [\n            \"airdrops/poap/poap_lumberjackers.json\",\n
-        \           \"https://poap.delivery/lumberjackers\",\n            \"False
-        Start Lumberjackers\",\n            \"1317292422bee793690f487a4c9353138a77346b2c6d1517adb193da798893b6\"\n
-        \       ],\n        \"medalla\": [\n            \"airdrops/poap/poap_medalla.json\",\n
-        \           \"https://poap.delivery/medalla\",\n            \"Medalla Validator\",\n
-        \           \"25833c3439db18226c190b745e84b42404ad80cac5ab18cd78d5fd1210b53401\"\n
-        \       ],\n        \"muir_glacier\": [\n            \"airdrops/poap/poap_muir_glacier.json\",\n
-        \           \"https://poap.delivery/muir-glacier\",\n            \"Muir Glacier\",\n
-        \           \"5870e1fb9daea0d72d6bec445eb9d9c1d4d9c2b0bae7c6803c4ebdb51a5bd21d\"\n
-        \       ],\n        \"proof_of_gucci\": [\n            \"airdrops/poap/poap_proof_of_gucci.json\",\n
-        \           \"https://poap.delivery/proof-of-gucci\",\n            \"YFI -
-        Proof of Gucci\",\n            \"59f3f664659705f7d4979db212683878a1db00d6752e28e1182c7facbed7fd0c\"\n
-        \       ],\n        \"proof_of_gucci_design_competition\": [\n            \"airdrops/poap/poap_proof_of_gucci_design_competition.json\",\n
-        \           \"https://poap.delivery/proof-of-gucci-design\",\n            \"YFI
-        - Proof of Gucci Design Competition\",\n            \"efc19106e9386b66d948f975224f18e0d78806f208c1e3795c3565ab1a75cd1c\"\n
-        \       ],\n        \"resuscitators\": [\n            \"airdrops/poap/poap_resucitators.json\",\n
-        \           \"https://poap.delivery/medalla-resuscitator\",\n            \"Medalla
-        Resuscitators\",\n            \"f414f159e4e3101eefc0641764480b62700fac08e51ad754ecc60e40e0be0bb8\"\n
-        \       ],\n        \"yam\": [\n            \"airdrops/poap/poap_yam.json\",\n
-        \           \"https://poap.delivery/yam\",\n            \"Yam Heroes\",\n
-        \           \"c4a4e65fd36772a91c3ae4cc7315c81399f094a65d3b93d55317d0fc2459f271\"\n
-        \       ],\n        \"ycover\": [\n            \"airdrops/poap/poap_ycover.json\",\n
-        \           \"https://poap.delivery/ycover\",\n            \"A New Face For
-        yCover\",\n            \"2459489f09a3e8493e65249a4198f60fd1c0e163846312b89c449ef428e3072d\"\n
-        \       ],\n        \"yfi_og\": [\n            \"airdrops/poap/poap_yfi_og.json\",\n
-        \           \"https://poap.delivery/yfi-og\",\n            \"I Played 4 YFI\",\n
-        \           \"d1aabcc0fb66fe04fd6a88e5e7225a8d88c21b512daa2ca0fda1fd0f929a3cb1\"\n
-        \       ]\n    }\n}"
+      string: "{\n  \"airdrops\": {\n    \"uniswap\": {\n      \"file_path\": \"airdrops/uniswap.csv.gz\"\
+        ,\n      \"file_hash\": \"2e72e0b9148c03ddfdb5a5bbfe22a656dbfe23463842e1883c4d80508b63bf0c\"\
+        ,\n      \"asset_identifier\": \"eip155:1/erc20:0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984\"\
+        ,\n      \"url\": \"https://app.uniswap.org/\",\n      \"name\": \"Uniswap\"\
+        ,\n      \"icon\": \"uniswap.svg\"\n    },\n    \"1inch\": {\n      \"file_path\"\
+        : \"airdrops/1inch.csv.gz\",\n      \"file_hash\": \"3b1c363fb5ea948073fa8daec3637b3e2e7a3f534f18710f357f8315bcc5513b\"\
+        ,\n      \"asset_identifier\": \"eip155:1/erc20:0x111111111117dC0aa78b770fA6A738034120C302\"\
+        ,\n      \"url\": \"https://1inch.exchange/\",\n      \"name\": \"1inch\"\
+        ,\n      \"icon\": \"1inch.svg\"\n    },\n    \"tornado\": {\n      \"file_path\"\
+        : \"airdrops/tornado.csv.gz\",\n      \"file_hash\": \"6ca7c778afb26d263f7a1b9c5101c89a00d79fe1c6beac44d30418597fffc385\"\
+        ,\n      \"asset_identifier\": \"eip155:1/erc20:0x77777FeDdddFfC19Ff86DB637967013e6C6A116C\"\
+        ,\n      \"url\": \"https://tornado.cash/\",\n      \"name\": \"Tornado Cash\"\
+        ,\n      \"icon\": \"tornado.svg\",\n      \"has_decoder\": false\n    },\n\
+        \    \"cornichon\": {\n      \"file_path\": \"airdrops/cornichon_airdrop.csv.gz\"\
+        ,\n      \"file_hash\": \"1dbb5f4508b1e88c74b0f45d792869a73c28fb20180318eee15cea2872e51169\"\
+        ,\n      \"asset_identifier\": \"eip155:1/erc20:0xa456b515303B2Ce344E9d2601f91270f8c2Fea5E\"\
+        ,\n      \"url\": \"https://cornichon.ape.tax/\",\n      \"name\": \"Cornichon\"\
+        ,\n      \"icon\": \"cornichon.svg\"\n    },\n    \"grain\": {\n      \"file_path\"\
+        : \"airdrops/grain_iou.csv.gz\",\n      \"file_hash\": \"16799ac2000d10639572f905c5af35fff6e980340940bb64fd6d1ed9d4dcb72a\"\
+        ,\n      \"asset_identifier\": \"eip155:1/erc20:0x6589fe1271A0F29346796C6bAf0cdF619e25e58e\"\
+        ,\n      \"url\": \"https://claim.harvest.finance/\",\n      \"name\": \"\
+        Grain\",\n      \"icon\": \"grain.png\"\n    },\n    \"furucombo\": {\n  \
+        \    \"file_path\": \"airdrops/furucombo_airdrop.csv.gz\",\n      \"file_hash\"\
+        : \"c528611321736d5af395da87bb2867f4bf09b6049279189001816bf72dcd90eb\",\n\
+        \      \"asset_identifier\": \"eip155:1/erc20:0xfFffFffF2ba8F66D4e51811C5190992176930278\"\
+        ,\n      \"url\": \"https://furucombo.app/\",\n      \"name\": \"Furucombo\"\
+        ,\n      \"icon\": \"furucombo.png\",\n      \"has_decoder\": false\n    },\n\
+        \    \"lido\": {\n      \"file_path\": \"airdrops/lido_airdrop.csv.gz\",\n\
+        \      \"file_hash\": \"697b309098721303c39f2cf451f70bb78d6b5847ddf1385ae9e064028060c564\"\
+        ,\n      \"asset_identifier\": \"eip155:1/erc20:0x5A98FcBEA516Cf06857215779Fd812CA3beF1B32\"\
+        ,\n      \"url\": \"https://lido.fi/\",\n      \"name\": \"Lido\",\n     \
+        \ \"icon\": \"lido.svg\",\n      \"has_decoder\": false\n    },\n    \"curve\"\
+        : {\n      \"file_path\": \"airdrops/curve_airdrop.csv.gz\",\n      \"file_hash\"\
+        : \"d485850c2727d88ee11226d6617f396e1be99a25f4335a56c143daaa8443097e\",\n\
+        \      \"asset_identifier\": \"eip155:1/erc20:0xD533a949740bb3306d119CC777fa900bA034cd52\"\
+        ,\n      \"url\": \"https://www.curve.fi/\",\n      \"name\": \"Curve Finance\"\
+        ,\n      \"icon\": \"curve.png\",\n      \"has_decoder\": false\n    },\n\
+        \    \"convex\": {\n      \"file_path\": \"airdrops/convex_airdrop.csv.gz\"\
+        ,\n      \"file_hash\": \"3462378af5db04b67be7fc483fecad67b110adb16265655aec70fd7b85ce990b\"\
+        ,\n      \"asset_identifier\": \"eip155:1/erc20:0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B\"\
+        ,\n      \"url\": \"https://www.convexfinance.com/\",\n      \"name\": \"\
+        Convex\",\n      \"icon\": \"convex.jpeg\"\n    },\n    \"shapeshift\": {\n\
+        \      \"file_path\": \"airdrops/shapeshift.csv.gz\",\n      \"file_hash\"\
+        : \"f9691501c7d362caf19e9333085b8995ed3186be1fae3465dbe273f2f2e80629\",\n\
+        \      \"asset_identifier\": \"eip155:1/erc20:0xc770EEfAd204B5180dF6a14Ee197D99d808ee52d\"\
+        ,\n      \"url\": \"https://shapeshift.com/shapeshift-decentralize-airdrop\"\
+        ,\n      \"name\": \"ShapeShift\",\n      \"icon\": \"shapeshift.svg\",\n\
+        \      \"cutoff_time\": 1634050800\n    },\n    \"ens\": {\n      \"file_path\"\
+        : \"airdrops/ens.csv.gz\",\n      \"file_hash\": \"fbe9a188eb918f3bf55ec828e81e8b0b793fdb90393dd6141cf77d765d009251\"\
+        ,\n      \"asset_identifier\": \"eip155:1/erc20:0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72\"\
+        ,\n      \"url\": \"https://claim.ens.domains/\",\n      \"name\": \"ENS\"\
+        ,\n      \"icon\": \"ens.svg\"\n    },\n    \"psp\": {\n      \"file_path\"\
+        : \"airdrops/psp.csv.gz\",\n      \"file_hash\": \"bcf37571ce556404631f931323211cc699b0a98f7b09e6f776e418fec174691f\"\
+        ,\n      \"asset_identifier\": \"eip155:1/erc20:0xcAfE001067cDEF266AfB7Eb5A286dCFD277f3dE5\"\
+        ,\n      \"url\": \"https://paraswap.io/\",\n      \"name\": \"ParaSwap\"\
+        ,\n      \"icon\": \"paraswap.svg\",\n      \"has_decoder\": false\n    },\n\
+        \    \"sdl\": {\n      \"file_path\": \"airdrops/saddle_finance.csv.gz\",\n\
+        \      \"file_hash\": \"fc80056e03f5f2492ce65302d60aaabc4b69bad141710871d395b2193fd159b0\"\
+        ,\n      \"asset_identifier\": \"eip155:1/erc20:0xf1Dc500FdE233A4055e25e5BbF516372BC4F6871\"\
+        ,\n      \"url\": \"https://saddle.exchange/#/\",\n      \"name\": \"SaddleFinance\"\
+        ,\n      \"icon\": \"saddle-finance.svg\",\n      \"has_decoder\": false\n\
+        \    },\n    \"cow_mainnet\": {\n      \"file_path\": \"airdrops/cow_mainnet.csv.gz\"\
+        ,\n      \"file_hash\": \"dcfda7d588904bf36a2387c3edf95b48cbce3e3f3fbef3f2f3c2684873ad232c\"\
+        ,\n      \"asset_identifier\": \"eip155:1/erc20:0xD057B63f5E69CF1B929b356b579Cba08D7688048\"\
+        ,\n      \"url\": \"https://cowswap.exchange/#/claim\",\n      \"name\": \"\
+        COW (ethereum)\",\n      \"icon\": \"cow.svg\"\n    },\n    \"cow_gnosis\"\
+        : {\n      \"file_path\": \"airdrops/cow_gnosis.csv.gz\",\n      \"file_hash\"\
+        : \"616c7e0e7cefcc56cc8b7b666ad7bfc96a615e79bd052b8b9839e193ebf6a522\",\n\
+        \      \"asset_identifier\": \"eip155:100/erc20:0xc20C9C13E853fc64d054b73fF21d3636B2d97eaB\"\
+        ,\n      \"url\": \"https://cowswap.exchange/#/claim\",\n      \"name\": \"\
+        COW (gnosis chain)\",\n      \"icon\": \"cow.svg\"\n    },\n    \"diva\":\
+        \ {\n      \"file_path\": \"airdrops/diva.csv.gz\",\n      \"file_hash\":\
+        \ \"6ab404987555df438b96b20796f45f21d776cba3b545b16d0cfc4ccb9d4d80d1\",\n\
+        \      \"asset_identifier\": \"eip155:1/erc20:0xBFAbdE619ed5C4311811cF422562709710DB587d\"\
+        ,\n      \"url\": \"https://claim.diva.community/\",\n      \"name\": \"DIVA\"\
+        ,\n      \"icon\": \"diva.svg\"\n    },\n    \"shutter\": {\n      \"file_path\"\
+        : \"airdrops/shutter.csv.gz\",\n      \"file_hash\": \"213575828bbe5e9ae531d34bc70dd5dac709fbc7b60331192b8104c61428fe3b\"\
+        ,\n      \"asset_identifier\": \"eip155:1/erc20:0xe485E2f1bab389C08721B291f6b59780feC83Fd7\"\
+        ,\n      \"url\": \"https://claim.shutter.network/\",\n      \"name\": \"\
+        SHU\",\n      \"icon\": \"shutter.png\",\n      \"cutoff_time\": 1721000000,\n\
+        \      \"new_asset_data\": {\n        \"asset_type\": \"EVM_TOKEN\",\n   \
+        \     \"address\": \"0xe485E2f1bab389C08721B291f6b59780feC83Fd7\",\n     \
+        \   \"name\": \"Shutter\",\n        \"symbol\": \"SHU\",\n        \"chain_id\"\
+        : 1,\n        \"decimals\": 18\n      }\n    },\n    \"starknet\": {\n   \
+        \   \"file_path\": \"airdrops/starknet.csv.gz\",\n      \"file_hash\": \"\
+        f25ed205578b398c175fdf4ec3f70502329ffe1143bd506e81c282850bc01597\",\n    \
+        \  \"asset_identifier\": \"eip155:1/erc20:0xCa14007Eff0dB1f8135f4C25B34De49AB0d42766\"\
+        ,\n      \"url\": \"https://provisions.starknet.io/\",\n      \"name\": \"\
+        STRK\",\n      \"icon\": \"starknet.svg\",\n      \"icon_path\": \"airdrops/icons/starknet.svg\"\
+        ,\n      \"cutoff_time\": 1718841600,\n      \"has_decoder\": false,\n   \
+        \   \"new_asset_data\": {\n        \"asset_type\": \"EVM_TOKEN\",\n      \
+        \  \"address\": \"0xCa14007Eff0dB1f8135f4C25B34De49AB0d42766\",\n        \"\
+        name\": \"Starknet\",\n        \"symbol\": \"STRK\",\n        \"chain_id\"\
+        : 1,\n        \"decimals\": 18,\n        \"coingecko\": \"starknet\"\n   \
+        \   }\n    },\n    \"optimism_4\": {\n      \"file_path\": \"airdrops/optimism_4.csv.gz\"\
+        ,\n      \"file_hash\": \"4269b4aa15e646bb901ea9547ad8b657ffe56b82bd0aa2f597b81a8d7f7596e4\"\
+        ,\n      \"asset_identifier\": \"eip155:10/erc20:0x4200000000000000000000000000000000000042\"\
+        ,\n      \"url\": \"https://app.optimism.io/airdrops/4\",\n      \"name\"\
+        : \"OP airdrop 4\",\n      \"icon\": \"optimism.svg\",\n      \"icon_path\"\
+        : \"airdrops/icons/optimism.svg\",\n      \"cutoff_time\": 1739491200\n  \
+        \  },\n    \"optimism_5\": {\n      \"file_path\": \"airdrops/op_airdrop_5.csv.gz\"\
+        ,\n      \"file_hash\": \"6e01489478e1ab327416069798485f9a91d5e85b4a2df6eb646fbcc3abdf0fc2\"\
+        ,\n      \"asset_identifier\": \"eip155:10/erc20:0x4200000000000000000000000000000000000042\"\
+        ,\n      \"url\": \"https://app.optimism.io/airdrops/5\",\n      \"name\"\
+        : \"OP airdrop 5\",\n      \"icon\": \"optimism.svg\",\n      \"icon_path\"\
+        : \"airdrops/icons/optimism.svg\",\n      \"cutoff_time\": 1760054399\n  \
+        \  },\n    \"degen2_season1\": {\n      \"file_path\": \"airdrops/degen2_season1.csv.gz\"\
+        ,\n      \"file_hash\": \"3f49ef6066d70ad8d519e7e65ea7e228aecd3d040eedf74c8d960cbf69775976\"\
+        ,\n      \"asset_identifier\": \"eip155:8453/erc20:0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed\"\
+        ,\n      \"url\": \"https://www.degen.tips/airdrop2/season1\",\n      \"name\"\
+        : \"DEGEN\",\n      \"icon\": \"degen.svg\",\n      \"icon_path\": \"airdrops/icons/degen.svg\"\
+        ,\n      \"cutoff_time\": 1711843200,\n      \"new_asset_data\": {\n     \
+        \   \"asset_type\": \"EVM_TOKEN\",\n        \"address\": \"0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed\"\
+        ,\n        \"name\": \"Degen\",\n        \"symbol\": \"DEGEN\",\n        \"\
+        chain_id\": 8453,\n        \"decimals\": 18\n      }\n    },\n    \"omni\"\
+        : {\n      \"file_path\": \"airdrops/omni.csv.gz\",\n      \"file_hash\":\
+        \ \"2e2eb6c8d9ca014c47400f3ead4c3273a6e0e90142501e1fd48f9d46ed293cc2\",\n\
+        \      \"asset_identifier\": \"eip155:1/erc20:0x36E66fbBce51e4cD5bd3C62B637Eb411b18949D4\"\
+        ,\n      \"url\": \"https://claims.omni.network/\",\n      \"name\": \"OMNI\"\
+        ,\n      \"icon\": \"omni.svg\",\n      \"icon_path\": \"airdrops/icons/omni.svg\"\
+        ,\n      \"new_asset_data\": {\n        \"asset_type\": \"EVM_TOKEN\",\n \
+        \       \"address\": \"0x36E66fbBce51e4cD5bd3C62B637Eb411b18949D4\",\n   \
+        \     \"name\": \"Omni Network\",\n        \"symbol\": \"OMNI\",\n       \
+        \ \"chain_id\": 1,\n        \"decimals\": 18\n      }\n    },\n    \"degen2_season2\"\
+        : {\n      \"file_path\": \"airdrops/degen2_season2.csv.gz\",\n      \"file_hash\"\
+        : \"fc956bf0458bc141a400da7f1a48f551fd81343b7ac4f0222736812a0558c52e\",\n\
+        \      \"asset_identifier\": \"eip155:8453/erc20:0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed\"\
+        ,\n      \"url\": \"https://www.degen.tips/airdrop2/season2\",\n      \"name\"\
+        : \"DEGEN\",\n      \"icon\": \"degen.svg\",\n      \"icon_path\": \"airdrops/icons/degen.svg\"\
+        ,\n      \"cutoff_time\": 1714435200,\n      \"new_asset_data\": {\n     \
+        \   \"asset_type\": \"EVM_TOKEN\",\n        \"address\": \"0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed\"\
+        ,\n        \"name\": \"Degen\",\n        \"symbol\": \"DEGEN\",\n        \"\
+        chain_id\": 8453,\n        \"decimals\": 18\n      }\n    },\n    \"degen2_season3\"\
+        : {\n      \"file_path\": \"airdrops/degen2_season3.csv.gz\",\n      \"file_hash\"\
+        : \"4a6108a330b793aa790f7525b74703c34e6eb6183b30b207f149e36aade72dee\",\n\
+        \      \"asset_identifier\": \"eip155:8453/erc20:0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed\"\
+        ,\n      \"url\": \"https://www.degen.tips/airdrop2/season3\",\n      \"name\"\
+        : \"DEGEN\",\n      \"icon\": \"degen.svg\",\n      \"icon_path\": \"airdrops/icons/degen.svg\"\
+        ,\n      \"cutoff_time\": 1716940800,\n      \"new_asset_data\": {\n     \
+        \   \"asset_type\": \"EVM_TOKEN\",\n        \"address\": \"0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed\"\
+        ,\n        \"name\": \"Degen\",\n        \"symbol\": \"DEGEN\",\n        \"\
+        chain_id\": 8453,\n        \"decimals\": 18\n      }\n    },\n    \"myso\"\
+        : {\n      \"file_path\": \"airdrops/myso.csv.gz\",\n      \"file_hash\":\
+        \ \"0eb669a2c9dc08b0d49e754a8d5c66f2e4776e93bb403bae4bcfc4a2cb7e8730\",\n\
+        \      \"asset_identifier\": \"eip155:1/erc20:0x5fDe99e121F3aC02e7d6ACb081dB1f89c1e93C17\"\
+        ,\n      \"url\": \"https://app.myso.finance/airdrop\",\n      \"name\": \"\
+        MYT\",\n      \"icon\": \"myso.svg\",\n      \"icon_path\": \"airdrops/icons/myso.jpg\"\
+        ,\n      \"cutoff_time\": 1717145230,\n      \"has_decoder\": false,\n   \
+        \   \"new_asset_data\": {\n        \"asset_type\": \"EVM_TOKEN\",\n      \
+        \  \"address\": \"0x5fDe99e121F3aC02e7d6ACb081dB1f89c1e93C17\",\n        \"\
+        name\": \"MYSO Token\",\n        \"symbol\": \"MYT\",\n        \"chain_id\"\
+        : 1,\n        \"decimals\": 18\n      }\n    },\n    \"zk\": {\n      \"file_path\"\
+        : \"airdrops/zk.csv.gz\",\n      \"file_hash\": \"9b1ad54be547f0629fb436c72708511dbfef713423be57cd8226d0150836025b\"\
+        ,\n      \"asset_identifier\": \"eip155:324/erc20:0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E\"\
+        ,\n      \"url\": \"https://claim.zknation.io/\",\n      \"name\": \"ZK\"\
+        ,\n      \"icon\": \"zksync.jpg\",\n      \"cutoff_time\": 1735862400,\n \
+        \     \"has_decoder\": false,\n      \"new_asset_data\": {\n        \"asset_type\"\
+        : \"EVM_TOKEN\",\n        \"address\": \"0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E\"\
+        ,\n        \"name\": \"ZKsync\",\n        \"symbol\": \"ZK\",\n        \"\
+        chain_id\": 324,\n        \"decimals\": 18\n      }\n    },\n    \"degen2_season4\"\
+        : {\n      \"file_path\": \"airdrops/degen2_season4.csv.gz\",\n      \"file_hash\"\
+        : \"04032582a08a1056946a160bda74adfae0c7eae219aac32d051a73bc03f21814\",\n\
+        \      \"asset_identifier\": \"eip155:8453/erc20:0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed\"\
+        ,\n      \"url\": \"https://www.degen.tips/airdrop2/season4\",\n      \"name\"\
+        : \"DEGEN\",\n      \"icon\": \"degen.svg\",\n      \"icon_path\": \"airdrops/icons/degen.svg\"\
+        ,\n      \"cutoff_time\": 1719532800,\n      \"new_asset_data\": {\n     \
+        \   \"asset_type\": \"EVM_TOKEN\",\n        \"address\": \"0x4ed4E862860beD51a9570b96d89aF5E1B0Efefed\"\
+        ,\n        \"name\": \"Degen\",\n        \"symbol\": \"DEGEN\",\n        \"\
+        chain_id\": 8453,\n        \"decimals\": 18\n      }\n    },\n    \"debridge_1\"\
+        : {\n      \"file_path\": \"airdrops/debridge_1.csv.gz\",\n      \"file_hash\"\
+        : \"3422e738ae5b645193e53786bed7e77c805b675ca6d64e2488feb9ed14ea8db1\",\n\
+        \      \"asset_identifier\": \"DBR\",\n      \"url\": \"https://debridge.foundation/\"\
+        ,\n      \"name\": \"DBR\",\n      \"icon\": \"debridge.svg\",\n      \"icon_path\"\
+        : \"airdrops/icons/debridge.svg\",\n      \"new_asset_data\": {\n        \"\
+        asset_type\": \"SOLANA_TOKEN\",\n        \"name\": \"DeBridge\",\n       \
+        \ \"address\": \"DBRiDgJAMsM95moTzJs7M9LnkGErpbv9v6CUR1DXnUu5\",\n       \
+        \ \"symbol\": \"DBR\",\n        \"decimals\": 6,\n        \"coingecko\": \"\
+        debridge\"\n      }\n    },\n    \"odos\": {\n      \"file_path\": \"airdrops/odos.csv.gz\"\
+        ,\n      \"file_hash\": \"fc6adb21e478de65affc4ab1312bd96f084544e255190cfdbd1796c170a4c516\"\
+        ,\n      \"asset_identifier\": \"eip155:8453/erc20:0xca73ed1815e5915489570014e024b7EbE65dE679\"\
+        ,\n      \"url\": \"https://app.odos.xyz/rewards\",\n      \"name\": \"Odos\"\
+        ,\n      \"icon\": \"odos.svg\",\n      \"has_decoder\": true,\n      \"new_asset_data\"\
+        : {\n        \"asset_type\": \"EVM_TOKEN\",\n        \"address\": \"0xca73ed1815e5915489570014e024b7EbE65dE679\"\
+        ,\n        \"name\": \"Odos Token\",\n        \"symbol\": \"ODOS\",\n    \
+        \    \"chain_id\": 8453,\n        \"decimals\": 18\n      }\n    },\n    \"\
+        superfluid_s1\": {\n      \"file_path\": \"airdrops/superfluid_1.csv.gz\"\
+        ,\n      \"file_hash\": \"7fd8aaa7dca8813e4d724ce3120037fefb1fc81d22d6c1b27615bc3c21aee456\"\
+        ,\n      \"asset_identifier\": \"eip155:8453/erc20:0xa69f80524381275A7fFdb3AE01c54150644c8792\"\
+        ,\n      \"url\": \"https://claim.superfluid.org/\",\n      \"name\": \"Superfluid\
+        \ Season 1\",\n      \"icon\": \"superliquid.svg\",\n      \"icon_path\":\
+        \ \"airdrops/icons/sup.svg\",\n      \"has_decoder\": true,\n      \"new_asset_data\"\
+        : {\n        \"asset_type\": \"EVM_TOKEN\",\n        \"address\": \"0xa69f80524381275A7fFdb3AE01c54150644c8792\"\
+        ,\n        \"name\": \"Superfluid Token\",\n        \"symbol\": \"SUP\",\n\
+        \        \"chain_id\": 8453,\n        \"decimals\": 18\n      }\n    },\n\
+        \    \"squill_airdrop_1\": {\n      \"file_path\": \"airdrops/squill_airdrop_1.csv.gz\"\
+        ,\n      \"file_hash\": \"682f6d3acad724585ea0351ad18bec632499adbe58652c34188f587de2c2556a\"\
+        ,\n      \"asset_identifier\": \"eip155:1/erc20:0x7ebAB7190d3d574ce82D29F2FA1422f18E29969C\"\
+        ,\n      \"url\": \"https://github.com/open-stablecoin-index/squill-drop/blob/main/README.md\"\
+        ,\n      \"name\": \"Squill airdrop 1\",\n      \"icon\": \"squill.png\",\n\
+        \      \"icon_path\": \"airdrops/icons/squill.png\",\n      \"has_decoder\"\
+        : false,\n      \"new_asset_data\": {\n        \"asset_type\": \"EVM_TOKEN\"\
+        ,\n        \"address\": \"0x7ebAB7190d3d574ce82D29F2FA1422f18E29969C\",\n\
+        \        \"name\": \"Squill\",\n        \"symbol\": \"SQUILL\",\n        \"\
+        chain_id\": 1,\n        \"decimals\": 18,\n        \"coingecko\": \"squill\"\
+        \n      }\n    },\n    \"squill_airdrop_2\": {\n      \"file_path\": \"airdrops/squill_airdrop_2.csv.gz\"\
+        ,\n      \"file_hash\": \"c34c3b516507bca4e279e1cf30db7afceb1b51b88573917eaaa2036fabbd4f28\"\
+        ,\n      \"asset_identifier\": \"eip155:1/erc20:0x7ebAB7190d3d574ce82D29F2FA1422f18E29969C\"\
+        ,\n      \"url\": \"https://github.com/open-stablecoin-index/squill-drop/blob/main/README.md\"\
+        ,\n      \"name\": \"Squill airdrop 2\",\n      \"icon\": \"squill.png\",\n\
+        \      \"icon_path\": \"airdrops/icons/squill.png\",\n      \"has_decoder\"\
+        : false,\n      \"new_asset_data\": {\n        \"asset_type\": \"EVM_TOKEN\"\
+        ,\n        \"address\": \"0x7ebAB7190d3d574ce82D29F2FA1422f18E29969C\",\n\
+        \        \"name\": \"Squill\",\n        \"symbol\": \"SQUILL\",\n        \"\
+        chain_id\": 1,\n        \"decimals\": 18,\n        \"coingecko\": \"squill\"\
+        \n      }\n    },\n    \"squill_airdrop_3\": {\n      \"file_path\": \"airdrops/squill_airdrop_3.csv.gz\"\
+        ,\n      \"file_hash\": \"37a1314e99225a1de1ba73ec3e9622e89435676642cc7b8e7af19c50c14e3324\"\
+        ,\n      \"asset_identifier\": \"eip155:1/erc20:0x7ebAB7190d3d574ce82D29F2FA1422f18E29969C\"\
+        ,\n      \"url\": \"https://github.com/open-stablecoin-index/squill-drop/blob/main/README.md\"\
+        ,\n      \"name\": \"Squill airdrop 3\",\n      \"icon\": \"squill.png\",\n\
+        \      \"icon_path\": \"airdrops/icons/squill.png\",\n      \"has_decoder\"\
+        : false,\n      \"new_asset_data\": {\n        \"asset_type\": \"EVM_TOKEN\"\
+        ,\n        \"address\": \"0x7ebAB7190d3d574ce82D29F2FA1422f18E29969C\",\n\
+        \        \"name\": \"Squill\",\n        \"symbol\": \"SQUILL\",\n        \"\
+        chain_id\": 1,\n        \"decimals\": 18,\n        \"coingecko\": \"squill\"\
+        \n      }\n    }\n  },\n  \"poap_airdrops\": {\n    \"aave_v2_pioneers\":\
+        \ [\n      \"airdrops/poap/poap_aave_v2_pioneers.json\",\n      \"https://poap.delivery/aave-v2-pioneers\"\
+        ,\n      \"AAVE V2 Pioneers\",\n      \"3c93a244714a8b00cf9543668d93dcd42ba7fef79ced360624045a0f0cbee422\"\
+        \n    ],\n    \"beacon_chain_first_1024\": [\n      \"airdrops/poap/poap_beacon_chain_first_1024.json\"\
+        ,\n      \"https://poap.delivery/beacon-chain-first-1024\",\n      \"Beacon\
+        \ Chain First 1024 Depositors and Proposers\",\n      \"5d9c3e0f2a0d66bd2c1464e11cab372630b663729f62a38412df8842e1fb98c1\"\
+        \n    ],\n    \"beacon_chain_first_32769\": [\n      \"airdrops/poap/poap_beacon_chain_first_32769.json\"\
+        ,\n      \"https://poap.delivery/beacon-chain-first-32769\",\n      \"Beacon\
+        \ Chain First 32,769 Block Validators\",\n      \"89384405cc89a441c8149fc85e33ed96735298304f60fefb21a2d7bdae21f0fb\"\
+        \n    ],\n    \"coingecko_yield_farming\": [\n      \"airdrops/poap/poap_coingecko_yield_farming.json\"\
+        ,\n      \"https://poap.delivery/coin-gecko\",\n      \"Coin Gecko Yield Farming\"\
+        ,\n      \"4eedd7ed7e18147d072cd579b6e7cc296236c6f308797a730e055d0dc28b4d89\"\
+        \n    ],\n    \"eth2_genesis\": [\n      \"airdrops/poap/poap_eth2_genesis.json\"\
+        ,\n      \"https://poap.delivery/eth2-genesis/\",\n      \"Beacon Chain Genesis\
+        \ Depositor\",\n      \"dace95be8447daf5e41c09bac2bd6c9ebeda2a25cd75b3b08e1c1b4335463571\"\
+        \n    ],\n    \"half_rekt\": [\n      \"airdrops/poap/poap_half_rekt.json\"\
+        ,\n      \"https://poap.delivery/half-rekt\",\n      \"Half Rekt\",\n    \
+        \  \"03cb853bb1461c6f0be85062a91e500569a15230df931d33d5f085e8209b4873\"\n\
+        \    ],\n    \"keep_stakers\": [\n      \"airdrops/poap/poap_keep_stakers.json\"\
+        ,\n      \"https://poap.delivery/keep-stakers\",\n      \"KEEP Network Mainnet\
+        \ Stakers\",\n      \"5164bbf3697943913d5fc21170633fb1b989dd4c9542d8b33f1432f8f61d692e\"\
+        \n    ],\n    \"lumberjackers\": [\n      \"airdrops/poap/poap_lumberjackers.json\"\
+        ,\n      \"https://poap.delivery/lumberjackers\",\n      \"False Start Lumberjackers\"\
+        ,\n      \"1317292422bee793690f487a4c9353138a77346b2c6d1517adb193da798893b6\"\
+        \n    ],\n    \"medalla\": [\n      \"airdrops/poap/poap_medalla.json\",\n\
+        \      \"https://poap.delivery/medalla\",\n      \"Medalla Validator\",\n\
+        \      \"25833c3439db18226c190b745e84b42404ad80cac5ab18cd78d5fd1210b53401\"\
+        \n    ],\n    \"muir_glacier\": [\n      \"airdrops/poap/poap_muir_glacier.json\"\
+        ,\n      \"https://poap.delivery/muir-glacier\",\n      \"Muir Glacier\",\n\
+        \      \"5870e1fb9daea0d72d6bec445eb9d9c1d4d9c2b0bae7c6803c4ebdb51a5bd21d\"\
+        \n    ],\n    \"proof_of_gucci\": [\n      \"airdrops/poap/poap_proof_of_gucci.json\"\
+        ,\n      \"https://poap.delivery/proof-of-gucci\",\n      \"YFI - Proof of\
+        \ Gucci\",\n      \"59f3f664659705f7d4979db212683878a1db00d6752e28e1182c7facbed7fd0c\"\
+        \n    ],\n    \"proof_of_gucci_design_competition\": [\n      \"airdrops/poap/poap_proof_of_gucci_design_competition.json\"\
+        ,\n      \"https://poap.delivery/proof-of-gucci-design\",\n      \"YFI - Proof\
+        \ of Gucci Design Competition\",\n      \"efc19106e9386b66d948f975224f18e0d78806f208c1e3795c3565ab1a75cd1c\"\
+        \n    ],\n    \"resuscitators\": [\n      \"airdrops/poap/poap_resucitators.json\"\
+        ,\n      \"https://poap.delivery/medalla-resuscitator\",\n      \"Medalla\
+        \ Resuscitators\",\n      \"f414f159e4e3101eefc0641764480b62700fac08e51ad754ecc60e40e0be0bb8\"\
+        \n    ],\n    \"yam\": [\n      \"airdrops/poap/poap_yam.json\",\n      \"\
+        https://poap.delivery/yam\",\n      \"Yam Heroes\",\n      \"c4a4e65fd36772a91c3ae4cc7315c81399f094a65d3b93d55317d0fc2459f271\"\
+        \n    ],\n    \"ycover\": [\n      \"airdrops/poap/poap_ycover.json\",\n \
+        \     \"https://poap.delivery/ycover\",\n      \"A New Face For yCover\",\n\
+        \      \"2459489f09a3e8493e65249a4198f60fd1c0e163846312b89c449ef428e3072d\"\
+        \n    ],\n    \"yfi_og\": [\n      \"airdrops/poap/poap_yfi_og.json\",\n \
+        \     \"https://poap.delivery/yfi-og\",\n      \"I Played 4 YFI\",\n     \
+        \ \"d1aabcc0fb66fe04fd6a88e5e7225a8d88c21b512daa2ca0fda1fd0f929a3cb1\"\n \
+        \   ]\n  }\n}\n"
     headers:
       Accept-Ranges:
       - bytes
@@ -245,39 +302,39 @@ interactions:
       Cross-Origin-Resource-Policy:
       - cross-origin
       Date:
-      - Wed, 03 Jul 2024 09:48:33 GMT
+      - Tue, 21 Jul 2026 09:42:14 GMT
       ETag:
-      - W/"9a07ec7a851de298da55ee0347cff982551c2eca9956e08b184632a466e1530d"
+      - W/"85795e8f53fa7c432f5c72e3dd1588d30ee1bdb21e609af1ffeb24c15da583d9"
       Expires:
-      - Wed, 03 Jul 2024 09:53:33 GMT
+      - Tue, 21 Jul 2026 09:47:14 GMT
       Source-Age:
-      - '46'
+      - '0'
       Strict-Transport-Security:
       - max-age=31536000
       Vary:
-      - Authorization,Accept-Encoding,Origin
+      - Authorization,Accept-Encoding
       Via:
       - 1.1 varnish
       X-Cache:
       - HIT
       X-Cache-Hits:
-      - '1'
+      - '0'
       X-Content-Type-Options:
       - nosniff
       X-Fastly-Request-ID:
-      - adf39ec9b095960b0e2675f34866dbedc0f01b93
+      - 3f088a82fab23256c5a0061519ea2c4c96da451b
       X-Frame-Options:
       - deny
       X-GitHub-Request-Id:
-      - EB71:2FECA8:4BCEDB:503E17:668510CE
+      - 570C:7C0C9:DA5D2A:F33AC8:6A5F39E6
       X-Served-By:
-      - cache-mad2200132-MAD
+      - cache-mad2200100-MAD
       X-Timer:
-      - S1720000114.883842,VS0,VE1
+      - S1784626934.311825,VS0,VE168
       X-XSS-Protection:
       - 1; mode=block
       content-length:
-      - '18173'
+      - '20451'
     status:
       code: 200
       message: OK
