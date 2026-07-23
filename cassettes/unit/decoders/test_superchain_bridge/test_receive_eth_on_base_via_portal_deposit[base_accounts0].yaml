@@ -1,0 +1,371 @@
+interactions:
+- request:
+    body: '{"id": 0, "jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params":
+      ["0x5b97c69211cda5d0ac192302f478a7046da72004438beae14164550e2722d380"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - rotki/1.43.3.dev568+g46cedb1616.d20260723
+    method: POST
+    uri: https://api.blockscout.com/8453/json-rpc
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result": {"accessList":[],"blockHash":"0xbd92439d3cef7817f5366d224b3e812e2844e4cd987b659640a55b07348cb9d8","blockNumber":"0x95dd06","chainId":"0x2105","from":"0x7593bdfff57f71ab718184a2e9c9a3daaa535557","gas":"0x186a0","gasPrice":"0x0","hash":"0x5b97c69211cda5d0ac192302f478a7046da72004438beae14164550e2722d380","input":"0x01","nonce":"0x0","r":"0x0","s":"0x0","to":"0x7593bdfff57f71ab718184a2e9c9a3daaa535557","transactionIndex":"0x2","type":"0x7e","v":"0x0","value":"0x20f5b1eaad8d80000","yParity":"0x0"},"id":
+        0}
+
+        '
+    headers:
+      CF-RAY:
+      - a1fc02b498a25dcd-CDG
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 23 Jul 2026 16:20:06 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=RKhlPkIfXTnMRb7VOwLJiFuVT6dNL2c7rc0ZdyrvtUeQuzIAGuaA8FSlmQcvV55KVji9uhP1H1aFTW7zEYIBgkKAkOuAf8V6A7rTt%2Bmm0IToBuAPUQZn9Sh19V79tPpO9%2FIzyNN9daWlcZUmzx%2BPxQ%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '534'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '98380'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '491'
+      x-request-id:
+      - 322b90c5c9ed7043e66ed5a2793490aa
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"id": 0, "jsonrpc": "2.0", "method": "eth_getBlockByNumber", "params":
+      ["0x95dd06", true]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '91'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - rotki/1.43.3.dev568+g46cedb1616.d20260723
+    method: POST
+    uri: https://api.blockscout.com/8453/json-rpc
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result": {"baseFeePerGas":"0x134","difficulty":"0x0","extraData":"0x","gasLimit":"0x1c9c380","gasUsed":"0xdb955","hash":"0xbd92439d3cef7817f5366d224b3e812e2844e4cd987b659640a55b07348cb9d8","logsBloom":"0x00000000000000000000080000100002000110000000000002040420000000000000000000008002000000100000000000008040100020000000000000200000000000100000004a028002080000800000000000004000002592000084010120000020420000000402001000200005000000000000000400000005902008040000000000000000000000000400000000040004010030000000200005008810000210000200048000008000000000008820000000080010080000000000001020000000020400000002000c0000000800004000000010000000000002000000040010000000000000000600000000004000000200000002400400000000000000","miner":"0x4200000000000000000000000000000000000011","mixHash":"0x43b9a91d4312fefa049cdaf37938b70d39c902c89ae69c90b97a27ada5eedc4c","nonce":"0x0000000000000000","number":"0x95dd06","parentHash":"0x139ccc070d05e01a8de4aa04a2193ffaa51a6eb3ddb05e636379c6cd81917d41","receiptsRoot":"0x65183b3c2284f1e217c5814fecb866f991f46e89ba76d8ee0f4dcd87f27b4c77","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0xdf8","stateRoot":"0x8d8d398e9322308689c12a9abf4553933b469fa7e10c70256ac040f194f67f95","timestamp":"0x65b616ef","transactions":[{"blockHash":"0xbd92439d3cef7817f5366d224b3e812e2844e4cd987b659640a55b07348cb9d8","blockNumber":"0x95dd06","blockTimestamp":"0x65b616ef","depositReceiptVersion":"0x1","from":"0xdeaddeaddeaddeaddeaddeaddeaddeaddead0001","gas":"0xf4240","gasPrice":"0x0","hash":"0xd108afff02f5f595d09f83b83edfee27e6884d20bfdbb139c113cff8cd395ab2","input":"0x015d8eb900000000000000000000000000000000000000000000000000000000012380e80000000000000000000000000000000000000000000000000000000065b6163f00000000000000000000000000000000000000000000000000000002c95286e3362bba02a7827a6d0ce76047f8e80bf6a35e4852868216133872b811c94ce0d000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005050f69a9786f081509234f1a7f4684b5e5b76c900000000000000000000000000000000000000000000000000000000000000bc00000000000000000000000000000000000000000000000000000000000a6fe0","mint":"0x0","nonce":"0x95dd05","r":"0x0","s":"0x0","sourceHash":"0x6447b01de82a65cc399cc0907a8f5d300f605f3bcf2b79e6c96aa3226ac17e21","to":"0x4200000000000000000000000000000000000015","transactionIndex":"0x0","type":"0x7e","v":"0x0","value":"0x0","yParity":"0x0"},{"blockHash":"0xbd92439d3cef7817f5366d224b3e812e2844e4cd987b659640a55b07348cb9d8","blockNumber":"0x95dd06","blockTimestamp":"0x65b616ef","depositReceiptVersion":"0x1","from":"0x658b8d570147e46f7f9bb0bbf2b510fb2babcfad","gas":"0x186a0","gasPrice":"0x0","hash":"0x93533d1f497e2b726aff3a36136a1400cd7b509c74fa3deecbc199ca56798fd0","input":"0x01","mint":"0x2d63e59a1d77640","nonce":"0x0","r":"0x0","s":"0x0","sourceHash":"0x043a69b69f715d6f523bdea8a2575839ed06f574863c3ad3973fcd24847f2729","to":"0x658b8d570147e46f7f9bb0bbf2b510fb2babcfad","transactionIndex":"0x1","type":"0x7e","v":"0x0","value":"0x2d63e59a1d77640","yParity":"0x0"},{"blockHash":"0xbd92439d3cef7817f5366d224b3e812e2844e4cd987b659640a55b07348cb9d8","blockNumber":"0x95dd06","blockTimestamp":"0x65b616ef","depositReceiptVersion":"0x1","from":"0x7593bdfff57f71ab718184a2e9c9a3daaa535557","gas":"0x186a0","gasPrice":"0x0","hash":"0x5b97c69211cda5d0ac192302f478a7046da72004438beae14164550e2722d380","input":"0x01","mint":"0x20f5b1eaad8d80000","nonce":"0x0","r":"0x0","s":"0x0","sourceHash":"0x070557147b39e57d0f1e6d50dcd48c04a53f246bdd53dd0a4c6af5ffbf0d8d31","to":"0x7593bdfff57f71ab718184a2e9c9a3daaa535557","transactionIndex":"0x2","type":"0x7e","v":"0x0","value":"0x20f5b1eaad8d80000","yParity":"0x0"},{"blockHash":"0xbd92439d3cef7817f5366d224b3e812e2844e4cd987b659640a55b07348cb9d8","blockNumber":"0x95dd06","blockTimestamp":"0x65b616ef","depositReceiptVersion":"0x1","from":"0x4b34f943181408eac424116af7b7790c94cba8b6","gas":"0xea60","gasPrice":"0x0","hash":"0x5e5f8578878d3118fbb1c313d9fa98807a066a56d12d69a690f509d8ebfd2411","input":"0x","mint":"0x48dd7ede427d170","nonce":"0x1513","r":"0x0","s":"0x0","sourceHash":"0x0cf7c6ff79641827705f3358756fbb35003792fa5026ae1009ff00dafc0c89b2","to":"0xac8ba6854c746de0ce9e0cc1e81ad44e7a743672","transactionIndex":"0x3","type":"0x7e","v":"0x0","value":"0x48dd7ede427d170","yParity":"0x0"},{"accessList":[],"blockHash":"0xbd92439d3cef7817f5366d224b3e812e2844e4cd987b659640a55b07348cb9d8","blockNumber":"0x95dd06","blockTimestamp":"0x65b616ef","chainId":"0x2105","from":"0xf81ddc16fd2fb3bcfee0de71d4687848343699ad","gas":"0x15f90","gasPrice":"0xbebc334","hash":"0x55f45f7e8c182fd94ec7bd55ddfa0d5654402979ba5cf6c0723a1dd107c61607","input":"0x","maxFeePerGas":"0x77359400","maxPriorityFeePerGas":"0xbebc200","nonce":"0x0","r":"0xaeccd18e45b208fe32c0500a77f82ff93e68a65e782451602a145d839f757b70","s":"0x59ed52fd5f26458d656b96dc6892d7752727559345aa004481fc7078edb1caff","to":"0xbaed383ede0e5d9d72430661f3285daa77e9439f","transactionIndex":"0x4","type":"0x2","v":"0x1","value":"0x3063515dd74000","yParity":"0x1"},{"blockHash":"0xbd92439d3cef7817f5366d224b3e812e2844e4cd987b659640a55b07348cb9d8","blockNumber":"0x95dd06","blockTimestamp":"0x65b616ef","chainId":"0x2105","from":"0x4a1ccb3fc509205ec44e86a741ba29ab66a06f45","gas":"0x10f52","gasPrice":"0x1e8480","hash":"0xae1b56cd3e29170847625fe5967a6c96962bd98fbcacdf252c8ac9b8c55c2836","input":"0x095ea7b30000000000000000000000006131b5fae19ea4f9d964eac0408e4408b66337b5000000000000000000000000000000000000000000000000642d788bf9ecb9a8","nonce":"0xa5","r":"0x815fb58740c73d5e08ce1cd1288865b41a9feeb802b967c2e50f579a7436ccdf","s":"0x45fb72a1ed49a0c2bb45d1f3676af75a5910b6c7d977f0f83fcc2e9f0a475003","to":"0x64b88c73a5dfa78d1713fe1b4c69a22d7e0faaa7","transactionIndex":"0x5","type":"0x0","v":"0x422d","value":"0x0"},{"accessList":[],"blockHash":"0xbd92439d3cef7817f5366d224b3e812e2844e4cd987b659640a55b07348cb9d8","blockNumber":"0x95dd06","blockTimestamp":"0x65b616ef","chainId":"0x2105","from":"0x8976e5fd2fafda29f837a63efad145f89034b61d","gas":"0x6b144","gasPrice":"0x118d92","hash":"0xa911a8347f28c0a320de0734b428aa96dc1af347c756d7bdf56263f7c370f5ab","input":"0x83bd37f900000003070295997f2905ac03195e40028f5c000161178775c2239117745ae76c8ab9fcde737c275d000000018976e5fd2fafda29f837a63efad145f89034b61d000000000301020300040101020a0001010201ff000000000000000000000000000000000094baee3f41d66b4e71aa239e91ba7fdb204003234200000000000000000000000000000000000006000000000000000000000000000000000000000000000000","maxFeePerGas":"0x118d92","maxPriorityFeePerGas":"0x118d92","nonce":"0x2f","r":"0x8c6fae6f9e9bef1b957f1d11f990d1f835627f0c0fe28d0ebeba1dd0616312c2","s":"0x498331b02c3dc9a40b1efdd73dc34ecc0a4de6ad85a4dd4a4087f2dfdf5c53f7","to":"0x19ceead7105607cd444f5ad10dd51356436095a1","transactionIndex":"0x6","type":"0x2","v":"0x0","value":"0x295997f2905ac","yParity":"0x0"},{"blockHash":"0xbd92439d3cef7817f5366d224b3e812e2844e4cd987b659640a55b07348cb9d8","blockNumber":"0x95dd06","blockTimestamp":"0x65b616ef","chainId":"0x2105","from":"0x0487bc0f676433e1e245450a94ce1052758bd182","gas":"0x31516","gasPrice":"0xf475e","hash":"0x81d5ab80f0ded9c39a6090fc8634ceb143be1c778e37d4984924b5861dc5de32","input":"0xb2b9ce80133430564bc5e89bf0ffaa3b01737c40531a92360016bbae000f1cc6a1e407c6016b90ac9215d30000470de4df82000004110004","nonce":"0x10a9c","r":"0xa1d7da434c68a61e1ca3295e979653302a58f3675722ff83f9ae3c7aeff76670","s":"0x430f3df7df5a3dd4304bac8ec302a2b1a3f857d1c3d215c172d9911fad6cecce","to":"0x1eb658c8c76d35600e9e126c385c827ddac4001f","transactionIndex":"0x7","type":"0x0","v":"0x422d","value":"0x0"},{"accessList":[],"blockHash":"0xbd92439d3cef7817f5366d224b3e812e2844e4cd987b659640a55b07348cb9d8","blockNumber":"0x95dd06","blockTimestamp":"0x65b616ef","chainId":"0x2105","from":"0xd712e4a922808fc2c76b0f90f4da899496b8e056","gas":"0x4c4b40","gasPrice":"0xf4374","hash":"0x9785b6ca7a978d5b6f3c32bbbf6ee3cf02fc596fe8318a56f182a0f24ac17cf2","input":"0x8613482424c7579bfed0931c32223c842e5ebe571eb80767215fc5e77bd2faed92cf2188000000000000000000000000000000000000000000000000000000000000001cf4531b00483008f832b4061d0c45a378f49f123499d4b04ef4565323d37b27064e70198d7a9e694f8f593f211e706bbefa017d90075a5893ac89f68f321dcb70","maxFeePerGas":"0xf43b2","maxPriorityFeePerGas":"0xf4240","nonce":"0xb","r":"0xd6cac77b4ad0580a81ef0b169e2ba3d6cbd945391f557edb81787596279b799f","s":"0x18fd232e52ce2fd910cc4736b8f888b408942c3e0d4b9be9ad29363a98b0d8a0","to":"0x97dd2e329be6a68f7c7e5ec1d2167dda168a94bb","transactionIndex":"0x8","type":"0x2","v":"0x1","value":"0x110d9316ec000","yParity":"0x1"},{"accessList":[],"blockHash":"0xbd92439d3cef7817f5366d224b3e812e2844e4cd987b659640a55b07348cb9d8","blockNumber":"0x95dd06","blockTimestamp":"0x65b616ef","chainId":"0x2105","from":"0x409e2f15d1668aad747242af6df32d0f9888994e","gas":"0x5b8d80","gasPrice":"0xf4374","hash":"0x54e58b459dbffba66a6a657c5f64c03901a45818c7c5655eaeef528f4e134e68","input":"0xb1dc65a40001e4ce6db9b46f2b4f431b38746773040bb52d8f477e6eb11acef53bed9d2f000000000000000000000000000000000000000000000000000000000054eb03463baf1a271ee502cc3528c9ddef894cc88c12e9b075039491df50135db2b7df00000000000000000000000000000000000000000000000000000000000000e0000000000000000000000000000000000000000000000000000000000000026000000000000000000000000000000000000000000000000000000000000003400101010000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000033d343f77863cab800000000000000000000000018120a2ccf8c000000000000000000027d5a73270000000000000000000000000000000000000000000000000000000000000006a38bd60ac8b6ae8925a6a042a8417c1ba3d10782ee887b204dbc90f13599a0aba61472ad85071debd42d5db34cc7093f033b3e003c974047a746beb2d08bd798cac2c5679248068145513cc671c13db475e4183744b599ad5d0269a64ea5d778becb5057a5fb56bfce9979178fae5ee9ef0232c700412dc6ba60cc7c03378a8548e310d0577253e5bbc92861585d428dde726e2ef966fd3dd2fb08f828d1fc0564ccd1e1cbea3d8dc7f1fbb54da8e3f4b71bea8b7ae90e2ce8cefbefda2a906a00000000000000000000000000000000000000000000000000000000000000066421dcd005784a2af108d68e68fa3bb8e3a93276c79093b70b189f4ddce20e522f3d48956bc0ad2ac256cfa95d91d3cc38b86e50444a7a045e60bba1787ed2536c05c41c88abf14b96950e24bdfb9961f20e38ecd8da44c88f4fe60b517a02517775bb035847e6dde3e0b0c58aab132727b5dcbbf560cf52a80c3615af5fb90744b34fb0b1a437075e8d4a6631f0311f9938d80956621f19da65253648aaad9c7c4b107a075b442bb84884136d5601e7db802687886565e4b9737b6fe6397efa","maxFeePerGas":"0xf4374","maxPriorityFeePerGas":"0xf4240","nonce":"0x2932","r":"0xd7e10c2a177d360545eaa0c4d07aad707212a3ffea1c3826e748f3fc6d39bb3c","s":"0x254938719285143b8521e4384727297d759e4d17d9fa74e25337baf48d179691","to":"0x16f72c15165f7c9d74c12fdf188e399d4d3724e4","transactionIndex":"0x9","type":"0x2","v":"0x0","value":"0x0","yParity":"0x0"},{"accessList":[],"blockHash":"0xbd92439d3cef7817f5366d224b3e812e2844e4cd987b659640a55b07348cb9d8","blockNumber":"0x95dd06","blockTimestamp":"0x65b616ef","chainId":"0x2105","from":"0x2410f0496848d8bf914bec3941349122eb2fd6f0","gas":"0xc946","gasPrice":"0x266","hash":"0xae945a32b597daf9ca28de27136115d3a1826965f0d68e1666fd5ad9308ec18c","input":"0x095ea7b300000000000000000000000045f1a95a4d3f3836523f5c83673c797f4d4d263b0000000000000000000000000000000000000000000000000000000000457f17","maxFeePerGas":"0x2d6","maxPriorityFeePerGas":"0x132","nonce":"0x6c","r":"0xd21d24fe68469d11db9abf4ee65169f232346d0607e494846a4daa00fbb55645","s":"0x7f3ccba401f76a4d7c610efaf25c98222f1e4c42da57fb3f13e10f11cd6decc7","to":"0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca","transactionIndex":"0xa","type":"0x2","v":"0x0","value":"0x0","yParity":"0x0"}],"transactionsRoot":"0xe24f92801905f9476c45f2ea1601e2cf95e0e291af108fb6017e8b077a2dfb4a","uncles":[],"withdrawals":[],"withdrawalsRoot":"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421"},"id":
+        0}
+
+        '
+    headers:
+      CF-RAY:
+      - a1fc02b5ef6199df-CDG
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 23 Jul 2026 16:20:07 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=nnUXYPW2Kx8lAS326idrCqcRxCbIXB5CFs6S2Aro%2BHWpCNXSCBHzz5mDqEcLAAWTnINOS82HT1hIf8UhWjQCcpyTXWzqpq1sHhYy3V2I31UwOp07KSC%2FJYVdComIPqh3RFTlwbhbQLOkfOxSTB2JBA%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '12402'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '98360'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '3'
+      x-ratelimit-reset:
+      - '282'
+      x-request-id:
+      - c87c758075f1e3666ecbde04b451b322
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"id": 0, "jsonrpc": "2.0", "method": "eth_getTransactionReceipt", "params":
+      ["0x5b97c69211cda5d0ac192302f478a7046da72004438beae14164550e2722d380"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '148'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - rotki/1.43.3.dev568+g46cedb1616.d20260723
+    method: POST
+    uri: https://api.blockscout.com/8453/json-rpc
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result": {"blockHash":"0xbd92439d3cef7817f5366d224b3e812e2844e4cd987b659640a55b07348cb9d8","blockNumber":"0x95dd06","contractAddress":null,"cumulativeGasUsed":"0x16975","effectiveGasPrice":"0x0","from":"0x7593bdfff57f71ab718184a2e9c9a3daaa535557","gasUsed":"0x5218","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":"0x7593bdfff57f71ab718184a2e9c9a3daaa535557","transactionHash":"0x5b97c69211cda5d0ac192302f478a7046da72004438beae14164550e2722d380","transactionIndex":"0x2","type":"0x7e"},"id":
+        0}
+
+        '
+    headers:
+      CF-RAY:
+      - a1fc02bc4c3ad0af-CDG
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 23 Jul 2026 16:20:08 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3gqN9zs04cY17rTRPdOZ%2BYb8cjfP1zvlA3n4nz28W1S2azZonIBTm8lT0niTm2S8NCsOBwHRvUWwNXmr7yGn%2Fq5%2F%2Bw4ypPg4m%2BDir14BPXNXbH9YreWPCeF1AjrirsPwrc9gWlBLU%2FkLEaOTRMJ8ag%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1024'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '98340'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '261'
+      x-request-id:
+      - 804fadc4f634ffbf8d333bfe90e347c0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.43.3.dev568+g46cedb1616.d20260723
+    method: GET
+    uri: https://api.blockscout.com/8453/api/v2/transactions/0x5b97c69211cda5d0ac192302f478a7046da72004438beae14164550e2722d380
+  response:
+    body:
+      string: '{"priority_fee":null,"raw_input":"0x01","is_pending_update":false,"op_withdrawals":[],"result":"success","hash":"0x5b97c69211cda5d0ac192302f478a7046da72004438beae14164550e2722d380","max_fee_per_gas":null,"revert_reason":null,"confirmation_duration":[0,2.0e3],"transaction_burnt_fee":null,"type":126,"token_transfers_overflow":false,"confirmations":39195683,"position":2,"max_priority_fee_per_gas":null,"transaction_tag":null,"created_contract":null,"value":"38000000000000000000","from":{"ens_domain_name":"digitalacres.eth","hash":"0x7593BDffF57f71ab718184a2E9c9a3dAaa535557","implementations":[],"is_contract":false,"is_scam":false,"is_verified":false,"metadata":null,"name":null,"private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"gas_used":"21016","status":"ok","to":{"ens_domain_name":"digitalacres.eth","hash":"0x7593BDffF57f71ab718184a2E9c9a3dAaa535557","implementations":[],"is_contract":false,"is_scam":false,"is_verified":false,"metadata":null,"name":null,"private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"authorization_list":[],"method":null,"fee":{"type":"actual","value":"0"},"gas_limit":"100000","gas_price":"0","decoded_input":null,"fhe_operations_count":0,"token_transfers":[],"base_fee_per_gas":"308","timestamp":"2024-01-28T08:57:19.000000Z","nonce":0,"historic_exchange_rate":"2281.45","transaction_types":["coin_transfer"],"exchange_rate":"1888.58","block_number":9821446,"has_error_in_internal_transactions":false}'
+    headers:
+      CF-RAY:
+      - a1fc02bfffd9049e-CDG
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 23 Jul 2026 16:20:09 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=l8qjN9tzmxmA6R9Xk6AC6BVbu%2BaQ1ErikgYNQVJZ5o0QuoSgXd7fjUXjqmSgZLgP6m21dAkI4aowHea7hwGM%2F6CTjBqolALaum4zZ%2B6%2BEKyeiLyO9vR7YeunAh2TkNADa27IcwP16wQP6iGAEkc7Pw%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1521'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '98320'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '665'
+      x-request-id:
+      - 20ecc73d225d6e0c2f24cf484aace430
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.43.3.dev568+g46cedb1616.d20260723
+    method: GET
+    uri: https://api.blockscout.com/8453/api?action=txlistinternal&module=account&sort=asc&txhash=0x5b97c69211cda5d0ac192302f478a7046da72004438beae14164550e2722d380
+  response:
+    body:
+      string: '{"message":"No internal transactions found","result":[],"status":"0"}'
+    headers:
+      CF-RAY:
+      - a1fc02c6c9e13ce3-CDG
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 23 Jul 2026 16:20:09 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=JGenIV7g0%2Fwo0M9JcUwpGhr1BtyFj8wWsF512mfts2wWC%2BEJ2s5dYiQvERBPuw3Py8MObv6do%2BZWW1BiEmUPfN2EURzhD0dk3YwhBBUModQsRiSd7XaS40ZS8WSPOBHOxGSqIdH5TVecdhraRVJESA%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '69'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '98300'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '584'
+      x-request-id:
+      - b75b8feb77eab5ff23f2a76488c4c03f
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"id": 0, "jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0xeDF6D2a16e8081F777eB623EeB4411466556aF3d",
+      "data": "0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001600000000000000000000000007593bdfff57f71ab718184a2e9c9a3daaa53555700000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004e75235b8000000000000000000000000000000000000000000000000000000000000000000000000000000007593bdfff57f71ab718184a2e9c9a3daaa53555700000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004ffa1ad74000000000000000000000000000000000000000000000000000000000000000000000000000000007593bdfff57f71ab718184a2e9c9a3daaa535557000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000043408e47000000000000000000000000000000000000000000000000000000000"},
+      "latest"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1299'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - rotki/1.43.3.dev568+g46cedb1616.d20260723
+    method: POST
+    uri: https://api.blockscout.com/8453/json-rpc
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000","id":
+        0}
+
+        '
+    headers:
+      CF-RAY:
+      - a1fc02c8ab1cc676-CDG
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 23 Jul 2026 16:20:10 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=281ht88YjIzpv%2B8cNLvdFd%2B5ew921aDbu73KWPW1wYN6CYwey5rM3Q%2Fe31%2Bs5voy%2BHx%2Fu7ZE8p6XUdUzIl7QefwKWgwTVW3e6aGlZYb3f6t7u4hRMngGNQUAPVZYcb6mC%2FF50h6AFQnKIpXaWMuYwQ%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '937'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '98280'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '3'
+      x-ratelimit-reset:
+      - '281'
+      x-request-id:
+      - 051ce235c6d613327b56f359d4a50635
+    status:
+      code: 200
+      message: OK
+version: 1
