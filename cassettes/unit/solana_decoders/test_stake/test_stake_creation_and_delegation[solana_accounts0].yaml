@@ -1,0 +1,165 @@
+interactions:
+- request:
+    body: '{"jsonrpc": "2.0", "id": 1, "method": "getHealth", "params": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '64'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.33.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"ok","id":1}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      alt-svc:
+      - h3=":443"; ma=60
+      content-length:
+      - '39'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 24 Jul 2026 20:13:13 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-6955'
+      x-ratelimit-method-limit:
+      - '150'
+      x-ratelimit-method-remaining:
+      - '149'
+      x-ratelimit-pubsub-limit:
+      - '10'
+      x-ratelimit-pubsub-remaining:
+      - '10'
+      x-ratelimit-rps-limit:
+      - '250'
+      x-ratelimit-rps-remaining:
+      - '249'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra102
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "id": 2, "method": "getTransaction", "params": ["2BhH7DcQJMPBZfLQDjLCSqhygzzwXiviGmLaLaojNUm3StihhLZaD1A7TXdfm6V8vR76VVsXvXmqTdVy2KPwYJau",
+      {"encoding": "json", "maxSupportedTransactionVersion": 0}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '218'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.33.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"blockTime":1784920595,"meta":{"computeUnitsConsumed":24876,"costUnits":26310,"err":null,"fee":17733,"innerInstructions":[],"loadedAddresses":{"readonly":[],"writable":[]},"logMessages":["Program
+        ComputeBudget111111111111111111111111111111 invoke [1]","Program ComputeBudget111111111111111111111111111111
+        success","Program ComputeBudget111111111111111111111111111111 invoke [1]","Program
+        ComputeBudget111111111111111111111111111111 success","Program 11111111111111111111111111111111
+        invoke [1]","Program 11111111111111111111111111111111 success","Program Stake11111111111111111111111111111111111111
+        invoke [1]","Program log: Instruction: Initialize","Program Stake11111111111111111111111111111111111111
+        consumed 7568 of 35930 compute units","Program Stake11111111111111111111111111111111111111
+        success","Program Stake11111111111111111111111111111111111111 invoke [1]","Program
+        log: Instruction: DelegateStake","Program Stake11111111111111111111111111111111111111
+        consumed 16858 of 28362 compute units","Program Stake11111111111111111111111111111111111111
+        success"],"postBalances":[10170742,1985282880,1,1,1141440,1009200,8675185727,1169280,114979200,960480],"postTokenBalances":[],"preBalances":[1995471355,0,1,1,1141440,1009200,8675185727,1169280,114979200,960480],"preTokenBalances":[],"rewards":[],"status":{"Ok":null}},"slot":434979352,"transaction":{"message":{"accountKeys":["HuUpZe8dH1ttFoEtwpGjatcaoQrJ7PpeSUpBZH1Hh2G3","HhJKd8G1gbvhPEiC4Aa3ZH9p4E9yze3ziYYq5A2ZLKjA","ComputeBudget111111111111111111111111111111","11111111111111111111111111111111","Stake11111111111111111111111111111111111111","SysvarRent111111111111111111111111111111111","EXhYxF25PJEHb3v5G1HY8Jn8Jm7bRjJtaxEghGrUuhQw","SysvarC1ock11111111111111111111111111111111","SysvarStakeHistory1111111111111111111111111","StakeConfig11111111111111111111111111111111"],"header":{"numReadonlySignedAccounts":0,"numReadonlyUnsignedAccounts":8,"numRequiredSignatures":1},"instructions":[{"accounts":[],"data":"3MYX9epnkNJB","programIdIndex":2,"stackHeight":1},{"accounts":[],"data":"EpQ1ZR","programIdIndex":2,"stackHeight":1},{"accounts":[0,1],"data":"2Xryq6sLu4aDvJRHaTqP6jQPdPHNRawNoCqvAjfosBCr8CEeAXAxwcJrDfDWS1pxGS249ErKNfV7Vgmcawp9rjMjjkbPnSWfQfugfFc35sc3qzguhje7NRR8zScqEJfauiT3vRD","programIdIndex":3,"stackHeight":1},{"accounts":[1,5],"data":"1111pAAvtSRnQ9ueazq5VSi1VMxnmXEWEfeb5w8Ykzn4TyMCaiNUm2xtpyqe9RiUeHHcqbYpK4jwTyk8kudCneHirKScRu6E7RoS4j7Mi5bQrMWdmAfhJ5rQS3N8EBRKhsxvMG56Dgq8fmjEWE2NXADqkxi6X","programIdIndex":4,"stackHeight":1},{"accounts":[1,6,7,8,9,0],"data":"3xyZh","programIdIndex":4,"stackHeight":1}],"recentBlockhash":"9TzgMYLsDt7pzwbSXCjJ7ThdKryHvyrBKQWmRG47h62X"},"signatures":["2BhH7DcQJMPBZfLQDjLCSqhygzzwXiviGmLaLaojNUm3StihhLZaD1A7TXdfm6V8vR76VVsXvXmqTdVy2KPwYJau"]},"transactionIndex":474,"version":"legacy"},"id":2}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      alt-svc:
+      - h3=":443"; ma=60
+      content-length:
+      - '2838'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 24 Jul 2026 20:13:13 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-6992'
+      x-ratelimit-method-limit:
+      - '10'
+      x-ratelimit-method-remaining:
+      - '9'
+      x-ratelimit-pubsub-limit:
+      - '10'
+      x-ratelimit-pubsub-remaining:
+      - '10'
+      x-ratelimit-rps-limit:
+      - '250'
+      x-ratelimit-rps-remaining:
+      - '248'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra102
+    status:
+      code: 200
+      message: OK
+version: 1

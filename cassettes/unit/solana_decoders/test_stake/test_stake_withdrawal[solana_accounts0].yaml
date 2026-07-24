@@ -1,0 +1,162 @@
+interactions:
+- request:
+    body: '{"jsonrpc": "2.0", "id": 11, "method": "getHealth", "params": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '65'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.33.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"ok","id":11}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      alt-svc:
+      - h3=":443"; ma=60
+      content-length:
+      - '40'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 24 Jul 2026 20:13:18 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-7364'
+      x-ratelimit-method-limit:
+      - '150'
+      x-ratelimit-method-remaining:
+      - '144'
+      x-ratelimit-pubsub-limit:
+      - '10'
+      x-ratelimit-pubsub-remaining:
+      - '10'
+      x-ratelimit-rps-limit:
+      - '250'
+      x-ratelimit-rps-remaining:
+      - '239'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra102
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "id": 12, "method": "getTransaction", "params": ["4j2wEyeo2gFrV4xUBVM5YukW1ZW2976osDofBJfUUTLbHKEkiTo7WtCdmLQa33Eo45xCs4M3XcZeSSMST2NtPrhM",
+      {"encoding": "json", "maxSupportedTransactionVersion": 0}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '219'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.33.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"blockTime":1784920793,"meta":{"computeUnitsConsumed":9430,"costUnits":11833,"err":null,"fee":10000,"innerInstructions":[],"loadedAddresses":{"readonly":[],"writable":[]},"logMessages":["Program
+        11111111111111111111111111111111 invoke [1]","Program 11111111111111111111111111111111
+        success","Program Stake11111111111111111111111111111111111111 invoke [1]","Program
+        log: Instruction: Withdraw","Program Stake11111111111111111111111111111111111111
+        consumed 8980 of 10986 compute units","Program Stake11111111111111111111111111111111111111
+        success","Program ComputeBudget111111111111111111111111111111 invoke [1]","Program
+        ComputeBudget111111111111111111111111111111 success","Program ComputeBudget111111111111111111111111111111
+        invoke [1]","Program ComputeBudget111111111111111111111111111111 success"],"postBalances":[92246252221,69388762,1447680,0,1,1,1141440,1169280,42706560,114979200],"postTokenBalances":[],"preBalances":[41328277,69388762,1447680,92204933944,1,1,1141440,1169280,42706560,114979200],"preTokenBalances":[],"rewards":[],"status":{"Ok":null}},"slot":434979819,"transaction":{"message":{"accountKeys":["npN8zCyQGPaAFNk95zJs2SAQ8GSjGcfhRDo6eiN57a9","ETncRJhQoLbqtsPS3SubE57dpYh7WF6hiW54Hg48Zhc1","9dgYrcEZmTTuY1vEW1wXdVruUC4T6QkfyVaFh5h24FuE","fqR3jkizg36JsGgfcSB6ZiRQWGMYdNW3bPZ4UtG44VC","11111111111111111111111111111111","ComputeBudget111111111111111111111111111111","Stake11111111111111111111111111111111111111","SysvarC1ock11111111111111111111111111111111","SysvarRecentB1ockHashes11111111111111111111","SysvarStakeHistory1111111111111111111111111"],"header":{"numReadonlySignedAccounts":1,"numReadonlyUnsignedAccounts":6,"numRequiredSignatures":2},"instructions":[{"accounts":[2,8,1],"data":"6vx8P","programIdIndex":4,"stackHeight":1},{"accounts":[3,0,7,9,0],"data":"5Nvj7ABoHMKpnV4j","programIdIndex":6,"stackHeight":1},{"accounts":[],"data":"HN5X4j","programIdIndex":5,"stackHeight":1},{"accounts":[],"data":"3DTZbgwsozUF","programIdIndex":5,"stackHeight":1}],"recentBlockhash":"HMXhY28qd7ybqZZ2Z4qprywTAEfNMg5fWRWXGUWpNQTg"},"signatures":["4j2wEyeo2gFrV4xUBVM5YukW1ZW2976osDofBJfUUTLbHKEkiTo7WtCdmLQa33Eo45xCs4M3XcZeSSMST2NtPrhM","66efxEm99CFomPuHmzKpfR7taUpAS5dRabYu3Jn8H7FYkqCXNV1WoogFSQMTwtcckQTnS3uPsnov4SsyDp22kfGa"]},"transactionIndex":1386,"version":"legacy"},"id":12}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      alt-svc:
+      - h3=":443"; ma=60
+      content-length:
+      - '2328'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 24 Jul 2026 20:13:18 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-7326'
+      x-ratelimit-method-limit:
+      - '10'
+      x-ratelimit-method-remaining:
+      - '4'
+      x-ratelimit-pubsub-limit:
+      - '10'
+      x-ratelimit-pubsub-remaining:
+      - '10'
+      x-ratelimit-rps-limit:
+      - '250'
+      x-ratelimit-rps-remaining:
+      - '238'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra102
+    status:
+      code: 200
+      message: OK
+version: 1
