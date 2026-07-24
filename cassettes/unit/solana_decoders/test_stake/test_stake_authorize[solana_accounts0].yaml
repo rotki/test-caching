@@ -1,0 +1,171 @@
+interactions:
+- request:
+    body: '{"jsonrpc": "2.0", "id": 5, "method": "getHealth", "params": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '64'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.33.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"ok","id":5}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      alt-svc:
+      - h3=":443"; ma=60
+      content-length:
+      - '39'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 24 Jul 2026 20:13:16 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-7225'
+      x-ratelimit-method-limit:
+      - '150'
+      x-ratelimit-method-remaining:
+      - '147'
+      x-ratelimit-pubsub-limit:
+      - '10'
+      x-ratelimit-pubsub-remaining:
+      - '10'
+      x-ratelimit-rps-limit:
+      - '250'
+      x-ratelimit-rps-remaining:
+      - '245'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra102
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "id": 6, "method": "getTransaction", "params": ["5R9M9ZviLoQ378G38zUi4dn6xQSSP51vvLEw2vzZjki1y6FzueuKNiDc5xaFxDh82dSzWw85eaQRVT93XzCqeQyw",
+      {"encoding": "json", "maxSupportedTransactionVersion": 0}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '218'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.33.1
+    method: POST
+    uri: https://api.mainnet-beta.solana.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"blockTime":1784922230,"meta":{"computeUnitsConsumed":28667,"costUnits":31503,"err":null,"fee":810000,"innerInstructions":[],"loadedAddresses":{"readonly":[],"writable":[]},"logMessages":["Program
+        ComputeBudget111111111111111111111111111111 invoke [1]","Program ComputeBudget111111111111111111111111111111
+        success","Program ComputeBudget111111111111111111111111111111 invoke [1]","Program
+        ComputeBudget111111111111111111111111111111 success","Program L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95
+        invoke [1]","Program L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95 consumed
+        1428 of 999700 compute units","Program L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95
+        success","Program L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95 invoke [1]","Program
+        L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95 consumed 3404 of 998272 compute
+        units","Program L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95 success","Program
+        Stake11111111111111111111111111111111111111 invoke [1]","Program log: Instruction:
+        Authorize","Program Stake11111111111111111111111111111111111111 consumed 11683
+        of 994868 compute units","Program Stake11111111111111111111111111111111111111
+        success","Program Stake11111111111111111111111111111111111111 invoke [1]","Program
+        log: Instruction: Authorize","Program Stake11111111111111111111111111111111111111
+        consumed 11702 of 983185 compute units","Program Stake11111111111111111111111111111111111111
+        success","Program 11111111111111111111111111111111 invoke [1]","Program 11111111111111111111111111111111
+        success"],"postBalances":[57690457,23938372137615,22792029,1169280,1,2665446,1141440,1],"postTokenBalances":[],"preBalances":[36164269,23938394473803,22792029,1169280,1,2665446,1141440,1],"preTokenBalances":[],"rewards":[],"status":{"Ok":null}},"slot":434983261,"transaction":{"message":{"accountKeys":["CQ3gvU4vKvFGevho9TkG1FEdTCHQKiLC1AcWLwPv4ek4","5PxxoU93A4KLr23rXvYrYMFZDAw5DY8XZiyX6NsW7Hkk","9rJXVkHewWzuBh7wPErqhuwy3H5YN9znNVgWJDoEGhnD","SysvarC1ock11111111111111111111111111111111","ComputeBudget111111111111111111111111111111","L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95","Stake11111111111111111111111111111111111111","11111111111111111111111111111111"],"addressTableLookups":[],"header":{"numReadonlySignedAccounts":0,"numReadonlyUnsignedAccounts":4,"numRequiredSignatures":2},"instructions":[{"accounts":[],"data":"3DVaC8fPXTwD","programIdIndex":4,"stackHeight":1},{"accounts":[],"data":"FjL4FH","programIdIndex":4,"stackHeight":1},{"accounts":[2],"data":"k7XsrFyBojKuoANuRtfz7","programIdIndex":5,"stackHeight":1},{"accounts":[2],"data":"5qWibVz1HwzPgEWCdnQhRybkriMdac5cWN","programIdIndex":5,"stackHeight":1},{"accounts":[2,3,0],"data":"3t9dD3qwHSDFr5MdYc7o7HCo3ijzUUDBNM8jx3gp123gmoNGyLcAX9","programIdIndex":6,"stackHeight":1},{"accounts":[2,3,0],"data":"3t9dD3qwHSDFr5MdYc7o7HCo3ijzUUDBNM8jx3gp123gmoNGyN69oV","programIdIndex":6,"stackHeight":1},{"accounts":[1,0],"data":"3Bxs4YSTzqKRVJqV","programIdIndex":7,"stackHeight":1}],"recentBlockhash":"2Dt1nHuzs98bWCJpQsygokzzqKHQwXEuxbpjaxv59jRM"},"signatures":["5R9M9ZviLoQ378G38zUi4dn6xQSSP51vvLEw2vzZjki1y6FzueuKNiDc5xaFxDh82dSzWw85eaQRVT93XzCqeQyw","ZvuZ1BriDi4JVwdStQvBV5cBwpEvtd9524Um8GSVExTY7tzkyrkYZo1eTBLX2sYe9F55AL9LdLBk4CBecmwLsgD"]},"transactionIndex":893,"version":0},"id":6}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      alt-svc:
+      - h3=":443"; ma=60
+      content-length:
+      - '3270'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 24 Jul 2026 20:13:16 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-7278'
+      x-ratelimit-method-limit:
+      - '10'
+      x-ratelimit-method-remaining:
+      - '7'
+      x-ratelimit-pubsub-limit:
+      - '10'
+      x-ratelimit-pubsub-remaining:
+      - '10'
+      x-ratelimit-rps-limit:
+      - '250'
+      x-ratelimit-rps-remaining:
+      - '244'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra102
+    status:
+      code: 200
+      message: OK
+version: 1
