@@ -1,0 +1,132 @@
+interactions:
+- request:
+    body: '{"jsonrpc": "2.0", "method": "web3_clientVersion", "params": [], "id":
+      0}'
+    headers: {}
+    method: POST
+    uri: https://mainnet.optimism.io/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"op-reth/v2.4.1-a9a8dad3/x86_64-linux","id":0}
+
+        '
+    headers: {}
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "net_version", "params": [], "id": 1}'
+    headers: {}
+    method: POST
+    uri: https://mainnet.optimism.io/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"10","id":1}
+
+        '
+    headers: {}
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 2}'
+    headers: {}
+    method: POST
+    uri: https://mainnet.optimism.io/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"0x94451a3","id":2}
+
+        '
+    headers: {}
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x76a05Df20bFEF5EcE3eB16afF9cb10134199A921",
+      "0x12110"], "id": 3}'
+    headers: {}
+    method: POST
+    uri: https://mainnet.optimism.io/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"0xb1a2bc2ec50000","id":3}
+
+        '
+    headers: {}
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0x5e77a04531c7c107af1882d76cbff9486d0a9aa53701c30888509d4f5f2b003a"],
+      "id": 4}'
+    headers: {}
+    method: POST
+    uri: https://mainnet.optimism.io/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"blockHash":"0xbee7192e575af30420cae0c7776304ac196077ee72b048970549e4f08e875453","blockNumber":"0x1","from":"0x70b17c0fe982ab4a7ac17a4c25485643151a1f2d","gas":"0x7a120","gasPrice":"0x1","hash":"0x5e77a04531c7c107af1882d76cbff9486d0a9aa53701c30888509d4f5f2b003a","index":"0x0","input":"0x202ee0ed000000000000000000000000000000000000000000000000000000000001421800000000000000000000000000000000000000000000000000000000d0e3ebf0","l1BlockNumber":"0xcf7a45","l1Timestamp":"0x618d8837","l1TxOrigin":null,"nonce":"0x28972","queueIndex":null,"queueOrigin":"sequencer","r":"0xc878d22e771004beb73e7a4268fd4f447735812b94b217f6807412efcec90d61","rawTransaction":"0xf8a883028972018307a120948ce8c13d816fe6daf12d6fd9e4952e1fc88850af80b844202ee0ed000000000000000000000000000000000000000000000000000000000001421800000000000000000000000000000000000000000000000000000000d0e3ebf038a0c878d22e771004beb73e7a4268fd4f447735812b94b217f6807412efcec90d61a03588018735fb361c49e5de54b266b8b157c1ba3d6ee08e3bcbdee7cd725c16e8","s":"0x3588018735fb361c49e5de54b266b8b157c1ba3d6ee08e3bcbdee7cd725c16e8","to":"0x8ce8c13d816fe6daf12d6fd9e4952e1fc88850af","transactionIndex":"0x0","v":"0x38","value":"0x0"},"id":4}
+
+        '
+    headers: {}
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0xbe24c79aa348b94e116dd58cc14134acdb703ac1b5d8136113fa295ffd86d816"],
+      "id": 5}'
+    headers: {}
+    method: POST
+    uri: https://mainnet.optimism.io/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"accessList":[],"blockHash":"0x0b67ec3b8a65ed230e97c976352bbe8c14e6f2dc69b0ee07cefd9436def42f33","blockNumber":"0x93e74df","blockTimestamp":"0x6a70c377","chainId":"0xa","from":"0xc35a45bcf42bee24bb62d512b8aa08660cc8a3d3","gas":"0x1eaa2","gasPrice":"0x989861","hash":"0xbe24c79aa348b94e116dd58cc14134acdb703ac1b5d8136113fa295ffd86d816","input":"0xfe4f20f50000000000000000000000000000000000000000000000000de0b6b3a764000000000000000000000000000040d5faafb4540fb1f8f0af5b293425d11cd07fb40000000000000000000000000000000000000000000000000000000000000000","maxFeePerGas":"0xc66223","maxPriorityFeePerGas":"0x989680","nonce":"0x2","r":"0xb4135c14905f77cacf5e38c1f4885c0d0587cfa86f31b9cde8f3b34da117ab88","s":"0x2b31cabd8b95bda2b49378b62ec4cb08b774d741b850795b8c982a9bf7b4c9bb","to":"0x6426324af1b14df3cd03b2d500529083c5ea61bc","transactionIndex":"0x1","type":"0x2","v":"0x0","value":"0x0","yParity":"0x0"},"id":5}
+
+        '
+    headers: {}
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBlockByNumber", "params": ["0x93e74df",
+      false], "id": 6}'
+    headers: {}
+    method: POST
+    uri: https://mainnet.optimism.io/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"baseFeePerGas":"0x1e1","blobGasUsed":"0x26dc70","difficulty":"0x0","excessBlobGas":"0x0","extraData":"0x01000000fa000000020000000000000000","gasLimit":"0x2625a00","gasUsed":"0x1075465","hash":"0x0b67ec3b8a65ed230e97c976352bbe8c14e6f2dc69b0ee07cefd9436def42f33","logsBloom":"0xc05360000923144810bd50c112022020810024bf44200281710500404cc3200d052c1589342046d108400611ac84300c4054280206027000c628066061bc80d1938010a00440084d6104b4095029300022c400a09946c1b3204800222020004394400600826e0042084100a20d240a20808298021884378410a0c7182a08109400b40002288204049c2a0e02c06884240a30d5a86831049000a200180a02103996404826d25024938048082008000a882a001249004000bd8103034820508198030018c20002944d03410d0d21008a8084e002004aa246044416092a4302e00094141949809cd0022158808887200132748890000ba00880840091140042be06","miner":"0x4200000000000000000000000000000000000011","mixHash":"0xa8b18c144b401c26895ded48fcd23fbc6e6f1145309155f7bd246fb7705d9740","nonce":"0x0000000000000000","number":"0x93e74df","parentBeaconBlockRoot":"0x15637e82568e285067614c7eeb5749b99020b6add5a5174c5f9c6f8015f7eae3","parentHash":"0x5c0fc8f65684b5882eb4e14439a40cbd77f7cb49f8e378d4198f95762ba598e7","receiptsRoot":"0xb3b077af6b8caa4b357d23cfff263ed19bc1fb100f3f86a189e914dd0d493cc5","requestsHash":"0xe3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0x4c1b","stateRoot":"0xf36cfdc28047f3e102232334d1c5d721a910d68bf02cbe864250cd38825b79c9","timestamp":"0x6a70c377","transactions":["0x869737db6e881bde11a3e1971fe88f2d5c268c8e161b3b09325dd46d9df5dd48","0xbe24c79aa348b94e116dd58cc14134acdb703ac1b5d8136113fa295ffd86d816","0x10fd6b8fdac39336ab0d0296c9d0c3fcb250561e155e25159e19e5e2bc8db279","0x03cd31c4b147ee73b286d3f03b0327cdaf504a86f776cc52458ec8f224fa4c36","0xbd11e8a33c59c2595885bb204ba4e9f88d9958680720983f7457c106f40b4a6a","0xc3770ccdd955c526105d07e81504d61e5032e3bba3518f7a6a759027ccef22dc","0x3b9c56c7d3fb94f895f65d94faf2ac2ceb4d6738bd2e8b9776593426930e17f6","0x12aa092aca79f2ffbd1b0b78db79d15dbeb7b741aacad2a57096f71c8ca87475","0x51e8918e55986a0d6434efd7e70d3e052c7a63b84477be97c37d694d0f3c3a7b","0xf704e8ecc15545c609949669a0cf9ed546c2dc994c6908affa0d1e71eb245b69","0x6f222cd8b4721bd1eab18c9295176b03b58179f5828cbcc80ad93b3031bc1e5e","0xbb9df0e71b5821be58fe668d569639818d4b0128bb7e247f69c11d432864bf5a","0xdc9da6b3ce64e4c24681a55948c9345071434b308bea793ba204215863ce4222","0xdb74f6e1723efd5b1d70a8b22b1709c4c1b9dc4249d82623a8a346455d00371e","0x0e2e9fe4acf148f8f6a181de7a739e25bb00acb65b1addaf07fddbde05169afd","0x221b7be4d6e08b39d0d0f0c74eef96ed1083a9fd3253b8983fb7bb5349978aed","0x1bfe7b1e3a0fb0661e97bf87def41964f5b907404a6401b8566c1d9fba0199df","0x85698d45d82fae923228d74137018bb0dcf895130bb5a6f6c985739d14a31d8e","0x6acd8f6499154b5f7e942a2fcaa024a68081131183d845f982703372a7e2da0f","0xb01dca40348e5f0490fbcb9c4aa01a74c1586dc825d98cb4abafd4dc15ced031","0x0034e1195e0c3155240fe560c79b458c3eba2833f71b7122b474732c5d3e1d85","0xf7ee2006b906a6706c5e1452680eaa0735416e9f5a3107caf3ab62c3cad71d6d","0xd51324fa7bceebe02f806bedf4d91f52181b712a4cee0c5085978699a51e117f","0xaecd7a4d2540d5252a194e3b6ec46c25403e4453b3f42c4b5f5fb48bb0c6bdb6","0xdc67a3a343166f9b6a9fcd569eb32e15e8e267fef1eba1636df42e434ed807fd","0x37c49b9d6734815fab96c86b1e0ee490f1670c9b9556e705b7db543a506c278b","0x61279ad2806e75169ee9718e1e38d3f71d749af98394405391094c32a5333d90","0xe0c4926ae8d08683835b0e5f358991ed5e60d98ed357699bdd64f718a5b72565","0x637aba8251f2be48f885f8285f03e138240e7d84e69ee27ef8310219142df9a9","0xf4d2d0744dcd0cb3b104a65eacd4d106150c91df9a41dc6dc47b7e4988aa545e","0x78e3691f03031526e0dfcdce5590fe61eb00539601fb7110a16f6f1df1eb034a","0x2c86466eb526ff8aeba491c889dba992d39d492d5fc413905e4eda24d33bd5e0","0x7ff3acdaf3c225a8f695b3fe7488892cc87809899eb1e2c4c1f26d406cc8a70e","0xc17e4e255ecafafe9681fc02fc18a17887e957c2d8f93c41a81704d207118cbe","0xb238dfa1f7a380eb1d9470086359be8fda60751150f7cea1bcdb035ab5a86e40","0x8eaad124a295f7fb73ff9d656bbff7b984e16044c57347cc8d5a3fc53f4b3c69"],"transactionsRoot":"0xf19befa20210919a77cbf3dbe110b72e0533af5f609183322709a35b5400bb56","uncles":[],"withdrawals":[],"withdrawalsRoot":"0xf5385117ae8c0543a4310fe7dfaa303becd5ff7849cc3e53bb0d1a6a5f57f780"},"id":6}
+
+        '
+    headers: {}
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionReceipt", "params": ["0xbe24c79aa348b94e116dd58cc14134acdb703ac1b5d8136113fa295ffd86d816"],
+      "id": 7}'
+    headers: {}
+    method: POST
+    uri: https://mainnet.optimism.io/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"blobGasUsed":"0x9c40","blockHash":"0x0b67ec3b8a65ed230e97c976352bbe8c14e6f2dc69b0ee07cefd9436def42f33","blockNumber":"0x93e74df","contractAddress":null,"cumulativeGasUsed":"0x26e8a","daFootprintGasScalar":"0x190","effectiveGasPrice":"0x989861","from":"0xc35a45bcf42bee24bb62d512b8aa08660cc8a3d3","gasUsed":"0x1ba00","l1BaseFeeScalar":"0x146b","l1BlobBaseFee":"0x7ce894","l1BlobBaseFeeScalar":"0xf79c5","l1Fee":"0x7b571e2c","l1GasPrice":"0x8d4b4ae","l1GasUsed":"0x640","logs":[{"address":"0xd4dd9e2f021bb459d5a5f6c24c12fe09c5d45553","blockHash":"0x0b67ec3b8a65ed230e97c976352bbe8c14e6f2dc69b0ee07cefd9436def42f33","blockNumber":"0x93e74df","blockTimestamp":"0x6a70c377","data":"0x0000000000000000000000000000000000000000000000000de0b6b3a7640000","logIndex":"0x0","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000c35a45bcf42bee24bb62d512b8aa08660cc8a3d3","0x0000000000000000000000006426324af1b14df3cd03b2d500529083c5ea61bc"],"transactionHash":"0xbe24c79aa348b94e116dd58cc14134acdb703ac1b5d8136113fa295ffd86d816","transactionIndex":"0x1"},{"address":"0x6426324af1b14df3cd03b2d500529083c5ea61bc","blockHash":"0x0b67ec3b8a65ed230e97c976352bbe8c14e6f2dc69b0ee07cefd9436def42f33","blockNumber":"0x93e74df","blockTimestamp":"0x6a70c377","data":"0x0000000000000000000000000000000000000000000000000de0b6b3a7640000","logIndex":"0x1","removed":false,"topics":["0xf195ce54b48d5147da31c1fc525c8828b8836088b505a329e5de2b35da6731e2","0x000000000000000000000000c35a45bcf42bee24bb62d512b8aa08660cc8a3d3"],"transactionHash":"0xbe24c79aa348b94e116dd58cc14134acdb703ac1b5d8136113fa295ffd86d816","transactionIndex":"0x1"}],"logsBloom":"0x80000000002000000000000000000000000000000000000000000000080000010004000000000000000002000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000000000000800000000000000010000110000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000002000000000000010001000000000000000000000000000000000000000000000000080000000000000000000004000000000000000000000000000000","status":"0x1","to":"0x6426324af1b14df3cd03b2d500529083c5ea61bc","transactionHash":"0xbe24c79aa348b94e116dd58cc14134acdb703ac1b5d8136113fa295ffd86d816","transactionIndex":"0x1","type":"0x2"},"id":7}
+
+        '
+    headers: {}
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.blockscout.com/10/api?action=txlistinternal&module=account&sort=asc&txhash=0xbe24c79aa348b94e116dd58cc14134acdb703ac1b5d8136113fa295ffd86d816
+  response:
+    body:
+      string: '{"message":"No internal transactions found","result":[],"status":"0"}'
+    headers: {}
+    status:
+      code: 200
+      message: OK
+version: 1
