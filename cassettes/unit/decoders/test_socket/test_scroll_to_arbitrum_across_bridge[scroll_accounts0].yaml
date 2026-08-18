@@ -1,0 +1,319 @@
+interactions:
+- request:
+    body: '{"id": 0, "jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params":
+      ["0xee8b1b99f88ab4d9924c4aec444e45ab53589b918a2cf54e9bc133481c7dbbb9"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - rotki/1.43.3.dev1299+g2a88f90ba0.d20260817
+    method: POST
+    uri: https://api.blockscout.com/534352/json-rpc
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result": {"blockHash":"0x354ad3e7331a941649051dc317ec61972c6f6fecaae2b6db61820353fef3efd3","blockNumber":"0xcc9072","chainId":"0x82750","from":"0x3ba6eb0e4327b96ade6d4f3b578724208a590cef","gas":"0x34349","gasPrice":"0x42c1d80","hash":"0xee8b1b99f88ab4d9924c4aec444e45ab53589b918a2cf54e9bc133481c7dbbb9","input":"0x00000183792ebcb90000000000000000000000000000000000000000000000000000000015cc9713000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000018000000000000000000000000000000000000000000000000000000000000001e0000000000000000000000000000000000000000000000000000000000000e92b00000000000000000000000000000000000000000000000000000000000000cd00000000000000000000000000000000000000000000000000000000000000020000000000000000000000003ba6eb0e4327b96ade6d4f3b578724208a590cef0000000000000000000000003ba6eb0e4327b96ade6d4f3b578724208a590cef000000000000000000000000000000000000000000000000000000000000000200000000000000000000000006efdbff2a14a7c8e15944d1f4a48f9f95f663a4000000000000000000000000af88d065e77c8cc2239327c5edb3a432268e583100000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000015cbade8000000000000000000000000000000000000000000000000000000000000a4b100000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000067ae51070000000000000000000000000000000000000000000000000000000067aea50dd00dfeeddeadbeef765753be7f7a64d5509974b0d678e1e3149b02f4","nonce":"0xe","r":"0xa3dcfa7e8b5810cd949d3c822cdf43919ee6970ad74e770050e24ddbdd9e742b","s":"0x561ed880f814bd497076234618fa4ac90ed4c0a57eb9853b1e98e0212d03f153","to":"0x3a23f943181408eac424116af7b7790c94cb97a5","transactionIndex":"0x0","type":"0x0","v":"0x104ec4","value":"0x0"},"id":
+        0}
+
+        '
+    headers:
+      CF-RAY:
+      - a2d0d71c4bfc2729-MAD
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 18 Aug 2026 12:14:47 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=mbZ%2BdlUB72dG2M%2FCYl3dfz3lonhuKH4oLBaE%2F4V8ustfspTHqBfWkHAhIxw3c6Su3%2FhWHf36N621ShJeRTbrRCvtWbJSobbj9atdGJXAo2BeyqbFM1xwbywziiCU2gYyFTxzHiI6jaLzXYH9EEuztQ%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1973'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '98080'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '192'
+      x-request-id:
+      - d49122d04e8342cec94d2ae4a1cf5f33
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"id": 0, "jsonrpc": "2.0", "method": "eth_getBlockByNumber", "params":
+      ["0xcc9072", true]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '91'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - rotki/1.43.3.dev1299+g2a88f90ba0.d20260817
+    method: POST
+    uri: https://api.blockscout.com/534352/json-rpc
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result": {"baseFeePerGas":"0x2587b15","difficulty":"0x2","extraData":"0xd883050802846765746888676f312e32312e31856c696e757800000000000000fff460faa55ad620c5b9724269f25831f44fb3b8fb61f79115635da9448e6cfb4e2747a8cf34335beea0b2e52767e96ea294aff572e994881b80becdc6592da001","gasLimit":"0x989680","gasUsed":"0x1b692","hash":"0x354ad3e7331a941649051dc317ec61972c6f6fecaae2b6db61820353fef3efd3","logsBloom":"0x00000000000000000000000000000000008000000000000000000000000000000000000000000080000000000000000021000000000000000500000000000000000000000000000000000808000000000001000000000000000000000000000000000000000000000000000000000000000000001000000004000010000000000000000000000000000000000000000000000041200000000040000000000000000020000000000000000000000000000000000000200100000000000000000000000002000000010000000000008001000000000200004000000000002000000000000000000000000000000000100004000000000080000000400008000000","miner":"0x0000000000000000000000000000000000000000","mixHash":"0x0000000000000000000000000000000000000000000000000000000000000000","nonce":"0x0000000000000000","number":"0xcc9072","parentHash":"0x0037c5c08409d8d391ada20c19a03406589efe2c82507d79d8142bbcf9962127","receiptsRoot":"0x1025f583c1abedc9a0370d1b0fac37a5d1c40d2536f90c6a8842446e6d5c4dbb","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0x57b","stateRoot":"0x03131aeea8a60241ce466950b42e155bb6dc3fbb84f94906e9d3705c2afd2506","timestamp":"0x67ae515b","totalDifficulty":"0x19920d9","transactions":[{"blockHash":"0x354ad3e7331a941649051dc317ec61972c6f6fecaae2b6db61820353fef3efd3","blockNumber":"0xcc9072","from":"0x3ba6eb0e4327b96ade6d4f3b578724208a590cef","gas":"0x34349","gasPrice":"0x42c1d80","hash":"0xee8b1b99f88ab4d9924c4aec444e45ab53589b918a2cf54e9bc133481c7dbbb9","input":"0x00000183792ebcb90000000000000000000000000000000000000000000000000000000015cc9713000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000018000000000000000000000000000000000000000000000000000000000000001e0000000000000000000000000000000000000000000000000000000000000e92b00000000000000000000000000000000000000000000000000000000000000cd00000000000000000000000000000000000000000000000000000000000000020000000000000000000000003ba6eb0e4327b96ade6d4f3b578724208a590cef0000000000000000000000003ba6eb0e4327b96ade6d4f3b578724208a590cef000000000000000000000000000000000000000000000000000000000000000200000000000000000000000006efdbff2a14a7c8e15944d1f4a48f9f95f663a4000000000000000000000000af88d065e77c8cc2239327c5edb3a432268e583100000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000015cbade8000000000000000000000000000000000000000000000000000000000000a4b100000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000067ae51070000000000000000000000000000000000000000000000000000000067aea50dd00dfeeddeadbeef765753be7f7a64d5509974b0d678e1e3149b02f4","nonce":"0xe","r":"0xa3dcfa7e8b5810cd949d3c822cdf43919ee6970ad74e770050e24ddbdd9e742b","s":"0x561ed880f814bd497076234618fa4ac90ed4c0a57eb9853b1e98e0212d03f153","to":"0x3a23f943181408eac424116af7b7790c94cb97a5","transactionIndex":"0x0","type":"0x0","v":"0x104ec4","value":"0x0"}],"transactionsRoot":"0x8109b3639b9ecbe59737c6dae24b25b604cdaf9b359d8af8ef5a7958df7648eb","uncles":[]},"id":
+        0}
+
+        '
+    headers:
+      CF-RAY:
+      - a2d0d71e6b311b07-MAD
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 18 Aug 2026 12:14:48 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ypZcHTb04s72xkhgidvy9gy%2FuVPhi3m%2FExAZaxaHizN9EBrjD7oV3yyLwywJlGoXKyUh8zKo72Lk00ufh4N2TXV92Hzft2VJkzhW7GQo1sWwSPzQji07X7URqmHESc%2Bgofjha1onO%2B5HFIaiTqQRUg%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '3557'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '98060'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '844'
+      x-request-id:
+      - 25048b3d06fc2db28b12e4c927052976
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"id": 0, "jsonrpc": "2.0", "method": "eth_getTransactionReceipt", "params":
+      ["0xee8b1b99f88ab4d9924c4aec444e45ab53589b918a2cf54e9bc133481c7dbbb9"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '148'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - rotki/1.43.3.dev1299+g2a88f90ba0.d20260817
+    method: POST
+    uri: https://api.blockscout.com/534352/json-rpc
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result": {"blockHash":"0x354ad3e7331a941649051dc317ec61972c6f6fecaae2b6db61820353fef3efd3","blockNumber":"0xcc9072","contractAddress":null,"cumulativeGasUsed":"0x1b692","effectiveGasPrice":"0x42c1d80","from":"0x3ba6eb0e4327b96ade6d4f3b578724208a590cef","gasUsed":"0x1b692","logs":[{"address":"0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4","blockHash":"0x354ad3e7331a941649051dc317ec61972c6f6fecaae2b6db61820353fef3efd3","blockNumber":"0xcc9072","data":"0x0000000000000000000000000000000000000000000000000000000015cc9713","logIndex":"0x0","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x0000000000000000000000003ba6eb0e4327b96ade6d4f3b578724208a590cef","0x0000000000000000000000003a23f943181408eac424116af7b7790c94cb97a5"],"transactionHash":"0xee8b1b99f88ab4d9924c4aec444e45ab53589b918a2cf54e9bc133481c7dbbb9","transactionIndex":"0x0"},{"address":"0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4","blockHash":"0x354ad3e7331a941649051dc317ec61972c6f6fecaae2b6db61820353fef3efd3","blockNumber":"0xcc9072","data":"0x0000000000000000000000000000000000000000000000000000000015cc9713","logIndex":"0x1","removed":false,"topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x0000000000000000000000003a23f943181408eac424116af7b7790c94cb97a5","0x0000000000000000000000003bad7ad0728f9917d1bf08af5782dcbd516cdd96"],"transactionHash":"0xee8b1b99f88ab4d9924c4aec444e45ab53589b918a2cf54e9bc133481c7dbbb9","transactionIndex":"0x0"},{"address":"0x3bad7ad0728f9917d1bf08af5782dcbd516cdd96","blockHash":"0x354ad3e7331a941649051dc317ec61972c6f6fecaae2b6db61820353fef3efd3","blockNumber":"0xcc9072","data":"0x00000000000000000000000006efdbff2a14a7c8e15944d1f4a48f9f95f663a4000000000000000000000000af88d065e77c8cc2239327c5edb3a432268e58310000000000000000000000000000000000000000000000000000000015cc97130000000000000000000000000000000000000000000000000000000015cbade80000000000000000000000000000000000000000000000000000000067ae51070000000000000000000000000000000000000000000000000000000067aea50d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000003ba6eb0e4327b96ade6d4f3b578724208a590cef000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001400000000000000000000000000000000000000000000000000000000000000000","logIndex":"0x2","removed":false,"topics":["0x32ed1a409ef04c7b0227189c3a103dc5ac10e775a15b785dcc510201f7c25ad3","0x000000000000000000000000000000000000000000000000000000000000a4b1","0x000000000000000000000000000000000000000000000000000000000013c3b9","0x0000000000000000000000003ba6eb0e4327b96ade6d4f3b578724208a590cef"],"transactionHash":"0xee8b1b99f88ab4d9924c4aec444e45ab53589b918a2cf54e9bc133481c7dbbb9","transactionIndex":"0x0"},{"address":"0x3a23f943181408eac424116af7b7790c94cb97a5","blockHash":"0x354ad3e7331a941649051dc317ec61972c6f6fecaae2b6db61820353fef3efd3","blockNumber":"0xcc9072","data":"0x0000000000000000000000000000000000000000000000000000000015cc971300000000000000000000000006efdbff2a14a7c8e15944d1f4a48f9f95f663a4000000000000000000000000000000000000000000000000000000000000a4b1709f58818bedd58450336213e1f2f6ff7405a2b1e594f64270a17b7e2249419c0000000000000000000000003ba6eb0e4327b96ade6d4f3b578724208a590cef0000000000000000000000003ba6eb0e4327b96ade6d4f3b578724208a590cef00000000000000000000000000000000000000000000000000000000000000cd","logIndex":"0x3","removed":false,"topics":["0x74594da9e31ee4068e17809037db37db496702bf7d8d63afe6f97949277d1609"],"transactionHash":"0xee8b1b99f88ab4d9924c4aec444e45ab53589b918a2cf54e9bc133481c7dbbb9","transactionIndex":"0x0"}],"logsBloom":"0x00000000000000000000000000000000008000000000000000000000000000000000000000000080000000000000000021000000000000000500000000000000000000000000000000000808000000000001000000000000000000000000000000000000000000000000000000000000000000001000000004000010000000000000000000000000000000000000000000000041200000000040000000000000000020000000000000000000000000000000000000200100000000000000000000000002000000010000000000008001000000000200004000000000002000000000000000000000000000000000100004000000000080000000400008000000","status":"0x1","to":"0x3a23f943181408eac424116af7b7790c94cb97a5","transactionHash":"0xee8b1b99f88ab4d9924c4aec444e45ab53589b918a2cf54e9bc133481c7dbbb9","transactionIndex":"0x0","type":"0x0"},"id":
+        0}
+
+        '
+    headers:
+      CF-RAY:
+      - a2d0d7200a66e55b-MAD
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 18 Aug 2026 12:14:48 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=K4MxD%2BCr5nXpC5W7Z466CAJtpOrTG8IuLYPtkqpqOQ%2F9eFWbCsBPSdcmV7EaZ4CcGx%2FwqAUeMASNYNXlsSgydR2v1Qs87Mosjelg%2B3W5TNiaqZp%2FsdbtLenNZ3lVByaybS96u9rBBHFaCOoZRps%2FTw%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '4392'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '98040'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '3'
+      x-ratelimit-reset:
+      - '653'
+      x-request-id:
+      - 358829e67bbabaf85c0cba2964befe79
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.43.3.dev1299+g2a88f90ba0.d20260817
+    method: GET
+    uri: https://api.blockscout.com/534352/api/v2/transactions/0xee8b1b99f88ab4d9924c4aec444e45ab53589b918a2cf54e9bc133481c7dbbb9
+  response:
+    body:
+      string: '{"priority_fee":null,"scroll":{"l1_base_fee":900644891,"l1_blob_base_fee":795316352,"l1_fee":"645143464698","l1_fee_blob_scalar":378247843,"l1_fee_commit_scalar":454446963710,"l1_fee_overhead":56,"l1_fee_scalar":1050000000,"l1_gas_used":0,"l2_block_status":"Finalized","l2_fee":{"type":"actual","value":"7859180000000"}},"raw_input":"0x00000183792ebcb90000000000000000000000000000000000000000000000000000000015cc9713000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000018000000000000000000000000000000000000000000000000000000000000001e0000000000000000000000000000000000000000000000000000000000000e92b00000000000000000000000000000000000000000000000000000000000000cd00000000000000000000000000000000000000000000000000000000000000020000000000000000000000003ba6eb0e4327b96ade6d4f3b578724208a590cef0000000000000000000000003ba6eb0e4327b96ade6d4f3b578724208a590cef000000000000000000000000000000000000000000000000000000000000000200000000000000000000000006efdbff2a14a7c8e15944d1f4a48f9f95f663a4000000000000000000000000af88d065e77c8cc2239327c5edb3a432268e583100000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000015cbade8000000000000000000000000000000000000000000000000000000000000a4b100000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000067ae51070000000000000000000000000000000000000000000000000000000067aea50dd00dfeeddeadbeef765753be7f7a64d5509974b0d678e1e3149b02f4","is_pending_update":false,"result":"success","hash":"0xee8b1b99f88ab4d9924c4aec444e45ab53589b918a2cf54e9bc133481c7dbbb9","max_fee_per_gas":null,"revert_reason":null,"confirmation_duration":[0,16758.0],"transaction_burnt_fee":null,"type":0,"token_transfers_overflow":false,"confirmations":21270162,"position":0,"max_priority_fee_per_gas":null,"transaction_tag":null,"created_contract":null,"value":"0","from":{"ens_domain_name":null,"hash":"0x3Ba6eB0e4327B96aDe6D4f3b578724208a590CEF","implementations":[],"is_contract":false,"is_scam":false,"is_verified":false,"metadata":null,"name":null,"private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"gas_used":"112274","status":"ok","to":{"ens_domain_name":null,"hash":"0x3a23F943181408EAC424116Af7b7790c94Cb97a5","implementations":[],"is_contract":true,"is_scam":false,"is_verified":true,"metadata":{"tags":[{"meta":{"tooltipUrl":"https://www.socket.tech/"},"name":"Socket:
+        Gateway","ordinal":10,"slug":"socket-gateway","tagType":"name"},{"meta":{"tagIcon
+        ":"https://blockscout-icons.s3.us-east-1.amazonaws.com/OLI_tag_logo.svg","textColor":"#C163D4","tooltipAttribution":"https://www.openlabelsinitiative.org?utm_source=blockscout","tooltipAttributionIcon":"https://blockscout-icons.s3.us-east-1.amazonaws.com/OLI_tag_logo.svg","tooltipDescription":"Provided
+        by OLI"},"name":"SocketBridge","ordinal":0,"slug":"socketbridge","tagType":"name"}]},"name":"SocketGateway","private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"authorization_list":[],"method":"0x00000183","fee":{"type":"actual","value":"8504323464698"},"gas_limit":"213833","gas_price":"70000000","decoded_input":null,"fhe_operations_count":0,"token_transfers":[{"block_hash":"0x354ad3e7331a941649051dc317ec61972c6f6fecaae2b6db61820353fef3efd3","block_number":13406322,"from":{"ens_domain_name":null,"hash":"0x3Ba6eB0e4327B96aDe6D4f3b578724208a590CEF","implementations":[],"is_contract":false,"is_scam":false,"is_verified":false,"metadata":null,"name":null,"private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"log_index":0,"method":null,"timestamp":null,"to":{"ens_domain_name":null,"hash":"0x3a23F943181408EAC424116Af7b7790c94Cb97a5","implementations":[],"is_contract":true,"is_scam":false,"is_verified":true,"metadata":{"tags":[{"meta":{"tooltipUrl":"https://www.socket.tech/"},"name":"Socket:
+        Gateway","ordinal":10,"slug":"socket-gateway","tagType":"name"},{"meta":{"tagIcon
+        ":"https://blockscout-icons.s3.us-east-1.amazonaws.com/OLI_tag_logo.svg","textColor":"#C163D4","tooltipAttribution":"https://www.openlabelsinitiative.org?utm_source=blockscout","tooltipAttributionIcon":"https://blockscout-icons.s3.us-east-1.amazonaws.com/OLI_tag_logo.svg","tooltipDescription":"Provided
+        by OLI"},"name":"SocketBridge","ordinal":0,"slug":"socketbridge","tagType":"name"}]},"name":"SocketGateway","private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"token":{"address_hash":"0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4","circulating_market_cap":null,"circulating_supply":null,"decimals":"6","exchange_rate":null,"holders_count":"339650","icon_url":"https://assets.coingecko.com/coins/images/32611/small/USDC.png?1698733754","name":"Bridged
+        USD Coin (Scroll)","reputation":"ok","symbol":"USDC","total_supply":"5490232030638","type":"ERC-20","volume_24h":null},"token_type":"ERC-20","total":{"decimals":"6","value":"365729555"},"transaction_hash":"0xee8b1b99f88ab4d9924c4aec444e45ab53589b918a2cf54e9bc133481c7dbbb9","type":"token_transfer"},{"block_hash":"0x354ad3e7331a941649051dc317ec61972c6f6fecaae2b6db61820353fef3efd3","block_number":13406322,"from":{"ens_domain_name":null,"hash":"0x3a23F943181408EAC424116Af7b7790c94Cb97a5","implementations":[],"is_contract":true,"is_scam":false,"is_verified":true,"metadata":{"tags":[{"meta":{"tooltipUrl":"https://www.socket.tech/"},"name":"Socket:
+        Gateway","ordinal":10,"slug":"socket-gateway","tagType":"name"},{"meta":{"tagIcon
+        ":"https://blockscout-icons.s3.us-east-1.amazonaws.com/OLI_tag_logo.svg","textColor":"#C163D4","tooltipAttribution":"https://www.openlabelsinitiative.org?utm_source=blockscout","tooltipAttributionIcon":"https://blockscout-icons.s3.us-east-1.amazonaws.com/OLI_tag_logo.svg","tooltipDescription":"Provided
+        by OLI"},"name":"SocketBridge","ordinal":0,"slug":"socketbridge","tagType":"name"}]},"name":"SocketGateway","private_tags":[],"proxy_type":null,"public_tags":[],"reputation":"ok","watchlist_names":[]},"log_index":1,"method":null,"timestamp":null,"to":{"ens_domain_name":null,"hash":"0x3baD7AD0728f9917d1Bf08af5782dCbD516cDd96","implementations":[{"address_hash":"0xE0B48589c05523290419Fa0850556beca766Ac38","name":"Scroll_SpokePool"}],"is_contract":true,"is_scam":false,"is_verified":true,"metadata":{"tags":[{"meta":{"tagIcon
+        ":"https://blockscout-icons.s3.us-east-1.amazonaws.com/OLI_tag_logo.svg","textColor":"#C163D4","tooltipAttribution":"https://www.openlabelsinitiative.org?utm_source=blockscout","tooltipAttributionIcon":"https://blockscout-icons.s3.us-east-1.amazonaws.com/OLI_tag_logo.svg","tooltipDescription":"Provided
+        by OLI"},"name":"AcrossBridge","ordinal":0,"slug":"acrossbridge","tagType":"name"}]},"name":"ERC1967Proxy","private_tags":[],"proxy_type":"eip1967","public_tags":[],"reputation":"ok","watchlist_names":[]},"token":{"address_hash":"0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4","circulating_market_cap":null,"circulating_supply":null,"decimals":"6","exchange_rate":null,"holders_count":"339650","icon_url":"https://assets.coingecko.com/coins/images/32611/small/USDC.png?1698733754","name":"Bridged
+        USD Coin (Scroll)","reputation":"ok","symbol":"USDC","total_supply":"5490232030638","type":"ERC-20","volume_24h":null},"token_type":"ERC-20","total":{"decimals":"6","value":"365729555"},"transaction_hash":"0xee8b1b99f88ab4d9924c4aec444e45ab53589b918a2cf54e9bc133481c7dbbb9","type":"token_transfer"}],"base_fee_per_gas":"39353109","timestamp":"2025-02-13T20:08:59.000000Z","nonce":14,"historic_exchange_rate":"2676.25","transaction_types":["contract_call","token_transfer"],"exchange_rate":"1901.71","block_number":13406322,"has_error_in_internal_transactions":false}'
+    headers:
+      CF-RAY:
+      - a2d0d720fd53cfc1-MAD
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 18 Aug 2026 12:14:52 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=zMZ5vqY8YgG39wzgVKHnJtdCIcJb5dwZQhuZNe2DGC4994zZL61zYuDh8vmgSfR%2F0h3U1GvrMOf0zELXE1xSewjOpRRqlDtiPPzI34uWj8OgZksR0WeJVwWckPMZrssjxQzYh8Wvh8vtZgbYBvKh4w%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '7916'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '98020'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '2'
+      x-ratelimit-reset:
+      - '498'
+      x-request-id:
+      - f4513f4429ac7b20662a598408fc7fe6
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.43.3.dev1299+g2a88f90ba0.d20260817
+    method: GET
+    uri: https://api.blockscout.com/534352/api?action=txlistinternal&module=account&sort=asc&txhash=0xee8b1b99f88ab4d9924c4aec444e45ab53589b918a2cf54e9bc133481c7dbbb9
+  response:
+    body:
+      string: '{"message":"No internal transactions found","result":[],"status":"0"}'
+    headers:
+      CF-RAY:
+      - a2d0d73c3bfe216e-MAD
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 18 Aug 2026 12:14:53 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2BThYbCh8rlBo3SuBLnMOXB7H9NPTGMgFCUTYUwOfH22xoJmQBa159yyJU6ujbDeWybwTrJdOVzqPXOkT4kceWOO1%2B4Tmhx2Eaj0sKlnRQ%2BwYqCFEgThyY00tNpPxbRUICeoNoqaRtt6PRgaHPCwi0Q%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '69'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '98000'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '142'
+      x-request-id:
+      - 1d18fa55e91719ecf2c8139276fca646
+    status:
+      code: 200
+      message: OK
+version: 1
