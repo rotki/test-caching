@@ -5,59 +5,43 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev4+gcb8d185fe.d20251124
+      - rotki/1.43.3.dev1436+gd4b95eb359.d20260827
     method: GET
-    uri: https://api.etherscan.io/v2/api?timestamp=1742814047&closest=before&module=block&action=getblocknobytime&chainid=1
+    uri: https://api.etherscan.io/v2/api?action=getblocknobytime&chainid=1&closest=before&module=block&timestamp=1742814047
   response:
     body:
       string: '{"status":"1","message":"OK","result":"22116329"}'
     headers:
-      CF-RAY:
-      - 9a3ba5557a23bfcc-ATL
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - private
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 24 Nov 2025 20:27:14 GMT
-      Nel:
-      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
-      Report-To:
-      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=6Y4ix2TJVAounGGrkskhawJd6GTRlQVOZa%2Bs07oVxTpkVXmzcE%2B%2FAvmZYB06dz6Y8EM8nu2Wcz9tfHp6QOGI7rwivTqCQVACKqN6Po2oEwqO"}]}'
+      - Thu, 27 Aug 2026 11:23:57 GMT
       Server:
-      - cloudflare
-      Transfer-Encoding:
-      - chunked
-      access-control-allow-credentials:
-      - 'true'
-      access-control-allow-origin:
-      - '*'
-      access-control-expose-headers:
-      - ''
-      alt-svc:
-      - h3=":443"; ma=86400
-      bypass-429-option:
-      - no_bypass
-      cf-cache-status:
-      - DYNAMIC
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '2'
       content-length:
-      - '65'
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
-      x-ratelimit-limit:
-      - '600'
-      x-ratelimit-remaining:
-      - '599'
-      x-ratelimit-reset:
-      - '45793'
-      x-request-id:
-      - 4e2c9e7ebe9a28e2bd2588cd1c951def
+      - '49'
+      svid:
+      - '7'
     status:
       code: 200
       message: OK
@@ -68,7 +52,7 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       Content-Length:
@@ -76,30 +60,31 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.16.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":0,"result":"Geth/v1.16.7-stable-b9f3a3d9/linux-arm64/go1.24.9"}
-
-        '
+      string: '{"jsonrpc":"2.0","id":0,"result":"Geth/v1.17.5-stable-9621c6ad/linux-arm64/go1.26.5"}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
       Connection:
       - keep-alive
       Content-Length:
-      - '86'
+      - '85'
       Content-Type:
       - application/json
       Date:
-      - Mon, 24 Nov 2025 20:27:14 GMT
+      - Thu, 27 Aug 2026 11:23:58 GMT
       Vary:
-      - Accept-Encoding
       - Origin
-      X-Send-To-Many:
-      - '0'
+      X-Info-Build:
+      - 3.70.0 (2026-08-26T13:30:54Z)
+      X-Info-Node:
+      - (3d867927-cfd8-4dda-bdc4-fdab82e25dd4 - blb-v2-ethereum-mainnet-5fbb94f88b-tkcxn)
+      X-Trace-Id:
+      - cebb24107581a6892caa5a95cb6687d7
     status:
       code: 200
       message: OK
@@ -109,7 +94,7 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       Content-Length:
@@ -117,7 +102,7 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.16.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
   response:
@@ -133,7 +118,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 24 Nov 2025 20:27:14 GMT
+      - Thu, 27 Aug 2026 11:23:58 GMT
       Vary:
       - Accept-Encoding
     status:
@@ -145,7 +130,7 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       Content-Length:
@@ -153,15 +138,19 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.16.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":2,"result":"0x16c3e63"}'
+      string: '{"jsonrpc":"2.0","id":2,"result":"0x18a61de"}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
+      Chain-Latest-Position:
+      - '25846238'
+      Chain-Position:
+      - '25846238'
       Connection:
       - keep-alive
       Content-Length:
@@ -169,13 +158,13 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 24 Nov 2025 20:27:14 GMT
+      - Thu, 27 Aug 2026 11:23:58 GMT
       Request-Id:
-      - 6d7e84b1-df59-4350-b9b9-1e5680dbcba7
+      - 93fe3339-8c4c-46ce-9e76-5f646b1ba69a
       Vary:
       - Accept-Encoding
       X-Trace-Id:
-      - 3a29769dcfec3b22e71dec80ba73f3af
+      - 44976b511fa7e078add6178a64c508c4
     status:
       code: 200
       message: OK
@@ -186,7 +175,7 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       Content-Length:
@@ -194,7 +183,7 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.16.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
   response:
@@ -210,13 +199,16 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 24 Nov 2025 20:27:15 GMT
+      - Thu, 27 Aug 2026 11:23:58 GMT
       Vary:
-      - Accept-Encoding
       - accept-encoding
       - origin, access-control-request-method, access-control-request-headers
-      X-Send-To-Many:
-      - '0'
+      X-Info-Build:
+      - 3.70.0 (2026-08-26T13:30:56Z)
+      X-Info-Node:
+      - (0267fc86-952f-4367-99fc-aba976da1d0d - blb-v2-ethereum-mainnet-5fbb94f88b-tgrnq)
+      X-Trace-Id:
+      - fcd46673556566ee380d4359f7f0db27
     status:
       code: 200
       message: OK
@@ -227,7 +219,7 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       Content-Length:
@@ -235,36 +227,40 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.16.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
   response:
     body:
-      string: '{"jsonrpc":"2.0","id":4,"result":{"blockHash":"0x4e3a3754410177e6937ef1f84bba68ea139e8d1a2258c5f85db9f1cd715a1bdd","blockNumber":"0xb443","from":"0xa1e4380a3b1f749673e270229993ee55f35663b4","gas":"0x5208","gasPrice":"0x2d79883d2000","hash":"0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfed1be16dfba1b22060","input":"0x","nonce":"0x0","to":"0x5df9b87991262f6ba471f09758cde1c0fc1de734","transactionIndex":"0x0","value":"0x7a69","type":"0x0","v":"0x1c","r":"0x88ff6cf0fefd94db46111149ae4bfc179e9b94721fffd821d38d16464b3f71d0","s":"0x45e0aff800961cfce805daef7016b9b675c137a6a41a548f7b60a3484c06a33a"}}
-
-        '
+      string: '{"jsonrpc":"2.0","id":4,"result":{"blockHash":"0x4e3a3754410177e6937ef1f84bba68ea139e8d1a2258c5f85db9f1cd715a1bdd","blockNumber":"0xb443","blockTimestamp":"0x55c42659","from":"0xa1e4380a3b1f749673e270229993ee55f35663b4","gas":"0x5208","gasPrice":"0x2d79883d2000","hash":"0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfed1be16dfba1b22060","input":"0x","nonce":"0x0","to":"0x5df9b87991262f6ba471f09758cde1c0fc1de734","transactionIndex":"0x0","value":"0x7a69","type":"0x0","v":"0x1c","r":"0x88ff6cf0fefd94db46111149ae4bfc179e9b94721fffd821d38d16464b3f71d0","s":"0x45e0aff800961cfce805daef7016b9b675c137a6a41a548f7b60a3484c06a33a"}}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
+      Chain-Latest-Position:
+      - '25846238'
+      Chain-Position:
+      - '46147'
       Connection:
       - keep-alive
       Content-Length:
-      - '600'
+      - '629'
       Content-Type:
       - application/json
       Date:
-      - Mon, 24 Nov 2025 20:27:15 GMT
+      - Thu, 27 Aug 2026 11:23:58 GMT
       Request-Id:
-      - d1f3bd27-1e68-4552-9fd7-4dde27781384
+      - ddd2dae8-397a-4f27-a318-60ec5fb129c3
       Vary:
-      - Accept-Encoding
       - Origin
       Via:
-      - JSON-RPC/2.0 mainnet-geth-pruned-state-blb.ethereum-network-1-prod-us-east-1.eks.infura.org
-      X-Send-To-Many:
-      - '0'
+      - JSON-RPC/2.0 blb-v2-ethereum-mainnet.ethereum-nodes:8181
+      X-Info-Build:
+      - 3.70.0 (2026-08-26T13:30:54Z)
+      X-Info-Node:
+      - (3d867927-cfd8-4dda-bdc4-fdab82e25dd4 - blb-v2-ethereum-mainnet-5fbb94f88b-tkcxn)
       X-Trace-Id:
-      - 864f8357bec190f7fc12d62a7271576c
+      - 48b6534abe98ce3f1b5c58f0ceb5df6e
+      - 16c6b6b615f7f21f214abcbcdac16483
     status:
       code: 200
       message: OK
@@ -276,7 +272,7 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       Content-Length:
@@ -284,7 +280,7 @@ interactions:
       Content-Type:
       - application/json
       User-Agent:
-      - web3.py/7.13.0/web3.providers.rpc.rpc.HTTPProvider
+      - web3.py/7.16.0/web3.providers.rpc.rpc.HTTPProvider
     method: POST
     uri: https://mainnet.infura.io/v3/a6b269b6e5ad44ed943e9fff244dfe25
   response:
@@ -300,13 +296,16 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 24 Nov 2025 20:27:15 GMT
+      - Thu, 27 Aug 2026 11:23:59 GMT
       Vary:
-      - Accept-Encoding
       - accept-encoding
       - origin, access-control-request-method, access-control-request-headers
-      X-Send-To-Many:
-      - '0'
+      X-Info-Build:
+      - 3.70.0 (2026-08-27T02:07:59Z)
+      X-Info-Node:
+      - (0cda1c25-bc9b-486f-9ed2-e58353c663e3 - blb-v2-ethereum-mainnet-5fbb94f88b-8zn98)
+      X-Trace-Id:
+      - a04600d8a121680865d2e3985d0f4d03
     status:
       code: 200
       message: OK
@@ -316,49 +315,42 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev4+gcb8d185fe.d20251124
+      - rotki/1.43.3.dev1436+gd4b95eb359.d20260827
     method: GET
-    uri: https://data-api.cryptocompare.com/index/cc/v1/historical/days?limit=1&market=cadli&to_ts=1742814047&instrument=USDC-USD
+    uri: https://coins.llama.fi/prices/historical/1742814047/coingecko:usd-coin
   response:
     body:
-      string: '{"Data":[{"UNIT":"DAY","TIMESTAMP":1742774400,"TYPE":"267","MARKET":"cadli","INSTRUMENT":"USDC-USD","OPEN":1.0002596667952,"HIGH":1.00147949662235,"LOW":0.999900441800462,"CLOSE":1.00006991112988,"FIRST_MESSAGE_TIMESTAMP":1742774400,"LAST_MESSAGE_TIMESTAMP":1742860799,"FIRST_MESSAGE_VALUE":1.00025966561791,"HIGH_MESSAGE_VALUE":1.00147949662235,"HIGH_MESSAGE_TIMESTAMP":1742779379,"LOW_MESSAGE_VALUE":0.999900441800462,"LOW_MESSAGE_TIMESTAMP":1742842706,"LAST_MESSAGE_VALUE":1.00006991112988,"TOTAL_INDEX_UPDATES":301078,"VOLUME":2594671084.38082,"QUOTE_VOLUME":2594960342.10656,"VOLUME_TOP_TIER":2143849706.57572,"QUOTE_VOLUME_TOP_TIER":2144058171.24988,"VOLUME_DIRECT":196778913.779375,"QUOTE_VOLUME_DIRECT":196740345.195205,"VOLUME_TOP_TIER_DIRECT":196740691.424309,"QUOTE_VOLUME_TOP_TIER_DIRECT":196701758.251237}],"Err":{}}'
+      string: '{"coins":{"coingecko:usd-coin":{"symbol":"USDC","price":0.999882,"timestamp":1742814057,"confidence":0.99}}}'
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type, Authorization
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - 'null'
-      Access-Control-Expose-Headers:
-      - Content-Disposition, AMP-Access-Control-Allow-Source-Origin
+      Age:
+      - '970'
+      CF-RAY:
+      - a31ab50f298d6cdf-CDG
       Cache-Control:
-      - public, max-age=300
+      - max-age=3600
       Connection:
       - keep-alive
-      Content-Security-Policy:
-      - frame-ancestors 'none'
       Content-Type:
-      - application/json; charset=UTF-8
+      - application/json; charset=utf-8
       Date:
-      - Mon, 24 Nov 2025 20:27:16 GMT
+      - Thu, 27 Aug 2026 11:23:59 GMT
       Server:
-      - nginx
+      - cloudflare
       Transfer-Encoding:
       - chunked
-      Vary:
-      - Accept-Encoding
-      X-CryptoCompare-Cache-Hit:
-      - 'false'
-      X-CryptoCompare-Server-Id:
-      - cc-api-data-13
+      cf-cache-status:
+      - HIT
       content-length:
-      - '829'
+      - '108'
+      last-modified:
+      - Thu, 27 Aug 2026 11:07:48 GMT
+      vary:
+      - Accept-Encoding
+      - Origin
     status:
       code: 200
       message: OK
@@ -368,49 +360,42 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev4+gcb8d185fe.d20251124
+      - rotki/1.43.3.dev1436+gd4b95eb359.d20260827
     method: GET
-    uri: https://data-api.cryptocompare.com/index/cc/v1/historical/days?limit=1&market=cadli&to_ts=1742814047&instrument=WETH-USD
+    uri: https://coins.llama.fi/prices/historical/1742814047/coingecko:ethereum
   response:
     body:
-      string: '{"Data":[{"UNIT":"DAY","TIMESTAMP":1742774400,"TYPE":"267","MARKET":"cadli","INSTRUMENT":"WETH-USD","OPEN":2005.02250001764,"HIGH":2103.57307178481,"LOW":1979.66934649306,"CLOSE":2077.92193492299,"FIRST_MESSAGE_TIMESTAMP":1742774400,"LAST_MESSAGE_TIMESTAMP":1742860780,"FIRST_MESSAGE_VALUE":2005.02297711504,"HIGH_MESSAGE_VALUE":2103.57307178481,"HIGH_MESSAGE_TIMESTAMP":1742815193,"LOW_MESSAGE_VALUE":1979.66934649306,"LOW_MESSAGE_TIMESTAMP":1742781536,"LAST_MESSAGE_VALUE":2077.92193492299,"TOTAL_INDEX_UPDATES":18801,"VOLUME":250408.391710981,"QUOTE_VOLUME":517040486.78968,"VOLUME_TOP_TIER":246012.904860219,"QUOTE_VOLUME_TOP_TIER":507965274.65974,"VOLUME_DIRECT":0,"QUOTE_VOLUME_DIRECT":0,"VOLUME_TOP_TIER_DIRECT":0,"QUOTE_VOLUME_TOP_TIER_DIRECT":0}],"Err":{}}'
+      string: '{"coins":{"coingecko:ethereum":{"symbol":"ETH","price":2095.97,"timestamp":1742814057,"confidence":0.99}}}'
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type, Authorization
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - 'null'
-      Access-Control-Expose-Headers:
-      - Content-Disposition, AMP-Access-Control-Allow-Source-Origin
+      Age:
+      - '970'
+      CF-RAY:
+      - a31ab50fc833f196-CDG
       Cache-Control:
-      - public, max-age=300
+      - max-age=3600
       Connection:
       - keep-alive
-      Content-Security-Policy:
-      - frame-ancestors 'none'
       Content-Type:
-      - application/json; charset=UTF-8
+      - application/json; charset=utf-8
       Date:
-      - Mon, 24 Nov 2025 20:27:16 GMT
+      - Thu, 27 Aug 2026 11:23:59 GMT
       Server:
-      - nginx
+      - cloudflare
       Transfer-Encoding:
       - chunked
-      Vary:
-      - Accept-Encoding
-      X-CryptoCompare-Cache-Hit:
-      - 'false'
-      X-CryptoCompare-Server-Id:
-      - cc-api-data-02
+      cf-cache-status:
+      - HIT
       content-length:
-      - '765'
+      - '106'
+      last-modified:
+      - Thu, 27 Aug 2026 11:07:48 GMT
+      vary:
+      - Accept-Encoding
+      - Origin
     status:
       code: 200
       message: OK
