@@ -5,13 +5,13 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.32.5
+      - python-requests/2.33.1
     method: GET
-    uri: https://www.x-rates.com/historical/?from=EUR&amount=1&date=2020-11-03
+    uri: https://www.x-rates.com/historical/?amount=1&date=2020-11-03&from=EUR
   response:
     body:
       string: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta http-equiv=\"Content-Type\"
@@ -96,15 +96,15 @@ interactions:
         'service.historicallookup.error.date.invalid'\n\t\t\t\t});\n\n\t\t\t\tvar
         isOutputPage = $(\".li-historicallookup\").hasClass(\"selected\");\n\t\t\t\t$(\"#historicalDate\").datepicker({
         \n\t\t\t\t\t\t\t\tchangeYear: true, \n\t\t\t\t\t\t\t\tchangeMonth: true, \n\t\t\t\t\t\t\t\tdateFormat:
-        'yy-mm-dd', \n\t\t\t\t\t\t\t\tminDate: new Date(2015, 0, 01), \n\t\t\t\t\t\t\t\tmaxDate:
-        new Date(2025, 10, 27),\n\t\t\t\t\t\t\t\tyearRange: '2015:2025',\n\t\t\t\t\t\t\t\tbeforeShow:
+        'yy-mm-dd', \n\t\t\t\t\t\t\t\tminDate: new Date(2016, 0, 01), \n\t\t\t\t\t\t\t\tmaxDate:
+        new Date(2026, 7, 27),\n\t\t\t\t\t\t\t\tyearRange: '2016:2026',\n\t\t\t\t\t\t\t\tbeforeShow:
         function(){ \n\t\t\t\t\t\t\t\t\tif(!isOutputPage){ \n\t\t\t\t\t\t\t\t\t\t$(\".li-historicallookup\").addClass(\"selected\");\n\t\t\t\t\t\t\t\t\t}
         \n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\tonClose: function(){ \n\t\t\t\t\t\t\t\t\tif(!isOutputPage){
         \n\t\t\t\t\t\t\t\t\t\t$(\".li-historicallookup\").removeClass(\"selected\");\n\t\t\t\t\t\t\t\t\t}
         \n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t});\n\n\t\t\t\t$(\"#historicallookupForm\").validate({\n\t\t\t\t\t\t\t\terrorLabelContainer:
         \"#validationErrors\",\n\t\t\t\t\t\t\t\tshowErrors: function(errorMap, errorList)
         {\n\t\t\t\t\t\t\t\t\t\t$(\"#historicallookupErrors\").html('');\n\t\t\t\t\t\t\t\t\t\tthis.defaultShowErrors();\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t});\t\t\t\t\t\t\t\n\t\t\t\t});
-        \n\t\t\t</script>\t\t<span class=\"ratesTimestamp\">Nov 03, 2020 17:00 UTC</span>\n<table
+        \n\t\t\t</script>\t\t<span class=\"ratesTimestamp\">Jan 01, 2020 17:00 UTC</span>\n<table
         class=\"ratesTable\" cellpadding=0 cellspacing=0>\n \t<thead>\n \t\t\t<tr>\n\t\t<th
         class='rtHeader rtHeaderCurr'>Euro</th>\n\t\t<th class='rtHeader rtHeaderValues'>1.00
         EUR</th>\n\t\t<th class='rtHeader rtHeaderValues'>inv. 1.00 EUR</th>\n\t</tr>\n
@@ -139,7 +139,7 @@ interactions:
         Renminbi</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CNY'>7.796058</a></td>\n\t\t\t\t\t\t<td
         class='rtRates'><a href='https://www.x-rates.com/graph/?from=CNY&amp;to=EUR'>0.128270</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t</tbody>\n</table>\n\t\t\t<span class='ratesTableAlpha'>Alphabetical
-        order</span>\n\t\t\t<span class=\"ratesTimestamp\">Nov 03, 2020 17:00 UTC</span>\n<table
+        order</span>\n\t\t\t<span class=\"ratesTimestamp\">Jan 01, 2020 17:00 UTC</span>\n<table
         class=\"tablesorter ratesTable\" cellpadding=0 cellspacing=0>\n \t<thead>\n
         \t\t\t<tr>\n\t\t<th class='rtHeader rtHeaderCurr'>Euro</th>\n\t\t<th class='rtHeader
         rtHeaderValues'>1.00 EUR</th>\n\t\t<th class='rtHeader rtHeaderValues'>inv.
@@ -302,7 +302,7 @@ interactions:
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t</tbody>\n</table>\n\t\t<script type=\"text/javascript\">\n\t\t\t$(function()
         {\n\t\t\t\t$(\".tablesorter\").tablesorter({\n\t\t\t\t\tsortList: [[0,0]]
         \n\t\t\t    });\n\t\t    }); \n\t\t</script> \t\n\t\t</div>\n\t\t\t\t\t<div
-        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTableTimestamp\">Nov 03, 2020
+        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTableTimestamp\">Jan 01, 2020
         17:00 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\t\t<div class=\"col1 pull-left\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div
         class='moduleContent bottomMargin'>\n\t\t\t\n\t\t\t\t\t<div class=\"converterFields\">\n\t\t\t<a
         name='converter'></a>\n\t\t\t<div class=\"converterSteps\"><span>1.</span>
@@ -394,10 +394,10 @@ interactions:
         id=\"monthlyaverageForm\" action=\"https://www.x-rates.com/average/\" onSubmit=\"submitConverterWithExtraArgs(this,'monthlyaverage');return
         false;\">\r\n\t\t\t\t          \t<label for=\"averageYear\" class=\"sr-only\">averageYear</label>\n\t\t<select
         id=\"averageYear\" name=\"year\" class=\"monthlyaveragedropdown\" onChange=\"submitConverterWithExtraArgs(this,'monthlyaverage','https://www.x-rates.com/average/')\">\r\n\t\t\t<option
-        value='2025' selected=\"selected\">2025</option>\n<option value='2024'>2024</option>\n<option
-        value='2023'>2023</option>\n<option value='2022'>2022</option>\n<option value='2021'>2021</option>\n<option
-        value='2020'>2020</option>\n<option value='2019'>2019</option>\n<option value='2018'>2018</option>\n<option
-        value='2017'>2017</option>\n<option value='2016'>2016</option>\n<option value='2015'>2015</option>\n\r\n\t\t</select>\r\n\t\t<input
+        value='2026' selected=\"selected\">2026</option>\n<option value='2025'>2025</option>\n<option
+        value='2024'>2024</option>\n<option value='2023'>2023</option>\n<option value='2022'>2022</option>\n<option
+        value='2021'>2021</option>\n<option value='2020'>2020</option>\n<option value='2019'>2019</option>\n<option
+        value='2018'>2018</option>\n<option value='2017'>2017</option>\n<option value='2016'>2016</option>\n\r\n\t\t</select>\r\n\t\t<input
         type=\"submit\" value=\"Go!\" class=\"goButton\">\r\n\t\t\t</form>\r\n\t\t</div>\n\t\t\t\t</li>\t\t\t\t<li
         class=\"li-historicallookup selected\">\n\t\t\t\t\t<span class=\"actionArrow\">&#9658;</span><a
         href='https://www.x-rates.com/historical/' onclick=\"submitConverterWithExtraArgs(this)\"
@@ -522,17 +522,17 @@ interactions:
         >\t\t\t\n\t\t\t\t\t\t<div class=\"module bottomMargin\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div
         class='moduleContent'>\n\t\t\t\n\t\t\t\t\t<h4 class=\"ratesChangetableHdr\">Percent
         Change in the Last 24 Hours</h4>\n\t\t<ul id='ratesTrends' class='currencyPairUL'>\n\t\t\t<li>EUR/USD<span
-        class='up'>+0.38451%</span></li><li class=\"left-border\">USD/JPY<span class='down'>-0.25854%</span></li><li
-        class=\"clear-left\">GBP/USD<span class='up'>+0.42719%</span></li><li class=\"left-border\">USD/CHF<span
-        class='down'>-0.37614%</span></li><li class=\"clear-left\">USD/CAD<span class='down'>-0.38685%</span></li><li
-        class=\"left-border\">EUR/JPY<span class='up'>+0.12498%</span></li><li class=\"clear-left\">AUD/USD<span
-        class='up'>+0.55712%</span></li><li class=\"left-border\">CNY/USD<span class='down'>-0.05959%</span></li>\n\t\t</ul>\n\t\t<script
+        class='down'>-0.22896%</span></li><li class=\"left-border\">USD/JPY<span class='up'>+0.26793%</span></li><li
+        class=\"clear-left\">GBP/USD<span class='down'>-0.33465%</span></li><li class=\"left-border\">USD/CHF<span
+        class='up'>+0.12562%</span></li><li class=\"clear-left\">USD/CAD<span class='up'>+0.06185%</span></li><li
+        class=\"left-border\">EUR/JPY<span class='up'>+0.03836%</span></li><li class=\"clear-left\">AUD/USD<span
+        class='up'>+0.06498%</span></li><li class=\"left-border\">CNY/USD<span class='down'>-0.00882%</span></li>\n\t\t</ul>\n\t\t<script
         type=\"text/javascript\">\n\t\t\tif(typeof(registerAfterRefreshFunction) ==
         \"function\")\n\t\t\t{\n\t\t\t\tregisterRefreshFunctions(\n\t\t\t\t\tfunction(responseText){updateContents(['#ratesTrends',
         '#ratesTrendsTimestamp'], responseText); $('#ratesTrends').fadeTo(300,1);},
         \n\t\t\t\t\tfunction(){refreshFadeOut('#ratesTrends');});\n\t\t\t}\n\t\t</script>\t\t\n\t\t</div>\n\t\t\t\t\t<div
-        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTrendsTimestamp\">Nov 27, 2025
-        14:04 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\n\t\t\t</div>\n\t\t</div>\t\t
+        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTrendsTimestamp\">Jan 01, 2026
+        12:31 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\n\t\t\t</div>\n\t\t</div>\t\t
         <div class=\"grid\">\n\t                <div class=\"grid__cell\" >\t\t\t\n\t\t\t\t\t\t<div
         class=\"module bottomMargin\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div class='moduleContent'>\n\t\t\t\n\t\t\t\t\t<div
         id=\"output_rs\" class='rightsideAd'>\n\t\t\t\t\t<script type=\"text/javascript\">\n\t\t\t\t\t\te9AdSlots['output_rs']['mobileAd']
@@ -559,7 +559,7 @@ interactions:
         href='https://www.x-rates.com/feedback/' rel='feedback'>Feedback</a></li>\n<li><a
         href='https://www.x-rates.com/faq/' rel='faq'>FAQ</a></li>\n</ul>\n\t\t\t\t\t</nav>\n\t\t\t\t\t<div
         id=\"footerTri\"></div>\n\t\t\t\t\t<div class=\"footer-decor\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div
-        class=\"copyright\">\n\t\t\t&copy; X-Rates 2025\n\t\t</div>        </footer>\n\n
+        class=\"copyright\">\n\t\t\t&copy; X-Rates 2026\n\t\t</div>        </footer>\n\n
         \                   <script type=\"text/javascript\">\n            var utag_data
         = {\n              isGeoEurope : \"\" // geo ip from xe platform\n            }\n
         \           </script>\n            \n            <!-- Loading script asynchronously
@@ -573,15 +573,11 @@ interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Thu, 27 Nov 2025 14:04:25 GMT
+      - Thu, 27 Aug 2026 12:31:53 GMT
       Server:
       - Apache
-      Vary:
-      - Accept-Encoding
-      X-Powered-By:
-      - PHP/7.4.33
-      content-length:
-      - '47468'
+      Transfer-Encoding:
+      - chunked
     status:
       code: 200
       message: OK
@@ -591,53 +587,42 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - rotkehlchen
+      - rotki/1.43.3.dev1436+gd4b95eb359.d20260827
     method: GET
     uri: https://coins.llama.fi/prices/historical/1604437979/coingecko:binancecoin
   response:
     body:
-      string: '{"coins":{"coingecko:binancecoin":{"decimals":18,"symbol":"BNB","price":26.765469766407215,"timestamp":1604437689}}}'
+      string: '{"coins":{"coingecko:binancecoin":{"symbol":"BNB","price":26.765469766407215,"timestamp":1604437689}}}'
     headers:
+      Age:
+      - '482'
       CF-RAY:
-      - 9a522cb74efc6768-ATL
+      - a31b1888bbc8f533-CDG
       Cache-Control:
       - max-age=3600
       Connection:
       - keep-alive
       Content-Type:
-      - application/json
+      - application/json; charset=utf-8
       Date:
-      - Thu, 27 Nov 2025 14:04:26 GMT
+      - Thu, 27 Aug 2026 12:31:53 GMT
       Server:
       - cloudflare
       Transfer-Encoding:
       - chunked
-      Vary:
-      - accept-encoding
-      access-control-allow-credentials:
-      - 'true'
-      access-control-allow-origin:
-      - '*'
-      apigw-requestid:
-      - UtMQqh31liAEJFg=
       cf-cache-status:
-      - MISS
+      - HIT
       content-length:
-      - '146'
+      - '102'
       last-modified:
-      - Thu, 27 Nov 2025 14:04:26 GMT
-      via:
-      - 1.1 35e30b9ba9344a28607f9c965ce2ec96.cloudfront.net (CloudFront)
-      x-amz-cf-id:
-      - TOsMmb7JTyfJbDKckAnwPMtzEKnOZ0w4xMAdCgSKyneO9DX7XwhpDQ==
-      x-amz-cf-pop:
-      - ATL58-P6
-      x-cache:
-      - Miss from cloudfront
+      - Thu, 27 Aug 2026 12:23:51 GMT
+      vary:
+      - Accept-Encoding
+      - Origin
     status:
       code: 200
       message: OK
@@ -647,49 +632,42 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev4+ga3b1a8a72.d20251125
+      - rotki/1.43.3.dev1436+gd4b95eb359.d20260827
     method: GET
-    uri: https://data-api.cryptocompare.com/index/cc/v1/historical/days?limit=1&market=cadli&to_ts=1604437979&instrument=ETH-USD
+    uri: https://coins.llama.fi/prices/historical/1604437979/coingecko:ethereum
   response:
     body:
-      string: '{"Data":[{"UNIT":"DAY","TIMESTAMP":1604361600,"TYPE":"267","MARKET":"cadli","INSTRUMENT":"ETH-USD","OPEN":383.440335745339,"HIGH":389.982190902571,"LOW":371.274622159419,"CLOSE":387.920015862958,"FIRST_MESSAGE_TIMESTAMP":1604361600,"LAST_MESSAGE_TIMESTAMP":1604447940,"FIRST_MESSAGE_VALUE":383.171732501522,"HIGH_MESSAGE_VALUE":389.982190902571,"HIGH_MESSAGE_TIMESTAMP":1604446140,"LOW_MESSAGE_VALUE":371.274622159419,"LOW_MESSAGE_TIMESTAMP":1604377980,"LAST_MESSAGE_VALUE":387.920015862958,"TOTAL_INDEX_UPDATES":1440,"VOLUME":3817858.85447304,"QUOTE_VOLUME":1452848763.4204,"VOLUME_TOP_TIER":1713451.23101536,"QUOTE_VOLUME_TOP_TIER":651680909.310047,"VOLUME_DIRECT":335176.08075418,"QUOTE_VOLUME_DIRECT":127496361.004871,"VOLUME_TOP_TIER_DIRECT":223209.03217158,"QUOTE_VOLUME_TOP_TIER_DIRECT":84894187.4610108}],"Err":{}}'
+      string: '{"coins":{"coingecko:ethereum":{"symbol":"ETH","price":382.5544542200287,"timestamp":1604437602}}}'
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type, Authorization
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - 'null'
-      Access-Control-Expose-Headers:
-      - Content-Disposition, AMP-Access-Control-Allow-Source-Origin
+      Age:
+      - '482'
+      CF-RAY:
+      - a31b18894aa0f0bb-CDG
       Cache-Control:
-      - public, max-age=300
+      - max-age=3600
       Connection:
       - keep-alive
-      Content-Security-Policy:
-      - frame-ancestors 'none'
       Content-Type:
-      - application/json; charset=UTF-8
+      - application/json; charset=utf-8
       Date:
-      - Thu, 27 Nov 2025 14:04:26 GMT
+      - Thu, 27 Aug 2026 12:31:53 GMT
       Server:
-      - nginx
+      - cloudflare
       Transfer-Encoding:
       - chunked
-      Vary:
-      - Accept-Encoding
-      X-CryptoCompare-Cache-Hit:
-      - 'false'
-      X-CryptoCompare-Server-Id:
-      - cc-api-data-15
+      cf-cache-status:
+      - HIT
       content-length:
-      - '822'
+      - '98'
+      last-modified:
+      - Thu, 27 Aug 2026 12:23:51 GMT
+      vary:
+      - Accept-Encoding
+      - Origin
     status:
       code: 200
       message: OK
@@ -699,19 +677,21 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev4+ga3b1a8a72.d20251125
+      - rotki/1.43.3.dev1436+gd4b95eb359.d20260827
     method: GET
     uri: https://api.coingecko.com/api/v3/coins/binancecoin/history?date=29-10-2025&localization=false
   response:
     body:
-      string: '{"id":"binancecoin","symbol":"bnb","name":"BNB","image":{"thumb":"https://coin-images.coingecko.com/coins/images/825/thumb/bnb-icon2_2x.png?1696501970","small":"https://coin-images.coingecko.com/coins/images/825/small/bnb-icon2_2x.png?1696501970"},"market_data":{"current_price":{"aed":4052.9537395445195,"ars":1626140.777197543,"aud":1676.5444576416305,"bch":1.97694132238025,"bdt":135062.22511179012,"bhd":416.0421849866329,"bmd":1103.595300080196,"bnb":1.0,"brl":5914.719010779809,"btc":0.009769173423118414,"cad":1538.7870707138204,"chf":875.517466603222,"clp":1041127.6411269943,"cny":7834.754113859335,"czk":23028.61276724344,"dkk":7073.162997273992,"dot":361.36619308391363,"eos":3866.957520387817,"eth":0.2771006638983489,"eur":947.0767930510222,"gbp":831.4056588637163,"gel":3001.779216218133,"hkd":8573.589095357023,"huf":367661.6706264172,"idr":18302852.8857923,"ils":3594.691309162718,"inr":97365.52304605034,"jpy":167693.52835568867,"krw":1574799.475564935,"kwd":338.49806122649795,"lkr":336059.3837869786,"ltc":11.404477015166833,"mmk":2316225.815808315,"mxn":20342.461806848245,"myr":4632.341272086622,"ngn":1607640.381485824,"nok":11013.976003996153,"nzd":1909.1834504938356,"php":65205.37761118364,"pkr":311701.44633697654,"pln":4007.97560949445,"rub":87461.11720708902,"sar":4138.577284496542,"sek":10346.59330020216,"sgd":1427.8227704813562,"sol":5.678022838914333,"thb":35701.30795759434,"try":46304.97936856898,"twd":33723.77553938063,"uah":46461.64906815427,"usd":1103.595300080196,"vef":110.50299739702993,"vnd":29046628.29811075,"xag":23.408779276215057,"xau":0.27867988517625103,"xdr":773.5949226643155,"xlm":3466.4214521706617,"xrp":423.2423169881666,"yfi":0.23058204427186643,"zar":18928.91514516872,"bits":9769.173423118415,"link":61.81207650562532,"sats":976917.3423118413},"market_cap":{"aed":558246552849.19,"ars":223981703630313.44,"aud":230924215849.06525,"bch":272300339.2898142,"bdt":18603227777594.01,"bhd":57304901692.446686,"bmd":152007230183.57797,"bnb":137738200.02,"brl":814682750168.8859,"btc":1345588.3629835523,"cad":211949761334.17,"chf":120592199935.99826,"clp":143403047279900.7,"cny":1079144929242.2749,"czk":3171919671517.7026,"dkk":974244739692.5878,"dot":49773928983.45803,"eos":532627768412.0204,"eth":38167346.66970558,"eur":130448652755.56184,"gbp":114516318938.33044,"gel":413459666099.33203,"hkd":1180910729705.5764,"huf":50641056728428.81,"idr":2521002011719894,"ils":495126310551.6101,"inr":13410951888368.8,"jpy":23097804750715.38,"krw":216910045156754.12,"kwd":46624113663.59757,"lkr":46288214622648.805,"ltc":1570832136.2385414,"mmk":319032774709293.4,"mxn":2801934073250.8735,"myr":638050348695.5684,"ngn":221433492425323.53,"nok":1517045229853.902,"nzd":262967491978.99362,"php":8981271343788.842,"pkr":42933196162085.766,"pln":552051346175.828,"rub":12046736855842.691,"sar":570040185810.2131,"sek":1425121137508.837,"sgd":196665738353.67157,"sol":782080645.5045106,"thb":4917433896438.747,"try":6377964510189.928,"twd":4645052140672.793,"uah":6399543912608.4795,"usd":152007230183.57797,"vef":15220483958.281643,"vnd":4000830298431770.5,"xag":3224283122.1713395,"xau":38384865.765957095,"xdr":106553572192.39392,"xlm":477458651332.70135,"xrp":58296634914.24433,"yfi":31759955.73493883,"zar":2607234700426.8564,"bits":1345588362983.5522,"link":8513884157.383363,"sats":134558836298355.2},"total_volume":{"aed":11281859570.310953,"ars":4526548554181.313,"aud":4666852954.660586,"bch":5503041.932165094,"bdt":375961127337.2651,"bhd":1158100932.7957482,"bmd":3071983545.353561,"bnb":2783606.959765835,"brl":16464295811.322407,"btc":27193.609836272655,"cad":4283389536.628284,"chf":2437102850.0024314,"clp":2898097683020.649,"cny":21808932783.528538,"czk":64102773442.53822,"dkk":19688956938.880043,"dot":1005904065.4850298,"eos":10764117854.026148,"eth":771341.3421028677,"eur":2636296407.050247,"gbp":2314312595.711104,"gel":8355795243.361686,"hkd":23865564327.471836,"huf":1023428246150.9935,"idr":50948081143599.52,"ils":10006233763.02061,"inr":271028052276.47693,"jpy":466794086322.69586,"krw":4383634178050.0044,"kwd":942248008.9814804,"lkr":935459671838.2504,"ltc":31745664.131959904,"mmk":6447479064988.054,"mxn":56625565493.14765,"myr":12894650931.62157,"ngn":4475050590022.894,"nok":30658659973.213413,"nzd":5314430158.004662,"php":181506614857.42606,"pkr":867656571335.9918,"pln":11156657808.93652,"rub":243458007567.53162,"sar":11520202485.660755,"sek":28800924003.914036,"sgd":3974507735.1100726,"sol":15805424.98687609,"thb":99378667692.1877,"try":128895197975.05768,"twd":93873980377.26863,"uah":129331305975.1067,"usd":3071983545.353561,"vef":307597712.39625186,"vnd":80854606913705.7,"xag":65161010.33424159,"xau":775737.2848726811,"xdr":2153389809.6713033,"xlm":9649179968.014582,"xrp":1178143322.4575,"yfi":641851.4520727717,"zar":52690796937.18027,"bits":27193609836.272655,"link":172060973.72435153,"sats":2719360983627.2656}},"community_data":{"facebook_likes":null,"reddit_average_posts_48h":0.0,"reddit_average_comments_48h":0.0,"reddit_subscribers":null,"reddit_accounts_active_48h":0.0},"developer_data":{"forks":null,"stars":null,"subscribers":null,"total_issues":null,"closed_issues":null,"pull_requests_merged":null,"pull_request_contributors":null,"code_additions_deletions_4_weeks":{"additions":null,"deletions":null},"commit_count_4_weeks":null},"public_interest_stats":{"alexa_rank":null,"bing_matches":null}}'
+      string: '{"id":"binancecoin","symbol":"bnb","name":"BNB","image":{"thumb":"https://coin-images.coingecko.com/coins/images/825/thumb/bnb-icon2_2x.png?1696501970","small":"https://coin-images.coingecko.com/coins/images/825/small/bnb-icon2_2x.png?1696501970"},"market_data":{"current_price":{"usd":1103.1952172981496,"aed":4051.484435527456,"ars":1585843.2351856115,"aud":1677.7481120287646,"bdt":134855.9358798622,"bhd":415.8395084035818,"bmd":1103.1952172981496,"brl":5910.700438435246,"cad":1538.4057305222696,"chf":882.7735032963277,"clp":1040750.2045403238,"cny":7831.031249990917,"czk":23173.513540254517,"dkk":7101.604088289467,"eur":950.8969111597058,"gbp":836.1304095089619,"gel":3006.206967137459,"hkd":8572.543915297869,"huf":369582.24942109967,"idr":18278642.10654331,"ils":3586.757934264523,"inr":97462.72249772542,"jpy":168504.4277501008,"krw":1572063.7764271449,"kwd":338.584953726627,"lkr":335865.26200215495,"mmk":2315386.122065357,"mxn":20387.96878367625,"myr":4619.629972436002,"ngn":1602942.650734212,"nok":11053.115870030142,"nzd":1914.3581126492195,"php":64784.77177182649,"pkr":311457.54219337687,"pln":4033.7935970228623,"rub":88254.4645448499,"sar":4137.380318341507,"sek":10381.747666224657,"sgd":1431.3130548030517,"thb":35743.525040460045,"try":46328.460305001914,"twd":33842.38761929493,"uah":46390.94086932881,"vnd":29054390.76402127,"zar":18959.593537736862,"xdr":772.7297803708371,"xag":23.095149171188964,"xau":0.27950554025465923,"btc":0.009771984915495874,"bits":9771.984915495874,"sats":977198.4915495875,"eth":0.2830270428325756,"ltc":11.189002291099788,"bch":1.979157437706211,"bnb":0.9980470873371677,"eos":3900.0323848589323,"xrp":428.9994427178841,"xlm":3493.3183505166085,"link":60.61117723520556,"dot":355.9822714340794,"yfi":0.23492162674444533,"sol":5.6794080901625295},"market_cap":{"usd":152007230183.57797,"aed":558246552849.1903,"ars":218510408589616.3,"aud":231173811721.0269,"bdt":18581550178504.777,"bhd":57297757352.62807,"bmd":152007230183.57797,"brl":814424489884.8046,"cad":211974082490.99945,"chf":121635729571.20859,"clp":143403047279900.7,"cny":1079023323458.1284,"czk":3193035603891.4253,"dkk":978516902896.8977,"eur":131022328042.27472,"gbp":115208863879.04689,"gel":414219702250.2501,"hkd":1181194983226.0205,"huf":50924055125172.5,"idr":2518580315220543.5,"ils":494212747098.2071,"inr":13429208412735.547,"jpy":23217913687745.117,"krw":216611762433015.66,"kwd":46652995037.33247,"lkr":46278253740862.12,"mmk":319032774709293.56,"mxn":2809220539829.7246,"myr":636530276393.7329,"ngn":220866505456738.9,"nok":1522988408539.6213,"nzd":263775866429.1101,"php":8926573974122.967,"pkr":42915159136159.44,"pln":555808964905.9664,"rub":12160419567130.697,"sar":570081987798.5138,"sek":1430481824488.4915,"sgd":197217980620.92865,"thb":4925034257947.926,"try":6383512926098.862,"twd":4663080046165.337,"uah":6392122007587.539,"vnd":4003350808143148,"zar":2612407354462.7744,"xdr":106473008360.39667,"xag":3182237922.3025656,"xau":38512551.839311324,"btc":1345588.3629835525,"bits":1345588362983.5525,"sats":134558836298355.25,"eth":38997773.17145632,"ltc":1541711947.3679934,"bch":272704445.6735001,"bnb":137519063.67983207,"eos":537378254685.1281,"xrp":59111040381.006424,"xlm":481337879538.67126,"link":8351502096.114994,"dot":49050139292.372185,"yfi":32369416.791980673,"sol":782555144.6661974},"total_volume":{"usd":3086536579.441124,"aed":11335305587.997532,"ars":4436896641600.272,"aud":4694029522.306697,"bdt":377302015564.7294,"bhd":1163442184.7911167,"bmd":3086536579.441124,"brl":16537048771.86624,"cad":4304175260.030647,"chf":2469837311.25905,"clp":2911826960455.7046,"cny":21909779909.162823,"czk":64835213291.936485,"dkk":19868977355.51925,"eur":2660434031.576119,"gbp":2339338544.680279,"gel":8410812178.977066,"hkd":23984395471.034176,"huf":1034022912775.2498,"idr":51140266563638.7,"ils":10035086621.22506,"inr":272682706926.42847,"jpy":471444284650.0477,"krw":4398344259541.302,"kwd":947298201.2060138,"lkr":939689005788.2296,"mmk":6478022972931.033,"mxn":57041773246.115814,"myr":12924871926.40971,"ngn":4484737649927.955,"nok":30924577912.151237,"nzd":5356020628.25549,"php":181255832810.99908,"pkr":871400711178.8241,"pln":11285809887.409613,"rub":246919700924.56442,"sar":11575626412.609396,"sek":29046213605.61048,"sgd":4004549721.5814004,"thb":100003785173.89241,"try":129618480173.24101,"twd":94684753600.00496,"uah":129793289258.95422,"vnd":81288822214220.83,"zar":53045442971.44546,"xdr":2161955287.4597974,"xag":64615964.25255247,"xau":782004.9077672033,"btc":27340.209985041503,"bits":27340209985.041504,"sats":2734020998504.1504,"eth":791857.421946838,"ltc":31304763.035059948,"bch":5537317.178471995,"bnb":2792351.5210801535,"eos":10911570706.727255,"xrp":1200261251.8131948,"xlm":9773659913.890316,"link":169578885.70041835,"dot":995972684.7844702,"yfi":657267.3475002755,"sol":15889935.475602157}},"community_data":{"facebook_likes":null,"reddit_average_posts_48h":0.0,"reddit_average_comments_48h":0.0,"reddit_subscribers":null,"reddit_accounts_active_48h":0.0},"developer_data":{"forks":null,"stars":null,"subscribers":null,"total_issues":null,"closed_issues":null,"pull_requests_merged":null,"pull_request_contributors":null,"code_additions_deletions_4_weeks":{"additions":null,"deletions":null},"commit_count_4_weeks":null},"public_interest_stats":{"alexa_rank":null,"bing_matches":null}}'
     headers:
+      Age:
+      - '482'
       CF-RAY:
-      - 9a522cbd6bed0d71-ATL
+      - a31b188a2cb1b7d0-CDG
       Cache-Control:
       - max-age=30, public, must-revalidate, s-maxage=1800
       Connection:
@@ -719,7 +699,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 27 Nov 2025 14:04:27 GMT
+      - Thu, 27 Aug 2026 12:31:53 GMT
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -736,35 +716,34 @@ interactions:
       - '*'
       alt-svc:
       - h3=":443"; ma=86400
-      alternate-protocol:
-      - 443:npn-spdy/2
       cf-cache-status:
-      - EXPIRED
+      - HIT
       content-length:
-      - '5402'
+      - '5367'
       content-security-policy-report-only:
       - script-src https://accounts.google.com/gsi/client; frame-src https://accounts.google.com/gsi/;
         connect-src https://accounts.google.com/gsi/;
       etag:
-      - W/"0ee703747af95bc19976cf903805c2da"
+      - W/"a3af23b7240490a2f61eef2ee7015b4e"
       referrer-policy:
       - strict-origin-when-cross-origin
       strict-transport-security:
+      - max-age=600
       - max-age=15724800; includeSubdomains
       vary:
       - Accept-Encoding, Origin
       x-content-type-options:
       - nosniff
-      x-download-options:
-      - noopen
+      x-data-source:
+      - '2.0'
       x-frame-options:
       - SAMEORIGIN
       x-permitted-cross-domain-policies:
       - none
       x-request-id:
-      - 0a8a37d8-63ae-4da1-9e84-ef9de4ae2ebc
+      - 088665e7-4425-4120-9ec2-c48821ddfde7
       x-runtime:
-      - '0.019366'
+      - '0.065306'
       x-xss-protection:
       - '0'
     status:
@@ -776,13 +755,13 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.32.5
+      - python-requests/2.33.1
     method: GET
-    uri: https://www.x-rates.com/historical/?from=EUR&amount=1&date=2025-10-29
+    uri: https://www.x-rates.com/historical/?amount=1&date=2025-10-29&from=EUR
   response:
     body:
       string: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta http-equiv=\"Content-Type\"
@@ -867,15 +846,15 @@ interactions:
         'service.historicallookup.error.date.invalid'\n\t\t\t\t});\n\n\t\t\t\tvar
         isOutputPage = $(\".li-historicallookup\").hasClass(\"selected\");\n\t\t\t\t$(\"#historicalDate\").datepicker({
         \n\t\t\t\t\t\t\t\tchangeYear: true, \n\t\t\t\t\t\t\t\tchangeMonth: true, \n\t\t\t\t\t\t\t\tdateFormat:
-        'yy-mm-dd', \n\t\t\t\t\t\t\t\tminDate: new Date(2015, 0, 01), \n\t\t\t\t\t\t\t\tmaxDate:
-        new Date(2025, 10, 27),\n\t\t\t\t\t\t\t\tyearRange: '2015:2025',\n\t\t\t\t\t\t\t\tbeforeShow:
+        'yy-mm-dd', \n\t\t\t\t\t\t\t\tminDate: new Date(2016, 0, 01), \n\t\t\t\t\t\t\t\tmaxDate:
+        new Date(2026, 7, 27),\n\t\t\t\t\t\t\t\tyearRange: '2016:2026',\n\t\t\t\t\t\t\t\tbeforeShow:
         function(){ \n\t\t\t\t\t\t\t\t\tif(!isOutputPage){ \n\t\t\t\t\t\t\t\t\t\t$(\".li-historicallookup\").addClass(\"selected\");\n\t\t\t\t\t\t\t\t\t}
         \n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\tonClose: function(){ \n\t\t\t\t\t\t\t\t\tif(!isOutputPage){
         \n\t\t\t\t\t\t\t\t\t\t$(\".li-historicallookup\").removeClass(\"selected\");\n\t\t\t\t\t\t\t\t\t}
         \n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t});\n\n\t\t\t\t$(\"#historicallookupForm\").validate({\n\t\t\t\t\t\t\t\terrorLabelContainer:
         \"#validationErrors\",\n\t\t\t\t\t\t\t\tshowErrors: function(errorMap, errorList)
         {\n\t\t\t\t\t\t\t\t\t\t$(\"#historicallookupErrors\").html('');\n\t\t\t\t\t\t\t\t\t\tthis.defaultShowErrors();\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t});\t\t\t\t\t\t\t\n\t\t\t\t});
-        \n\t\t\t</script>\t\t<span class=\"ratesTimestamp\">Oct 29, 2025 16:00 UTC</span>\n<table
+        \n\t\t\t</script>\t\t<span class=\"ratesTimestamp\">Jan 01, 2025 16:00 UTC</span>\n<table
         class=\"ratesTable\" cellpadding=0 cellspacing=0>\n \t<thead>\n \t\t\t<tr>\n\t\t<th
         class='rtHeader rtHeaderCurr'>Euro</th>\n\t\t<th class='rtHeader rtHeaderValues'>1.00
         EUR</th>\n\t\t<th class='rtHeader rtHeaderValues'>inv. 1.00 EUR</th>\n\t</tr>\n
@@ -910,7 +889,7 @@ interactions:
         Renminbi</td>\n\t\t\t\t\t\t<td class='rtRates'><a href='https://www.x-rates.com/graph/?from=EUR&amp;to=CNY'>8.265414</a></td>\n\t\t\t\t\t\t<td
         class='rtRates'><a href='https://www.x-rates.com/graph/?from=CNY&amp;to=EUR'>0.120986</a></td>
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t</tbody>\n</table>\n\t\t\t<span class='ratesTableAlpha'>Alphabetical
-        order</span>\n\t\t\t<span class=\"ratesTimestamp\">Oct 29, 2025 16:00 UTC</span>\n<table
+        order</span>\n\t\t\t<span class=\"ratesTimestamp\">Jan 01, 2025 16:00 UTC</span>\n<table
         class=\"tablesorter ratesTable\" cellpadding=0 cellspacing=0>\n \t<thead>\n
         \t\t\t<tr>\n\t\t<th class='rtHeader rtHeaderCurr'>Euro</th>\n\t\t<th class='rtHeader
         rtHeaderValues'>1.00 EUR</th>\n\t\t<th class='rtHeader rtHeaderValues'>inv.
@@ -1070,7 +1049,7 @@ interactions:
         \t\t\t\t\n\t \t\t\t\t</tr>\n\t</tbody>\n</table>\n\t\t<script type=\"text/javascript\">\n\t\t\t$(function()
         {\n\t\t\t\t$(\".tablesorter\").tablesorter({\n\t\t\t\t\tsortList: [[0,0]]
         \n\t\t\t    });\n\t\t    }); \n\t\t</script> \t\n\t\t</div>\n\t\t\t\t\t<div
-        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTableTimestamp\">Oct 29, 2025
+        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTableTimestamp\">Jan 01, 2025
         16:00 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\t\t<div class=\"col1 pull-left\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div
         class='moduleContent bottomMargin'>\n\t\t\t\n\t\t\t\t\t<div class=\"converterFields\">\n\t\t\t<a
         name='converter'></a>\n\t\t\t<div class=\"converterSteps\"><span>1.</span>
@@ -1162,10 +1141,10 @@ interactions:
         id=\"monthlyaverageForm\" action=\"https://www.x-rates.com/average/\" onSubmit=\"submitConverterWithExtraArgs(this,'monthlyaverage');return
         false;\">\r\n\t\t\t\t          \t<label for=\"averageYear\" class=\"sr-only\">averageYear</label>\n\t\t<select
         id=\"averageYear\" name=\"year\" class=\"monthlyaveragedropdown\" onChange=\"submitConverterWithExtraArgs(this,'monthlyaverage','https://www.x-rates.com/average/')\">\r\n\t\t\t<option
-        value='2025' selected=\"selected\">2025</option>\n<option value='2024'>2024</option>\n<option
-        value='2023'>2023</option>\n<option value='2022'>2022</option>\n<option value='2021'>2021</option>\n<option
-        value='2020'>2020</option>\n<option value='2019'>2019</option>\n<option value='2018'>2018</option>\n<option
-        value='2017'>2017</option>\n<option value='2016'>2016</option>\n<option value='2015'>2015</option>\n\r\n\t\t</select>\r\n\t\t<input
+        value='2026' selected=\"selected\">2026</option>\n<option value='2025'>2025</option>\n<option
+        value='2024'>2024</option>\n<option value='2023'>2023</option>\n<option value='2022'>2022</option>\n<option
+        value='2021'>2021</option>\n<option value='2020'>2020</option>\n<option value='2019'>2019</option>\n<option
+        value='2018'>2018</option>\n<option value='2017'>2017</option>\n<option value='2016'>2016</option>\n\r\n\t\t</select>\r\n\t\t<input
         type=\"submit\" value=\"Go!\" class=\"goButton\">\r\n\t\t\t</form>\r\n\t\t</div>\n\t\t\t\t</li>\t\t\t\t<li
         class=\"li-historicallookup selected\">\n\t\t\t\t\t<span class=\"actionArrow\">&#9658;</span><a
         href='https://www.x-rates.com/historical/' onclick=\"submitConverterWithExtraArgs(this)\"
@@ -1290,17 +1269,17 @@ interactions:
         >\t\t\t\n\t\t\t\t\t\t<div class=\"module bottomMargin\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div
         class='moduleContent'>\n\t\t\t\n\t\t\t\t\t<h4 class=\"ratesChangetableHdr\">Percent
         Change in the Last 24 Hours</h4>\n\t\t<ul id='ratesTrends' class='currencyPairUL'>\n\t\t\t<li>EUR/USD<span
-        class='up'>+0.38451%</span></li><li class=\"left-border\">USD/JPY<span class='down'>-0.25854%</span></li><li
-        class=\"clear-left\">GBP/USD<span class='up'>+0.42719%</span></li><li class=\"left-border\">USD/CHF<span
-        class='down'>-0.37614%</span></li><li class=\"clear-left\">USD/CAD<span class='down'>-0.38685%</span></li><li
-        class=\"left-border\">EUR/JPY<span class='up'>+0.12498%</span></li><li class=\"clear-left\">AUD/USD<span
-        class='up'>+0.55712%</span></li><li class=\"left-border\">CNY/USD<span class='down'>-0.05959%</span></li>\n\t\t</ul>\n\t\t<script
+        class='down'>-0.25139%</span></li><li class=\"left-border\">USD/JPY<span class='up'>+0.27089%</span></li><li
+        class=\"clear-left\">GBP/USD<span class='down'>-0.34964%</span></li><li class=\"left-border\">USD/CHF<span
+        class='up'>+0.15862%</span></li><li class=\"clear-left\">USD/CAD<span class='up'>+0.07881%</span></li><li
+        class=\"left-border\">EUR/JPY<span class='up'>+0.01882%</span></li><li class=\"clear-left\">AUD/USD<span
+        class='up'>+0.03165%</span></li><li class=\"left-border\">CNY/USD<span class='down'>-0.01059%</span></li>\n\t\t</ul>\n\t\t<script
         type=\"text/javascript\">\n\t\t\tif(typeof(registerAfterRefreshFunction) ==
         \"function\")\n\t\t\t{\n\t\t\t\tregisterRefreshFunctions(\n\t\t\t\t\tfunction(responseText){updateContents(['#ratesTrends',
         '#ratesTrendsTimestamp'], responseText); $('#ratesTrends').fadeTo(300,1);},
         \n\t\t\t\t\tfunction(){refreshFadeOut('#ratesTrends');});\n\t\t\t}\n\t\t</script>\t\t\n\t\t</div>\n\t\t\t\t\t<div
-        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTrendsTimestamp\">Nov 27, 2025
-        14:04 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\n\t\t\t</div>\n\t\t</div>\t\t
+        class=\"moduleFooter\">\n\t\t\t<span id=\"ratesTrendsTimestamp\">Jan 01, 2026
+        12:30 UTC</span>\n\t\t</div>\n\t\t</div>\t\t\n\t\t\t</div>\n\t\t</div>\t\t
         <div class=\"grid\">\n\t                <div class=\"grid__cell\" >\t\t\t\n\t\t\t\t\t\t<div
         class=\"module bottomMargin\">\n\t\t\t\n\t\t\t\n\t\t\t\t\t<div class='moduleContent'>\n\t\t\t\n\t\t\t\t\t<div
         id=\"output_rs\" class='rightsideAd'>\n\t\t\t\t\t<script type=\"text/javascript\">\n\t\t\t\t\t\te9AdSlots['output_rs']['mobileAd']
@@ -1327,7 +1306,7 @@ interactions:
         href='https://www.x-rates.com/feedback/' rel='feedback'>Feedback</a></li>\n<li><a
         href='https://www.x-rates.com/faq/' rel='faq'>FAQ</a></li>\n</ul>\n\t\t\t\t\t</nav>\n\t\t\t\t\t<div
         id=\"footerTri\"></div>\n\t\t\t\t\t<div class=\"footer-decor\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div
-        class=\"copyright\">\n\t\t\t&copy; X-Rates 2025\n\t\t</div>        </footer>\n\n
+        class=\"copyright\">\n\t\t\t&copy; X-Rates 2026\n\t\t</div>        </footer>\n\n
         \                   <script type=\"text/javascript\">\n            var utag_data
         = {\n              isGeoEurope : \"\" // geo ip from xe platform\n            }\n
         \           </script>\n            \n            <!-- Loading script asynchronously
@@ -1341,15 +1320,11 @@ interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Date:
-      - Thu, 27 Nov 2025 14:04:27 GMT
+      - Thu, 27 Aug 2026 12:31:54 GMT
       Server:
       - Apache
-      Vary:
-      - Accept-Encoding
-      X-Powered-By:
-      - PHP/7.4.33
-      content-length:
-      - '47207'
+      Transfer-Encoding:
+      - chunked
     status:
       code: 200
       message: OK
@@ -1359,49 +1334,69 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev4+ga3b1a8a72.d20251125
+      - rotki/1.43.3.dev1436+gd4b95eb359.d20260827
     method: GET
-    uri: https://data-api.cryptocompare.com/index/cc/v1/historical/days?limit=1&market=cadli&to_ts=1761762960&instrument=ETH-USD
+    uri: https://api.coingecko.com/api/v3/coins/ethereum/history?date=29-10-2025&localization=false
   response:
     body:
-      string: '{"Data":[{"UNIT":"DAY","TIMESTAMP":1761696000,"TYPE":"267","MARKET":"cadli","INSTRUMENT":"ETH-USD","OPEN":3983.58745399428,"HIGH":4038.57011728226,"LOW":3862.16919591868,"CLOSE":3906.77168760658,"FIRST_MESSAGE_TIMESTAMP":1761696000,"LAST_MESSAGE_TIMESTAMP":1761782399,"FIRST_MESSAGE_VALUE":3983.58712690043,"HIGH_MESSAGE_VALUE":4038.57011728226,"HIGH_MESSAGE_TIMESTAMP":1761717975,"LOW_MESSAGE_VALUE":3862.16919591868,"LOW_MESSAGE_TIMESTAMP":1761763355,"LAST_MESSAGE_VALUE":3906.77168760658,"TOTAL_INDEX_UPDATES":1676581,"VOLUME":4560418.71469957,"QUOTE_VOLUME":18090293961.777,"VOLUME_TOP_TIER":2383575.41603956,"QUOTE_VOLUME_TOP_TIER":9451188160.42825,"VOLUME_DIRECT":438511.9420863,"QUOTE_VOLUME_DIRECT":1736168896.34289,"VOLUME_TOP_TIER_DIRECT":401145.33682684,"QUOTE_VOLUME_TOP_TIER_DIRECT":1587914288.87148}],"Err":{}}'
+      string: '{"id":"ethereum","symbol":"eth","name":"Ethereum","image":{"thumb":"https://coin-images.coingecko.com/coins/images/279/thumb/ethereum.png?1696501628","small":"https://coin-images.coingecko.com/coins/images/279/small/ethereum.png?1696501628"},"market_data":{"current_price":{"usd":3978.812010414271,"aed":14612.187108246415,"ars":5719542.6628517145,"aud":6051.009135934107,"bdt":486374.8581765652,"bhd":1499.7773780175658,"bmd":3978.812010414271,"brl":21317.6829682096,"cad":5548.4533485227,"chf":3183.8334342974695,"clp":3753596.2345882943,"cny":28243.597055925708,"czk":83578.18503172825,"dkk":25612.826448699845,"eur":3429.5290547525615,"gbp":3015.6092624971534,"gel":10842.262728378892,"hkd":30917.955548725662,"huf":1332944.767866209,"idr":65924216.86317305,"ils":12936.09265479935,"inr":351511.54098669376,"jpy":607732.3672432941,"krw":5669845.315414449,"kwd":1221.1491305522752,"lkr":1211340.221006369,"mmk":8350730.647457474,"mxn":73531.76826048443,"myr":16661.275293609764,"ngn":5781213.851131938,"nok":39864.44963375049,"nzd":6904.372799491728,"php":233654.41036717864,"pkr":1123310.716165118,"pln":14548.382878847411,"rub":318300.8029745908,"sar":14921.98139018928,"sek":37443.0759450087,"sgd":5162.210172611735,"thb":128913.50913742237,"try":167089.40665732126,"twd":122056.81842106346,"uah":167314.75065434308,"vnd":104788306.83320004,"zar":68380.15366425642,"xdr":2786.9469362586456,"xag":83.2955540993805,"xau":1.0080718109585598,"btc":0.03525966531929284,"bits":35259.665319292835,"sats":3525966.531929284,"eth":1.0207725519806556,"ltc":40.35454106609759,"bch":7.138079698108401,"bnb":3.5995820828353806,"eos":14065.956279148346,"xrp":1547.240332792013,"xlm":12599.09106864777,"link":218.6018178536101,"dot":1283.8947403573409,"yfi":0.8472743312702768,"sol":20.48349808524913},"market_cap":{"usd":480647742723.29193,"aed":1765178835151.2903,"ars":690931178229506.2,"aud":730972932315.5243,"bdt":58754969344627.78,"bhd":181175840789.86038,"bmd":480647742723.29193,"brl":2575214956610.597,"cad":670263277227.6305,"chf":384612881783.95013,"clp":453441266520572.4,"cny":3411878001721.2886,"czk":10096397083165.326,"dkk":3094076117471.362,"eur":414293360544.8562,"gbp":364291095221.6093,"gel":1309765098920.971,"hkd":3734945381992.7495,"huf":161022157411002.94,"idr":7963765551915520,"ils":1562703570290.3896,"inr":42463234823413.78,"jpy":73415177628600.31,"krw":684927648079669.1,"kwd":147517040662.43372,"lkr":146332106511366.38,"mmk":1008783482427645.4,"mxn":8882771626391.61,"myr":2012712422653.7854,"ngn":698381170176943.5,"nok":4815698173529.322,"nzd":834060818231.5876,"php":28225878635726.996,"pkr":135697981882142.94,"pln":1757471167948.9795,"rub":38451317140972.21,"sar":1802602549047.4685,"sek":4523191818683.436,"sgd":623604397602.7671,"thb":15572986864234.658,"try":20184704864820.62,"twd":14744686128551.87,"uah":20211926830377.496,"vnd":12658618454790784,"zar":8260447193727.714,"xdr":336668269447.30176,"xag":10062254751.40872,"xau":121776912.09637327,"btc":4255427.065856626,"bits":4255427065856.6265,"sats":425542706585662.6,"eth":123311184.7604763,"ltc":4874902111.807655,"bch":862293037.5435196,"bnb":434836076.27943486,"eos":1699193155424.6113,"xrp":186909452233.5789,"xlm":1521993164457.202,"link":26407498024.920776,"dot":155096824688.33475,"yfi":102352283.47720899,"sol":2474443902.346313},"total_volume":{"usd":35671783550.23295,"aed":131004625088.23055,"ars":51278192420638.21,"aud":54249933797.46268,"bdt":4360562554787.108,"bhd":13446157763.208359,"bmd":35671783550.23295,"brl":191122317577.2217,"cad":49744302160.79984,"chf":28544454181.545765,"clp":33652625975978.633,"cny":253216155531.32864,"czk":749314850304.4531,"dkk":229630150606.8324,"eur":30747222487.556202,"gbp":27036251173.041912,"gel":97205610174.38481,"hkd":277192944844.61774,"huf":11950430711298.72,"idr":591039332470718,"ils":115977707908.77715,"inr":3151454145776.699,"jpy":5448585508445.844,"krw":50832634043875.836,"kwd":10948134104.752647,"lkr":10860192956171.227,"mmk":74867939315228.94,"mxn":659244345947.5695,"myr":149375593616.6005,"ngn":51831101498488.5,"nok":357402162997.95715,"nzd":61900710917.96598,"php":2094813610283.508,"pkr":10070970083989.25,"pln":130432592367.21901,"rub":2853705407004.826,"sar":133782065827.23523,"sek":335693492698.1424,"sgd":46281463772.66099,"thb":1155765787027.5474,"try":1498029344491.756,"twd":1094292566763.6476,"uah":1500049651624.907,"vnd":939472835149130.9,"zar":613057876134.5027,"xdr":24986193772.410023,"xag":746780940.831746,"xau":9037803.080287023,"btc":316118.2649573109,"bits":316118264957.3109,"sats":31611826495731.094,"eth":9151670.758247659,"ltc":361796046.25978255,"bch":63995995.1082794,"bnb":32271821.989607174,"eos":126107427670.24501,"xrp":13871683836.050463,"xlm":112956341831.20952,"link":1959860558.8177853,"dot":11510675839.781898,"yfi":7596183.602953085,"sol":183643486.58245352}},"community_data":{"facebook_likes":null,"reddit_average_posts_48h":0.0,"reddit_average_comments_48h":0.0,"reddit_subscribers":null,"reddit_accounts_active_48h":0.0},"developer_data":{"forks":null,"stars":null,"subscribers":null,"total_issues":null,"closed_issues":null,"pull_requests_merged":null,"pull_request_contributors":null,"code_additions_deletions_4_weeks":{"additions":null,"deletions":null},"commit_count_4_weeks":null},"public_interest_stats":{"alexa_rank":null,"bing_matches":null}}'
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type, Authorization
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - 'null'
-      Access-Control-Expose-Headers:
-      - Content-Disposition, AMP-Access-Control-Allow-Source-Origin
+      Age:
+      - '481'
+      CF-RAY:
+      - a31b188eacd40210-CDG
       Cache-Control:
-      - public, max-age=300
+      - max-age=30, public, must-revalidate, s-maxage=1800
       Connection:
       - keep-alive
-      Content-Security-Policy:
-      - frame-ancestors 'none'
       Content-Type:
-      - application/json; charset=UTF-8
+      - application/json; charset=utf-8
       Date:
-      - Thu, 27 Nov 2025 14:04:28 GMT
+      - Thu, 27 Aug 2026 12:31:54 GMT
       Server:
-      - nginx
+      - cloudflare
       Transfer-Encoding:
       - chunked
-      Vary:
-      - Accept-Encoding
-      X-CryptoCompare-Cache-Hit:
-      - 'false'
-      X-CryptoCompare-Server-Id:
-      - cc-api-data-24
+      access-control-allow-headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      access-control-allow-methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - link, per-page, total
+      access-control-request-method:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - HIT
       content-length:
-      - '824'
+      - '5349'
+      etag:
+      - W/"916f9c5c442f04dfd7da1bddb696fc95"
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      vary:
+      - Accept-Encoding, Origin
+      x-content-type-options:
+      - nosniff
+      x-data-source:
+      - '2.0'
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-request-id:
+      - 38938619-c5ad-40ac-bcb6-d4f729dce944
+      x-runtime:
+      - '0.094718'
+      x-xss-protection:
+      - '0'
     status:
       code: 200
       message: OK
@@ -1411,49 +1406,69 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev4+ga3b1a8a72.d20251125
+      - rotki/1.43.3.dev1436+gd4b95eb359.d20260827
     method: GET
-    uri: https://data-api.cryptocompare.com/index/cc/v1/historical/days?limit=1&market=cadli&to_ts=1761762960&instrument=BTC-USD
+    uri: https://api.coingecko.com/api/v3/coins/bitcoin/history?date=29-10-2025&localization=false
   response:
     body:
-      string: '{"Data":[{"UNIT":"DAY","TIMESTAMP":1761696000,"TYPE":"267","MARKET":"cadli","INSTRUMENT":"BTC-USD","OPEN":112964.048665163,"HIGH":113702.901950938,"LOW":109571.846317101,"CLOSE":110108.026746427,"FIRST_MESSAGE_TIMESTAMP":1761696000,"LAST_MESSAGE_TIMESTAMP":1761782399,"FIRST_MESSAGE_VALUE":112964.049110447,"HIGH_MESSAGE_VALUE":113702.901950938,"HIGH_MESSAGE_TIMESTAMP":1761744430,"LOW_MESSAGE_VALUE":109571.846317101,"LOW_MESSAGE_TIMESTAMP":1761763332,"LAST_MESSAGE_VALUE":110108.026746427,"TOTAL_INDEX_UPDATES":1980837,"VOLUME":264332.077204589,"QUOTE_VOLUME":29600006298.3297,"VOLUME_TOP_TIER":142849.690913093,"QUOTE_VOLUME_TOP_TIER":15988035037.6305,"VOLUME_DIRECT":32306.42796013,"QUOTE_VOLUME_DIRECT":3611438260.45842,"VOLUME_TOP_TIER_DIRECT":25603.41124989,"QUOTE_VOLUME_TOP_TIER_DIRECT":2861528225.81406}],"Err":{}}'
+      string: '{"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":{"thumb":"https://coin-images.coingecko.com/coins/images/1/thumb/bitcoin.png?1696501400","small":"https://coin-images.coingecko.com/coins/images/1/small/bitcoin.png?1696501400"},"market_data":{"current_price":{"usd":112893.85203624627,"aed":414602.6716031146,"ars":162284923.5914892,"aud":171689.87332753965,"bdt":13800282.880773341,"bhd":42554.32148039471,"bmd":112893.85203624627,"brl":604862.7933336525,"cad":157430.47666454542,"chf":90337.32171784819,"clp":106503633.9495971,"cny":801377.0086792944,"czk":2371427.257616911,"dkk":726732.1581821885,"eur":97308.62997493845,"gbp":85564.16965375569,"gel":307635.7467987712,"hkd":877258.6113254573,"huf":37820653.25079494,"idr":1870517824.0832667,"ils":367045.5719635856,"inr":9973703.656597968,"jpy":17243651.563738644,"krw":160874823.0455244,"kwd":34648.59081000046,"lkr":34370275.17708942,"mmk":236941616.65367374,"mxn":2086372.6519962817,"myr":472743.00540178135,"ngn":164034767.00866592,"nok":1131104.276019926,"nzd":195903.0080307176,"php":6629653.867175835,"pkr":31872547.245143857,"pln":412792.3057918613,"rub":9031390.188824326,"sar":423392.69981650874,"sek":1062400.8031677834,"sgd":146471.30597812682,"thb":3657760.805974379,"try":4740954.511704053,"twd":3463210.7178664645,"uah":4747348.367907978,"vnd":2973238136.3562675,"zar":1940201.982346127,"xdr":79076.15997723262,"xag":2363.4079557313685,"xau":28.60278635190336,"btc":1,"bits":1000000,"sats":100000000,"eth":28.963154113422682,"ltc":1145.0100120795355,"bch":202.53415118682102,"bnb":102.13367356595208,"eos":399104.0498445528,"xrp":43901.02390802501,"xlm":357483.57026473794,"link":6202.555238856429,"dot":36428.91960430295,"yfi":24.040357457998354,"sol":581.1938327239737},"market_cap":{"usd":2252121103480.7026,"aed":8270914752532.883,"ars":3237424311465620,"aud":3425043791142.281,"bdt":275302044789953.94,"bhd":848916780867.1196,"bmd":2252121103480.7026,"brl":12066416700350.018,"cad":3140582878803.8394,"chf":1802140550641.9485,"clp":2124642549518649.5,"cny":15986681653057.771,"czk":47307637005190.4,"dkk":14497590440041.85,"eur":1941211280902.9856,"gbp":1706920870386.7842,"gel":6137030006984.917,"hkd":17500444852762.328,"huf":754484764203050.2,"idr":37314987398093220,"ils":7322197477086.119,"inr":198965559946304.03,"jpy":343993856948873.7,"krw":3209294195074716.5,"kwd":691205244232.573,"lkr":685653121605857.4,"mmk":4726751771985300,"mxn":41621078513444.8,"myr":9430757120825.443,"ngn":3272331963357462.5,"nok":22564415726056.2,"nzd":3908071969053.511,"php":132255061845576.83,"pkr":635825910603421.5,"pln":8234799738517.466,"rub":180167334811903.1,"sar":8446267153770.994,"sek":21193849142474.25,"sgd":2921958222683.4507,"thb":72968723752774.77,"try":94577370812209.25,"twd":69087641203025.375,"uah":94704921943025.97,"vnd":59313171016714910,"zar":38705117689259.914,"xdr":1577491470569.748,"xag":47147659834.72576,"xau":570597402.7778709,"btc":19941362,"bits":19941362000000,"sats":1994136200000000,"eth":577786384.5168517,"ltc":22841821457.85127,"bch":4040356740.7456603,"bnb":2037466145.9867568,"eos":7961732520659.748,"xrp":875782167269.2164,"xlm":7131444965509.322,"link":123734865069.96349,"dot":726721049358.0432,"yfi":479581442.12312603,"sol":11594244259.379566},"total_volume":{"usd":66364500455.87147,"aed":243723627924.18805,"ars":95398976041765.27,"aud":100927663209.29298,"bdt":8112477898603.287,"bhd":25015501166.336647,"bmd":66364500455.87147,"brl":355567786906.96875,"cad":92545295885.71275,"chf":53104674171.286995,"clp":62608019270444.4,"cny":471088406486.0037,"czk":1394040352778.9517,"dkk":427208530607.0838,"eur":57202748438.93752,"gbp":50298783092.01275,"gel":180843263742.24982,"hkd":515695305467.4178,"huf":22232820606545.348,"idr":1099581409882567.8,"ils":215767250284.64987,"inr":5863028401692.855,"jpy":10136657589602.008,"krw":94570050315185.75,"kwd":20368127928.412884,"lkr":20204520454542.027,"mmk":139285813556783.08,"mxn":1226471382782.3855,"myr":277901345658.96185,"ngn":96427619162381.28,"nok":664918141135.4601,"nzd":115161322173.56691,"php":3897233189892.401,"pkr":18736234418691.07,"pln":242659406794.8777,"rub":5309090685566.741,"sar":248890834294.18265,"sek":624530896186.5316,"sgd":86102962003.95905,"thb":2150209814770.2354,"try":2786963791015.2314,"twd":2035843804770.132,"uah":2790722410863.05,"vnd":1747814075759220,"zar":1140545149443.1404,"xdr":46484815250.81381,"xag":1389326216.8535693,"xau":16814109.8354996,"btc":587849.6273465334,"bits":587849627346.5333,"sats":58784962734653.336,"eth":17025951.543814696,"ltc":673092609.5446954,"bch":119059430.83997048,"bnb":60039143.883151926,"eos":234612783779.8035,"xrp":25807158393.54952,"xlm":210146240330.10886,"link":3646163830.467009,"dot":21414691837.341732,"yfi":14132092.090970634,"sol":341654019.95828927}},"community_data":{"facebook_likes":null,"reddit_average_posts_48h":0.0,"reddit_average_comments_48h":0.0,"reddit_subscribers":null,"reddit_accounts_active_48h":0.0},"developer_data":{"forks":null,"stars":null,"subscribers":null,"total_issues":null,"closed_issues":null,"pull_requests_merged":null,"pull_request_contributors":null,"code_additions_deletions_4_weeks":{"additions":null,"deletions":null},"commit_count_4_weeks":null},"public_interest_stats":{"alexa_rank":null,"bing_matches":null}}'
     headers:
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Content-Type, Authorization
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - 'null'
-      Access-Control-Expose-Headers:
-      - Content-Disposition, AMP-Access-Control-Allow-Source-Origin
+      Age:
+      - '481'
+      CF-RAY:
+      - a31b188f5c0ad10b-CDG
       Cache-Control:
-      - public, max-age=300
+      - max-age=30, public, must-revalidate, s-maxage=1800
       Connection:
       - keep-alive
-      Content-Security-Policy:
-      - frame-ancestors 'none'
       Content-Type:
-      - application/json; charset=UTF-8
+      - application/json; charset=utf-8
       Date:
-      - Thu, 27 Nov 2025 14:04:28 GMT
+      - Thu, 27 Aug 2026 12:31:54 GMT
       Server:
-      - nginx
+      - cloudflare
       Transfer-Encoding:
       - chunked
-      Vary:
-      - Accept-Encoding
-      X-CryptoCompare-Cache-Hit:
-      - 'false'
-      X-CryptoCompare-Server-Id:
-      - cc-api-data-20
+      access-control-allow-headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      access-control-allow-methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - link, per-page, total
+      access-control-request-method:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - HIT
       content-length:
-      - '824'
+      - '5287'
+      etag:
+      - W/"948a07cc2a3c2b9ecc5f3933f115c7e6"
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      vary:
+      - Accept-Encoding, Origin
+      x-content-type-options:
+      - nosniff
+      x-data-source:
+      - '2.0'
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-request-id:
+      - a5e96050-cf01-41b4-8e03-abc09b6036bd
+      x-runtime:
+      - '0.072174'
+      x-xss-protection:
+      - '0'
     status:
       code: 200
       message: OK
