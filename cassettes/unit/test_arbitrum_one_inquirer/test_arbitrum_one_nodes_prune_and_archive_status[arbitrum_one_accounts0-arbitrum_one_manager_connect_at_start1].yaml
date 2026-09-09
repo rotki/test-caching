@@ -213,8 +213,8 @@ interactions:
       code: 200
       message: OK
 - request:
-    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x2EE4bD21803cdb62B1457949450d0753ca84fada",
-      "0x2a"], "id": 3}'
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      "0x1c9c380"], "id": 3}'
     headers:
       Accept:
       - '*/*'
@@ -223,7 +223,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '121'
+      - '126'
       Content-Type:
       - application/json
       User-Agent:
@@ -232,8 +232,7 @@ interactions:
     uri: https://arbitrum.blockpi.network/v1/rpc/public
   response:
     body:
-      string: '{"error":{"code":-32000,"message":"missing trie node 0000000000000000000000000000000000000000000000000000000000000000
-        (path ) \u003cnil\u003e"},"id":3,"jsonrpc":"2.0"}'
+      string: '{"jsonrpc":"2.0","id":3,"result":"0x28e987bed66a1264c8b1"}'
     headers:
       Access-Control-Allow-Credentials:
       - 'true'
@@ -264,7 +263,7 @@ interactions:
       X-Node-Id:
       - '0xe6cb2ac9a106a19ab73a0eaa6b5e9620ee31ab4a'
       content-length:
-      - '167'
+      - '58'
     status:
       code: 200
       message: OK
