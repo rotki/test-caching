@@ -1,0 +1,441 @@
+interactions:
+- request:
+    body: '{"jsonrpc": "2.0", "method": "web3_clientVersion", "params": [], "id":
+      0}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '73'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/7.16.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://rpc.mainnet.chain.robinhood.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":0,"result":"nitro/v3.11.4-rc.3-7d5ac27/linux-arm64/go1.25.14"}
+
+        '
+    headers:
+      CF-RAY:
+      - a3b069686c5e44e9-BCN
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 14 Sep 2026 15:26:44 GMT
+      Server:
+      - cloudflare
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '85'
+      vary:
+      - Origin
+      - accept-encoding
+      x-envoy-upstream-service-time:
+      - '4'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "net_version", "params": [], "id": 1}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '66'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/7.16.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://rpc.mainnet.chain.robinhood.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"4663"}
+
+        '
+    headers:
+      CF-RAY:
+      - a3b06969baf4f76f-MAD
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 14 Sep 2026 15:26:44 GMT
+      Server:
+      - cloudflare
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '41'
+      vary:
+      - Origin
+      - accept-encoding
+      x-envoy-upstream-service-time:
+      - '1'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 2}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '70'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/7.16.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://rpc.mainnet.chain.robinhood.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":2,"result":"0x3bffb25"}
+
+        '
+    headers:
+      CF-RAY:
+      - a3b0696aefc23eb3-BCN
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 14 Sep 2026 15:26:45 GMT
+      Server:
+      - cloudflare
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '46'
+      vary:
+      - Origin
+      - accept-encoding
+      x-envoy-upstream-service-time:
+      - '1'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
+      "0x989680"], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '125'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/7.16.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://rpc.mainnet.chain.robinhood.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":3,"error":{"code":-32000,"message":"metadata
+        is not found, 10000003"}}
+
+        '
+    headers:
+      CF-RAY:
+      - a3b0696c1f57cfe6-MAD
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 14 Sep 2026 15:26:45 GMT
+      Server:
+      - cloudflare
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '93'
+      vary:
+      - Origin
+      - accept-encoding
+      x-envoy-upstream-service-time:
+      - '5'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0xb8e15c89e7299525dd75d5d9eabed7c973f66228f2ba7d4a8ef12b0687a15144"],
+      "id": 4}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/7.16.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://rpc.mainnet.chain.robinhood.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":4,"result":{"blockHash":"0x1540ca5fbdfa22550137802cfeb68cef93add505f3aea7ea76c9fb169a690bfa","blockNumber":"0x989680","from":"0x4f9cd68c962c5d5e43a088d7919f55e27501c37f","gas":"0xcd75","gasPrice":"0x3138190","maxFeePerGas":"0x42c1d80","maxPriorityFeePerGas":"0x0","hash":"0xb8e15c89e7299525dd75d5d9eabed7c973f66228f2ba7d4a8ef12b0687a15144","input":"0x095ea7b30000000000000000000000008e70484544526d0e0ab095165ca57dd77b962069ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff","nonce":"0xc0","to":"0xace1b117044477a91d7687efd847aa5530c1ec4e","transactionIndex":"0x1","value":"0x0","type":"0x2","accessList":[],"chainId":"0x1237","v":"0x0","r":"0x4950eb1b0e655f8f288af0cd075b937e922ab77ab6deab2f0f04aa742aaafd53","s":"0x122b2b1c282c625cbfae39d68ed5f7b3daef3c6a53ef903062095e824dd3a8ea","yParity":"0x0"}}
+
+        '
+    headers:
+      CF-RAY:
+      - a3b0696dcafe9aa8-MAD
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 14 Sep 2026 15:26:45 GMT
+      Server:
+      - cloudflare
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '837'
+      vary:
+      - Origin
+      - accept-encoding
+      x-envoy-upstream-service-time:
+      - '6'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0x1008a3b24835f43ddd312a36062a6b04caf5bd5e6cd6b39adff6752fc0d4c801"],
+      "id": 5}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/7.16.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://rpc.mainnet.chain.robinhood.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":5,"result":{"blockHash":"0xf3d5967020d161b58f4bd93770fceb43c13c1dd6d7399d2c55cf196824e9abcc","blockNumber":"0x25290f5","from":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","gas":"0x56ddd","gasPrice":"0x1439bc0","maxFeePerGas":"0x1cc3480","maxPriorityFeePerGas":"0xf4240","hash":"0x1008a3b24835f43ddd312a36062a6b04caf5bd5e6cd6b39adff6752fc0d4c801","input":"0x1fff991f000000000000000000000000c37b40abdb939635068d3c5f13e7faf686f03b650000000000000000000000005fc5360d0400a0fd4f2af552add042d716f1d168000000000000000000000000000000000000000000000000000000000243a1e000000000000000000000000000000000000000000000000000000000000000a08d82373c62a0652ba88cc9bb2e72c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000500000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000026000000000000000000000000000000000000000000000000000000000000003a000000000000000000000000000000000000000000000000000000000000005600000000000000000000000000000000000000000000000000000000000000044bd01c226000000000000000000000000000000000000000000000000000000006a8331f900000000000000000000000000000000000000000000000000470de4df82000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010438c9c147000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee00000000000000000000000000000000000000000000000000000000000027100000000000000000000000000bd7d308f8e1639fab988df18a8011f41eacad73000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000024d0e30db000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010438c9c1470000000000000000000000000bd7d308f8e1639fab988df18a8011f41eacad7300000000000000000000000000000000000000000000000000000000000027100000000000000000000000000bd7d308f8e1639fab988df18a8011f41eacad73000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000242e1a7d4d000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000184af72634f00000000000000000000000039b38686a19836ac10162c490e4558e120cbbe5f000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000ffffffffffffffc5000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000048271000000000000000000000000000000001000276a4015fc5360d0400a0fd4f2af552add042d716f1d1680000c8000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008434ee90ca000000000000000000000000f5c4f3dc02c3fb9279495a8fef7b0741da9561570000000000000000000000005fc5360d0400a0fd4f2af552add042d716f1d1680000000000000000000000000000000000000000000000000000000002469348000000000000000000000000000000000000000000000000000000000000271000000000000000000000000000000000000000000000000000000000","nonce":"0x0","to":"0x39b38686a19836ac10162c490e4558e120cbbe5f","transactionIndex":"0x7","value":"0x470de4df820000","type":"0x2","accessList":[],"chainId":"0x1237","v":"0x1","r":"0x6ee7a869ba8955a2a800fdebc21eab7fb841ac4783a0c2f1ea89a63773622c07","s":"0x7c90641cc194332e25aac47f089b556d959fe829d67276f5ed4f7edd502ade0b","yParity":"0x1"}}
+
+        '
+    headers:
+      CF-RAY:
+      - a3b0696f099f4834-MAD
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 14 Sep 2026 15:26:47 GMT
+      Server:
+      - cloudflare
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '4247'
+      vary:
+      - Origin
+      - accept-encoding
+      x-envoy-upstream-service-time:
+      - '970'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBlockByNumber", "params": ["0x25290f5",
+      false], "id": 6}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '93'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/7.16.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://rpc.mainnet.chain.robinhood.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":6,"result":{"baseFeePerGas":"0x1345980","difficulty":"0x1","extraData":"0x237864e3551b0f33e135414b94f458821eb181b40cfdb516877cda156318fb53","gasLimit":"0x4000000000000","gasUsed":"0xf8d10","hash":"0xf3d5967020d161b58f4bd93770fceb43c13c1dd6d7399d2c55cf196824e9abcc","l1BlockNumber":"0x1894f01","logsBloom":"0x20000000000004000100001008080000000000001000080030000000000080000020000000800000000404000000000000040000050020000000084000000000000000000000400800020018102048400000000800008030000400000800204000001000020120000000088421080800000000000100400000000050800800005000010000000000000040000000000000080008010000200200000040000001008000008000400000008020000000020000008000000002100000002000000000000402000020400000004000000000008000002000010100000001000020000000800004000000004400000100000000800200101800000000000002100000","miner":"0xa4b000000000000000000073657175656e636572","mixHash":"0x00000000000004ed0000000001894f01000000000000003d0000000000000000","nonce":"0x0000000000023254","number":"0x25290f5","parentHash":"0xf3a238088ee55469278c32ec93881b0256c24ec026dcb42a4063815add3ebac8","receiptsRoot":"0xf5503ef1da83701bf0605ef77f32cc8a17aeeccc1fe099cfddce341fa8d037a9","sendCount":"0x4ed","sendRoot":"0x237864e3551b0f33e135414b94f458821eb181b40cfdb516877cda156318fb53","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0x15e7","stateRoot":"0x1aaf71c2bc42bd7f83ca9c346a73371915c1035e51463f32d0c3b337e4d358a6","timestamp":"0x6a8330d4","transactions":["0xaca3a9c3039cd56bd8efa9545e794910fcf49dccfe7b3f71d841fdfb999cfd8a","0xd491d3790e278a055f82b878c0f25511af243063b8a013017d4845861582362e","0x4a7472a171cedf0709e08b4f5048ab5c4d4ff95b9f781120b509d87746177506","0x0f54380841e0211b9aba84d72d06255da9c4a6a55d0c33bda5245575f1637838","0x21c2e3d91e5ce6a0ef31d4d457d3b86ead70569e0c24c3082c961ad5e738da04","0x828671b4149caab0e2164fe96d6c0f92ad0068e3d1e02291db93a92f31a591e6","0xf15244d8564a165e35a4dbf7fb569d2ac11f4724d6e762193d751fc489e2028b","0x1008a3b24835f43ddd312a36062a6b04caf5bd5e6cd6b39adff6752fc0d4c801","0x0c7f37d10cad2405ccfe8a4216e14dd3ec308f90d8e5aff30d5b603881fe20f0","0xb9fafd1ed9028c030ededbb329c0acdf9d95b27e2baea7eeb2f8377dbc34b3fc","0x36753fcab29f1cf7a947f87afb5ed85ed2d3f15831484d5353441230d9dbf625"],"transactionsRoot":"0x1a10b5e6d035bed0589c7d6861bfb64c9efaabca5216f43943afb711a9e64433","uncles":[]}}
+
+        '
+    headers:
+      CF-RAY:
+      - a3b06979bed11bbb-MAD
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 14 Sep 2026 15:26:48 GMT
+      Server:
+      - cloudflare
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '2374'
+      vary:
+      - Origin
+      - accept-encoding
+      x-envoy-upstream-service-time:
+      - '850'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionReceipt", "params": ["0x1008a3b24835f43ddd312a36062a6b04caf5bd5e6cd6b39adff6752fc0d4c801"],
+      "id": 7}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '148'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/7.16.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://rpc.mainnet.chain.robinhood.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":7,"result":{"blockHash":"0xf3d5967020d161b58f4bd93770fceb43c13c1dd6d7399d2c55cf196824e9abcc","blockNumber":"0x25290f5","contractAddress":null,"cumulativeGasUsed":"0xceb00","effectiveGasPrice":"0x1345980","from":"0xc37b40abdb939635068d3c5f13e7faf686f03b65","gasUsed":"0x2ec2e","gasUsedForL1":"0x126","l1BlockNumber":"0x1894f01","logs":[{"address":"0x0bd7d308f8e1639fab988df18a8011f41eacad73","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x0000000000000000000000000000000000000000000000000000000000000000","0x00000000000000000000000039b38686a19836ac10162c490e4558e120cbbe5f"],"data":"0x00000000000000000000000000000000000000000000000000470de4df820000","blockNumber":"0x25290f5","transactionHash":"0x1008a3b24835f43ddd312a36062a6b04caf5bd5e6cd6b39adff6752fc0d4c801","transactionIndex":"0x7","blockHash":"0xf3d5967020d161b58f4bd93770fceb43c13c1dd6d7399d2c55cf196824e9abcc","blockTimestamp":"0x6a8330d4","logIndex":"0x10","removed":false},{"address":"0x0bd7d308f8e1639fab988df18a8011f41eacad73","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x00000000000000000000000039b38686a19836ac10162c490e4558e120cbbe5f","0x0000000000000000000000000000000000000000000000000000000000000000"],"data":"0x00000000000000000000000000000000000000000000000000470de4df820000","blockNumber":"0x25290f5","transactionHash":"0x1008a3b24835f43ddd312a36062a6b04caf5bd5e6cd6b39adff6752fc0d4c801","transactionIndex":"0x7","blockHash":"0xf3d5967020d161b58f4bd93770fceb43c13c1dd6d7399d2c55cf196824e9abcc","blockTimestamp":"0x6a8330d4","logIndex":"0x11","removed":false},{"address":"0x8366a39cc670b4001a1121b8f6a443a643e40951","topics":["0x40e9cecb9f5f1f1c5b9c97dec2917b7ee92e57ba5563708daca94dd84ad7112f","0x8dae3fd4176dc44ff6d85b90b5e532a5423d632f935ac0005d29daf70adfd447","0x00000000000000000000000039b38686a19836ac10162c490e4558e120cbbe5f"],"data":"0xffffffffffffffffffffffffffffffffffffffffffffffffffb8f21b207e00000000000000000000000000000000000000000000000000000000000002463e8100000000000000000000000000000000000000000002dce38d77203faaad6416000000000000000000000000000000000000000000000000003004e6bc342e72fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffcefb300000000000000000000000000000000000000000000000000000000000000fc","blockNumber":"0x25290f5","transactionHash":"0x1008a3b24835f43ddd312a36062a6b04caf5bd5e6cd6b39adff6752fc0d4c801","transactionIndex":"0x7","blockHash":"0xf3d5967020d161b58f4bd93770fceb43c13c1dd6d7399d2c55cf196824e9abcc","blockTimestamp":"0x6a8330d4","logIndex":"0x12","removed":false},{"address":"0x5fc5360d0400a0fd4f2af552add042d716f1d168","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x0000000000000000000000008366a39cc670b4001a1121b8f6a443a643e40951","0x00000000000000000000000039b38686a19836ac10162c490e4558e120cbbe5f"],"data":"0x0000000000000000000000000000000000000000000000000000000002463e81","blockNumber":"0x25290f5","transactionHash":"0x1008a3b24835f43ddd312a36062a6b04caf5bd5e6cd6b39adff6752fc0d4c801","transactionIndex":"0x7","blockHash":"0xf3d5967020d161b58f4bd93770fceb43c13c1dd6d7399d2c55cf196824e9abcc","blockTimestamp":"0x6a8330d4","logIndex":"0x13","removed":false},{"address":"0x5fc5360d0400a0fd4f2af552add042d716f1d168","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x00000000000000000000000039b38686a19836ac10162c490e4558e120cbbe5f","0x000000000000000000000000c37b40abdb939635068d3c5f13e7faf686f03b65"],"data":"0x0000000000000000000000000000000000000000000000000000000002463e81","blockNumber":"0x25290f5","transactionHash":"0x1008a3b24835f43ddd312a36062a6b04caf5bd5e6cd6b39adff6752fc0d4c801","transactionIndex":"0x7","blockHash":"0xf3d5967020d161b58f4bd93770fceb43c13c1dd6d7399d2c55cf196824e9abcc","blockTimestamp":"0x6a8330d4","logIndex":"0x14","removed":false}],"logsBloom":"0x00000000000000000100000000080000000000001000080010000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000400000000008002000000000000800000020000000000800000000000000020000000000008001000800000000000000000000000050000000000000000000000000000000000000000000080008000000200000000000000000000000000000000000000020000000000000000000000002000000000000000000000402000000000000000000000000000000000000000000000000000020000000000000000000004400000100000000000000000000000000000002000000","status":"0x1","to":"0x39b38686a19836ac10162c490e4558e120cbbe5f","transactionHash":"0x1008a3b24835f43ddd312a36062a6b04caf5bd5e6cd6b39adff6752fc0d4c801","transactionIndex":"0x7","type":"0x2"}}
+
+        '
+    headers:
+      CF-RAY:
+      - a3b06980d8f2b8e3-BCN
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 14 Sep 2026 15:26:48 GMT
+      Server:
+      - cloudflare
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '4569'
+      vary:
+      - Origin
+      - accept-encoding
+      x-envoy-upstream-service-time:
+      - '8'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.1.dev61+g03b3192565
+    method: GET
+    uri: https://api.blockscout.com/4663/api?action=txlistinternal&module=account&sort=asc&txhash=0x1008a3b24835f43ddd312a36062a6b04caf5bd5e6cd6b39adff6752fc0d4c801
+  response:
+    body:
+      string: '{"message":"OK","result":[{"blockNumber":"38965493","callType":"call","contractAddress":"","errCode":"","from":"0x39b38686a19836ac10162c490e4558e120cbbe5f","gas":"306105","gasUsed":"36586","index":"1","input":"0xd0e30db0","isError":"0","timeStamp":"1786982612","to":"0x0bd7d308f8e1639fab988df18a8011f41eacad73","transactionHash":"0x1008a3b24835f43ddd312a36062a6b04caf5bd5e6cd6b39adff6752fc0d4c801","type":"call","value":"20000000000000000"},{"blockNumber":"38965493","callType":"delegatecall","contractAddress":"","errCode":"","from":"0x0bd7d308f8e1639fab988df18a8011f41eacad73","gas":"294336","gasUsed":"29450","index":"2","input":"0xd0e30db0","isError":"0","timeStamp":"1786982612","to":"0xc6b81b429797e0f555440b70cd99e032d7ae947e","transactionHash":"0x1008a3b24835f43ddd312a36062a6b04caf5bd5e6cd6b39adff6752fc0d4c801","type":"call","value":"20000000000000000"},{"blockNumber":"38965493","callType":"call","contractAddress":"","errCode":"","from":"0x0bd7d308f8e1639fab988df18a8011f41eacad73","gas":"248191","gasUsed":"62","index":"7","input":"0x","isError":"0","timeStamp":"1786982612","to":"0x39b38686a19836ac10162c490e4558e120cbbe5f","transactionHash":"0x1008a3b24835f43ddd312a36062a6b04caf5bd5e6cd6b39adff6752fc0d4c801","type":"call","value":"20000000000000000"},{"blockNumber":"38965493","callType":"call","contractAddress":"","errCode":"","from":"0x39b38686a19836ac10162c490e4558e120cbbe5f","gas":"149108","gasUsed":"1273","index":"15","input":"0x11da60b4","isError":"0","timeStamp":"1786982612","to":"0x8366a39cc670b4001a1121b8f6a443a643e40951","transactionHash":"0x1008a3b24835f43ddd312a36062a6b04caf5bd5e6cd6b39adff6752fc0d4c801","type":"call","value":"20000000000000000"}],"status":"1"}'
+    headers:
+      CF-RAY:
+      - a3b069822a94f778-MAD
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 14 Sep 2026 15:26:48 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ETiKLLpge9k7eypFQQLZJHzSJbnF3EieKon%2FK8j7pToF%2BNPi7e6CyXJmqIuBUzvOeSLGRn1wJNIo0zCg1SrqNiBUVUZz7eboGFMHADhXwCAlg7MnoIPlyD1nwsjoD%2FLDsuoUS8PQteg574j6x9WhGQ%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1697'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '84700'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '242'
+      x-request-id:
+      - d2d82347988bb608d9d4b3651598d7cd
+    status:
+      code: 200
+      message: OK
+version: 1
