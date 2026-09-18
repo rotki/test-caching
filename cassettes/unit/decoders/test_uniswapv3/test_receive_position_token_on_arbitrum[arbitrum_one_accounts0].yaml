@@ -333,4 +333,69 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"id": 0, "jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
+      "data": "0x99fbab8800000000000000000000000000000000000000000000000000000000002d8d9b"},
+      "0xd249afe"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '214'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - rotki/1.44.1.dev322+gfa8ecf3392
+    method: POST
+    uri: https://api.blockscout.com/42161/json-rpc
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008b0e6f19ee57089f7649a455d89d7bc6314d04e8000000000000000000000000ff970a61a04b1ca14834a43f5de4533ebddb5cc80000000000000000000000000000000000000000000000000000000000002710fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc8240fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc894800000000000000000000000000000000000000000000000000005e26ed37f8cd0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","id":
+        0}
+
+        '
+    headers:
+      CF-RAY:
+      - a3c8199bdd50638d-MAD
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Sep 2026 12:26:34 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=7wRkzt14oqDBMYVNQXoUqJwJxLZ%2F9HdcaaMExanhQsoHbG%2BSPg9GEgXDD8wxRUBJHtLdsjTR0q3d9urPyfPrVLEedpNb5ekwFDA9mlc5CPKWYZD510Zm2jkEooysKG4gMGZhww%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '809'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '84760'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '762'
+      x-request-id:
+      - 09d5245ed2b1437753a3e2880c12b442
+    status:
+      code: 200
+      message: OK
 version: 1

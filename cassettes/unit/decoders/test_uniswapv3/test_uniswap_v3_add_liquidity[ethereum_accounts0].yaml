@@ -82,8 +82,6 @@ interactions:
       - Tue, 29 Apr 2025 13:28:35 GMT
       Server:
       - nginx
-      Transfer-Encoding:
-      - chunked
       Vary:
       - Accept-Encoding
       X-Frame-Options:
@@ -284,6 +282,71 @@ interactions:
       - '807'
       svid:
       - '15'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"id": 0, "jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
+      "data": "0x99fbab880000000000000000000000000000000000000000000000000000000000061fcd"},
+      "0xf8b05e"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '213'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - rotki/1.44.1.dev322+gfa8ecf3392
+    method: POST
+    uri: https://api.blockscout.com/1/json-rpc
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006b175474e89094c44da98b954eedeac495271d0f000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb480000000000000000000000000000000000000000000000000000000000000064fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffbc891fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffbc8a50000000000000000000000000000000000000000000000015aea6e37897e087c000000000000000000000000000000002d067459917b3f3c02811b6dcb3eea040000000000000000000000000000000000000000003387cc0500b43d8b6c783b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","id":
+        0}
+
+        '
+    headers:
+      CF-RAY:
+      - a3c8196a9dcdd929-MAD
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Sep 2026 12:26:26 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=GhmN8f1TIgYgJmwqPfianUf4zRu710jb4evnPJ%2BQlL3eS1dz0hygYusE%2BijvKmPxeGATCBXIKM39wsIDkj7IEsAmVTtGfTnV7VFNWbiT2bqmm%2BWRaAbywksw4oIal9hA%2B6clug%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '809'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '84940'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '639'
+      x-request-id:
+      - 8edd865575dd1cf58e28e1d4f32e2be2
     status:
       code: 200
       message: OK

@@ -82,8 +82,6 @@ interactions:
       - Thu, 28 Aug 2025 15:31:31 GMT
       Server:
       - nginx
-      Transfer-Encoding:
-      - chunked
       Vary:
       - Accept-Encoding
       X-Frame-Options:
@@ -332,6 +330,232 @@ interactions:
       - '743'
       svid:
       - poly1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"id": 0, "jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0x8eF88E4c7CfbbaC1C163f7eddd4B578792201de6",
+      "data": "0x99fbab880000000000000000000000000000000000000000000000000000000000029862"},
+      "0x483f6c9"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '214'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - rotki/1.44.1.dev322+gfa8ecf3392
+    method: POST
+    uri: https://api.blockscout.com/137/json-rpc
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","error": {"code":-32000,"message":"state 0x1dbc24bf9c42a25997e1e67bda616bc9963edbbc87a37075ce516da56a846e76
+        is not available"},"id": 0}
+
+        '
+    headers:
+      CF-RAY:
+      - a3c8163e8f01031c-MAD
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Sep 2026 12:24:16 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ovLE71SuEbTdVOlTdwWiAAi%2FTWmyARkZqyrfQkMF2Og6U9qiWdHvVq2vjvarfXujnw1J2bs3yl7ACjGthFzn9WzSQWn4J8IRQC20UPZsW1lNiGqXiPdYKuXPRU0iHBLVQ7oyLg%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '153'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '85620'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '508'
+      x-request-id:
+      - 97c4c830968830a9c1d2fd8bb6fe359c
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.1.dev322+gfa8ecf3392
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=137&data=0x0dfe1681&module=proxy&to=0xE4Fd591b652CC3e566f1fA2f9891b58633A04c54
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000003c499c542cef5e3811e1192ce70d8cc03d5c3359"}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Sep 2026 12:24:17 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '4'
+      content-length:
+      - '103'
+      svid:
+      - poly1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.1.dev322+gfa8ecf3392
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=137&data=0xd21220a7&module=proxy&to=0xE4Fd591b652CC3e566f1fA2f9891b58633A04c54
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000047c8017f1e8998455493175f308b8eee59dd18c1"}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Sep 2026 12:24:17 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '4'
+      content-length:
+      - '103'
+      svid:
+      - poly1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"id": 0, "jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0x8eF88E4c7CfbbaC1C163f7eddd4B578792201de6",
+      "data": "0x99fbab880000000000000000000000000000000000000000000000000000000000029862"},
+      "0x483f6c8"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '214'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - rotki/1.44.1.dev322+gfa8ecf3392
+    method: POST
+    uri: https://api.blockscout.com/137/json-rpc
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","error": {"code":-32000,"message":"state 0x8b30e65315aea553f4dc90b2e6a6e87324b497b00c4fb938f28d8bf5a841a9a8
+        is not available"},"id": 0}
+
+        '
+    headers:
+      CF-RAY:
+      - a3c817f86ff6f778-MAD
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Sep 2026 12:25:27 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Prh4F3YLJN0dm3vk%2F2s1iwehMP%2F12MTHifUkoSEXWvPhQmI%2FuXDC6objQLk721l%2BiVrIq2WL1NEXdPfpUKgnru%2BjfA5CBNWtOsZ3Ly%2FDTwRxOjqBObDS%2ByMiD4wVVmH7RKnFUQ%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '153'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '85500'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '868'
+      x-request-id:
+      - dd4e4b3da98329235f95d74c83e48c13
     status:
       code: 200
       message: OK
