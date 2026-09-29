@@ -285,4 +285,51 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.1.dev105+gfcd9c5de18.d20260925
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=10&data=0xbce38bd70000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000c36442b4a4522e871399cd717abdd847ab11fe88000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000246352211e000000000000000000000000000000000000000000000000000000000008673500000000000000000000000000000000000000000000000000000000&module=proxy&to=0x2DC0E2aa608532Da689e89e237dF582B783E552C
+  response:
+    body:
+      string: '{"status":"0","message":"NOTOK","result":"Free API access is not supported
+        for this chain. Please upgrade your api plan for full chain coverage. https://etherscan.io/apis"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 28 Sep 2026 12:28:32 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
+      content-length:
+      - '172'
+      svid:
+      - op1
+    status:
+      code: 200
+      message: OK
 version: 1

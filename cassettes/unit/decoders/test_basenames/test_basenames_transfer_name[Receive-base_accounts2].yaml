@@ -261,8 +261,6 @@ interactions:
       - __cf_bm=Icyo9Pluz9ZnZlPJOMdc_6FjPxN8CHBCPYTqblxyPXk-1745930862-1.0.1.1-lINmvM.AlpRpTeA1_aPGjxNW97Axvn.5n_WKCwgyZma.EFkZMsm7.gtCcYx6czxmf5s7x8LknniMj9PGJh8pOUzS244icolGwbWFkuV4TQY;
         path=/; expires=Tue, 29-Apr-25 13:17:42 GMT; domain=.base.org; HttpOnly; Secure;
         SameSite=None
-      Transfer-Encoding:
-      - chunked
       cf-cache-status:
       - DYNAMIC
       content-length:
@@ -311,6 +309,51 @@ interactions:
       - SAMEORIGIN
       x-xss-protection:
       - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.1.dev105+gfcd9c5de18.d20260925
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=8453&data=0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000002000000000000000000000000003c4738ee98ae44591e1a4a4f3cab6641d95dd9a000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000246352211ef88f2bf78dd2c89d71b9c4d48b24346053b177919fc9fc91f6773ed6010e361300000000000000000000000000000000000000000000000000000000&module=proxy&to=0xeDF6D2a16e8081F777eB623EeB4411466556aF3d
+  response:
+    body:
+      string: '{"status":"0","message":"NOTOK","result":"Free API access is not supported
+        for this chain. Please upgrade your api plan for full chain coverage. https://etherscan.io/apis"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '172'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 28 Sep 2026 12:28:19 GMT
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
+      svid:
+      - base2new
     status:
       code: 200
       message: OK
