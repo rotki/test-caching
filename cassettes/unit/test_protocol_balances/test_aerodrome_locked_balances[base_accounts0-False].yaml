@@ -419,4 +419,58 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.37.2.dev397+g46ec95aab.d20250228
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=8453&data=0xbce38bd70000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000ebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000246352211e0000000000000000000000000000000000000000000000000000000000011ba600000000000000000000000000000000000000000000000000000000&module=proxy&to=0xeDF6D2a16e8081F777eB623EeB4411466556aF3d
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000020000000000000000000000000d10c1617e7aff13759ad45aa373e89d5251b37cc"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-RAY:
+      - 91bb14ac99fb73fe-JNB
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 05 Mar 2025 16:44:55 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=DQ%2BcDfSYDcAP2%2F6UGwfYykQDHtrixzLx5tVIcBgpIKr6GPnXY%2BL5zbgsK8pZ%2FiPwsUPE5iy3hrRewECfJ2kbc361o%2F4nPzJdnY2YLy5ONBxSR%2BphM5KESsk6xwWSFWQzOVFBFnO9B%2B48Uk0YC%2Fc%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Frame-Options:
+      - SAMEORIGIN
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=100170&min_rtt=99897&rtt_var=38008&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2842&recv_bytes=1752&delivery_rate=39614&cwnd=252&unsent_bytes=0&cid=e7948c1401450bca&ts=668&x=0"
+      svid:
+      - baseelastic1
+    status:
+      code: 200
+      message: OK
 version: 1

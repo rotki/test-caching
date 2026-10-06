@@ -891,8 +891,6 @@ interactions:
       - Thu, 03 Sep 2026 12:39:22 GMT
       Server:
       - cloudflare
-      Transfer-Encoding:
-      - chunked
       X-Content-Type-Options:
       - nosniff
       access-control-max-age:
@@ -912,4 +910,60 @@ interactions:
     status:
       code: 403
       message: Forbidden
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696",
+      "data": "0xbce38bd70000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000a4215daaf3745e14e96e169e0e7706c479ce04f2000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000246352211e000000000000000000000000000000000000000000000000000000000000187800000000000000000000000000000000000000000000000000000000"},
+      "latest"], "id": 10}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '724'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/7.16.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000200000000000000000000000003c9094fc254371998fe115a6aa38be9955b2f694","id":10}
+
+        '
+    headers:
+      CF-RAY:
+      - a463338dc8386e11-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 06 Oct 2026 08:12:29 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '488'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '3'
+    status:
+      code: 200
+      message: OK
 version: 1
