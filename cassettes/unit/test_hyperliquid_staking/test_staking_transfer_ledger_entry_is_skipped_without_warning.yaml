@@ -1,0 +1,53 @@
+interactions:
+- request:
+    body: '{"type": "userNonFundingLedgerUpdates", "user": "0x000000000056f99d36B6F2e0c51FD41496BbacB8",
+      "startTime": 1791430048000, "endTime": 1791430049999}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.33.1
+    method: POST
+    uri: https://api.hyperliquid.xyz/info
+  response:
+    body:
+      string: '[{"time":1791430048033,"hash":"0x0000000000000000000000000000000000000000000000000000000000000000","delta":{"type":"cStakingTransfer","token":"HYPE","amount":"100.0","isDeposit":false}}]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 09 Oct 2026 14:58:54 GMT
+      Server:
+      - nginx/1.22.1
+      Via:
+      - 1.1 6593d4255052cf75552b6c16639a4c8e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - KMrAZcFGsblKgKYJGiNvSEFifEd5yMrmEvZBL2QTi7Tb-v_9-_r41g==
+      X-Amz-Cf-Pop:
+      - MAD53-P7
+      X-Cache:
+      - Miss from cloudfront
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      vary:
+      - origin
+      - access-control-request-method
+      - access-control-request-headers
+    status:
+      code: 200
+      message: OK
+version: 1
