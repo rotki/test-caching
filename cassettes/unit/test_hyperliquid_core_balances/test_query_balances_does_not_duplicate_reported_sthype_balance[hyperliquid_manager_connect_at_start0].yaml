@@ -916,4 +916,54 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: '{"type": "delegatorSummary", "user": "0xD2D4867b8886C0cfC3DE5CcD5203EC66C6183764"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '82'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.33.1
+    method: POST
+    uri: https://api.hyperliquid.xyz/info
+  response:
+    body:
+      string: '{"delegated":"0.00000018","undelegated":"0.0","totalPendingWithdrawal":"0.0","nPendingWithdrawals":0}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '101'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 08 Oct 2026 11:48:24 GMT
+      Server:
+      - nginx/1.22.1
+      Via:
+      - 1.1 6e148b0647c9c95500e00bf8e5a6b66c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - GB6qlMQIHhcTp0U5rZTspFyFbZ8izoQUaOmKzygtnfWRrSipx2PbQg==
+      X-Amz-Cf-Pop:
+      - MAD53-P7
+      X-Cache:
+      - Miss from cloudfront
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      vary:
+      - origin
+      - access-control-request-method
+      - access-control-request-headers
+    status:
+      code: 200
+      message: OK
 version: 1
