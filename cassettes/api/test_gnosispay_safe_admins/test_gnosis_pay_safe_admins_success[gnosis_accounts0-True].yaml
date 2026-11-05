@@ -5,16 +5,16 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.40.2.dev13+gd1c5c2d40.d20251009
+      - rotki/1.44.2.dev926+g6b718011e7
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=100&data=0x9266d9d000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000002000000000000000000000000acfeb570426e260eb930971fe528c8014f1002a0000000000000000000000000d501c55f42214fcc22d7bfad845bd069d528bda1&module=proxy&to=0x5De882ac4c220f69ADC18Ab242e5F0b834e302A2
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":"0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000200000000000000000000000037f18a82493cdf80675ff01e58c1a1b39637cf50000000000000000000000000c37b40abdb939635068d3c5f13e7faf686f03b650000000000000000000000000000000000000000000000000000000000000000","id":1}'
+      string: '{"jsonrpc":"2.0","result":"0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","id":1}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
@@ -29,7 +29,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 09 Oct 2025 16:28:25 GMT
+      - Thu, 05 Nov 2026 07:18:43 GMT
       Server:
       - nginx
       Vary:
@@ -39,7 +39,7 @@ interactions:
       X-Nginx-Id:
       - '5'
       content-length:
-      - '550'
+      - '422'
       svid:
       - gnosis1
     status:
@@ -51,16 +51,16 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.40.2.dev13+gd1c5c2d40.d20251009
+      - rotki/1.44.2.dev926+g6b718011e7
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=100&data=0x9266d9d000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000002000000000000000000000000acfeb570426e260eb930971fe528c8014f1002a0000000000000000000000000d501c55f42214fcc22d7bfad845bd069d528bda1&module=proxy&to=0x5De882ac4c220f69ADC18Ab242e5F0b834e302A2
+    uri: https://api.etherscan.io/v2/api?action=eth_getStorageAt&address=0xaCFEb570426e260Eb930971FE528c8014f1002a0&chainid=100&module=proxy&position=0xe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e0&tag=latest
   response:
     body:
-      string: '{"jsonrpc":"2.0","result":"0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000200000000000000000000000037f18a82493cdf80675ff01e58c1a1b39637cf50000000000000000000000000c37b40abdb939635068d3c5f13e7faf686f03b650000000000000000000000000000000000000000000000000000000000000000","id":1}'
+      string: '{"jsonrpc":"2.0","result":"0x0000000000000000000000000000000000000000000000000000000000000002","id":1}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
@@ -75,7 +75,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 09 Oct 2025 16:28:25 GMT
+      - Thu, 05 Nov 2026 07:18:43 GMT
       Server:
       - nginx
       Vary:
@@ -85,7 +85,375 @@ interactions:
       X-Nginx-Id:
       - '5'
       content-length:
-      - '550'
+      - '102'
+      svid:
+      - gnosis1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.2.dev926+g6b718011e7
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_getStorageAt&address=0xaCFEb570426e260Eb930971FE528c8014f1002a0&chainid=100&module=proxy&position=0xcc69885fda6bcc1a4ace058b4a62bf5e179ea78fd58a1ccd71c22cc9b688792f&tag=latest
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"0x000000000000000000000000a2c6360f5ca83993da110a09c7b3db31a68c0b38","id":1}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 05 Nov 2026 07:18:44 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
+      content-length:
+      - '102'
+      svid:
+      - gnosis1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.2.dev926+g6b718011e7
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=100&data=0xcc2f845200000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000040&module=proxy&to=0xa2c6360F5cA83993Da110A09c7B3Db31A68c0B38
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000300000000000000000000000034f40d7bdbfc99d27b3a596f0d1f3891db415b0300000000000000000000000037f18a82493cdf80675ff01e58c1a1b39637cf50000000000000000000000000c37b40abdb939635068d3c5f13e7faf686f03b65","id":1}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 05 Nov 2026 07:18:44 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '4'
+      content-length:
+      - '422'
+      svid:
+      - gnosis1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.2.dev926+g6b718011e7
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_getStorageAt&address=0xD501c55f42214fcC22D7Bfad845bD069D528bda1&chainid=100&module=proxy&position=0xe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e0&tag=latest
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"0x0000000000000000000000000000000000000000000000000000000000000000","id":1}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 05 Nov 2026 07:18:44 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '4'
+      content-length:
+      - '102'
+      svid:
+      - gnosis1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.2.dev926+g6b718011e7
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=100&data=0x9266d9d000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000002000000000000000000000000acfeb570426e260eb930971fe528c8014f1002a0000000000000000000000000d501c55f42214fcc22d7bfad845bd069d528bda1&module=proxy&to=0x5De882ac4c220f69ADC18Ab242e5F0b834e302A2
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","id":1}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 05 Nov 2026 07:18:45 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '2'
+      content-length:
+      - '422'
+      svid:
+      - gnosis1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.2.dev926+g6b718011e7
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_getStorageAt&address=0xaCFEb570426e260Eb930971FE528c8014f1002a0&chainid=100&module=proxy&position=0xe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e0&tag=latest
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"0x0000000000000000000000000000000000000000000000000000000000000002","id":1}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 05 Nov 2026 07:18:46 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '5'
+      content-length:
+      - '102'
+      svid:
+      - gnosis1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.2.dev926+g6b718011e7
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_getStorageAt&address=0xaCFEb570426e260Eb930971FE528c8014f1002a0&chainid=100&module=proxy&position=0xcc69885fda6bcc1a4ace058b4a62bf5e179ea78fd58a1ccd71c22cc9b688792f&tag=latest
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"0x000000000000000000000000a2c6360f5ca83993da110a09c7b3db31a68c0b38","id":1}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 05 Nov 2026 07:18:46 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
+      content-length:
+      - '102'
+      svid:
+      - gnosis1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.2.dev926+g6b718011e7
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=100&data=0xcc2f845200000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000040&module=proxy&to=0xa2c6360F5cA83993Da110A09c7B3Db31A68c0B38
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000300000000000000000000000034f40d7bdbfc99d27b3a596f0d1f3891db415b0300000000000000000000000037f18a82493cdf80675ff01e58c1a1b39637cf50000000000000000000000000c37b40abdb939635068d3c5f13e7faf686f03b65","id":1}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 05 Nov 2026 07:18:47 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '4'
+      content-length:
+      - '422'
+      svid:
+      - gnosis1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.2.dev926+g6b718011e7
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_getStorageAt&address=0xD501c55f42214fcC22D7Bfad845bD069D528bda1&chainid=100&module=proxy&position=0xe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e0&tag=latest
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"0x0000000000000000000000000000000000000000000000000000000000000000","id":1}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 05 Nov 2026 07:18:47 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '4'
+      content-length:
+      - '102'
       svid:
       - gnosis1
     status:

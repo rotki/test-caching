@@ -5,11 +5,11 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev927+ge84fe3f5bf.d20260221
+      - rotki/1.44.2.dev926+g6b718011e7
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getTransactionByHash&chainid=1&module=proxy&txhash=0xb834f10346b44fea939462547e7df990430ddccf92152fa452680afe7a636748
   response:
@@ -31,7 +31,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 26 Feb 2026 10:58:22 GMT
+      - Wed, 04 Nov 2026 21:47:54 GMT
       Server:
       - nginx
       Vary:
@@ -39,11 +39,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '5'
+      - '2'
       content-length:
       - '3558'
       svid:
-      - '8'
+      - '2'
     status:
       code: 200
       message: OK
@@ -53,11 +53,11 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev927+ge84fe3f5bf.d20260221
+      - rotki/1.44.2.dev926+g6b718011e7
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getBlockByNumber&boolean=true&chainid=1&module=proxy&tag=0x17264c4
   response:
@@ -79,7 +79,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 26 Feb 2026 10:58:22 GMT
+      - Wed, 04 Nov 2026 21:47:54 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -89,11 +89,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '5'
+      - '2'
       content-length:
       - '410164'
       svid:
-      - '8'
+      - '2'
     status:
       code: 200
       message: OK
@@ -103,11 +103,11 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev927+ge84fe3f5bf.d20260221
+      - rotki/1.44.2.dev926+g6b718011e7
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0xb834f10346b44fea939462547e7df990430ddccf92152fa452680afe7a636748
   response:
@@ -129,7 +129,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 26 Feb 2026 10:58:23 GMT
+      - Wed, 04 Nov 2026 21:47:55 GMT
       Server:
       - nginx
       Vary:
@@ -137,11 +137,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '4'
+      - '5'
       content-length:
       - '12115'
       svid:
-      - '3'
+      - '2'
     status:
       code: 200
       message: OK
@@ -151,16 +151,16 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev927+ge84fe3f5bf.d20260221
+      - rotki/1.44.2.dev926+g6b718011e7
     method: GET
-    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=1&module=account&sort=asc&txhash=0xb834f10346b44fea939462547e7df990430ddccf92152fa452680afe7a636748
+    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=1&module=account&offset=1000&page=1&sort=asc&txhash=0xb834f10346b44fea939462547e7df990430ddccf92152fa452680afe7a636748
   response:
     body:
-      string: '{"status":"1","message":"OK","result":[{"blockNumber":"24274116","timeStamp":"1768889483","from":"0xb5d235c27bd7741e2467ffb0efd49877f6beda13","to":"0xd01607c3c5ecaba394d8be377a08590149325722","value":"6000000000000000000","contractAddress":"","input":"","type":"call","gas":"404694","gasUsed":"160850","isError":"0","errCode":""},{"blockNumber":"24274116","timeStamp":"1768889483","from":"0xd01607c3c5ecaba394d8be377a08590149325722","to":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2","value":"6000000000000000000","contractAddress":"","input":"","type":"call","gas":"361500","gasUsed":"23974","isError":"0","errCode":""}]}'
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"24274116","transactionIndex":"280","timeStamp":"1768889483","from":"0xb5d235c27bd7741e2467ffb0efd49877f6beda13","to":"0xd01607c3c5ecaba394d8be377a08590149325722","value":"6000000000000000000","contractAddress":"","input":"","type":"call","gas":"404694","gasUsed":"160850","isError":"0","errCode":""},{"blockNumber":"24274116","transactionIndex":"280","timeStamp":"1768889483","from":"0xd01607c3c5ecaba394d8be377a08590149325722","to":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2","value":"6000000000000000000","contractAddress":"","input":"","type":"call","gas":"361500","gasUsed":"23974","isError":"0","errCode":""}]}'
     headers:
       Access-Control-Allow-Headers:
       - Content-Type
@@ -175,7 +175,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 26 Feb 2026 10:58:24 GMT
+      - Wed, 04 Nov 2026 21:47:55 GMT
       Server:
       - nginx
       Vary:
@@ -183,11 +183,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '5'
+      - '3'
       content-length:
-      - '621'
+      - '671'
       svid:
-      - '8'
+      - '2'
     status:
       code: 200
       message: OK
@@ -197,11 +197,11 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev927+ge84fe3f5bf.d20260221
+      - rotki/1.44.2.dev926+g6b718011e7
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=1&data=0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001600000000000000000000000009396dcbf78fc526bb003665337c5e73b699571ef00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004313ce567000000000000000000000000000000000000000000000000000000000000000000000000000000009396dcbf78fc526bb003665337c5e73b699571ef0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000495d89b41000000000000000000000000000000000000000000000000000000000000000000000000000000009396dcbf78fc526bb003665337c5e73b699571ef0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000406fdde0300000000000000000000000000000000000000000000000000000000&module=proxy&to=0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696
   response:
@@ -223,7 +223,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 26 Feb 2026 10:58:25 GMT
+      - Wed, 04 Nov 2026 21:47:56 GMT
       Server:
       - nginx
       Vary:
@@ -235,7 +235,7 @@ interactions:
       content-length:
       - '1383'
       svid:
-      - '3'
+      - '2'
     status:
       code: 200
       message: OK
@@ -245,11 +245,59 @@ interactions:
       Accept:
       - '*/*'
       Accept-Encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       Connection:
       - keep-alive
       User-Agent:
-      - rotki/1.41.2.dev927+ge84fe3f5bf.d20260221
+      - rotki/1.44.2.dev926+g6b718011e7
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_getStorageAt&address=0x9396DCbf78fc526bb003665337C5E73b699571EF&chainid=1&module=proxy&position=0xa3f0ad74e5423aebfd80d3ef4346578335a9a72aeaee59ff6cb3582b35133d50&tag=latest
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"0x0000000000000000000000000000000000000000000000000000000000000000"}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 04 Nov 2026 21:47:56 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '4'
+      content-length:
+      - '103'
+      svid:
+      - '2'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.2.dev926+g6b718011e7
     method: GET
     uri: https://api.etherscan.io/v2/api?action=eth_call&chainid=1&data=0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000160000000000000000000000000ea51d7853eefb32b6ee06b1c12e6dcca88be0ffe00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004313ce56700000000000000000000000000000000000000000000000000000000000000000000000000000000ea51d7853eefb32b6ee06b1c12e6dcca88be0ffe0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000495d89b4100000000000000000000000000000000000000000000000000000000000000000000000000000000ea51d7853eefb32b6ee06b1c12e6dcca88be0ffe0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000406fdde0300000000000000000000000000000000000000000000000000000000&module=proxy&to=0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696
   response:
@@ -271,7 +319,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 26 Feb 2026 10:58:25 GMT
+      - Wed, 04 Nov 2026 21:47:57 GMT
       Server:
       - nginx
       Vary:
@@ -279,11 +327,11 @@ interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Nginx-Id:
-      - '3'
+      - '2'
       content-length:
       - '1383'
       svid:
-      - '3'
+      - '2'
     status:
       code: 200
       message: OK
