@@ -1,0 +1,192 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.4.dev1232+ge1bed6f63d
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionByHash&chainid=1&module=proxy&txhash=0xf0cff2add92ff45414fbca009324b6d426a639250518060f7b76a20d6f78ead8
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0x5085f48e79fdb3fb015d88833b83ac573286bf9295e874aca3d0c068da90206b","blockNumber":"0x1538583","blockTimestamp":"0x67f9fe8f","from":"0x84378aaeaffe1557d520f5347613715acea4a729","gas":"0x47381","gasPrice":"0x1dcd6500","maxFeePerGas":"0x1dcd6500","maxPriorityFeePerGas":"0x2faf080","hash":"0xf0cff2add92ff45414fbca009324b6d426a639250518060f7b76a20d6f78ead8","input":"0x032d227600000000000000000000000000000000000000000000000000000000000014b18000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000084378aaeaffe1557d520f5347613715acea4a729","nonce":"0xa4","to":"0xad439b9d61b25af1ca4cd211e3ecb9afbaaed84a","transactionIndex":"0x77","value":"0x119eee0326d7f69b1b","type":"0x2","accessList":[],"chainId":"0x1","v":"0x1","r":"0x287988c67e76174f933df2e3d1ec6132b7ebf5365464db4d918d99d0d7d1b5e","s":"0x384eb8535fadcd339ecba6f1cc5ab3e9de25d54e4cec5e81238c31a99443bd81","yParity":"0x1"}}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 16 Nov 2026 16:51:34 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
+      content-length:
+      - '1019'
+      svid:
+      - '6'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.4.dev1232+ge1bed6f63d
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_getBlockByNumber&boolean=false&chainid=1&module=proxy&tag=0x1538583
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":{"baseFeePerGas":"0x1b3b396e","blobGasUsed":"0x80000","difficulty":"0x0","excessBlobGas":"0x3c80000","extraData":"0x546974616e2028746974616e6275696c6465722e78797a29","gasLimit":"0x223b36f","gasUsed":"0xd84617","hash":"0x5085f48e79fdb3fb015d88833b83ac573286bf9295e874aca3d0c068da90206b","logsBloom":"0x9463d1a6d071881933818b47a2aaa20789e501f1de312d50b7810812a0059403900c3194e88d96465c3b5bcb0c360134f21528f48c44e88313910ac1012e60820634016a20636a6cac42c6380051006890a48c1111768e264026e625f3158103446e08148e610f2eda4a52002c00a9dc9a323c20875fa6284614441c459d524806210a5f970202616c450f093961b7561410158189151e78a46f03742c3d429a47c4d91aa186e89884f540c4fe2f5ec1a4e90255ab8a02591b1843b6909e23516aee388302c30d70c5e1283872d308a1204c0246422e04100aa10282a4847eee2076a6660423309000c5a6a42bd980d367ea420ea00206c0a101f102c264d4cb","miner":"0x4838b106fce9647bdf1e7877bf73ce8b0bad5f97","mixHash":"0xf1893d3362ca0afa12c3a0ab2e52cf3f38b218a224cc9decb70512b116ad7a8e","nonce":"0x0000000000000000","number":"0x1538583","parentBeaconBlockRoot":"0x28310dcd7d5f22cdcdacbe62e5529e11dd67261bb6b2e54d16c3ceeade8d137f","parentHash":"0xe09fc36c892dc890fc5e6df8d68495221d8b1928b3030b049fb675e86b04793c","receiptsRoot":"0xb3d477b21d75f25bdb8899db9411df1d59f3778c84fda6a31c549fbb2c82b8b2","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0xc57f","stateRoot":"0xe02d0e933bffcfd3d5a02a3bf7acb5e338702a1b1ce466f5d7265610531787b5","timestamp":"0x67f9fe8f","transactions":["0xfe5bd5ed9c38c9e50c5e0fb08382515dfad773bb524dcfc3f190cabd4e632d9b","0xf2b5a10fbb1b31853747dd0f69514bb0e6cc6bf5ce75b06dcc66eb95df4688d3","0xf5d13bc71aa603325ba95babd42ec9ae764ea8b32e05a76b772eb59aa44504f6","0x287e82424ea40ca9e730f7839f1b52c75f203c6fe8cfd9b05ea9d169aa7f66e9","0x8b984bc7001496855300a985a947bdfc3ca53545227e43f00650739da7643548","0xbbdeea553835681172f7cf6de4bc7c5eaffe350e924a2b082d8781dd0b4c972d","0x5007d1d4b294fae696a67dfad399fc1563e75fc3bab08a4a117e6f7f65b6bd13","0x09e0708aa04a6777f3f2891318cce05e60df47a208ba8ef7a8030412c447684f","0x33d516c00a16347e306d4812ec22b1e845e3010d03ce6ab991be56cf6937ddcb","0x7d9b419330503204a5676c9cd97b3e0e0dce3bf2aa3bc6352f17bbcc303c8fdb","0x23e6c75619fdbcd1c8cc6e2048d5dae3c626adf05311f6d17a87104ad326ea2c","0xa2042f1c9349f3a3dc2f618fa6baf8dce55bbf9d93c1ec69cce9a3ba05381a9f","0xb458e7518ccb846fac925e0816fc46731efae4334b81ca75748f241afa95f579","0x62a7dbb3583ef7317d5188cd3f1a4124356b863fa80da9efd1703927fba302ea","0x2bb3f024aa2279fb7210af2340dfc24ab22cf0066e46c751a5e70ac4a536521e","0xd265ae8910fc0a3304a930435ae9af8b0ac76ceb9a9cd2b7e28311d250302cfd","0xc9f6e3ad37f6c095f29e873a259621c30ca71e1a53cd27b22a78c443d1b1145e","0x04893526e69b9e70e705d925cff3e14fd30a146c5b21a5b411f2fcc723dbe175","0xb4b50241129879d7c6a688cb08193111dd005d06b1727cddee303a3878700550","0xa41ec81d86a9bc829747029ff3bebd45e5f7c4152657455c0d2ed93735d4cb2f","0x3b0995eaec2a8d7cc069c802ed1f896f4cd649daf6a010e684e3d50d70352f09","0xd580a22ef4a3dea610811beb85367dc71f9a8e207ad6e71b2d160aa473cff957","0x4c43720b4478475674f784a80c22eac7a9a73c9dbebdcfdfb245b992359e91e6","0xec8892f55958a5f8f79fc00224ed05620e184f363874e8149ec12e02319f7998","0xf9f09ef8c9339d7277380b4fb35ee1c4cf72b812f20ea365c4c84a4a0319532f","0x1a5be4dd11216aa7be33956f3cb37e2078168aa5e3c382e0b6790308808c610e","0xdf546a0b7fe90de43d9f5d8bfb34609cd390aa0e380d60df34882b98f55adc25","0x39aa1f0e2755189747e92566422c7aefaa67cca304909b72e59dc5fa114e5d67","0xd3a5d58ea7886e9bd7d8284dcf084880892809bd774b7e619ba18e81e2e1cb00","0x8425ed7f99f7610b1bab6b005e8bd97d959561336afc032c59ee03a1cff87562","0xb74418d8905ab06439783a14f58b2985a2cc7202b1cb09ea0e992dd291db818a","0xb23fedb04fcf121381fbb7470cc30e2a78a38c8edc3a1fd758abcc70287162d8","0xcfb7bc2e88bd5e7e7a93ccc818b40da3ceb35af7b1259ed83074c2349676270a","0x47a98e5a4cc496e9b592ac5bf578fafa4acf0191b9113a66b97526dfeda75ff8","0x9d530b9a5360086a0f60b22eb2e6bd568b52a576de945fe22a14a268c1a0b7f5","0xf0ccc2bc3699d50fcc534f49748bed0e891fb7ad1e11718e205c30a829bcac48","0xb6af2581644af24a4a8d38848f7f4cca3d78a4fe22a679d7eb8c0bb5cf7bbd3f","0xe38d639171df8db6ae5b6a2c1e1d19b97d6d7a9572f7dabe57b9b1ab11b1fee9","0xc3ac57b4b718afd311609eb63920490a3aa1748b41da6c1f29fd85aa8e634bb7","0x99a7f0e3bf3de1fe4be2320ad6600322b92c1877618ad14644650fc77416d2ae","0xb15222d1244725863a2b6ce7e5e9458477087ff9cd462f20094235e5f58fe963","0x97f18df36eeb964b6e24bc02567ed74734e88f7a863bce212478d90206639000","0x8ab73bd9d35149c206824d1f92289e4b1d0d03cb12e923a902f75714773cc6e2","0xa3007e2e55f2ccd3e551af65166ad7c21ef49661ce6c704a11606aba488babf0","0xcc777cf905bc11f8eacffd6a1c06a26580aa24586fb44e2c7e6df8a876a9bdec","0x4b5375a5a42d849cdd0dda061fd9f5b5786494e70162c532d372d034898cdf20","0x36d183a3617ba637a88735c72f901cffba83c67555eb50eabe7d2aa75aad0cd5","0xb2a6194a62f228f18ed1d1f012c7094297707f96fd6747129ba296d6ac7d112e","0xc20038e201e8030ceb0df4464fe08ae843873b935f2d97440037abbd55db18a9","0x75a1af6d2dfdfbbc059a9fd874a99a159bb3da75f69c4dfd176ccef033e029d5","0x054dfb557b60c88178526a6723990376ea0762c52ce7ee3078e83270db4f5074","0x0ef11aa5df96c05d008b65ca7498f00026a4bb726f458635c22410260b06a4c0","0x1ecfccd339fea12f05da12bcb7ee0409aafdbb98e1e8773e342fbbc701fe277c","0x2dfc5300064069a9dbb6af60730864db0d3f127e1cad0a61db76238b9ae804b7","0xdb7a346de101bb3b6002373154a3fbd49666939c76a79c0e844f6f01f843ace0","0x9cdd39ad88a487320fe9b4a64bcf980a5d37a0228b54f59f338c50aff671d895","0xa8271eeb528984fbdf0dab346f2e011b36b1ed8bfff96c0b137d19b2ef08b6a8","0xaf6e891e5ff48d51290c5bdadb5db424c0520f5646f293a9db18d90e2c82bbca","0x1033369b6ffd913731ee73840867ff943b4d3a1e1a1d4e0d3268e957256e2c58","0x4c88057e23b0d1669fa008073937ec94742d6f7263012f8fd1f4d6ed490337f5","0x0af91bd36fd4f181c7d4457d1d26f5d387e99da19db1faa2c6e04a0818691f71","0xa039cd1902776f3169082388f8be9e9a3c93a063ddeb7b67e7aa3804557fd43c","0x9831a8c646400df9f49c39bdc17de713e63e56d543dfc0d21518be80f21fda4c","0x4bbb0a5b73cebd62146573b3e252bed4a8237ac9988ff6f4b2c35c41fc47fe85","0x566a2a304fc84579101956b258cd41c86a8eb83c64a489fbca9380e4dcd921dd","0xf7249c068b9b5f6a0fdcc168ce1dab5d9790ec338b2102572a8bf2e611c977ed","0x346259c361f3ae2a7ffdab73d990b7464ab39b0d08e983ca48a8fd806e76d1e4","0xa2b46bda3e75a5938c9513c0b651a04ae3ead0b84322c6411deb751d3d42ce65","0xb3d2fedc39ac4000f7a0d452b18be4f6eb7b0f250f0524d6f211b80a8b4612e8","0xbbbdcf98066f0c904b58b0e8f5b937a8717846d53eb7afc81ce3ae2ca52a319b","0xe01421c716b1fef481ede9f317ad4da96eb9cba8b24461593875c0329941cfa9","0x312ee9f839b625b374017168a65f32e374154e58ce89f6d30a684b3dd6aae98f","0xd788b17e106694221e119b8d56c094581a71c24488b3509d0de68ad6206d0fe8","0x366d2ec0868d4d1b457802ab9f01850fffd322bf4a72b5cccce10068facd1cde","0xcfd0d3825dfca1ba5d15085c7ceabf07477299453798cc2a29fe9a07c8f96401","0xe52b31e0d313b1eb9a242ecc0a9c53e13405f1f25e53be5511f69554983222c1","0x0575e89408f6fd65e1a5bfb3b6b8695e75afd32429e826e32479768be641819e","0x94ba66347a194ba16321594e083d63e3c35ffe26df1e141bedab99b538aa09f6","0xa4c397ede3d97f26f2ea1b6c6b3d1d43820da24f3526b14716f5478fa5c17cd1","0x92075a4843d78eb313eb35634bd852062db6905fedb26592decdb04f0f515306","0x3bb9bc74c7b1340ca21817fcae68d4fe690509944872b92fdc9e0d50ce8bac83","0x18dd2187fdd0463d5db74bb8f5968af6d7f46271c2fe6ca10bf63fac5d7833c6","0x4551cd1b1500812d162ca68fbe5313a4352291f6be9fa2e4fcad12516257b657","0x80a1bc3c9ff4983d7a67a020679dbadea90d6d63edba0c772e2ca146526a5e46","0x406fd1d7b91e8dfc6ef1ec2f1cc5e2e5df2760122fb3141fb3d45050e05b60d2","0x92fd3fa68662ea6e14ab45cc5de8e7abd88a9422a925261bdd3290f9aadf3fa1","0x83299f14f774cb29c451ab4fb88b5770c134cc7f943385c7a7b021e13a6914e1","0x6b4e5b61b4b7d71f15db117313d47fb744ced2f0400a05b072d4bab488542cc3","0x34443828cbc0c9e7e9c4d0ec542d134cb29b1d33c5334dc367fdddd7bc377af9","0x948bf101875196e7d794f00b649c806bdc4947d39d6cc9149dc508ff943f812d","0x2ebdcaa64dcf586c361e58819ff40e2aeacdc3fad4c88ee83dd488cdc797511d","0x9f9c1a677e538ef9044a63e69d0feea2f660799f6fdab597c377215ef70691bd","0xc83f420cf31e7e27a9f3fc4f5885647354865f519bd08134e7e446692e92bd74","0x485f1db40284e0c6b9cff15def00affaaa143a282b568d0dd27b352d37852acf","0xd57d89af0813e33aa97fbcfcdd7982ca4227d9646fbdf5efcca41858b0ef744a","0xd3c8858278c00dd1e58dfdb68980b00b4f17c742f654fd89e7d0ba9f7ebb615f","0xe741bc606c9113375069034908b6f81f926fc05f5af3fcf6126a81e5ff10b28b","0x3a33213225908302339a3213faa29443228fbd86f3cbb9f0bd353caf7d2c4815","0xf981993d544fddbf4d258385fe5ef6ab3b0f7788539fbdd34b7e264a2b7fd8dd","0xb1888628797803a8e13a12ed57037ca4212b8960c36cb7ffe07f5e345b09931b","0xaf00e8372ba82ee3fdbfc37c567a03fbfbf4581f0919102f937d1d2156ee7328","0x08956a28860e5a05fbd23c05cd58cfe989a282aabcbe02840015c832af54b0cb","0x51ef7fe9d53e72e0727cf8b453dea5f02d62b5af188a9077436084379646331b","0x24e4db6dbda3f430b76a5524d8eaefc80b3df53f60dc75adc7b5b4e8c4246914","0xe3f1bf1e0abe79872a63ca882eb9bf328f51fa91e5d2a12625963876498529a8","0x93c7b38f4d3a255680a10aca32d55c4701ec7d4ca5e74eb10f6b9ac71bec25d9","0x7875dabd7505ca550fe6bb16514c365114e79308114c335ee234c1402c41a98a","0x01ed0e8a0b8348d7ead10c81ada7f1b8716b9214f59b4773027df69ac890f52f","0xbd2074e78cb8b49b9a5801f65855183ac5837ead07b86701ca84799b79936b00","0x72d50bbbe7a7f4f472fcb2162c8ed5cbbce2725d431689beb59c16067305112f","0xefb277c453dddfb6e93f8e79331a6c08c185f9136308767f1d74265839f1e351","0xeae95fb0997cfd2bbfbee349f19f933265ef69c1c2d60a04b99deafda9a3128b","0xaf73eb1914e084644fed4dad7020f97ea2e90106710f513b1aea1732c181062b","0x45d530410c28a4bf5428c36c5f101a23710e24cc4bc51e67edf3ca2134984d59","0xd840d0dc68177423e3adae46b857ab94f333d2926204b985886a2512ea8d0a7e","0xa578ea97a14d0685915c5838bd8104499e82c9ca58103dd888f8b5a5cde8ab09","0x1f525b9b7f6bf806381ca63c81b1f8e4690cf80cde3188f7e12ea517dfc5a76d","0xd9a2cc2ff70ea9555fd0d61e31e09492bf1f6bedb8e65ac140cbd96e2f3561e5","0xc05a45d927d59510a32212bb69f02428fe62301cf98a199e5bd36e83343cf2e0","0xf0cff2add92ff45414fbca009324b6d426a639250518060f7b76a20d6f78ead8","0xe89c926484961f9bb31a73eb991150ca05df8ab48d552de530a53653adc93699","0xf989b92e52b572fd57d7722aa95121b053914f2092239fe45d8dad2ba279c368","0xcd34b08135f27bfa1ff93a5c91df5c746ee229acf4fc1ce0abcc54cbc5f14452"],"transactionsRoot":"0xf14b68adf2e376504f10682d713757526909535e72e7197e00946ca51cf09b14","uncles":[],"withdrawals":[{"index":"0x4f96b1b","validatorIndex":"0x56a85","address":"0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f","amount":"0x126550f"},{"index":"0x4f96b1c","validatorIndex":"0x56a86","address":"0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f","amount":"0x126047d"},{"index":"0x4f96b1d","validatorIndex":"0x56a87","address":"0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f","amount":"0x126a671"},{"index":"0x4f96b1e","validatorIndex":"0x56a88","address":"0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f","amount":"0x12653a7"},{"index":"0x4f96b1f","validatorIndex":"0x56a89","address":"0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f","amount":"0x126ae45"},{"index":"0x4f96b20","validatorIndex":"0x56a8a","address":"0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f","amount":"0x126391d"},{"index":"0x4f96b21","validatorIndex":"0x56a8b","address":"0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f","amount":"0x125e30b"},{"index":"0x4f96b22","validatorIndex":"0x56a8c","address":"0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f","amount":"0x1268d6b"},{"index":"0x4f96b23","validatorIndex":"0x56a8d","address":"0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f","amount":"0x126bd88"},{"index":"0x4f96b24","validatorIndex":"0x56a8e","address":"0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f","amount":"0x12704e2"},{"index":"0x4f96b25","validatorIndex":"0x56a8f","address":"0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f","amount":"0x1260f3f"},{"index":"0x4f96b26","validatorIndex":"0x56a90","address":"0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f","amount":"0x12693ca"},{"index":"0x4f96b27","validatorIndex":"0x56a91","address":"0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f","amount":"0x1265ba1"},{"index":"0x4f96b28","validatorIndex":"0x56a92","address":"0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f","amount":"0x1263c80"},{"index":"0x4f96b29","validatorIndex":"0x56a93","address":"0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f","amount":"0x12686ce"},{"index":"0x4f96b2a","validatorIndex":"0x56a94","address":"0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f","amount":"0x125d0e4"}],"withdrawalsRoot":"0x3723cdfbaec5362cf1b00db26d1be898726d1d09b54f0fb06badde7c910c1468"}}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 16 Nov 2026 16:51:35 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
+      content-length:
+      - '12202'
+      svid:
+      - '6'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.4.dev1232+ge1bed6f63d
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=eth_getTransactionReceipt&chainid=1&module=proxy&txhash=0xf0cff2add92ff45414fbca009324b6d426a639250518060f7b76a20d6f78ead8
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":{"blockHash":"0x5085f48e79fdb3fb015d88833b83ac573286bf9295e874aca3d0c068da90206b","blockNumber":"0x1538583","contractAddress":null,"cumulativeGasUsed":"0xd62f50","effectiveGasPrice":"0x1dcd6500","from":"0x84378aaeaffe1557d520f5347613715acea4a729","gasUsed":"0x2d780","logs":[{"address":"0x52aa899454998be5b000ad077a46bbe360f4e497","topics":["0x4d93b232a24e82b284ced7461bf4deacffe66759d5c24513e6f29e571ad78d15","0x000000000000000000000000ad439b9d61b25af1ca4cd211e3ecb9afbaaed84a","0x000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"],"data":"0x0000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffee61856b68adb03f7a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c605fbf75dd4f1140000000000000000f5dc7ca578fabf140000000000000007c04fed2ff8000007a45af5e8199fe7fa3c01e7fa43e80108","blockNumber":"0x1538583","transactionHash":"0xf0cff2add92ff45414fbca009324b6d426a639250518060f7b76a20d6f78ead8","transactionIndex":"0x77","blockHash":"0x5085f48e79fdb3fb015d88833b83ac573286bf9295e874aca3d0c068da90206b","blockTimestamp":"0x67f9fe8f","logIndex":"0x146","removed":false},{"address":"0x2260fac5e5542a773aa44fbcfedf7c193bc2c599","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x00000000000000000000000052aa899454998be5b000ad077a46bbe360f4e497","0x00000000000000000000000084378aaeaffe1557d520f5347613715acea4a729"],"data":"0x000000000000000000000000000000000000000000000000000000002fd72f77","blockNumber":"0x1538583","transactionHash":"0xf0cff2add92ff45414fbca009324b6d426a639250518060f7b76a20d6f78ead8","transactionIndex":"0x77","blockHash":"0x5085f48e79fdb3fb015d88833b83ac573286bf9295e874aca3d0c068da90206b","blockTimestamp":"0x67f9fe8f","logIndex":"0x147","removed":false},{"address":"0x52aa899454998be5b000ad077a46bbe360f4e497","topics":["0x4d93b232a24e82b284ced7461bf4deacffe66759d5c24513e6f29e571ad78d15","0x000000000000000000000000ad439b9d61b25af1ca4cd211e3ecb9afbaaed84a","0x0000000000000000000000002260fac5e5542a773aa44fbcfedf7c193bc2c599"],"data":"0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffd028d089000000000000000000000000000000000000000000000000000000000000000000000000000000000000000084378aaeaffe1557d520f5347613715acea4a729000000000000000000000000000000000000000000000000000000000000000000000000000000000000093ce3a0ed00000000000000000000000d8277fb4a0000000000000000076428a87be0000007515e2463e19fe7fa3c01e6be83e80110","blockNumber":"0x1538583","transactionHash":"0xf0cff2add92ff45414fbca009324b6d426a639250518060f7b76a20d6f78ead8","transactionIndex":"0x77","blockHash":"0x5085f48e79fdb3fb015d88833b83ac573286bf9295e874aca3d0c068da90206b","blockTimestamp":"0x67f9fe8f","logIndex":"0x148","removed":false},{"address":"0xad439b9d61b25af1ca4cd211e3ecb9afbaaed84a","topics":["0xfef64760e30a41b9d5ba7dd65ff7236a61d89ed8b44c67a29e84db1a67513a1c"],"data":"0x00000000000000000000000084378aaeaffe1557d520f5347613715acea4a72900000000000000000000000000000000000000000000000000000000000014b1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffd028d089ffffffffffffffffffffffffffffffffffffffffffffffee61856b68adb03f7a00000000000000000000000084378aaeaffe1557d520f5347613715acea4a729","blockNumber":"0x1538583","transactionHash":"0xf0cff2add92ff45414fbca009324b6d426a639250518060f7b76a20d6f78ead8","transactionIndex":"0x77","blockHash":"0x5085f48e79fdb3fb015d88833b83ac573286bf9295e874aca3d0c068da90206b","blockTimestamp":"0x67f9fe8f","logIndex":"0x149","removed":false}],"logsBloom":"0x00000000000000000000000020000000000100000000040000800000000000008004000000000000000000000000000000000000000000000011000000000000000000002000000000000008000000000000000000000000000000000000010000000000000002000000000000000008020000000000000000000010000000000000000000000000000008002000000000000000000014000000000000000000010000000000000000010000000008000000000000000000000800200000000000000002000000000100000000100000000000000004000008000000000002000000000000000000000000000000000000200000200000000000000200000000","status":"0x1","to":"0xad439b9d61b25af1ca4cd211e3ecb9afbaaed84a","transactionHash":"0xf0cff2add92ff45414fbca009324b6d426a639250518060f7b76a20d6f78ead8","transactionIndex":"0x77","type":"0x2"}}
+
+        '
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 16 Nov 2026 16:51:35 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
+      content-length:
+      - '4333'
+      svid:
+      - '6'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.4.dev1232+ge1bed6f63d
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=1&module=account&offset=1000&page=1&sort=asc&txhash=0xf0cff2add92ff45414fbca009324b6d426a639250518060f7b76a20d6f78ead8
+  response:
+    body:
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"22250883","transactionIndex":"119","timeStamp":"1744436879","from":"0xad439b9d61b25af1ca4cd211e3ecb9afbaaed84a","to":"0x84378aaeaffe1557d520f5347613715acea4a729","value":"32491185023408789","contractAddress":"","input":"","type":"call","gas":"210744","gasUsed":"0","isError":"0","errCode":""},{"blockNumber":"22250883","transactionIndex":"119","timeStamp":"1744436879","from":"0xad439b9d61b25af1ca4cd211e3ecb9afbaaed84a","to":"0x52aa899454998be5b000ad077a46bbe360f4e497","value":"325014252435855622278","contractAddress":"","input":"","type":"call","gas":"203381","gasUsed":"37343","isError":"0","errCode":""}]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 16 Nov 2026 16:51:35 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '3'
+      content-length:
+      - '666'
+      svid:
+      - '6'
+    status:
+      code: 200
+      message: OK
+version: 1
