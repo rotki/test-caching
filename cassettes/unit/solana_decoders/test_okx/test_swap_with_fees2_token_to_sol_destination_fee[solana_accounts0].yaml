@@ -1,0 +1,283 @@
+interactions:
+- request:
+    body: '{"jsonrpc": "2.0", "id": 1, "method": "getHealth", "params": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '64'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+    method: POST
+    uri: https://api.mainnet-beta.solana.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"ok","id":1}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      alt-svc:
+      - h3=":443"; ma=60
+      content-length:
+      - '39'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Nov 2026 15:29:34 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-15931'
+      x-ratelimit-method-limit:
+      - '150'
+      x-ratelimit-method-remaining:
+      - '149'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '250'
+      x-ratelimit-rps-remaining:
+      - '249'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra102
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "id": 2, "method": "getTransaction", "params": ["A53XCGBgBJjVSQPZksHVDqnbJekSopbzYvD8b7NwKvQ7AGzUcEQZxYhMMXwT9AqhKzpfpzWW1PBAhtgRwTB2pXM",
+      {"encoding": "json", "maxSupportedTransactionVersion": 1}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '217'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+    method: POST
+    uri: https://api.mainnet-beta.solana.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"blockTime":1795792817,"meta":{"computeUnitsConsumed":86903,"costUnits":94048,"err":null,"fee":123926,"innerInstructions":[{"index":4,"instructions":[{"accounts":[2,20,4,0],"data":"inQ9WuQgVqXBj","programIdIndex":22,"stackHeight":2},{"accounts":[11,19,13,12,4,18,20,26,10,19,17,22,7,25,21,19,16,15,14],"data":"fx9RHbGFfZA3F9B3qXu7SLTSyJMwgUzC2VVmkK","programIdIndex":19,"stackHeight":2},{"accounts":[21],"data":"yCGxBopjnVNQkNP5usq1Poo7nTeEc5T5VCNT7du3ugvhrpoQ8jueNCCaAzDY6aX8SHmLBsuEEBnZqt54L56yoQ9MSt2oBodBpDbc5gLEMGF8rGFAHZArb1mwnipTsiVfJp36kRoEEGG1Fyqrib6HGsG3cCk9U3Xds2kcgnh7yKP89LPGgNwUSQYr2rXbueNUoUhgt7","programIdIndex":19,"stackHeight":3},{"accounts":[4,20,13,17],"data":"inQ9WuQgVqXBj","programIdIndex":22,"stackHeight":3},{"accounts":[12,26,18,11],"data":"i1XHM24kqV2e4","programIdIndex":7,"stackHeight":3},{"accounts":[21],"data":"BHgNCLk8KLFLM9Rfkm9QH8suaoCQzxp1JEsGdK81gSi26mPAVxzP4jduNZCVKFj8y1uj3jChUdvktPUnb31mzA1aBy4mirUP3XxnhZmiMJKbSYywJEHr2Yv4BrzvdfuerwMZvG3TyWiQgsc6S3D8NpPM23QRrJwLJc7L5sWfGA4R4H4X8EmxuAxojWHLiaUr5Nzg7W4ob4rN9Lrhv5VbQTJdoyV3eFJ","programIdIndex":19,"stackHeight":3},{"accounts":[23],"data":"2Ap35ipDGK3kmeQhjR9PbtMyDd9RXncasBSLxYzjSjHNB9","programIdIndex":6,"stackHeight":2},{"accounts":[18,26,1,17],"data":"i1XHM24kqV2e4","programIdIndex":7,"stackHeight":2},{"accounts":[1,0,0],"data":"A","programIdIndex":7,"stackHeight":2},{"accounts":[0,3],"data":"3Bxs43srTQP8fTsd","programIdIndex":8,"stackHeight":2},{"accounts":[23],"data":"2i5U4oDAL1TsPpnegHVhp7gWN2itKGRQKnY7AVkTt8q7dCD6he9RHTQDBXZey7uqsW9LmfND93FmNrpwxBJbTh1A4GAZ8kravtUhyVCRxC2utaAJzwT4ThzvSyqUo9W9ivbDZBvZeeks6xQNGU3bM6tgL2PUBBU7UBgEbuEDvaLARZgkp4FLYfTKw5UayeyahB9SLELLVW6cKNYN2McARZxMvpFqZR43A9co5udpJLPhUVmn6DeQdE4Z3XMTPo2e7esAKLREWbKKnxNCk8CJJpjaETYEBarD2aLhwsguKn1ti1gBNh7WCbfsW2SKCMfWaQzjkBVcok48YawifyEPq1vf5D9w1b231Cd2nwmaQWhzXo8DguRuDFjuVGa9ZwzwsnaL3RsAW5ZrtidebVJH8e883GWcCGEj","programIdIndex":6,"stackHeight":2}]}],"loadedAddresses":{"readonly":["LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo","9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump","D1ZN9Wj1fRSUQfCjhvnu1hqDMT7hzjzBBpi12nVniYD6","TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","Ag3hiK9svNixH9Vu5sD2CmK5fyDWrx9a1iVSbZW22bUS","ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL","MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr","So11111111111111111111111111111111111111112","SysvarRent111111111111111111111111111111111"],"writable":["2U233WySxjkT5vJdEY4Zb8q2fBc8TSRBinVo29m3q2Qr","BTpJQ2v5UrAHDVfQgdhKPR834M2mECr7T9ew5a1Ngqcd","2HpZp3MH9TMsE2wshEZ7Mgn7UtZkPQn4b36TnrAyEfas","7258jnZCvQTUcknUqcbBKows7JJM7vnA4tn232mNmtAe","CVkr54LjbsM6wYpHftdxh2rLx6NHJFp44tB2kFiwEmcd","BJFuVEMovhQ1SQbRHtnkCALGms9QKWKMDk1wfLaJwcuM","8ZH9pSd2mRVbjWJ9mvvw2qC8kTAkBFs6BnBGmEvKftg8","ARu4n5mFdZogZAravu7CcizaojWnS6oqka37gdLT5SZn","DT2krA8vSP96D68nH86eAztZHVM18YB5i4gDXjLBDXm7"]},"logMessages":["Program
+        ComputeBudget111111111111111111111111111111 invoke [1]","Program ComputeBudget111111111111111111111111111111
+        success","Program ComputeBudget111111111111111111111111111111 invoke [1]","Program
+        ComputeBudget111111111111111111111111111111 success","Program 11111111111111111111111111111111
+        invoke [1]","Program 11111111111111111111111111111111 success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        invoke [1]","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed
+        145 of 221450 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        success","Program proVF4pMXVaYqmy4NjniPh4pqKNfMmsihgd4wdkCX3u invoke [1]","Program
+        log: Instruction: SwapToc","Program log: commission_rate: 5000000, platform_fee_rate:
+        10000, trim_rate: 0, commission_direction: false, acc_close_flag: false","Program
+        log: order_id: 18419339539527424","Program log: 9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump","Program
+        log: So11111111111111111111111111111111111111112","Program log: DN2Yc3AzzBQ6jLqDM33bVUSnbgDsPEys96PjxC16qfnA","Program
+        log: DN2Yc3AzzBQ6jLqDM33bVUSnbgDsPEys96PjxC16qfnA","Program log: before_source_balance:
+        23207514322, before_destination_balance: 367129, amount_in: 23207514322, expect_amount_out:
+        196392834, slippage: 100","Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+        invoke [2]","Program log: Instruction: TransferChecked","Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+        consumed 2977 of 205323 compute units","Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+        success","Program log: Dex::MeteoraDlmmSwap2 amount_in: 23207514322, offset:
+        0","Program log: BTpJQ2v5UrAHDVfQgdhKPR834M2mECr7T9ew5a1Ngqcd","Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo
+        invoke [2]","Program log: Instruction: Swap2","Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo
+        invoke [3]","Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo consumed
+        772 of 168283 compute units","Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo
+        success","Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]","Program
+        log: Instruction: TransferChecked","Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+        consumed 2857 of 165106 compute units","Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+        success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]","Program
+        TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 160053 compute
+        units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program
+        LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo invoke [3]","Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo
+        consumed 772 of 157230 compute units","Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo
+        success","Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo consumed 37240
+        of 192607 compute units","Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo
+        success","Program log: SwapEvent { dex: MeteoraDlmmSwap2, amount_in: 23207514322,
+        amount_out: 197379733 }","Program proVF4pMXVaYqmy4NjniPh4pqKNfMmsihgd4wdkCX3u
+        invoke [2]","Program proVF4pMXVaYqmy4NjniPh4pqKNfMmsihgd4wdkCX3u consumed
+        434 of 150634 compute units","Program proVF4pMXVaYqmy4NjniPh4pqKNfMmsihgd4wdkCX3u
+        success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program
+        TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 147317 compute
+        units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program
+        TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        consumed 118 of 144834 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        success","Program 11111111111111111111111111111111 invoke [2]","Program 11111111111111111111111111111111
+        success","Program log: platform_fee_amount: 986898, platform_fee_adjust_amount:
+        0","Program log: Af35pWcCUZkXYpTGpEbakhrhtV1q86LTDF9hNmHiccph","Program log:
+        after_source_balance: 0, after_destination_balance: 196392835, source_token_change:
+        23207514322, destination_token_change: 196392835","Program proVF4pMXVaYqmy4NjniPh4pqKNfMmsihgd4wdkCX3u
+        invoke [2]","Program proVF4pMXVaYqmy4NjniPh4pqKNfMmsihgd4wdkCX3u consumed
+        434 of 136795 compute units","Program proVF4pMXVaYqmy4NjniPh4pqKNfMmsihgd4wdkCX3u
+        success","Program proVF4pMXVaYqmy4NjniPh4pqKNfMmsihgd4wdkCX3u consumed 86158
+        of 221305 compute units","Program proVF4pMXVaYqmy4NjniPh4pqKNfMmsihgd4wdkCX3u
+        success","Program 11111111111111111111111111111111 invoke [1]","Program 11111111111111111111111111111111
+        success"],"postBalances":[205817060,0,1513840,135296179737,1513840,14818790891,53787543,240230698,1,1,17068800,5242560,499489164484,1488440,52141120,52141120,52141120,1383173748,7764191709,118028466,2672080,5987435,75027702,1000000,3388612899,523015236,1934806676637,1009200],"postTokenBalances":[{"accountIndex":2,"mint":"9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump","owner":"DN2Yc3AzzBQ6jLqDM33bVUSnbgDsPEys96PjxC16qfnA","programId":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","uiTokenAmount":{"amount":"0","decimals":6,"uiAmount":null,"uiAmountString":"0"}},{"accountIndex":4,"mint":"9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump","owner":"ARu4n5mFdZogZAravu7CcizaojWnS6oqka37gdLT5SZn","programId":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","uiTokenAmount":{"amount":"0","decimals":6,"uiAmount":null,"uiAmountString":"0"}},{"accountIndex":12,"mint":"So11111111111111111111111111111111111111112","owner":"BTpJQ2v5UrAHDVfQgdhKPR834M2mECr7T9ew5a1Ngqcd","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"499487676044","decimals":9,"uiAmount":499.487676044,"uiAmountString":"499.487676044"}},{"accountIndex":13,"mint":"9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump","owner":"BTpJQ2v5UrAHDVfQgdhKPR834M2mECr7T9ew5a1Ngqcd","programId":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","uiTokenAmount":{"amount":"8139658928638","decimals":6,"uiAmount":8139658.928638,"uiAmountString":"8139658.928638"}},{"accountIndex":18,"mint":"So11111111111111111111111111111111111111112","owner":"ARu4n5mFdZogZAravu7CcizaojWnS6oqka37gdLT5SZn","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"7762703269","decimals":9,"uiAmount":7.762703269,"uiAmountString":"7.762703269"}}],"preBalances":[9748151,0,1513840,135295192839,1513840,14818590891,53787543,240230698,1,1,17068800,5242560,499686544217,1488440,52141120,52141120,52141120,1383173748,7764191709,118028466,2672080,5987435,75027702,1000000,3388612899,523015236,1934806676637,1009200],"preTokenBalances":[{"accountIndex":2,"mint":"9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump","owner":"DN2Yc3AzzBQ6jLqDM33bVUSnbgDsPEys96PjxC16qfnA","programId":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","uiTokenAmount":{"amount":"23207514322","decimals":6,"uiAmount":23207.514322,"uiAmountString":"23207.514322"}},{"accountIndex":4,"mint":"9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump","owner":"ARu4n5mFdZogZAravu7CcizaojWnS6oqka37gdLT5SZn","programId":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","uiTokenAmount":{"amount":"0","decimals":6,"uiAmount":null,"uiAmountString":"0"}},{"accountIndex":12,"mint":"So11111111111111111111111111111111111111112","owner":"BTpJQ2v5UrAHDVfQgdhKPR834M2mECr7T9ew5a1Ngqcd","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"499685055777","decimals":9,"uiAmount":499.685055777,"uiAmountString":"499.685055777"}},{"accountIndex":13,"mint":"9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump","owner":"BTpJQ2v5UrAHDVfQgdhKPR834M2mECr7T9ew5a1Ngqcd","programId":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","uiTokenAmount":{"amount":"8116451414316","decimals":6,"uiAmount":8116451.414316,"uiAmountString":"8116451.414316"}},{"accountIndex":18,"mint":"So11111111111111111111111111111111111111112","owner":"ARu4n5mFdZogZAravu7CcizaojWnS6oqka37gdLT5SZn","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"7762703269","decimals":9,"uiAmount":7.762703269,"uiAmountString":"7.762703269"}}],"rewards":[],"status":{"Ok":null}},"slot":474598203,"transaction":{"message":{"accountKeys":["DN2Yc3AzzBQ6jLqDM33bVUSnbgDsPEys96PjxC16qfnA","HxPrWfRr1ct1CKLLwjMQXqh3uzsmmrW9fZChGVUWbkSk","DWCG9TnmUnsXEhfdtma7QQgHad3DsEhALUZQpJRkAPNX","Af35pWcCUZkXYpTGpEbakhrhtV1q86LTDF9hNmHiccph","ACYenfVoqzGdyhWVkzNQFgYNrSygJnaz2a37zhFvZXZZ","HCg8X7XZXWibg9rS4oBXsYdp7cwnewX4B9ZyxwRD3oqR","proVF4pMXVaYqmy4NjniPh4pqKNfMmsihgd4wdkCX3u","TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","11111111111111111111111111111111","ComputeBudget111111111111111111111111111111"],"addressTableLookups":[{"accountKey":"6HFaWReruNvDF4wCLCeJt6NDzTFpTWzd4gcu965wnvvD","readonlyIndexes":[10,12,13],"writableIndexes":[1,2,5,7,9,11,15]},{"accountKey":"GXaVYia5GgpxHf4rr1g23ovK6MMnxpLcobmprR7cX2QM","readonlyIndexes":[64,112,66,107,60,109],"writableIndexes":[1,2]}],"header":{"numReadonlySignedAccounts":0,"numReadonlyUnsignedAccounts":4,"numRequiredSignatures":1},"instructions":[{"accounts":[],"data":"KK54CP","programIdIndex":9,"stackHeight":1},{"accounts":[],"data":"3bZqN8iwiRuq","programIdIndex":9,"stackHeight":1},{"accounts":[0,1],"data":"4NK93JLMJL9MiDWG2wvAA8BgSMe3j6KupXXpARKecJXZJbpssrtb8PNEkFGyTErA7TMF44rLZTTmjoyetTyJE2nsTF6wzvvE5yyqL75uYvYcm5CwM5KAF39HA8ijY3EnTamjdJGCJip7oJQ","programIdIndex":8,"stackHeight":1},{"accounts":[1,26,0,27],"data":"2","programIdIndex":7,"stackHeight":1},{"accounts":[0,2,1,20,26,6,3,17,4,18,22,7,24,8,23,6,19,17,4,18,11,19,13,12,20,26,10,19,22,7,25,21,16,15,14],"data":"7tY4uUSHPJA31pqPCnsTP1rjNj71Y6bQZsPsRhrP9HtbSp4txvGttfBxVT4QY8aj9x","programIdIndex":6,"stackHeight":1},{"accounts":[0,5],"data":"3Bxs4Ba2u7BkmhYB","programIdIndex":8,"stackHeight":1}],"recentBlockhash":"89q4A9eGRPvmbFtd1BEte9v4ZwsBTUF5QxHK3zgy4VQm"},"signatures":["A53XCGBgBJjVSQPZksHVDqnbJekSopbzYvD8b7NwKvQ7AGzUcEQZxYhMMXwT9AqhKzpfpzWW1PBAhtgRwTB2pXM"]},"transactionIndex":195,"version":0},"id":2}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      alt-svc:
+      - h3=":443"; ma=60
+      content-length:
+      - '12623'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Nov 2026 15:29:33 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-15914'
+      x-ratelimit-method-limit:
+      - '10'
+      x-ratelimit-method-remaining:
+      - '9'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '250'
+      x-ratelimit-rps-remaining:
+      - '248'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra102
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "id": 3, "method": "getAccountInfo", "params": ["9TKbd3VFaMSXsEAicD9JVQWpWwAoLi4fSgWmZL2cpump",
+      {"encoding": "base64"}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '139'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+    method: POST
+    uri: https://api.mainnet-beta.solana.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":{"context":{"apiVersion":"4.4.0","slot":474600804},"value":{"data":["AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAe5Js+q9xAwAGAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARIAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH2bn8HpMpFed/YBs8K10rcugCL+2nlSNob9dwmpfwpfEwCgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfZufwekykV539gGzwrXSty6AIv7aeVI2hv13Cal/Cl8IAAAAU25vd2JhbGwIAAAAU25vd2JhbGxAAAAAaHR0cHM6Ly9tZXRhLnV4ZW50by5pby9kYXRhLzMzZTU3Yzk5LTZmYWQtNGY3NC05YjkxLTFiNGZjZmQ3NTA0ZAAAAAA=","base64"],"executable":false,"lamports":2672080,"owner":"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb","rentEpoch":18446744073709551615,"space":398}},"id":3}
+
+        '
+    headers:
+      access-control-allow-headers:
+      - authorization, *
+      access-control-allow-methods:
+      - OPTIONS, POST, GET
+      access-control-allow-origin:
+      - backend_traffic
+      access-control-max-age:
+      - '86400'
+      allow:
+      - OPTIONS, POST, GET
+      alt-svc:
+      - h3=":443"; ma=60
+      content-length:
+      - '786'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 27 Nov 2026 15:29:34 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-ratelimit-conn-limit:
+      - '40'
+      x-ratelimit-conn-remaining:
+      - '39'
+      x-ratelimit-connrate-limit:
+      - '40'
+      x-ratelimit-connrate-remaining:
+      - '39'
+      x-ratelimit-endpoint-limit:
+      - unlimited
+      x-ratelimit-endpoint-remaining:
+      - '-15925'
+      x-ratelimit-method-limit:
+      - '50'
+      x-ratelimit-method-remaining:
+      - '49'
+      x-ratelimit-pubsub-limit:
+      - '5'
+      x-ratelimit-pubsub-remaining:
+      - '5'
+      x-ratelimit-rps-limit:
+      - '250'
+      x-ratelimit-rps-remaining:
+      - '247'
+      x-ratelimit-tier:
+      - free
+      x-rpc-node:
+      - fra102
+    status:
+      code: 200
+      message: OK
+version: 1
