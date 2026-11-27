@@ -1,0 +1,697 @@
+interactions:
+- request:
+    body: '{"jsonrpc": "2.0", "method": "web3_clientVersion", "params": [], "id":
+      0}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '73'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":0,"result":"Geth/v1.17.9-stable-9dffe6e9/linux-amd64/go1.25.14"}'
+    headers:
+      CF-RAY:
+      - a611683ef94cf298-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:16:24 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '86'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '5'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "net_version", "params": [], "id": 1}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '66'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"1"}'
+    headers:
+      CF-RAY:
+      - a611683f994ef33f-BCN
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '37'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:16:24 GMT
+      Server:
+      - cloudflare
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '5'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 2}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '70'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"0x194761d","id":2}
+
+        '
+    headers:
+      CF-RAY:
+      - a61168404f08204f-BCN
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '46'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:16:25 GMT
+      Server:
+      - cloudflare
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '5'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x50532e4Be195D1dE0c2E6DfA46D9ec0a4Fee6861",
+      "0x15402"], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '124'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","error":{"code":-32602,"message":"Archive requests
+        require a personal token. Get one at: https://www.allnodes.com/publicnode"},"id":3}
+
+        '
+    headers:
+      CF-RAY:
+      - a6116840fa22e712-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:16:25 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '152'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '1'
+    status:
+      code: 403
+      message: Forbidden
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x50532e4Be195D1dE0c2E6DfA46D9ec0a4Fee6861",
+      "0x15402"], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '124'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","error":{"code":-32602,"message":"Archive requests
+        require a personal token. Get one at: https://www.allnodes.com/publicnode"},"id":3}
+
+        '
+    headers:
+      CF-RAY:
+      - a61168426d961d3b-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:16:25 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '152'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '3'
+    status:
+      code: 403
+      message: Forbidden
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x50532e4Be195D1dE0c2E6DfA46D9ec0a4Fee6861",
+      "0x15402"], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '124'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","error":{"code":-32602,"message":"Archive requests
+        require a personal token. Get one at: https://www.allnodes.com/publicnode"},"id":3}
+
+        '
+    headers:
+      CF-RAY:
+      - a6116844abb8e712-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:16:25 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '152'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 403
+      message: Forbidden
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x50532e4Be195D1dE0c2E6DfA46D9ec0a4Fee6861",
+      "0x15402"], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '124'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","error":{"code":-32602,"message":"Archive requests
+        require a personal token. Get one at: https://www.allnodes.com/publicnode"},"id":3}
+
+        '
+    headers:
+      CF-RAY:
+      - a61168485f481644-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:16:26 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '152'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '6'
+    status:
+      code: 403
+      message: Forbidden
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x50532e4Be195D1dE0c2E6DfA46D9ec0a4Fee6861",
+      "0x15402"], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '124'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","error":{"code":-32602,"message":"Archive requests
+        require a personal token. Get one at: https://www.allnodes.com/publicnode"},"id":3}
+
+        '
+    headers:
+      CF-RAY:
+      - a611684f6cb8f488-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:16:27 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '152'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '1'
+    status:
+      code: 403
+      message: Forbidden
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfed1be16dfba1b22060"],
+      "id": 4}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":4,"result":{"blockHash":"0x4e3a3754410177e6937ef1f84bba68ea139e8d1a2258c5f85db9f1cd715a1bdd","blockNumber":"0xb443","blockTimestamp":"0x55c42659","from":"0xa1e4380a3b1f749673e270229993ee55f35663b4","gas":"0x5208","gasPrice":"0x2d79883d2000","hash":"0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfed1be16dfba1b22060","input":"0x","nonce":"0x0","to":"0x5df9b87991262f6ba471f09758cde1c0fc1de734","transactionIndex":"0x0","value":"0x7a69","type":"0x0","v":"0x1c","r":"0x88ff6cf0fefd94db46111149ae4bfc179e9b94721fffd821d38d16464b3f71d0","s":"0x45e0aff800961cfce805daef7016b9b675c137a6a41a548f7b60a3484c06a33a"}}'
+    headers:
+      CF-RAY:
+      - a6116850184aa6eb-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:16:27 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '629'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '9'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0x96cd7a9ab928153c4321e4b0e71f4a1f8e4a14d0d3a118f6b3213008bc6bd84a"],
+      "id": 5}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":5,"result":{"blockHash":"0x61f2a308b5c7b3096942a737f0f2bfd73b8717ec30df054d99fb0b7c713e6334","blockNumber":"0x11f2d15","blockTimestamp":"0x65819e67","from":"0xd99ac0681b904991169a4f398b9043781adbe0c3","gas":"0x5bcd5","gasPrice":"0xb95f9bb72","maxFeePerGas":"0xccd5b5912","maxPriorityFeePerGas":"0x2faf080","hash":"0x96cd7a9ab928153c4321e4b0e71f4a1f8e4a14d0d3a118f6b3213008bc6bd84a","input":"0x84d61c970000000000000000000000000000000000000000000000000000000000000060000000000000000000000000b8f275fbf7a959f4bce59999a2ef122a099e81a8000000000000000000000000000000000000000000000000000000000000024000000000000000000000000000000000000000000000000000000000000001a4c23a4c8800000000000000000000000000000000000000000000000000305120c0f20000b366ff5eaa905f91f7d234aae7b25576ddd40a4cc9d2e167ce92d9d9d97028dbf3305753be685fafc7ca6e1dd82132a488dbf2621b1c2bbd30f7c3c7cc7f171b000000000000000000000000ecacd3ef02f3d9dc3c8f5048169211c2a90bd6f400000000000000000000000000000000000000000000000000c7a713c15ce9e6000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc20000000000000000000000005ad095de83693ba063941f2f2c5a0df02383b6510000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000002400000000000000000000000000000000000000000000000000000000000000447647691d00000000000000000000000000000000000000000000000000975c84fe7ed9ae000000000000000000000000ecacd3ef02f3d9dc3c8f5048169211c2a90bd6f4000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000411f29d7af14113b750d086b7720150f74333882476ac13dcf226de18b602312fc115729756daa73e3045a46ae311d78b2f8dcb1430f6e30c7554c94a36e6de5e71c00000000000000000000000000000000000000000000000000000000000000","nonce":"0x2f49","to":"0x5523985926aa12ba58dc5ad00ddca99678d7227e","transactionIndex":"0xaa","value":"0x0","type":"0x2","accessList":[],"chainId":"0x1","v":"0x1","r":"0x6125733bea9a330e503f383745af5364f78002cf8841ea5ebd623d5bd8acf582","s":"0x5abf5cb7d92dd5a171094fc38445f63a88cddea3ee99a4b0f37080b71f81d6fd","yParity":"0x1"}}'
+    headers:
+      CF-RAY:
+      - a6116850dc543ed8-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:16:27 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '2158'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '22'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBlockByNumber", "params": ["0x11f2d15",
+      false], "id": 6}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '93'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":6,"result":{"baseFeePerGas":"0xb92fecaf2","difficulty":"0x0","extraData":"0x406275696c64657230783639","gasLimit":"0x1c9c380","gasUsed":"0x1ad523f","hash":"0x61f2a308b5c7b3096942a737f0f2bfd73b8717ec30df054d99fb0b7c713e6334","logsBloom":"0x66f1430ac7e38117973d33f5c1bc8bf1992bb73b71646851c741c77814e31d138a555556ba92eb2ec0911d50b9f5cd1e6617ad0a9f0f3d9c079cc18be9fef889739b84ade5aa8929fffb6f8ad6bbe2aeb8f55cad174658175b5a1d3cfced3f8016ef7585da738cd34c16f54c61a1ea558eba4ffee4f3acb47ddabdba466c1d9f64c837fb7293c14fd07ebbbb1fb29038f56217a70fe1bf7dd66b4bfdf4b25a3e8ed6bf46dfd7ede59bb65ff8beb3f563e655d7e2dc21ba73edebd6977c8fbb781f90d4a75f7f517b58d0f872dc95f4c52a68e703126d6db7ef9651ef67e3f84451f0ad78444646aefaf411b34fbdb4843838b573d3984bd86febbc1f43dbf660","miner":"0x690b9a9e9aa1c9db991c7721a92d351db4fac990","mixHash":"0x43b3dd6471c992c443900bb8b99741deff98f5613502bdfab167b89d9897be3c","nonce":"0x0000000000000000","number":"0x11f2d15","parentHash":"0x85c0d262f350fedcd1e3bc176b5c92b7b225de4f822a9ea8b6c535adce4ec850","receiptsRoot":"0x8e81228bf6b4b382303734e2d5d036f64d90783f8c3b1c7c29d735074017c737","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0x12afc5","stateRoot":"0x99cb40f291513f9f9268de1dcbe966494dfab33331440edaa4ddd2d86cabf2d4","timestamp":"0x65819e67","transactions":["0x74366437d5cfbd237e344f4d95c2692a72a30a3f9a2e0a5f22102e4e07fd0426","0x1f440b2d1b1333727d10dce13303eff54262f7ae94cc2d5094c118017f9fdb99","0x5d6365b45e8c6f09ca0fda32402ae80c089aa064059adccf7d2a2030b3f4ea2a","0x1d1d93908caea6353db4b5515156b013270369dd067d5553d5d570b9824a0511","0xadb3d599c373f64a25d29a619c163fb8c1751dd2187c88186859a372971bb616","0x449069bd03a30e8d97ecddd72283edafbaf561b240d0730e3b0dbfdf5d6326d7","0x05613c980f1a39b2928c142ef4736bdf41782ece3b76b584ede6a3b8dad48649","0xf3242c8d0acf08b2962df556ca71bb2c891b69dc07c79fb1ff6810f7d4c7adb8","0x42e2285e7ba8c717515542ddc541c41de56143646525e4f8a9e4c3f0039b3eab","0x053c43765470cede35935a8d1a44b7829f636ec368e84e7c6e1b50b0e0dd26ea","0xdcc54bbdeb7289365ea3bdc4e3444f1bcb8e9dcd0bae96dd72ab8b2d1eb69216","0x0cc28de7f887da4687add48e90c93efd690a9ed2fb0cce1e8e3b7fed75c96850","0xd101c45606df92abecd1fcc692353f84a2ee2f6b6c5e1e5b4dfb209ddf45fb14","0xe48a6de0a5e44ab15da0f89dca69f9518490e3749121c82aa9b51b12a73b8a60","0x888936e6c066d415eea1efe0619abc87f3662d52db4b0f8fd35b5daaf808be65","0x161830f87478efd6f12e2f8f9cace60e1ab755f25d5aefe5cd9c1fea22310549","0xd0c0e77e1ca50a450b5eba816162b33461293848536e3cf074fc6eac15b04876","0x21dbfad85c8f5037b70120d45761e90ad320e8991a5526f48605f5709721c54b","0xa8d569affcf8fb6a2306a347b1eb7adf810a2b2659b8ab2e13c98a4752ef79ba","0x090b89ccb360aaae2077d000e832b690c1cbbd14f9a504388e4b70ea2e92f076","0x61d8147ec2b7ab5d517cad3c1ff832af503d0a5bf90b3dd6070bc9bdb975fcbf","0xabcfcee41835a67077385823a0cc6e8ebd86be0aece57aec4d5a152d2056faca","0x55396922effb04016466d9661ca4f85db591700589e1f35c9cdde17349154622","0x3b2051bd42202eca0749f3d93fae9ccce1006208bb6d908f43df6b87546e14bc","0xd1d0029dd9fbc8f3a0708a005a2e5d0a58a66eed68a154d0ccbba8690130c468","0x162b988d261c9f8a8eee914f7c0165fef25663bbd06d4e1edd330fa0a675fd4d","0x3cf59b804f8d151c33900e71f35dc9ff805d0c908f5b51181f53b55108427560","0xa227f07ad21cd899f38fcf481b4873dc3980b1cebe985ea1a2a1d2df2bc946dc","0x3c02ed02bb8adbded665dfb439b5a86401416d94ccf0f4c43371acb163a58d3c","0xaa66415d23fb311f4cf735d5198c964df961a272c6f221ed99878c47b4e8ffa2","0x174e7096a3756112a93a1effc4c17ae7f4d447130da08780cfafb9a49251c58c","0xc93013d63880f9174a3307cdb818d8a8d9fd5e5fdae8b4160ba2e6e83ed41ecf","0xd52daf50bc1300619a55b74146c1d468a93fb9e0f13f8d40b0376387607f74ef","0x824be0810d41b1c059c7b49b1e59503ffe876858a99ef9c2604ae8f752cc0e48","0xb867fd56fae70a699f85277e1d0c4eabcbcc30c032a40c5541ac574929015738","0x5cf63537548079c90491221b23150014741431ea608a40c71c7d5975b59f953e","0xaa5eedbbee041b502067a8fb525e95684312f174d3b38411a28fa270ee4b2d55","0x199e6d13e38b9ef0bbdc77e8c0b144887811dd005fb5e04b2fa86b8b8ae91870","0x1dcf4d300185141bed6a9480c362a73e956e322f3bf31055d15c79b17e597b7a","0x8b4bc9944d7db118d669e4c522158484776834f5c653b8eda226dc4b43b9348e","0x5f7851b9758fc159b1d459bace00b042ffe6cf487ba42367dfd57fec58a1071c","0x968b7be590fb59ad99175440f753f7c5c16b0a7adbeee0871f30e7ae89348f16","0x2a86791f36953a86f2bbacb00972c399cb3e209dacbf5e068f5ff40308f37996","0xef682f0cd7df9d82fa9b7975eb20d498eb5680eccb414fdc8ab4861bd60a69c7","0xe078edd9052a782e9c2f9891b3742407c002adcef8707d3d4b4bdd0aedb218f2","0xd9e7814bb036573afe255011bbe14bc1bb6a583c0c45307b59419a44627a0f6b","0x1afaa0923d14e059525fc52535ed49096b38b977232c39e54cd35a348a187dc3","0xb57df3f9d965f1d3fa9d968c2f768729737696fe89759909d9b40f22155bfa15","0xe8765fa8d27f0a176be1c3f557325a5e150a466a9dd8843ec5b78a715735696d","0x488c17ff6f05b7833abd7ecca1a4c9d13262d54f746ff1b08163c29357453d1b","0x177cd0316e7caa833311a25bc64d5963404b20aaa625c9327a044d1ad8a7ae24","0xda727585d2da1f58c120d49a3b73abfa0428a7d3d2e3a7046a7ca31020c812f9","0x69631e7e90d31e3077be4f1b47dda8b4477e3f04f75a0dd18206df01335dfe34","0x09e2a72017f03796a2fe2d47eb2a3a3f818761b2206b986412362ef68bee1913","0x32ce052c2daee53cb5a0ba74a8392e4fee42c6033da0c1b58cb81a90fc27ad0e","0x3543e7f0d12de9b6fde9010a4e26e3607807b8bf0d8dcf7d13d4c573620664e9","0x3f461a3ea489d8fc75214aaf570f2bbb184655c45e7d3825780f1b9154ca3dfe","0xaae0315f4e015839b013b7fcc017f8944616e1aa8f9d5164a1d12c1cb0739cfe","0xcc67d3b2e7cf7aea9c30d3cd92d0654307d3f22136cfcc996adbd996253e8660","0x3d1ba8cb1c054e639acc0ae5144b275166009eff387edcfb4ad0655444b5942c","0xadf58a8e2ab6f65dfd0707055798f99d80116da7a7cf3f92aa69104f2d3eaa44","0xbde2ed789c1d23b3b2b82dceab7b0d384c18779488a146f5b03ede907dec68c7","0x6253e63a8b9a358b6b1c11d98208ac69a0eee9d8c120c11c2ab4cbeef8a6ad96","0xdbf5625093198e0a487379b4ca377721ca66f1b64d5dffe17fccbea74a8abe75","0x0e59a9f3619eb3e68162125d4a7d8de6b0c0ddf9107914378895a8778d702669","0x24823b11a2c6955f59d9e8956a5734f52c2d45814b87eee933201e3907a7179f","0xd7af0798402a940379d460695577dd426bd721bdc07912fdedb3da394bed1329","0x455c5add97db5707e74b22c7cf6d1b7313ae2db6b9026f7f93de2c588cfad5b8","0x3f8d25f35d6ea72d5360d31c416e637cfe593b00a3eb7c34ed797c3b046c0b17","0xb0225ba44f7df5d9a821866550dc75c42bba3599ced4b770fa365a67070195fd","0xae700b0ab572f3d57c8dc9308fe271ed218898d69e96549cefdca05c1c8a7546","0x0867bab986eff8024e4f1ee8347f90b2212ef67bbb542a610bcc1870b9dff89e","0x77fdb808b8f2a7ed007c7eadfed9c2ec418e70aee1d9ded6124b2bd67562e890","0x2548ad6a13f6418d0bdb99c7459d1e2d837c6792253551b5930ebb2ec92bffb6","0x8942ffea9db1443feeabc0e2ff8a0f1671dba1f8b7d886e7b7980ddf7c6398db","0x70581095f1017df3dbb914818af92fff7cacb0dcd62b5ac573d0194cdec000b9","0x7a627bca795a552bf7721bfe2726c01fbc48799231b1815294d9fbd9c11bf642","0xf2d7cc8db4cd28aff477b70fe969d7740aa37bf4db6f286893f181dd0455d0d1","0xeef71a2ad666c85ea146aee0e05980f0cab1f2cf85b7244b60f85328db7ce571","0x254629b384828cea35123e7022839ec18c43e5c5918e9b434ff394a39699c33f","0x6ba177f7631e2f585caef74835f2e412c2e321b6097b632d6f0699517a7da738","0x4f64d58b46a787cff1f7ab3449243ed12f4777db1def340b336ec765cb498037","0x2d547ed2ab4cd05c151bac5d8c786d6d9f6256edf747b6c89b5204f23ff10ab8","0xada44cdb7fc6fd0c8bf838b18d4976248dce0379912c7d93f8536f52c64aa147","0xdb2662e93fb07057e3a5e514321498c43597497724be6b1f6a39b7b1e50a1cb4","0xe5f120df22a982032d66464da360d9eb7b99ddeff87fa1a1feb3d9724ae30bce","0xd59e67fd9d4bdedf1417562caba77fc9c1d00c91767d71d8e2716ea813d04788","0xf960445e1a31ec48af17bdc14a5e2d1331d6331042b50d11997490d2bbaef017","0x0b88577a5d4ed906dde3ae52da62c663f8bc0a5b74c23a7b28ed43eb103f8d09","0x0e5de99f49e3dd8c1d61b018c440371f65788ff6abf4bf8546df667b0c66388f","0x912aa5a4d48e6ff45ba45de15d2feb0d21ae1fd85a852ebff4d2100a5dfc8dab","0xd48a66911e1da5d66f45b5ae9e0e53d70100241d61580ef06878223c7e9639d6","0x63940d1470ad743428f119c92ab904a7f243eb51a9ae0c2264baf322e3f0184f","0x6fd0e916d13376f5f018f1e6bbc629daf28803d829a1570c989c895960071c33","0x6ecfcd736fc6cbd9d498e0e775fcb4821d74513e26c04fe21a91f0f0bc13273b","0xcb89207024e7534ec785d90bb7d70debc0a51d7a0f8451033f7b8acace4b4999","0xa8a388a7e9c31f2bbc1a0fbfd8caeecd5678c60104923e97a419068a646bf6c7","0xd532c3ebd59374288f03ea626984188c43f10b24f2612e4b66f0da73494b1c2f","0x784468ce2e4c220de559751b4664b5087358baf78cfccdc6210bd28ea3a0ff24","0x3b109fffd4fb4fde7a10cd9e7656362bf57b4e1135da1e1025f7e7b162ed8ca6","0x4ffa29072c953ff3c02c21c5af85d6ee5b569074fed277e08285c90892673a0b","0xe4a1d7bd78b32732c700fd4e86fa42781fc189722a11d044e81cd41477df2e51","0x5bea7a52b029df95a5c9d338ab00a7674d396564be7c50a796946c9c873cab2a","0xa7e0c7341d937c0b4f33d00c46fd536b7b3035fa8b77cff156a3939988de170c","0x905846d2ae5286a86e4f93a4707640682ae7c26138322cfcadb5fd8ee0756b19","0x174d5121b425e521bdc1998ef378f317978091727948fe06f23f71d4093afbf8","0x6246d6daf8ee90dbee990979dc978f7e94f34b9f207d088de029c7c0986a1ffd","0xf034c691ba71e871f192950d7e5f68af5f58348b9a8ec5bbf005b746d69067f3","0xc33c98ed4302c0ea0f36031465eb5d8d564756645aa642fa6753cd89cffe4bf3","0xf773c07ca64b9861419749dec67365258863a91dac252deb7211d003f7d000a6","0x1370c49f2a4e7d7a48e1515a3f887a8e3a3e1c07ece096d2a75dc765dc4662c6","0x32733f1aa4a20fd6276aa3f78f2c6190b022a0b5c7dee1c8f1a06c931f22e802","0x23831c9dbd13369927d4ef8a110774a2257d691d2cf467324c3f0fac00d4bfde","0xd8c208349c5f50e5aee8e9d301e932f3777a95364893b6a86089f439d097fe83","0xf5d0eb3fffbaafbb421b8b2a967a1e3f59b752e156b13bd78c5111431a8f3571","0xffc8c1ed1a46e70f3c546258d7f7a1088d6e4fcb75d828638389d2e49a5ffc8a","0x0f9f4e4c764b35e026646b12f3010b0d6f1d2c72c1d8c816887f1b5f75b00f0f","0xfc8170e6f8f8a21f2b446b1e02ecbcb15f734f1164d29657291d19d8285d5065","0x64ac7fb68c89f7335e2ec2220089e5bac90352b9bd2f36bdba2fffd3e5c1800c","0xe26d036d85001da11d318de2dd3cc90acc566790e579141cd5a264d0c50664f2","0xa2ca53dd9f0ff3a27aa35586247c7e4f5e598e6b988a78d16faba8570f6cb553","0x98d70c999a0f97034b388678d779c296cc8f5e2d59335e67c0332998e4fa3710","0xfe80027d5a59465f232702d75504a1535a67037a0e49011a14295e6d53e4c680","0x5672d8b5e7ed310c599519f661cd500b6e14527b6766794bef2aec15ef447ab2","0x8130a667daa9206f03960ea1a6b35ec77bc32c69886ae8f2a8954ab654501fae","0x25b7f8aad0c4ec22622de3b1c65014880520544b92691ba834ca5395ea8cb75c","0x0fa0acbbf688be62b9bf5108866faf4f788d6eaad996c55405a436b5a8f0b952","0x49edc97bbfa428de1244a05e22ea7e97511c49f2e5e0f4ddca93714a634ef184","0xf75382ab03a64c4eca067c84eb6397ed9688a2f615deddc58d347d8e2915a998","0xefe45f9bfd1a6b53947fff01d41a0d901a233e0df02c4ce4034a0af8c8870ac5","0xf9762058d267bcfb8bbac4b628f9a2043bbaec4c7c6cc41847505b1f6d4ef30f","0x8da08c1650bcece8bdc7c9149458916f8490de16c60773ad7bb162327e8d50a6","0x75665f592d930636466688142ab489d02f98d87bc3327bc4d1d9ea64f201b1d5","0xbc823e0fa53e00eadda00beae72f898d466338dc56e4a49645bc6cf7b4333ebb","0xda991558bababfe9350c9e9d5572e03bb3fdeb382d918dc420301c22f01d87ab","0x4e9fb877fc5aa9afa8e9ab04020e53b565f598547b9734da7ee829ca84446fd9","0x0bc8339c8669af72a545ff8366e00b96758a5fcc512c10286d9f91f75336bc6a","0xe8590a50296646da341e05a3653b8b4f26ec5e87e983e0bd969d4045dd42ff2d","0xc1ee0e36457b8f2503e5ca65e988dc33a24daeb66a168e4199b0043987efecfc","0x1bb8188e731b728c03f22b4ae34eadf01d95f0a790b34d596021f989195b6661","0xc3926c8e24fed81c855ff9064868e006be2905c57f189026fd0dd2062bab5932","0x5b46553958a87c426b9a86a061b88f52d9d2c6ddc09358c128f952fcf216163c","0x3f1059833cca4e735497ce4e369cdc36dfd5628d5dc26855686a8f51416247f0","0xfa376d07e38fa42adfbe51da96c83b50a6efd104b6c8ce4ec16be278ad224b16","0x40623c50ec0c65d5221b3dcf12629b8d600a83ab0bc3d5ba015b2504638a82cf","0x778bc5325c855ad33444657ba69148946e16afe15ce8fda63e344853bc26b0c9","0x2ea42eadb775781b9e4968176f5fc9f624e3a7dbb53c02b1ee2fa3ab6cf8a895","0x448f905929ccad2300bae3de41fa29a9bded72a36b37d8759142da5365461671","0x550f2b9a9d8d1f048b30385db1eaa31ed0a889b38190a3dd633c7e368fce29a1","0x4ff1fc8a502434227801154c2376f8cec5397dedced5477de941f7615db4eaa1","0x67ed592d88ac8d2e3ca3fa889e52d66d36d840d54cfe3f327aa1f86eae3a4ccf","0x9b20a5540dc5fe5924bebf3075c292cfc43f314bddae9e9c1f51c88412b7c799","0x45fc1a76231b1e37882db74f8bd4c15beb31aae7b43cb0e8f1f30bed9c3bc72b","0x72012703cd834c995e0271a2b2ef7f2122d96f4929c22bfe86bde2000785f065","0x2983fdd71094f5746362899b993caec9dab8587dba25334ac45ed488dcedf9c1","0xa1bd536db08a3c5af90dcf3dd8887dba1543f35836a3c65b32bf6e2171931154","0xd8ef7121216ec43e64c0d7538d03bfd243f28ebea4f0f46064c86ea12af26f43","0x5cb9198083d6fc7b718161134078cf0828aa2b6f2dabaf496ebb2ea986d649f7","0x9371ac602132e3093f2b5e0155f79fa0bdab878a43ef5eca3527f3abf5eefd79","0x10dcfc01dcfd80d240e873f22f8a363054128224ee888f3086b3b8e70aa17b5c","0x6a2d47ce5d0ce4d9c3cc5a5193cf83d4f8d99b2a8bb92c824bb853b4451146ee","0x7ad4ef5bbc8f013bb17d641696e44d7036dfc2652a993668e19546942f9781e6","0xc5656c54630f8734940cdaedd3bdbe7d8ecbb50383ff8283fcf657ab588a1a28","0xced67c8394ad8c6e415166409b04adaab98d67b79317f920e9a4b5435f5ab215","0xccb038081469d3ea6575e10d4d371325c283717cfda80e481531737325d3d854","0x1de3c34cf3e6a2158fb62948ca87ba942bc34db4a61b8c491e212d4063ae2d92","0xb1fab5f84921180d248376ea461616435ab9a80fbfd0d1044b2b6bf84c27e5ac","0xaafa6f6d6bbf77c58905ce7a5f361687b41a69c04c3bef50e2e4723b74f01aba","0x2cff54c54bb81ccc407eb04d9b83a6c12044ec7bc081e4378521505fb3f31b20","0x2f6d72f46342f0865ad2815551f184ab9bc1b7e976212c173530a69034206e78","0x96cd7a9ab928153c4321e4b0e71f4a1f8e4a14d0d3a118f6b3213008bc6bd84a","0x3d0b12b86f99c9c2cd26716c9841657fa0619c7126a1bdfef5fd2de495b56a49","0x7f0595b61f088d8f9db24ba4b2add5a122149c8847679dafcd588bbf0406e918"],"transactionsRoot":"0x79cdb603b8083d739211f109ece4dbd278e054864b096888e90806e931484a4d","uncles":[],"withdrawals":[{"index":"0x1b3e446","validatorIndex":"0x9ca39","address":"0x8e609ac80f4324e499a6efd24f221a2caa868224","amount":"0x109cc89"},{"index":"0x1b3e447","validatorIndex":"0x9ca3a","address":"0x8e609ac80f4324e499a6efd24f221a2caa868224","amount":"0x1092a77"},{"index":"0x1b3e448","validatorIndex":"0x9ca3b","address":"0x8e609ac80f4324e499a6efd24f221a2caa868224","amount":"0x109edfc"},{"index":"0x1b3e449","validatorIndex":"0x9ca3c","address":"0x8e609ac80f4324e499a6efd24f221a2caa868224","amount":"0x389c4f0"},{"index":"0x1b3e44a","validatorIndex":"0x9ca3d","address":"0x8e609ac80f4324e499a6efd24f221a2caa868224","amount":"0x10a095e"},{"index":"0x1b3e44b","validatorIndex":"0x9ca3e","address":"0x9d72f1f4d9a95f4b54ab0eb6db9b6ac22a807d1d","amount":"0x10a1c7f"},{"index":"0x1b3e44c","validatorIndex":"0x9ca3f","address":"0xfca54ab4442efc9d40536a8e2b7914b34ee76255","amount":"0x109b724"},{"index":"0x1b3e44d","validatorIndex":"0x9ca40","address":"0x8e609ac80f4324e499a6efd24f221a2caa868224","amount":"0x1095907"},{"index":"0x1b3e44e","validatorIndex":"0x9ca41","address":"0x8e609ac80f4324e499a6efd24f221a2caa868224","amount":"0x108c566"},{"index":"0x1b3e44f","validatorIndex":"0x9ca42","address":"0x8e609ac80f4324e499a6efd24f221a2caa868224","amount":"0x1098c63"},{"index":"0x1b3e450","validatorIndex":"0x9ca43","address":"0x8e609ac80f4324e499a6efd24f221a2caa868224","amount":"0x108b9d2"},{"index":"0x1b3e451","validatorIndex":"0x9ca44","address":"0x8e609ac80f4324e499a6efd24f221a2caa868224","amount":"0x109b68d"},{"index":"0x1b3e452","validatorIndex":"0x9ca45","address":"0x8e609ac80f4324e499a6efd24f221a2caa868224","amount":"0x1098fdc"},{"index":"0x1b3e453","validatorIndex":"0x9ca46","address":"0x8e609ac80f4324e499a6efd24f221a2caa868224","amount":"0x1097a5f"},{"index":"0x1b3e454","validatorIndex":"0x9ca47","address":"0x8e609ac80f4324e499a6efd24f221a2caa868224","amount":"0x10a0f25"},{"index":"0x1b3e455","validatorIndex":"0x9ca48","address":"0x8e609ac80f4324e499a6efd24f221a2caa868224","amount":"0x109260d"}],"withdrawalsRoot":"0xb244adc62e73b976a4db23dbf98a2b40e32620e4fa2fe827c0e6b6993e086206"}}
+
+        '
+    headers:
+      CF-RAY:
+      - a6116851affa58cb-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:16:27 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '15487'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '18'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionReceipt", "params": ["0x96cd7a9ab928153c4321e4b0e71f4a1f8e4a14d0d3a118f6b3213008bc6bd84a"],
+      "id": 7}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '148'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":7,"result":{"blockHash":"0x61f2a308b5c7b3096942a737f0f2bfd73b8717ec30df054d99fb0b7c713e6334","blockNumber":"0x11f2d15","contractAddress":null,"cumulativeGasUsed":"0x1aca9d8","effectiveGasPrice":"0xb95f9bb72","from":"0xd99ac0681b904991169a4f398b9043781adbe0c3","gasUsed":"0x31405","logs":[{"address":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000b8f275fbf7a959f4bce59999a2ef122a099e81a8","0x0000000000000000000000005523985926aa12ba58dc5ad00ddca99678d7227e"],"data":"0x00000000000000000000000000000000000000000000000000305120c0f20000","blockNumber":"0x11f2d15","transactionHash":"0x96cd7a9ab928153c4321e4b0e71f4a1f8e4a14d0d3a118f6b3213008bc6bd84a","transactionIndex":"0xaa","blockHash":"0x61f2a308b5c7b3096942a737f0f2bfd73b8717ec30df054d99fb0b7c713e6334","blockTimestamp":"0x65819e67","logIndex":"0x15f","removed":false},{"address":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000b8f275fbf7a959f4bce59999a2ef122a099e81a8","0x000000000000000000000000f621fb08bbe51af70e7e0f4ea63496894166ff7f"],"data":"0x000000000000000000000000000000000000000000000000009755f3006ae9e6","blockNumber":"0x11f2d15","transactionHash":"0x96cd7a9ab928153c4321e4b0e71f4a1f8e4a14d0d3a118f6b3213008bc6bd84a","transactionIndex":"0xaa","blockHash":"0x61f2a308b5c7b3096942a737f0f2bfd73b8717ec30df054d99fb0b7c713e6334","blockTimestamp":"0x65819e67","logIndex":"0x160","removed":false},{"address":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2","topics":["0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925","0x000000000000000000000000f621fb08bbe51af70e7e0f4ea63496894166ff7f","0x0000000000000000000000005ad095de83693ba063941f2f2c5a0df02383b651"],"data":"0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff","blockNumber":"0x11f2d15","transactionHash":"0x96cd7a9ab928153c4321e4b0e71f4a1f8e4a14d0d3a118f6b3213008bc6bd84a","transactionIndex":"0xaa","blockHash":"0x61f2a308b5c7b3096942a737f0f2bfd73b8717ec30df054d99fb0b7c713e6334","blockTimestamp":"0x65819e67","logIndex":"0x161","removed":false},{"address":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x000000000000000000000000f621fb08bbe51af70e7e0f4ea63496894166ff7f","0x0000000000000000000000005ad095de83693ba063941f2f2c5a0df02383b651"],"data":"0x000000000000000000000000000000000000000000000000009755f3006ae9e6","blockNumber":"0x11f2d15","transactionHash":"0x96cd7a9ab928153c4321e4b0e71f4a1f8e4a14d0d3a118f6b3213008bc6bd84a","transactionIndex":"0xaa","blockHash":"0x61f2a308b5c7b3096942a737f0f2bfd73b8717ec30df054d99fb0b7c713e6334","blockTimestamp":"0x65819e67","logIndex":"0x162","removed":false},{"address":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2","topics":["0x7fcf532c15f0a6db0bd6d0e038bea71d30d808c7d98cb3bf7268a95bf5081b65","0x0000000000000000000000005ad095de83693ba063941f2f2c5a0df02383b651"],"data":"0x000000000000000000000000000000000000000000000000009755f3006ae9e6","blockNumber":"0x11f2d15","transactionHash":"0x96cd7a9ab928153c4321e4b0e71f4a1f8e4a14d0d3a118f6b3213008bc6bd84a","transactionIndex":"0xaa","blockHash":"0x61f2a308b5c7b3096942a737f0f2bfd73b8717ec30df054d99fb0b7c713e6334","blockTimestamp":"0x65819e67","logIndex":"0x163","removed":false},{"address":"0x5ad095de83693ba063941f2f2c5a0df02383b651","topics":["0x1d27d1c62712f590d53fa9eb8bbf3a75d09503deae319bb9d99644339cb312e1","0x000000000000000000000000ecacd3ef02f3d9dc3c8f5048169211c2a90bd6f4"],"data":"0x000000000000000000000000000000000000000000000000009755f3006ae9e6","blockNumber":"0x11f2d15","transactionHash":"0x96cd7a9ab928153c4321e4b0e71f4a1f8e4a14d0d3a118f6b3213008bc6bd84a","transactionIndex":"0xaa","blockHash":"0x61f2a308b5c7b3096942a737f0f2bfd73b8717ec30df054d99fb0b7c713e6334","blockTimestamp":"0x65819e67","logIndex":"0x164","removed":false},{"address":"0xb8f275fbf7a959f4bce59999a2ef122a099e81a8","topics":["0xaeef64b7687b985665b6620c7fa271b6f051a3fbe2bfc366fb9c964602eb6d26","0xf3305753be685fafc7ca6e1dd82132a488dbf2621b1c2bbd30f7c3c7cc7f171b","0xb366ff5eaa905f91f7d234aae7b25576ddd40a4cc9d2e167ce92d9d9d97028db","0x000000000000000000000000b8f275fbf7a959f4bce59999a2ef122a099e81a8"],"data":"0x000000000000000000000000000000000000000000000000009755f3006ae9e600000000000000000000000000000000000000000000000000305120c0f20000000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2","blockNumber":"0x11f2d15","transactionHash":"0x96cd7a9ab928153c4321e4b0e71f4a1f8e4a14d0d3a118f6b3213008bc6bd84a","transactionIndex":"0xaa","blockHash":"0x61f2a308b5c7b3096942a737f0f2bfd73b8717ec30df054d99fb0b7c713e6334","blockTimestamp":"0x65819e67","logIndex":"0x165","removed":false}],"logsBloom":"0x00100000040000000000000400000000000080000000000080000000000000000000000200000000000000000000000002000800080000000000000000200000000200000000000000000008000000000080080000400000000000000000000000000000000000000002000000000200020000120000040000000010000000010000000000000008000000000000000001000000000000000000000050000000020000000000000000000400000000000000000000000000000080800000000000000002000000000000000000800000000000000000002000004002400008004010210000400000000000000000000000000000800000000080000000000000","status":"0x1","to":"0x5523985926aa12ba58dc5ad00ddca99678d7227e","transactionHash":"0x96cd7a9ab928153c4321e4b0e71f4a1f8e4a14d0d3a118f6b3213008bc6bd84a","transactionIndex":"0xaa","type":"0x2"}}'
+    headers:
+      CF-RAY:
+      - a61168526d9e204f-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:16:27 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '5543'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '8'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.4.dev1417+gea4d5eb4a7
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=1&module=account&offset=1000&page=1&sort=asc&txhash=0x96cd7a9ab928153c4321e4b0e71f4a1f8e4a14d0d3a118f6b3213008bc6bd84a
+  response:
+    body:
+      string: '{"status":"1","message":"OK","result":[{"blockNumber":"18820373","transactionIndex":"170","timeStamp":"1702993511","from":"0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2","to":"0x5ad095de83693ba063941f2f2c5a0df02383b651","value":"42597223655729638","contractAddress":"","input":"","type":"call","gas":"2300","gasUsed":"55","isError":"0","errCode":""},{"blockNumber":"18820373","transactionIndex":"170","timeStamp":"1702993511","from":"0x5ad095de83693ba063941f2f2c5a0df02383b651","to":"0xecacd3ef02f3d9dc3c8f5048169211c2a90bd6f4","value":"42597223655729638","contractAddress":"","input":"","type":"call","gas":"116445","gasUsed":"0","isError":"0","errCode":""}]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 27 Nov 2026 13:16:28 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '4'
+      content-length:
+      - '657'
+      svid:
+      - '6'
+    status:
+      code: 200
+      message: OK
+version: 1
