@@ -1,0 +1,113 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.4.dev1400+g71a4f0da1c
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=getblocknobytime&chainid=1&closest=before&module=block&timestamp=1742829743
+  response:
+    body:
+      string: '{"status":"1","message":"OK","result":"22117631"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 27 Nov 2026 09:06:12 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '2'
+      content-length:
+      - '49'
+      svid:
+      - '6'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"id": 0, "jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
+      "data": "0x99fbab880000000000000000000000000000000000000000000000000000000000061aa3"},
+      "0x1517cff"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '214'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - rotki/1.44.4.dev1400+g71a4f0da1c
+    method: POST
+    uri: https://api.blockscout.com/1/json-rpc
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","error": {"code":3,"data":"0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000010496e76616c696420746f6b656e20494400000000000000000000000000000000","message":"execution
+        reverted: Invalid token ID"},"id": 0}
+
+        '
+    headers:
+      CF-RAY:
+      - a60ff9be6c26e516-TXL
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 27 Nov 2026 09:06:12 GMT
+      Nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      Report-To:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=vvhzVmfO8FZKyS9myVsvtv9O1WsgvfHa4HpkCdxRr2LWhpK0MFw4j5D%2Bhu4wqNoTdDN%2FubyJntWZSLt5WMOaVJ%2FN%2BkG8ySFM93OBdJGWBZqfDFDogyKtlpgNh%2FCB7osw3O%2Bijt%2BsMZcfXq4IHD%2FU%2FA%3D%3D"}]}'
+      Server:
+      - cloudflare
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '307'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - accept-encoding
+      x-credits-remaining:
+      - '99040'
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '67'
+      x-request-id:
+      - 132faf502d35224fab1f7a6fe663c051
+    status:
+      code: 200
+      message: OK
+version: 1
