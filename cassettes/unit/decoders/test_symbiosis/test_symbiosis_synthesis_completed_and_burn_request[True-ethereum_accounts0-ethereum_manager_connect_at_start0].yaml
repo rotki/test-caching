@@ -1,0 +1,960 @@
+interactions:
+- request:
+    body: '{"jsonrpc": "2.0", "method": "web3_clientVersion", "params": [], "id":
+      0}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '73'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":0,"result":"Geth/v1.17.9-stable-9dffe6e9/linux-amd64/go1.25.14"}'
+    headers:
+      CF-RAY:
+      - a6116593d917d781-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:14:35 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '86'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '6'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "net_version", "params": [], "id": 1}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '66'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":1,"result":"1"}'
+    headers:
+      CF-RAY:
+      - a61165947b8344e9-BCN
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '37'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:14:35 GMT
+      Server:
+      - cloudflare
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '3'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id": 2}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '70'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","result":"0x1947614","id":2}
+
+        '
+    headers:
+      CF-RAY:
+      - a61165952abcdf8c-BCN
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '46'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:14:35 GMT
+      Server:
+      - cloudflare
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '7'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x50532e4Be195D1dE0c2E6DfA46D9ec0a4Fee6861",
+      "0x15402"], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '124'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","error":{"code":-32602,"message":"Archive requests
+        require a personal token. Get one at: https://www.allnodes.com/publicnode"},"id":3}
+
+        '
+    headers:
+      CF-RAY:
+      - a6116595de42204f-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:14:35 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '152'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 403
+      message: Forbidden
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x50532e4Be195D1dE0c2E6DfA46D9ec0a4Fee6861",
+      "0x15402"], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '124'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","error":{"code":-32602,"message":"Archive requests
+        require a personal token. Get one at: https://www.allnodes.com/publicnode"},"id":3}
+
+        '
+    headers:
+      CF-RAY:
+      - a61165975e900873-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:14:36 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '152'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '15'
+    status:
+      code: 403
+      message: Forbidden
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x50532e4Be195D1dE0c2E6DfA46D9ec0a4Fee6861",
+      "0x15402"], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '124'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","error":{"code":-32602,"message":"Archive requests
+        require a personal token. Get one at: https://www.allnodes.com/publicnode"},"id":3}
+
+        '
+    headers:
+      CF-RAY:
+      - a6116599bfc390e8-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:14:36 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '152'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 403
+      message: Forbidden
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x50532e4Be195D1dE0c2E6DfA46D9ec0a4Fee6861",
+      "0x15402"], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '124'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","error":{"code":-32602,"message":"Archive requests
+        require a personal token. Get one at: https://www.allnodes.com/publicnode"},"id":3}
+
+        '
+    headers:
+      CF-RAY:
+      - a611659d8fb75111-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:14:37 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '152'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 403
+      message: Forbidden
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBalance", "params": ["0x50532e4Be195D1dE0c2E6DfA46D9ec0a4Fee6861",
+      "0x15402"], "id": 3}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '124'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","error":{"code":-32602,"message":"Archive requests
+        require a personal token. Get one at: https://www.allnodes.com/publicnode"},"id":3}
+
+        '
+    headers:
+      CF-RAY:
+      - a61165a48f9777f5-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:14:38 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '152'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 403
+      message: Forbidden
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfed1be16dfba1b22060"],
+      "id": 4}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":4,"result":{"blockHash":"0x4e3a3754410177e6937ef1f84bba68ea139e8d1a2258c5f85db9f1cd715a1bdd","blockNumber":"0xb443","blockTimestamp":"0x55c42659","from":"0xa1e4380a3b1f749673e270229993ee55f35663b4","gas":"0x5208","gasPrice":"0x2d79883d2000","hash":"0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfed1be16dfba1b22060","input":"0x","nonce":"0x0","to":"0x5df9b87991262f6ba471f09758cde1c0fc1de734","transactionIndex":"0x0","value":"0x7a69","type":"0x0","v":"0x1c","r":"0x88ff6cf0fefd94db46111149ae4bfc179e9b94721fffd821d38d16464b3f71d0","s":"0x45e0aff800961cfce805daef7016b9b675c137a6a41a548f7b60a3484c06a33a"}}'
+    headers:
+      CF-RAY:
+      - a61165a529a0981f-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:14:38 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '629'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '17'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0x1c44449f24f77cdbad97130ad58588a5e0f181ade6722894ed70deb81c65c508"],
+      "id": 5}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":5,"result":{"blockHash":"0x518d4bc327467e82482f71c57972da8a93077e98f904bdbe5fd980a534d7ec25","blockNumber":"0x174102e","blockTimestamp":"0x69833d83","from":"0xd99ac0681b904991169a4f398b9043781adbe0c3","gas":"0x73f4d","gasPrice":"0xcc6c8e2","maxFeePerGas":"0x13a013d3","maxPriorityFeePerGas":"0xbb8","hash":"0x1c44449f24f77cdbad97130ad58588a5e0f181ade6722894ed70deb81c65c508","input":"0x84d61c970000000000000000000000000000000000000000000000000000000000000060000000000000000000000000d7c3df25683871d18bc838e4f619126442dd38b3000000000000000000000000000000000000000000000000000000000000018000000000000000000000000000000000000000000000000000000000000000e4a83e754b00000000000000000000000000000000000000000000000029a2241af62c000064ad63f70276e9699013c217e9fe1945a241aef9ebaaf8a5023a73a2cd9d65178a3f936c33a395e401ac150970a5c9fd0b9902277075e9ccf7eb58ad85e23f33000000000000000000000000006c3e2aaae5db1bcd11a1a097ce572312eaddbb00000000000000000000000000000000000000000000000000000000000000090000000000000000000000000000000000000000000000008ac7230489e800000000000000000000000000007c5d5222f60853159bbdcc058088587618d61b240000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000412aac2017340bb5c3818e95e6dc2957ae14b08897df4250a5d252f5f109a2150518bacdd0d35a9e075b66cc550b40e2d92bbb5afc8da7c79a6604e81620a794451b00000000000000000000000000000000000000000000000000000000000000","nonce":"0x2dac4","to":"0x5523985926aa12ba58dc5ad00ddca99678d7227e","transactionIndex":"0x133","value":"0x0","type":"0x2","accessList":[],"chainId":"0x1","v":"0x1","r":"0xe247bc5e7dbdccbe1090290524d45148295e44b4787e131b3c19d564610c67f8","s":"0x473a52dd627745625269ba1efc94744afa28114a03d47b5679f70e14904e9043","yParity":"0x1"}}'
+    headers:
+      CF-RAY:
+      - a61165a5fd35817a-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:14:38 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1769'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '28'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBlockByNumber", "params": ["0x174102e",
+      false], "id": 6}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '93'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":6,"result":{"baseFeePerGas":"0xcc6bd2a","blobGasUsed":"0x180000","difficulty":"0x0","excessBlobGas":"0xb53401d","extraData":"0x546974616e2028746974616e6275696c6465722e78797a29","gasLimit":"0x3938700","gasUsed":"0x1852924","hash":"0x518d4bc327467e82482f71c57972da8a93077e98f904bdbe5fd980a534d7ec25","logsBloom":"0x3ffdfbcb6fc6fbffbc3f9fe5d53d7337dffffbddf4d77716e35dbcdff64f5fefdff3e76bfbfdbfff77bf5bf7fd9bafaff7f9f7daff277efffbfac77f9effe3f7ff7e7edfddeb5eb9efefedfbd7effff697b5f5ffdf7e9cffbfadbfa3fed63ffffff7e7dfeb7ba9f7e7eefba7eebefdff9fd3fe3eaffb3ffffbf3df7f2ffb7b6dbdfbeecfde8fb3afee7dfdbb7fdbebb7e5dd77adfddfc7bff77759537ff2ebffffca37e2cefdfef573d19fcbdfdffb6f37dffed7fefefdef7f7bdf6f77f26edeead77d2ffffdedf3f55fdb5edfedaff63d3d374fff9cb6ffbff7dbee6ffffb5f7ffbffc3bfe6d9fbfddffefa9f77bff6fff7fbfb47bede7fe7dfff6bf738f87d","miner":"0x4838b106fce9647bdf1e7877bf73ce8b0bad5f97","mixHash":"0x10076b3f2a87d409067139c852b62df2fc3096193ea3f6b80e0665ac0a816eeb","nonce":"0x0000000000000000","number":"0x174102e","parentBeaconBlockRoot":"0x8b011d02ba4190b3381e13937b246bafd8cc5c154f55f25547529a0ec065e56d","parentHash":"0x83012f48ff2169a9ad5f2b32b8b5bfb1b84c54972930a9c7ec2a973faf319312","receiptsRoot":"0x7fa80cae45eac29e2f1093038c8b88205d3fa57eda16d66e1d95b01c15d7d07a","requestsHash":"0xe3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0x37d4a","stateRoot":"0x8e567a4c17efca091adb4061ded7f783c623167cdfafccd9475fe7607bee1828","timestamp":"0x69833d83","transactions":["0x44ccc85c105564e3aad277119abfff2fbdde4f1f4fc4a8e26e66b31742f46690","0x2abaa259ebceb27ec707d2a44050da431b28059c240847a60e06da3df2d15a3f","0x96dd48f094520a19bea4b07c89725806acc4080ecabb817fe73a4a8bee59c0c1","0xd35a57964848cd88373238f1a44d79248334a2922da98ed36ccf08302724248d","0xa78748465d2f3b0435392068ac2a3417014e59a63587ba31112bfe045829cd74","0x29a3a07afabf5b7dc921e5814e110beec124cdfb70d3b32384be11811a068fc1","0x01b52d08f83c773c019b23d0f11fd036ff4b9e3bc23f3d3bcba92439c9596e00","0xc13da13ed55d4942db1e9b0e71e3eda8334c76fa7bfa231e182776e87be2a52f","0x5b859742d5b36d99060b14bbc429da0f9b277f85766c06a63b700ffd1d480e0d","0xac25821f46d21c00c396b5ea1e982f94e6db88be712509d4b0403af68814d247","0x15222a408ff8925abfa3d628e19b3e3dabafde4fc2cb2d21ba94c95e3c9c4810","0xa50348f55b559a9b05247e70f589419b49ef98ade27dc5e593ad9329e4fda8de","0x7a02218721598610574c7c1f53675a73330180c17914c0faefe788e1a3f6aadf","0x63d83af72f5a7a334463d359dd6106484d071846a0855d49ceb869b275d4b6f5","0x26a3a689c9268409328e4615f3532f2029dd3334bde26aa34da3651df038ef36","0xe68455a527af3cbf45138fba2c56a993b883757ea28266440e99a9073c3904c0","0x618ec887754029e227c21bc8c91df6f0cbeaf01e149447fb9a0c7cc5117b3c4e","0x054ec087cfb29f3c52c12d8358c4fa7574cc2ee569ba8a342096e2b4c8b9c194","0xfe604d292305af59bdf3a26f3d7c1937ba51f832339410cfd725fd48c08601c3","0x0e0b05bd312876c04dccd0d9fe24afbcdedb88245a9f7a1cc6ec416cac10c90b","0x7119d12ee3d96ec64d5eb764f104933c78c3912c32416e0832be8f8d0dae5f7e","0x5b9dfe63a42e1d3f6199f5f8b2c390f4c4dd654286108e5c1de835f705688e30","0x317eb63d8865b8b0d176b40756c6b91f688687b7534d7a13ab6d9f63c4a427c0","0x1aca9c5e78e123ed8267ca1b2284463321b8b66cc2d9c0c9695461c95f79b9e8","0x57de43f8c8c926b8e796e49f6ee7bede42ac9e52ebee64ed18ab438620c9541f","0xa351f0736b3de79e724ccd6cab35a4bd08b86effeea74f1306dee2ac90870a94","0x23012456be7520ca516958a7fcd489300767c9cf59c81af22902e91e9b60a512","0x8b19af73af79ea3d8bdcebb5389a7a205490f0e9675d1f83a94056e9cc66e73c","0x26c6acd7356ae353aa0c57a9350f46659da702ef1985641927247540a6d3c6c1","0x8560d68b095e550570898247ba3f33580f629ee36a4050f0c533c110de072603","0x020864493a1bb7fef4525b796c2629a7eff82b0f0829e10abb5b7247b7b1db7e","0x6fd1beb06328db6e0359da7b576febb51804e2b91918812f9acfb7d7fb32ed4e","0x333eb354a195584ea037944a488477ea656fa40325f8187a903b40ee5e7d9cb8","0x994b2073cb57d3564c36e5ca85156f1917f454129c319324b11e347279df4a57","0x9b2811c8a696c89b0ce704c7958c7d517a7438a9575fb692ae3836c29f66e2a3","0x0fa7c1a7eb11f45c9013fd3b59484c3ab21d62d443be0c52c201bf381c3651be","0xdae7612d6a55b3de28332d82d1c5eb1a805fa3ae914b6f52ed6845ebf7460269","0x0f7584bc14a60be89893b8b99783fea48320fea308503bd276b2e21ccf4283ef","0x10068270aa5a95f41540c763322ad4383df9ac62d9f6f838bdf4b7ce7cad7225","0x4097c0e3bea22fa30fd32b2de1f9d4aeec548cc86a2bf9c49f1f456064c95000","0x5eb4b978c71c321f5c18eb67d3aaf47b30e82fc0fd29fb39cacc437dc3ddcd15","0x73a80df111af467bdd0cefed6af334cc9047acba1e72a3dc383b5058cea34721","0xe908ca30d9fdd42b797d267cfd2ba4becd2852302b25334016ea09c445af946c","0xcab63186cb58c0158b2c094d2319e8ea63373702cea16748589d1f70422420e3","0xafebcca1576a02e272845c523e6938040baea76bce93bb388db75338c14458e7","0x62f7a7be139765ec88ad555a3d8e3bc66215b7b194ebcf65ea4230d026e77310","0x91bcc04b645eea0666b924f44fec1ca064d56eb97df5fe3d89b96e12cdac42e4","0xc870a47020f6f660447ee798b4296e3dd89c8cfe0a1c345c005bcb04c9d34b0d","0x8b6f1fa2197399b47b5ecdf32b3f37309311b334cd7cad4d178122906cd857cc","0xa07cd5f4937d5c354a46734ddb559d1f06d19e6f9deddf4450c1bb14b569ea54","0xdea55cdad63b9cd46e4e2bd766477799fb4f35bafb4a9d37b1e96d5c88ee95a9","0x530352ac4f4b9cc27a3682faa04228466eb4907a5e71d9fe6e4ff8725c763847","0x6d842d2977645055049d14a2c8eca2d512ead90f925e3c80d424e103c6d7bb9b","0xd01f372a9a64db45599cfdff2d083ce6b146a1b7f3b3d12a00e113e9129244a0","0x50770526116aedcecd5aef21ae0e7a090e83531664b2146a545388a1046f423c","0x2b7894f78de62658be92db2106f1c18ff70dbf6747dd4dec3f805bc705899adb","0x1687d2bd42665fdda4da2434de0893c041ce5cf0e990f829cb2e748a8bc590dd","0x49ab68f423476aee5d4b31cf610252b45a76a0a5135b7e557b6e3b88c958b3ee","0x600ccb27ddb3fb9d8eeaf207f07d89577d7c5912fe902ce41d8009814c439ffc","0x4c2d3b16d4d394ba9c7d47f20e007287665781f987e14c02a9cb0a0be32a9222","0x7fabb078bfd07f099e33a17839ce2616507065cac164ac469d56842ec2b64a05","0xe22bbc0f92fe7d2000abb6316cbb93b2523f66383638b9e907806c8f38ad44fa","0x7bbb79efac3b3fafc2b9f2ffcf9f2982b1ee80688967514fbfb8b474515a249c","0x2b5526201f3e609eaae7b06afc4d85f8ff66f439920d3fc836d916a1e58578ad","0x6a93307c18478333e488c1a4a21b45edb3449fd9fe544cdf9d9a57f4c4db23d9","0x8405498632d2888aff15aaf6df2359e7e9b11d9c232b0501c976cdae94e7b28c","0x44bf548d74ed434436b9534a97102d2b07bea2d76d88aaa67096c5349bbc66d6","0x6c42e3cca27cc93c1edacbf493d95d4eaa5ae5b9d300a86477fcc38daccf294c","0xa309ebd47bf3d9d7fb82a2aca175bc6702a2ed99529f46302b7cb82832f69178","0xab9a73fe85ecb4358893af77f9f1b12bd86c4e25cff8b8535451022d22784312","0xd5b0fe35d250144168ffdb4aca9344df4b0cdf2f97209fe1caf861045a100c44","0x3b88c639f0b070c622859f294f4ac25df3ad8ff88ab519be1bca4919d22d1965","0x3123051ce2409d8942edd354eea74ff90afee5c8c40d939f25899697805572d0","0x2bb0aa92583916fb6154b4c24aa8e8aacc5683a4313ab9345e7fcdbf5e5122e4","0x04ddb7030d4301b8edeb4205bd011d590aa14a06136c283d1b0442c0d5f62c76","0x3d2b793a06e4aa8baa62b3afd9398d004fd7cfb56c35d2fd611f52627b6d67a2","0x68d52e3f50b099a0f250f7fba8aea0b0339f7a96afb7d1c9770b5a84e8b976a8","0x40b01cf4ef622ad1cddd0ad318cddc75e84b7c423aef5b50c602c34f7f8e32db","0x67b50f25d463d0bbda34caa54148c297833ec9f4236a766b4835de10ebc3706e","0xbdb36931b8234387e56f5596dc1908c08b4194542134414e7bee134c245690dc","0x61d16de82b1afffe250a2f6809eeb483a035d3d55c92b53fca5360d2e85cf1b4","0x2b993d0082ef578851bb378e2e67dca9e43ab87ce6a969ea921fa4938355d732","0x9331ac051ecc3aec79b5e88646ab0c3860defbfdc241defcf77525fc1ec829dc","0xe7d215d02f73420e438cb0555885f6a240d9da4390590bf3ea7bd03ae5f5db16","0xa77fa71eb1f90d22476202bc549a9b9f004aa69565e29351a12ab485164ffa6f","0x587c2047411c880f6d23ea3929ed86d3e4373b04c62394bc3602e495bb961363","0x9e7b261745863802147af07fd34f282b0bc9e7e6e3c8a804ebbd4ffed83c658a","0x5479636fccbd621e1042d8fa5477fba91804999d62d7b4b8ac33b2ab058ad7cd","0x7d1da578c7ff53db5fab3f537f2a37bc9e83aee4e26a15a1b7769b47ad7326ae","0xb1e1e5b2188f98fd0ab22418fd5fa05dc08c74fe24f8e2e847b376430138debe","0xc9b84698b070b613f52988b5ae092cf070df2055b9d2dd61f26ea2e9e2482715","0x0fc1166cb319b3a73ce07563d7adcf93af6f84c4ba3cc2bbcbe7e165bb322f8c","0x9504a80a7a499391ce63d5a66c31e43d90957721ab9f0b5292b04a6a0798526a","0x6a59124a3c1578e7d640ecc0fdb54a3efcf7ce5b399e546b406d53205cc43eb9","0xef9ec5ae58f854e93a52344abd5072cf5da9dc67b62f3c8f986d9d0ef285283e","0xc1ecde807211bda97f176ee20a8a203302014709890bba1f098ed47c96814f01","0x9684266733266da9635634ea39635db3242be7314fdc4b954c18ebaaadb59094","0xcf6a9c27bf9304ec56bd8dc1fc1e039366e7bc291c933bc9367be3f000c7691f","0xc88ab2d787a90040b558e8a0bdaf8bce21ab167440c9d95d4160a3a171a4f1f6","0x8d6652c5b3c8c0974f55f37fbca58d0f7c9c58da329e3f3fad9cd2b57d9bd421","0xa1afe5d1e1288af68a63ea8d8f801536e72266824858ed40f850da18bac88c92","0xa8a957c669c1d75ea550792e1c8eeb76425d62ac464af4ad33f94d0a3d8fd509","0xf293e6bfc8507a5201464932b83b52326e9c93d6d9804bbff74d243151a39d2b","0xf03a5176d01bc70e4e753ca6abdb2bff363c51eaad4f6f11e02bfbcd1d65f695","0x8d6ee8a0eb501f16bdd5c57fbca84985bf63c56ccf8e1699ed994a78ff56d0e2","0x8a9a0cad23200c2bf97bebf0e58bdb29e2c351257bea332e947532516a1ae7cc","0xfb26ae809acb26b42419e2008db1db671f7d419adc7c778d14fcff47208a54cf","0x30e3b3c23ebb7d2478c33d375ade4f5fe3d7ae05c4a8b107e80e14fbf92de3a8","0x004f294e5af6eb7b185f743e1f7c40603e44bc7cf6b7a97fcb0783b4c7f131ef","0x86b6af0430cdca87459b9561b391c4242b311304ada93109ed38759e82977884","0xf2aa59f4f8aef5419e991080f7276b21e4bbc8d0d9c6715e08e8aec130e27357","0x8c3677ec3bb1fac816355a6953bb22b33c38b1116a9c2eb1c766267fc0ad88a5","0x627dea9004e5792b16cf7ab4b263a898822d8554f9f1c1165ee412dbe7ecf294","0xe71f55fa6d5344c9609521be713340ec8e881fedfaf3b5f4d1723d29d7e479ab","0xe2c7b5724055413fe5373938fd3ac7a031103a6f2ebba7e1c13aa3e5145b0912","0x1f51e815c5759985f0eb6a50b428ab0a10c9dc22dd5955889e0395ea64c11d57","0x77efce294337b3880e09c1c36ba36cb6d7569e21d90ccbea5e3c02e49e58d3ab","0x8ec192d22d82c6c50d3321bc56fbe9b250868d673a1514d4cb3b245f64315b0f","0x5d86bf856a9e243c1344e6fc2dd2b4f95985a9b33b609b5cd7a3dbbe089a5df6","0x25bfc3e9da9d61e0aff7c20a49c522e16e7004f8c2e9b55e26c53fc5abf73bc8","0xeb34c28e2c830389e92d12e930ec09ed2d0e48908ef96c5fd3dae633bb3de298","0x31bee0e662a215f9dd7b1d7f8caafb31b81f7aed35247c11d5c2a42a3db789e0","0xdd4a91abcd350ed83083fd072109bf1f2bb39219ab636e5c48d44ac37b5635c1","0xf02b0f6d2388ce9cddd11a59cf2c11c894271a10633d8a1c0d1e3f4805dd968a","0xdd5402867e59be502f5f5c8c73dd1bd38cd3c2e01eccacefe914f12b47aa9c5c","0x04cad8de87e3600e370ecb753dace13727a729f53922542dd76cc74810ddbdc5","0x4ae5b85aef813654303099ba3d2ab1a0c36cab42815b02d820c22f5a52463c85","0x48b6ed0604a9fc416308893fcbfba92888dac05453e696c6d7a22f3dbe7526c3","0x2225ef0dfc8d09a8c2cf6803da3a474449bfccfbd974217ce03ab0749070f41c","0x058373e5afa908e51ce3ef7af67e2e2cb0a6bbd3044fbb73932f82fddc111dd9","0x93dc6684b62b6c8a9adf81c91875c48fb84fedf062ef197fa6674de61fbddc05","0x2e872d0197911cd5962a564b811210eb5cc6d67970ca917db582efc0e54a101f","0xbd5cc3279318e2f15d78fb675fa6ec13b9452d2fc6441c903862748dbcfc8d82","0x3d4952e844449a22a9308b4d9562fddd66ae1d9e2175c661d9b988c7b88b978e","0xb20d2b4e02eef51e23f7d28870288b7ba25d2cb4f5b5751eba268389d83615bc","0x5036ea1c70df33159448080cb26fa04191569c01de48e2d345451c4b6e71cf6f","0x4211c39b2e6d589746f5b7a4e77b28a25a5fd75ba155a253d78d0691fb58e7a6","0x3bd99197198d4d48601efcbcaa2ba9b683c07483f42e21ec2a510ae6e7dc13bb","0xff11683014e76ec2478425a8778938fa951005f3277d47ceb816bf83bc49df6b","0xebdc7ac73144639ef661d5301155b6f5d59beb55d7e6decc0ee50dca7347731b","0xbc0a4c532a50c2de4901796dbad337c44ba5b11d2029bf924e9c74241300879e","0x81c62fbfc7c22b9c0111ff1b81397dd26e11b251d3011059461644fcabebeca6","0x846c9dca6dc5bc9b4c35c4a3818ec2f97bd4e6c1448e847f00ac548ce5943dfd","0x66b854eca08e99e409800d5cd1d671b94d1db452a29569a83f826c4e7d005ccb","0x1a636bd55fd28ecb829337071152e0409ae9bd3cfe450b0ef3fccdaebf0303fa","0xe549d9345492a907e51fff7e03d81dddc589c5bd11e787c6fc65c4a59b170138","0xac4c9f1c49e1c351483e48aa3607fda5e18aefa471acad1cccb9b8c3e91bddbd","0x4391dcae29043b266de55066abe4514df24083986d00ef76f95c590727814891","0xfaa49b04d209a73a98535e7c6013f0998fd42eefc5c25cb47b1bba39ca273227","0x240ffa1f243386694a6f67b78744d4ac1d459da819f47af6598581771cee78ce","0x6b9db7c50e3fa6b8764479d948451f90064bddd0e3007164396c80934b9a9250","0xb11a32a0d71c965685f8250a7ad2991d535e42419ef5168ec820c71e9ba8b2ce","0xa97acebe800c2f42dc67b1b50920e8ec39d058e57212624b4789b6c692a3ebf0","0x100d7c284edb597e98179afe5132a0c0ad3f801d2441ff09e30c0fbd61fb9e00","0xe424640f6698f1e20de8ccb514279e3e5e9a5003bae2baea183b8c717b599e0e","0x06918aee2450af0b89cf828de4863c6631c766c20e7bd7a308aa52af135a66cc","0xabd1a141a7c7b8ddac4682050806879811c94742a108a6fc273a506e5ef09539","0x53725829a16151baa9f7e5acaec33ca03efeab00f0fb049d226300137e6e0ef6","0x6d0e2800947cc449a572fbedead8e6cc4626e29def92ae582385a266bc46880a","0x0d2be4b87eddb9fc1e2492513e32f3b51d5bf5a1e128cc0e814ad7c8dd4a3750","0x9783a207860f3b683697cee026fe0fff3bca49f459e8ce20a32d76b0d69c0f48","0x707393e4aef350c450b974488b41a8cae83c3d5c77cd33c5eb25963a64fc8788","0x7341186cc967104c90a1781dad1aaf0b9b8f86682ecd12467dca2cea8969d070","0xf839f2595996984f3aadecbf87d2b5c5cd1fa57145e53b494e02f71a2bafa286","0x05cce62b42b2098dc3102a575e087dd7098348f92c87aa4efdbbd5891782e542","0xab7b01aa5f597958b9f8296d2cc68f0a81efc7c85f051bc62a35003235cc3f66","0x3fedf1cd4ac5527bcc51626abed27f59a2085fe6f20f768439b8f6606285deb1","0xcb00603b347a71baca319fbf3f6196d90664347cd77c6f72f24878a3de3af312","0x8af3ba38d9d72bf1290c0aebbd0846f8feeac2f8071274ed44a2a10033936833","0x458bd32871f8758f7d69aaa23becf89d3daee40c80c1bec418a6ff6bdd4b15dd","0x100d40953fb34c466b66985cc7a7fd875dc63a62c70397500fcc3fff46db2b65","0xa63340e6da599552a8784b862bf414461e1a6c9ec23e56eacaa798f6ec896bbc","0xf2cc7f59b70fa18dedbb39d6e9a8a71a3149797915a050c27076355d575011c3","0xf4b6e963e35063e4fdcabf81a5d2eada1410791cdebd9d668937e42cbdb0e961","0x32353a6251e2d3c9f9ebe195b64800198dba43625a3b21eac0c4d6b972fe1f27","0x329976c6f5eefdf2162df096c9cc11cf65a9e81caa5f4c76eb65da13720a4bc8","0xadb40bc2054f6e71ffa2bdbd94612d7b20d4df4cce3fb6fae472be9b13452744","0x9385bbc0d7627ad6be9800c5f03a9e8c8529dd3ffd4d1cb45f0387b4c8dbcecf","0x2bb53e07a8142f551ba04b893b54fd961196068ac68a87b7ff325f8eb08cf7ca","0xcc0f511b6ee00b9abbba72d7c8eb33c226448b82a47be09282d99c1785ccb814","0x761d61d34f9f0975127cfc0da60b6161aef96fae326dd948a859f724a6b5f432","0xdde96980ec407801711262084600fad638eccd25639636b64d4bed4d4d399d4d","0xfdfd1813d0207dd3459fac6bdf5cd3cc0d61a293288f177bebfb4526cf093b43","0xd49b20b8b34baeedac01cc6aea0911a7e360adbe8b6e39be8bb4fd946c3d97a7","0x46a44d4f87db713e8eccf54e6e52d0f17baa1909cff2da33281e1ba97ad782c4","0xb6fcbf9923fa2ca6a8abf3f422b48783bc1100d0448b0ccd8bdb16f90c94bcb5","0x6297918491523909228c60fdf8d52062611eca511610de9274f3eed8dc3a2440","0xf7bdf81553875da8b6078411c885999e7f93487c97136d606267dbaec511355a","0x3b436618a31ec9971644e9791c1a223758583bcd81ec6de6c25dfea01d2f7c8b","0x194e58bb3815ea0775e7f2630ed8411d172c113838169e794048c2f71b2dea6c","0x1bb8bcbb80c3dec11f53e9709cb1c06772f9ce0ef35a6ba10a20e8f392dad8af","0x2b013ba07e84f63231a7b27a35db7cb212b8824154f1d0eded1b21a18fdf1cb8","0xa5075870dd9a27b07906e106baea2ec431b141839d906aece4a1edaaf3f92d7b","0xaf798d4ccd33a938f523d2aad491a653152e193ac46f3858f77b3b70e8ddd3ff","0xf0468f7de8b1d76f737a8c27815a3018b834ffa880e5e9aba280b58a0aefbec8","0xc7ad7daa3aeac07551f7be001623aafe65b39386190ac070366202615bf384e5","0xe0eff6aa37df2ebbfed124868bafaa915707828f9ac13f240b88ebe3436741ff","0xae3ff3bd3c9534f03fd905bc09964e3d821c15a6fe5a7b1aa553c690e4962847","0x3a97ea78d19d09f7be88f7f56673a44bdb7e0254ea85733d88ecb71449cdcb32","0x9ebe631e8f6443a580b4d92d0262dce2cc1a95c563253eb5cb060668d717a80a","0x0a54494b838da7a481353584b821ed32090ee7a780a40886e67fbfcb6cef120e","0xe9415a2d3f92afd352d2a500a512b69700bc9436af78c7662c38ddf4806ecec3","0xa8f406c59ea536be9c35d79273c6854a586c71a0fe9f6e91556f2f1f6f71be4f","0xb0be28a49af91da7e1d60ce1a22769902cb52a3ad55e89a0d0f06b47d407d391","0x2583dbf889389b021531058bb16ce2ba417ab8ea27bf7f076d6b2796f5a1b438","0x9205101830d23c7af836bd607b31bab2887bdb73ec82f7020b8a97896bdeff5f","0x3d712873f7a5826ab250cb2d9cd930d947265253186be671639aba73eece8bdb","0x76faa311c0d800f267aa351a70f730d410167ebe2dbbd7e31c42171100baa148","0xfe89469477cab769ac781064337991ea8214f2897804d22ce92ef26f5ca227ed","0x2c7f0983f292b45b2b5693330fb32c00cfa62485a75dad2840742f9d9ed844db","0xcd092d6b8490f39b67beb9780fe6f53efa536a12d2784bc0e70ff5ecf9004342","0xcb6a9f164b091a70871f9c7eee71b5d6f7db3655ff13e0a72b65c1a0c0a0f095","0x9e5f810da66afd7c78054b438f25c221158bda535be0f223415db7f8229cd0c7","0x23447e04a7e108d0b6060b9cb67e20e130a0bd16f48beb44a1d80181124bf4bd","0x83fbf2ff89eb88817998c56fd988bacbf817242acc2b56754c4939a6206cc1f4","0xc89ae6b30f8cc073ed271f53ecfc12487408dbabd097fe5062f128f5f26aba22","0xa0bc77b61c298be3cd27d40c6cccb2a09139bb414889e7b64ce15de6cf980fe2","0xf7cd04fb3c7b8cc6113ed3221968ef9a2d4fe0255df8ffbf8c2d646c416f2d80","0x76a5cc8188833cbb6575bfa1e5a3a60b895670c808fd62b413a30b42507b4f43","0xd34022a4ef1870d5fae0e04e5f416edbf65206a6c2174c4fe0553de0e17c29a0","0xb42b7ed3d9946251d019b6ddaf6f9c69bc18d0b421e4be0e230292293035cf6c","0x8dae699848cf914a77fb003fda329319c41e314f9f127ef5fccb7477888f11ac","0x04f2519db4c0956c0a14de8f865ddd9255d1078d8474db9f92b281d482288b9f","0xa8ba6b65dcbd94281d86bcacc03e029f4f4e0e1aa794e4cdaa42a767d01edad7","0xdae0a5d0c3f2de34767201c7c58fbe387fb9ee9b004ba728a21e24e9498bdcc3","0xb8dfb6bcd8e3dc9cc359f6761a812046458b3d68125426d8cefdb7af4701fb79","0x4a741654b9f3042d3dff83ee803f4e457d2f42d85de1c7f1e31584d789eaeaed","0xee05af8042258d3f743a01b21a6c96665382110192c408f3c20f941fa1e8cd58","0xe4c7d891738824790559523ce9da053cc0891e0c22891bcba84fa4bde0dfda43","0x4e9fb5f768def4ac402b1ef7234328d543e63bd9ebfd92838c28749b3f4b056d","0xa453ac6a6379d7a0259a007733869bb2e642ae2986809cf73bc8cb8bab0b304f","0xebf1e5c0f4c02b8bb9244cf1693500e707e91c3b2087a080f355693c843e85a0","0x452a39b29ec0ca384eaade90d2da044bb2a247b192f59f679a236c5e2df31e9f","0xe022f23953f8a3a9fadadc9debe4e84f30feb498b8c7372e92fade38c8e52dc6","0x70e922f30dd22cec506373132ff42d639ddcf41f7109e426fd9085b2704b2874","0x650b083e171933833b2f7318ea6784b2a43bde2ce51fa6e184ee8dfafbc3a95e","0x60dde48fb2e4b58a984ec2d34a1f0dded7d2745995d97aeaee7678c02c307737","0x6fad6bdf13599a5ee0a2c0c4fdc791c81697af043af2c14ad10fb14ca8d46717","0x0097cd8f9238519d29a74f7105816ca57a8ff41ffaf2da75ff92563aa423e45f","0xfc2435ed5624d61207f890a1a522644447f9cf26f419def11f51ac89d27e2fe4","0x91fe2272b3317493c0dd225612811fb49c17bbe269a90920341ff1da1357911f","0xe4febf7f78bf0dc3c9b9f880753a6f0b6a1ec7ef12b143240cb61aa2a356eeef","0x20d50b403e9069a9c02e0268149b5f3964a4bff6490c5c24ef1c0ab45b467f7f","0x3d6da6cc01828109336d747509784c869cbddcdb245251999a20e807f036c690","0x409de3635ca8a4895a17f80efac4fc2b0376646ce19c4f98909cafbdde4cadee","0xa8c7c63bf3b5a6ced9255bee75df0b06aa6e8f533be23aa91a43215a58d50df1","0x7cdc86b9d4b5fa8faf3fa703d7d69d00949162e8cb27aecf54a21b448ba23564","0xc1d11ac883acea7004a390f4ae8471827e39b01189295c42dd540eb5fedac635","0xf2a0d9cee76fcbdf523097a1f6362bce3157c21ac5c3ab76e7f580b4d74c1135","0xbfcb8cded9f6e99d4129690e8a93bb6aad9b2972a2ab8832fb3dc16bb3edbda1","0x3149c3a8ca834acfa6ba02ee7456186c6c64e2d0472ce2016781b258eb6e023b","0xeaf5d501d8f90293a426117fad220e7418f4e0da3870a9ee54243aff1a831102","0x815c03eb872b2fae5a7b15490d29ff7f955f0d8ba638057b707153df29404396","0x81f15949e50df333f1ba2b6f591112303492682d19d1f3ecfb14acfd0e9741cd","0x1f53d323b7b5d07a9de49b3371897e8eeaffeacb96b72424052f99d454b1ae3d","0x55021f2405b3bf3e60628884d71319d450f0f0f3f7b2921462a95be8a3eba62e","0x3c4c894641725fca0e6c1301eb976dce2d46e7707ecf8c735e5ab94c80b26b21","0x28fef767e5f859fbcc447271223ddcd25ea8b3db67cbecab0c7f14dc27bd9ceb","0x7a92016213f9a45787799db19b78ca0ce0b89aea4556ddb9020f351aaa0db931","0x6c63ff93e30254e5bb0d760ad04f0b45cf309bd25fce82ddae6a610617ea6b41","0xac7c148236abb762b39898663471c6a0116a34eb418322d403b56fccdbea4041","0x1e6110dfac73726dd2e7cdd7b636baca34f5b184b0a05fd1b17b2838e8b52e8a","0xbc1caf9511a406f38507d4ad38baf554c23a5a4fadde9902ef7b9e26358c91c2","0x7da92ad3a49ef2a48ef34de960c1aec6b41e6502ce99dc2b0b7470202a51cb6d","0x4658cd8691de58ce23f8f46810bfefe5ae75c91b7a8e6f85f6a64a9369becabe","0xb239e43fcbf9898f1941e58cfe5515fb729b1961fe9ce38a45135aa5f8021657","0x12d911a4c047a01d89bd69c62735df3c9b691e112a4da83bdec57caf09232103","0xf5aaec2e0087f951bcf64f3047e2cfa0fd016a2b8621395d129b0e6215a77fa9","0xe19e2bac248574e22aadf0558b742263b0196feefe16919f29e5373da06f947b","0x52e916ebf4091a5e76f62fa3f87d7e7c429388d2e286987c4764de4ccc56225f","0xb3dbb063e64aa90c49e9ffe0dd0a08f30580cf0863f7e89455ac7d947c274fd6","0xf975d4320be64650c19f0c4feac6cb1bcf4de12740ccc7ff6a3e5cdc55d17fa5","0x003a9006f86bc6cade6fb6b94c6a43ad86f5093d5d874ffc2f544990691cf76d","0x06498ccf80d907684a9ada0a55562ce67307b7ec7a9c08538adc4ee2d2c9104e","0xaad5b9488ab0aeac8a043d5ff9b5983374ab939c22fdb0fc1096b4e941d0611f","0xfcf01d5339c3e2fd9e5b590321b201b92929e3ba3e24bb290f0da114bf146c40","0x1dbfe242e7cf04c6d2d9d7d579df73c34bf0ab9cac8d3c0bc8cbb7cfa947502b","0x61bfcb21ad24b492dd9377d2a0f85697f6c03e333e2f77d52ebdf1f5ab5cc7e8","0xfdf6dc29d8cad1579d2e71afe420fb8cc1d7b89f4f0101471a461eea87419a02","0xfd787ddfa1efe1549190c4891e50d1d04e599b785f810dad2901874cbcd227c8","0x03fe58876b420c611342682c06d1630df7d8c92b14d8a6712c0991bd2b95caea","0xa69077b177bc7ee4e2195a14ec0ba975c508488747e2f78525069227d7339004","0xab1257d13955a6045aaf6967cb931e9a81d4f0043edaa5692496fcd05040bca1","0x0330f03bb9aa3b0b364250d99b7c71566734e0daa3aa976d3f7eba002ceb804c","0xed35baf92c3dfde5b1844a81838ada506dbaa814bc3129d56475098555185eea","0x7a91f18b840fb9c9710a4979ad75b6f3e10d771ffe745b8b32b61ca0720be97b","0xaf0b41f4ccda6167566c1e2e3f771c5478aee8d3ccf61f2365be8d36c1680ce8","0x54b744b54bc062a554e45b6f789216477f4f792ba59d4d652462bab5096a7d61","0x1fe4f8190c7d9cae965b5e528247a6369b355bd2421cf0d09cff786de5fc5e6e","0x9338a5e1493baad00e4997a8dc5a7d02f99b314286444176254d68e2ab05ad8d","0xabbe2608fa661711ec2921cabc5a5c583525721d373f1541fd2c411684626735","0x87daf243c60121d6ed1fb77443516f2e253e43194cf298b8764f216f24c68f8b","0xf1134777a9c36219e52f8ba0689cfe64d0f96ee5374aac93d9f2613e79bf45de","0xf8ec73b6ad17b677d4db6ff18d40570e377d8876a5dfb1780775988b458e7136","0x979d87023fc3d7851b43f537cac3dc3e383a66d4aa859364024017dd263df573","0x4ed859501a286d8dab02646f8d89a3240250130911f2bfd1a84e278c276a1d71","0xf086bd91f0eeec9fadbeee49fb50345e937a31f53cffd9849ad6247a4e55f0cc","0x0b37db38d65eb2cda9efc401a5bd27fe6fe502881d0bd53787eb486492dfbc32","0x60584a7fff61c1cd5a3d0d63f89c63538e3b680fa96920263436a3d9e7ba22ac","0xb2ef467fe46a616851a98c12e2c51e9d929fdcdd3ad3c3ef2a7d299b1e19a9ed","0x2e9da940feb1a2ef66bddb0a6115305854531d22eace9f068f88b81c52b4e189","0xa3d1026a09a6a1855f2f06f42aedc518252596613c64daf1fc977a1952f8804e","0xf1aa519756eb0b8a0d1da6795c634a8309fb305ca48c2733160c6f218eb040e2","0xe99298e2753f333900381e38fcb9bc8afa4a7f5fc44b73fc7e69dc34c8ff0b0e","0xc2fc37a85eee926da2fc6592dd1809204ad4c97e231cf14ac3be84fa018c7dcb","0x292aef12b15e1c9ca5f921bac05b184e19be03b6e5cb16586bfe5b06a79d96bd","0x4174d51de8986e636dd6ba97593c1d57ef38a199b3e930cebae119f0f63c5813","0x1c44449f24f77cdbad97130ad58588a5e0f181ade6722894ed70deb81c65c508","0xace62a29fd9e24db85474a4a7dd19fe448960a12f75297f9f45b8c9cecf277ac","0x59c719d7774dbafdda5341d1fe26c19198fad10c2afeafbdd4659e5555973ac1","0x324da466170fd5a5d56861a4d153a4750209b7b670d08ac972d7e43c56e576cf","0xe83677185431f940832bf11ae2c7513621be290a171d5782f3be3819944107c3","0x24aa3e68650dee8e3deb71f1fbfcf070f344434244ebe5c049566bdf6a77eb7b","0x80da0c52de6d1672a0e1c4226717443ac5ff8a921e9cd67d57e415ab3a5119a5","0xd1998f6e4da6446d19efd4efd4bd79f91e135654347f21f6d6cdebfab8ec8e32","0xbc4aea25cff41e8de0188f3e4fb2ce8aaa8235c295185c1ee6bd6ad797767e97","0x4d8440c8ad6fc724c3a56a40f1b796902c003295b89e8eb5c5e41f39c620eaad","0x46266ab00c725f0530cf97ffc5723b8ec0e08e8071650cc5e74f4e13110e0b4b","0x48ef85dff0d6a045c15715451d727b1065a47f99898d767667cc70b483c9c0a8","0x4a68e3a92b01b1da7cd090a5517e723919417fbd5b28f457fa49cc3b1c89b776","0xc27d7aaf0a53db824d13f3113999b835dadad43ea2162ab8ac71def80622cc51","0x4d57687f572900f1f0b2e04aa8216ffdad2ab1f37d4884412ee28abd44a696e9","0x2f221949d203113339673dff4a0345ac05c5c4c22415aaf38274eabaf8bf1e38","0x1614ca0432f08fccf1b52338f8d8977f6248135d8191467daf0d6e42d87ef1dc","0xbc3c1b893d9e8bc9bf647353f2a51355914ccc30b24e8859953c93778638f770","0xfb5bcf32cea1e39d66462ce8758b451be16764337d29f454abe3bd8ce670ad3a","0x928eda2f96b837f619e5743e50c54b0c0a1f7264497c1955be8315c0731f4b02","0x3b4d34a47e34ff4638a8a634a0830beddec551dae1f78162b7ab33f8fad3f62d","0x12adcbeba51079664769ec82401f3472dc0270d371e5f08634bc1529eaf56caa","0x7004d9b350dc5478697c98c06f149d03ddeea0876ac96a6e3ae09ca9dea8f72f","0xba8a840507427f84cb795fd589a5088a26531818cddb68b7625de7365a3b3e7c","0x5134f3da21155bf7b5b3f844604df8b124442079714bac618973494a6b8acc47","0xed3963abccdde6d6fa975bbd7d393293ec4012d671be2b8456729f26776f69c3","0x5b01a67ab73f1012c6b2373ebf62e6a63da57f55a34352b7d4f5608bd952ab3d","0x1ca7eec01ca57480369839d8a7ce35dfb57903aadde5c2ce8886aa76932fdf78","0x390b8e73c40200533cf3afcf9358ec6302532ece8481182c599dd944ec70cfab","0x981e6840303a0b01b5ef4c884d069339c1bde6b1211802a8892d62d2d290fa09","0x1d0e14d4c7e4ef0c7b4727ed113312001cf2feff495304f380ca610bd4fceb6c"],"transactionsRoot":"0x2c601119324fc3b4c82ad04c9f69dfbcea07b51e0f39b3ee2c80facf3bf3c74a","uncles":[],"withdrawals":[{"index":"0x70215cb","validatorIndex":"0x1fa31b","address":"0xbeb7b6b8e82160596dcc50e9037cfb474f96cc88","amount":"0x1006676"},{"index":"0x70215cc","validatorIndex":"0x1fa31c","address":"0xbeb7b6b8e82160596dcc50e9037cfb474f96cc88","amount":"0x100a93c"},{"index":"0x70215cd","validatorIndex":"0x1fa31d","address":"0xbeb7b6b8e82160596dcc50e9037cfb474f96cc88","amount":"0x100e967"},{"index":"0x70215ce","validatorIndex":"0x1fa31e","address":"0xbeb7b6b8e82160596dcc50e9037cfb474f96cc88","amount":"0xffd9de"},{"index":"0x70215cf","validatorIndex":"0x1fa31f","address":"0xbeb7b6b8e82160596dcc50e9037cfb474f96cc88","amount":"0x100fcfb"},{"index":"0x70215d0","validatorIndex":"0x1fa320","address":"0xbeb7b6b8e82160596dcc50e9037cfb474f96cc88","amount":"0x1002d11"},{"index":"0x70215d1","validatorIndex":"0x1fa321","address":"0xbeb7b6b8e82160596dcc50e9037cfb474f96cc88","amount":"0xffbb87"},{"index":"0x70215d2","validatorIndex":"0x1fa322","address":"0xbeb7b6b8e82160596dcc50e9037cfb474f96cc88","amount":"0x100c30b"},{"index":"0x70215d3","validatorIndex":"0x1fa323","address":"0xbeb7b6b8e82160596dcc50e9037cfb474f96cc88","amount":"0x100d8f3"},{"index":"0x70215d4","validatorIndex":"0x1fa324","address":"0xbeb7b6b8e82160596dcc50e9037cfb474f96cc88","amount":"0x100c81e"},{"index":"0x70215d5","validatorIndex":"0x1fa325","address":"0xbeb7b6b8e82160596dcc50e9037cfb474f96cc88","amount":"0x100b7b7"},{"index":"0x70215d6","validatorIndex":"0x1fa326","address":"0xbeb7b6b8e82160596dcc50e9037cfb474f96cc88","amount":"0x1006319"},{"index":"0x70215d7","validatorIndex":"0x1fa327","address":"0xbeb7b6b8e82160596dcc50e9037cfb474f96cc88","amount":"0x10036d9"},{"index":"0x70215d8","validatorIndex":"0x1fa328","address":"0xbeb7b6b8e82160596dcc50e9037cfb474f96cc88","amount":"0x10115a3"},{"index":"0x70215d9","validatorIndex":"0x1fa329","address":"0xbeb7b6b8e82160596dcc50e9037cfb474f96cc88","amount":"0x1008276"},{"index":"0x70215da","validatorIndex":"0x1fa32a","address":"0xbeb7b6b8e82160596dcc50e9037cfb474f96cc88","amount":"0x100c075"}],"withdrawalsRoot":"0xd435385f5285ee22ca7a6b55573d4925cfa8942ca2163b27352f9ff99034c7c5"}}
+
+        '
+    headers:
+      CF-RAY:
+      - a61165a6c801872d-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:14:38 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '27137'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '15'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionReceipt", "params": ["0x1c44449f24f77cdbad97130ad58588a5e0f181ade6722894ed70deb81c65c508"],
+      "id": 7}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '148'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":7,"result":{"blockHash":"0x518d4bc327467e82482f71c57972da8a93077e98f904bdbe5fd980a534d7ec25","blockNumber":"0x174102e","contractAddress":null,"cumulativeGasUsed":"0x16987c4","effectiveGasPrice":"0xcc6c8e2","from":"0xd99ac0681b904991169a4f398b9043781adbe0c3","gasUsed":"0x2ccf4","logs":[{"address":"0x70b7f7044d2ca8e2f1e999b90ef16d7cb7a0cda1","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x0000000000000000000000000000000000000000000000000000000000000000","0x0000000000000000000000007c5d5222f60853159bbdcc058088587618d61b24"],"data":"0x0000000000000000000000000000000000000000000000006124fee993bc0000","blockNumber":"0x174102e","transactionHash":"0x1c44449f24f77cdbad97130ad58588a5e0f181ade6722894ed70deb81c65c508","transactionIndex":"0x133","blockHash":"0x518d4bc327467e82482f71c57972da8a93077e98f904bdbe5fd980a534d7ec25","blockTimestamp":"0x69833d83","logIndex":"0x212","removed":false},{"address":"0x70b7f7044d2ca8e2f1e999b90ef16d7cb7a0cda1","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x0000000000000000000000000000000000000000000000000000000000000000","0x0000000000000000000000005523985926aa12ba58dc5ad00ddca99678d7227e"],"data":"0x00000000000000000000000000000000000000000000000029a2241af62c0000","blockNumber":"0x174102e","transactionHash":"0x1c44449f24f77cdbad97130ad58588a5e0f181ade6722894ed70deb81c65c508","transactionIndex":"0x133","blockHash":"0x518d4bc327467e82482f71c57972da8a93077e98f904bdbe5fd980a534d7ec25","blockTimestamp":"0x69833d83","logIndex":"0x213","removed":false},{"address":"0xd7c3df25683871d18bc838e4f619126442dd38b3","topics":["0x1f3f0f3c7b2df480755c6486a132f215e7b2b89fcca0beecd95a9696c71789b6","0x64ad63f70276e9699013c217e9fe1945a241aef9ebaaf8a5023a73a2cd9d6517","0x0000000000000000000000007c5d5222f60853159bbdcc058088587618d61b24","0x8a3f936c33a395e401ac150970a5c9fd0b9902277075e9ccf7eb58ad85e23f33"],"data":"0x0000000000000000000000000000000000000000000000006124fee993bc000000000000000000000000000000000000000000000000000029a2241af62c0000000000000000000000000000006c3e2aaae5db1bcd11a1a097ce572312eaddbb","blockNumber":"0x174102e","transactionHash":"0x1c44449f24f77cdbad97130ad58588a5e0f181ade6722894ed70deb81c65c508","transactionIndex":"0x133","blockHash":"0x518d4bc327467e82482f71c57972da8a93077e98f904bdbe5fd980a534d7ec25","blockTimestamp":"0x69833d83","logIndex":"0x214","removed":false}],"logsBloom":"0x00000000000000010000000000000000000000000000000000000000000000000000000080000000008000000000000000000000000000000000800004000000000000000000000100000008000000000000000000000000020000000000040000000000020000000000000000000800020000000000000000000010000000000000000008008000000000000000000000100000000000000000000000000000000000000000000000000100000000000000000000000000000000000000040000000002000000000000000000000000000000000100000002000000000020000000000000400000000000000000220000000000000000000080000004000000","status":"0x1","to":"0x5523985926aa12ba58dc5ad00ddca99678d7227e","transactionHash":"0x1c44449f24f77cdbad97130ad58588a5e0f181ade6722894ed70deb81c65c508","transactionIndex":"0x133","type":"0x2"}}'
+    headers:
+      CF-RAY:
+      - a61165a79a441644-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:14:38 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '3139'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '6'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.4.dev1417+gea4d5eb4a7
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=1&module=account&offset=1000&page=1&sort=asc&txhash=0x1c44449f24f77cdbad97130ad58588a5e0f181ade6722894ed70deb81c65c508
+  response:
+    body:
+      string: '{"status":"0","message":"No transactions found","result":[]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 27 Nov 2026 13:14:39 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '4'
+      content-length:
+      - '60'
+      svid:
+      - '6'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_call", "params": [{"to": "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696",
+      "data": "0xbce38bd7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e0000000000000000000000000000000000000000000000000000000000000016000000000000000000000000070b7f7044d2ca8e2f1e999b90ef16d7cb7a0cda100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000004313ce5670000000000000000000000000000000000000000000000000000000000000000000000000000000070b7f7044d2ca8e2f1e999b90ef16d7cb7a0cda10000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000495d89b410000000000000000000000000000000000000000000000000000000000000000000000000000000070b7f7044d2ca8e2f1e999b90ef16d7cb7a0cda10000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000406fdde0300000000000000000000000000000000000000000000000000000000"},
+      "latest"], "id": 8}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1299'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":8,"result":"0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001a000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000451554149000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000c51756169204e6574776f726b0000000000000000000000000000000000000000"}
+
+        '
+    headers:
+      CF-RAY:
+      - a61165ab4f1fe712-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:14:39 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1383'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '12'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionByHash", "params": ["0xc0e966ddc2b9ee781ba23f31b4692850c4c8f550d2c3402e00f66119f97d62ce"],
+      "id": 9}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":9,"result":{"blockHash":"0x9a6e0fc0a1677380257a3f976b875e58a25e404f3b4a25e1f74b46342b1cfcff","blockNumber":"0x1766032","blockTimestamp":"0x699f21b3","from":"0x7c5d5222f60853159bbdcc058088587618d61b24","gas":"0x3a001","gasPrice":"0x1ce9f4a0","maxFeePerGas":"0x1ce9f4a0","maxPriorityFeePerGas":"0x1ce9f4a0","hash":"0xc0e966ddc2b9ee781ba23f31b4692850c4c8f550d2c3402e00f66119f97d62ce","input":"0xcbef5f2c0000000000000000000000000000000000000000000000001bc16d674ec8000000000000000000000000000070b7f7044d2ca8e2f1e999b90ef16d7cb7a0cda1000000000000000000000000000000000000000000000002df85d331a7b400000000000000000000000000007c5d5222f60853159bbdcc058088587618d61b24000000000000000000000000003d9f9666853fd4a10351ff5364c602470a7cf6000000000000000000000000003d4d57930b2e0887606be461ab167cac2e769e0000000000000000000000007c5d5222f60853159bbdcc058088587618d61b24000000000000000000000000000000000000000000000000000000000000000973796d62696f7369732d61707000000000000000000000000000000000000000","nonce":"0x1ab","to":"0xd7c3df25683871d18bc838e4f619126442dd38b3","transactionIndex":"0x90","value":"0x0","type":"0x2","accessList":[],"chainId":"0x1","v":"0x1","r":"0xfbb9e0f02d24ffb1d8bfb32bf14e94058e4a467a989909c8dc0fbdebb9d55390","s":"0x5c40ab6fe395e8afa9e2ac69671d9c5a22bee40822768e393b322941a6fba12f","yParity":"0x1"}}'
+    headers:
+      CF-RAY:
+      - a61165ac186e6e11-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:14:39 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '1324'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '25'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getBlockByNumber", "params": ["0x1766032",
+      false], "id": 10}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '94'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":10,"result":{"baseFeePerGas":"0x1abe21af","blobGasUsed":"0xa0000","difficulty":"0x0","excessBlobGas":"0xbca1786","extraData":"0x4275696c6465724e657420284e65746865726d696e6429","gasLimit":"0x3938700","gasUsed":"0x1ef1bf8","hash":"0x9a6e0fc0a1677380257a3f976b875e58a25e404f3b4a25e1f74b46342b1cfcff","logsBloom":"0xbef97dcffdafdfff3fd36db7effd9cbd5b4a3fcbff8fedbf76ddefce76dfefbbce5d6f3fb7dfc79ed7ba6be7f7ff77defffecf79beb76eb5effff7eebdfe779ffe5e7ddeb7fdfffb5d2ef72fff4bfffbaf6f7ffdf8ff9d2fbff79dffff679cb83ffdefaffefbcfeefddef51c1eefbd7f7fffdefbfff45f6fffb7db9fff7f7e37df7f3cff7fba8d3e2f7bffeed7473f625f95f783fd73fdffc7751ddf77b7dffa3b6dbf6f7ff97a7e7efe59f39ef7bd6ff7f7cfefaffff5fffdefdfbf655ffd7fffdfddbf7ffeff67acffb5f6f76f7cf637dfff6fad6f6cdfcf7ff773fdb2fe5a677ffe3fcbf7f6dadeef53f7fef73fe7d7efefda3dfcc679d6bfbefecefbe7bf","miner":"0xdadb0d80178819f2319190d340ce9a924f783711","mixHash":"0x53b0e20713dfa9b6c019bc3a4d4ff669abf06ba017a6392fefb53dd699c84ab3","nonce":"0x0000000000000000","number":"0x1766032","parentBeaconBlockRoot":"0x580fc6fa5b56db3901cc57ac567f6daa124016fd04b0b3877c67a4c250b1d16c","parentHash":"0x48f86fc7eaf1f73d4a5121e9621d002804c6146eb2571d822f4b5a7bcf809eb6","receiptsRoot":"0x505b2679bbace8868b6c599a8d887b02bb6830b67fdd386d99bb38dec09e6170","requestsHash":"0xe3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","sha3Uncles":"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347","size":"0x2c129","stateRoot":"0x327537f3007ca47eb43792b308936668f14ba64b651c16004162fbd81134c86f","timestamp":"0x699f21b3","transactions":["0xc65e6a3a565912c38a39b6e0c42c48380abad471d4ee566c54558d8e944352ac","0xc6728256d384936d53ff2286571e9f37c020d08c81d693e30e6e5183406eaad0","0x5dfc196be7e07a20852128dfa3df25201e1a8f5c84cac2a85849db57bb647c81","0x6448b9346e9047ceb8b5b2e734b88b2ad53949f28da47625b5254d61ca8bc8f4","0x8add417d5b8c3955d9e436ead3289a20774438a8a1b49f0a450b7ea56d5c46b0","0x659103d92b23cafd29778053b8151240a51e8697edc9c8f6076eb1e27469d984","0x9757d83d5e19c5d603a82aaed3278cbb0aad9e9e4cbd831cc3512e637bbf8c4d","0x6be33ec66a605fdfaf14ba60f250d7e1815cee8de448d0d0d0756150a28dc1f2","0x25e430746db3e3efd0aada1761f92cf47b9af6dab578ef0bb82329523c730415","0x49af81993a0bea18cd251947e735d0bbb2fc2f404199937b815b875d91c7a6fd","0xec8a6f71608a25a13633c5641607364398c3e4182a70b366bed4148224c59982","0xbdd7106ffa5c0f5953c69ae6a501fa3b1fdef6110a6c90b936487111be9c9f0b","0xd11c508f40841dc057a904eca0c49e1a24c771ec205ca9a111afba196740f033","0x64e8e412f89581ecb0c8e80be332109d930e4659406691c356fa8724e61f1ef1","0x883f8437f69afa4591142b783535f22a78b9c20e9d7af031abb21c59c4525de8","0xaff88324cef3146d218c29c0d4459520bd8993b6946f9a516946f66b5eebde0b","0x19633aaa7c25e16b0bf642b8c46fe7bc3d4cb5bd4d4d30f72e598d9315ca91b2","0xd6f77a4fcfec3c75705a60ca3c28498f12afe97b7d81ab689e625625c47ccc04","0x19a2f22924f4c1cf1c72d47dc78a6a24d204a0b19725ca00a2b0217996b65455","0x8257b734cc49980eac48997a2903b52f43aa968fc5e5c7c343730c24c4be8a6f","0x8ba12d3b25cba0a2e91818fa8ecd65a8afc8bdfad0489bbc682d48631da6abaf","0x7618f985a3742f5b32a310ab8d0ca169ae98ee373c8c75754c146a692af27266","0xe69ef7423596893f5e656769d9ed9298caa3b1ce0e3f67966a21bcc459145b7e","0x0bfc5775518a6fa348f228086e03d96af280be593c7be93223c7805565401d03","0xf91068cce9a3b6e39dfc3b6685cfb98fb44f20a7306cf2b939cf927d5b27f418","0x5011a4bd0d508a0ac69c8b3e0829d5467706df9fd42bf0a96078e3709950a3a2","0xa4770859a1c7c54d4edcee5fecd3a7764c015c245ba6bcca0ce59d83446a455b","0x4a7a035816e00fad551cc65d495c77501e7a60a5173e35b6f98aec42df2850ed","0x17b2419b41d155c4c3c0240ff91d0a4d6916dbea74b1d6a19f307df493fcabd2","0x31f158496253b8f5789783eaf290a0fa5355c367a42ae61ca06ece1270aa6bf4","0xe3767d9c4a122c6fc72aadf03506fcbb742b810dbbe7b9407dad7d63247a994e","0x4195b4e754eedbe477a9ceae8fcb8ab5be53d1095dd594d2fc3b931653213e63","0x24790f4bc813e988f34a051d2426c258d5d9c56b119e635e20219bd6a11b33c6","0xe981fdfb68763ade5803b3c81c19d88de72ff7f70d1d8da347f272f29c7712c4","0xd446704b5a7cf21b10945a8cc52146b0f5fefdaaba56614521f8e5f2ec2893a3","0xdd7eeb734f88b78576094e023ca8127414c2070c05aa92fe34044a464c80a2e1","0xf10cb2f032678cb7c7db49d4f2d54cb35e66dc8b669484262a2e6e533893a3d1","0x32952b6960a85125c7e47827294b9e5bee5700430d4c662eea4791d2c18a9902","0x83731ac45e9629044e83ac92a9e6ff278315185155614c048db700323c239856","0x7f010ef7f7756b5fc5ce6f256c50835d276e981507bbd702ab01a796b430bd14","0x31c575718cde912a590c6e5fa796073f3a2efbd6d979835c4313cc68fb1b76bb","0x1507a2ad5724bbf53a72465eea6ab65d4644394688486202348cceca5e59f137","0x2068bfc84e95a8bcbef096a4467e14a1cf127eb3f56b478b6f867bea9158075a","0xb5c897561330096627dd9cfa102f0f1ce6a4d9ff161627ca6da7b2c6c9ac21ae","0x61bdc0b0e15e8af0c678e88abaa8b948c45cc04d2d95d0a37fddffca582b2db4","0x39638d24af17de2268800a476b5c7f88e62e66ca94a0400298962e4738db21dd","0xc4bee5545ce73d8d31507e59931e687507a50dbca055fa3454528c1d8600021b","0x2858972f12d8e89df372922e8d431b5c4abfee52441206bfce5ab81d9178e995","0xb56ce26c2142990e7b0d44a7fdb887bbc63b62a902553544ee612d088494ee4b","0xf1bb0843fbbf9e55569423da11745a66851b8f4874be32ebe3139abb67f79e34","0xdad83c61bd68d7ce234aa245ce4366d9ebdba9430b69b70f94cc2734a15e9cf5","0x2f03b1d24d8cb418e74f7d716b1a397cdd13dceb3d20956b595e8ae0849055cd","0xbe715d2521ae4d9b106f75345b8b0a26bac5a48d584288f6c1f297290ea690f8","0x96add0dc9c91b6cf3f7c97779332c7bb0ec22063e3cd6c0419bb978c511972d0","0xc8214098db741371418e719c651e6234fa89aeece635ff986cc5d2921fad037a","0x8bd4cd3b09ae5f9b96394bbe48bc40b1e17941083633438b60b132765f2383d7","0x3d6e4c00aabe95d99cd8654adb186dff168495feffb00eab3cdb43849151875f","0xc0e4ae805190fd57c67de0de08f07f9d4999cee58653afa985852e4a9aac77a7","0x626cf95c1cdf64545662f9818319dfc264b7903b33ab1b4eeac148b5eaa01722","0x486113c8eee5318ff07c5cbf3964fa550b9e530b9f896b850abf54ca68d1047d","0x5e183a73717e29331d2979ffbed006d2f050616336c71a32910c16c6e6fc4488","0x53e0bcfd67cc1c140166ad5ec274047b33299df68408c601a3808395eb94b00c","0x24889be4fc4526e73134bcb2341619105bae303266939b28c02bd07cec1afb84","0x0d5bc1bffbc0a6d37ffaf0e011817895a2114c7e3877816291ca963986d782f7","0xb4d16a85cebf83b9bdc428ce122c90596967db53f1c38e5d657aebedbd343acb","0x955f5705e2f0a84231adcc1d9b4efa348ef84766dd5fe05f59309abebb76e837","0xb3990f089bc460ef9a9ca9f6be2fbd231153d4d16031c01aaa3b98b47adb8f3e","0xba9b4d8e710b843e0f866faf45835386c34c035fb998824a1ddf01aad91eeb17","0x6e1859726e59770fab05eb898d3d93bc68c3bdfa821574dac5bff398ec0f137c","0x1cad340467d4e03d2edc3d60f890c3e1ed9b497b8bccb1c752b7b1e1eddf5dc2","0x0c5757615b678f525850a0591a21067b9ceee7b855948853cf61fdedc2e41c6f","0xb8de9a779ccb9abaa9c692f85f52f302957eba891c003cab367919f23da0ec4a","0x2b3823b8331c82cfb1bbbbbaa18593754911efb16e476bada41fe8e0134e5f6e","0x7444480285d6c9390585b252cd4bacaec4982d8773db43467d6b2a26042d77d0","0x998494e612cb2c22d5d28a2553bbdfbfe6eb2d98e15faa159b4e1952c739fd97","0x89548882826a54226cd1aa16afa6dcd766ac93c845839a23d85a992d93aeaa32","0x29755e86c5502b85697df022561da985ba56de42de70b414bf054b9f67d8c1d7","0x432fa13aa90b503e674faa50cd4e0e390d247bdfee77f34c7ba9cf8108831233","0x5aa995370e117d05710d62dc273187f3da97192ba8a3f21d88f206224d6b73e0","0xc455fda977c897630eaae3a1ed1f5e2cb0b2c9de6ddc120e03fe5381a26aad04","0xf68ef3eaf83e6f966da47db93f84fdd482a3c930efb037f9a67514f076d88055","0x979347b4f7c593195a3ab8156e1b1939716e33fd3e1d351827221d2506ff6c5c","0x7d88f1472954cf6b25b6de49929437e48208af4f73e5d686ede2586e092a84f0","0xd2b2eecb8f89009938e94c8ab23c603d788acea14030b76a00ba777a31ee129e","0x6662d182fa38e0710af3b27ee4b8f73355ece388a0a33b666290fc9120becd0e","0xecaf2dd49070389c397d87d82c1a20a23a6ae50c03f1a72cb28048f54af347e6","0x3fd3e38ff76bbc9ed4650d0257d94613c189587d0ca69153632f0696f90a6cb5","0xa6e22fb7e99ef003ee4a74b6d69977f3d9a6fb678d95b41408566c728e1ff154","0x9f0eb0e40a78959e3bd1c2dbbffb067e569f36724d2f09a95589f7ecf34173df","0x04620c1d83962bf11ff15a9455fb560ba97c44728e70c88af27595136784d68f","0x732a634c21857505b4a13e5dfd86641eb6109636d5ce1ab0cc28cb2bcb303409","0x111395a33a451760ae4d5e201dd929de9da8bf8c8221d19557deb11b390372f8","0x11af550d0a3b9d3ac2a34efb126c1a3b6c846cd7c7cd480a519b4a1bc311bcfe","0xb728d4d85b462642e5e1d545a3ac72d4d748d333968c7a1ce9f9d7027aed93fd","0x5f7950c98abc375fabd05329dcc97ad4a8ef048970ab7b5f433bd0a665ac347c","0x4583e9dfe07ba909ba5febeb831212d33e5dd4703d513bf5128df289cd6b7990","0x2939ebb3bdac5ae4f0313acfe76f8acbea7bbe671bc4daea4692c3437e6b2709","0xf322bab2881a8e2874919894efe831155b347dd6eeeb28266c2eef4d34abf262","0xe49ebb8d229083e71781bcba6a36e4ddeff84596ff955211421ec9e3fabfa196","0xc7d194f19430ab5cd474dbe5294eb738fec419bad4f3c00b821c3c9f2d9605f0","0x41dd50fd5d4c19c6de18c66fb547996542d5b44ab782b4913bcc8025fff88d50","0xe9544cb3a3296df510ab7d45a95002e5dbfe982151dfc74b520767c56daf6923","0xc7318eb435a8f052856c7ba016cc73958f8cb7f362f032a5d356508df9ed3d26","0x06c93b2bdfb2e9d544117b490b3110500c50553658a61d8f5ed32afc9d9b6c77","0x8f743b45c7aba8149ece100fb0ea1b88764639926afd3a9985c0b3b2b2e6ba3b","0x5cb42e434bdcd68cad414cfbdd3d911424953184a6eb27facd275c6f2706d571","0x7bcc3658e4a296774de7d9d5da876f124fc2e8f5415d0c7a883b7f1c12a6594a","0x78c9ed95ffe78b0d871bfc0e69097febdc330d7e0aa08bebc8d4114644fc410c","0xb982ae66007f52f7d64a166dd7b32d02c5f8f6f84bc3f054b3364a11959704c1","0xd2d37aa1861ace824a8be858f078f814acadf482350ec62f56791e30976a698b","0xcbf3ef5f9a50dd2f43c752d16ef3bc1acc367e2b08752ff985d7352f4d85516c","0xf3b9707e057eea358bb1c7524e3468d46dbeec3a5bb035dcd56083e1747f1f47","0xdc2bd1bd560f2028378141faf8d02c257ca423128cfd7f2d258758f170e21b64","0x7f966596a95f062ebe6e028681faef5b0e63bc3dceff43c67149fc5ed4c41a37","0xfc1d68e1dd81fb5074f795d71b1acf71eb2c9ffab3ccb9b4ad2475f8d7490d0c","0x4aff64736c4b3de3cd024654cc2d4189f376759daa829bd6130b7dc3e35459ff","0x7614004b8bf8c161dd16c016b2ce8d388f140c3dd5e2ecef12f7495ac289fa26","0x4bd4e9bcaa2b85815974143cf5865c63896ae41cee84956de810d1819015e6a6","0x69d01f70fc4ed83f0a4fc2f0c8f7003891f5a45f268839f54e61188977abe754","0x63326f2aa6d892ea51afaaf530ebe3dde430c8c4112e0af1a606fc1658ca894a","0xbd8407b3ce0ebce3707f019ce7831586bac2d5b653a0ab380d3aec148dcfd90d","0xd46f45c144ccaf9dd334bb952a7758b9f7779dd5ecb429c1e1dbe1a21446909c","0xe15d808bd59b5bffde93f5b36fe65ce8a492aa38d18d9b97cfe295c18ccf43b6","0x214d3a0b02a508224bd9c29258748c3111487fa852e48646e4ec0f0f108fc7ce","0x331e30495f1630982e4dc400685a24fae2012ecc8e84ad0ab5aee79aca75fa49","0x08c970f543ee1b0effc2b1559f784f5891a9bcb335ba96960946bfd8b64a7c18","0x652fbeecb55b1c7f6451eaad325326c8b5e61bfb9b94147cf4756f41f6ffc23a","0xdf842a2b7d46a309cbb81f1b6073606c467ae64130f814c00cafcdfea78083f8","0x9f7b48e26df0daa5522e295c107ae20d226a856cdaa45d253c83357f4a8e995b","0x61ecc2afb97af67d07d825a85d8def0a62a6961c895d8ed57caa549af7f64e81","0xd2ee2caf1f9080f2b3e35fa5c4459dd93e8a81927dc8f17852988b01ae2f6b8c","0xabb034afae843d6ce39928a79049d92e52f293b73824564d21cd406aeea4e76c","0x239301a6186d05a52e9090046af4bce1bcb8e6a607830bfa8c26fc83eacdbddb","0x523af23245c5db287d307413e7041c103277d966d630ab468f830b3aa7b1cf7d","0xda833535bc576f104e72d0fdabf73a6f4f959d01daff583f656aec51fafab8a3","0x2329a657ad2389d9ab04c3ffb89a2039ac6fdd06ccbd4c6d491f1c3f68f9ccb5","0xc4caad87976fb3458192915291cbf24e7ddf0de38cc3f5c53471881264956bc0","0x1bd9606853df4cded5db481a32f143d858fee11ca6c041baa964fc48689dc716","0xb60255446349ebfff9f64c82dde63f93b68ce8535b8809d96db92cbab5e4e898","0x117ea3a3a5f9a7a90998890a149217435c93d4acc7aadfc2cbf2278103140f13","0xb164ff34e335190870cb6e368a1c41c0796786019f64e8587707c22f4cfd306a","0x7544a53949ac7989acfd941af82e5698c44de9e6d6c7cbe9d0681cdb2d2f018e","0x57ddfdb9efbfcf38a2b85bc67208f07b97e1bcec4324ffa856524ff0783d86c1","0x68ff72a4bd99ec8dc73db3b688484083353305a8c4d2202a47cea4b0ff14c5bc","0xc0e966ddc2b9ee781ba23f31b4692850c4c8f550d2c3402e00f66119f97d62ce","0xf1c657cf7b2d574401c2281ee8f59469708d979624d04ff9c75b1be642740c56","0xf0455da2b0a9b1ab5693468364f5371e5bb623634bb79155c89a591e5a64e8b0","0x32003889c9bc8b0d680fa9845ec4ca152ef177aee318da5a7ef3cc1882aeaa07","0xaa099d206703747a41eb34370f581f25e8419759e25c841b53bf039d599d556c","0x19cbe4a50dd0bb63271a523f285eae66722d06a0fc1c665a728a23a79197cc03","0x2e0bca34cae71db2eac4e7abcf180fcd6823ed1d7abeb82ac6812e2a758ef335","0x4362e6a2197d90e30b202be2a4ef57b6d9bb64d959d0adc7222ccff8fe32007e","0x6bd2b5af38e8280ce51ee023d8e288d352d318970b25ef2f690dcddcd1bf3e84","0x3bbbeca52319f5501235c30a3b568d9c6eed61a7f8913cce543e175000efdfc1","0x26d47f7973b7c255f090a29c53a50331e5e6045b56d0f7d9eeeb424dfd701eed","0xe39412ca81ba8174b32d235ab59a9e729449b3d0b3aabbe32af005d2d7fdd925","0xd3160bdfd2169d51c12a23ea10208536d725d3cd5e25edd7a710b73d00ee92c0","0xcaecfc8ec7933f3e1824662f62831b7bee139b46a137649856bdef3dc8633916","0x39d002f714ee39390e67e6b802d13ed6b344247b33ecf27ce56f6075a5178f8c","0x08c929cb616bd6f514e00ce74c418abf0108de24d28c44b4daba99b5c431682f","0x08823cdbef597d34195785a40c474235bc06b6766e2f25995f7f97186b0d372d","0x9f45216c8620a206fa085ac0c0d7d9a91c9a33ea2d49cc007f22e5a259ceb030","0x42892e77368789e358d25c3ed1d3b75dc99ef67629b1573c618e6ef698ecbe81","0xeb061e07b5a77048a28f14638f5037d87d411cd53f7cd0dfdfc4b4a2c572555e","0x9b312c57f38e31b02ef1a9628361832fb242c8c87ee5b6e76dcfe572000788d4","0x1e595e70346d4499f59931302c3aeef802beac51fa33e67a71a4735ce727ea96","0x41ce6305ebdc8d5ae47b201d9619a61c166f69537cd291ce6cd5357e64231097","0x2cf40bc3b8b21536d2399ffd8147dc193a5eb5607874182acaab74e465dd5735","0x16bfe4e8578e1d85fc1e7f0e5cfdd663a6098554fe94ccc1a0cb330dfddc06e1","0x3c477f5614bddc2e967a0759d1fe5e4d64fa2e088272ff8f0d379ef641ae265a","0x40bb0c34618b6b29cf860d314a37d778eacd06c203cf0e2782d57ea1e9871cd4","0x8d75a526590fb44aa632352debe8dfe0540055b831aa964fd2cb339af9b895f1","0xf013ac6f358f4f80750267e768e769717287cf5df928a8e651b98fb385369cce","0x9053e3e087e30845dc4b8c2592b70962726be0afb9f8e6899cbdd157168041aa","0xc2438c754dc17d66bc6dc135f2bd935848128f990359d531c96c70351c0fb992","0xee9197676f8c6415a48dac307bdaf2e742cff21d18381c80462d92ee65a0f5d7","0x49a6b396c8e25d4cd3e3f3cad46e462020f973113814dc298124801cb1aabcb6","0x70c5a7f540241d6946bf8665c8911225895686576f754f91ef9a0ec108d90754","0xc55720d22a607384c6da97936c80ba6df1b1881ed0b4f551643940c4460475a5","0x3deebddc3dcb45e8fe767a54582a46415b1c2c9b069d0753df3e373f7844313e","0xd51cd11784ddef8434d8a4d65b3bdfd386d913904765c9d022cd6a6c27326bcc","0x053ae4f664e8d8cd7c67305c1b76c2329b98e604c8fd659c4e6be05f60d86ab2","0xd8fefe52a0f6f0f0857a3248b6afab04f5cc3d9b6be5192e068f9942559a1d64","0x6e5718572ae8dee547309952ae6ef608f2750e40c6295135dc1252f76a80acb9","0x64e0aec2dffc3ded486efe56613caeea8f9afb7e35be1b6d43b85dc0a2733ee0","0xed94b8e0e6ad12c9a7c3e2bc4364ef6c7f78b81156d0fd57632018c4af455abc","0xafc7641ec851d3628f860e30f5ecfa25292900b6ff0a3a155de09c7b964776bd","0x881559e05a23f0922112f10be44bb3b505838a50a0f5ed49f62c1480a2dff9ba","0x164dcdb1e2e59dba643b55e8b0c7d41748916f8430e31b6c95726b2f802fe6a9","0xb28ad1d1357a6576d37b482acaf50172d2daa7057546c674ad03ad9c780b93ac","0x172497ac481c6084a5802c6802b097bab9a46f7959416b8b27e0fd205c03f895","0x34a4f399107444b214e07854d3bb7ae3082459fc3d3c9e785ba0dd151ace9c58","0xacd41617b5a9860d30b363497f4e60622248834774deb91175e4ddb6c3422f3b","0x8971ce64181ac2d07306a991394b558a7e025af380f143bb2c827aa15f64f28f","0x71d9425e153ed01e45abe0f4133ea7e5c1cb75256e1fbd1dcbacfca9edb1848a","0x62bd91451d9633e24a1ddb983e43edeed9f6d198f68a64aea723a5146f035fbf","0x6d70c46ef9cdf931d5fd6bb72bf8941c0b7d9a20d2527407a3db51f38570eed1","0x471ef72b7a1fd365d474428d18bc4c61ebbf15b12df8aa346eb69931a9b04ff0","0xfe117f1e82592d3e51593c3c276c2b314e2d0b514c6a92cb45606f9aa0906bf9","0xad54d6f5d542790e18f8b6a5751e4090da538b9a3a8914a72fdf665942c6ae32","0x7d40d02e0b06ab129a28e194c5d4e4852d81069fc59190f578d140f16f51e747","0xad9028be70efa5da55e3033c5e614c1920d89f8ed25ae93c57681e0f95b6e0ea","0xd2e0b66d26e7d5cb97f313abedf618872506baade4ec2f65ba55b6b08a2e72f3","0xae06c44d901ee2d5de3e5ec21dfc496d1df5752a971ed5ab4976e74f28c9a54b","0x376269a6105943db6544885beff87016f12bce3695591ba5c03d2093281bd877","0x6f96a09f778c8fb5052864f456f4e5c5cebf1f32901690bcbb84d14503a7b9e3","0x3a27132130ad066aab6fd4003ddc00213024bfdfb595f3c1257ec33476c5a158","0xc84dfac9a978b4f874152e70adb5131d577c0cfdea295651dcd05bf447cf73e9","0x2841d284dd937bb029479bd1c599d0c4ab274f999a2c32ee0791dec250bee62d","0x470e0e0eb13e095e48322eae585d7917c44ad17817aca209b21ca94c36a143ab","0xabd84fb58b13cc44926ec343d042224adede1d58e320424ed7b339b7a48caecb","0xb07bb1bd7a11c74457a2ece6d894a3d2fe1cb07f150657da615ba2279e041fd1","0x9adf4f6358b45f0ed8685224dd4aa4be04a14b762f0823afdffeb20a3db9561d","0x017a39fa1b78969c9cd903cba363321734c3020ae967a75b3f5e84946cd54c74","0xe6c12eb60d28e5f81615cd9a9282f61bb1c6c4a5c99ea5e6c54e0509369f47b1","0xe24e038570b84fbebdab91546ecebb676c30e61b3372c6dae2a56c4274791f6f","0x07e4d0d9a314981c934ed013b2bc99a7b57f90325e64596a9e836bcfafed5a48","0xf00e4788de9b5867e93356af255e13e1bff1b9734a22333141f8c6adc5d9ff01","0x01bb2571130ab8a176299e1a8a95770566a4eae380b913e9124800b409d6b992","0xeeb319452496f8bf940a8d13747ac00ee85086e7f72230e8eba3a0fdca104467","0x7294b0ef5fe00bd8fc9a598c8a2e520b4e9414467523d1f29a1abfda63fd6c01","0xb6c5d0976654d02687984fd9882321465d2bd196cba5a79f5c364ff96c92d91c","0x7dd2aea8b2be995390cd14a545330637900f728f357f2cd30eb5ff126e89bdb3","0x211d12c7c6a3b3e44e8b9f04145b08c9ac72042883558f980c7330ab6e4aaaab","0xed62f2eb83c64014722bc5038c3b682307577390a847b911f6a12b86bbb217e5","0x4308e90a503e759c8fbd7b1eaea8c180f2e71a0fc476659bffb063d5803a34c1","0xe48537075bbefb6f8a7005fbcb88ddb065fdc8f8ee8fc081fe14bb0b13a79b66","0x82443e6d53b8be3741d02d483861188c7ecd18e13e6604379b2dbe482ecf2fb5","0xd736c495140c86b0577b343a6dc494ab45ce7885a6636410610b1a513e396bc9","0x87b3946d2ff1f71769d467ef59c2b9171bbbe9019bca5465f29b9cda9f49cb20","0x5d5f16c92df1893834b3c0fe6c1d622b984aed375c761222cf9dfca934710ab9","0x8d4fac45ef31a33860087f3345903ed8b48ea2b7e091e83b50207a189ccc6f89","0x3bec309fb3ea47b08aeb62b39af3e2aae1766763a662188529b7965ae3965c6e","0xadfd83a108486e48056c25c92694e95ee2c21d298040406045846d977c71343f","0x67efe12fa72afb74897c250931d3e72d539ddabfafd440c19d3766867599872f","0xc36b664b085eb0771f50b0083309d7571b3ec9867ed93e43959858a5a86058d8","0x532ec07144f8831336f6581cebe632b2147b68f2671a213db779e83920a60dff","0x1ed4022513ba87b8c843a3d284280e57acedfb92d84503f163f347fdd09cdfea","0x6630a5b1c3b2fb7c9c4e3d520155a868b041aac135a1917aa17579434b2eb4b3","0xf4c4210064b196b10598c8235518ce50301b5bd9316ac90087a14b0ff1ea0f0d","0xe8844c5552baf567996e08c6674ebb3c0c87a70dae07aa20657145b5382a5c13","0xadfb5be0c74dd7ce77295815d82541c693a011e40582d379884ecc7f626d082e","0xab64acf3789435d9095dd4224510bec890d0eed5f67004d6f95d6dd1fc21a385","0x890ae863b2b4e8c0d42768fb6b0d575edd83ca6c91daaf3721722a09e0bb9b7b","0x73cc6e41207c695476f6075f7d35ed06a9068e205ef3c5fa364fbfc31794a122","0xfb153fe73447df0bcd4a81b088db15fc9cf82a08e1a8add36865ad63abcc67a8","0xb55f789961437303a7c2a0db523615202b0117fc67db84170a6a805f6054515d","0x37ec2ee22ee472e39e8ad963a51dc116050512dc983f540806a30c9b392ee833","0x45de6aadc4e15157b1fbd134e3eafa9c44e816492d7cbdaa55329550686e5793","0x07a63e6e6af91556c94798bfe8378a423d82578f53d6ac9b21fcf6b79851093d","0x22443770c5f9824b780548d32f15f237e6f6dd1c48259c8510c468aff3eebbd4","0x4dfde18550b404f09077c8d9ab4756a71a672808b283be5fdbc8385b5ff75368","0x05c271cfb4b651185639746dbfe0007bcb3b417d324d5e7461a32cc257edb780","0x51dc5ca7c531c9749cd381ff347d0ac7ec2b472b7eb3bf579949c5275a5de0be","0xe6e0a9a90b6f522c01fbbae810ae7217fed1b22dc2e47f625f0453542ef201b5","0xe113655028729028b7fccc399d6dcffb9d0cd7bffa444496120eb6b2072b36ce","0xaf86be532ad22ee387c2b8a45b6811f2ac579144fb693bf7f57ffbc3545cbfdf","0xaec3239825463b65158ccc140324826644af3d6b2646e638497e981f5260f6a8","0x78e13a67ea95edf226e0af734b7321a0335c3c5be7f0472ca7dc71c05565ad31","0x651c4514b484803912afcc7aaf0487c5e0cff1de64bb4b7475738d48f90722d4","0x39df0967499d708b696abcec35c473898d0c34b66798680f342b7331c8fb0d6b","0x2a15a827df863ea6443b1370724b715262934a04f28e6b88496ca10169cbf463","0x286377f9dccae7cea9c1b94fa80e78c76df454fe9b5da02e26f85e802bdb31cc","0x17126d34a948f5442054be2d095ef5ffff434438b1cb3379bb1ad34a5eb08128","0xa4d6f003cba73c4758ea3a55083c4b15f3e7ef3e4622746c8fb43c1372448ebb","0xb854d5e9517abcd986c6818b2b47f8b140484761c78e8db0a3d2cdb70a27697d","0x0d47f3a68accc6b2d37abd3b10d7d07a2d34251f78fbdeeb191b3aae8030924a","0xccc67e361934da9a2bad41c1e714123eec1aa48273159e24a3acd1ba594d7a3a","0xbb163f3f1195e1db1f9738c48cfb2320bd1cbc1c31501a2853378495ec495e62","0x8bcfd3c9de5aff5113ab910a23eca02de9e6c8e84b0efaecbd22e2b955f1dc05","0x8c401ffea944bd85d76fb503bfc723f2e253f2420365215886a9affcf295e7de","0x8d1b63ff915261b0d24c5c0b297833e1b89cf4060971d62637ce72ab27ef3fd6","0xa5ae65ec90fa42be1bdae8495cbab76a92d3cbe9ecf8769034f77b29749c1bc7","0xe3c6b648e03073542ca7a33b97dca5fb7efcc1b8afa67556d360147c9ad11ba4","0xfe87f0b4b026a39e10429944993e828ba48def9325eb9fce8b34492b2e2664c8","0x509b8660f0a06c1b0b5efe9ba3a1550703509785b796699f807a9c722edf3b1e","0x15a09bb4d2429e45e1b149cfc13f265d41dedf7ba5c4e09e44f43d9b812d9724","0x98a912db84a21b6119052d25a2b1d2d3c90f9aa97110a86ff47814853eb24372","0xd095bdeba8466593f4b74c363ba988cd03e110b2852e84ce583d4bf8d42cf04c","0xb893291c118dd846124b26ef7efff6436f094e5c5ebf265662d88dca9860246b","0x686948534acbdd6450d326c330dbd06b0a0c98b37f4b2188b71681b72381d6f6","0x6f78c10dd4ead28d1ebe78f6ecc4097895170da0575c9f91c15cf06e0105e7c2","0xfe9555fafee779c19d74255bf6b62b4657597833594e68fef42d0c640a18ab6f","0xe58b694bd60e98e76c0a536590679a74c5addcce6aa3f25a748461c56f2b4a6f","0xdd2f6950910a166c52d1a11d2168853634ca84ba45db579d83559b66fc9c5dc9","0xa989fefc51cc3ccbf9d9962e9588fbe3c6a1844abbefd45ac9fa2c4e890de57e","0x8150c82eebcbd7dfb98073f018a136b88d7b7209a5bdbdc363fdecbb2733ce46","0x5adc36de44411fc1004de3be54e0b156d1249af2a766f280c66f60ecb4b0442f","0x23c8b7a2312d9aa45bb91d52c621c15880e6dde2a7c3b4302a97cd44d8020620","0x18b754926aa39913ad4c95fb6882da5b2fcd32ae29ac4fd82faab626289c2138","0x1e6d34a083393e30b8808860de5b58bc8b12d19e9f4ddabf90738956463698e8","0x04508c571743d886a198f5a0be29716b02b14bf5d16d45b54ae008bd1dec09a5","0x97dcadf761f7c3ebc1d86998b24734114e58b94e72413580d2d3a3f396ab1d5b","0x8d048739ac98718a421834c55b6b172681471572732c6abcedc68817e7f5d2d2","0xe4ec75719783c4032c59a9f4dde63bd4e5f60d543eac29967f72a10c9c901371","0x19cbac321582b21a04455fee0038f205d5e79b2379a433eef3f51c390c7090cf","0x8830f105303884154ad1c0a2bfe3b5a2ff791f3103c57add7f7f887378e3dcbb","0xf83423a1850c0fab56cc0a4da73118875287d69458e95be2f95f628aabc49ae3","0xc1e57514cea81ed313b35a23b26c26128579210a88913e2a2437f669152adb5f","0x77bbc940c4bee2ae313f6b45a33c65ed4eb36b4817bd66ae627e955c1023f617","0xe31695ff64c12d15980f8b81e814eb4b7fe8c0780f2b796dd90db77318eda88b","0xc7c8e16c5d7bca0ffff18c192186d13840c1076551e09019b9169147cf2ceb85","0xd62e3fd3a0985af86c0d4c12cae8eb49cb189492a5320d8184bd5ca99968c11d","0x763565ecfbf1f8aa75fc494797dce231de2cf340e53aa31b9b3f509167f94e08","0x0124ef9cde0d1929df7213f47e77360ca894a6ba68bb0a9cbad31c0d4a1e26d7","0x0871cf9d1e679c15a35f8b5886f0670321d5765dc7fc50f3db2312d0208959fc","0x767f8ce6ae633eac372c151a80998bdd1edb2f52e7cb4322d620e4dc5dd0e59e","0xa8fcf0e387119a4bda35c265cc3f8b702ac20eefc71cdb24a9a041a737be7e91","0x2b17f5e5ed2daaac4c75bccfeec6768fa005481823e4597f3c4a45fae092b54e","0xce5dd0ccc339e068cfdd7be1cc69141a6bf6360258aa7dba3ec4b36cccdec07b","0xc979ef7c454557e497d6adb92f1bea8e5577617450813f21b0bb2592b6761078","0xa7925d3e9a7ea2d1c922a75c9d4878b0ca46bea2a6f13522e38549a914d77ef0","0xa5b9aa4c8830ecb2d4cb0f13458008d08cf3a88c4905e1d6a9c831c03b23b2f0","0xa2ecbd2a9df850de94e81999efda3f50afd7beaf12ad5cb129eb44b2ecf04051","0x73b8263ccbd19ff32b11d80c6b589f07d0a91b2ef2a5df0d7d12d04e1238560c","0x57979cb463a43d46001e7a3d85166e8cde0b75d73661a237ba229727fbdda196","0xf819ec740ef97c23f113f2d02e2363e5b0304f122080e66ef0eeeab2cf1b957a","0x644e0fe80ff0768fa8fbd34f371cb2cab09630865fd75ae2d12c539c93902580","0x4e1d37795d71df925b8e34c9b801b97109584badcf4529212d1fd119ffe6c3c0"],"transactionsRoot":"0xd23e6b939550d5caf00f91f1e091c7cb7587bf30160bd98c8c8200cdbfc48552","uncles":[],"withdrawals":[{"index":"0x727160b","validatorIndex":"0x14eebe","address":"0x463cf9053dea201414b51d9018d809874702e3b5","amount":"0xfd1230"},{"index":"0x727160c","validatorIndex":"0x14eebf","address":"0x463cf9053dea201414b51d9018d809874702e3b5","amount":"0xfd2239"},{"index":"0x727160d","validatorIndex":"0x14eec0","address":"0x463cf9053dea201414b51d9018d809874702e3b5","amount":"0xfcf99d"},{"index":"0x727160e","validatorIndex":"0x14eec1","address":"0x463cf9053dea201414b51d9018d809874702e3b5","amount":"0xfd349f"},{"index":"0x727160f","validatorIndex":"0x14eec2","address":"0x463cf9053dea201414b51d9018d809874702e3b5","amount":"0xfcf8d2"},{"index":"0x7271610","validatorIndex":"0x14eec3","address":"0x463cf9053dea201414b51d9018d809874702e3b5","amount":"0xfd136d"},{"index":"0x7271611","validatorIndex":"0x14eec4","address":"0x463cf9053dea201414b51d9018d809874702e3b5","amount":"0xfd2b6e"},{"index":"0x7271612","validatorIndex":"0x14eec5","address":"0x463cf9053dea201414b51d9018d809874702e3b5","amount":"0x3d63b22"},{"index":"0x7271613","validatorIndex":"0x14eec6","address":"0x463cf9053dea201414b51d9018d809874702e3b5","amount":"0xfcce0f"},{"index":"0x7271614","validatorIndex":"0x14eec7","address":"0x463cf9053dea201414b51d9018d809874702e3b5","amount":"0xfcd783"},{"index":"0x7271615","validatorIndex":"0x14eec8","address":"0x463cf9053dea201414b51d9018d809874702e3b5","amount":"0xfd297a"},{"index":"0x7271616","validatorIndex":"0x14eec9","address":"0x463cf9053dea201414b51d9018d809874702e3b5","amount":"0xfd2b71"},{"index":"0x7271617","validatorIndex":"0x14eeca","address":"0x463cf9053dea201414b51d9018d809874702e3b5","amount":"0xfd2c8a"},{"index":"0x7271618","validatorIndex":"0x14eecb","address":"0x463cf9053dea201414b51d9018d809874702e3b5","amount":"0xfd3bf1"},{"index":"0x7271619","validatorIndex":"0x14eecc","address":"0x463cf9053dea201414b51d9018d809874702e3b5","amount":"0xfcf81f"},{"index":"0x727161a","validatorIndex":"0x14eecd","address":"0x463cf9053dea201414b51d9018d809874702e3b5","amount":"0xfd0a1f"}],"withdrawalsRoot":"0xc1fb02ed6ca0c92b0bb287cfc675d77847b65719237204ad3e0e4f87b6b59632"}}
+
+        '
+    headers:
+      CF-RAY:
+      - a61165acde15cc4a-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:14:39 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '25812'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '27'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"jsonrpc": "2.0", "method": "eth_getTransactionReceipt", "params": ["0xc0e966ddc2b9ee781ba23f31b4692850c4c8f550d2c3402e00f66119f97d62ce"],
+      "id": 11}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '149'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - web3.py/8.0.0/web3.providers.rpc.rpc.HTTPProvider
+    method: POST
+    uri: https://ethereum-rpc.publicnode.com/
+  response:
+    body:
+      string: '{"jsonrpc":"2.0","id":11,"result":{"blockHash":"0x9a6e0fc0a1677380257a3f976b875e58a25e404f3b4a25e1f74b46342b1cfcff","blockNumber":"0x1766032","contractAddress":null,"cumulativeGasUsed":"0x124dfac","effectiveGasPrice":"0x1ce9f4a0","from":"0x7c5d5222f60853159bbdcc058088587618d61b24","gasUsed":"0x380c2","logs":[{"address":"0x70b7f7044d2ca8e2f1e999b90ef16d7cb7a0cda1","topics":["0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef","0x0000000000000000000000007c5d5222f60853159bbdcc058088587618d61b24","0x0000000000000000000000000000000000000000000000000000000000000000"],"data":"0x000000000000000000000000000000000000000000000002df85d331a7b40000","blockNumber":"0x1766032","transactionHash":"0xc0e966ddc2b9ee781ba23f31b4692850c4c8f550d2c3402e00f66119f97d62ce","transactionIndex":"0x90","blockHash":"0x9a6e0fc0a1677380257a3f976b875e58a25e404f3b4a25e1f74b46342b1cfcff","blockTimestamp":"0x699f21b3","logIndex":"0x22d","removed":false},{"address":"0x5523985926aa12ba58dc5ad00ddca99678d7227e","topics":["0x532dbb6d061eee97ab4370060f60ede10b3dc361cc1214c07ae5e34dd86e6aaf"],"data":"0x0000000000000000000000005523985926aa12ba58dc5ad00ddca99678d7227e00000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000003d9f9666853fd4a10351ff5364c602470a7cf6000000000000000000000000003d4d57930b2e0887606be461ab167cac2e769e000000000000000000000000000000000000000000000000000000000000000900000000000000000000000000000000000000000000000000000000000000c41ebe53ef0000000000000000000000000000000000000000000000001bc16d674ec800003586f3dd50d2bca01edbb7a2b9274de8fc7f836f37c3752c8149d7d79ec197c8c6dfe94b001aec6713ef6fd5da6da19722c8c1370396251827269a84627a4874000000000000000000000000006c3e2aaae5db1bcd11a1a097ce572312eaddbb000000000000000000000000000000000000000000000002df85d331a7b400000000000000000000000000007c5d5222f60853159bbdcc058088587618d61b2400000000000000000000000000000000000000000000000000000000","blockNumber":"0x1766032","transactionHash":"0xc0e966ddc2b9ee781ba23f31b4692850c4c8f550d2c3402e00f66119f97d62ce","transactionIndex":"0x90","blockHash":"0x9a6e0fc0a1677380257a3f976b875e58a25e404f3b4a25e1f74b46342b1cfcff","blockTimestamp":"0x699f21b3","logIndex":"0x22e","removed":false},{"address":"0xd7c3df25683871d18bc838e4f619126442dd38b3","topics":["0x5f00e8f0d61ff1190912879949026c85a81f3f96038c7f4cd868bdfe882e0eeb","0x0000000000000000000000007c5d5222f60853159bbdcc058088587618d61b24","0x0000000000000000000000000000000000000000000000000000000000000009","0x0000000000000000000000007c5d5222f60853159bbdcc058088587618d61b24"],"data":"0xc6dfe94b001aec6713ef6fd5da6da19722c8c1370396251827269a84627a48740000000000000000000000007c5d5222f60853159bbdcc058088587618d61b24000000000000000000000000000000000000000000000002df85d331a7b4000000000000000000000000000070b7f7044d2ca8e2f1e999b90ef16d7cb7a0cda1","blockNumber":"0x1766032","transactionHash":"0xc0e966ddc2b9ee781ba23f31b4692850c4c8f550d2c3402e00f66119f97d62ce","transactionIndex":"0x90","blockHash":"0x9a6e0fc0a1677380257a3f976b875e58a25e404f3b4a25e1f74b46342b1cfcff","blockTimestamp":"0x699f21b3","logIndex":"0x22f","removed":false},{"address":"0xd7c3df25683871d18bc838e4f619126442dd38b3","topics":["0x5a297b2c9a9f94a0f4e5a796c74ad38e219d1185fccf5f79c18726a830c2b6f5","0x73796d62696f7369732d61707000000000000000000000000000000000000000"],"data":"0xc6dfe94b001aec6713ef6fd5da6da19722c8c1370396251827269a84627a4874","blockNumber":"0x1766032","transactionHash":"0xc0e966ddc2b9ee781ba23f31b4692850c4c8f550d2c3402e00f66119f97d62ce","transactionIndex":"0x90","blockHash":"0x9a6e0fc0a1677380257a3f976b875e58a25e404f3b4a25e1f74b46342b1cfcff","blockTimestamp":"0x699f21b3","logIndex":"0x230","removed":false}],"logsBloom":"0x000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000082000084000000000000000200000042000000000000000000001000000080000000000000000000000000000000004000400002000000200000000000000000008000000000000000000000000100000000000000000000080000000000000000800001010000000000000040000000000000000000000000000000001000000000000000000000000008000008000000000000000020000000000000000000000000000000000000000020000200000200000000000000000000000000004000a0000000000000000000000000004800000","status":"0x1","to":"0xd7c3df25683871d18bc838e4f619126442dd38b3","transactionHash":"0xc0e966ddc2b9ee781ba23f31b4692850c4c8f550d2c3402e00f66119f97d62ce","transactionIndex":"0x90","type":"0x2"}}'
+    headers:
+      CF-RAY:
+      - a61165adcfb6aa4b-BCN
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 27 Nov 2026 13:14:39 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      access-control-max-age:
+      - '1728000'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '4398'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      vary:
+      - Origin, accept-encoding
+      x-envoy-upstream-service-time:
+      - '16'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - rotki/1.44.4.dev1417+gea4d5eb4a7
+    method: GET
+    uri: https://api.etherscan.io/v2/api?action=txlistinternal&chainid=1&module=account&offset=1000&page=1&sort=asc&txhash=0xc0e966ddc2b9ee781ba23f31b4692850c4c8f550d2c3402e00f66119f97d62ce
+  response:
+    body:
+      string: '{"status":"0","message":"No transactions found","result":[]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 27 Nov 2026 13:14:40 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Nginx-Id:
+      - '4'
+      content-length:
+      - '60'
+      svid:
+      - '6'
+    status:
+      code: 200
+      message: OK
+version: 1
